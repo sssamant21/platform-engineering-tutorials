@@ -36,6 +36,7 @@
 - [Chapter 030 — Kubernetes NetworkPolicies and Network Security](chapters/030-kubernetes-networkpolicies-and-network-security.md)
 - [Chapter 031 — Kubernetes Volumes, PersistentVolumes and PersistentVolumeClaims](chapters/031-kubernetes-volumes-pvs-and-pvcs.md)
 - [Chapter 032 — StorageClasses and CSI Drivers](chapters/032-storageclasses-and-csi-drivers.md)
+- [Chapter 033 — Dynamic Provisioning and Volume Access Modes](chapters/033-dynamic-provisioning-and-volume-access-modes.md)
 
 ## Repository conventions
 
