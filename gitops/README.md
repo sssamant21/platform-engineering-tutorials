@@ -67,6 +67,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [014 — GitLab CI/CD Artifacts, Caching, Reports and Pipeline Data Flow](03-gitlab-cicd-fundamentals/014-gitlab-cicd-artifacts-caching-reports-pipeline-data-flow.md)
 
+- [015 — GitLab CI/CD Fundamentals and Pipeline Reliability Capstone](03-gitlab-cicd-fundamentals/015-gitlab-cicd-fundamentals-pipeline-reliability-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
