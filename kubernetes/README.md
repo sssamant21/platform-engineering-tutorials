@@ -79,6 +79,7 @@
 - [Chapter 073 — Velero and Persistent Volume Backups](chapters/073-velero-and-persistent-volume-backups.md)
 - [Chapter 074 — Cross-Cluster Restore and Disaster Recovery](chapters/074-cross-cluster-restore-and-disaster-recovery.md)
 - [Chapter 075 — Disaster Recovery Simulation Project](chapters/075-disaster-recovery-simulation-project.md)
+- [Chapter 076 — Amazon EKS Architecture and Provisioning](chapters/076-amazon-eks-architecture-and-provisioning.md)
 
 ## Repository conventions
 
