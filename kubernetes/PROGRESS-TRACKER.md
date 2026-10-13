@@ -107,7 +107,7 @@
 | 101 | 21 | Build a Production-Ready Kubernetes Cluster | Draft |
 | 102 | 21 | Deploy a Highly Available Stateful Application | Draft |
 | 103 | 21 | Simulate Complex Kubernetes Failures | Draft |
-| 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
+| 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Draft |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–103 (Parts 01–20 writing milestones reached; Part 21 underway; lab validation and technical review pending). **Next:** 104 — Upgrade, Recover and Validate a Production Cluster.
+**Completed:** 0 / 105. **Draft chapters:** 001–104 (Parts 01–20 writing milestones reached; Part 21 underway; lab validation and technical review pending). **Next:** 105 — Kubernetes Administrator and SRE Final Assessment.
