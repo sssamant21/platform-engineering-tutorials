@@ -35,6 +35,7 @@
 - [Chapter 029 — Ingress Controllers and Gateway API](chapters/029-ingress-controllers-and-gateway-api.md)
 - [Chapter 030 — Kubernetes NetworkPolicies and Network Security](chapters/030-kubernetes-networkpolicies-and-network-security.md)
 - [Chapter 031 — Kubernetes Volumes, PersistentVolumes and PersistentVolumeClaims](chapters/031-kubernetes-volumes-pvs-and-pvcs.md)
+- [Chapter 032 — StorageClasses and CSI Drivers](chapters/032-storageclasses-and-csi-drivers.md)
 
 ## Repository conventions
 
