@@ -108,6 +108,7 @@
 - [Chapter 102 — Deploy a Highly Available Stateful Application](chapters/102-deploy-a-highly-available-stateful-application.md)
 - [Chapter 103 — Simulate Complex Kubernetes Failures](chapters/103-simulate-complex-kubernetes-failures.md)
 - [Chapter 104 — Upgrade, Recover and Validate a Production Cluster](chapters/104-upgrade-recover-and-validate-a-production-cluster.md)
+- [Chapter 105 — Kubernetes Administrator and SRE Final Assessment](chapters/105-kubernetes-administrator-and-sre-final-assessment.md)
 
 ## Repository conventions
 
