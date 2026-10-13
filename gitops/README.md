@@ -83,6 +83,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [022 — Container Image Vulnerability Scanning, SBOM Generation and Dependency Security](05-container-builds-supply-chain-security/022-container-image-vulnerability-scanning-sbom-dependency-security.md)
 
+- [023 — Container Image Signing, Provenance Attestations and SLSA Supply-Chain Controls](05-container-builds-supply-chain-security/023-container-image-signing-provenance-attestations-slsa-supply-chain-controls.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
