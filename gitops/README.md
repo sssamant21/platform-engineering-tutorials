@@ -49,6 +49,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [005 — Enterprise GitLab CI/CD Foundations Capstone](01-foundations/005-enterprise-gitlab-cicd-foundations-capstone.md)
 
+- [006 — Enterprise GitLab Repository Administration, Groups, Projects and Access Control](02-gitlab-repository-administration/006-enterprise-gitlab-groups-projects-access-control.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
