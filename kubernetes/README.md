@@ -104,6 +104,7 @@
 - [Chapter 098 — Multi-Cluster Administration and Fleet Management](chapters/098-multi-cluster-administration-and-fleet-management.md)
 - [Chapter 099 — Production Change Management and SRE Runbooks](chapters/099-production-change-management-and-sre-runbooks.md)
 - [Chapter 100 — Advanced Production Recovery Project](chapters/100-advanced-production-recovery-project.md)
+- [Chapter 101 — Build a Production-Ready Kubernetes Cluster](chapters/101-build-a-production-ready-kubernetes-cluster.md)
 
 ## Repository conventions
 
