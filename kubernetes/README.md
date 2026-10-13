@@ -34,6 +34,7 @@
 - [Chapter 028 — CoreDNS and Service Discovery](chapters/028-coredns-and-service-discovery.md)
 - [Chapter 029 — Ingress Controllers and Gateway API](chapters/029-ingress-controllers-and-gateway-api.md)
 - [Chapter 030 — Kubernetes NetworkPolicies and Network Security](chapters/030-kubernetes-networkpolicies-and-network-security.md)
+- [Chapter 031 — Kubernetes Volumes, PersistentVolumes and PersistentVolumeClaims](chapters/031-kubernetes-volumes-pvs-and-pvcs.md)
 
 ## Repository conventions
 
