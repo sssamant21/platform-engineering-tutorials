@@ -38,6 +38,7 @@
 - [Chapter 032 — StorageClasses and CSI Drivers](chapters/032-storageclasses-and-csi-drivers.md)
 - [Chapter 033 — Dynamic Provisioning and Volume Access Modes](chapters/033-dynamic-provisioning-and-volume-access-modes.md)
 - [Chapter 034 — Volume Expansion, Snapshots and Storage Lifecycle](chapters/034-volume-expansion-snapshots-and-storage-lifecycle.md)
+- [Chapter 035 — Storage Failure and Recovery Lab](chapters/035-storage-failure-and-recovery-lab.md)
 
 ## Repository conventions
 
