@@ -92,7 +92,7 @@
 | 086 | 18 | Google GKE Architecture, Control Plane and Cluster Provisioning | Draft |
 | 087 | 18 | GKE Standard vs Autopilot, Node Pools and Autoscaling | Draft |
 | 088 | 18 | GKE Networking, VPC-Native Clusters, Load Balancing and Storage | Draft |
-| 089 | 18 | GKE Security, Workload Identity Federation, IAM, Monitoring and Upgrades | Planned |
+| 089 | 18 | GKE Security, Workload Identity Federation, IAM, Monitoring and Upgrades | Draft |
 | 090 | 18 | GKE Production Administration, Troubleshooting and Recovery Project | Planned |
 | 091 | 19 | GitOps with Argo CD and Flux | Planned |
 | 092 | 19 | Policy as Code with Kyverno and Gatekeeper | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–088 (Parts 01–17 writing milestones reached; Part 18 underway; lab validation and technical review pending). **Next:** 089 — GKE Security, Workload Identity Federation, IAM, Monitoring and Upgrades.
+**Completed:** 0 / 105. **Draft chapters:** 001–089 (Parts 01–17 writing milestones reached; Part 18 underway; lab validation and technical review pending). **Next:** 090 — GKE Production Administration, Troubleshooting and Recovery Project.
