@@ -106,6 +106,7 @@
 - [Chapter 100 — Advanced Production Recovery Project](chapters/100-advanced-production-recovery-project.md)
 - [Chapter 101 — Build a Production-Ready Kubernetes Cluster](chapters/101-build-a-production-ready-kubernetes-cluster.md)
 - [Chapter 102 — Deploy a Highly Available Stateful Application](chapters/102-deploy-a-highly-available-stateful-application.md)
+- [Chapter 103 — Simulate Complex Kubernetes Failures](chapters/103-simulate-complex-kubernetes-failures.md)
 
 ## Repository conventions
 
