@@ -87,6 +87,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [024 — Secure CI/CD Supply-Chain Policies, Artifact Promotion and Registry Governance](05-container-builds-supply-chain-security/024-secure-cicd-supply-chain-policies-artifact-promotion-registry-governance.md)
 
+- [025 — Enterprise Container Supply-Chain Security and Artifact Promotion Capstone](05-container-builds-supply-chain-security/025-enterprise-container-supply-chain-security-artifact-promotion-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
