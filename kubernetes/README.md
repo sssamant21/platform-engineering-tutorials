@@ -107,6 +107,7 @@
 - [Chapter 101 — Build a Production-Ready Kubernetes Cluster](chapters/101-build-a-production-ready-kubernetes-cluster.md)
 - [Chapter 102 — Deploy a Highly Available Stateful Application](chapters/102-deploy-a-highly-available-stateful-application.md)
 - [Chapter 103 — Simulate Complex Kubernetes Failures](chapters/103-simulate-complex-kubernetes-failures.md)
+- [Chapter 104 — Upgrade, Recover and Validate a Production Cluster](chapters/104-upgrade-recover-and-validate-a-production-cluster.md)
 
 ## Repository conventions
 
