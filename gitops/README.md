@@ -65,6 +65,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [013 — GitLab CI/CD Variables, Environments, Secrets and Configuration Precedence](03-gitlab-cicd-fundamentals/013-gitlab-cicd-variables-environments-secrets-configuration-precedence.md)
 
+- [014 — GitLab CI/CD Artifacts, Caching, Reports and Pipeline Data Flow](03-gitlab-cicd-fundamentals/014-gitlab-cicd-artifacts-caching-reports-pipeline-data-flow.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
