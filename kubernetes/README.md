@@ -97,6 +97,7 @@
 - [Chapter 091 — GitOps with Argo CD and Flux](chapters/091-gitops-with-argo-cd-and-flux.md)
 - [Chapter 092 — Policy as Code with Kyverno and Gatekeeper](chapters/092-policy-as-code-with-kyverno-and-gatekeeper.md)
 - [Chapter 093 — Multi-Tenancy and Namespace Governance](chapters/093-multi-tenancy-and-namespace-governance.md)
+- [Chapter 094 — Kubernetes Cost Management and FinOps](chapters/094-kubernetes-cost-management-and-finops.md)
 
 ## Repository conventions
 
