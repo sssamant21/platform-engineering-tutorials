@@ -5,6 +5,7 @@
 - [Complete chapter roadmap](MASTER-PLAN.md)
 - [Chapter progress tracker](PROGRESS-TRACKER.md)
 - [Chapter 001 — What Is Kubernetes?](chapters/001-what-is-kubernetes.md)
+- [Chapter 002 — Containers, Images and Container Runtimes](chapters/002-containers-images-and-container-runtimes.md)
 
 ## Repository conventions
 
