@@ -9,6 +9,7 @@
 - [Chapter 003 — Kubernetes Architecture and Components](chapters/003-kubernetes-architecture-and-components.md)
 - [Chapter 004 — Control Plane, Worker Nodes and etcd](chapters/004-control-plane-worker-nodes-and-etcd.md)
 - [Chapter 005 — Kubernetes Objects, YAML and Declarative Management](chapters/005-kubernetes-objects-yaml-and-declarative-management.md)
+- [Chapter 006 — kubectl Installation and kubeconfig](chapters/006-kubectl-installation-and-kubeconfig.md)
 
 ## Repository conventions
 
