@@ -68,6 +68,7 @@
 - [Chapter 062 — Container Startup and Image Pull Failures](chapters/062-container-startup-and-image-pull-failures.md)
 - [Chapter 063 — Pending, Evicted, OOMKilled and CrashLoopBackOff Pods](chapters/063-pending-evicted-oomkilled-and-crashloopbackoff-pods.md)
 - [Chapter 064 — Node, Network, DNS and Control Plane Failures](chapters/064-node-network-dns-and-control-plane-failures.md)
+- [Chapter 065 — Production Incident Investigation Project](chapters/065-production-incident-investigation-project.md)
 
 ## Repository conventions
 
