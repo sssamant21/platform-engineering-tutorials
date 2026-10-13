@@ -46,7 +46,7 @@
 | 040 | 8 | Configuration Management and Rollback Lab | Draft |
 | 041 | 9 | Kubernetes Authentication and RBAC | Draft |
 | 042 | 9 | ServiceAccounts and Workload Identity | Draft |
-| 043 | 9 | Pod Security Standards and Security Contexts | Planned |
+| 043 | 9 | Pod Security Standards and Security Contexts | Draft |
 | 044 | 9 | Admission Policies and Image Security | Planned |
 | 045 | 9 | Kubernetes Security Hardening Project | Planned |
 | 046 | 10 | Node Architecture, Kubelet and Node Conditions | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–042 (Parts 01–08 writing milestones reached; Part 09 underway; lab validation and technical review pending). **Next:** 043 — Pod Security Standards and Security Contexts.
+**Completed:** 0 / 105. **Draft chapters:** 001–043 (Parts 01–08 writing milestones reached; Part 09 underway; lab validation and technical review pending). **Next:** 044 — Admission Policies and Image Security.
