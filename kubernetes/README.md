@@ -93,6 +93,7 @@
 - [Chapter 087 — GKE Standard vs Autopilot, Node Pools and Autoscaling](chapters/087-gke-standard-vs-autopilot-node-pools-and-autoscaling.md)
 - [Chapter 088 — GKE Networking, VPC-Native Clusters, Load Balancing and Storage](chapters/088-gke-networking-vpc-native-clusters-load-balancing-and-storage.md)
 - [Chapter 089 — GKE Security, Workload Identity Federation, IAM, Monitoring and Upgrades](chapters/089-gke-security-workload-identity-federation-iam-monitoring-and-upgrades.md)
+- [Chapter 090 — GKE Production Administration, Troubleshooting and Recovery Project](chapters/090-gke-production-administration-troubleshooting-and-recovery-project.md)
 
 ## Repository conventions
 
