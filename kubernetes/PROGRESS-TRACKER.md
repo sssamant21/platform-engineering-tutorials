@@ -51,7 +51,7 @@
 | 045 | 9 | Kubernetes Security Hardening Project | Draft |
 | 046 | 10 | Node Architecture, Kubelet and Node Conditions | Draft |
 | 047 | 10 | Cordon, Drain and Node Maintenance | Draft |
-| 048 | 10 | Kubernetes Version Upgrades | Planned |
+| 048 | 10 | Kubernetes Version Upgrades | Draft |
 | 049 | 10 | Certificate Management and Rotation | Planned |
 | 050 | 10 | Cluster Upgrade and Maintenance Project | Planned |
 | 051 | 11 | High Availability Control Plane Design | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–047 (Parts 01–09 writing milestones reached; Part 10 underway; lab validation and technical review pending). **Next:** 048 — Kubernetes Version Upgrades.
+**Completed:** 0 / 105. **Draft chapters:** 001–048 (Parts 01–09 writing milestones reached; Part 10 underway; lab validation and technical review pending). **Next:** 049 — Certificate Management and Rotation.
