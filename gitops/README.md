@@ -41,6 +41,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [001 — Enterprise DevOps, GitLab CI/CD, GitOps, Helm and Argo CD Fundamentals](01-foundations/001-enterprise-devops-gitlab-cicd-gitops-helm-argocd-fundamentals.md)
 
+- [002 — Git, GitLab Repositories, Branching and Enterprise Merge Request Governance](01-foundations/002-git-gitlab-repositories-branching-merge-request-governance.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
