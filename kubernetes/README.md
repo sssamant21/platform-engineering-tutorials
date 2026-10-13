@@ -32,6 +32,8 @@
 - [Chapter 026 — Kubernetes Networking Architecture and CNI](chapters/026-kubernetes-networking-architecture-and-cni.md)
 - [Chapter 027 — Services and Load Balancing](chapters/027-services-and-load-balancing.md)
 - [Chapter 028 — CoreDNS and Service Discovery](chapters/028-coredns-and-service-discovery.md)
+- [Chapter 029 — Ingress Controllers and Gateway API](chapters/029-ingress-controllers-and-gateway-api.md)
+- [Chapter 030 — Kubernetes NetworkPolicies and Network Security](chapters/030-kubernetes-networkpolicies-and-network-security.md)
 
 ## Repository conventions
 
