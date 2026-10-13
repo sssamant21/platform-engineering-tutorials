@@ -18,6 +18,7 @@
 - [Chapter 012 — Namespaces, Labels and Annotations](chapters/012-namespaces-labels-and-annotations.md)
 - [Chapter 013 — kubectl Advanced Administration](chapters/013-kubectl-advanced-administration.md)
 - [Chapter 014 — Resource Lifecycle, Finalizers and Garbage Collection](chapters/014-resource-lifecycle-finalizers-and-garbage-collection.md)
+- [Chapter 015 — Resource Management and Administration Lab](chapters/015-resource-management-and-administration-lab.md)
 
 ## Repository conventions
 
