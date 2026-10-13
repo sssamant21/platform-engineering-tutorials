@@ -64,6 +64,7 @@
 - [Chapter 058 — Grafana Dashboards and Alertmanager](chapters/058-grafana-dashboards-and-alertmanager.md)
 - [Chapter 059 — OpenTelemetry and Distributed Tracing](chapters/059-opentelemetry-and-distributed-tracing.md)
 - [Chapter 060 — Production Observability and Alerting Project](chapters/060-production-observability-and-alerting-project.md)
+- [Chapter 061 — Kubernetes Troubleshooting Methodology](chapters/061-kubernetes-troubleshooting-methodology.md)
 
 ## Repository conventions
 
