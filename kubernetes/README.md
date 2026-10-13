@@ -61,6 +61,7 @@
 - [Chapter 055 — High Availability Failure Simulation Project](chapters/055-high-availability-failure-simulation-project.md)
 - [Chapter 056 — Kubernetes Metrics, Logs and Events](chapters/056-kubernetes-metrics-logs-and-events.md)
 - [Chapter 057 — Metrics Server and Prometheus](chapters/057-metrics-server-and-prometheus.md)
+- [Chapter 058 — Grafana Dashboards and Alertmanager](chapters/058-grafana-dashboards-and-alertmanager.md)
 
 ## Repository conventions
 
