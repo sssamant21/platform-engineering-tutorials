@@ -40,7 +40,7 @@
 | 034 | 7 | Volume Expansion, Snapshots and Storage Lifecycle | Draft |
 | 035 | 7 | Storage Failure and Recovery Lab | Draft |
 | 036 | 8 | ConfigMaps and Secrets | Draft |
-| 037 | 8 | Secret Management and Rotation | Planned |
+| 037 | 8 | Secret Management and Rotation | Draft |
 | 038 | 8 | Helm Installation, Charts and Releases | Planned |
 | 039 | 8 | Kustomize and Environment Overlays | Planned |
 | 040 | 8 | Configuration Management and Rollback Lab | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–036 (Parts 01–07 writing milestones reached; Part 08 started; lab validation and technical review pending). **Next:** 037 — Secret Management and Rotation.
+**Completed:** 0 / 105. **Draft chapters:** 001–037 (Parts 01–07 writing milestones reached; Part 08 underway; lab validation and technical review pending). **Next:** 038 — Helm Installation, Charts and Releases.
