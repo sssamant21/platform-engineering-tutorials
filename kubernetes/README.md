@@ -85,6 +85,7 @@
 - [Chapter 079 — EKS Security, Identity, Monitoring and Upgrades](chapters/079-eks-security-identity-monitoring-and-upgrades.md)
 - [Chapter 080 — EKS Production Operations Project](chapters/080-eks-production-operations-project.md)
 - [Chapter 081 — Azure AKS Architecture and Provisioning](chapters/081-azure-aks-architecture-and-provisioning.md)
+- [Chapter 082 — AKS Node Pools and Autoscaling](chapters/082-aks-node-pools-and-autoscaling.md)
 
 ## Repository conventions
 
