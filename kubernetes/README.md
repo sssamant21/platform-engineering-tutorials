@@ -44,6 +44,7 @@
 - [Chapter 038 — Helm Installation, Charts and Releases](chapters/038-helm-installation-charts-and-releases.md)
 - [Chapter 039 — Kustomize and Environment Overlays](chapters/039-kustomize-and-environment-overlays.md)
 - [Chapter 040 — Configuration Management and Rollback Lab](chapters/040-configuration-management-and-rollback-lab.md)
+- [Chapter 041 — Kubernetes Authentication and RBAC](chapters/041-kubernetes-authentication-and-rbac.md)
 
 ## Repository conventions
 
