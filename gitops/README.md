@@ -73,6 +73,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [017 — GitLab Runner Security, Isolation, Autoscaling and Kubernetes Executors](04-pipeline-design-testing-artifacts/017-gitlab-runner-security-isolation-autoscaling-kubernetes-executors.md)
 
+- [018 — GitLab CI/CD Reusable Pipelines, Includes, Templates and Child Pipelines](04-pipeline-design-testing-artifacts/018-gitlab-cicd-reusable-pipelines-includes-templates-child-pipelines.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
