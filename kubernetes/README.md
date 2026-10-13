@@ -92,6 +92,7 @@
 - [Chapter 086 — Google GKE Architecture, Control Plane and Cluster Provisioning](chapters/086-google-gke-architecture-control-plane-and-cluster-provisioning.md)
 - [Chapter 087 — GKE Standard vs Autopilot, Node Pools and Autoscaling](chapters/087-gke-standard-vs-autopilot-node-pools-and-autoscaling.md)
 - [Chapter 088 — GKE Networking, VPC-Native Clusters, Load Balancing and Storage](chapters/088-gke-networking-vpc-native-clusters-load-balancing-and-storage.md)
+- [Chapter 089 — GKE Security, Workload Identity Federation, IAM, Monitoring and Upgrades](chapters/089-gke-security-workload-identity-federation-iam-monitoring-and-upgrades.md)
 
 ## Repository conventions
 
