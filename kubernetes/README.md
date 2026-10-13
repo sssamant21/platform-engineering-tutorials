@@ -72,6 +72,7 @@
 - [Chapter 066 — Horizontal Pod Autoscaler](chapters/066-horizontal-pod-autoscaler.md)
 - [Chapter 067 — Vertical Pod Autoscaler](chapters/067-vertical-pod-autoscaler.md)
 - [Chapter 068 — Cluster Autoscaler and Karpenter](chapters/068-cluster-autoscaler-and-karpenter.md)
+- [Chapter 069 — CPU, Memory, Network and Storage Capacity Planning](chapters/069-cpu-memory-network-and-storage-capacity-planning.md)
 
 ## Repository conventions
 
