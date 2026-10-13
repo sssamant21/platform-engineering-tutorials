@@ -42,7 +42,7 @@
 | 036 | 8 | ConfigMaps and Secrets | Draft |
 | 037 | 8 | Secret Management and Rotation | Draft |
 | 038 | 8 | Helm Installation, Charts and Releases | Draft |
-| 039 | 8 | Kustomize and Environment Overlays | Planned |
+| 039 | 8 | Kustomize and Environment Overlays | Draft |
 | 040 | 8 | Configuration Management and Rollback Lab | Planned |
 | 041 | 9 | Kubernetes Authentication and RBAC | Planned |
 | 042 | 9 | ServiceAccounts and Workload Identity | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–038 (Parts 01–07 writing milestones reached; Part 08 underway; lab validation and technical review pending). **Next:** 039 — Kustomize and Environment Overlays.
+**Completed:** 0 / 105. **Draft chapters:** 001–039 (Parts 01–07 writing milestones reached; Part 08 underway; lab validation and technical review pending). **Next:** 040 — Configuration Management and Rollback Lab.
