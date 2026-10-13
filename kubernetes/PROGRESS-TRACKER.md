@@ -69,7 +69,7 @@
 | 063 | 13 | Pending, Evicted, OOMKilled and CrashLoopBackOff Pods | Draft |
 | 064 | 13 | Node, Network, DNS and Control Plane Failures | Draft |
 | 065 | 13 | Production Incident Investigation Project | Draft |
-| 066 | 14 | Horizontal Pod Autoscaler | Planned |
+| 066 | 14 | Horizontal Pod Autoscaler | Draft |
 | 067 | 14 | Vertical Pod Autoscaler | Planned |
 | 068 | 14 | Cluster Autoscaler and Karpenter | Planned |
 | 069 | 14 | CPU, Memory, Network and Storage Capacity Planning | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–065 (Parts 01–13 writing milestones reached; lab validation and technical review pending). **Next:** 066 — Horizontal Pod Autoscaler.
+**Completed:** 0 / 105. **Draft chapters:** 001–066 (Parts 01–13 writing milestones reached; Part 14 underway; lab validation and technical review pending). **Next:** 067 — Vertical Pod Autoscaler.
