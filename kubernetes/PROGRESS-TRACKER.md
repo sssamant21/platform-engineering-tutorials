@@ -100,7 +100,7 @@
 | 094 | 19 | Kubernetes Cost Management and FinOps | Draft |
 | 095 | 19 | GitOps and Governance Project | Draft |
 | 096 | 20 | CRDs, Operators and Custom Controllers | Draft |
-| 097 | 20 | GPU Scheduling and AI Workloads | Planned |
+| 097 | 20 | GPU Scheduling and AI Workloads | Draft |
 | 098 | 20 | Multi-Cluster Administration and Fleet Management | Planned |
 | 099 | 20 | Production Change Management and SRE Runbooks | Planned |
 | 100 | 20 | Advanced Production Recovery Project | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–096 (Parts 01–19 writing milestones reached; Part 20 underway; lab validation and technical review pending). **Next:** 097 — GPU Scheduling and AI Workloads.
+**Completed:** 0 / 105. **Draft chapters:** 001–097 (Parts 01–19 writing milestones reached; Part 20 underway; lab validation and technical review pending). **Next:** 098 — Multi-Cluster Administration and Fleet Management.
