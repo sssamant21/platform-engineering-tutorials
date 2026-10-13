@@ -7,14 +7,14 @@
 
 ## 1. Production scenario
 
-A production Deployment rollout stalls. Some replacement Pods report \`ImagePullBackOff\`, others \`CreateContainerConfigError\`, and a third set briefly starts before restarting. The application has fewer Ready replicas and HTTP errors rise. The team needs to identify distinct failure modes before changing image tags, Secrets, ServiceAccounts or application configuration.
+A production Deployment rollout stalls. Some replacement Pods report `ImagePullBackOff`, others `CreateContainerConfigError`, and a third set briefly starts before restarting. The application has fewer Ready replicas and HTTP errors rise. The team needs to identify distinct failure modes before changing image tags, Secrets, ServiceAccounts or application configuration.
 
 **Goal:** diagnose the complete container startup path—from scheduling and image resolution through runtime creation, process execution and readiness—and recover safely without masking the evidence or introducing unreviewed production changes.
 
 ### Learning objectives
 
 1. Explain Pod scheduling, image pulling, container configuration, runtime startup and probe transitions.
-2. Distinguish \`ErrImagePull\`, \`ImagePullBackOff\`, \`CreateContainerConfigError\`, \`CreateContainerError\`, \`RunContainerError\` and \`CrashLoopBackOff\`.
+2. Distinguish `ErrImagePull`, `ImagePullBackOff`, `CreateContainerConfigError`, `CreateContainerError`, `RunContainerError` and `CrashLoopBackOff`.
 3. Diagnose registry authorization, DNS, TLS, image architecture, tags, digests and pull policy.
 4. Troubleshoot ConfigMaps, Secrets, ServiceAccounts, security contexts, volumes and commands.
 5. Collect Events, current/previous logs, container state and rollout history safely.
@@ -23,7 +23,7 @@ A production Deployment rollout stalls. Some replacement Pods report \`ImagePull
 
 ## 2. Container startup lifecycle
 
-\`\`\`text
+```text
 Deployment/Job/StatefulSet controller
               |
          Pod created
@@ -41,23 +41,23 @@ Deployment/Job/StatefulSet controller
      Startup / readiness / liveness
               |
         Ready application endpoint
-\`\`\`
+```
 
-A Pod can be **Pending** while images are downloading or container setup is incomplete. A container waiting reason provides more detail than the Pod phase alone. \`Running\` does not guarantee \`Ready\`.
+A Pod can be **Pending** while images are downloading or container setup is incomplete. A container waiting reason provides more detail than the Pod phase alone. `Running` does not guarantee `Ready`.
 
 ### Failure classification
 
 | Symptom | Stage | Common causes |
 |---|---|---|
-| \`ErrImagePull\` | Image retrieval | Missing image/tag, registry authentication, network/TLS |
-| \`ImagePullBackOff\` | Retrying pull | Earlier pull failed; retry backoff |
-| \`InvalidImageName\` | Image reference | Malformed image name |
-| \`CreateContainerConfigError\` | Configuration | Missing Secret/ConfigMap key, invalid environment reference |
-| \`CreateContainerError\` | Container creation | Runtime, mounts, permissions or invalid creation settings |
-| \`RunContainerError\` | Process start | Invalid command, executable or runtime startup failure |
-| \`CrashLoopBackOff\` | Repeated process failure | Exit, startup failure, probe-triggered restart |
-| \`ContainerCreating\` | Setup in progress | Image pull, CNI, sandbox or volume preparation |
-| \`Pending\` | Pod not yet running | Scheduling, volume, image or setup delay |
+| `ErrImagePull` | Image retrieval | Missing image/tag, registry authentication, network/TLS |
+| `ImagePullBackOff` | Retrying pull | Earlier pull failed; retry backoff |
+| `InvalidImageName` | Image reference | Malformed image name |
+| `CreateContainerConfigError` | Configuration | Missing Secret/ConfigMap key, invalid environment reference |
+| `CreateContainerError` | Container creation | Runtime, mounts, permissions or invalid creation settings |
+| `RunContainerError` | Process start | Invalid command, executable or runtime startup failure |
+| `CrashLoopBackOff` | Repeated process failure | Exit, startup failure, probe-triggered restart |
+| `ContainerCreating` | Setup in progress | Image pull, CNI, sandbox or volume preparation |
+| `Pending` | Pod not yet running | Scheduling, volume, image or setup delay |
 
 **Interpretation rule:** these are symptoms or status reasons. Confirm the actual cause through Events, container state, logs and infrastructure telemetry.
 
@@ -72,9 +72,9 @@ Start read-only. Before deleting Pods, patching a Deployment or changing registr
 - Registry errors and node-level DNS/TLS/network evidence.
 - Ready replicas, EndpointSlices and customer-facing error rate.
 
-Do **not** print Secret values into tickets, shell transcripts or shared logs. Do not change production image tags to \`latest\` as a shortcut. Use reviewed immutable digests where possible. Avoid force deleting stateful workloads.
+Do **not** print Secret values into tickets, shell transcripts or shared logs. Do not change production image tags to `latest` as a shortcut. Use reviewed immutable digests where possible. Avoid force deleting stateful workloads.
 
-\`\`\`powershell
+```powershell
 kubectl config current-context
 kubectl version
 kubectl get nodes -o wide
@@ -82,26 +82,26 @@ kubectl auth can-i get pods -A
 kubectl auth can-i get pods/log -n default
 kubectl auth can-i list events -A
 Get-Date -Format o
-\`\`\`
+```
 
 ## 4. Lab 1 — Identify the failing startup stage
 
 Select an authorized namespace and Pod:
 
-\`\`\`powershell
+```powershell
 $ns = 'REPLACE_WITH_NAMESPACE'
 $pod = 'REPLACE_WITH_POD'
 kubectl -n $ns get pod $pod -o wide
 kubectl -n $ns describe pod $pod
 kubectl -n $ns get pod $pod -o jsonpath='{range .status.containerStatuses[*]}{.name}{" waiting="}{.state.waiting.reason}{" message="}{.state.waiting.message}{" restarts="}{.restartCount}{" lastExit="}{.lastState.terminated.exitCode}{"\n"}{end}'
 kubectl -n $ns get events --sort-by=.lastTimestamp
-\`\`\`
+```
 
-**Expected:** a waiting reason, Event message or last termination state narrows the failing stage. Container statuses may be absent before initial container creation; use \`describe pod\` and Events when JSONPath is empty.
+**Expected:** a waiting reason, Event message or last termination state narrows the failing stage. Container statuses may be absent before initial container creation; use `describe pod` and Events when JSONPath is empty.
 
 ### Decision tree
 
-1. **Pod unscheduled?** Inspect \`FailedScheduling\`, resource requests, taints, topology and PVCs.
+1. **Pod unscheduled?** Inspect `FailedScheduling`, resource requests, taints, topology and PVCs.
 2. **Image pull failed?** Inspect image reference, credentials, registry response, DNS/TLS and rate limits.
 3. **Container config failed?** Check Secret/ConfigMap references, keys, volume definitions and ServiceAccount.
 4. **Runtime creation failed?** Check CNI, mounts, permissions, security context and node runtime.
@@ -110,51 +110,51 @@ kubectl -n $ns get events --sort-by=.lastTimestamp
 
 ## 5. Lab 2 — Diagnose image reference and pull policy
 
-\`\`\`powershell
+```powershell
 kubectl -n $ns get pod $pod -o jsonpath='{range .spec.containers[*]}{.name}{" image="}{.image}{" pullPolicy="}{.imagePullPolicy}{"\n"}{end}'
 kubectl -n $ns get pod $pod -o jsonpath='{range .status.containerStatuses[*]}{.name}{" imageID="}{.imageID}{"\n"}{end}'
 kubectl -n $ns describe pod $pod
-\`\`\`
+```
 
 ### Image reference anatomy
 
-\`\`\`text
+```text
 registry.example.com/team/api:1.2.3
 registry.example.com/team/api@sha256:<digest>
-\`\`\`
+```
 
 - A **tag** is mutable unless the registry enforces immutability.
 - A **digest** identifies image content and improves reproducibility.
-- \`imagePullPolicy: Always\` requests image resolution each start; cached layers may still be reused.
-- \`IfNotPresent\` permits using a locally cached image.
+- `imagePullPolicy: Always` requests image resolution each start; cached layers may still be reused.
+- `IfNotPresent` permits using a locally cached image.
 - Kubernetes defaults pull policy based on image reference when the object is created; changing the image later does not necessarily recalculate the stored policy.
 
 ### Failure patterns
 
 | Error clue | Likely investigation |
 |---|---|
-| \`manifest unknown\` / \`not found\` | Repository, tag or digest |
-| \`unauthorized\` / \`denied\` | Pull credentials, registry permissions |
-| \`429 Too Many Requests\` | Registry throttling / rate limit |
-| \`no matching manifest\` | CPU architecture / OS mismatch |
-| \`x509\` | Certificate chain / trust / expiry |
+| `manifest unknown` / `not found` | Repository, tag or digest |
+| `unauthorized` / `denied` | Pull credentials, registry permissions |
+| `429 Too Many Requests` | Registry throttling / rate limit |
+| `no matching manifest` | CPU architecture / OS mismatch |
+| `x509` | Certificate chain / trust / expiry |
 | DNS lookup error | Node DNS, proxy, VPC resolver |
 | Connection timeout | Egress, firewall, proxy, private endpoint |
-| \`InvalidImageName\` | Malformed reference |
+| `InvalidImageName` | Malformed reference |
 
 **Expected:** classify the error before deciding on remediation.
 
 ## 6. Lab 3 — Inspect imagePullSecrets and ServiceAccounts safely
 
-\`\`\`powershell
+```powershell
 kubectl -n $ns get pod $pod -o jsonpath='{.spec.serviceAccountName}{"\n"}'
 kubectl -n $ns get pod $pod -o jsonpath='{range .spec.imagePullSecrets[*]}{.name}{"\n"}{end}'
 kubectl -n $ns get serviceaccounts
 kubectl -n $ns describe serviceaccount REPLACE_WITH_SERVICEACCOUNT
 kubectl -n $ns get secrets
-\`\`\`
+```
 
-**Expected:** confirm the Pod or ServiceAccount references the intended image pull Secret and that the Secret exists in the **same namespace as the Pod**. Do not dump \`kubernetes.io/dockerconfigjson\` values.
+**Expected:** confirm the Pod or ServiceAccount references the intended image pull Secret and that the Secret exists in the **same namespace as the Pod**. Do not dump `kubernetes.io/dockerconfigjson` values.
 
 ### Private registry checklist
 
@@ -170,9 +170,9 @@ kubectl -n $ns get secrets
 
 ## 7. Lab 4 — Reproduce a missing image in staging
 
-**Approved staging only.** Save \`ch062-image-failure.yaml\`:
+**Approved staging only.** Save `ch062-image-failure.yaml`:
 
-\`\`\`yaml
+```yaml
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -198,16 +198,16 @@ spec:
         limits:
           cpu: 100m
           memory: 64Mi
-\`\`\`
+```
 
-\`\`\`powershell
+```powershell
 kubectl apply -f .\\ch062-image-failure.yaml
 kubectl -n ch062 get pod bad-image -o wide
 kubectl -n ch062 describe pod bad-image
 kubectl -n ch062 get events --sort-by=.lastTimestamp
-\`\`\`
+```
 
-**Expected:** image pull failure and eventually \`ImagePullBackOff\`, provided registry access and image resolution proceed far enough to report the nonexistent tag. If the cluster cannot reach the registry, a network error may appear first.
+**Expected:** image pull failure and eventually `ImagePullBackOff`, provided registry access and image resolution proceed far enough to report the nonexistent tag. If the cluster cannot reach the registry, a network error may appear first.
 
 ### Evidence
 
@@ -215,9 +215,9 @@ Record Pod status, Event reason/message, retry behavior and whether other Pods a
 
 ## 8. Lab 5 — Reproduce a missing ConfigMap key
 
-Save \`ch062-config-failure.yaml\`:
+Save `ch062-config-failure.yaml`:
 
-\`\`\`yaml
+```yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -247,31 +247,31 @@ spec:
         requests:
           cpu: 10m
           memory: 16Mi
-\`\`\`
+```
 
-\`\`\`powershell
+```powershell
 kubectl apply -f .\\ch062-config-failure.yaml
 kubectl -n ch062 get pod bad-config
 kubectl -n ch062 describe pod bad-config
 kubectl -n ch062 get configmap demo-config -o jsonpath='{.data}'
-\`\`\`
+```
 
-**Expected:** \`CreateContainerConfigError\` and an Event identifying the missing key. The ConfigMap in this lab contains no secrets. For real production ConfigMaps, avoid displaying confidential values.
+**Expected:** `CreateContainerConfigError` and an Event identifying the missing key. The ConfigMap in this lab contains no secrets. For real production ConfigMaps, avoid displaying confidential values.
 
 ### Controlled repair (staging only)
 
-\`\`\`powershell
+```powershell
 kubectl -n ch062 patch configmap demo-config --type merge -p '{"data":{"MISSING_KEY":"repaired"}}'
 kubectl -n ch062 get pod bad-config -w
-\`\`\`
+```
 
-**Expected:** kubelet eventually retries container creation; the Pod starts when the required key becomes available. Exit the watch with Ctrl+C. If the Pod has already completed, no additional restart is expected because \`restartPolicy: Never\`.
+**Expected:** kubelet eventually retries container creation; the Pod starts when the required key becomes available. Exit the watch with Ctrl+C. If the Pod has already completed, no additional restart is expected because `restartPolicy: Never`.
 
 ## 9. Lab 6 — Reproduce an invalid startup command
 
-Save \`ch062-command-failure.yaml\`:
+Save `ch062-command-failure.yaml`:
 
-\`\`\`yaml
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -287,21 +287,21 @@ spec:
         requests:
           cpu: 10m
           memory: 16Mi
-\`\`\`
+```
 
-\`\`\`powershell
+```powershell
 kubectl apply -f .\\ch062-command-failure.yaml
 kubectl -n ch062 get pod bad-command
 kubectl -n ch062 describe pod bad-command
 kubectl -n ch062 logs bad-command --previous --tail=30
 kubectl -n ch062 get events --sort-by=.lastTimestamp
-\`\`\`
+```
 
-**Expected:** runtime start failure and retry/backoff behavior. Because the executable cannot start, application logs may be empty and \`--previous\` may return an error. Use kubelet Events and container state rather than assuming an empty log means no failure.
+**Expected:** runtime start failure and retry/backoff behavior. Because the executable cannot start, application logs may be empty and `--previous` may return an error. Use kubelet Events and container state rather than assuming an empty log means no failure.
 
 ### Common command/entrypoint problems
 
-- Wrong \`command\` or \`args\` overrides image ENTRYPOINT/CMD.
+- Wrong `command` or `args` overrides image ENTRYPOINT/CMD.
 - Missing binary or wrong path.
 - Missing execute permission.
 - Incompatible executable architecture or interpreter.
@@ -312,11 +312,11 @@ kubectl -n ch062 get events --sort-by=.lastTimestamp
 
 Review an authorized application Pod:
 
-\`\`\`powershell
+```powershell
 kubectl -n $ns describe pod $pod
 kubectl -n $ns logs $pod --all-containers=true --timestamps --since=15m --tail=100
 kubectl -n $ns logs $pod --all-containers=true --previous --timestamps --tail=100
-\`\`\`
+```
 
 ### Probe responsibilities
 
@@ -330,7 +330,7 @@ kubectl -n $ns logs $pod --all-containers=true --previous --timestamps --tail=10
 
 ### Example startup probe
 
-\`\`\`yaml
+```yaml
 startupProbe:
   httpGet:
     path: /health/startup
@@ -347,19 +347,19 @@ livenessProbe:
     path: /health/live
     port: 8080
   periodSeconds: 10
-\`\`\`
+```
 
 These are illustrative endpoints and thresholds. Do not copy them without validating the application's startup characteristics and dependency behavior.
 
 ## 11. Lab 8 — Inspect rollout health and select safe remediation
 
-\`\`\`powershell
+```powershell
 kubectl -n $ns get deployments,replicasets,pods -o wide
 kubectl -n $ns rollout history deployment/REPLACE_WITH_DEPLOYMENT
 kubectl -n $ns describe deployment REPLACE_WITH_DEPLOYMENT
 kubectl -n $ns get events --sort-by=.lastTimestamp
 kubectl -n $ns get endpointslices
-\`\`\`
+```
 
 ### Remediation matrix
 
@@ -379,7 +379,7 @@ kubectl -n $ns get endpointslices
 
 ## 12. Lab 9 — Image registry and runtime incident tabletop
 
-**Scenario:** an application rollout at 14:00 UTC changes its image to a private registry. At 14:02, new Pods show \`ImagePullBackOff\`. Existing replicas continue serving but capacity is below the PDB target. Events show \`unauthorized\`; a registry credential was rotated that morning.
+**Scenario:** an application rollout at 14:00 UTC changes its image to a private registry. At 14:02, new Pods show `ImagePullBackOff`. Existing replicas continue serving but capacity is below the PDB target. Events show `unauthorized`; a registry credential was rotated that morning.
 
 ### Required incident actions
 
@@ -419,7 +419,7 @@ For managed EKS/AKS, use approved cloud diagnostics and access mechanisms; do no
 
 ### Diagnose
 
-1. Inspect \`kubectl describe pod\`, Events and container waiting reason.
+1. Inspect `kubectl describe pod`, Events and container waiting reason.
 2. Separate image pull from config, runtime, process and probe failures.
 3. Check image reference/digest, registry identity and network path.
 4. Inspect ConfigMap/Secret references and startup command safely.
@@ -451,7 +451,7 @@ Record exact error message, cause, mitigation, detection gap, customer impact an
 
 ## 16. Evidence template
 
-\`\`\`text
+```text
 Incident:
 Cluster/context:
 Namespace/workload:
@@ -470,7 +470,7 @@ Mitigation and approver:
 Rollback plan:
 Recovery verification:
 Follow-up actions:
-\`\`\`
+```
 
 ## 17. Acceptance checklist
 
@@ -491,10 +491,10 @@ Follow-up actions:
 
 Only remove the isolated training namespace:
 
-\`\`\`powershell
+```powershell
 kubectl -n ch062 get pods,configmaps
 kubectl delete namespace ch062
-\`\`\`
+```
 
 Delete local lab YAML files only if no longer needed. This chapter does not mutate production Deployments, registries or nodes.
 
