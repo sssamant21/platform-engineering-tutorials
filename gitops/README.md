@@ -71,6 +71,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [016 — GitLab Runner Architecture, Executors, Registration and Lifecycle](04-pipeline-design-testing-artifacts/016-gitlab-runner-architecture-executors-registration-lifecycle.md)
 
+- [017 — GitLab Runner Security, Isolation, Autoscaling and Kubernetes Executors](04-pipeline-design-testing-artifacts/017-gitlab-runner-security-isolation-autoscaling-kubernetes-executors.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
