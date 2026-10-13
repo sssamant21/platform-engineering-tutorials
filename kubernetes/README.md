@@ -37,6 +37,7 @@
 - [Chapter 031 — Kubernetes Volumes, PersistentVolumes and PersistentVolumeClaims](chapters/031-kubernetes-volumes-pvs-and-pvcs.md)
 - [Chapter 032 — StorageClasses and CSI Drivers](chapters/032-storageclasses-and-csi-drivers.md)
 - [Chapter 033 — Dynamic Provisioning and Volume Access Modes](chapters/033-dynamic-provisioning-and-volume-access-modes.md)
+- [Chapter 034 — Volume Expansion, Snapshots and Storage Lifecycle](chapters/034-volume-expansion-snapshots-and-storage-lifecycle.md)
 
 ## Repository conventions
 
