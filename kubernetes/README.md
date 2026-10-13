@@ -12,6 +12,7 @@
 - [Chapter 006 — kubectl Installation and kubeconfig](chapters/006-kubectl-installation-and-kubeconfig.md)
 - [Chapter 007 — Kubernetes Local Lab with kind and Minikube](chapters/007-kubernetes-local-lab-with-kind-and-minikube.md)
 - [Chapter 008 — kubeadm Cluster Installation](chapters/008-kubeadm-cluster-installation.md)
+- [Chapter 009 — Containerd, CNI and CoreDNS Configuration](chapters/009-containerd-cni-and-coredns-configuration.md)
 
 ## Repository conventions
 
