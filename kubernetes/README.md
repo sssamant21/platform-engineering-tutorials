@@ -58,6 +58,7 @@
 - [Chapter 052 — etcd Operations, Quorum and Recovery](chapters/052-etcd-operations-quorum-and-recovery.md)
 - [Chapter 053 — PodDisruptionBudgets and Graceful Shutdown](chapters/053-poddisruptionbudgets-and-graceful-shutdown.md)
 - [Chapter 054 — Multi-Zone Availability and Failure Domains](chapters/054-multi-zone-availability-and-failure-domains.md)
+- [Chapter 055 — High Availability Failure Simulation Project](chapters/055-high-availability-failure-simulation-project.md)
 
 ## Repository conventions
 
