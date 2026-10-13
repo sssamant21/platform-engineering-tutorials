@@ -59,6 +59,7 @@
 - [Chapter 053 — PodDisruptionBudgets and Graceful Shutdown](chapters/053-poddisruptionbudgets-and-graceful-shutdown.md)
 - [Chapter 054 — Multi-Zone Availability and Failure Domains](chapters/054-multi-zone-availability-and-failure-domains.md)
 - [Chapter 055 — High Availability Failure Simulation Project](chapters/055-high-availability-failure-simulation-project.md)
+- [Chapter 056 — Kubernetes Metrics, Logs and Events](chapters/056-kubernetes-metrics-logs-and-events.md)
 
 ## Repository conventions
 
