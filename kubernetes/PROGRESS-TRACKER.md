@@ -61,7 +61,7 @@
 | 055 | 11 | High Availability Failure Simulation Project | Draft |
 | 056 | 12 | Kubernetes Metrics, Logs and Events | Draft |
 | 057 | 12 | Metrics Server and Prometheus | Draft |
-| 058 | 12 | Grafana Dashboards and Alertmanager | Planned |
+| 058 | 12 | Grafana Dashboards and Alertmanager | Draft |
 | 059 | 12 | OpenTelemetry and Distributed Tracing | Planned |
 | 060 | 12 | Production Observability and Alerting Project | Planned |
 | 061 | 13 | Kubernetes Troubleshooting Methodology | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–057 (Parts 01–11 writing milestones reached; Part 12 underway; lab validation and technical review pending). **Next:** 058 — Grafana Dashboards and Alertmanager.
+**Completed:** 0 / 105. **Draft chapters:** 001–058 (Parts 01–11 writing milestones reached; Part 12 underway; lab validation and technical review pending). **Next:** 059 — OpenTelemetry and Distributed Tracing.
