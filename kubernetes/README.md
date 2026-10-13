@@ -63,6 +63,7 @@
 - [Chapter 057 — Metrics Server and Prometheus](chapters/057-metrics-server-and-prometheus.md)
 - [Chapter 058 — Grafana Dashboards and Alertmanager](chapters/058-grafana-dashboards-and-alertmanager.md)
 - [Chapter 059 — OpenTelemetry and Distributed Tracing](chapters/059-opentelemetry-and-distributed-tracing.md)
+- [Chapter 060 — Production Observability and Alerting Project](chapters/060-production-observability-and-alerting-project.md)
 
 ## Repository conventions
 
