@@ -85,6 +85,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [023 — Container Image Signing, Provenance Attestations and SLSA Supply-Chain Controls](05-container-builds-supply-chain-security/023-container-image-signing-provenance-attestations-slsa-supply-chain-controls.md)
 
+- [024 — Secure CI/CD Supply-Chain Policies, Artifact Promotion and Registry Governance](05-container-builds-supply-chain-security/024-secure-cicd-supply-chain-policies-artifact-promotion-registry-governance.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
