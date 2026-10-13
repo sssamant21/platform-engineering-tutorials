@@ -71,7 +71,7 @@
 | 065 | 13 | Production Incident Investigation Project | Draft |
 | 066 | 14 | Horizontal Pod Autoscaler | Draft |
 | 067 | 14 | Vertical Pod Autoscaler | Draft |
-| 068 | 14 | Cluster Autoscaler and Karpenter | Planned |
+| 068 | 14 | Cluster Autoscaler and Karpenter | Draft |
 | 069 | 14 | CPU, Memory, Network and Storage Capacity Planning | Planned |
 | 070 | 14 | Kubernetes Performance and Scaling Project | Planned |
 | 071 | 15 | Kubernetes Backup Strategy and RPO/RTO | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–067 (Parts 01–13 writing milestones reached; Part 14 underway; lab validation and technical review pending). **Next:** 068 — Cluster Autoscaler and Karpenter.
+**Completed:** 0 / 105. **Draft chapters:** 001–068 (Parts 01–13 writing milestones reached; Part 14 underway; lab validation and technical review pending). **Next:** 069 — CPU, Memory, Network and Storage Capacity Planning.
