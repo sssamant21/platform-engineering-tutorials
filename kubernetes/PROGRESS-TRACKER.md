@@ -54,7 +54,7 @@
 | 048 | 10 | Kubernetes Version Upgrades | Draft |
 | 049 | 10 | Certificate Management and Rotation | Draft |
 | 050 | 10 | Cluster Upgrade and Maintenance Project | Draft |
-| 051 | 11 | High Availability Control Plane Design | Planned |
+| 051 | 11 | High Availability Control Plane Design | Draft |
 | 052 | 11 | etcd Operations, Quorum and Recovery | Planned |
 | 053 | 11 | PodDisruptionBudgets and Graceful Shutdown | Planned |
 | 054 | 11 | Multi-Zone Availability and Failure Domains | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–050 (Parts 01–10 writing milestones reached; lab validation and technical review pending). **Next:** 051 — High Availability Control Plane Design.
+**Completed:** 0 / 105. **Draft chapters:** 001–051 (Parts 01–10 writing milestones reached; Part 11 underway; lab validation and technical review pending). **Next:** 052 — etcd Operations, Quorum and Recovery.
