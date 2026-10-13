@@ -51,6 +51,7 @@
 - [Chapter 045 — Kubernetes Security Hardening Project](chapters/045-kubernetes-security-hardening-project.md)
 - [Chapter 046 — Node Architecture, Kubelet and Node Conditions](chapters/046-node-architecture-kubelet-and-node-conditions.md)
 - [Chapter 047 — Cordon, Drain and Node Maintenance](chapters/047-cordon-drain-and-node-maintenance.md)
+- [Chapter 048 — Kubernetes Version Upgrades](chapters/048-kubernetes-version-upgrades.md)
 
 ## Repository conventions
 
