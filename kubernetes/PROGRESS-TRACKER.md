@@ -10,7 +10,7 @@
 | 004 | 1 | Control Plane, Worker Nodes and etcd | Draft |
 | 005 | 1 | Kubernetes Objects, YAML and Declarative Management | Draft |
 | 006 | 2 | kubectl Installation and kubeconfig | Draft |
-| 007 | 2 | Kubernetes Local Lab with kind and Minikube | Planned |
+| 007 | 2 | Kubernetes Local Lab with kind and Minikube | Draft |
 | 008 | 2 | kubeadm Cluster Installation | Planned |
 | 009 | 2 | Containerd, CNI and CoreDNS Configuration | Planned |
 | 010 | 2 | Cluster Installation and Verification Project | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–006 (Part 01 writing milestone reached; lab validation pending). **Next:** 007 — Kubernetes Local Lab with kind and Minikube.
+**Completed:** 0 / 105. **Draft chapters:** 001–007 (Part 01 writing milestone reached; lab validation pending). **Next:** 008 — kubeadm Cluster Installation.
