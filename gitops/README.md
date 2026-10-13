@@ -77,6 +77,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [019 — GitLab CI/CD Pipeline Testing, Quality Gates, Security Scanning and Failure Recovery](04-pipeline-design-testing-artifacts/019-gitlab-cicd-pipeline-testing-quality-gates-security-scanning-failure-recovery.md)
 
+- [020 — Enterprise GitLab Pipeline Design, Testing and Runner Operations Capstone](04-pipeline-design-testing-artifacts/020-enterprise-gitlab-pipeline-design-testing-runner-operations-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
