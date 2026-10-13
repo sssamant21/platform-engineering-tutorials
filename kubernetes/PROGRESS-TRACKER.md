@@ -49,7 +49,7 @@
 | 043 | 9 | Pod Security Standards and Security Contexts | Draft |
 | 044 | 9 | Admission Policies and Image Security | Draft |
 | 045 | 9 | Kubernetes Security Hardening Project | Draft |
-| 046 | 10 | Node Architecture, Kubelet and Node Conditions | Planned |
+| 046 | 10 | Node Architecture, Kubelet and Node Conditions | Draft |
 | 047 | 10 | Cordon, Drain and Node Maintenance | Planned |
 | 048 | 10 | Kubernetes Version Upgrades | Planned |
 | 049 | 10 | Certificate Management and Rotation | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–045 (Parts 01–09 writing milestones reached; lab validation and technical review pending). **Next:** 046 — Node Architecture, Kubelet and Node Conditions.
+**Completed:** 0 / 105. **Draft chapters:** 001–046 (Parts 01–09 writing milestones reached; Part 10 started; lab validation and technical review pending). **Next:** 047 — Cordon, Drain and Node Maintenance.
