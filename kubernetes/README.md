@@ -55,6 +55,7 @@
 - [Chapter 049 — Certificate Management and Rotation](chapters/049-certificate-management-and-rotation.md)
 - [Chapter 050 — Cluster Upgrade and Maintenance Project](chapters/050-cluster-upgrade-and-maintenance-project.md)
 - [Chapter 051 — High Availability Control Plane Design](chapters/051-high-availability-control-plane-design.md)
+- [Chapter 052 — etcd Operations, Quorum and Recovery](chapters/052-etcd-operations-quorum-and-recovery.md)
 
 ## Repository conventions
 
