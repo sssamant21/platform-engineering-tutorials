@@ -103,6 +103,7 @@
 - [Chapter 097 — GPU Scheduling and AI Workloads](chapters/097-gpu-scheduling-and-ai-workloads.md)
 - [Chapter 098 — Multi-Cluster Administration and Fleet Management](chapters/098-multi-cluster-administration-and-fleet-management.md)
 - [Chapter 099 — Production Change Management and SRE Runbooks](chapters/099-production-change-management-and-sre-runbooks.md)
+- [Chapter 100 — Advanced Production Recovery Project](chapters/100-advanced-production-recovery-project.md)
 
 ## Repository conventions
 
