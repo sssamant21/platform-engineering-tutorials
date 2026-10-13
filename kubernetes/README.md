@@ -99,6 +99,7 @@
 - [Chapter 093 — Multi-Tenancy and Namespace Governance](chapters/093-multi-tenancy-and-namespace-governance.md)
 - [Chapter 094 — Kubernetes Cost Management and FinOps](chapters/094-kubernetes-cost-management-and-finops.md)
 - [Chapter 095 — GitOps and Governance Project](chapters/095-gitops-and-governance-project.md)
+- [Chapter 096 — CRDs, Operators and Custom Controllers](chapters/096-crds-operators-and-custom-controllers.md)
 
 ## Repository conventions
 
