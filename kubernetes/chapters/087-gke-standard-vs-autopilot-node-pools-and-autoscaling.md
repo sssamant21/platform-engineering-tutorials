@@ -166,16 +166,16 @@ gcloud container node-pools describe REPLACE_WITH_NODE_POOL --cluster $cluster -
 
 ```powershell
 $pool = 'REPLACE_WITH_APPROVED_STANDARD_NODE_POOL'
-gcloud container clusters update $cluster `
+gcloud container node-pools update $pool `
+  --cluster $cluster `
   --location $location `
   --project $project `
   --enable-autoscaling `
-  --node-pool $pool `
   --min-nodes 1 `
   --max-nodes 3
 ```
 
-Verify current gcloud syntax and whether bounds are per-zone or total for the chosen configuration. Some node pool autoscaling options are managed through `gcloud container node-pools update`; use the supported command for the installed SDK and cluster version. Preserve original settings before any change.
+Verify current gcloud syntax and whether bounds are per-zone or total for the chosen configuration. Use the supported node pool update syntax for the installed SDK and cluster version. Preserve original settings before any change.
 
 ### Scaling acceptance
 
