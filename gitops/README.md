@@ -79,6 +79,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [020 — Enterprise GitLab Pipeline Design, Testing and Runner Operations Capstone](04-pipeline-design-testing-artifacts/020-enterprise-gitlab-pipeline-design-testing-runner-operations-capstone.md)
 
+- [021 — Secure Container Image Builds, Registries and Immutable Tags](05-container-builds-supply-chain-security/021-secure-container-image-builds-registries-immutable-tags.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
