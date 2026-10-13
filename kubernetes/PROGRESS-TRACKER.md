@@ -75,7 +75,7 @@
 | 069 | 14 | CPU, Memory, Network and Storage Capacity Planning | Draft |
 | 070 | 14 | Kubernetes Performance and Scaling Project | Draft |
 | 071 | 15 | Kubernetes Backup Strategy and RPO/RTO | Draft |
-| 072 | 15 | etcd Backup and Restore | Planned |
+| 072 | 15 | etcd Backup and Restore | Draft |
 | 073 | 15 | Velero and Persistent Volume Backups | Planned |
 | 074 | 15 | Cross-Cluster Restore and Disaster Recovery | Planned |
 | 075 | 15 | Disaster Recovery Simulation Project | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–071 (Parts 01–14 writing milestones reached; Part 15 underway; lab validation and technical review pending). **Next:** 072 — etcd Backup and Restore.
+**Completed:** 0 / 105. **Draft chapters:** 001–072 (Parts 01–14 writing milestones reached; Part 15 underway; lab validation and technical review pending). **Next:** 073 — Velero and Persistent Volume Backups.
