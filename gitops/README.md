@@ -69,6 +69,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [015 — GitLab CI/CD Fundamentals and Pipeline Reliability Capstone](03-gitlab-cicd-fundamentals/015-gitlab-cicd-fundamentals-pipeline-reliability-capstone.md)
 
+- [016 — GitLab Runner Architecture, Executors, Registration and Lifecycle](04-pipeline-design-testing-artifacts/016-gitlab-runner-architecture-executors-registration-lifecycle.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
