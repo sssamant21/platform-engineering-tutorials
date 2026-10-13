@@ -95,6 +95,7 @@
 - [Chapter 089 — GKE Security, Workload Identity Federation, IAM, Monitoring and Upgrades](chapters/089-gke-security-workload-identity-federation-iam-monitoring-and-upgrades.md)
 - [Chapter 090 — GKE Production Administration, Troubleshooting and Recovery Project](chapters/090-gke-production-administration-troubleshooting-and-recovery-project.md)
 - [Chapter 091 — GitOps with Argo CD and Flux](chapters/091-gitops-with-argo-cd-and-flux.md)
+- [Chapter 092 — Policy as Code with Kyverno and Gatekeeper](chapters/092-policy-as-code-with-kyverno-and-gatekeeper.md)
 
 ## Repository conventions
 
