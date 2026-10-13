@@ -55,6 +55,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [008 — GitLab Merge Request Workflows, Branching Strategies and Release Governance](02-gitlab-repository-administration/008-gitlab-merge-request-workflows-branching-strategies-release-governance.md)
 
+- [009 — GitLab Repository Security, Audit Events, Compliance and Secret Protection](02-gitlab-repository-administration/009-gitlab-repository-security-audit-compliance-secret-protection.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
