@@ -84,7 +84,7 @@
 | 078 | 16 | EKS Networking, Load Balancers and Storage | Draft |
 | 079 | 16 | EKS Security, Identity, Monitoring and Upgrades | Draft |
 | 080 | 16 | EKS Production Operations Project | Draft |
-| 081 | 17 | Azure AKS Architecture and Provisioning | Planned |
+| 081 | 17 | Azure AKS Architecture and Provisioning | Draft |
 | 082 | 17 | AKS Node Pools and Autoscaling | Planned |
 | 083 | 17 | AKS Networking, Load Balancing and Storage | Planned |
 | 084 | 17 | AKS Identity, Security, Monitoring and Upgrades | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–080 (Parts 01–16 writing milestones reached; lab validation and technical review pending). **Next:** 081 — Azure AKS Architecture and Provisioning.
+**Completed:** 0 / 105. **Draft chapters:** 001–081 (Parts 01–16 writing milestones reached; Part 17 underway; lab validation and technical review pending). **Next:** 082 — AKS Node Pools and Autoscaling.
