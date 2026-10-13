@@ -50,6 +50,7 @@
 - [Chapter 044 — Admission Policies and Image Security](chapters/044-admission-policies-and-image-security.md)
 - [Chapter 045 — Kubernetes Security Hardening Project](chapters/045-kubernetes-security-hardening-project.md)
 - [Chapter 046 — Node Architecture, Kubelet and Node Conditions](chapters/046-node-architecture-kubelet-and-node-conditions.md)
+- [Chapter 047 — Cordon, Drain and Node Maintenance](chapters/047-cordon-drain-and-node-maintenance.md)
 
 ## Repository conventions
 
