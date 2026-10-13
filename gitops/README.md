@@ -81,6 +81,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [021 — Secure Container Image Builds, Registries and Immutable Tags](05-container-builds-supply-chain-security/021-secure-container-image-builds-registries-immutable-tags.md)
 
+- [022 — Container Image Vulnerability Scanning, SBOM Generation and Dependency Security](05-container-builds-supply-chain-security/022-container-image-vulnerability-scanning-sbom-dependency-security.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
