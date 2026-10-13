@@ -40,6 +40,7 @@
 - [Chapter 034 — Volume Expansion, Snapshots and Storage Lifecycle](chapters/034-volume-expansion-snapshots-and-storage-lifecycle.md)
 - [Chapter 035 — Storage Failure and Recovery Lab](chapters/035-storage-failure-and-recovery-lab.md)
 - [Chapter 036 — ConfigMaps and Secrets](chapters/036-configmaps-and-secrets.md)
+- [Chapter 037 — Secret Management and Rotation](chapters/037-secret-management-and-rotation.md)
 
 ## Repository conventions
 
