@@ -56,6 +56,7 @@
 - [Chapter 050 — Cluster Upgrade and Maintenance Project](chapters/050-cluster-upgrade-and-maintenance-project.md)
 - [Chapter 051 — High Availability Control Plane Design](chapters/051-high-availability-control-plane-design.md)
 - [Chapter 052 — etcd Operations, Quorum and Recovery](chapters/052-etcd-operations-quorum-and-recovery.md)
+- [Chapter 053 — PodDisruptionBudgets and Graceful Shutdown](chapters/053-poddisruptionbudgets-and-graceful-shutdown.md)
 
 ## Repository conventions
 
