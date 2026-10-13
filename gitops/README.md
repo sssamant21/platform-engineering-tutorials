@@ -45,6 +45,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [003 — GitLab CI/CD Architecture, Pipelines, Jobs, Stages and Runners](01-foundations/003-gitlab-cicd-architecture-pipelines-jobs-stages-runners.md)
 
+- [004 — GitLab CI/CD Variables, Secrets, Artifacts, Caching and Secure Pipeline Configuration](01-foundations/004-gitlab-cicd-variables-secrets-artifacts-caching-secure-configuration.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
