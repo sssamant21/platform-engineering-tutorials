@@ -27,7 +27,7 @@
 | 021 | 5 | Kubernetes Scheduler Internals | Draft |
 | 022 | 5 | Node Selectors and Affinity Rules | Draft |
 | 023 | 5 | Taints, Tolerations and Topology Spread | Draft |
-| 024 | 5 | Resource Requests, Limits, QoS and Quotas | Planned |
+| 024 | 5 | Resource Requests, Limits, QoS and Quotas | Draft |
 | 025 | 5 | Scheduling and Resource Pressure Troubleshooting Lab | Planned |
 | 026 | 6 | Kubernetes Networking Architecture and CNI | Planned |
 | 027 | 6 | Services and Load Balancing | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–023 (Parts 01–04 writing milestones reached; lab validation pending). **Next:** 024 — Resource Requests, Limits, QoS and Quotas.
+**Completed:** 0 / 105. **Draft chapters:** 001–024 (Parts 01–04 writing milestones reached; lab validation pending). **Next:** 025 — Scheduling and Resource Pressure Troubleshooting Lab.
