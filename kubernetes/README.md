@@ -66,6 +66,7 @@
 - [Chapter 060 — Production Observability and Alerting Project](chapters/060-production-observability-and-alerting-project.md)
 - [Chapter 061 — Kubernetes Troubleshooting Methodology](chapters/061-kubernetes-troubleshooting-methodology.md)
 - [Chapter 062 — Container Startup and Image Pull Failures](chapters/062-container-startup-and-image-pull-failures.md)
+- [Chapter 063 — Pending, Evicted, OOMKilled and CrashLoopBackOff Pods](chapters/063-pending-evicted-oomkilled-and-crashloopbackoff-pods.md)
 
 ## Repository conventions
 
