@@ -16,6 +16,7 @@
 - [Chapter 010 — Cluster Installation and Verification Project](chapters/010-cluster-installation-and-verification-project.md)
 - [Chapter 011 — Kubernetes API and API Resources](chapters/011-kubernetes-api-and-api-resources.md)
 - [Chapter 012 — Namespaces, Labels and Annotations](chapters/012-namespaces-labels-and-annotations.md)
+- [Chapter 013 — kubectl Advanced Administration](chapters/013-kubectl-advanced-administration.md)
 
 ## Repository conventions
 
