@@ -14,7 +14,7 @@
 | 008 | 2 | kubeadm Cluster Installation | Draft |
 | 009 | 2 | Containerd, CNI and CoreDNS Configuration | Draft |
 | 010 | 2 | Cluster Installation and Verification Project | Draft |
-| 011 | 3 | Kubernetes API and API Resources | Planned |
+| 011 | 3 | Kubernetes API and API Resources | Draft |
 | 012 | 3 | Namespaces, Labels and Annotations | Planned |
 | 013 | 3 | kubectl Advanced Administration | Planned |
 | 014 | 3 | Resource Lifecycle, Finalizers and Garbage Collection | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–010 (Parts 01–02 writing milestones reached; lab validation pending). **Next:** 011 — Kubernetes API and API Resources.
+**Completed:** 0 / 105. **Draft chapters:** 001–011 (Parts 01–02 writing milestones reached; lab validation pending). **Next:** 012 — Namespaces, Labels and Annotations.
