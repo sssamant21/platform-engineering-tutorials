@@ -70,6 +70,7 @@
 - [Chapter 064 — Node, Network, DNS and Control Plane Failures](chapters/064-node-network-dns-and-control-plane-failures.md)
 - [Chapter 065 — Production Incident Investigation Project](chapters/065-production-incident-investigation-project.md)
 - [Chapter 066 — Horizontal Pod Autoscaler](chapters/066-horizontal-pod-autoscaler.md)
+- [Chapter 067 — Vertical Pod Autoscaler](chapters/067-vertical-pod-autoscaler.md)
 
 ## Repository conventions
 
