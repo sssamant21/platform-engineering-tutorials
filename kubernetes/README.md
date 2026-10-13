@@ -15,6 +15,7 @@
 - [Chapter 009 — Containerd, CNI and CoreDNS Configuration](chapters/009-containerd-cni-and-coredns-configuration.md)
 - [Chapter 010 — Cluster Installation and Verification Project](chapters/010-cluster-installation-and-verification-project.md)
 - [Chapter 011 — Kubernetes API and API Resources](chapters/011-kubernetes-api-and-api-resources.md)
+- [Chapter 012 — Namespaces, Labels and Annotations](chapters/012-namespaces-labels-and-annotations.md)
 
 ## Repository conventions
 
