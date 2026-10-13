@@ -23,6 +23,7 @@
 - [Chapter 017 — Init Containers, Sidecars and Probes](chapters/017-init-containers-sidecars-and-probes.md)
 - [Chapter 018 — Deployments, ReplicaSets and Rollouts](chapters/018-deployments-replicasets-and-rollouts.md)
 - [Chapter 019 — StatefulSets, DaemonSets, Jobs and CronJobs](chapters/019-statefulsets-daemonsets-jobs-and-cronjobs.md)
+- [Chapter 020 — Workload Administration and Recovery Lab](chapters/020-workload-administration-and-recovery-lab.md)
 
 ## Repository conventions
 
