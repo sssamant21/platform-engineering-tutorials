@@ -98,7 +98,7 @@
 | 092 | 19 | Policy as Code with Kyverno and Gatekeeper | Draft |
 | 093 | 19 | Multi-Tenancy and Namespace Governance | Draft |
 | 094 | 19 | Kubernetes Cost Management and FinOps | Draft |
-| 095 | 19 | GitOps and Governance Project | Planned |
+| 095 | 19 | GitOps and Governance Project | Draft |
 | 096 | 20 | CRDs, Operators and Custom Controllers | Planned |
 | 097 | 20 | GPU Scheduling and AI Workloads | Planned |
 | 098 | 20 | Multi-Cluster Administration and Fleet Management | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–094 (Parts 01–18 writing milestones reached; Part 19 underway; lab validation and technical review pending). **Next:** 095 — GitOps and Governance Project.
+**Completed:** 0 / 105. **Draft chapters:** 001–095 (Parts 01–19 writing milestones reached; lab validation and technical review pending). **Next:** 096 — CRDs, Operators and Custom Controllers.
