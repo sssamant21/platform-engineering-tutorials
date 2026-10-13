@@ -81,6 +81,7 @@
 - [Chapter 075 — Disaster Recovery Simulation Project](chapters/075-disaster-recovery-simulation-project.md)
 - [Chapter 076 — Amazon EKS Architecture and Provisioning](chapters/076-amazon-eks-architecture-and-provisioning.md)
 - [Chapter 077 — EKS Node Groups and Karpenter](chapters/077-eks-node-groups-and-karpenter.md)
+- [Chapter 078 — EKS Networking, Load Balancers and Storage](chapters/078-eks-networking-load-balancers-and-storage.md)
 
 ## Repository conventions
 
