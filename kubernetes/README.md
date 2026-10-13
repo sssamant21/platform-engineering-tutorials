@@ -26,6 +26,7 @@
 - [Chapter 020 — Workload Administration and Recovery Lab](chapters/020-workload-administration-and-recovery-lab.md)
 - [Chapter 021 — Kubernetes Scheduler Internals](chapters/021-kubernetes-scheduler-internals.md)
 - [Chapter 022 — Node Selectors and Affinity Rules](chapters/022-node-selectors-and-affinity-rules.md)
+- [Chapter 023 — Taints, Tolerations and Topology Spread](chapters/023-taints-tolerations-and-topology-spread.md)
 
 ## Repository conventions
 
