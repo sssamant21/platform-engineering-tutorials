@@ -87,6 +87,7 @@
 - [Chapter 081 — Azure AKS Architecture and Provisioning](chapters/081-azure-aks-architecture-and-provisioning.md)
 - [Chapter 082 — AKS Node Pools and Autoscaling](chapters/082-aks-node-pools-and-autoscaling.md)
 - [Chapter 083 — AKS Networking, Load Balancing and Storage](chapters/083-aks-networking-load-balancing-and-storage.md)
+- [Chapter 084 — AKS Identity, Security, Monitoring and Upgrades](chapters/084-aks-identity-security-monitoring-and-upgrades.md)
 
 ## Repository conventions
 
