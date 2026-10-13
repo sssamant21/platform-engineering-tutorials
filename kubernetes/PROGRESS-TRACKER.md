@@ -32,8 +32,8 @@
 | 026 | 6 | Kubernetes Networking Architecture and CNI | Draft |
 | 027 | 6 | Services and Load Balancing | Draft |
 | 028 | 6 | CoreDNS and Service Discovery | Draft |
-| 029 | 6 | Ingress Controllers and Gateway API | Planned |
-| 030 | 6 | Networking and DNS Troubleshooting Lab | Planned |
+| 029 | 6 | Ingress Controllers and Gateway API | Draft |
+| 030 | 6 | Kubernetes NetworkPolicies and Network Security (Networking Capstone) | Draft |
 | 031 | 7 | Kubernetes Volumes, PVs and PVCs | Planned |
 | 032 | 7 | StorageClasses and CSI Drivers | Planned |
 | 033 | 7 | Dynamic Provisioning and Volume Access Modes | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–028 (Parts 01–05 writing milestones reached; lab validation pending). **Next:** 029 — Ingress Controllers and Gateway API.
+**Completed:** 0 / 105. **Draft chapters:** 001–030 (Parts 01–06 writing milestones reached; lab validation and technical review pending). **Next:** 031 — Kubernetes Volumes, PVs and PVCs.
