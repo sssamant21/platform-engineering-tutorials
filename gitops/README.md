@@ -91,6 +91,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [026 — Kubernetes Deployment Fundamentals for GitLab CI/CD and GitOps](06-kubernetes-deployment-fundamentals/026-kubernetes-deployment-fundamentals-gitlab-cicd-gitops.md)
 
+- [027 — Kubernetes Configuration Management, Secrets and Environment Isolation for GitOps](06-kubernetes-deployment-fundamentals/027-kubernetes-configuration-management-secrets-environment-isolation-gitops.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
