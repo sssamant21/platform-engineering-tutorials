@@ -49,6 +49,7 @@
 - [Chapter 043 — Pod Security Standards and Security Contexts](chapters/043-pod-security-standards-and-security-contexts.md)
 - [Chapter 044 — Admission Policies and Image Security](chapters/044-admission-policies-and-image-security.md)
 - [Chapter 045 — Kubernetes Security Hardening Project](chapters/045-kubernetes-security-hardening-project.md)
+- [Chapter 046 — Node Architecture, Kubelet and Node Conditions](chapters/046-node-architecture-kubelet-and-node-conditions.md)
 
 ## Repository conventions
 
