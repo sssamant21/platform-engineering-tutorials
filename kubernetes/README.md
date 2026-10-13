@@ -71,6 +71,7 @@
 - [Chapter 065 — Production Incident Investigation Project](chapters/065-production-incident-investigation-project.md)
 - [Chapter 066 — Horizontal Pod Autoscaler](chapters/066-horizontal-pod-autoscaler.md)
 - [Chapter 067 — Vertical Pod Autoscaler](chapters/067-vertical-pod-autoscaler.md)
+- [Chapter 068 — Cluster Autoscaler and Karpenter](chapters/068-cluster-autoscaler-and-karpenter.md)
 
 ## Repository conventions
 
