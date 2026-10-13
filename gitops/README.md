@@ -57,6 +57,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [009 — GitLab Repository Security, Audit Events, Compliance and Secret Protection](02-gitlab-repository-administration/009-gitlab-repository-security-audit-compliance-secret-protection.md)
 
+- [010 — GitLab Repository Administration, Security and Governance Capstone](02-gitlab-repository-administration/010-gitlab-repository-administration-security-governance-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
