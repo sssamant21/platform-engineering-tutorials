@@ -105,9 +105,9 @@
 | 099 | 20 | Production Change Management and SRE Runbooks | Draft |
 | 100 | 20 | Advanced Production Recovery Project | Draft |
 | 101 | 21 | Build a Production-Ready Kubernetes Cluster | Draft |
-| 102 | 21 | Deploy a Highly Available Stateful Application | Planned |
+| 102 | 21 | Deploy a Highly Available Stateful Application | Draft |
 | 103 | 21 | Simulate Complex Kubernetes Failures | Planned |
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–101 (Parts 01–20 writing milestones reached; Part 21 underway; lab validation and technical review pending). **Next:** 102 — Deploy a Highly Available Stateful Application.
+**Completed:** 0 / 105. **Draft chapters:** 001–102 (Parts 01–20 writing milestones reached; Part 21 underway; lab validation and technical review pending). **Next:** 103 — Simulate Complex Kubernetes Failures.
