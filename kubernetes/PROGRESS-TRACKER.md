@@ -94,7 +94,7 @@
 | 088 | 18 | GKE Networking, VPC-Native Clusters, Load Balancing and Storage | Draft |
 | 089 | 18 | GKE Security, Workload Identity Federation, IAM, Monitoring and Upgrades | Draft |
 | 090 | 18 | GKE Production Administration, Troubleshooting and Recovery Project | Draft |
-| 091 | 19 | GitOps with Argo CD and Flux | Planned |
+| 091 | 19 | GitOps with Argo CD and Flux | Draft |
 | 092 | 19 | Policy as Code with Kyverno and Gatekeeper | Planned |
 | 093 | 19 | Multi-Tenancy and Namespace Governance | Planned |
 | 094 | 19 | Kubernetes Cost Management and FinOps | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–090 (Parts 01–18 writing milestones reached; lab validation and technical review pending). **Next:** 091 — GitOps with Argo CD and Flux.
+**Completed:** 0 / 105. **Draft chapters:** 001–091 (Parts 01–18 writing milestones reached; Part 19 underway; lab validation and technical review pending). **Next:** 092 — Policy as Code with Kyverno and Gatekeeper.
