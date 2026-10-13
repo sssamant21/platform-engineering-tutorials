@@ -21,6 +21,7 @@
 - [Chapter 015 — Resource Management and Administration Lab](chapters/015-resource-management-and-administration-lab.md)
 - [Chapter 016 — Pod Architecture and Lifecycle](chapters/016-pod-architecture-and-lifecycle.md)
 - [Chapter 017 — Init Containers, Sidecars and Probes](chapters/017-init-containers-sidecars-and-probes.md)
+- [Chapter 018 — Deployments, ReplicaSets and Rollouts](chapters/018-deployments-replicasets-and-rollouts.md)
 
 ## Repository conventions
 
