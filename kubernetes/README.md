@@ -31,6 +31,7 @@
 - [Chapter 025 — Scheduling and Resource Pressure Troubleshooting Lab](chapters/025-scheduling-and-resource-pressure-troubleshooting-lab.md)
 - [Chapter 026 — Kubernetes Networking Architecture and CNI](chapters/026-kubernetes-networking-architecture-and-cni.md)
 - [Chapter 027 — Services and Load Balancing](chapters/027-services-and-load-balancing.md)
+- [Chapter 028 — CoreDNS and Service Discovery](chapters/028-coredns-and-service-discovery.md)
 
 ## Repository conventions
 
