@@ -81,7 +81,7 @@
 | 075 | 15 | Disaster Recovery Simulation Project | Draft |
 | 076 | 16 | Amazon EKS Architecture and Provisioning | Draft |
 | 077 | 16 | EKS Node Groups and Karpenter | Draft |
-| 078 | 16 | EKS Networking, Load Balancers and Storage | Planned |
+| 078 | 16 | EKS Networking, Load Balancers and Storage | Draft |
 | 079 | 16 | EKS Security, Identity, Monitoring and Upgrades | Planned |
 | 080 | 16 | EKS Production Operations Project | Planned |
 | 081 | 17 | Azure AKS Architecture and Provisioning | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–077 (Parts 01–15 writing milestones reached; Part 16 underway; lab validation and technical review pending). **Next:** 078 — EKS Networking, Load Balancers and Storage.
+**Completed:** 0 / 105. **Draft chapters:** 001–078 (Parts 01–15 writing milestones reached; Part 16 underway; lab validation and technical review pending). **Next:** 079 — EKS Security, Identity, Monitoring and Upgrades.
