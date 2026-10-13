@@ -67,7 +67,7 @@
 | 061 | 13 | Kubernetes Troubleshooting Methodology | Draft |
 | 062 | 13 | Container Startup and Image Pull Failures | Draft |
 | 063 | 13 | Pending, Evicted, OOMKilled and CrashLoopBackOff Pods | Draft |
-| 064 | 13 | Node, Network, DNS and Control Plane Failures | Planned |
+| 064 | 13 | Node, Network, DNS and Control Plane Failures | Draft |
 | 065 | 13 | Production Incident Investigation Project | Planned |
 | 066 | 14 | Horizontal Pod Autoscaler | Planned |
 | 067 | 14 | Vertical Pod Autoscaler | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–063 (Parts 01–12 writing milestones reached; Part 13 underway; lab validation and technical review pending). **Next:** 064 — Node, Network, DNS and Control Plane Failures.
+**Completed:** 0 / 105. **Draft chapters:** 001–064 (Parts 01–12 writing milestones reached; Part 13 underway; lab validation and technical review pending). **Next:** 065 — Production Incident Investigation Project.
