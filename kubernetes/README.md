@@ -75,6 +75,7 @@
 - [Chapter 069 — CPU, Memory, Network and Storage Capacity Planning](chapters/069-cpu-memory-network-and-storage-capacity-planning.md)
 - [Chapter 070 — Kubernetes Performance and Scaling Project](chapters/070-kubernetes-performance-and-scaling-project.md)
 - [Chapter 071 — Kubernetes Backup Strategy and RPO/RTO](chapters/071-kubernetes-backup-strategy-and-rpo-rto.md)
+- [Chapter 072 — etcd Backup and Restore](chapters/072-etcd-backup-and-restore.md)
 
 ## Repository conventions
 
