@@ -97,7 +97,7 @@
 | 091 | 19 | GitOps with Argo CD and Flux | Draft |
 | 092 | 19 | Policy as Code with Kyverno and Gatekeeper | Draft |
 | 093 | 19 | Multi-Tenancy and Namespace Governance | Draft |
-| 094 | 19 | Kubernetes Cost Management and FinOps | Planned |
+| 094 | 19 | Kubernetes Cost Management and FinOps | Draft |
 | 095 | 19 | GitOps and Governance Project | Planned |
 | 096 | 20 | CRDs, Operators and Custom Controllers | Planned |
 | 097 | 20 | GPU Scheduling and AI Workloads | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–093 (Parts 01–18 writing milestones reached; Part 19 underway; lab validation and technical review pending). **Next:** 094 — Kubernetes Cost Management and FinOps.
+**Completed:** 0 / 105. **Draft chapters:** 001–094 (Parts 01–18 writing milestones reached; Part 19 underway; lab validation and technical review pending). **Next:** 095 — GitOps and Governance Project.
