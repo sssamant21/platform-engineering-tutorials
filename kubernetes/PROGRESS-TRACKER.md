@@ -34,7 +34,7 @@
 | 028 | 6 | CoreDNS and Service Discovery | Draft |
 | 029 | 6 | Ingress Controllers and Gateway API | Draft |
 | 030 | 6 | Kubernetes NetworkPolicies and Network Security (Networking Capstone) | Draft |
-| 031 | 7 | Kubernetes Volumes, PVs and PVCs | Planned |
+| 031 | 7 | Kubernetes Volumes, PVs and PVCs | Draft |
 | 032 | 7 | StorageClasses and CSI Drivers | Planned |
 | 033 | 7 | Dynamic Provisioning and Volume Access Modes | Planned |
 | 034 | 7 | Volume Expansion, Snapshots and Storage Lifecycle | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–030 (Parts 01–06 writing milestones reached; lab validation and technical review pending). **Next:** 031 — Kubernetes Volumes, PVs and PVCs.
+**Completed:** 0 / 105. **Draft chapters:** 001–031 (Parts 01–06 writing milestones reached; Part 07 started; lab validation and technical review pending). **Next:** 032 — StorageClasses and CSI Drivers.
