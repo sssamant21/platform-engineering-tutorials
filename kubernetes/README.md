@@ -94,6 +94,7 @@
 - [Chapter 088 — GKE Networking, VPC-Native Clusters, Load Balancing and Storage](chapters/088-gke-networking-vpc-native-clusters-load-balancing-and-storage.md)
 - [Chapter 089 — GKE Security, Workload Identity Federation, IAM, Monitoring and Upgrades](chapters/089-gke-security-workload-identity-federation-iam-monitoring-and-upgrades.md)
 - [Chapter 090 — GKE Production Administration, Troubleshooting and Recovery Project](chapters/090-gke-production-administration-troubleshooting-and-recovery-project.md)
+- [Chapter 091 — GitOps with Argo CD and Flux](chapters/091-gitops-with-argo-cd-and-flux.md)
 
 ## Repository conventions
 
