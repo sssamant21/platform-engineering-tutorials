@@ -77,6 +77,7 @@
 - [Chapter 071 — Kubernetes Backup Strategy and RPO/RTO](chapters/071-kubernetes-backup-strategy-and-rpo-rto.md)
 - [Chapter 072 — etcd Backup and Restore](chapters/072-etcd-backup-and-restore.md)
 - [Chapter 073 — Velero and Persistent Volume Backups](chapters/073-velero-and-persistent-volume-backups.md)
+- [Chapter 074 — Cross-Cluster Restore and Disaster Recovery](chapters/074-cross-cluster-restore-and-disaster-recovery.md)
 
 ## Repository conventions
 
