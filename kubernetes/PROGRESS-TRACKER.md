@@ -13,7 +13,7 @@
 | 007 | 2 | Kubernetes Local Lab with kind and Minikube | Draft |
 | 008 | 2 | kubeadm Cluster Installation | Draft |
 | 009 | 2 | Containerd, CNI and CoreDNS Configuration | Draft |
-| 010 | 2 | Cluster Installation and Verification Project | Planned |
+| 010 | 2 | Cluster Installation and Verification Project | Draft |
 | 011 | 3 | Kubernetes API and API Resources | Planned |
 | 012 | 3 | Namespaces, Labels and Annotations | Planned |
 | 013 | 3 | kubectl Advanced Administration | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–009 (Part 01 writing milestone reached; lab validation pending). **Next:** 010 — Cluster Installation and Verification Project.
+**Completed:** 0 / 105. **Draft chapters:** 001–010 (Parts 01–02 writing milestones reached; lab validation pending). **Next:** 011 — Kubernetes API and API Resources.
