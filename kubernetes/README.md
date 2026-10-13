@@ -91,6 +91,7 @@
 - [Chapter 085 — AKS Production Operations Project](chapters/085-aks-production-operations-project.md)
 - [Chapter 086 — Google GKE Architecture, Control Plane and Cluster Provisioning](chapters/086-google-gke-architecture-control-plane-and-cluster-provisioning.md)
 - [Chapter 087 — GKE Standard vs Autopilot, Node Pools and Autoscaling](chapters/087-gke-standard-vs-autopilot-node-pools-and-autoscaling.md)
+- [Chapter 088 — GKE Networking, VPC-Native Clusters, Load Balancing and Storage](chapters/088-gke-networking-vpc-native-clusters-load-balancing-and-storage.md)
 
 ## Repository conventions
 
