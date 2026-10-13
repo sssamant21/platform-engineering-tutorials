@@ -53,6 +53,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [007 — GitLab Protected Branches, Tags, CODEOWNERS and Approval Policies](02-gitlab-repository-administration/007-gitlab-protected-branches-tags-codeowners-approval-policies.md)
 
+- [008 — GitLab Merge Request Workflows, Branching Strategies and Release Governance](02-gitlab-repository-administration/008-gitlab-merge-request-workflows-branching-strategies-release-governance.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
