@@ -16,7 +16,7 @@
 | 010 | 2 | Cluster Installation and Verification Project | Draft |
 | 011 | 3 | Kubernetes API and API Resources | Draft |
 | 012 | 3 | Namespaces, Labels and Annotations | Draft |
-| 013 | 3 | kubectl Advanced Administration | Planned |
+| 013 | 3 | kubectl Advanced Administration | Draft |
 | 014 | 3 | Resource Lifecycle, Finalizers and Garbage Collection | Planned |
 | 015 | 3 | Resource Management and Administration Lab | Planned |
 | 016 | 4 | Pod Architecture and Lifecycle | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–012 (Parts 01–02 writing milestones reached; lab validation pending). **Next:** 013 — kubectl Advanced Administration.
+**Completed:** 0 / 105. **Draft chapters:** 001–013 (Parts 01–02 writing milestones reached; lab validation pending). **Next:** 014 — Resource Lifecycle, Finalizers and Garbage Collection.
