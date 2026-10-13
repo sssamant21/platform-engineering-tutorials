@@ -79,7 +79,7 @@
 | 073 | 15 | Velero and Persistent Volume Backups | Draft |
 | 074 | 15 | Cross-Cluster Restore and Disaster Recovery | Draft |
 | 075 | 15 | Disaster Recovery Simulation Project | Draft |
-| 076 | 16 | Amazon EKS Architecture and Provisioning | Planned |
+| 076 | 16 | Amazon EKS Architecture and Provisioning | Draft |
 | 077 | 16 | EKS Node Groups and Karpenter | Planned |
 | 078 | 16 | EKS Networking, Load Balancers and Storage | Planned |
 | 079 | 16 | EKS Security, Identity, Monitoring and Upgrades | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–075 (Parts 01–15 writing milestones reached; lab validation and technical review pending). **Next:** 076 — Amazon EKS Architecture and Provisioning.
+**Completed:** 0 / 105. **Draft chapters:** 001–076 (Parts 01–15 writing milestones reached; Part 16 underway; lab validation and technical review pending). **Next:** 077 — EKS Node Groups and Karpenter.
