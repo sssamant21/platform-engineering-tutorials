@@ -25,6 +25,7 @@
 - [Chapter 019 — StatefulSets, DaemonSets, Jobs and CronJobs](chapters/019-statefulsets-daemonsets-jobs-and-cronjobs.md)
 - [Chapter 020 — Workload Administration and Recovery Lab](chapters/020-workload-administration-and-recovery-lab.md)
 - [Chapter 021 — Kubernetes Scheduler Internals](chapters/021-kubernetes-scheduler-internals.md)
+- [Chapter 022 — Node Selectors and Affinity Rules](chapters/022-node-selectors-and-affinity-rules.md)
 
 ## Repository conventions
 
