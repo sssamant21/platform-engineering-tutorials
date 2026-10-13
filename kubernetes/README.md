@@ -60,6 +60,7 @@
 - [Chapter 054 — Multi-Zone Availability and Failure Domains](chapters/054-multi-zone-availability-and-failure-domains.md)
 - [Chapter 055 — High Availability Failure Simulation Project](chapters/055-high-availability-failure-simulation-project.md)
 - [Chapter 056 — Kubernetes Metrics, Logs and Events](chapters/056-kubernetes-metrics-logs-and-events.md)
+- [Chapter 057 — Metrics Server and Prometheus](chapters/057-metrics-server-and-prometheus.md)
 
 ## Repository conventions
 
