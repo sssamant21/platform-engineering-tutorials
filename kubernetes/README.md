@@ -48,6 +48,7 @@
 - [Chapter 042 — ServiceAccounts and Workload Identity](chapters/042-serviceaccounts-and-workload-identity.md)
 - [Chapter 043 — Pod Security Standards and Security Contexts](chapters/043-pod-security-standards-and-security-contexts.md)
 - [Chapter 044 — Admission Policies and Image Security](chapters/044-admission-policies-and-image-security.md)
+- [Chapter 045 — Kubernetes Security Hardening Project](chapters/045-kubernetes-security-hardening-project.md)
 
 ## Repository conventions
 
