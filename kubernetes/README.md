@@ -19,6 +19,7 @@
 - [Chapter 013 — kubectl Advanced Administration](chapters/013-kubectl-advanced-administration.md)
 - [Chapter 014 — Resource Lifecycle, Finalizers and Garbage Collection](chapters/014-resource-lifecycle-finalizers-and-garbage-collection.md)
 - [Chapter 015 — Resource Management and Administration Lab](chapters/015-resource-management-and-administration-lab.md)
+- [Chapter 016 — Pod Architecture and Lifecycle](chapters/016-pod-architecture-and-lifecycle.md)
 
 ## Repository conventions
 
