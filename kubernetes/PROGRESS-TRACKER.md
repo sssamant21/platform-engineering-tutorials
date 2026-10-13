@@ -4,8 +4,8 @@
 
 | Chapter | Part | Title | Status |
 |---|---:|---|---|
-| 001 | 1 | What Is Kubernetes? | Planned |
-| 002 | 1 | Containers, Images and Container Runtimes | Planned |
+| 001 | 1 | What Is Kubernetes? | Draft |
+| 002 | 1 | Containers, Images and Container Runtimes | Draft |
 | 003 | 1 | Kubernetes Architecture and Components | Planned |
 | 004 | 1 | Control Plane, Worker Nodes and etcd | Planned |
 | 005 | 1 | Kubernetes Objects, YAML and Declarative Management | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Next:** 001 — What Is Kubernetes?
+**Completed:** 0 / 105. **Draft chapters:** 001, 002. **Next:** 003 — Kubernetes Architecture and Components.
