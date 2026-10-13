@@ -37,7 +37,7 @@
 | 031 | 7 | Kubernetes Volumes, PVs and PVCs | Draft |
 | 032 | 7 | StorageClasses and CSI Drivers | Draft |
 | 033 | 7 | Dynamic Provisioning and Volume Access Modes | Draft |
-| 034 | 7 | Volume Expansion, Snapshots and Storage Lifecycle | Planned |
+| 034 | 7 | Volume Expansion, Snapshots and Storage Lifecycle | Draft |
 | 035 | 7 | Storage Failure and Recovery Lab | Planned |
 | 036 | 8 | ConfigMaps and Secrets | Planned |
 | 037 | 8 | Secret Management and Rotation | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–033 (Parts 01–06 writing milestones reached; Part 07 underway; lab validation and technical review pending). **Next:** 034 — Volume Expansion, Snapshots and Storage Lifecycle.
+**Completed:** 0 / 105. **Draft chapters:** 001–034 (Parts 01–06 writing milestones reached; Part 07 underway; lab validation and technical review pending). **Next:** 035 — Storage Failure and Recovery Lab.
