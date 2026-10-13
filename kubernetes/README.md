@@ -101,6 +101,7 @@
 - [Chapter 095 — GitOps and Governance Project](chapters/095-gitops-and-governance-project.md)
 - [Chapter 096 — CRDs, Operators and Custom Controllers](chapters/096-crds-operators-and-custom-controllers.md)
 - [Chapter 097 — GPU Scheduling and AI Workloads](chapters/097-gpu-scheduling-and-ai-workloads.md)
+- [Chapter 098 — Multi-Cluster Administration and Fleet Management](chapters/098-multi-cluster-administration-and-fleet-management.md)
 
 ## Repository conventions
 
