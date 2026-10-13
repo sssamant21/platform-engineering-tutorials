@@ -63,6 +63,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [012 — GitLab CI/CD Jobs, Stages, Dependencies and DAG Optimization](03-gitlab-cicd-fundamentals/012-gitlab-ci-jobs-stages-dependencies-dag-optimization.md)
 
+- [013 — GitLab CI/CD Variables, Environments, Secrets and Configuration Precedence](03-gitlab-cicd-fundamentals/013-gitlab-cicd-variables-environments-secrets-configuration-precedence.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
