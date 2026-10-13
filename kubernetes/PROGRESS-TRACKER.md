@@ -22,7 +22,7 @@
 | 016 | 4 | Pod Architecture and Lifecycle | Draft |
 | 017 | 4 | Init Containers, Sidecars and Probes | Draft |
 | 018 | 4 | Deployments, ReplicaSets and Rollouts | Draft |
-| 019 | 4 | StatefulSets, DaemonSets, Jobs and CronJobs | Planned |
+| 019 | 4 | StatefulSets, DaemonSets, Jobs and CronJobs | Draft |
 | 020 | 4 | Workload Administration and Recovery Lab | Planned |
 | 021 | 5 | Kubernetes Scheduler Internals | Planned |
 | 022 | 5 | Node Selectors and Affinity Rules | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–018 (Parts 01–03 writing milestones reached; lab validation pending). **Next:** 019 — StatefulSets, DaemonSets, Jobs and CronJobs.
+**Completed:** 0 / 105. **Draft chapters:** 001–019 (Parts 01–03 writing milestones reached; lab validation pending). **Next:** 020 — Workload Administration and Recovery Lab.
