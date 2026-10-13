@@ -53,6 +53,7 @@
 - [Chapter 047 — Cordon, Drain and Node Maintenance](chapters/047-cordon-drain-and-node-maintenance.md)
 - [Chapter 048 — Kubernetes Version Upgrades](chapters/048-kubernetes-version-upgrades.md)
 - [Chapter 049 — Certificate Management and Rotation](chapters/049-certificate-management-and-rotation.md)
+- [Chapter 050 — Cluster Upgrade and Maintenance Project](chapters/050-cluster-upgrade-and-maintenance-project.md)
 
 ## Repository conventions
 
