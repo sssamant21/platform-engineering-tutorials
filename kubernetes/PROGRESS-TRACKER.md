@@ -108,6 +108,6 @@
 | 102 | 21 | Deploy a Highly Available Stateful Application | Draft |
 | 103 | 21 | Simulate Complex Kubernetes Failures | Draft |
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Draft |
-| 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
+| 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Draft |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–104 (Parts 01–20 writing milestones reached; Part 21 underway; lab validation and technical review pending). **Next:** 105 — Kubernetes Administrator and SRE Final Assessment.
+**Completed:** 0 / 105. **Draft chapters:** 001–105 (all 21 parts and 105 chapters drafted; lab execution, technical review and acceptance pending). **Next:** Validate labs, perform independent review and close identified gaps.
