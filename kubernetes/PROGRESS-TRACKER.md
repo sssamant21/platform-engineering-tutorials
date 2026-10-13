@@ -64,7 +64,7 @@
 | 058 | 12 | Grafana Dashboards and Alertmanager | Draft |
 | 059 | 12 | OpenTelemetry and Distributed Tracing | Draft |
 | 060 | 12 | Production Observability and Alerting Project | Draft |
-| 061 | 13 | Kubernetes Troubleshooting Methodology | Planned |
+| 061 | 13 | Kubernetes Troubleshooting Methodology | Draft |
 | 062 | 13 | Container Startup and Image Pull Failures | Planned |
 | 063 | 13 | Pending, Evicted, OOMKilled and CrashLoopBackOff Pods | Planned |
 | 064 | 13 | Node, Network, DNS and Control Plane Failures | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–060 (Parts 01–12 writing milestones reached; lab validation and technical review pending). **Next:** 061 — Kubernetes Troubleshooting Methodology.
+**Completed:** 0 / 105. **Draft chapters:** 001–061 (Parts 01–12 writing milestones reached; Part 13 underway; lab validation and technical review pending). **Next:** 062 — Container Startup and Image Pull Failures.
