@@ -7,6 +7,7 @@
 - [Chapter 001 — What Is Kubernetes?](chapters/001-what-is-kubernetes.md)
 - [Chapter 002 — Containers, Images and Container Runtimes](chapters/002-containers-images-and-container-runtimes.md)
 - [Chapter 003 — Kubernetes Architecture and Components](chapters/003-kubernetes-architecture-and-components.md)
+- [Chapter 004 — Control Plane, Worker Nodes and etcd](chapters/004-control-plane-worker-nodes-and-etcd.md)
 
 ## Repository conventions
 
