@@ -30,7 +30,7 @@
 | 024 | 5 | Resource Requests, Limits, QoS and Quotas | Draft |
 | 025 | 5 | Scheduling and Resource Pressure Troubleshooting Lab | Draft |
 | 026 | 6 | Kubernetes Networking Architecture and CNI | Draft |
-| 027 | 6 | Services and Load Balancing | Planned |
+| 027 | 6 | Services and Load Balancing | Draft |
 | 028 | 6 | CoreDNS and Service Discovery | Planned |
 | 029 | 6 | Ingress Controllers and Gateway API | Planned |
 | 030 | 6 | Networking and DNS Troubleshooting Lab | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–026 (Parts 01–05 writing milestones reached; lab validation pending). **Next:** 027 — Services and Load Balancing.
+**Completed:** 0 / 105. **Draft chapters:** 001–027 (Parts 01–05 writing milestones reached; lab validation pending). **Next:** 028 — CoreDNS and Service Discovery.
