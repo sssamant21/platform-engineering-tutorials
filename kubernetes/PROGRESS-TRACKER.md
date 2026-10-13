@@ -21,7 +21,7 @@
 | 015 | 3 | Resource Management and Administration Lab | Draft |
 | 016 | 4 | Pod Architecture and Lifecycle | Draft |
 | 017 | 4 | Init Containers, Sidecars and Probes | Draft |
-| 018 | 4 | Deployments, ReplicaSets and Rollouts | Planned |
+| 018 | 4 | Deployments, ReplicaSets and Rollouts | Draft |
 | 019 | 4 | StatefulSets, DaemonSets, Jobs and CronJobs | Planned |
 | 020 | 4 | Workload Administration and Recovery Lab | Planned |
 | 021 | 5 | Kubernetes Scheduler Internals | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–017 (Parts 01–03 writing milestones reached; lab validation pending). **Next:** 018 — Deployments, ReplicaSets and Rollouts.
+**Completed:** 0 / 105. **Draft chapters:** 001–018 (Parts 01–03 writing milestones reached; lab validation pending). **Next:** 019 — StatefulSets, DaemonSets, Jobs and CronJobs.
