@@ -61,6 +61,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [011 — GitLab CI/CD YAML Fundamentals, Pipeline Structure and Execution Rules](03-gitlab-cicd-fundamentals/011-gitlab-ci-yaml-fundamentals-pipeline-structure-execution-rules.md)
 
+- [012 — GitLab CI/CD Jobs, Stages, Dependencies and DAG Optimization](03-gitlab-cicd-fundamentals/012-gitlab-ci-jobs-stages-dependencies-dag-optimization.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
