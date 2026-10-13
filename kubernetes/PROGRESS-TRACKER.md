@@ -24,7 +24,7 @@
 | 018 | 4 | Deployments, ReplicaSets and Rollouts | Draft |
 | 019 | 4 | StatefulSets, DaemonSets, Jobs and CronJobs | Draft |
 | 020 | 4 | Workload Administration and Recovery Lab | Draft |
-| 021 | 5 | Kubernetes Scheduler Internals | Planned |
+| 021 | 5 | Kubernetes Scheduler Internals | Draft |
 | 022 | 5 | Node Selectors and Affinity Rules | Planned |
 | 023 | 5 | Taints, Tolerations and Topology Spread | Planned |
 | 024 | 5 | Resource Requests, Limits, QoS and Quotas | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–020 (Parts 01–04 writing milestones reached; lab validation pending). **Next:** 021 — Kubernetes Scheduler Internals.
+**Completed:** 0 / 105. **Draft chapters:** 001–021 (Parts 01–04 writing milestones reached; lab validation pending). **Next:** 022 — Node Selectors and Affinity Rules.
