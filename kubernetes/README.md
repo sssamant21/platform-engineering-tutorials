@@ -27,6 +27,7 @@
 - [Chapter 021 — Kubernetes Scheduler Internals](chapters/021-kubernetes-scheduler-internals.md)
 - [Chapter 022 — Node Selectors and Affinity Rules](chapters/022-node-selectors-and-affinity-rules.md)
 - [Chapter 023 — Taints, Tolerations and Topology Spread](chapters/023-taints-tolerations-and-topology-spread.md)
+- [Chapter 024 — Resource Requests, Limits, QoS and Quotas](chapters/024-resource-requests-limits-qos-and-quotas.md)
 
 ## Repository conventions
 
