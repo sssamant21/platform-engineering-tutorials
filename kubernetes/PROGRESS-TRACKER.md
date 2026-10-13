@@ -90,7 +90,7 @@
 | 084 | 17 | AKS Identity, Security, Monitoring and Upgrades | Draft |
 | 085 | 17 | AKS Production Operations Project | Draft |
 | 086 | 18 | Google GKE Architecture, Control Plane and Cluster Provisioning | Draft |
-| 087 | 18 | GKE Standard vs Autopilot, Node Pools and Autoscaling | Planned |
+| 087 | 18 | GKE Standard vs Autopilot, Node Pools and Autoscaling | Draft |
 | 088 | 18 | GKE Networking, VPC-Native Clusters, Load Balancing and Storage | Planned |
 | 089 | 18 | GKE Security, Workload Identity Federation, IAM, Monitoring and Upgrades | Planned |
 | 090 | 18 | GKE Production Administration, Troubleshooting and Recovery Project | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001–086 (Parts 01–17 writing milestones reached; Part 18 underway; lab validation and technical review pending). **Next:** 087 — GKE Standard vs Autopilot, Node Pools and Autoscaling.
+**Completed:** 0 / 105. **Draft chapters:** 001–087 (Parts 01–17 writing milestones reached; Part 18 underway; lab validation and technical review pending). **Next:** 088 — GKE Networking, VPC-Native Clusters, Load Balancing and Storage.
