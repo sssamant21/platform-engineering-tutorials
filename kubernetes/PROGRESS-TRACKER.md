@@ -8,7 +8,7 @@
 | 002 | 1 | Containers, Images and Container Runtimes | Draft |
 | 003 | 1 | Kubernetes Architecture and Components | Draft |
 | 004 | 1 | Control Plane, Worker Nodes and etcd | Draft |
-| 005 | 1 | Kubernetes Objects, YAML and Declarative Management | Planned |
+| 005 | 1 | Kubernetes Objects, YAML and Declarative Management | Draft |
 | 006 | 2 | kubectl Installation and kubeconfig | Planned |
 | 007 | 2 | Kubernetes Local Lab with kind and Minikube | Planned |
 | 008 | 2 | kubeadm Cluster Installation | Planned |
@@ -110,4 +110,4 @@
 | 104 | 21 | Upgrade, Recover and Validate a Production Cluster | Planned |
 | 105 | 21 | Kubernetes Administrator and SRE Final Assessment | Planned |
 
-**Completed:** 0 / 105. **Draft chapters:** 001, 002, 003, 004. **Next:** 005 — Kubernetes Objects, YAML and Declarative Management.
+**Completed:** 0 / 105. **Draft chapters:** 001–005 (Part 01 writing milestone reached; lab validation pending). **Next:** 006 — kubectl Installation and kubeconfig.
