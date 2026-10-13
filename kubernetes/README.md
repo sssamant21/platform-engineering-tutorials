@@ -46,6 +46,7 @@
 - [Chapter 040 — Configuration Management and Rollback Lab](chapters/040-configuration-management-and-rollback-lab.md)
 - [Chapter 041 — Kubernetes Authentication and RBAC](chapters/041-kubernetes-authentication-and-rbac.md)
 - [Chapter 042 — ServiceAccounts and Workload Identity](chapters/042-serviceaccounts-and-workload-identity.md)
+- [Chapter 043 — Pod Security Standards and Security Contexts](chapters/043-pod-security-standards-and-security-contexts.md)
 
 ## Repository conventions
 
