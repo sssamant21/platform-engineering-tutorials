@@ -42,6 +42,7 @@
 - [Chapter 036 — ConfigMaps and Secrets](chapters/036-configmaps-and-secrets.md)
 - [Chapter 037 — Secret Management and Rotation](chapters/037-secret-management-and-rotation.md)
 - [Chapter 038 — Helm Installation, Charts and Releases](chapters/038-helm-installation-charts-and-releases.md)
+- [Chapter 039 — Kustomize and Environment Overlays](chapters/039-kustomize-and-environment-overlays.md)
 
 ## Repository conventions
 
