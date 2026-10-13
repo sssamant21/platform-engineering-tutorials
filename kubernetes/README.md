@@ -83,6 +83,7 @@
 - [Chapter 077 — EKS Node Groups and Karpenter](chapters/077-eks-node-groups-and-karpenter.md)
 - [Chapter 078 — EKS Networking, Load Balancers and Storage](chapters/078-eks-networking-load-balancers-and-storage.md)
 - [Chapter 079 — EKS Security, Identity, Monitoring and Upgrades](chapters/079-eks-security-identity-monitoring-and-upgrades.md)
+- [Chapter 080 — EKS Production Operations Project](chapters/080-eks-production-operations-project.md)
 
 ## Repository conventions
 
