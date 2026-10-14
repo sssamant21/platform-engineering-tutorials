@@ -115,6 +115,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [038 — Argo CD CLI, UI, Authentication and Repository Connectivity](08-argocd-fundamentals-installation/038-argocd-cli-ui-authentication-repository-connectivity.md)
 
+- [039 — Argo CD Application Creation, Synchronization, Health and Drift Detection](08-argocd-fundamentals-installation/039-argocd-application-creation-synchronization-health-drift-detection.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
