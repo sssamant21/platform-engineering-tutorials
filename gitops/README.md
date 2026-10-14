@@ -119,6 +119,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [040 — Argo CD Installation, Application Operations and Recovery Capstone](08-argocd-fundamentals-installation/040-argocd-installation-application-operations-recovery-capstone.md)
 
+- [041 — Argo CD Application Architecture, Sources, Destinations and Multi-Environment Design](09-argocd-applications-applicationsets/041-argocd-application-architecture-sources-destinations-multi-environment-design.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
