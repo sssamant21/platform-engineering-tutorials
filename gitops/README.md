@@ -139,6 +139,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [050 — Argo CD Security, Multi-Tenancy and High Availability Production Capstone](10-argocd-security-multitenancy-ha/050-argocd-security-multitenancy-high-availability-production-capstone.md)
 
+- [051 — Environment Promotion Architecture and Release Governance](11-environment-promotion-release-governance/051-environment-promotion-architecture-release-governance.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
