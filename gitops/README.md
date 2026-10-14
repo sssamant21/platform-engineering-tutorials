@@ -147,6 +147,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [054 — GitOps Release Rollback, Disaster Recovery and Deployment Safety Controls](11-environment-promotion-release-governance/054-gitops-release-rollback-disaster-recovery-deployment-safety-controls.md)
 
+- [055 — Enterprise Environment Promotion and Release Governance Capstone](11-environment-promotion-release-governance/055-enterprise-environment-promotion-release-governance-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
