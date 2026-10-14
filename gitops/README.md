@@ -93,6 +93,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [027 — Kubernetes Configuration Management, Secrets and Environment Isolation for GitOps](06-kubernetes-deployment-fundamentals/027-kubernetes-configuration-management-secrets-environment-isolation-gitops.md)
 
+- [028 — Kubernetes Services, Ingress, DNS and Application Connectivity for GitOps](06-kubernetes-deployment-fundamentals/028-kubernetes-services-ingress-dns-application-connectivity-gitops.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
