@@ -155,6 +155,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [058 — Blue-Green Deployment, Preview Validation and Zero-Downtime Cutover Operations](12-progressive-delivery-advanced-deployment-strategies/058-blue-green-deployment-preview-validation-zero-downtime-cutover-operations.md)
 
+- [059 — Feature Flags, Experimentation and Progressive Release Observability](12-progressive-delivery-advanced-deployment-strategies/059-feature-flags-experimentation-progressive-release-observability.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
