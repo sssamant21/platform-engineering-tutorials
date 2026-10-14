@@ -133,6 +133,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [047 — Argo CD High Availability, Scaling and Production Resilience](10-argocd-security-multitenancy-ha/047-argocd-high-availability-scaling-production-resilience.md)
 
+- [048 — Argo CD Security Hardening, Auditability and Operational Governance](10-argocd-security-multitenancy-ha/048-argocd-security-hardening-auditability-operational-governance.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
