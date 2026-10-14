@@ -141,6 +141,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [051 — Environment Promotion Architecture and Release Governance](11-environment-promotion-release-governance/051-environment-promotion-architecture-release-governance.md)
 
+- [052 — GitLab Promotion Pipelines, Approval Gates and Release Automation](11-environment-promotion-release-governance/052-gitlab-promotion-pipelines-approval-gates-release-automation.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
