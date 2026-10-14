@@ -101,6 +101,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [031 — Helm Architecture, Charts, Templates and Values Fundamentals](07-enterprise-helm-chart-engineering/031-helm-architecture-charts-templates-values-fundamentals.md)
 
+- [032 — Advanced Helm Templates, Functions, Helpers and Values Schema Design](07-enterprise-helm-chart-engineering/032-advanced-helm-templates-functions-helpers-values-schema-design.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
