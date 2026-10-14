@@ -163,6 +163,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [062 — SOPS, Sealed Secrets and Encryption Key Lifecycle for GitOps](13-secrets-policy-workload-identity/062-sops-sealed-secrets-encryption-key-lifecycle-gitops.md)
 
+- [063 — Kubernetes Admission Policies, OPA Gatekeeper and Kyverno for GitOps Security](13-secrets-policy-workload-identity/063-kubernetes-admission-policies-opa-gatekeeper-kyverno-gitops-security.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
