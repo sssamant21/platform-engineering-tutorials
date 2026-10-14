@@ -165,6 +165,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [063 — Kubernetes Admission Policies, OPA Gatekeeper and Kyverno for GitOps Security](13-secrets-policy-workload-identity/063-kubernetes-admission-policies-opa-gatekeeper-kyverno-gitops-security.md)
 
+- [064 — Policy-as-Code Supply Chain Security, Image Signing and Provenance Enforcement](13-secrets-policy-workload-identity/064-policy-as-code-supply-chain-security-image-signing-provenance-enforcement.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
