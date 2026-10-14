@@ -167,6 +167,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [064 — Policy-as-Code Supply Chain Security, Image Signing and Provenance Enforcement](13-secrets-policy-workload-identity/064-policy-as-code-supply-chain-security-image-signing-provenance-enforcement.md)
 
+- [065 — Enterprise GitOps Security, Secrets and Policy Compliance Capstone](13-secrets-policy-workload-identity/065-enterprise-gitops-security-secrets-policy-compliance-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
