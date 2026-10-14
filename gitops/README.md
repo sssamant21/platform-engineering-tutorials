@@ -151,6 +151,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [056 — Progressive Delivery Fundamentals: Canary, Blue-Green and Release Risk](12-progressive-delivery-advanced-deployment-strategies/056-progressive-delivery-fundamentals-canary-blue-green-release-risk.md)
 
+- [057 — Argo Rollouts Canary Analysis, Traffic Routing and Automated Promotion](12-progressive-delivery-advanced-deployment-strategies/057-argo-rollouts-canary-analysis-traffic-routing-automated-promotion.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
