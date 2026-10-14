@@ -161,6 +161,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [061 — GitOps Secrets Management, External Secrets and Workload Identity Fundamentals](13-secrets-policy-workload-identity/061-gitops-secrets-management-external-secrets-workload-identity-fundamentals.md)
 
+- [062 — SOPS, Sealed Secrets and Encryption Key Lifecycle for GitOps](13-secrets-policy-workload-identity/062-sops-sealed-secrets-encryption-key-lifecycle-gitops.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
