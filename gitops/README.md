@@ -107,6 +107,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [034 — Helm Release Lifecycle, Upgrades, Rollbacks and Production Troubleshooting](07-enterprise-helm-chart-engineering/034-helm-release-lifecycle-upgrades-rollbacks-production-troubleshooting.md)
 
+- [035 — Enterprise Helm Chart Engineering, Security and Release Operations Capstone](07-enterprise-helm-chart-engineering/035-enterprise-helm-chart-engineering-security-release-operations-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
