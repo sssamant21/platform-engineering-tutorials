@@ -127,6 +127,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [044 — Argo CD Multi-Source Applications, Helm Values Repositories and ApplicationSet Governance](09-argocd-applications-applicationsets/044-argocd-multi-source-applications-helm-values-repositories-applicationset-governance.md)
 
+- [045 — Argo CD Applications and ApplicationSets Production Operations Capstone](09-argocd-applications-applicationsets/045-argocd-applications-applicationsets-production-operations-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
