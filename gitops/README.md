@@ -159,6 +159,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [060 — Enterprise Progressive Delivery and Automated Recovery Capstone](12-progressive-delivery-advanced-deployment-strategies/060-enterprise-progressive-delivery-automated-recovery-capstone.md)
 
+- [061 — GitOps Secrets Management, External Secrets and Workload Identity Fundamentals](13-secrets-policy-workload-identity/061-gitops-secrets-management-external-secrets-workload-identity-fundamentals.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
