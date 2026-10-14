@@ -135,6 +135,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [048 — Argo CD Security Hardening, Auditability and Operational Governance](10-argocd-security-multitenancy-ha/048-argocd-security-hardening-auditability-operational-governance.md)
 
+- [049 — Argo CD Multi-Cluster Access, Credential Management and Secure Fleet Operations](10-argocd-security-multitenancy-ha/049-argocd-multicluster-access-credential-management-secure-fleet-operations.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
