@@ -125,6 +125,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [043 — Argo CD ApplicationSet Git and Cluster Generators for Multi-Environment Operations](09-argocd-applications-applicationsets/043-argocd-applicationset-git-cluster-generators-multi-environment-operations.md)
 
+- [044 — Argo CD Multi-Source Applications, Helm Values Repositories and ApplicationSet Governance](09-argocd-applications-applicationsets/044-argocd-multi-source-applications-helm-values-repositories-applicationset-governance.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
