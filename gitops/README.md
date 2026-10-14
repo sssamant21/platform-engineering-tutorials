@@ -109,6 +109,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [035 — Enterprise Helm Chart Engineering, Security and Release Operations Capstone](07-enterprise-helm-chart-engineering/035-enterprise-helm-chart-engineering-security-release-operations-capstone.md)
 
+- [036 — Argo CD Architecture, GitOps Reconciliation and Core Components](08-argocd-fundamentals-installation/036-argocd-architecture-gitops-reconciliation-core-components.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
