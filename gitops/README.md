@@ -105,6 +105,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [033 — Helm Dependencies, OCI Registries, Chart Packaging and Supply-Chain Security](07-enterprise-helm-chart-engineering/033-helm-dependencies-oci-registries-chart-packaging-supply-chain-security.md)
 
+- [034 — Helm Release Lifecycle, Upgrades, Rollbacks and Production Troubleshooting](07-enterprise-helm-chart-engineering/034-helm-release-lifecycle-upgrades-rollbacks-production-troubleshooting.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
