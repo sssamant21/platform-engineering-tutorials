@@ -149,6 +149,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [055 — Enterprise Environment Promotion and Release Governance Capstone](11-environment-promotion-release-governance/055-enterprise-environment-promotion-release-governance-capstone.md)
 
+- [056 — Progressive Delivery Fundamentals: Canary, Blue-Green and Release Risk](12-progressive-delivery-advanced-deployment-strategies/056-progressive-delivery-fundamentals-canary-blue-green-release-risk.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
