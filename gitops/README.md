@@ -121,6 +121,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [041 — Argo CD Application Architecture, Sources, Destinations and Multi-Environment Design](09-argocd-applications-applicationsets/041-argocd-application-architecture-sources-destinations-multi-environment-design.md)
 
+- [042 — Argo CD ApplicationSets, Generators, Templates and Automated Application Provisioning](09-argocd-applications-applicationsets/042-argocd-applicationsets-generators-templates-automated-application-provisioning.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
