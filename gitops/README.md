@@ -113,6 +113,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [037 — Argo CD Installation, Namespaces, RBAC and Initial Configuration](08-argocd-fundamentals-installation/037-argocd-installation-namespaces-rbac-initial-configuration.md)
 
+- [038 — Argo CD CLI, UI, Authentication and Repository Connectivity](08-argocd-fundamentals-installation/038-argocd-cli-ui-authentication-repository-connectivity.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
