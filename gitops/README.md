@@ -95,6 +95,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [028 — Kubernetes Services, Ingress, DNS and Application Connectivity for GitOps](06-kubernetes-deployment-fundamentals/028-kubernetes-services-ingress-dns-application-connectivity-gitops.md)
 
+- [029 — Kubernetes Deployment Strategies, Health Checks, Autoscaling and Release Reliability](06-kubernetes-deployment-fundamentals/029-kubernetes-deployment-strategies-health-checks-autoscaling-release-reliability.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
