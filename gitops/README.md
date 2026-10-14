@@ -129,6 +129,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [045 — Argo CD Applications and ApplicationSets Production Operations Capstone](09-argocd-applications-applicationsets/045-argocd-applications-applicationsets-production-operations-capstone.md)
 
+- [046 — Argo CD Enterprise RBAC, SSO, AppProject Security and Multi-Tenancy](10-argocd-security-multitenancy-ha/046-argocd-enterprise-rbac-sso-appproject-security-multitenancy.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
