@@ -157,6 +157,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [059 — Feature Flags, Experimentation and Progressive Release Observability](12-progressive-delivery-advanced-deployment-strategies/059-feature-flags-experimentation-progressive-release-observability.md)
 
+- [060 — Enterprise Progressive Delivery and Automated Recovery Capstone](12-progressive-delivery-advanced-deployment-strategies/060-enterprise-progressive-delivery-automated-recovery-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
