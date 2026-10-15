@@ -235,6 +235,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [098 — Enterprise GitOps Final Project: Production Deployment, Security, Observability and Release Operations](20-final-enterprise-gitops-capstone/098-enterprise-gitops-final-project-production-deployment-security-observability-release-operations.md)
 
+- [099 — Enterprise GitOps Final Project: Failure Simulation, Disaster Recovery and Production Reliability Validation](20-final-enterprise-gitops-capstone/099-enterprise-gitops-final-project-failure-simulation-disaster-recovery-production-reliability-validation.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
