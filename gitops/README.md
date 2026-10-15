@@ -191,6 +191,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [076 — Google Kubernetes Engine GitOps Architecture, Cluster Provisioning and Platform Foundations](16-google-gke/076-gke-gitops-architecture-cluster-provisioning-platform-foundations.md)
 
+- [077 — GKE Node Pools, Autoscaling, Scheduling and Production Capacity Management](16-google-gke/077-gke-node-pools-autoscaling-scheduling-production-capacity-management.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
