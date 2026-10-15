@@ -193,6 +193,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [077 — GKE Node Pools, Autoscaling, Scheduling and Production Capacity Management](16-google-gke/077-gke-node-pools-autoscaling-scheduling-production-capacity-management.md)
 
+- [078 — GKE Networking, Ingress, Gateway API and Persistent Storage Integration for GitOps](16-google-gke/078-gke-networking-ingress-gateway-api-persistent-storage-gitops.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
