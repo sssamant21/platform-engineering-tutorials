@@ -173,6 +173,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [067 — EKS Managed Node Groups, Karpenter and Production Capacity Automation](14-amazon-eks/067-eks-managed-node-groups-karpenter-production-capacity-automation.md)
 
+- [068 — EKS Networking, AWS Load Balancer Controller and Storage Integration for GitOps](14-amazon-eks/068-eks-networking-aws-load-balancer-controller-storage-integration-gitops.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
