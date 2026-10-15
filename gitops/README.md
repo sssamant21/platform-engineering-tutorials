@@ -203,6 +203,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [082 — Multi-Cluster Argo CD ApplicationSets, Fleet Placement and Progressive Deployment Governance](17-multicloud-multicluster/082-multicluster-argocd-applicationsets-fleet-placement-progressive-deployment-governance.md)
 
+- [083 — Multi-Cloud Workload Identity, Secrets, Network Security and Policy Enforcement](17-multicloud-multicluster/083-multicloud-workload-identity-secrets-network-security-policy-enforcement.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
