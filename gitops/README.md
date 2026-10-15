@@ -197,6 +197,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [079 — GKE Security, Workload Identity Federation, Observability and Upgrade Operations](16-google-gke/079-gke-security-workload-identity-federation-observability-upgrade-operations.md)
 
+- [080 — GKE Enterprise GitOps Production Operations and Disaster Recovery Capstone](16-google-gke/080-gke-enterprise-gitops-production-operations-disaster-recovery-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
