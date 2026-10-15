@@ -185,6 +185,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [073 — AKS Networking, Ingress, Azure Disk and Azure Files CSI Integration for GitOps](15-azure-aks/073-aks-networking-ingress-azure-disk-azure-files-csi-gitops.md)
 
+- [074 — AKS Security, Microsoft Entra Workload Identity, Observability and Upgrade Operations](15-azure-aks/074-aks-security-microsoft-entra-workload-identity-observability-upgrade-operations.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
