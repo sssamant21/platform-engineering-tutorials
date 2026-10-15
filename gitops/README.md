@@ -213,6 +213,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [087 — GitOps Service-Level Indicators, SLOs, Error Budgets and Reliability Alerting](18-observability-slo-troubleshooting/087-gitops-slis-slos-error-budgets-reliability-alerting.md)
 
+- [088 — GitOps Incident Investigation, Root Cause Analysis and Advanced Troubleshooting](18-observability-slo-troubleshooting/088-gitops-incident-investigation-root-cause-analysis-advanced-troubleshooting.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
