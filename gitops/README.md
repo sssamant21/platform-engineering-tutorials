@@ -221,6 +221,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [091 — Enterprise GitOps Reliability Engineering, High Availability and Resilience Architecture](19-enterprise-reliability-disaster-recovery/091-enterprise-gitops-reliability-engineering-high-availability-resilience-architecture.md)
 
+- [092 — Enterprise GitOps Disaster Recovery, Backup, Restore and Cross-Region Failover](19-enterprise-reliability-disaster-recovery/092-enterprise-gitops-disaster-recovery-backup-restore-cross-region-failover.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
