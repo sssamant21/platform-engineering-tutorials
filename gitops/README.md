@@ -205,6 +205,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [083 — Multi-Cloud Workload Identity, Secrets, Network Security and Policy Enforcement](17-multicloud-multicluster/083-multicloud-workload-identity-secrets-network-security-policy-enforcement.md)
 
+- [084 — Multi-Cluster Observability, SLOs, Incident Response and Cross-Cloud Disaster Recovery](17-multicloud-multicluster/084-multicluster-observability-slos-incident-response-crosscloud-disaster-recovery.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
