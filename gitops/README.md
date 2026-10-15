@@ -217,6 +217,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [089 — GitOps Production Incident Response, On-Call Operations and Reliability Game Days](18-observability-slo-troubleshooting/089-gitops-production-incident-response-oncall-operations-reliability-game-days.md)
 
+- [090 — Enterprise GitOps Observability, Incident Response and Reliability Acceptance Capstone](18-observability-slo-troubleshooting/090-enterprise-gitops-observability-incident-response-reliability-acceptance-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
