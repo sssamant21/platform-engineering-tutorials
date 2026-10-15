@@ -209,6 +209,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [085 — Multi-Cloud GitOps Enterprise Operations, Reliability and Disaster Recovery Capstone](17-multicloud-multicluster/085-multicloud-gitops-enterprise-operations-reliability-disaster-recovery-capstone.md)
 
+- [086 — Enterprise GitOps Observability Architecture, Metrics, Logs and Distributed Tracing](18-observability-slo-troubleshooting/086-enterprise-gitops-observability-architecture-metrics-logs-distributed-tracing.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
