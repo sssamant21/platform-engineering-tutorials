@@ -189,6 +189,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [075 — AKS Enterprise GitOps Production Operations and Disaster Recovery Capstone](15-azure-aks/075-aks-enterprise-gitops-production-operations-disaster-recovery-capstone.md)
 
+- [076 — Google Kubernetes Engine GitOps Architecture, Cluster Provisioning and Platform Foundations](16-google-gke/076-gke-gitops-architecture-cluster-provisioning-platform-foundations.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
