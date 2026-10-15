@@ -175,6 +175,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [068 — EKS Networking, AWS Load Balancer Controller and Storage Integration for GitOps](14-amazon-eks/068-eks-networking-aws-load-balancer-controller-storage-integration-gitops.md)
 
+- [069 — EKS Security, Workload Identity, Observability and Upgrade Operations](14-amazon-eks/069-eks-security-workload-identity-observability-upgrade-operations.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
