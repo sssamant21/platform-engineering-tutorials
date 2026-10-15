@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 0/100 published**
+**100 chapters · 20 parts · 1/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -31,9 +31,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 
 ## Published chapters
 
-No chapters published yet. Add links only after verifying their GitHub commits.
+- [Chapter 001 — Jenkins Fundamentals, Architecture and Enterprise CI/CD Use Cases](part-01-fundamentals-and-architecture/001-jenkins-fundamentals-architecture-enterprise-cicd-use-cases.md)
+- [Chapter 001 — Companion hands-on lab](part-01-fundamentals-and-architecture/labs/001-jenkins-fundamentals-architecture-check.md)
 
-**Next:** Chapter 001 — Jenkins Fundamentals, Architecture and Enterprise CI/CD Use Cases.
+**Next:** Chapter 002 — Jenkins Installation Methods, System Requirements and Deployment Architecture.
 
 ## Tutorial standard
 
