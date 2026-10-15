@@ -1,11 +1,11 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 9 / 100 chapters (9%)**
+**Progress: 10 / 100 chapters (10%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
 | 01 — Jenkins Fundamentals and Architecture | 001–005 | 5 | 5 | Complete |
-| 02 — Installation, Configuration and Administration | 006–010 | 4 | 5 | In progress |
+| 02 — Installation, Configuration and Administration | 006–010 | 5 | 5 | Complete |
 | 03 — Controller, Agents and Executors | 011–015 | 0 | 5 | Not started |
 | 04 — Jenkins Jobs and Pipeline Fundamentals | 016–020 | 0 | 5 | Not started |
 | 05 — Declarative and Scripted Pipelines | 021–025 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 010 — Jenkins Installation, Configuration and Administration Production Readiness Capstone.
+**Next:** Chapter 011 — Jenkins Controller Architecture, Responsibilities and Operational Boundaries (Part 03).
