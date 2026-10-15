@@ -215,6 +215,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [088 — GitOps Incident Investigation, Root Cause Analysis and Advanced Troubleshooting](18-observability-slo-troubleshooting/088-gitops-incident-investigation-root-cause-analysis-advanced-troubleshooting.md)
 
+- [089 — GitOps Production Incident Response, On-Call Operations and Reliability Game Days](18-observability-slo-troubleshooting/089-gitops-production-incident-response-oncall-operations-reliability-game-days.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
