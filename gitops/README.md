@@ -229,6 +229,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [095 — Enterprise GitOps Reliability, Disaster Recovery and Operational Resilience Capstone](19-enterprise-reliability-disaster-recovery/095-enterprise-gitops-reliability-disaster-recovery-operational-resilience-capstone.md)
 
+- [096 — Enterprise GitOps Final Project: Platform Architecture, Requirements and Production Design](20-final-enterprise-gitops-capstone/096-enterprise-gitops-final-project-platform-architecture-requirements-production-design.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
