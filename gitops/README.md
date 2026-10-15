@@ -225,6 +225,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [093 — Enterprise GitOps Business Continuity, Chaos Engineering and Disaster Recovery Game Days](19-enterprise-reliability-disaster-recovery/093-enterprise-gitops-business-continuity-chaos-engineering-disaster-recovery-game-days.md)
 
+- [094 — Enterprise GitOps Operational Readiness, Resilience Testing and Recovery Automation](19-enterprise-reliability-disaster-recovery/094-enterprise-gitops-operational-readiness-resilience-testing-recovery-automation.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
