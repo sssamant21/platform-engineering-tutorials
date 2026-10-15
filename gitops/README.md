@@ -201,6 +201,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [081 — Multi-Cloud and Multi-Cluster GitOps Architecture, Governance and Platform Foundations](17-multicloud-multicluster/081-multicloud-multicluster-gitops-architecture-governance-platform-foundations.md)
 
+- [082 — Multi-Cluster Argo CD ApplicationSets, Fleet Placement and Progressive Deployment Governance](17-multicloud-multicluster/082-multicluster-argocd-applicationsets-fleet-placement-progressive-deployment-governance.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
