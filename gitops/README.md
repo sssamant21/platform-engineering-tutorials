@@ -169,6 +169,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [065 — Enterprise GitOps Security, Secrets and Policy Compliance Capstone](13-secrets-policy-workload-identity/065-enterprise-gitops-security-secrets-policy-compliance-capstone.md)
 
+- [066 — Amazon EKS GitOps Architecture, Cluster Bootstrap and Platform Foundations](14-amazon-eks/066-amazon-eks-gitops-architecture-cluster-bootstrap-platform-foundations.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
