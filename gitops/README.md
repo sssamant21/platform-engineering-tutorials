@@ -207,6 +207,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [084 — Multi-Cluster Observability, SLOs, Incident Response and Cross-Cloud Disaster Recovery](17-multicloud-multicluster/084-multicluster-observability-slos-incident-response-crosscloud-disaster-recovery.md)
 
+- [085 — Multi-Cloud GitOps Enterprise Operations, Reliability and Disaster Recovery Capstone](17-multicloud-multicluster/085-multicloud-gitops-enterprise-operations-reliability-disaster-recovery-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
