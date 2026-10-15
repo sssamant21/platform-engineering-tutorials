@@ -233,6 +233,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [097 — Enterprise GitOps Final Project: Infrastructure Provisioning, GitLab CI/CD and Argo CD Implementation](20-final-enterprise-gitops-capstone/097-enterprise-gitops-final-project-infrastructure-provisioning-gitlab-cicd-argocd-implementation.md)
 
+- [098 — Enterprise GitOps Final Project: Production Deployment, Security, Observability and Release Operations](20-final-enterprise-gitops-capstone/098-enterprise-gitops-final-project-production-deployment-security-observability-release-operations.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
