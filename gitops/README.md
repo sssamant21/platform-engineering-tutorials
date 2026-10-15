@@ -181,6 +181,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [071 — Azure AKS GitOps Architecture, Cluster Provisioning and Platform Foundations](15-azure-aks/071-azure-aks-gitops-architecture-cluster-provisioning-platform-foundations.md)
 
+- [072 — AKS Node Pools, Autoscaling, Scheduling and Production Capacity Management](15-azure-aks/072-aks-node-pools-autoscaling-scheduling-production-capacity-management.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
