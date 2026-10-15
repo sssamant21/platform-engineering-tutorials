@@ -223,6 +223,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [092 — Enterprise GitOps Disaster Recovery, Backup, Restore and Cross-Region Failover](19-enterprise-reliability-disaster-recovery/092-enterprise-gitops-disaster-recovery-backup-restore-cross-region-failover.md)
 
+- [093 — Enterprise GitOps Business Continuity, Chaos Engineering and Disaster Recovery Game Days](19-enterprise-reliability-disaster-recovery/093-enterprise-gitops-business-continuity-chaos-engineering-disaster-recovery-game-days.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
