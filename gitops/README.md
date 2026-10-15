@@ -171,6 +171,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [066 — Amazon EKS GitOps Architecture, Cluster Bootstrap and Platform Foundations](14-amazon-eks/066-amazon-eks-gitops-architecture-cluster-bootstrap-platform-foundations.md)
 
+- [067 — EKS Managed Node Groups, Karpenter and Production Capacity Automation](14-amazon-eks/067-eks-managed-node-groups-karpenter-production-capacity-automation.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
