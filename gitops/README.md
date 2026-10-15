@@ -177,6 +177,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [069 — EKS Security, Workload Identity, Observability and Upgrade Operations](14-amazon-eks/069-eks-security-workload-identity-observability-upgrade-operations.md)
 
+- [070 — EKS Enterprise GitOps Production Operations and Disaster Recovery Capstone](14-amazon-eks/070-eks-enterprise-gitops-production-operations-disaster-recovery-capstone.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
