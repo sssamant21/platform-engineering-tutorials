@@ -211,6 +211,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [086 — Enterprise GitOps Observability Architecture, Metrics, Logs and Distributed Tracing](18-observability-slo-troubleshooting/086-enterprise-gitops-observability-architecture-metrics-logs-distributed-tracing.md)
 
+- [087 — GitOps Service-Level Indicators, SLOs, Error Budgets and Reliability Alerting](18-observability-slo-troubleshooting/087-gitops-slis-slos-error-budgets-reliability-alerting.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
