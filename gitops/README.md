@@ -219,6 +219,8 @@ This track teaches production-oriented platform engineering using GitLab CI/CD f
 
 - [090 — Enterprise GitOps Observability, Incident Response and Reliability Acceptance Capstone](18-observability-slo-troubleshooting/090-enterprise-gitops-observability-incident-response-reliability-acceptance-capstone.md)
 
+- [091 — Enterprise GitOps Reliability Engineering, High Availability and Resilience Architecture](19-enterprise-reliability-disaster-recovery/091-enterprise-gitops-reliability-engineering-high-availability-resilience-architecture.md)
+
 ## Tutorial format
 
 Every chapter will include learning objectives, architecture, concepts, working commands and configuration examples, safe hands-on labs, validation, troubleshooting, rollback/cleanup and production acceptance criteria.
