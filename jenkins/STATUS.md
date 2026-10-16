@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 32 / 100 chapters (32%)**
+**Progress: 33 / 100 chapters (33%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -10,7 +10,7 @@
 | 04 — Jenkins Jobs and Pipeline Fundamentals | 016–020 | 5 | 5 | Complete |
 | 05 — Declarative and Scripted Pipelines | 021–025 | 5 | 5 | Complete |
 | 06 — Groovy, Shared Libraries and Reusable Pipelines | 026–030 | 5 | 5 | Complete |
-| 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 2 | 5 | In progress |
+| 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 3 | 5 | In progress |
 | 08 — Build Automation, Testing and Artifacts | 036–040 | 0 | 5 | Not started |
 | 09 — Docker, Containers and Image Pipelines | 041–045 | 0 | 5 | Not started |
 | 10 — Jenkins on Kubernetes, EKS and AKS | 046–050 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 033 — Jenkins GitLab Integration, Webhooks and Merge Request Pipelines.
+**Next:** Chapter 034 — Jenkins Multibranch Pipelines, SCM Discovery and Branch Governance.
