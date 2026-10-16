@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 45/100 published**
+**100 chapters · 20 parts · 46/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -149,7 +149,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 
 **Part 09 complete:** Chapters 041–045.
 
-**Next:** Chapter 046 — Jenkins on Kubernetes: Architecture, Controllers and Dynamic Agents (Part 10).
+- [Chapter 046 — Jenkins on Kubernetes: Architecture, Controllers and Dynamic Agents](part-10-jenkins-kubernetes-eks-aks/046-jenkins-kubernetes-architecture-controllers-dynamic-agents.md)
+- [Chapter 046 — Companion hands-on lab](part-10-jenkins-kubernetes-eks-aks/labs/046-jenkins-kubernetes-architecture-controllers-dynamic-agents-check.md)
+
+**Next:** Chapter 047 — Jenkins Kubernetes Pod Templates, Resource Limits and Agent Security.
 
 ## Tutorial standard
 
