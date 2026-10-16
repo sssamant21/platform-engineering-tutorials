@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 43 / 100 chapters (43%)**
+**Progress: 44 / 100 chapters (44%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -12,7 +12,7 @@
 | 06 — Groovy, Shared Libraries and Reusable Pipelines | 026–030 | 5 | 5 | Complete |
 | 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 5 | 5 | Complete |
 | 08 — Build Automation, Testing and Artifacts | 036–040 | 5 | 5 | Complete |
-| 09 — Docker, Containers and Image Pipelines | 041–045 | 3 | 5 | In progress |
+| 09 — Docker, Containers and Image Pipelines | 041–045 | 4 | 5 | In progress |
 | 10 — Jenkins on Kubernetes, EKS and AKS | 046–050 | 0 | 5 | Not started |
 | 11 — Helm, Kubernetes Deployment and GitOps | 051–055 | 0 | 5 | Not started |
 | 12 — Security, RBAC, SSO, Credentials and Secrets | 056–060 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 044 — Container Image Vulnerability Scanning, SBOMs and Signing in Jenkins.
+**Next:** Chapter 045 — Enterprise Jenkins Container Image Pipeline Capstone.
