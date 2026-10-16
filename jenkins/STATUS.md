@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 62 / 100 chapters (62%)**
+**Progress: 63 / 100 chapters (63%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -16,7 +16,7 @@
 | 10 — Jenkins on Kubernetes, EKS and AKS | 046–050 | 5 | 5 | Complete |
 | 11 — Helm, Kubernetes Deployment and GitOps | 051–055 | 5 | 5 | Complete |
 | 12 — Security, RBAC, SSO, Credentials and Secrets | 056–060 | 5 | 5 | Complete |
-| 13 — Plugins, JCasC and Configuration Management | 061–065 | 2 | 5 | In progress |
+| 13 — Plugins, JCasC and Configuration Management | 061–065 | 3 | 5 | In progress |
 | 14 — Observability, Monitoring and Performance | 066–070 | 0 | 5 | Not started |
 | 15 — Troubleshooting and Incident Response | 071–075 | 0 | 5 | Not started |
 | 16 — Scaling, Controller Capacity and Reliability | 076–080 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 063 — Jenkins Job DSL, Seed Jobs and Reusable Configuration Patterns.
+**Next:** Chapter 064 — Jenkins Configuration Drift Detection, Policy Validation and GitOps Governance.
