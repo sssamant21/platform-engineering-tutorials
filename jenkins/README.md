@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 20/100 published**
+**100 chapters · 20 parts · 21/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -71,8 +71,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 019 — Companion hands-on lab](part-04-jenkins-jobs-pipeline-fundamentals/labs/019-jenkins-build-history-logs-notifications-lifecycle-check.md)
 - [Chapter 020 — Jenkins Jobs and Pipeline Fundamentals Production Operations Capstone](part-04-jenkins-jobs-pipeline-fundamentals/020-jenkins-jobs-pipeline-fundamentals-production-operations-capstone.md)
 - [Chapter 020 — Companion hands-on capstone lab](part-04-jenkins-jobs-pipeline-fundamentals/labs/020-jenkins-jobs-pipeline-fundamentals-capstone-check.md)
+- [Chapter 021 — Declarative Pipeline Syntax, Stages, Steps and Directives](part-05-declarative-scripted-pipelines/021-declarative-pipeline-syntax-stages-steps-directives.md)
+- [Chapter 021 — Companion hands-on lab](part-05-declarative-scripted-pipelines/labs/021-declarative-pipeline-syntax-stages-steps-directives-check.md)
 
-**Next:** Chapter 021 — Declarative Pipeline Syntax, Stages, Steps and Directives (Part 05).
+**Next:** Chapter 022 — Declarative Pipeline Agents, Environment, Parameters and Conditional Execution.
 
 ## Tutorial standard
 
