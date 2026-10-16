@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 61/100 published**
+**100 chapters · 20 parts · 62/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -203,7 +203,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 061 — Jenkins Plugin Architecture, Lifecycle and Dependency Management](part-13-plugins-jcasc-configuration-management/061-jenkins-plugin-architecture-lifecycle-dependency-management.md)
 - [Chapter 061 — Companion hands-on lab](part-13-plugins-jcasc-configuration-management/labs/061-jenkins-plugin-architecture-lifecycle-dependency-management-check.md)
 
-**Next:** Chapter 062 — Jenkins Configuration as Code (JCasC) Architecture and Automation.
+- [Chapter 062 — Jenkins Configuration as Code (JCasC) Architecture and Automation](part-13-plugins-jcasc-configuration-management/062-jenkins-configuration-as-code-jcasc-architecture-automation.md)
+- [Chapter 062 — Companion hands-on lab](part-13-plugins-jcasc-configuration-management/labs/062-jenkins-configuration-as-code-jcasc-architecture-automation-check.md)
+
+**Next:** Chapter 063 — Jenkins Job DSL, Seed Jobs and Reusable Configuration Patterns.
 
 ## Tutorial standard
 
