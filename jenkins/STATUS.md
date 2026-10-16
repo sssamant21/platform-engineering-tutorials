@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 46 / 100 chapters (46%)**
+**Progress: 47 / 100 chapters (47%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -13,7 +13,7 @@
 | 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 5 | 5 | Complete |
 | 08 — Build Automation, Testing and Artifacts | 036–040 | 5 | 5 | Complete |
 | 09 — Docker, Containers and Image Pipelines | 041–045 | 5 | 5 | Complete |
-| 10 — Jenkins on Kubernetes, EKS and AKS | 046–050 | 1 | 5 | In progress |
+| 10 — Jenkins on Kubernetes, EKS and AKS | 046–050 | 2 | 5 | In progress |
 | 11 — Helm, Kubernetes Deployment and GitOps | 051–055 | 0 | 5 | Not started |
 | 12 — Security, RBAC, SSO, Credentials and Secrets | 056–060 | 0 | 5 | Not started |
 | 13 — Plugins, JCasC and Configuration Management | 061–065 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 047 — Jenkins Kubernetes Pod Templates, Resource Limits and Agent Security.
+**Next:** Chapter 048 — Jenkins on Amazon EKS: IAM, IRSA/Pod Identity, Autoscaling and Operations.
