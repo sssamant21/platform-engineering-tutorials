@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 51/100 published**
+**100 chapters · 20 parts · 52/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -169,7 +169,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 051 — Jenkins Helm-Based Kubernetes Deployments and Release Automation](part-11-helm-kubernetes-deployment-gitops/051-jenkins-helm-kubernetes-deployments-release-automation.md)
 - [Chapter 051 — Companion hands-on lab](part-11-helm-kubernetes-deployment-gitops/labs/051-jenkins-helm-kubernetes-deployments-release-automation-check.md)
 
-**Next:** Chapter 052 — Jenkins Kubernetes Deployment Strategies: Rolling, Blue-Green and Canary.
+- [Chapter 052 — Jenkins Kubernetes Deployment Strategies: Rolling, Blue-Green and Canary](part-11-helm-kubernetes-deployment-gitops/052-jenkins-kubernetes-deployment-strategies-rolling-blue-green-canary.md)
+- [Chapter 052 — Companion hands-on lab](part-11-helm-kubernetes-deployment-gitops/labs/052-jenkins-kubernetes-deployment-strategies-rolling-blue-green-canary-check.md)
+
+**Next:** Chapter 053 — Jenkins Integration with Argo CD and Flux GitOps.
 
 ## Tutorial standard
 
