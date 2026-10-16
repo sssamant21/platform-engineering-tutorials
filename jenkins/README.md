@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 70/100 published**
+**100 chapters · 20 parts · 71/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -234,7 +234,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 
 **Part 14 complete:** Chapters 066–070.
 
-**Next:** Chapter 071 — Jenkins Troubleshooting Methodology, Diagnostics and Incident Triage (Part 15).
+- [Chapter 071 — Jenkins Troubleshooting Methodology, Diagnostics and Incident Triage](part-15-troubleshooting-incident-response/071-jenkins-troubleshooting-methodology-diagnostics-incident-triage.md)
+- [Chapter 071 — Companion hands-on lab](part-15-troubleshooting-incident-response/labs/071-jenkins-troubleshooting-methodology-diagnostics-incident-triage-check.md)
+
+**Next:** Chapter 072 — Jenkins Controller Startup, Plugin and Configuration Failure Troubleshooting.
 
 ## Tutorial standard
 
