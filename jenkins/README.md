@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 39/100 published**
+**100 chapters · 20 parts · 40/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -127,7 +127,12 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 039 — Jenkins Artifact Management, Versioning and Repository Integration](part-08-build-automation-testing-artifacts/039-jenkins-artifact-management-versioning-repository-integration.md)
 - [Chapter 039 — Companion hands-on lab](part-08-build-automation-testing-artifacts/labs/039-jenkins-artifact-management-versioning-repository-integration-check.md)
 
-**Next:** Chapter 040 — Build, Testing and Artifact Reliability Acceptance Capstone.
+- [Chapter 040 — Build, Testing and Artifact Reliability Acceptance Capstone](part-08-build-automation-testing-artifacts/040-build-testing-artifact-reliability-acceptance-capstone.md)
+- [Chapter 040 — Companion hands-on capstone lab](part-08-build-automation-testing-artifacts/labs/040-build-testing-artifact-reliability-acceptance-capstone-check.md)
+
+**Part 08 complete:** Chapters 036–040.
+
+**Next:** Chapter 041 — Docker Fundamentals and Jenkins Container Build Pipelines (Part 09).
 
 ## Tutorial standard
 
