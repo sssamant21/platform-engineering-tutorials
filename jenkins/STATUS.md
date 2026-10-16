@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 54 / 100 chapters (54%)**
+**Progress: 55 / 100 chapters (55%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -14,7 +14,7 @@
 | 08 — Build Automation, Testing and Artifacts | 036–040 | 5 | 5 | Complete |
 | 09 — Docker, Containers and Image Pipelines | 041–045 | 5 | 5 | Complete |
 | 10 — Jenkins on Kubernetes, EKS and AKS | 046–050 | 5 | 5 | Complete |
-| 11 — Helm, Kubernetes Deployment and GitOps | 051–055 | 4 | 5 | In progress |
+| 11 — Helm, Kubernetes Deployment and GitOps | 051–055 | 5 | 5 | Complete |
 | 12 — Security, RBAC, SSO, Credentials and Secrets | 056–060 | 0 | 5 | Not started |
 | 13 — Plugins, JCasC and Configuration Management | 061–065 | 0 | 5 | Not started |
 | 14 — Observability, Monitoring and Performance | 066–070 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 055 — Jenkins Helm and GitOps Enterprise Release Automation Capstone.
+**Next:** Chapter 056 — Jenkins Security Architecture, Authentication and Authorization (Part 12).
