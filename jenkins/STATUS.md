@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 26 / 100 chapters (26%)**
+**Progress: 27 / 100 chapters (27%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -9,7 +9,7 @@
 | 03 — Controller, Agents and Executors | 011–015 | 5 | 5 | Complete |
 | 04 — Jenkins Jobs and Pipeline Fundamentals | 016–020 | 5 | 5 | Complete |
 | 05 — Declarative and Scripted Pipelines | 021–025 | 5 | 5 | Complete |
-| 06 — Groovy, Shared Libraries and Reusable Pipelines | 026–030 | 1 | 5 | In progress |
+| 06 — Groovy, Shared Libraries and Reusable Pipelines | 026–030 | 2 | 5 | In progress |
 | 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 0 | 5 | Not started |
 | 08 — Build Automation, Testing and Artifacts | 036–040 | 0 | 5 | Not started |
 | 09 — Docker, Containers and Image Pipelines | 041–045 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 027 — Jenkins Shared Library Architecture, vars, src and resources.
+**Next:** Chapter 028 — Reusable Jenkins Pipeline Functions, Configuration and Design Patterns.
