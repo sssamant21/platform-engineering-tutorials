@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 27/100 published**
+**100 chapters · 20 parts · 28/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -87,7 +87,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 027 — Jenkins Shared Library Architecture, vars/, src/ and resources/](part-06-groovy-shared-libraries-reusable-pipelines/027-jenkins-shared-library-architecture-vars-src-resources.md)
 - [Chapter 027 — Companion hands-on lab](part-06-groovy-shared-libraries-reusable-pipelines/labs/027-jenkins-shared-library-architecture-vars-src-resources-check.md)
 
-**Next:** Chapter 028 — Reusable Jenkins Pipeline Functions, Configuration and Design Patterns.
+- [Chapter 028 — Reusable Jenkins Pipeline Functions, Configuration and Design Patterns](part-06-groovy-shared-libraries-reusable-pipelines/028-reusable-jenkins-pipeline-functions-configuration-design-patterns.md)
+- [Chapter 028 — Companion hands-on lab](part-06-groovy-shared-libraries-reusable-pipelines/labs/028-reusable-jenkins-pipeline-functions-configuration-design-patterns-check.md)
+
+**Next:** Chapter 029 — Jenkins Shared Library Testing, Versioning and Release Management.
 
 ## Tutorial standard
 
