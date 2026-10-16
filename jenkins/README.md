@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 24/100 published**
+**100 chapters · 20 parts · 25/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -79,8 +79,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 023 — Companion hands-on lab](part-05-declarative-scripted-pipelines/labs/023-declarative-post-error-timeout-retry-check.md)
 - [Chapter 024 — Scripted Pipeline Groovy, Node, Stage and Flow Control](part-05-declarative-scripted-pipelines/024-scripted-pipeline-groovy-node-stage-flow-control.md)
 - [Chapter 024 — Companion hands-on lab](part-05-declarative-scripted-pipelines/labs/024-scripted-pipeline-groovy-flow-control-check.md)
+- [Chapter 025 — Declarative and Scripted Pipeline Production Reliability Capstone](part-05-declarative-scripted-pipelines/025-declarative-scripted-pipeline-production-reliability-capstone.md)
+- [Chapter 025 — Companion hands-on capstone lab](part-05-declarative-scripted-pipelines/labs/025-declarative-scripted-pipeline-production-reliability-capstone-check.md)
 
-**Next:** Chapter 025 — Declarative and Scripted Pipeline Production Reliability Capstone.
+**Next:** Chapter 026 — Groovy Fundamentals for Jenkins Pipelines and Shared Libraries (Part 06).
 
 ## Tutorial standard
 
