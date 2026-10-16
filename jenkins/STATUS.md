@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 73 / 100 chapters (73%)**
+**Progress: 74 / 100 chapters (74%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -18,7 +18,7 @@
 | 12 — Security, RBAC, SSO, Credentials and Secrets | 056–060 | 5 | 5 | Complete |
 | 13 — Plugins, JCasC and Configuration Management | 061–065 | 5 | 5 | Complete |
 | 14 — Observability, Monitoring and Performance | 066–070 | 5 | 5 | Complete |
-| 15 — Troubleshooting and Incident Response | 071–075 | 3 | 5 | In progress |
+| 15 — Troubleshooting and Incident Response | 071–075 | 4 | 5 | In progress |
 | 16 — Scaling, Controller Capacity and Reliability | 076–080 | 0 | 5 | Not started |
 | 17 — Backup, Restore, Upgrades and Disaster Recovery | 081–085 | 0 | 5 | Not started |
 | 18 — Terraform, Ansible and Infrastructure Automation | 086–090 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 074 — Jenkins Agents, Kubernetes, Networking and Infrastructure Failure Troubleshooting.
+**Next:** Chapter 075 — Jenkins Enterprise Incident Response, Failure Simulation and Recovery Capstone.
