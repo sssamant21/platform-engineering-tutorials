@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 24 / 100 chapters (24%)**
+**Progress: 25 / 100 chapters (25%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -8,7 +8,7 @@
 | 02 — Installation, Configuration and Administration | 006–010 | 5 | 5 | Complete |
 | 03 — Controller, Agents and Executors | 011–015 | 5 | 5 | Complete |
 | 04 — Jenkins Jobs and Pipeline Fundamentals | 016–020 | 5 | 5 | Complete |
-| 05 — Declarative and Scripted Pipelines | 021–025 | 4 | 5 | In progress |
+| 05 — Declarative and Scripted Pipelines | 021–025 | 5 | 5 | Complete |
 | 06 — Groovy, Shared Libraries and Reusable Pipelines | 026–030 | 0 | 5 | Not started |
 | 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 0 | 5 | Not started |
 | 08 — Build Automation, Testing and Artifacts | 036–040 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 025 — Declarative and Scripted Pipeline Production Reliability Capstone.
+**Next:** Chapter 026 — Groovy Fundamentals for Jenkins Pipelines and Shared Libraries (Part 06).
