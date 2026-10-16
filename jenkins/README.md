@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 56/100 published**
+**100 chapters · 20 parts · 57/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -186,7 +186,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 056 — Jenkins Security Architecture, Authentication and Authorization](part-12-security-rbac-sso-credentials-secrets/056-jenkins-security-architecture-authentication-authorization.md)
 - [Chapter 056 — Companion hands-on lab](part-12-security-rbac-sso-credentials-secrets/labs/056-jenkins-security-architecture-authentication-authorization-check.md)
 
-**Next:** Chapter 057 — Jenkins Role-Based Access Control, Folder Security and Least Privilege.
+- [Chapter 057 — Jenkins Role-Based Access Control, Folder Security and Least Privilege](part-12-security-rbac-sso-credentials-secrets/057-jenkins-rbac-folder-security-least-privilege.md)
+- [Chapter 057 — Companion hands-on lab](part-12-security-rbac-sso-credentials-secrets/labs/057-jenkins-rbac-folder-security-least-privilege-check.md)
+
+**Next:** Chapter 058 — Jenkins Enterprise SSO, LDAP, SAML and OIDC Integration.
 
 ## Tutorial standard
 
