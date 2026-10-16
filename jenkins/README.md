@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 18/100 published**
+**100 chapters · 20 parts · 19/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -67,8 +67,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 017 — Companion hands-on lab](part-04-jenkins-jobs-pipeline-fundamentals/labs/017-jenkins-build-triggers-parameters-scheduling-check.md)
 - [Chapter 018 — Jenkins Build Workspaces, Artifacts and Test Reports](part-04-jenkins-jobs-pipeline-fundamentals/018-jenkins-build-workspaces-artifacts-test-reports.md)
 - [Chapter 018 — Companion hands-on lab](part-04-jenkins-jobs-pipeline-fundamentals/labs/018-jenkins-workspaces-artifacts-test-reports-check.md)
+- [Chapter 019 — Jenkins Build History, Logs, Notifications and Job Lifecycle Management](part-04-jenkins-jobs-pipeline-fundamentals/019-jenkins-build-history-logs-notifications-job-lifecycle-management.md)
+- [Chapter 019 — Companion hands-on lab](part-04-jenkins-jobs-pipeline-fundamentals/labs/019-jenkins-build-history-logs-notifications-lifecycle-check.md)
 
-**Next:** Chapter 019 — Jenkins Build History, Logs, Notifications and Job Lifecycle Management.
+**Next:** Chapter 020 — Jenkins Jobs and Pipeline Fundamentals Production Operations Capstone.
 
 ## Tutorial standard
 
