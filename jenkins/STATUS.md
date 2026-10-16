@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 40 / 100 chapters (40%)**
+**Progress: 41 / 100 chapters (41%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -12,7 +12,7 @@
 | 06 — Groovy, Shared Libraries and Reusable Pipelines | 026–030 | 5 | 5 | Complete |
 | 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 5 | 5 | Complete |
 | 08 — Build Automation, Testing and Artifacts | 036–040 | 5 | 5 | Complete |
-| 09 — Docker, Containers and Image Pipelines | 041–045 | 0 | 5 | Not started |
+| 09 — Docker, Containers and Image Pipelines | 041–045 | 1 | 5 | In progress |
 | 10 — Jenkins on Kubernetes, EKS and AKS | 046–050 | 0 | 5 | Not started |
 | 11 — Helm, Kubernetes Deployment and GitOps | 051–055 | 0 | 5 | Not started |
 | 12 — Security, RBAC, SSO, Credentials and Secrets | 056–060 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 041 — Docker Fundamentals and Jenkins Container Build Pipelines (Part 09).
+**Next:** Chapter 042 — Dockerfile Optimization, Multi-Stage Builds and Image Security.
