@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 35/100 published**
+**100 chapters · 20 parts · 36/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -115,7 +115,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 
 **Part 07 complete:** Chapters 031–035.
 
-**Next:** Chapter 036 — Jenkins Build Automation with Maven, Gradle and npm (Part 08).
+- [Chapter 036 — Jenkins Build Automation with Maven, Gradle and npm](part-08-build-automation-testing-artifacts/036-jenkins-build-automation-maven-gradle-npm.md)
+- [Chapter 036 — Companion hands-on lab](part-08-build-automation-testing-artifacts/labs/036-jenkins-build-automation-maven-gradle-npm-check.md)
+
+**Next:** Chapter 037 — Jenkins Automated Testing, JUnit Reporting and Quality Gates.
 
 ## Tutorial standard
 
