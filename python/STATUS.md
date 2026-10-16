@@ -3,9 +3,9 @@
 Last updated: 2026-10-16
 
 - Planned: **120 chapters**
-- Published: **6 chapters**
-- Remaining: **114 chapters**
-- Published labs: **6**
-- Next: **007 — Strings and Text Processing**
+- Published: **7 chapters**
+- Remaining: **113 chapters**
+- Published labs: **7**
+- Next: **008 — Lists, Tuples, Sets and Dictionaries**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–006 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–007 contain labs and validation checklists; execution on the learner's machine is still required.
