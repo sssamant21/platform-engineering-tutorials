@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 20 / 100 chapters (20%)**
+**Progress: 21 / 100 chapters (21%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -8,7 +8,7 @@
 | 02 — Installation, Configuration and Administration | 006–010 | 5 | 5 | Complete |
 | 03 — Controller, Agents and Executors | 011–015 | 5 | 5 | Complete |
 | 04 — Jenkins Jobs and Pipeline Fundamentals | 016–020 | 5 | 5 | Complete |
-| 05 — Declarative and Scripted Pipelines | 021–025 | 0 | 5 | Not started |
+| 05 — Declarative and Scripted Pipelines | 021–025 | 1 | 5 | In progress |
 | 06 — Groovy, Shared Libraries and Reusable Pipelines | 026–030 | 0 | 5 | Not started |
 | 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 0 | 5 | Not started |
 | 08 — Build Automation, Testing and Artifacts | 036–040 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 021 — Declarative Pipeline Syntax, Stages, Steps and Directives (Part 05).
+**Next:** Chapter 022 — Declarative Pipeline Agents, Environment, Parameters and Conditional Execution.
