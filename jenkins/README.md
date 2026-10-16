@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 48/100 published**
+**100 chapters · 20 parts · 49/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -158,7 +158,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 048 — Jenkins on Amazon EKS: IAM, IRSA/Pod Identity, Autoscaling and Operations](part-10-jenkins-kubernetes-eks-aks/048-jenkins-amazon-eks-iam-irsa-pod-identity-autoscaling-operations.md)
 - [Chapter 048 — Companion hands-on lab](part-10-jenkins-kubernetes-eks-aks/labs/048-jenkins-amazon-eks-iam-irsa-pod-identity-autoscaling-operations-check.md)
 
-**Next:** Chapter 049 — Jenkins on Azure AKS: Workload Identity, Node Pools and Operations.
+- [Chapter 049 — Jenkins on Azure AKS: Workload Identity, Node Pools and Operations](part-10-jenkins-kubernetes-eks-aks/049-jenkins-azure-aks-workload-identity-node-pools-operations.md)
+- [Chapter 049 — Companion hands-on lab](part-10-jenkins-kubernetes-eks-aks/labs/049-jenkins-azure-aks-workload-identity-node-pools-operations-check.md)
+
+**Next:** Chapter 050 — Jenkins on Kubernetes, EKS and AKS Production Operations Capstone.
 
 ## Tutorial standard
 
