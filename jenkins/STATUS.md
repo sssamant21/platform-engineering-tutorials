@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 36 / 100 chapters (36%)**
+**Progress: 37 / 100 chapters (37%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -11,7 +11,7 @@
 | 05 — Declarative and Scripted Pipelines | 021–025 | 5 | 5 | Complete |
 | 06 — Groovy, Shared Libraries and Reusable Pipelines | 026–030 | 5 | 5 | Complete |
 | 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 5 | 5 | Complete |
-| 08 — Build Automation, Testing and Artifacts | 036–040 | 1 | 5 | In progress |
+| 08 — Build Automation, Testing and Artifacts | 036–040 | 2 | 5 | In progress |
 | 09 — Docker, Containers and Image Pipelines | 041–045 | 0 | 5 | Not started |
 | 10 — Jenkins on Kubernetes, EKS and AKS | 046–050 | 0 | 5 | Not started |
 | 11 — Helm, Kubernetes Deployment and GitOps | 051–055 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 037 — Jenkins Automated Testing, JUnit Reporting and Quality Gates.
+**Next:** Chapter 038 — Jenkins Static Analysis, Code Coverage and SonarQube Quality Gates.
