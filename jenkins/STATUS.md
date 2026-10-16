@@ -1,13 +1,13 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 17 / 100 chapters (17%)**
+**Progress: 18 / 100 chapters (18%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
 | 01 — Jenkins Fundamentals and Architecture | 001–005 | 5 | 5 | Complete |
 | 02 — Installation, Configuration and Administration | 006–010 | 5 | 5 | Complete |
 | 03 — Controller, Agents and Executors | 011–015 | 5 | 5 | Complete |
-| 04 — Jenkins Jobs and Pipeline Fundamentals | 016–020 | 2 | 5 | In progress |
+| 04 — Jenkins Jobs and Pipeline Fundamentals | 016–020 | 3 | 5 | In progress |
 | 05 — Declarative and Scripted Pipelines | 021–025 | 0 | 5 | Not started |
 | 06 — Groovy, Shared Libraries and Reusable Pipelines | 026–030 | 0 | 5 | Not started |
 | 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 018 — Jenkins Build Workspaces, Artifacts and Test Reports.
+**Next:** Chapter 019 — Jenkins Build History, Logs, Notifications and Job Lifecycle Management.
