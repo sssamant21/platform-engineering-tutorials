@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 33/100 published**
+**100 chapters · 20 parts · 34/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -107,7 +107,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 033 — Jenkins GitLab Integration, Webhooks and Merge Request Pipelines](part-07-git-github-gitlab-scm-integration/033-jenkins-gitlab-integration-webhooks-merge-request-pipelines.md)
 - [Chapter 033 — Companion hands-on lab](part-07-git-github-gitlab-scm-integration/labs/033-jenkins-gitlab-integration-webhooks-merge-request-pipelines-check.md)
 
-**Next:** Chapter 034 — Jenkins Multibranch Pipelines, SCM Discovery and Branch Governance.
+- [Chapter 034 — Jenkins Multibranch Pipelines, SCM Discovery and Branch Governance](part-07-git-github-gitlab-scm-integration/034-jenkins-multibranch-pipelines-scm-discovery-branch-governance.md)
+- [Chapter 034 — Companion hands-on lab](part-07-git-github-gitlab-scm-integration/labs/034-jenkins-multibranch-pipelines-scm-discovery-branch-governance-check.md)
+
+**Next:** Chapter 035 — SCM Integration Production Operations and Reliability Capstone.
 
 ## Tutorial standard
 
