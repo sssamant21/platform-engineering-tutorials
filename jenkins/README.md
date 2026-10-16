@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 54/100 published**
+**100 chapters · 20 parts · 55/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -178,7 +178,12 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 054 — Jenkins GitOps Promotion, Drift Detection and Policy Enforcement](part-11-helm-kubernetes-deployment-gitops/054-jenkins-gitops-promotion-drift-detection-policy-enforcement.md)
 - [Chapter 054 — Companion hands-on lab](part-11-helm-kubernetes-deployment-gitops/labs/054-jenkins-gitops-promotion-drift-detection-policy-enforcement-check.md)
 
-**Next:** Chapter 055 — Jenkins Helm and GitOps Enterprise Release Automation Capstone.
+- [Chapter 055 — Jenkins Helm and GitOps Enterprise Release Automation Capstone](part-11-helm-kubernetes-deployment-gitops/055-jenkins-helm-gitops-enterprise-release-automation-capstone.md)
+- [Chapter 055 — Companion hands-on capstone lab](part-11-helm-kubernetes-deployment-gitops/labs/055-jenkins-helm-gitops-enterprise-release-automation-capstone-check.md)
+
+**Part 11 complete:** Chapters 051–055.
+
+**Next:** Chapter 056 — Jenkins Security Architecture, Authentication and Authorization (Part 12).
 
 ## Tutorial standard
 
