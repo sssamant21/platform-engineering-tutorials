@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 59/100 published**
+**100 chapters · 20 parts · 60/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -195,7 +195,12 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 059 — Jenkins Credentials Management, Secret Stores and Rotation](part-12-security-rbac-sso-credentials-secrets/059-jenkins-credentials-management-secret-stores-rotation.md)
 - [Chapter 059 — Companion hands-on lab](part-12-security-rbac-sso-credentials-secrets/labs/059-jenkins-credentials-management-secret-stores-rotation-check.md)
 
-**Next:** Chapter 060 — Jenkins Enterprise Security Hardening and Secrets Management Capstone.
+- [Chapter 060 — Jenkins Enterprise Security Hardening and Secrets Management Capstone](part-12-security-rbac-sso-credentials-secrets/060-jenkins-enterprise-security-hardening-secrets-management-capstone.md)
+- [Chapter 060 — Companion hands-on capstone lab](part-12-security-rbac-sso-credentials-secrets/labs/060-jenkins-enterprise-security-hardening-secrets-management-capstone-check.md)
+
+**Part 12 complete:** Chapters 056–060.
+
+**Next:** Chapter 061 — Jenkins Plugin Architecture, Lifecycle and Dependency Management (Part 13).
 
 ## Tutorial standard
 
