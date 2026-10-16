@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 37/100 published**
+**100 chapters · 20 parts · 38/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -121,7 +121,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 037 — Jenkins Automated Testing, JUnit Reporting and Quality Gates](part-08-build-automation-testing-artifacts/037-jenkins-automated-testing-junit-reporting-quality-gates.md)
 - [Chapter 037 — Companion hands-on lab](part-08-build-automation-testing-artifacts/labs/037-jenkins-automated-testing-junit-reporting-quality-gates-check.md)
 
-**Next:** Chapter 038 — Jenkins Static Analysis, Code Coverage and SonarQube Quality Gates.
+- [Chapter 038 — Jenkins Static Analysis, Code Coverage and SonarQube Quality Gates](part-08-build-automation-testing-artifacts/038-jenkins-static-analysis-code-coverage-sonarqube-quality-gates.md)
+- [Chapter 038 — Companion hands-on lab](part-08-build-automation-testing-artifacts/labs/038-jenkins-static-analysis-code-coverage-sonarqube-quality-gates-check.md)
+
+**Next:** Chapter 039 — Jenkins Artifact Management, Versioning and Repository Integration.
 
 ## Tutorial standard
 
