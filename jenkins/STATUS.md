@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 56 / 100 chapters (56%)**
+**Progress: 57 / 100 chapters (57%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -15,7 +15,7 @@
 | 09 — Docker, Containers and Image Pipelines | 041–045 | 5 | 5 | Complete |
 | 10 — Jenkins on Kubernetes, EKS and AKS | 046–050 | 5 | 5 | Complete |
 | 11 — Helm, Kubernetes Deployment and GitOps | 051–055 | 5 | 5 | Complete |
-| 12 — Security, RBAC, SSO, Credentials and Secrets | 056–060 | 1 | 5 | In progress |
+| 12 — Security, RBAC, SSO, Credentials and Secrets | 056–060 | 2 | 5 | In progress |
 | 13 — Plugins, JCasC and Configuration Management | 061–065 | 0 | 5 | Not started |
 | 14 — Observability, Monitoring and Performance | 066–070 | 0 | 5 | Not started |
 | 15 — Troubleshooting and Incident Response | 071–075 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 057 — Jenkins Role-Based Access Control, Folder Security and Least Privilege.
+**Next:** Chapter 058 — Jenkins Enterprise SSO, LDAP, SAML and OIDC Integration.
