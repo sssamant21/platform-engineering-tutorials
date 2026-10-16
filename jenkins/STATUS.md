@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 38 / 100 chapters (38%)**
+**Progress: 39 / 100 chapters (39%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -11,7 +11,7 @@
 | 05 — Declarative and Scripted Pipelines | 021–025 | 5 | 5 | Complete |
 | 06 — Groovy, Shared Libraries and Reusable Pipelines | 026–030 | 5 | 5 | Complete |
 | 07 — Git, GitHub, GitLab and SCM Integration | 031–035 | 5 | 5 | Complete |
-| 08 — Build Automation, Testing and Artifacts | 036–040 | 3 | 5 | In progress |
+| 08 — Build Automation, Testing and Artifacts | 036–040 | 4 | 5 | In progress |
 | 09 — Docker, Containers and Image Pipelines | 041–045 | 0 | 5 | Not started |
 | 10 — Jenkins on Kubernetes, EKS and AKS | 046–050 | 0 | 5 | Not started |
 | 11 — Helm, Kubernetes Deployment and GitOps | 051–055 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 039 — Jenkins Artifact Management, Versioning and Repository Integration.
+**Next:** Chapter 040 — Build, Testing and Artifact Reliability Acceptance Capstone.
