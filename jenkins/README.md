@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 67/100 published**
+**100 chapters · 20 parts · 68/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -223,7 +223,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 067 — Jenkins Prometheus, Grafana Dashboards and Alertmanager Integration](part-14-observability-monitoring-performance/067-jenkins-prometheus-grafana-alertmanager-integration.md)
 - [Chapter 067 — Companion hands-on lab](part-14-observability-monitoring-performance/labs/067-jenkins-prometheus-grafana-alertmanager-integration-check.md)
 
-**Next:** Chapter 068 — Jenkins Pipeline Observability, Logs, Traces and OpenTelemetry Integration.
+- [Chapter 068 — Jenkins Pipeline Observability, Logs, Traces and OpenTelemetry Integration](part-14-observability-monitoring-performance/068-jenkins-pipeline-observability-logs-traces-opentelemetry-integration.md)
+- [Chapter 068 — Companion hands-on lab](part-14-observability-monitoring-performance/labs/068-jenkins-pipeline-observability-logs-traces-opentelemetry-integration-check.md)
+
+**Next:** Chapter 069 — Jenkins Controller, JVM, Queue and Agent Performance Analysis.
 
 ## Tutorial standard
 
