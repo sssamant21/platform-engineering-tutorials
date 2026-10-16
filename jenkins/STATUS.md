@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 69 / 100 chapters (69%)**
+**Progress: 70 / 100 chapters (70%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -17,7 +17,7 @@
 | 11 — Helm, Kubernetes Deployment and GitOps | 051–055 | 5 | 5 | Complete |
 | 12 — Security, RBAC, SSO, Credentials and Secrets | 056–060 | 5 | 5 | Complete |
 | 13 — Plugins, JCasC and Configuration Management | 061–065 | 5 | 5 | Complete |
-| 14 — Observability, Monitoring and Performance | 066–070 | 4 | 5 | In progress |
+| 14 — Observability, Monitoring and Performance | 066–070 | 5 | 5 | Complete |
 | 15 — Troubleshooting and Incident Response | 071–075 | 0 | 5 | Not started |
 | 16 — Scaling, Controller Capacity and Reliability | 076–080 | 0 | 5 | Not started |
 | 17 — Backup, Restore, Upgrades and Disaster Recovery | 081–085 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 070 — Jenkins Observability, Performance and Reliability Acceptance Capstone.
+**Next:** Chapter 071 — Jenkins Troubleshooting Methodology, Diagnostics and Incident Triage (Part 15).
