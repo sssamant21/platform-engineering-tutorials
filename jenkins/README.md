@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 44/100 published**
+**100 chapters · 20 parts · 45/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -144,7 +144,12 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 044 — Container Image Vulnerability Scanning, SBOMs and Signing in Jenkins](part-09-docker-containers-image-pipelines/044-container-image-vulnerability-scanning-sboms-signing-jenkins.md)
 - [Chapter 044 — Companion hands-on lab](part-09-docker-containers-image-pipelines/labs/044-container-image-vulnerability-scanning-sboms-signing-jenkins-check.md)
 
-**Next:** Chapter 045 — Enterprise Jenkins Container Image Pipeline Capstone.
+- [Chapter 045 — Enterprise Jenkins Container Image Pipeline Capstone](part-09-docker-containers-image-pipelines/045-enterprise-jenkins-container-image-pipeline-capstone.md)
+- [Chapter 045 — Companion hands-on capstone lab](part-09-docker-containers-image-pipelines/labs/045-enterprise-jenkins-container-image-pipeline-capstone-check.md)
+
+**Part 09 complete:** Chapters 041–045.
+
+**Next:** Chapter 046 — Jenkins on Kubernetes: Architecture, Controllers and Dynamic Agents (Part 10).
 
 ## Tutorial standard
 
