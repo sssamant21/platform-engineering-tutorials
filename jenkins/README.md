@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 22/100 published**
+**100 chapters · 20 parts · 23/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -75,8 +75,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 021 — Companion hands-on lab](part-05-declarative-scripted-pipelines/labs/021-declarative-pipeline-syntax-stages-steps-directives-check.md)
 - [Chapter 022 — Declarative Pipeline Agents, Environment, Parameters and Conditional Execution](part-05-declarative-scripted-pipelines/022-declarative-pipeline-agents-environment-parameters-conditional-execution.md)
 - [Chapter 022 — Companion hands-on lab](part-05-declarative-scripted-pipelines/labs/022-declarative-agents-environment-parameters-conditions-check.md)
+- [Chapter 023 — Declarative Pipeline Post Conditions, Error Handling, Timeouts and Retries](part-05-declarative-scripted-pipelines/023-declarative-pipeline-post-conditions-error-handling-timeouts-retries.md)
+- [Chapter 023 — Companion hands-on lab](part-05-declarative-scripted-pipelines/labs/023-declarative-post-error-timeout-retry-check.md)
 
-**Next:** Chapter 023 — Declarative Pipeline Post Conditions, Error Handling, Timeouts and Retries.
+**Next:** Chapter 024 — Scripted Pipeline Groovy, Node, Stage and Flow Control.
 
 ## Tutorial standard
 
