@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${VPC_ID:?set approved VPC_ID}"
+aws sts get-caller-identity
+aws ec2 describe-vpcs --vpc-ids "$VPC_ID" --query 'Vpcs[].{VpcId:VpcId,Cidr:CidrBlock}'
+aws ec2 describe-route-tables --filters "Name=vpc-id,Values=$VPC_ID" --query 'RouteTables[].{Id:RouteTableId,Routes:Routes,Associations:Associations}'
+aws ec2 describe-security-groups --filters "Name=vpc-id,Values=$VPC_ID" --query 'SecurityGroups[].{Id:GroupId,Ingress:IpPermissions}'
+aws ec2 describe-flow-logs --filter "Name=resource-id,Values=$VPC_ID"
+# Read-only diagnostics; sanitize outputs before sharing.
