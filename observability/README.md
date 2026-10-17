@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 14/100 published**
+**100 chapters · 20 parts · 15/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -10,7 +10,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 |---|---|---|---|
 | 01 | 001–005 | Observability Fundamentals and Reliability Signals | 5/5 |
 | 02 | 006–010 | Linux and Infrastructure Monitoring | 5/5 |
-| 03 | 011–015 | Prometheus Architecture and Installation | 4/5 |
+| 03 | 011–015 | Prometheus Architecture and Installation | 5/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 0/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 0/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 0/5 |
@@ -81,4 +81,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 014 — Prometheus High Availability, Federation, Remote Write and Long-Term Storage](part-03-prometheus-architecture-installation/014-prometheus-high-availability-federation-remote-write-long-term-storage.md)
 - [Chapter 014 — Executable companion lab](part-03-prometheus-architecture-installation/labs/014-prometheus-high-availability-federation-remote-write-long-term-storage-lab.md)
 
-**Next:** Chapter 015 — Prometheus Enterprise Deployment, Reliability Testing and Production Readiness Capstone.
+- [Chapter 015 — Prometheus Enterprise Deployment, Reliability Testing and Production Readiness Capstone](part-03-prometheus-architecture-installation/015-prometheus-enterprise-deployment-reliability-testing-production-readiness-capstone.md)
+- [Chapter 015 — Executable companion lab](part-03-prometheus-architecture-installation/labs/015-prometheus-enterprise-deployment-reliability-testing-production-readiness-capstone-lab.md)
+
+**Part 03 complete: 5/5 chapters published.**
+
+**Next:** Chapter 016 — PromQL Fundamentals, Selectors, Instant Vectors, Range Vectors and Query Semantics (Part 04).
