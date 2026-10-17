@@ -1,0 +1,21 @@
+{
+  "environment": "prod",
+  "change_ticket": "CHG-DEMO-029",
+  "source_backend": "s3://iac-primary/prod/db",
+  "destination_backend": "s3://iac-dr/prod/db",
+  "snapshot_id": "snapshot-20261017-001",
+  "snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "snapshot_lineage": "5db6c8c3-35cb-4a61-9b0d-7cfba02f7a4d",
+  "snapshot_serial": 7,
+  "retention_days": 90,
+  "rpo_minutes": 30,
+  "rto_minutes": 120,
+  "controls": {
+    "encrypted": true,
+    "versioned": true,
+    "lock_verified": true,
+    "writers_frozen": true,
+    "restore_tested": true,
+    "integrity_verified": true
+  }
+}
