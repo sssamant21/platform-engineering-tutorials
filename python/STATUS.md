@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **57 chapters**
-- Remaining: **63 chapters**
-- Published labs: **57**
-- Next: **058 — Python AsyncIO Queues, Backpressure and Streaming Pipelines**
+- Published: **58 chapters**
+- Remaining: **62 chapters**
+- Published labs: **58**
+- Next: **059 — Advanced AsyncIO Synchronization and Resilient Concurrency**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–057 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–058 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -83,7 +83,7 @@ Chapter 049: [Tutorial](05-files-exceptions-logging-configuration/049-python-ser
 Chapter 050: [Tutorial](05-files-exceptions-logging-configuration/050-files-exceptions-logging-configuration-production-capstone.md) · [Hands-on capstone lab](05-files-exceptions-logging-configuration/labs/050-integrated-files-exceptions-logging-configuration-sre-dbre-capstone-lab.md). Automated tests and incident simulations published; execution pending.
 
 ## Part 06 — Advanced Python, Typing and Concurrency
-- Published: **7/10** (Chapters 051–057)
+- Published: **8/10** (Chapters 051–058)
 - [Chapter 051 tutorial](06-advanced-python-typing-concurrency/051-advanced-python-type-hints-protocols-static-analysis.md) · [Chapter 051 lab](06-advanced-python-typing-concurrency/labs/051-typed-sre-dbre-telemetry-analyzer-lab.md)
 - 40 local unit tests passed; strict mypy/pyright checks pending.
 
@@ -98,3 +98,5 @@ Chapter 055: [Tutorial](06-advanced-python-typing-concurrency/055-python-threadi
 Chapter 056: [Tutorial](06-advanced-python-typing-concurrency/056-python-multiprocessing-process-pools.md) · [Hands-on lab](06-advanced-python-typing-concurrency/labs/056-multiprocessing-process-pools-sre-dbre-lab.md). Automated tests and spawn-pool smoke tests published; execution pending.
 
 Chapter 057: [Tutorial](06-advanced-python-typing-concurrency/057-python-asyncio-asynchronous-io.md) · [Hands-on lab](06-advanced-python-typing-concurrency/labs/057-asyncio-asynchronous-io-sre-dbre-lab.md). Python 3.11+; automated tests published, execution pending.
+
+Chapter 058: [Tutorial](06-advanced-python-typing-concurrency/058-python-asyncio-queues-backpressure-streaming-pipelines.md) · [Hands-on lab](06-advanced-python-typing-concurrency/labs/058-asyncio-queues-backpressure-streaming-sre-dbre-lab.md). Python 3.11+; automated tests published, execution pending.
