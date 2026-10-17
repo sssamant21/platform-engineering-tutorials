@@ -47,6 +47,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 006 executable labs and tests](labs/chapter-006/)
 - [007 — IaC Repository Structure, Environment Isolation and Workspace Standards](chapters/007-iac-repository-structure-environment-isolation-workspace-standards.md)
 - [Chapter 007 executable labs and tests](labs/chapter-007/)
+- [008 — Terraform and OpenTofu Version Management, Provider Lockfiles and Reproducible Toolchains](chapters/008-terraform-opentofu-version-management-provider-lockfiles-reproducible-toolchains.md)
+- [Chapter 008 executable labs and tests](labs/chapter-008/)
 
 **Part 01 (001–005): all five chapters published; learner lab verification pending.**
 
