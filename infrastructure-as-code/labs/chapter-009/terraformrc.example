@@ -1,0 +1,10 @@
+# EXAMPLE ONLY: requires a properly populated and trusted mirror.
+provider_installation {
+  filesystem_mirror {
+    path    = "/opt/company/terraform-providers"
+    include = ["registry.terraform.io/hashicorp/*"]
+  }
+  direct {
+    exclude = ["registry.terraform.io/hashicorp/*"]
+  }
+}
