@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 11 / 120 chapters (9.17%)  
+**Progress:** 12 / 120 chapters (10.00%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -15,8 +15,9 @@
 **Chapter 009:** Published; live lab execution remains for learner verification.  
 **Chapter 010:** Published; live lab execution remains for learner verification.  
 **Chapter 011:** Published; live lab execution remains for learner verification.  
-**Part 03:** 1/5 chapters published.  
-**Next:** Chapter 012 — Terraform Resource Blocks, Data Sources, Meta-Arguments and Dependency Graph.
+**Part 03:** 2/5 chapters published.  
+**Chapter 012:** Published; live lab execution remains for learner verification.  
+**Next:** Chapter 013 — Terraform Plan, Apply, Refresh, Destroy and Execution Lifecycle.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -31,6 +32,7 @@
 | 009 | Provider Installation, Plugin Caching, Registries and Network Troubleshooting | Published |
 | 010 | IaC Development Tooling Integration, CI Preflight and Environment Readiness Capstone | Published |
 | 011 | Terraform Configuration Language Fundamentals: Blocks, Arguments, Expressions and HCL Syntax | Published |
+| 012 | Terraform Resource Blocks, Data Sources, Meta-Arguments and Dependency Graph | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -115,5 +117,13 @@
 - [x] Typed variable validation and built-in Terraform/OpenTofu local lab
 - [x] Terraform console, negative tests and cleanup exercises
 - [x] Python HCL source-policy checks and automated unit tests
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [ ] Live lab execution evidence
+
+## Chapter 012 acceptance
+- [x] Resource/data source, meta-argument and graph architecture
+- [x] Built-in Terraform/OpenTofu graph lab with stable for_each keys
+- [x] Lifecycle prevent_destroy failure injection and cleanup procedure
+- [x] Python graph inventory policy and seven automated unit tests
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [ ] Live lab execution evidence
