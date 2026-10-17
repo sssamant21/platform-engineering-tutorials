@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 8 / 120 chapters (6.67%)  
+**Progress:** 9 / 120 chapters (7.50%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -9,10 +9,11 @@
 **Chapter 005:** Published; live lab execution remains for learner verification.  
 **Part 01:** 5/5 chapters published (labs not independently executed).  
 **Chapter 006:** Published; live lab execution remains for learner verification.  
-**Part 02:** 3/5 chapters published.  
+**Part 02:** 4/5 chapters published.  
 **Chapter 007:** Published; live lab execution remains for learner verification.  
 **Chapter 008:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 009 — Provider Installation, Plugin Caching, Registries and Network Troubleshooting.
+**Chapter 009:** Published; live lab execution remains for learner verification.  
+**Next:** Chapter 010 — IaC Development Tooling Integration, CI Preflight and Environment Readiness Capstone.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -24,6 +25,7 @@
 | 006 | IaC Workstation Setup, CLI Installation and Toolchain Validation | Published |
 | 007 | IaC Repository Structure, Environment Isolation and Workspace Standards | Published |
 | 008 | Terraform and OpenTofu Version Management, Provider Lockfiles and Reproducible Toolchains | Published |
+| 009 | Provider Installation, Plugin Caching, Registries and Network Troubleshooting | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -83,4 +85,13 @@
 - [x] Python manifest policy, CLI drift check and automated unit tests
 - [x] Optional provider lockfile and upgrade workflow
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [ ] Live lab execution evidence
+
+## Chapter 009 acceptance
+- [x] Provider installation, registry, cache and mirror theory
+- [x] Offline and online Terraform/OpenTofu lab configurations
+- [x] Example controlled provider mirror CLI configuration
+- [x] Python registry policy validator and automated tests
+- [x] DNS/TLS diagnostic helper and automated tests
+- [x] Production SRE/DBRE cases, troubleshooting and runbooks
 - [ ] Live lab execution evidence
