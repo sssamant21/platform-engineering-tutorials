@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **39 chapters**
-- Remaining: **81 chapters**
-- Published labs: **39**
-- Next: **040 — Object-Oriented SRE/DBRE Production Capstone**
+- Published: **40 chapters**
+- Remaining: **80 chapters**
+- Published labs: **40**
+- Next: **041 — Files, Paths and Filesystem Operations**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–039 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–040 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -38,7 +38,7 @@ Chapter 029: [Tutorial](03-functions-modules-packages/029-python-cli-design-argp
 
 Chapter 030: [Tutorial](03-functions-modules-packages/030-functions-modules-packaging-production-ready-sre-cli-capstone.md) · [Capstone lab](03-functions-modules-packages/labs/030-production-ready-sre-cli-capstone-lab.md). Includes 45 tests, 100-point assessment and safety runbooks; local execution is pending. Part 03 complete.
 
-- Part 04 — Object-Oriented Programming: **9/10** (in progress)
+- Part 04 — Object-Oriented Programming: **10/10** (complete)
 
 Chapter 031: [Tutorial](04-object-oriented-programming/031-python-classes-objects-encapsulation.md) · [Hands-on lab](04-object-oriented-programming/labs/031-object-oriented-sre-dbre-monitoring-lab.md). Includes 30 unit tests; local execution pending.
 
@@ -57,3 +57,5 @@ Chapter 037: [Tutorial](04-object-oriented-programming/037-magic-methods-dunder-
 Chapter 038: [Tutorial](04-object-oriented-programming/038-iterators-generators-lazy-object-oriented-pipelines.md) · [Hands-on lab](04-object-oriented-programming/labs/038-streaming-sre-dbre-telemetry-pipeline-lab.md). Includes 32 unit tests; local execution pending.
 
 Chapter 039: [Tutorial](04-object-oriented-programming/039-context-managers-resource-management-exception-safe-operations.md) · [Hands-on lab](04-object-oriented-programming/labs/039-exception-safe-sre-dbre-resource-management-lab.md). Includes 32 unit tests; local execution pending.
+
+Chapter 040: [Tutorial](04-object-oriented-programming/040-object-oriented-sre-dbre-production-capstone.md) · [Capstone lab](04-object-oriented-programming/labs/040-object-oriented-sre-dbre-production-capstone-lab.md). Integrated synthetic project, automated tests and 100-point acceptance assessment; local execution pending. Part 04 complete.
