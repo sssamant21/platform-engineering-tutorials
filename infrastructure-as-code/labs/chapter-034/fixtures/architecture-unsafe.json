@@ -1,0 +1,41 @@
+{
+  "environment": "prod",
+  "change_ticket": "",
+  "state_namespace": "iac-dev",
+  "release_owner": "platform-sre",
+  "attestations": {
+    "code_reviewed": true,
+    "terraform_tests_passed": false,
+    "contract_tests_passed": true,
+    "security_scan_passed": true
+  },
+  "modules": [
+    {
+      "name": "network",
+      "owner": "platform-sre",
+      "schema_version": 2,
+      "depends_on": []
+    },
+    {
+      "name": "database",
+      "owner": "dbre-team",
+      "schema_version": 1,
+      "depends_on": [
+        "network"
+      ]
+    },
+    {
+      "name": "application",
+      "owner": "platform-sre",
+      "schema_version": 1,
+      "depends_on": [
+        "database"
+      ]
+    }
+  ],
+  "database": {
+    "replicas": 1,
+    "backup_enabled": false,
+    "encryption_enabled": false
+  }
+}
