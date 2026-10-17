@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 81 / 100 chapters (81%)**
+**Progress: 82 / 100 chapters (82%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -20,7 +20,7 @@
 | 14 — Observability, Monitoring and Performance | 066–070 | 5 | 5 | Complete |
 | 15 — Troubleshooting and Incident Response | 071–075 | 5 | 5 | Complete |
 | 16 — Scaling, Controller Capacity and Reliability | 076–080 | 5 | 5 | Complete |
-| 17 — Backup, Restore, Upgrades and Disaster Recovery | 081–085 | 1 | 5 | In progress |
+| 17 — Backup, Restore, Upgrades and Disaster Recovery | 081–085 | 2 | 5 | In progress |
 | 18 — Terraform, Ansible and Infrastructure Automation | 086–090 | 0 | 5 | Not started |
 | 19 — Enterprise Jenkins SRE Operations and FinOps | 091–095 | 0 | 5 | Not started |
 | 20 — Final Enterprise Jenkins Capstone | 096–100 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 082 — Jenkins Backup Automation, Secure Storage and Restore Validation.
+**Next:** Chapter 083 — Jenkins Core, Plugin and Java Upgrades with Compatibility Testing and Rollback.
