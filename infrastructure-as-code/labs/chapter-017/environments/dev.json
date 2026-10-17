@@ -1,0 +1,18 @@
+{
+  "environment": "dev",
+  "service": "patient-api",
+  "owner": "platform-sre",
+  "network_cidr": "10.20.0.0/16",
+  "services": {
+    "api": {
+      "replicas": 2,
+      "enabled": true,
+      "tier": "frontend"
+    },
+    "worker": {
+      "replicas": 2,
+      "enabled": true,
+      "tier": "backend"
+    }
+  }
+}
