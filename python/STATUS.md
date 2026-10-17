@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **32 chapters**
-- Remaining: **88 chapters**
-- Published labs: **32**
-- Next: **033 — Inheritance, Method Overriding and super()**
+- Published: **33 chapters**
+- Remaining: **87 chapters**
+- Published labs: **33**
+- Next: **034 — Polymorphism, Duck Typing and Protocol-Based Design**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–032 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–033 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -38,8 +38,10 @@ Chapter 029: [Tutorial](03-functions-modules-packages/029-python-cli-design-argp
 
 Chapter 030: [Tutorial](03-functions-modules-packages/030-functions-modules-packaging-production-ready-sre-cli-capstone.md) · [Capstone lab](03-functions-modules-packages/labs/030-production-ready-sre-cli-capstone-lab.md). Includes 45 tests, 100-point assessment and safety runbooks; local execution is pending. Part 03 complete.
 
-- Part 04 — Object-Oriented Programming: **2/10** (in progress)
+- Part 04 — Object-Oriented Programming: **3/10** (in progress)
 
 Chapter 031: [Tutorial](04-object-oriented-programming/031-python-classes-objects-encapsulation.md) · [Hands-on lab](04-object-oriented-programming/labs/031-object-oriented-sre-dbre-monitoring-lab.md). Includes 30 unit tests; local execution pending.
 
 Chapter 032: [Tutorial](04-object-oriented-programming/032-instance-class-static-methods-object-lifecycle.md) · [Hands-on lab](04-object-oriented-programming/labs/032-sre-dbre-probe-factories-lifecycle-lab.md). Includes 32 unit tests; local execution pending.
+
+Chapter 033: [Tutorial](04-object-oriented-programming/033-inheritance-method-overriding-super.md) · [Hands-on lab](04-object-oriented-programming/labs/033-inheritance-sre-dbre-health-adapters-lab.md). Includes 32 unit tests; local execution pending.
