@@ -1,0 +1,26 @@
+{
+  "allowed_provider_sources": [
+    "hashicorp/aws",
+    "hashicorp/azurerm",
+    "hashicorp/google"
+  ],
+  "allowed_regions": [
+    "us-east-1",
+    "us-west-2",
+    "eastus",
+    "westus2",
+    "us-central1"
+  ],
+  "allowed_identity_prefixes": [
+    "oidc://",
+    "role://",
+    "managed-identity://",
+    "workload-identity://"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_prod_ticket": true,
+  "deny_deletes": true,
+  "deny_replacements": true
+}
