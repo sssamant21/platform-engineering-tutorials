@@ -1,13 +1,13 @@
 # Observability Curriculum Status
 
-**Progress: 17 / 100 chapters (17%) · 20 parts · Part 04: 2/5**
+**Progress: 18 / 100 chapters (18%) · 20 parts · Part 04: 3/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
 | 01 — Observability Fundamentals and Reliability Signals | 001–005 | 5 | 5 | Complete |
 | 02 — Linux and Infrastructure Monitoring | 006–010 | 5 | 5 | Complete |
 | 03 — Prometheus Architecture and Installation | 011–015 | 5 | 5 | Complete |
-| 04 — PromQL and Advanced Metrics | 016–020 | 2 | 5 | In progress |
+| 04 — PromQL and Advanced Metrics | 016–020 | 3 | 5 | In progress |
 | 05 — Grafana Dashboards and Visualization | 021–025 | 0 | 5 | Planned |
 | 06 — Alertmanager and Alert Engineering | 026–030 | 0 | 5 | Planned |
 | 07 — Exporters and Custom Instrumentation | 031–035 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–017 and companion labs. Parts 01, 02 and 03 complete (5/5 each); Part 04 in progress (2/5).
+**Published:** Chapters 001–018 and companion labs. Parts 01, 02 and 03 complete (5/5 each); Part 04 in progress (3/5).
 
-**Next:** Chapter 018 — PromQL Rate, Increase, Histograms, Quantiles and Latency Analysis.
+**Next:** Chapter 019 — Advanced PromQL Subqueries, Recording Rules, Query Performance and SLO Engineering.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
