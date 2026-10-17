@@ -79,7 +79,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 022 executable labs and tests](labs/chapter-022/)
 - [023 — Terraform Data Sources, External Dependencies and Cross-Module Data Flow](chapters/023-terraform-data-sources-external-dependencies-cross-module-data-flow.md)
 - [Chapter 023 executable labs and tests](labs/chapter-023/)
+- [024 — Terraform Lifecycle Meta-Arguments, Preconditions, Postconditions and Safe Replacement Strategies](chapters/024-terraform-lifecycle-meta-arguments-preconditions-postconditions-safe-replacement-strategies.md)
+- [Chapter 024 executable labs and tests](labs/chapter-024/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 underway (021–023 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 underway (021–024 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
