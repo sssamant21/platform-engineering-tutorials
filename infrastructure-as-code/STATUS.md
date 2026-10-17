@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 16 / 120 chapters (13.33%)  
+**Progress:** 17 / 120 chapters (14.17%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -21,8 +21,9 @@
 **Chapter 014:** Published; live lab execution remains for learner verification.  
 **Chapter 015:** Published; Part 03 content complete; live lab execution remains for learner verification.  
 **Chapter 016:** Published; live lab execution remains for learner verification.  
-**Part 04:** 1/5 chapters published.  
-**Next:** Chapter 017 — Terraform Local Values, Expressions, Functions and Dynamic Configuration.
+**Part 04:** 2/5 chapters published.  
+**Chapter 017:** Published; live lab execution remains for learner verification.  
+**Next:** Chapter 018 — Terraform Collections, for Expressions, Splat Expressions and Advanced Data Transformations.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -42,6 +43,7 @@
 | 014 | Terraform State Inspection, Drift Detection and Resource Address Management | Published |
 | 015 | Terraform Language, Lifecycle, State and Change Management Capstone | Published |
 | 016 | Terraform Input Variables, Type Constraints, Defaults and Validation | Published |
+| 017 | Terraform Local Values, Expressions, Functions and Dynamic Configuration | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -167,4 +169,12 @@
 - [x] Python environment input-policy and eleven automated unit tests
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [x] Chapter and GitHub index publication
+- [ ] Live lab execution evidence
+
+## Chapter 017 acceptance
+- [x] Locals, expressions, functions, for_each and dynamic block theory
+- [x] No-cloud Terraform/OpenTofu lab with dev/prod example tfvars
+- [x] Python expression policy and twelve automated unit tests
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [x] GitHub chapter and master index publication
 - [ ] Live lab execution evidence
