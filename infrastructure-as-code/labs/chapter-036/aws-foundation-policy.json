@@ -1,0 +1,28 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "required_tags": [
+    "Environment",
+    "ManagedBy",
+    "Owner",
+    "CostCenter"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_short_lived_identity": true,
+  "require_oidc": true,
+  "require_least_privilege": true,
+  "require_encrypted_versioned_locked_state": true,
+  "require_state_isolation": true,
+  "deny_destructive_actions": true
+}
