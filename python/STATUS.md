@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **38 chapters**
-- Remaining: **82 chapters**
-- Published labs: **38**
-- Next: **039 — Context Managers, Resource Management and Exception-Safe Operations**
+- Published: **39 chapters**
+- Remaining: **81 chapters**
+- Published labs: **39**
+- Next: **040 — Object-Oriented SRE/DBRE Production Capstone**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–038 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–039 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -38,7 +38,7 @@ Chapter 029: [Tutorial](03-functions-modules-packages/029-python-cli-design-argp
 
 Chapter 030: [Tutorial](03-functions-modules-packages/030-functions-modules-packaging-production-ready-sre-cli-capstone.md) · [Capstone lab](03-functions-modules-packages/labs/030-production-ready-sre-cli-capstone-lab.md). Includes 45 tests, 100-point assessment and safety runbooks; local execution is pending. Part 03 complete.
 
-- Part 04 — Object-Oriented Programming: **8/10** (in progress)
+- Part 04 — Object-Oriented Programming: **9/10** (in progress)
 
 Chapter 031: [Tutorial](04-object-oriented-programming/031-python-classes-objects-encapsulation.md) · [Hands-on lab](04-object-oriented-programming/labs/031-object-oriented-sre-dbre-monitoring-lab.md). Includes 30 unit tests; local execution pending.
 
@@ -55,3 +55,5 @@ Chapter 036: [Tutorial](04-object-oriented-programming/036-dataclasses-propertie
 Chapter 037: [Tutorial](04-object-oriented-programming/037-magic-methods-dunder-protocols-operator-overloading.md) · [Hands-on lab](04-object-oriented-programming/labs/037-python-object-protocols-sre-dbre-metrics-lab.md). Includes 32 unit tests; local execution pending.
 
 Chapter 038: [Tutorial](04-object-oriented-programming/038-iterators-generators-lazy-object-oriented-pipelines.md) · [Hands-on lab](04-object-oriented-programming/labs/038-streaming-sre-dbre-telemetry-pipeline-lab.md). Includes 32 unit tests; local execution pending.
+
+Chapter 039: [Tutorial](04-object-oriented-programming/039-context-managers-resource-management-exception-safe-operations.md) · [Hands-on lab](04-object-oriented-programming/labs/039-exception-safe-sre-dbre-resource-management-lab.md). Includes 32 unit tests; local execution pending.
