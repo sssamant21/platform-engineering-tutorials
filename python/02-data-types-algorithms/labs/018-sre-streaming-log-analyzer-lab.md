@@ -269,7 +269,7 @@ python -m unittest -v test_stream_logs.py
 python -m py_compile stream_logs.py
 ```
 
-Expected default results: **5 events**, **4 slow events** at or above 250 ms (220 and 35 are below, so actual count is **3**: 950, 300, 800), **2 critical**, **2 warning**, **1 info**, and services sorted `api`, `db`. The definitive expected `slow_event_count` is **3**.
+Expected default results: **5 events**, **3 slow events** at or above 250 ms (950, 300 and 800; 220 and 35 are below threshold), **2 critical**, **2 warning**, **1 info**, and services sorted `api`, `db`.
 
 ## 5. Failure injection
 1. Add a malformed JSONL line: fail the report, with line number.
