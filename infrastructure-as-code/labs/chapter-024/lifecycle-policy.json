@@ -1,0 +1,8 @@
+{
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "deny_deletes": true,
+  "deny_replacements": true,
+  "allow_updates": true
+}
