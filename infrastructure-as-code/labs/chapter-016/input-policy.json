@@ -1,0 +1,10 @@
+{
+  "environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "production_min_db_replicas": 2,
+  "require_change_ticket": true,
+  "require_owner": true
+}
