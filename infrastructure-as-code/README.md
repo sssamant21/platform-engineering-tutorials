@@ -55,7 +55,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 010 executable labs and tests](labs/chapter-010/)
 - [011 — Terraform Configuration Language Fundamentals: Blocks, Arguments, Expressions and HCL Syntax](chapters/011-terraform-configuration-language-blocks-arguments-expressions-hcl-syntax.md)
 - [Chapter 011 executable labs and tests](labs/chapter-011/)
+- [012 — Terraform Resource Blocks, Data Sources, Meta-Arguments and Dependency Graph](chapters/012-terraform-resource-blocks-data-sources-meta-arguments-dependency-graph.md)
+- [Chapter 012 executable labs and tests](labs/chapter-012/)
 
-**Parts 01 and 02 complete (001–010); Part 03 underway (011 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 underway (011–012 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
