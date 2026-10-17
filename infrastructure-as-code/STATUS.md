@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 30 / 120 chapters (25.00%)  
+**Progress:** 31 / 120 chapters (25.83%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -38,7 +38,8 @@
 **Chapter 028:** Published; live lab evidence pending.  
 **Chapter 029:** Published; live lab and recovery drill evidence pending.  
 **Chapter 030:** Published; Part 06 complete (live acceptance pending).  
-**Next:** Chapter 031 — Terraform Module Architecture, Interfaces and Reusable Design Patterns.
+**Chapter 031:** Published; live lab evidence pending.  
+**Next:** Chapter 032 — Terraform Module Inputs, Outputs, Validation and Contract Testing.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -72,6 +73,7 @@
 | 028 | Terraform State Operations, Import, Move, Remove and Drift Reconciliation | Published |
 | 029 | Terraform State Migration, Backup, Restore and Disaster Recovery | Published |
 | 030 | Terraform State and Remote Backend Production Operations Capstone | Published |
+| 031 | Terraform Module Architecture, Interfaces and Reusable Design Patterns | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -311,3 +313,11 @@
 - [x] SRE/DBRE game days, troubleshooting, production runbooks and 100-point rubric
 - [x] Chapter and master index publication; Part 06 complete
 - [ ] Live Terraform execution, tests, cloud backend lock/migration and DR evidence
+
+## Chapter 031 acceptance
+- [x] Module boundaries, contracts, provider composition and reusable architecture theory
+- [x] Offline Terraform network/database/application module lab with dev/prod fixtures
+- [x] Python module contract and plan policy with thirty-one unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 07 started
+- [ ] Live Terraform validation, policy test execution and operational evidence
