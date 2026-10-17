@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 20 / 120 chapters (16.67%)  
+**Progress:** 21 / 120 chapters (17.50%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -26,7 +26,9 @@
 **Chapter 018:** Published; live lab execution remains for learner verification.  
 **Chapter 019:** Published; live lab execution remains for learner verification.  
 **Chapter 020:** Published; Part 04 content complete; live lab execution remains for learner verification.  
-**Next:** Chapter 021 — Terraform Provider Configuration, Aliases, Version Constraints and Authentication.
+**Chapter 021:** Published; live lab evidence pending.  
+**Part 05:** 1/5 chapters published.  
+**Next:** Chapter 022 — Terraform Provider Dependencies, Implicit and Explicit Resource Graphs and Lifecycle Ordering.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -50,6 +52,7 @@
 | 018 | Terraform Collections, for Expressions, Splat Expressions and Advanced Data Transformations | Published |
 | 019 | Terraform Conditional Expressions, Null Handling, try/can and Defensive Configuration Patterns | Published |
 | 020 | Terraform Variables, Expressions and Defensive Configuration Production Capstone | Published |
+| 021 | Terraform Provider Configuration, Aliases, Version Constraints and Authentication | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -208,3 +211,11 @@
 - [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point rubric
 - [x] Part 04 curriculum publication complete (016–020)
 - [ ] Live Terraform execution, unit-test evidence and final assessment results
+
+## Chapter 021 acceptance
+- [x] Provider source, version constraints, aliases, lockfile and identity theory
+- [x] Offline terraform_data lab with AWS alias and Azure/GCP auth examples
+- [x] Provider manifest policy and sixteen automated unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [x] Chapter and master index publication
+- [ ] Live lab execution and test evidence
