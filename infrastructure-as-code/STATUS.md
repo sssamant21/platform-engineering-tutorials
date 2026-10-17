@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 21 / 120 chapters (17.50%)  
+**Progress:** 22 / 120 chapters (18.33%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -27,8 +27,9 @@
 **Chapter 019:** Published; live lab execution remains for learner verification.  
 **Chapter 020:** Published; Part 04 content complete; live lab execution remains for learner verification.  
 **Chapter 021:** Published; live lab evidence pending.  
-**Part 05:** 1/5 chapters published.  
-**Next:** Chapter 022 — Terraform Provider Dependencies, Implicit and Explicit Resource Graphs and Lifecycle Ordering.
+**Part 05:** 2/5 chapters published.  
+**Chapter 022:** Published; live lab evidence pending.  
+**Next:** Chapter 023 — Terraform Data Sources, External Dependencies and Cross-Module Data Flow.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -53,6 +54,7 @@
 | 019 | Terraform Conditional Expressions, Null Handling, try/can and Defensive Configuration Patterns | Published |
 | 020 | Terraform Variables, Expressions and Defensive Configuration Production Capstone | Published |
 | 021 | Terraform Provider Configuration, Aliases, Version Constraints and Authentication | Published |
+| 022 | Terraform Provider Dependencies, Implicit and Explicit Resource Graphs and Lifecycle Ordering | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -216,6 +218,14 @@
 - [x] Provider source, version constraints, aliases, lockfile and identity theory
 - [x] Offline terraform_data lab with AWS alias and Azure/GCP auth examples
 - [x] Provider manifest policy and sixteen automated unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [x] Chapter and master index publication
+- [ ] Live lab execution and test evidence
+
+## Chapter 022 acceptance
+- [x] Implicit/explicit dependencies, DAG, data reads, provider and lifecycle theory
+- [x] Offline terraform_data graph lab and sample plan JSON
+- [x] Python graph and plan policy with seventeen automated unit tests authored
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [x] Chapter and master index publication
 - [ ] Live lab execution and test evidence
