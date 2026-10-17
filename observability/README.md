@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 3/100 published**
+**100 chapters · 20 parts · 4/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -8,7 +8,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 
 | Part | Chapters | Topic | Published |
 |---|---|---|---|
-| 01 | 001–005 | Observability Fundamentals and Reliability Signals | 3/5 |
+| 01 | 001–005 | Observability Fundamentals and Reliability Signals | 4/5 |
 | 02 | 006–010 | Linux and Infrastructure Monitoring | 0/5 |
 | 03 | 011–015 | Prometheus Architecture and Installation | 0/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 0/5 |
@@ -44,4 +44,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 003 — Observability Architecture, Data Models and Telemetry Governance](part-01-observability-fundamentals/003-observability-architecture-data-models-telemetry-governance.md)
 - [Chapter 003 — Executable companion lab](part-01-observability-fundamentals/labs/003-observability-architecture-data-models-telemetry-governance-lab.md)
 
-**Next:** Chapter 004 — Observability Instrumentation Strategy, Sampling and Telemetry Quality.
+- [Chapter 004 — Observability Instrumentation Strategy, Sampling and Telemetry Quality](part-01-observability-fundamentals/004-observability-instrumentation-strategy-sampling-telemetry-quality.md)
+- [Chapter 004 — Executable companion lab](part-01-observability-fundamentals/labs/004-observability-instrumentation-strategy-sampling-telemetry-quality-lab.md)
+
+**Next:** Chapter 005 — Observability Fundamentals Production Readiness and Reliability Capstone.
