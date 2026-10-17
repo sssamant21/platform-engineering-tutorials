@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 5/100 published**
+**100 chapters · 20 parts · 6/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -9,7 +9,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | Part | Chapters | Topic | Published |
 |---|---|---|---|
 | 01 | 001–005 | Observability Fundamentals and Reliability Signals | 5/5 |
-| 02 | 006–010 | Linux and Infrastructure Monitoring | 0/5 |
+| 02 | 006–010 | Linux and Infrastructure Monitoring | 1/5 |
 | 03 | 011–015 | Prometheus Architecture and Installation | 0/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 0/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 0/5 |
@@ -52,4 +52,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 
 **Part 01 complete: 5/5 chapters published.**
 
-**Next:** Chapter 006 — Linux Observability Architecture, CPU, Memory, Disk and Network Monitoring (Part 02).
+- [Chapter 006 — Linux Observability Architecture, CPU, Memory, Disk and Network Monitoring](part-02-linux-infrastructure-monitoring/006-linux-observability-architecture-cpu-memory-disk-network-monitoring.md)
+- [Chapter 006 — Executable companion lab](part-02-linux-infrastructure-monitoring/labs/006-linux-observability-architecture-cpu-memory-disk-network-monitoring-lab.md)
+
+**Next:** Chapter 007 — Linux CPU Scheduling, Load Average, Run Queues and Performance Troubleshooting.
