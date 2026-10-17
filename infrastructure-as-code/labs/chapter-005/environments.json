@@ -1,0 +1,55 @@
+{
+  "stacks": [
+    {
+      "name": "aws-staging-network",
+      "cloud": "aws",
+      "environment": "staging",
+      "owner": "platform-sre",
+      "cost_center": "shared-platform",
+      "backend_key": "iac/aws/staging/network.tfstate",
+      "state": {
+        "encrypted": true,
+        "locking": true,
+        "versioning": true
+      },
+      "auto_apply": true,
+      "approvals": []
+    },
+    {
+      "name": "aws-prod-database",
+      "cloud": "aws",
+      "environment": "prod",
+      "owner": "database-reliability",
+      "cost_center": "data-platform",
+      "backend_key": "iac/aws/prod/database.tfstate",
+      "state": {
+        "encrypted": true,
+        "locking": true,
+        "versioning": true
+      },
+      "auto_apply": false,
+      "approvals": [
+        "service-owner",
+        "dbre"
+      ]
+    },
+    {
+      "name": "azure-prod-platform",
+      "cloud": "azure",
+      "environment": "prod",
+      "owner": "platform-sre",
+      "cost_center": "shared-platform",
+      "backend_key": "iac/azure/prod/platform.tfstate",
+      "state": {
+        "encrypted": true,
+        "locking": true,
+        "versioning": true
+      },
+      "auto_apply": false,
+      "approvals": [
+        "service-owner",
+        "platform-owner"
+      ]
+    }
+  ]
+}
