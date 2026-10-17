@@ -78,7 +78,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
   - [Chapter 040 — Object-Oriented SRE/DBRE Production Capstone](04-object-oriented-programming/040-object-oriented-sre-dbre-production-capstone.md)
   - [Chapter 040 — Integrated Production Capstone Lab](04-object-oriented-programming/labs/040-object-oriented-sre-dbre-production-capstone-lab.md)
 
-- **Part 05 — Files, Exceptions, Logging and Configuration (041–050): In progress (7/10)**
+- **Part 05 — Files, Exceptions, Logging and Configuration (041–050): In progress (8/10)**
   - [Chapter 041 — Files, Paths and Filesystem Operations](05-files-exceptions-logging-configuration/041-files-paths-filesystem-operations.md)
   - [Chapter 041 — Safe Filesystem and Atomic SRE Report Lab](05-files-exceptions-logging-configuration/labs/041-safe-filesystem-atomic-sre-report-lab.md)
   - [Chapter 042 — File Formats, CSV, JSON and Structured Data Processing](05-files-exceptions-logging-configuration/042-file-formats-csv-json-structured-data-processing.md)
@@ -93,3 +93,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
   - [Chapter 046 — Production-Style SRE/DBRE argparse CLI Lab](05-files-exceptions-logging-configuration/labs/046-production-style-sre-dbre-argparse-cli-lab.md)
   - [Chapter 047 — Python Regular Expressions and Operational Text Parsing](05-files-exceptions-logging-configuration/047-python-regular-expressions-operational-text-parsing.md)
   - [Chapter 047 — Regex Operational Log Parser SRE/DBRE Lab](05-files-exceptions-logging-configuration/labs/047-regex-operational-log-parser-sre-dbre-lab.md)
+  - [Chapter 048 — Python Dates, Times, Time Zones and Scheduling Fundamentals](05-files-exceptions-logging-configuration/048-python-dates-times-time-zones-scheduling-fundamentals.md)
+  - [Chapter 048 — DST-Safe Maintenance Windows and Scheduling SRE/DBRE Lab](05-files-exceptions-logging-configuration/labs/048-dst-safe-maintenance-windows-scheduling-sre-dbre-lab.md)
