@@ -1,0 +1,20 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_controls": [
+    "encrypted",
+    "versioned",
+    "lock_verified",
+    "writers_frozen",
+    "restore_tested",
+    "integrity_verified"
+  ],
+  "min_retention_days": 30,
+  "max_rpo_minutes": 60,
+  "max_rto_minutes": 240,
+  "require_prod_ticket": true,
+  "require_distinct_backends": true
+}
