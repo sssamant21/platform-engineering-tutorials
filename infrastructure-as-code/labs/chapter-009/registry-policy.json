@@ -1,0 +1,26 @@
+{
+  "allowed_registries": [
+    "registry.terraform.io"
+  ],
+  "verify_checksums": true,
+  "cache": {
+    "enabled": true,
+    "shared_writable": false
+  },
+  "mirror": {
+    "enabled": false,
+    "trusted": false
+  },
+  "providers": [
+    {
+      "source": "registry.terraform.io/hashicorp/random",
+      "constraint": "~> 3.6",
+      "lockfile_committed": true
+    },
+    {
+      "source": "registry.terraform.io/hashicorp/aws",
+      "constraint": "~> 5.0",
+      "lockfile_committed": true
+    }
+  ]
+}
