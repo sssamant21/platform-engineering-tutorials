@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **30 chapters**
-- Remaining: **90 chapters**
-- Published labs: **30**
-- Next: **031 — Python Classes, Objects and Encapsulation**
+- Published: **31 chapters**
+- Remaining: **89 chapters**
+- Published labs: **31**
+- Next: **032 — Instance Methods, Class Methods, Static Methods and Object Lifecycle**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–030 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–031 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -37,3 +37,7 @@ Chapter 028: [Tutorial](03-functions-modules-packages/028-python-project-configu
 Chapter 029: [Tutorial](03-functions-modules-packages/029-python-cli-design-argparse-operational-user-experience.md) · [Hands-on lab](03-functions-modules-packages/labs/029-operational-sre-cli-argparse-lab.md). Includes 30 tests; local execution is pending. CLI is read-only and offline.
 
 Chapter 030: [Tutorial](03-functions-modules-packages/030-functions-modules-packaging-production-ready-sre-cli-capstone.md) · [Capstone lab](03-functions-modules-packages/labs/030-production-ready-sre-cli-capstone-lab.md). Includes 45 tests, 100-point assessment and safety runbooks; local execution is pending. Part 03 complete.
+
+- Part 04 — Object-Oriented Programming: **1/10** (in progress)
+
+Chapter 031: [Tutorial](04-object-oriented-programming/031-python-classes-objects-encapsulation.md) · [Hands-on lab](04-object-oriented-programming/labs/031-object-oriented-sre-dbre-monitoring-lab.md). Includes 30 unit tests; local execution pending.
