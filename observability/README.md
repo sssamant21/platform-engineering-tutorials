@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 7/100 published**
+**100 chapters · 20 parts · 8/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -9,7 +9,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | Part | Chapters | Topic | Published |
 |---|---|---|---|
 | 01 | 001–005 | Observability Fundamentals and Reliability Signals | 5/5 |
-| 02 | 006–010 | Linux and Infrastructure Monitoring | 2/5 |
+| 02 | 006–010 | Linux and Infrastructure Monitoring | 3/5 |
 | 03 | 011–015 | Prometheus Architecture and Installation | 0/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 0/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 0/5 |
@@ -58,4 +58,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 007 — Linux CPU Scheduling, Load Average, Run Queues and Performance Troubleshooting](part-02-linux-infrastructure-monitoring/007-linux-cpu-scheduling-load-average-run-queues-performance-troubleshooting.md)
 - [Chapter 007 — Executable companion lab](part-02-linux-infrastructure-monitoring/labs/007-linux-cpu-scheduling-load-average-run-queues-performance-troubleshooting-lab.md)
 
-**Next:** Chapter 008 — Linux Memory Management, Page Cache, Swap, PSI and OOM Troubleshooting.
+- [Chapter 008 — Linux Memory Management, Page Cache, Swap, PSI and OOM Troubleshooting](part-02-linux-infrastructure-monitoring/008-linux-memory-management-page-cache-swap-psi-oom-troubleshooting.md)
+- [Chapter 008 — Executable companion lab](part-02-linux-infrastructure-monitoring/labs/008-linux-memory-management-page-cache-swap-psi-oom-troubleshooting-lab.md)
+
+**Next:** Chapter 009 — Linux Storage IOPS, Throughput, Disk Latency, Filesystems and I/O Troubleshooting.
