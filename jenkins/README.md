@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 83/100 published**
+**100 chapters · 20 parts · 84/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -277,7 +277,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 083 — Jenkins Core, Plugin and Java Upgrades with Compatibility Testing and Rollback](part-17-backup-restore-upgrades-disaster-recovery/083-jenkins-core-plugin-java-upgrades-compatibility-testing-rollback.md)
 - [Chapter 083 — Companion hands-on lab](part-17-backup-restore-upgrades-disaster-recovery/labs/083-jenkins-core-plugin-java-upgrades-compatibility-testing-rollback-check.md)
 
-**Next:** Chapter 084 — Jenkins Disaster Recovery Automation, Cross-Region Restore and Failover Validation.
+- [Chapter 084 — Jenkins Disaster Recovery Automation, Cross-Region Restore and Failover Validation](part-17-backup-restore-upgrades-disaster-recovery/084-jenkins-disaster-recovery-automation-cross-region-restore-failover-validation.md)
+- [Chapter 084 — Companion hands-on lab](part-17-backup-restore-upgrades-disaster-recovery/labs/084-jenkins-disaster-recovery-automation-cross-region-restore-failover-validation-check.md)
+
+**Next:** Chapter 085 — Jenkins Enterprise Backup, Upgrade and Disaster Recovery Acceptance Capstone.
 
 ## Tutorial standard
 
