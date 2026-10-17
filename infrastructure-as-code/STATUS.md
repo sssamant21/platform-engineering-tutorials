@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 35 / 120 chapters (29.17%)  
+**Progress:** 36 / 120 chapters (30.00%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -43,7 +43,8 @@
 **Chapter 033:** Published; live lab and registry evidence pending.  
 **Chapter 034:** Published; Terraform native tests, CI execution and production acceptance pending.  
 **Chapter 035:** Published; capstone execution and operational acceptance pending.  
-**Next:** Chapter 036 — AWS Infrastructure as Code Foundations and Terraform AWS Provider.
+**Chapter 036:** Published; AWS live lab and security evidence pending.  
+**Next:** Chapter 037 — AWS VPC, Subnets, Routing and Network Security with Terraform.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -82,6 +83,7 @@
 | 033 | Terraform Module Versioning, Registries and Dependency Management | Published |
 | 034 | Terraform Module Testing, Mock Providers and CI Quality Gates | Published |
 | 035 | Terraform Reusable Modules Production Engineering Capstone | Published |
+| 036 | AWS Infrastructure as Code Foundations and Terraform AWS Provider | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -365,3 +367,13 @@
 - [x] Chapter and master index publication; Part 07 publication complete
 - [ ] Live Terraform execution, CI runs, integration testing and security review
 - [ ] Production operational acceptance, backup/restore evidence and SLO sign-off
+
+## Chapter 036 acceptance — AWS foundations
+- [x] AWS account, IAM/STS, region, provider and remote state architecture
+- [x] Offline Terraform account/region/workload contract lab with dev/prod fixtures
+- [x] AWS provider, S3 backend and identity preflight examples authored
+- [x] Python AWS foundation policy and forty-six unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [x] Chapter and master index publication; Part 08 underway
+- [ ] Live Terraform execution and automated test evidence
+- [ ] AWS provider integration, IAM/security review and operational acceptance
