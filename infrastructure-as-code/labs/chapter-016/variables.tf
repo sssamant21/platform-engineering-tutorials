@@ -67,3 +67,27 @@ variable "database" {
     error_message = "database replica_count must be a nonnegative integer"
   }
 }
+variable "change_ticket" {
+  type = string
+  default = "CHG-DEMO-DEFAULT"
+  validation {
+    condition = length(trimspace(var.change_ticket)) > 0
+    error_message = "change_ticket is required"
+  }
+}
+variable "db_replicas" {
+  type = number
+  default = 1
+  validation {
+    condition = var.db_replicas >= 0 && floor(var.db_replicas) == var.db_replicas
+    error_message = "db_replicas must be a nonnegative integer"
+  }
+}
+variable "db_encrypted" {
+  type = bool
+  default = true
+}
+variable "db_backup_enabled" {
+  type = bool
+  default = true
+}
