@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 12 / 120 chapters (10.00%)  
+**Progress:** 13 / 120 chapters (10.83%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -15,9 +15,10 @@
 **Chapter 009:** Published; live lab execution remains for learner verification.  
 **Chapter 010:** Published; live lab execution remains for learner verification.  
 **Chapter 011:** Published; live lab execution remains for learner verification.  
-**Part 03:** 2/5 chapters published.  
+**Part 03:** 3/5 chapters published.  
 **Chapter 012:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 013 — Terraform Plan, Apply, Refresh, Destroy and Execution Lifecycle.
+**Chapter 013:** Published; live lab execution remains for learner verification.  
+**Next:** Chapter 014 — Terraform State Inspection, Drift Detection and Resource Address Management.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -33,6 +34,7 @@
 | 010 | IaC Development Tooling Integration, CI Preflight and Environment Readiness Capstone | Published |
 | 011 | Terraform Configuration Language Fundamentals: Blocks, Arguments, Expressions and HCL Syntax | Published |
 | 012 | Terraform Resource Blocks, Data Sources, Meta-Arguments and Dependency Graph | Published |
+| 013 | Terraform Plan, Apply, Refresh, Destroy and Execution Lifecycle | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -126,4 +128,12 @@
 - [x] Lifecycle prevent_destroy failure injection and cleanup procedure
 - [x] Python graph inventory policy and seven automated unit tests
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [ ] Live lab execution evidence
+
+## Chapter 013 acceptance
+- [x] Plan/apply/refresh-only/destroy lifecycle theory and architecture
+- [x] No-cloud Terraform/OpenTofu lab, saved plans and drift exercises
+- [x] Python plan JSON policy, synthetic sample plan and ten unit tests
+- [x] Production SRE/DBRE scenarios, troubleshooting and operational runbooks
+- [x] Pre-apply shell workflow and safe cleanup instructions
 - [ ] Live lab execution evidence
