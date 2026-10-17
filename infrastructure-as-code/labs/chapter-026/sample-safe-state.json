@@ -1,0 +1,56 @@
+{
+  "version": 4,
+  "terraform_version": "1.9.8",
+  "serial": 3,
+  "lineage": "8b94dca1-550d-4d4a-998b-6bfa93c77e28",
+  "outputs": {
+    "environment": {
+      "value": "dev",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "network",
+      "provider": "terraform.io/builtin/terraform",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "lab-network"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "database",
+      "provider": "terraform.io/builtin/terraform",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "lab-database"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "application",
+      "provider": "terraform.io/builtin/terraform",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "lab-application"
+          }
+        }
+      ]
+    }
+  ]
+}
