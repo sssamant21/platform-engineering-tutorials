@@ -1,0 +1,23 @@
+{
+  "backends": [
+    {
+      "environment": "prod",
+      "backend_type": "local",
+      "state_key": "terraform.tfstate",
+      "identity_ref": "static-key",
+      "permissions": [
+        "*"
+      ],
+      "public_access": true,
+      "access_key": "DO_NOT_USE",
+      "controls": {
+        "encryption": false,
+        "versioning": false,
+        "locking": false,
+        "tls": false,
+        "audit_logging": false,
+        "restore_tested": false
+      }
+    }
+  ]
+}
