@@ -1,0 +1,31 @@
+{
+  "environment": "prod",
+  "change_ticket": "CHG-DEMO-030",
+  "source_backend": "s3://iac-prod/state/prod",
+  "dr_backend": "s3://iac-dr/state/prod",
+  "lineage": "21b59e77-f04b-41a1-96dc-62e39e4a24a0",
+  "serial": 12,
+  "snapshot_lineage": "21b59e77-f04b-41a1-96dc-62e39e4a24a0",
+  "snapshot_serial": 12,
+  "snapshot_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "retention_days": 90,
+  "rpo_minutes": 30,
+  "rto_minutes": 120,
+  "resource_addresses": [
+    "terraform_data.network",
+    "terraform_data.database",
+    "terraform_data.application",
+    "terraform_data.audit"
+  ],
+  "controls": {
+    "state_backup_verified": true,
+    "exclusive_lock_verified": true,
+    "writers_frozen": true,
+    "encryption_verified": true,
+    "versioning_verified": true,
+    "audit_verified": true,
+    "restore_tested": true,
+    "identity_scoped": true,
+    "application_health_verified": true
+  }
+}
