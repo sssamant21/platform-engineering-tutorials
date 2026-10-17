@@ -1,0 +1,11 @@
+{
+  "environment": "prod",
+  "service": "patient-api",
+  "owner": "dbre-team",
+  "change_ticket": "CHG-DEMO-PROD",
+  "replicas": 3,
+  "backup_enabled": true,
+  "encryption_enabled": true,
+  "deletion_protection": true,
+  "network_cidr": "10.21.0.0/16"
+}
