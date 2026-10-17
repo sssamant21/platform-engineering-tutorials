@@ -1,0 +1,50 @@
+{
+  "environment": "prod",
+  "change_ticket": "",
+  "modules": [
+    {
+      "name": "network",
+      "owner": "",
+      "schema_version": 2,
+      "inputs": [
+        "environment"
+      ],
+      "outputs": [
+        "id"
+      ],
+      "nullable_inputs": [
+        "environment"
+      ],
+      "depends_on": [
+        "application"
+      ]
+    },
+    {
+      "name": "database",
+      "owner": "",
+      "schema_version": 1,
+      "inputs": [],
+      "outputs": [],
+      "nullable_inputs": [],
+      "depends_on": [
+        "network"
+      ]
+    },
+    {
+      "name": "application",
+      "owner": "",
+      "schema_version": 1,
+      "inputs": [],
+      "outputs": [],
+      "nullable_inputs": [],
+      "depends_on": [
+        "database"
+      ]
+    }
+  ],
+  "database": {
+    "replicas": 1,
+    "backup_enabled": false,
+    "encryption_enabled": false
+  }
+}
