@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 93 / 100 chapters (93%)**
+**Progress: 94 / 100 chapters (94%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -22,7 +22,7 @@
 | 16 — Scaling, Controller Capacity and Reliability | 076–080 | 5 | 5 | Complete |
 | 17 — Backup, Restore, Upgrades and Disaster Recovery | 081–085 | 5 | 5 | Complete |
 | 18 — Terraform, Ansible and Infrastructure Automation | 086–090 | 5 | 5 | Complete |
-| 19 — Enterprise Jenkins SRE Operations and FinOps | 091–095 | 3 | 5 | In progress |
+| 19 — Enterprise Jenkins SRE Operations and FinOps | 091–095 | 4 | 5 | In progress |
 | 20 — Final Enterprise Jenkins Capstone | 096–100 | 0 | 5 | Not started |
 
 ## Publication checklist
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 094 — Jenkins Enterprise Security, Compliance and Operational Risk Management.
+**Next:** Chapter 095 — Jenkins Enterprise SRE Operations, Security and FinOps Acceptance Capstone.
