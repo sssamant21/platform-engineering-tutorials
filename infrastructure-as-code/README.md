@@ -59,7 +59,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 012 executable labs and tests](labs/chapter-012/)
 - [013 — Terraform Plan, Apply, Refresh, Destroy and Execution Lifecycle](chapters/013-terraform-plan-apply-refresh-destroy-execution-lifecycle.md)
 - [Chapter 013 executable labs and tests](labs/chapter-013/)
+- [014 — Terraform State Inspection, Drift Detection and Resource Address Management](chapters/014-terraform-state-inspection-drift-detection-resource-address-management.md)
+- [Chapter 014 executable labs and tests](labs/chapter-014/)
 
-**Parts 01 and 02 complete (001–010); Part 03 underway (011–013 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 underway (011–014 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
