@@ -1,0 +1,19 @@
+{
+  "environment": "prod",
+  "owner": "dbre-team",
+  "change_ticket": "CHG-DEMO-025",
+  "providers": [
+    {
+      "source": "hashicorp/aws",
+      "alias": "primary",
+      "region": "us-east-1",
+      "identity_ref": "oidc://platform/prod"
+    },
+    {
+      "source": "hashicorp/aws",
+      "alias": "dr",
+      "region": "us-west-2",
+      "identity_ref": "role://platform/dr"
+    }
+  ]
+}
