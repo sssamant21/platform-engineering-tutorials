@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 36 / 120 chapters (30.00%)  
+**Progress:** 37 / 120 chapters (30.83%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -44,7 +44,8 @@
 **Chapter 034:** Published; Terraform native tests, CI execution and production acceptance pending.  
 **Chapter 035:** Published; capstone execution and operational acceptance pending.  
 **Chapter 036:** Published; AWS live lab and security evidence pending.  
-**Next:** Chapter 037 — AWS VPC, Subnets, Routing and Network Security with Terraform.
+**Chapter 037:** Published; live network lab and security evidence pending.  
+**Next:** Chapter 038 — AWS IAM, KMS, Secrets and Secure Infrastructure with Terraform.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -84,6 +85,7 @@
 | 034 | Terraform Module Testing, Mock Providers and CI Quality Gates | Published |
 | 035 | Terraform Reusable Modules Production Engineering Capstone | Published |
 | 036 | AWS Infrastructure as Code Foundations and Terraform AWS Provider | Published |
+| 037 | AWS VPC, Subnets, Routing and Network Security with Terraform | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -377,3 +379,13 @@
 - [x] Chapter and master index publication; Part 08 underway
 - [ ] Live Terraform execution and automated test evidence
 - [ ] AWS provider integration, IAM/security review and operational acceptance
+
+## Chapter 037 acceptance — AWS networking
+- [x] Multi-AZ VPC, subnet CIDR, route, NAT, SG/NACL, endpoints and observability theory
+- [x] Offline Terraform network topology contract lab with dev/prod fixtures
+- [x] AWS network and read-only diagnostics examples authored
+- [x] Fail-closed Python network policy and forty-five unit tests authored
+- [x] SRE/DBRE failure scenarios, troubleshooting and production runbooks
+- [x] Chapter and master index publication; Part 08 at 2/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] AWS provider integration, security review and operational acceptance
