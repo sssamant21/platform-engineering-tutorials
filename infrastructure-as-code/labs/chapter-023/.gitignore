@@ -1,0 +1,13 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+graph.dot
+graph.svg
+crash.log
+crash.*.log
+__pycache__/
+*.auto.tfvars
+*.tfvars
+!environments/dev.tfvars
+!environments/prod.tfvars
