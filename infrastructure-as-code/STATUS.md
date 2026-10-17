@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 17 / 120 chapters (14.17%)  
+**Progress:** 18 / 120 chapters (15.00%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -21,9 +21,10 @@
 **Chapter 014:** Published; live lab execution remains for learner verification.  
 **Chapter 015:** Published; Part 03 content complete; live lab execution remains for learner verification.  
 **Chapter 016:** Published; live lab execution remains for learner verification.  
-**Part 04:** 2/5 chapters published.  
+**Part 04:** 3/5 chapters published.  
 **Chapter 017:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 018 — Terraform Collections, for Expressions, Splat Expressions and Advanced Data Transformations.
+**Chapter 018:** Published; live lab execution remains for learner verification.  
+**Next:** Chapter 019 — Terraform Conditional Expressions, Null Handling, try/can and Defensive Configuration Patterns.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -44,6 +45,7 @@
 | 015 | Terraform Language, Lifecycle, State and Change Management Capstone | Published |
 | 016 | Terraform Input Variables, Type Constraints, Defaults and Validation | Published |
 | 017 | Terraform Local Values, Expressions, Functions and Dynamic Configuration | Published |
+| 018 | Terraform Collections, for Expressions, Splat Expressions and Advanced Data Transformations | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -178,3 +180,11 @@
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [x] GitHub chapter and master index publication
 - [ ] Live lab execution evidence
+
+## Chapter 018 acceptance
+- [x] Collections, for/splat expressions, grouping and data transformation theory
+- [x] No-cloud Terraform/OpenTofu service×zone matrix lab with dev/prod inputs
+- [x] Python transformation policy and fifteen automated unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting and operational runbooks
+- [x] GitHub chapter and master index publication
+- [ ] Live Terraform execution and unit-test evidence
