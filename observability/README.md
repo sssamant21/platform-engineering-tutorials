@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 8/100 published**
+**100 chapters · 20 parts · 9/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -9,7 +9,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | Part | Chapters | Topic | Published |
 |---|---|---|---|
 | 01 | 001–005 | Observability Fundamentals and Reliability Signals | 5/5 |
-| 02 | 006–010 | Linux and Infrastructure Monitoring | 3/5 |
+| 02 | 006–010 | Linux and Infrastructure Monitoring | 4/5 |
 | 03 | 011–015 | Prometheus Architecture and Installation | 0/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 0/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 0/5 |
@@ -61,4 +61,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 008 — Linux Memory Management, Page Cache, Swap, PSI and OOM Troubleshooting](part-02-linux-infrastructure-monitoring/008-linux-memory-management-page-cache-swap-psi-oom-troubleshooting.md)
 - [Chapter 008 — Executable companion lab](part-02-linux-infrastructure-monitoring/labs/008-linux-memory-management-page-cache-swap-psi-oom-troubleshooting-lab.md)
 
-**Next:** Chapter 009 — Linux Storage IOPS, Throughput, Disk Latency, Filesystems and I/O Troubleshooting.
+- [Chapter 009 — Linux Storage IOPS, Throughput, Disk Latency, Filesystems and I/O Troubleshooting](part-02-linux-infrastructure-monitoring/009-linux-storage-iops-throughput-disk-latency-filesystems-io-troubleshooting.md)
+- [Chapter 009 — Executable companion lab](part-02-linux-infrastructure-monitoring/labs/009-linux-storage-iops-throughput-disk-latency-filesystems-io-troubleshooting-lab.md)
+
+**Next:** Chapter 010 — Linux Infrastructure Observability and Production Troubleshooting Capstone.
