@@ -75,7 +75,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 020 executable labs and tests](labs/chapter-020/)
 - [021 — Terraform Provider Configuration, Aliases, Version Constraints and Authentication](chapters/021-terraform-provider-configuration-aliases-version-constraints-authentication.md)
 - [Chapter 021 executable labs and tests](labs/chapter-021/)
+- [022 — Terraform Provider Dependencies, Implicit and Explicit Resource Graphs and Lifecycle Ordering](chapters/022-terraform-provider-dependencies-implicit-explicit-resource-graphs-lifecycle-ordering.md)
+- [Chapter 022 executable labs and tests](labs/chapter-022/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 underway (021 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 underway (021–022 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
