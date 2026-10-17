@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 26 / 120 chapters (21.67%)  
+**Progress:** 27 / 120 chapters (22.50%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -28,13 +28,14 @@
 **Chapter 020:** Published; Part 04 content complete; live lab execution remains for learner verification.  
 **Chapter 021:** Published; live lab evidence pending.  
 **Part 05:** 5/5 chapters published (live lab evidence pending).  
-**Part 06:** 1/5 chapters published.  
+**Part 06:** 2/5 chapters published.  
 **Chapter 022:** Published; live lab evidence pending.  
 **Chapter 023:** Published; live lab evidence pending.  
 **Chapter 024:** Published; live lab evidence pending.  
 **Chapter 025:** Published; Part 05 content complete, live lab evidence pending.  
 **Chapter 026:** Published; live lab evidence pending.  
-**Next:** Chapter 027 — Terraform Remote Backends, State Locking, Encryption and Access Control.
+**Chapter 027:** Published; live lab evidence pending.  
+**Next:** Chapter 028 — Terraform State Operations, Import, Move, Remove and Drift Reconciliation.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -64,6 +65,7 @@
 | 024 | Terraform Lifecycle Meta-Arguments, Preconditions, Postconditions and Safe Replacement Strategies | Published |
 | 025 | Terraform Providers, Dependencies and Lifecycle Production Capstone | Published |
 | 026 | Terraform State Architecture, State Files, Metadata and Backend Fundamentals | Published |
+| 027 | Terraform Remote Backends, State Locking, Encryption and Access Control | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -270,3 +272,12 @@
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [x] Chapter and master index publication
 - [ ] Live Terraform execution, negative drills and test evidence
+
+## Chapter 027 acceptance
+- [x] S3, Azure Blob, GCS and HCP Terraform backend architecture
+- [x] Locking, encryption, access, versioning, migration and recovery theory
+- [x] No-cloud terraform_data lab, backend examples and declared-control fixtures
+- [x] Python backend security policy and twenty-five unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [x] Chapter and master index publication
+- [ ] Live lab execution, actual cloud backend control verification and test evidence
