@@ -1,0 +1,15 @@
+---
+- name: Demonstrate idempotent local configuration
+  hosts: local
+  gather_facts: false
+  tasks:
+    - name: Ensure lab directory exists
+      ansible.builtin.file:
+        path: /tmp/iac-chapter-003
+        state: directory
+        mode: "0755"
+    - name: Enforce desired content
+      ansible.builtin.copy:
+        dest: /tmp/iac-chapter-003/desired.txt
+        content: "owner=sre-platform\nmanaged_by=ansible\n"
+        mode: "0644"
