@@ -1,0 +1,23 @@
+# Example only: copy to .github/workflows/iac-ch035.yml after review.
+name: iac-chapter-035-capstone
+on:
+  pull_request:
+    paths:
+      - 'infrastructure-as-code/labs/chapter-035/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  acceptance:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: infrastructure-as-code/labs/chapter-035
+    steps:
+      - uses: actions/checkout@v4
+      # Pin all third-party actions to reviewed full commit SHAs before production.
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: '1.7.5'
+      - name: Offline capstone gates
+        run: bash run-preflight.sh
