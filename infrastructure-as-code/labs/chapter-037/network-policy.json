@@ -1,0 +1,29 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_tiers": [
+    "public",
+    "application",
+    "database"
+  ],
+  "required_tags": [
+    "Environment",
+    "ManagedBy",
+    "Owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_two_azs": true,
+  "require_private_database": true,
+  "require_flow_logs": true,
+  "require_s3_endpoint": true,
+  "require_least_privilege": true,
+  "require_same_az_nat": true,
+  "deny_destructive_actions": true
+}
