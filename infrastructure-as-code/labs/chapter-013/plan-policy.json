@@ -1,0 +1,6 @@
+{
+  "environment": "lab",
+  "allow_deletes": false,
+  "require_no_changes": false,
+  "production_approved": false
+}
