@@ -1,12 +1,14 @@
 # IaC Tutorial Status
 
-**Progress:** 4 / 120 chapters (3.33%)  
+**Progress:** 5 / 120 chapters (4.17%)  
 **Last update:** 2026-10-16  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
 **Chapter 003:** Published; live lab execution remains for learner verification.  
 **Chapter 004:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 005 — Enterprise IaC Architecture, Operating Models and Governance.
+**Chapter 005:** Published; live lab execution remains for learner verification.  
+**Part 01:** 5/5 chapters published (labs not independently executed).  
+**Next:** Chapter 006 — IaC Workstation Setup, CLI Installation and Toolchain Validation.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -14,6 +16,7 @@
 | 002 | IaC Tooling Landscape and Selection Criteria | Published |
 | 003 | Declarative vs Imperative IaC, Desired State, Drift and Idempotence | Published |
 | 004 | IaC Lifecycle, Version Control, Git Workflows and Change Management | Published |
+| 005 | Enterprise IaC Architecture, Operating Models and Governance | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -41,4 +44,12 @@
 - [x] Terraform and change-policy labs
 - [x] Python automated policy tests
 - [x] SRE/DBRE production cases, troubleshooting, runbooks
+- [ ] Live lab execution evidence
+
+## Chapter 005 acceptance
+- [x] Enterprise architecture, ownership and operating models
+- [x] Terraform governance metadata lab
+- [x] Python governance inventory and unit tests
+- [x] SRE/DBRE cases, security controls, troubleshooting and runbooks
+- [x] Part 01 final assessment
 - [ ] Live lab execution evidence
