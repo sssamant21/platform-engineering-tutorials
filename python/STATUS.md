@@ -3,18 +3,18 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **28 chapters**
-- Remaining: **92 chapters**
-- Published labs: **28**
-- Next: **029 — Python CLI Design, argparse and Operational User Experience**
+- Published: **29 chapters**
+- Remaining: **91 chapters**
+- Published labs: **29**
+- Next: **030 — Functions, Modules and Packaging Capstone: Production-Ready SRE CLI**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–028 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–029 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
 - Part 01 — Python Fundamentals: **10/10**
 - Part 02 — Data Types, Collections and Algorithms: **10/10**
-- Part 03 — Functions, Modules and Packages: **8/10** (in progress)
+- Part 03 — Functions, Modules and Packages: **9/10** (in progress)
 
 Chapter 020: [Tutorial](02-data-types-algorithms/020-sre-telemetry-analyzer-capstone.md) · [Capstone lab](02-data-types-algorithms/labs/020-sre-telemetry-analyzer-capstone-lab.md). Automated test code and acceptance checks are published; execution is not yet independently verified.
 
@@ -33,3 +33,5 @@ Chapter 026: [Tutorial](03-functions-modules-packages/026-virtual-environments-d
 Chapter 027: [Tutorial](03-functions-modules-packages/027-python-packaging-publishing-artifact-supply-chain-security.md) · [Hands-on lab](03-functions-modules-packages/labs/027-sre-artifact-provenance-packaging-lab.md). Includes 24 tests; local execution is pending. No registry publication was performed.
 
 Chapter 028: [Tutorial](03-functions-modules-packages/028-python-project-configuration-environment-variables-secrets-hygiene.md) · [Hands-on lab](03-functions-modules-packages/labs/028-layered-sre-configuration-secrets-hygiene-lab.md). Includes 30 tests; local execution is pending. No real secrets were accessed.
+
+Chapter 029: [Tutorial](03-functions-modules-packages/029-python-cli-design-argparse-operational-user-experience.md) · [Hands-on lab](03-functions-modules-packages/labs/029-operational-sre-cli-argparse-lab.md). Includes 30 tests; local execution is pending. CLI is read-only and offline.
