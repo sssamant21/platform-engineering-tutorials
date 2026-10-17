@@ -99,7 +99,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 032 executable labs and tests](labs/chapter-032/)
 - [033 — Terraform Module Versioning, Registries and Dependency Management](chapters/033-terraform-module-versioning-registries-dependency-management.md)
 - [Chapter 033 executable labs and tests](labs/chapter-033/)
+- [034 — Terraform Module Testing, Mock Providers and CI Quality Gates](chapters/034-terraform-module-testing-mock-providers-ci-quality-gates.md)
+- [Chapter 034 executable labs and tests](labs/chapter-034/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 underway (031–033 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 underway (031–034 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
