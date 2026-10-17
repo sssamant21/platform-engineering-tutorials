@@ -1,0 +1,10 @@
+# Illustrative ONLY. Configure HCP Terraform organization/workspace first.
+terraform {
+  cloud {
+    organization = "REPLACE-approved-organization"
+    workspaces {
+      name = "iac-prod-database"
+    }
+  }
+}
+# Cloud integration is distinct from the core local no-cloud lab.
