@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 74/100 published**
+**100 chapters · 20 parts · 75/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -246,7 +246,12 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 074 — Jenkins Agents, Kubernetes, Networking and Infrastructure Failure Troubleshooting](part-15-troubleshooting-incident-response/074-jenkins-agents-kubernetes-networking-infrastructure-failure-troubleshooting.md)
 - [Chapter 074 — Companion hands-on lab](part-15-troubleshooting-incident-response/labs/074-jenkins-agents-kubernetes-networking-infrastructure-failure-troubleshooting-check.md)
 
-**Next:** Chapter 075 — Jenkins Enterprise Incident Response, Failure Simulation and Recovery Capstone.
+- [Chapter 075 — Jenkins Enterprise Incident Response, Failure Simulation and Recovery Capstone](part-15-troubleshooting-incident-response/075-jenkins-enterprise-incident-response-failure-simulation-recovery-capstone.md)
+- [Chapter 075 — Companion hands-on capstone lab](part-15-troubleshooting-incident-response/labs/075-jenkins-enterprise-incident-response-failure-simulation-recovery-capstone-check.md)
+
+**Part 15 complete:** Chapters 071–075.
+
+**Next:** Chapter 076 — Jenkins Scaling Architecture, Controller Capacity and Executor Planning (Part 16).
 
 ## Tutorial standard
 
