@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 77 / 100 chapters (77%)**
+**Progress: 78 / 100 chapters (78%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -19,7 +19,7 @@
 | 13 — Plugins, JCasC and Configuration Management | 061–065 | 5 | 5 | Complete |
 | 14 — Observability, Monitoring and Performance | 066–070 | 5 | 5 | Complete |
 | 15 — Troubleshooting and Incident Response | 071–075 | 5 | 5 | Complete |
-| 16 — Scaling, Controller Capacity and Reliability | 076–080 | 2 | 5 | In progress |
+| 16 — Scaling, Controller Capacity and Reliability | 076–080 | 3 | 5 | In progress |
 | 17 — Backup, Restore, Upgrades and Disaster Recovery | 081–085 | 0 | 5 | Not started |
 | 18 — Terraform, Ansible and Infrastructure Automation | 086–090 | 0 | 5 | Not started |
 | 19 — Enterprise Jenkins SRE Operations and FinOps | 091–095 | 0 | 5 | Not started |
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 078 — Jenkins High Availability, Workload Isolation and Controller Reliability Engineering.
+**Next:** Chapter 079 — Jenkins Resilience Testing, Failure Domains, SLOs and Disaster Recovery Readiness.
