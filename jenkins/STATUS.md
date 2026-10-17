@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 88 / 100 chapters (88%)**
+**Progress: 89 / 100 chapters (89%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -21,7 +21,7 @@
 | 15 — Troubleshooting and Incident Response | 071–075 | 5 | 5 | Complete |
 | 16 — Scaling, Controller Capacity and Reliability | 076–080 | 5 | 5 | Complete |
 | 17 — Backup, Restore, Upgrades and Disaster Recovery | 081–085 | 5 | 5 | Complete |
-| 18 — Terraform, Ansible and Infrastructure Automation | 086–090 | 3 | 5 | In progress |
+| 18 — Terraform, Ansible and Infrastructure Automation | 086–090 | 4 | 5 | In progress |
 | 19 — Enterprise Jenkins SRE Operations and FinOps | 091–095 | 0 | 5 | Not started |
 | 20 — Final Enterprise Jenkins Capstone | 096–100 | 0 | 5 | Not started |
 
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 089 — Jenkins GitOps Infrastructure Pipelines, Drift Detection and Automated Compliance.
+**Next:** Chapter 090 — Jenkins Infrastructure Automation, Drift and Compliance Acceptance Capstone.
