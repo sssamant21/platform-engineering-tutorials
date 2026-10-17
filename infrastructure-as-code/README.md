@@ -43,6 +43,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 004 executable labs and tests](labs/chapter-004/)
 - [005 — Enterprise IaC Architecture, Operating Models and Governance](chapters/005-enterprise-iac-architecture-operating-models-governance.md)
 - [Chapter 005 executable labs and tests](labs/chapter-005/)
+- [006 — IaC Workstation Setup, CLI Installation and Toolchain Validation](chapters/006-iac-workstation-setup-cli-installation-toolchain-validation.md)
+- [Chapter 006 executable labs and tests](labs/chapter-006/)
 
 **Part 01 (001–005): all five chapters published; learner lab verification pending.**
 
