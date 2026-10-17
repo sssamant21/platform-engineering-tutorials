@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 1/100 published**
+**100 chapters · 20 parts · 2/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -8,7 +8,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 
 | Part | Chapters | Topic | Published |
 |---|---|---|---|
-| 01 | 001–005 | Observability Fundamentals and Reliability Signals | 1/5 |
+| 01 | 001–005 | Observability Fundamentals and Reliability Signals | 2/5 |
 | 02 | 006–010 | Linux and Infrastructure Monitoring | 0/5 |
 | 03 | 011–015 | Prometheus Architecture and Installation | 0/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 0/5 |
@@ -38,4 +38,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 
 Each chapter includes detailed theory, architecture, SRE/DBRE production scenarios, runnable non-destructive lab, negative tests, failure modes, runbooks, acceptance criteria, and operational evidence. Real infrastructure validation is separate from synthetic checks.
 
-**Next:** Chapter 002 — Observability Signals, Telemetry Pipelines and Context Propagation.
+- [Chapter 002 — Observability Signals, Telemetry Pipelines and Context Propagation](part-01-observability-fundamentals/002-observability-signals-telemetry-pipelines-context-propagation.md)
+- [Chapter 002 — Executable companion lab](part-01-observability-fundamentals/labs/002-observability-signals-telemetry-pipelines-context-propagation-lab.md)
+
+**Next:** Chapter 003 — Observability Architecture, Data Models and Telemetry Governance.
