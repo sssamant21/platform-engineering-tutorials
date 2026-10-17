@@ -1,0 +1,53 @@
+{
+  "format_version": "1.0",
+  "terraform_version": "1.9.8",
+  "values": {
+    "root_module": {
+      "resources": [
+        {
+          "address": "terraform_data.seed",
+          "mode": "managed",
+          "type": "terraform_data",
+          "name": "seed",
+          "values": {
+            "input": {
+              "environment": "staging",
+              "replicas": 2,
+              "owner": "platform-sre"
+            }
+          }
+        },
+        {
+          "address": "terraform_data.service[\"api\"]",
+          "mode": "managed",
+          "type": "terraform_data",
+          "name": "service",
+          "index": "api",
+          "values": {
+            "input": {
+              "environment": "staging",
+              "name": "api",
+              "owner": "platform-sre",
+              "tier": "frontend"
+            }
+          }
+        },
+        {
+          "address": "terraform_data.service[\"worker\"]",
+          "mode": "managed",
+          "type": "terraform_data",
+          "name": "service",
+          "index": "worker",
+          "values": {
+            "input": {
+              "environment": "staging",
+              "name": "worker",
+              "owner": "platform-sre",
+              "tier": "backend"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
