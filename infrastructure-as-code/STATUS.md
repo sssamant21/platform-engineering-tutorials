@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 27 / 120 chapters (22.50%)  
+**Progress:** 28 / 120 chapters (23.33%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -28,14 +28,15 @@
 **Chapter 020:** Published; Part 04 content complete; live lab execution remains for learner verification.  
 **Chapter 021:** Published; live lab evidence pending.  
 **Part 05:** 5/5 chapters published (live lab evidence pending).  
-**Part 06:** 2/5 chapters published.  
+**Part 06:** 3/5 chapters published.  
 **Chapter 022:** Published; live lab evidence pending.  
 **Chapter 023:** Published; live lab evidence pending.  
 **Chapter 024:** Published; live lab evidence pending.  
 **Chapter 025:** Published; Part 05 content complete, live lab evidence pending.  
 **Chapter 026:** Published; live lab evidence pending.  
 **Chapter 027:** Published; live lab evidence pending.  
-**Next:** Chapter 028 — Terraform State Operations, Import, Move, Remove and Drift Reconciliation.
+**Chapter 028:** Published; live lab evidence pending.  
+**Next:** Chapter 029 — Terraform State Migration, Backup, Restore and Disaster Recovery.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -66,6 +67,7 @@
 | 025 | Terraform Providers, Dependencies and Lifecycle Production Capstone | Published |
 | 026 | Terraform State Architecture, State Files, Metadata and Backend Fundamentals | Published |
 | 027 | Terraform Remote Backends, State Locking, Encryption and Access Control | Published |
+| 028 | Terraform State Operations, Import, Move, Remove and Drift Reconciliation | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -281,3 +283,11 @@
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [x] Chapter and master index publication
 - [ ] Live lab execution, actual cloud backend control verification and test evidence
+
+## Chapter 028 acceptance
+- [x] State inspection, import, moved/removed blocks, drift and ownership theory
+- [x] Offline terraform_data lab with dev/prod fixtures and safe operation examples
+- [x] Python state operations policy and thirty automated unit tests authored
+- [x] Production SRE/DBRE scenarios, failure drills, troubleshooting and runbooks
+- [x] Chapter and master index publication
+- [ ] Live Terraform execution, state migration drills and test evidence
