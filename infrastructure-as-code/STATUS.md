@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 29 / 120 chapters (24.17%)  
+**Progress:** 30 / 120 chapters (25.00%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -28,7 +28,7 @@
 **Chapter 020:** Published; Part 04 content complete; live lab execution remains for learner verification.  
 **Chapter 021:** Published; live lab evidence pending.  
 **Part 05:** 5/5 chapters published (live lab evidence pending).  
-**Part 06:** 4/5 chapters published.  
+**Part 06:** 5/5 chapters published (complete; live lab evidence pending).  
 **Chapter 022:** Published; live lab evidence pending.  
 **Chapter 023:** Published; live lab evidence pending.  
 **Chapter 024:** Published; live lab evidence pending.  
@@ -37,7 +37,8 @@
 **Chapter 027:** Published; live lab evidence pending.  
 **Chapter 028:** Published; live lab evidence pending.  
 **Chapter 029:** Published; live lab and recovery drill evidence pending.  
-**Next:** Chapter 030 — Terraform State and Remote Backend Production Operations Capstone.
+**Chapter 030:** Published; Part 06 complete (live acceptance pending).  
+**Next:** Chapter 031 — Terraform Module Architecture, Interfaces and Reusable Design Patterns.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -70,6 +71,7 @@
 | 027 | Terraform Remote Backends, State Locking, Encryption and Access Control | Published |
 | 028 | Terraform State Operations, Import, Move, Remove and Drift Reconciliation | Published |
 | 029 | Terraform State Migration, Backup, Restore and Disaster Recovery | Published |
+| 030 | Terraform State and Remote Backend Production Operations Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -301,3 +303,11 @@
 - [x] Production SRE/DBRE scenarios, recovery drills, troubleshooting and runbooks
 - [x] Chapter and master index publication
 - [ ] Live Terraform execution, restore drill and test evidence
+
+## Chapter 030 acceptance
+- [x] State and remote backend architecture, security, migration, drift and DR capstone
+- [x] Offline terraform_data lab, dev/prod inputs and illustrative production examples
+- [x] Fail-closed Python acceptance policy and forty unit tests authored
+- [x] SRE/DBRE game days, troubleshooting, production runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 06 complete
+- [ ] Live Terraform execution, tests, cloud backend lock/migration and DR evidence
