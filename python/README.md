@@ -102,7 +102,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 
 ## Part 06 — Advanced Python, Typing and Concurrency (051–060)
 
-**Progress: 9/10 published**
+**Progress: 10/10 published — complete**
 
 - [Chapter 051 — Advanced Python Type Hints, Protocols and Static Analysis](06-advanced-python-typing-concurrency/051-advanced-python-type-hints-protocols-static-analysis.md)
 - [Chapter 051 — Typed SRE/DBRE Telemetry Analyzer Lab](06-advanced-python-typing-concurrency/labs/051-typed-sre-dbre-telemetry-analyzer-lab.md)
@@ -124,3 +124,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 
 - [Chapter 059 — Advanced AsyncIO Synchronization and Resilient Concurrency](06-advanced-python-typing-concurrency/059-python-advanced-asyncio-synchronization-resilient-concurrency.md)
 - [Chapter 059 — Advanced AsyncIO Synchronization SRE/DBRE Lab](06-advanced-python-typing-concurrency/labs/059-advanced-asyncio-synchronization-sre-dbre-lab.md)
+- [Chapter 060 — Advanced Python Concurrency Capstone](06-advanced-python-typing-concurrency/060-advanced-python-concurrency-capstone.md)
+- [Chapter 060 — Advanced Python Concurrency Capstone SRE/DBRE Lab](06-advanced-python-typing-concurrency/labs/060-advanced-python-concurrency-capstone-sre-dbre-lab.md)
