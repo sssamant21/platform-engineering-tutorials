@@ -1,0 +1,21 @@
+{
+  "allowed_operations": [
+    "move",
+    "import",
+    "forget",
+    "refresh"
+  ],
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "require_backup": true,
+  "require_lock": true,
+  "require_prod_ticket": true,
+  "deny_plan_deletes": true,
+  "deny_plan_replacements": true,
+  "allowed_resource_types": [
+    "terraform_data"
+  ]
+}
