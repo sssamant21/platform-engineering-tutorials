@@ -1,0 +1,19 @@
+# Example only: review action SHA pinning and organizational CI policy before enabling.
+name: IaC Chapter 010 Preflight
+on:
+  pull_request:
+    paths:
+      - 'infrastructure-as-code/labs/chapter-010/**'
+      - '.github/workflows/iac-chapter-010-preflight.yml'
+permissions:
+  contents: read
+jobs:
+  preflight:
+    runs-on: ubuntu-latest # Replace with approved pinned runner image in production.
+    steps:
+      - uses: actions/checkout@v4 # Pin to a reviewed full commit SHA in production.
+      - name: Python policy and unit tests (no cloud credentials)
+        working-directory: infrastructure-as-code/labs/chapter-010
+        run: |
+          python3 preflight.py readiness.json
+          python3 -m unittest -v test_preflight.py
