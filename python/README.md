@@ -32,12 +32,14 @@ Each chapter includes theory, reproducible code, hands-on labs, validation, trou
 - **Part 02 — Data Types, Collections and Algorithms (011–020): Complete**
   - [Chapter 020 — SRE Telemetry Analyzer Capstone](02-data-types-algorithms/020-sre-telemetry-analyzer-capstone.md)
   - [Chapter 020 — Executable Hands-on Lab](02-data-types-algorithms/labs/020-sre-telemetry-analyzer-capstone-lab.md)
-- **Part 03 — Functions, Modules and Packages (021–030): In progress (3/10)**
+- **Part 03 — Functions, Modules and Packages (021–030): In progress (4/10)**
   - [Chapter 021 — Functions as Reusable Interfaces](03-functions-modules-packages/021-functions-reusable-interfaces-parameters-returns-contracts.md)
   - [Chapter 021 — SRE Alert Classification Functions Lab](03-functions-modules-packages/labs/021-sre-alert-classification-functions-lab.md)
   - [Chapter 022 — Function Scope, Closures and Higher-Order Functions](03-functions-modules-packages/022-function-scope-closures-higher-order-functions.md)
   - [Chapter 022 — SRE Policy Factory and Callback Lab](03-functions-modules-packages/labs/022-sre-policy-factory-callback-lab.md)
   - [Chapter 023 — Lambda, map, filter, reduce and Functional Composition](03-functions-modules-packages/023-lambda-map-filter-reduce-functional-composition.md)
   - [Chapter 023 — Functional SRE Telemetry Pipeline Lab](03-functions-modules-packages/labs/023-functional-sre-telemetry-pipeline-lab.md)
+  - [Chapter 024 — Decorators, functools and Reusable Operational Instrumentation](03-functions-modules-packages/024-decorators-functools-reusable-operational-instrumentation.md)
+  - [Chapter 024 — Instrumented SRE Probe Lab](03-functions-modules-packages/labs/024-instrumented-sre-probe-lab.md)
 
 The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, counters, deques, sliding windows, deterministic JSON reports, 30 automated test cases and failure-injection exercises. Test execution is required on the learner's machine; publication alone is not proof of passing tests.
