@@ -1,0 +1,49 @@
+{
+  "format_version": "1.2",
+  "resource_changes": [
+    {
+      "address": "terraform_data.seed",
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "seed",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    },
+    {
+      "address": "terraform_data.service[\"api\"]",
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "service",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    },
+    {
+      "address": "terraform_data.service[\"worker\"]",
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "service",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    },
+    {
+      "address": "terraform_data.audit",
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "audit",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    }
+  ]
+}
