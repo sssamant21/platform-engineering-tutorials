@@ -1,0 +1,44 @@
+{
+  "engine": "terraform",
+  "cli_version": "1.9.8",
+  "ci_image": "registry.example.invalid/platform/iac-runner@sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "stacks": [
+    {
+      "id": "aws-staging-eks",
+      "cloud": "aws",
+      "environment": "staging",
+      "service": "kubernetes",
+      "owner": "platform-sre",
+      "cost_center": "platform",
+      "backend_key": "iac/aws/staging/eks.tfstate",
+      "state": {
+        "encrypted": true,
+        "locking": true,
+        "versioning": true
+      },
+      "ci_identity": "oidc-staging-platform",
+      "auto_apply": false,
+      "approvals": []
+    },
+    {
+      "id": "aws-prod-rds",
+      "cloud": "aws",
+      "environment": "prod",
+      "service": "database",
+      "owner": "dbre",
+      "cost_center": "data-platform",
+      "backend_key": "iac/aws/prod/rds.tfstate",
+      "state": {
+        "encrypted": true,
+        "locking": true,
+        "versioning": true
+      },
+      "ci_identity": "oidc-prod-dbre",
+      "auto_apply": false,
+      "approvals": [
+        "service-owner",
+        "dbre"
+      ]
+    }
+  ]
+}
