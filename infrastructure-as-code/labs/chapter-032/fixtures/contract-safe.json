@@ -1,0 +1,78 @@
+{
+  "environment": "prod",
+  "change_ticket": "CHG-DEMO-032",
+  "modules": [
+    {
+      "name": "network",
+      "owner": "platform-sre",
+      "schema_version": 1,
+      "inputs": [
+        "environment",
+        "cidr",
+        "owner",
+        "labels"
+      ],
+      "outputs": [
+        "schema_version",
+        "id",
+        "environment",
+        "cidr",
+        "owner"
+      ],
+      "nullable_inputs": [],
+      "depends_on": []
+    },
+    {
+      "name": "database",
+      "owner": "dbre-team",
+      "schema_version": 1,
+      "inputs": [
+        "environment",
+        "network",
+        "replicas",
+        "backup_enabled",
+        "encryption_enabled",
+        "settings"
+      ],
+      "outputs": [
+        "schema_version",
+        "id",
+        "environment",
+        "network_id",
+        "replicas",
+        "backup_enabled",
+        "encryption_enabled"
+      ],
+      "nullable_inputs": [],
+      "depends_on": [
+        "network"
+      ]
+    },
+    {
+      "name": "application",
+      "owner": "platform-sre",
+      "schema_version": 1,
+      "inputs": [
+        "environment",
+        "database",
+        "owner"
+      ],
+      "outputs": [
+        "schema_version",
+        "id",
+        "environment",
+        "database_id",
+        "owner"
+      ],
+      "nullable_inputs": [],
+      "depends_on": [
+        "database"
+      ]
+    }
+  ],
+  "database": {
+    "replicas": 3,
+    "backup_enabled": true,
+    "encryption_enabled": true
+  }
+}
