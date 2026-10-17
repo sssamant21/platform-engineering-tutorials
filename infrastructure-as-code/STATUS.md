@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 15 / 120 chapters (12.50%)  
+**Progress:** 16 / 120 chapters (13.33%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -20,7 +20,9 @@
 **Chapter 013:** Published; live lab execution remains for learner verification.  
 **Chapter 014:** Published; live lab execution remains for learner verification.  
 **Chapter 015:** Published; Part 03 content complete; live lab execution remains for learner verification.  
-**Next:** Chapter 016 — Terraform Input Variables, Type Constraints, Defaults and Validation.
+**Chapter 016:** Published; live lab execution remains for learner verification.  
+**Part 04:** 1/5 chapters published.  
+**Next:** Chapter 017 — Terraform Local Values, Expressions, Functions and Dynamic Configuration.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -39,6 +41,7 @@
 | 013 | Terraform Plan, Apply, Refresh, Destroy and Execution Lifecycle | Published |
 | 014 | Terraform State Inspection, Drift Detection and Resource Address Management | Published |
 | 015 | Terraform Language, Lifecycle, State and Change Management Capstone | Published |
+| 016 | Terraform Input Variables, Type Constraints, Defaults and Validation | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -157,3 +160,11 @@
 - [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point rubric
 - [x] Part 03 curriculum publication complete (011–015)
 - [ ] Live lab execution evidence and final assessment results
+
+## Chapter 016 acceptance
+- [x] Terraform variable types, defaults, nullability, sensitivity and precedence theory
+- [x] Local Terraform/OpenTofu typed-input lab and dev/prod example tfvars
+- [x] Python environment input-policy and eleven automated unit tests
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [x] Chapter and GitHub index publication
+- [ ] Live lab execution evidence
