@@ -1,0 +1,14 @@
+{
+  "ticket": "CHG-004",
+  "environment": "staging",
+  "commit_sha": "a1b2c3d4",
+  "owner": "platform-sre",
+  "actions": [
+    "update"
+  ],
+  "approvals": [
+    "platform-reviewer"
+  ],
+  "rollback_plan": "Revert desired configuration, generate and review fresh plan",
+  "verification": "Terraform validate, output and no-change plan"
+}
