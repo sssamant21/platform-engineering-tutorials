@@ -1,0 +1,22 @@
+# Illustrative only. DO NOT copy into core lab without an approved AWS account.
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+provider "aws" {
+  region = "us-east-1"
+  # Authentication via short-lived environment/role federation, not keys.
+}
+provider "aws" {
+  alias = "dr"
+  region = "us-west-2"
+}
+# An actual child module must be present before enabling the call below.
+# module "replica" {
+#   source = "./modules/replica"
+#   providers = { aws = aws, aws.dr = aws.dr }
+# }
