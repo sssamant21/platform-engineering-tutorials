@@ -1,0 +1,8 @@
+# Illustrative only. Requires Terraform >=1.7 and a verified ownership handoff.
+# Remove the original resource block from configuration before adding this.
+removed {
+  from = terraform_data.database
+  lifecycle {
+    destroy = false
+  }
+}
