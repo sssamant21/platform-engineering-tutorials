@@ -1,0 +1,32 @@
+{
+  "environment": "prod",
+  "change_ticket": "CHG-DEMO-028",
+  "state_backup_verified": true,
+  "exclusive_lock_verified": true,
+  "operations": [
+    {
+      "operation": "move",
+      "from": "terraform_data.database",
+      "to": "terraform_data.primary_database",
+      "owner": "dbre-team"
+    },
+    {
+      "operation": "import",
+      "to": "terraform_data.existing_cache",
+      "object_id": "approved-object-123",
+      "ownership_verified": true,
+      "owner": "platform-sre"
+    },
+    {
+      "operation": "forget",
+      "from": "terraform_data.legacy",
+      "destroy": false,
+      "handoff_owner": "legacy-operations"
+    },
+    {
+      "operation": "refresh",
+      "address": "terraform_data.application",
+      "owner": "platform-sre"
+    }
+  ]
+}
