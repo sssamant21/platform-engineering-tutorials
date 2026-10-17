@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 34 / 120 chapters (28.33%)  
+**Progress:** 35 / 120 chapters (29.17%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -42,7 +42,8 @@
 **Chapter 032:** Published; live lab evidence pending.  
 **Chapter 033:** Published; live lab and registry evidence pending.  
 **Chapter 034:** Published; Terraform native tests, CI execution and production acceptance pending.  
-**Next:** Chapter 035 — Terraform Reusable Modules Production Engineering Capstone.
+**Chapter 035:** Published; capstone execution and operational acceptance pending.  
+**Next:** Chapter 036 — AWS Infrastructure as Code Foundations and Terraform AWS Provider.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -80,6 +81,7 @@
 | 032 | Terraform Module Inputs, Outputs, Validation and Contract Testing | Published |
 | 033 | Terraform Module Versioning, Registries and Dependency Management | Published |
 | 034 | Terraform Module Testing, Mock Providers and CI Quality Gates | Published |
+| 035 | Terraform Reusable Modules Production Engineering Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -353,3 +355,13 @@
 - [x] Chapter and master index publication
 - [ ] Live Terraform >=1.7 native test execution and CI acceptance evidence
 - [ ] Real provider integration and production SRE/DBRE evidence
+
+## Chapter 035 acceptance — Part 07 capstone
+- [x] Module architecture, typed contracts, versioning and release governance theory
+- [x] Offline Terraform network/database/application composition with dev/prod fixtures
+- [x] Native Terraform contract and negative tests authored
+- [x] Python capstone policy, unit tests, destructive fixtures and CI examples authored
+- [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point scorecard
+- [x] Chapter and master index publication; Part 07 publication complete
+- [ ] Live Terraform execution, CI runs, integration testing and security review
+- [ ] Production operational acceptance, backup/restore evidence and SLO sign-off
