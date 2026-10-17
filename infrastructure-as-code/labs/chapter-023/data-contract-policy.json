@@ -1,0 +1,21 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_source_types": [
+    "module-output",
+    "provider-data-source",
+    "approved-config-api"
+  ],
+  "supported_schema_versions": [
+    1
+  ],
+  "required_subnet_keys": [
+    "primary",
+    "secondary"
+  ],
+  "require_prod_backup": true,
+  "require_prod_encryption": true
+}
