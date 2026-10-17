@@ -9,6 +9,12 @@ locals {
     zones       = local.zone_index
     tags        = var.tags
     database    = var.database
+    operational_policy = {
+      change_ticket = var.change_ticket
+      db_replicas = var.db_replicas
+      db_encrypted = var.db_encrypted
+      db_backup_enabled = var.db_backup_enabled
+    }
   }
 }
 resource "terraform_data" "input_contract" {
