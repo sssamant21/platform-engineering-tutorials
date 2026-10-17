@@ -73,7 +73,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 019 executable labs and tests](labs/chapter-019/)
 - [020 — Terraform Variables, Expressions and Defensive Configuration Production Capstone](chapters/020-terraform-variables-expressions-defensive-configuration-production-capstone.md)
 - [Chapter 020 executable labs and tests](labs/chapter-020/)
+- [021 — Terraform Provider Configuration, Aliases, Version Constraints and Authentication](chapters/021-terraform-provider-configuration-aliases-version-constraints-authentication.md)
+- [Chapter 021 executable labs and tests](labs/chapter-021/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 underway (021 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
