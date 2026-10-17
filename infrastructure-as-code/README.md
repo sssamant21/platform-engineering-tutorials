@@ -65,7 +65,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 015 executable labs and tests](labs/chapter-015/)
 - [016 — Terraform Input Variables, Type Constraints, Defaults and Validation](chapters/016-terraform-input-variables-type-constraints-defaults-validation.md)
 - [Chapter 016 executable labs and tests](labs/chapter-016/)
+- [017 — Terraform Local Values, Expressions, Functions and Dynamic Configuration](chapters/017-terraform-local-values-expressions-functions-dynamic-configuration.md)
+- [Chapter 017 executable labs and tests](labs/chapter-017/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 underway (016 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 underway (016–017 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
