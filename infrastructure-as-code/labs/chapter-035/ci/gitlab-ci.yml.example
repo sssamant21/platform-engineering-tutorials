@@ -1,0 +1,14 @@
+# Example only: pin Terraform container image by reviewed digest before production.
+stages:
+  - acceptance
+chapter035-capstone:
+  stage: acceptance
+  image: hashicorp/terraform:1.7.5
+  before_script:
+    - apk add --no-cache python3 bash
+  script:
+    - cd infrastructure-as-code/labs/chapter-035
+    - bash run-preflight.sh
+  rules:
+    - changes:
+        - infrastructure-as-code/labs/chapter-035/**/*
