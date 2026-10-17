@@ -237,6 +237,7 @@ if __name__ == "__main__":
 ## 4. Create `test_telemetry_analyzer.py`
 
 ```python
+import argparse
 import io
 import json
 import unittest
@@ -348,14 +349,14 @@ class TelemetryCapstoneTests(unittest.TestCase):
             analyze(parse([row(0), row(1)]), max_window_events=1)
 
     def test_rate_argument(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(argparse.ArgumentTypeError):
             rate_arg("nan")
 
     def test_nonnegative_argument(self):
         self.assertEqual(finite_nonnegative("0"), 0)
 
     def test_positive_argument(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(argparse.ArgumentTypeError):
             finite_positive("0")
 
     def test_repeatable(self):
