@@ -1,0 +1,29 @@
+{
+  "environment": "prod",
+  "change_ticket": "",
+  "source_backend": "s3://iac-prod/state/prod",
+  "dr_backend": "s3://iac-prod/state/prod",
+  "lineage": "wrong",
+  "serial": -1,
+  "snapshot_lineage": "other",
+  "snapshot_serial": 0,
+  "snapshot_sha256": "bad",
+  "retention_days": 1,
+  "rpo_minutes": 999,
+  "rto_minutes": 999,
+  "resource_addresses": [
+    "terraform_data.database",
+    "terraform_data.database"
+  ],
+  "controls": {
+    "state_backup_verified": false,
+    "exclusive_lock_verified": false,
+    "writers_frozen": false,
+    "encryption_verified": false,
+    "versioning_verified": false,
+    "audit_verified": false,
+    "restore_tested": false,
+    "identity_scoped": false,
+    "application_health_verified": false
+  }
+}
