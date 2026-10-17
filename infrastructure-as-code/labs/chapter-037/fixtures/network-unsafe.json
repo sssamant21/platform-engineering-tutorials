@@ -1,0 +1,69 @@
+{
+  "environment": "prod",
+  "owner": "network-sre",
+  "change_ticket": "",
+  "state_namespace": "iac-prod-network",
+  "vpc_cidr": "10.90.0.0/16",
+  "availability_zones": [
+    "us-east-1a",
+    "us-east-1b"
+  ],
+  "subnets": [
+    {
+      "name": "public_a",
+      "cidr": "10.90.0.0/24",
+      "az": "us-east-1a",
+      "tier": "public"
+    },
+    {
+      "name": "public_b",
+      "cidr": "10.90.1.0/24",
+      "az": "us-east-1b",
+      "tier": "public"
+    },
+    {
+      "name": "app_a",
+      "cidr": "10.90.10.0/24",
+      "az": "us-east-1a",
+      "tier": "application"
+    },
+    {
+      "name": "app_b",
+      "cidr": "10.90.11.0/24",
+      "az": "us-east-1b",
+      "tier": "application"
+    },
+    {
+      "name": "db_a",
+      "cidr": "10.90.20.0/24",
+      "az": "us-east-1a",
+      "tier": "database"
+    },
+    {
+      "name": "db_b",
+      "cidr": "10.90.20.0/24",
+      "az": "us-east-1b",
+      "tier": "database"
+    }
+  ],
+  "routes": {
+    "public_default": "igw",
+    "application_default": "same-az-nat",
+    "database_default": "igw",
+    "nat_by_az": {
+      "us-east-1a": "us-east-1a",
+      "us-east-1b": "us-east-1b"
+    }
+  },
+  "security": {
+    "database_public_ingress": true,
+    "flow_logs_enabled": false,
+    "s3_endpoint_enabled": true,
+    "least_privilege_reviewed": true
+  },
+  "tags": {
+    "Environment": "prod",
+    "ManagedBy": "terraform",
+    "Owner": "network-sre"
+  }
+}
