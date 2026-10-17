@@ -1,0 +1,41 @@
+{
+  "environment": "staging",
+  "auto_apply": false,
+  "nodes": [
+    {
+      "id": "seed",
+      "depends_on": [],
+      "kind": "metadata",
+      "action": "create",
+      "dbre_approved": false
+    },
+    {
+      "id": "service-api",
+      "depends_on": [
+        "seed"
+      ],
+      "kind": "service",
+      "action": "create",
+      "dbre_approved": false
+    },
+    {
+      "id": "service-worker",
+      "depends_on": [
+        "seed"
+      ],
+      "kind": "service",
+      "action": "create",
+      "dbre_approved": false
+    },
+    {
+      "id": "audit",
+      "depends_on": [
+        "service-api",
+        "service-worker"
+      ],
+      "kind": "audit",
+      "action": "create",
+      "dbre_approved": false
+    }
+  ]
+}
