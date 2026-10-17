@@ -1,0 +1,9 @@
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+graph.dot
+graph.svg
+__pycache__/
+*.tfvars
+!*.tfvars.example
