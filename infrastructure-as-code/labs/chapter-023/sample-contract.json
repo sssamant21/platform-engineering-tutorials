@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "source_type": "module-output",
+  "environment": "prod",
+  "owner": "dbre-team",
+  "change_ticket": "CHG-DEMO-023",
+  "source_identity": "network-module/v1",
+  "subnets": {
+    "primary": "subnet-lab-prod-a",
+    "secondary": "subnet-lab-prod-b"
+  },
+  "database": {
+    "name": "database-prod",
+    "backup_enabled": true,
+    "encrypted": true
+  }
+}
