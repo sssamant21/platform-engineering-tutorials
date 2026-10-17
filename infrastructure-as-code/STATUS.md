@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 6 / 120 chapters (5.00%)  
+**Progress:** 7 / 120 chapters (5.83%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -9,8 +9,9 @@
 **Chapter 005:** Published; live lab execution remains for learner verification.  
 **Part 01:** 5/5 chapters published (labs not independently executed).  
 **Chapter 006:** Published; live lab execution remains for learner verification.  
-**Part 02:** 1/5 chapters published.  
-**Next:** Chapter 007 — IaC Repository Structure, Environment Isolation and Workspace Standards.
+**Part 02:** 2/5 chapters published.  
+**Chapter 007:** Published; live lab execution remains for learner verification.  
+**Next:** Chapter 008 — Terraform and OpenTofu Version Management, Provider Lockfiles and Reproducible Toolchains.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -20,6 +21,7 @@
 | 004 | IaC Lifecycle, Version Control, Git Workflows and Change Management | Published |
 | 005 | Enterprise IaC Architecture, Operating Models and Governance | Published |
 | 006 | IaC Workstation Setup, CLI Installation and Toolchain Validation | Published |
+| 007 | IaC Repository Structure, Environment Isolation and Workspace Standards | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -63,4 +65,12 @@
 - [x] Executable no-cloud IaC smoke test
 - [x] Automated Python workstation audit and unit tests
 - [x] SRE/DBRE production cases, troubleshooting and runbooks
+- [ ] Live lab execution evidence
+
+## Chapter 007 acceptance
+- [x] Repository architecture and workspace isolation theory
+- [x] Reusable Terraform module and separate dev/staging roots
+- [x] Disposable workspace demonstration
+- [x] Python stack inventory validator and unit tests
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [ ] Live lab execution evidence
