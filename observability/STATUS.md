@@ -1,11 +1,11 @@
 # Observability Curriculum Status
 
-**Progress: 8 / 100 chapters (8%) · 20 parts · Part 02: 3/5**
+**Progress: 9 / 100 chapters (9%) · 20 parts · Part 02: 4/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
 | 01 — Observability Fundamentals and Reliability Signals | 001–005 | 5 | 5 | Complete |
-| 02 — Linux and Infrastructure Monitoring | 006–010 | 3 | 5 | In progress |
+| 02 — Linux and Infrastructure Monitoring | 006–010 | 4 | 5 | In progress |
 | 03 — Prometheus Architecture and Installation | 011–015 | 0 | 5 | Planned |
 | 04 — PromQL and Advanced Metrics | 016–020 | 0 | 5 | Planned |
 | 05 — Grafana Dashboards and Visualization | 021–025 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–008 and companion labs. Part 01 complete (5/5); Part 02 in progress (3/5).
+**Published:** Chapters 001–009 and companion labs. Part 01 complete (5/5); Part 02 in progress (4/5).
 
-**Next:** Chapter 009 — Linux Storage IOPS, Throughput, Disk Latency, Filesystems and I/O Troubleshooting.
+**Next:** Chapter 010 — Linux Infrastructure Observability and Production Troubleshooting Capstone.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
