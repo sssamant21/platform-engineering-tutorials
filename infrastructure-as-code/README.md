@@ -39,5 +39,7 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 002 executable labs and tests](labs/chapter-002/)
 - [003 — Declarative vs Imperative IaC, Desired State, Drift and Idempotence](chapters/003-declarative-imperative-desired-state-drift-idempotence.md)
 - [Chapter 003 executable labs and tests](labs/chapter-003/)
+- [004 — IaC Lifecycle, Version Control, Git Workflows and Change Management](chapters/004-iac-lifecycle-git-workflows-change-management.md)
+- [Chapter 004 executable labs and tests](labs/chapter-004/)
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
