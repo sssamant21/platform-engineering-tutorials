@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 22 / 120 chapters (18.33%)  
+**Progress:** 23 / 120 chapters (19.17%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -27,9 +27,10 @@
 **Chapter 019:** Published; live lab execution remains for learner verification.  
 **Chapter 020:** Published; Part 04 content complete; live lab execution remains for learner verification.  
 **Chapter 021:** Published; live lab evidence pending.  
-**Part 05:** 2/5 chapters published.  
+**Part 05:** 3/5 chapters published.  
 **Chapter 022:** Published; live lab evidence pending.  
-**Next:** Chapter 023 — Terraform Data Sources, External Dependencies and Cross-Module Data Flow.
+**Chapter 023:** Published; live lab evidence pending.  
+**Next:** Chapter 024 — Terraform Lifecycle Meta-Arguments, Preconditions, Postconditions and Safe Replacement Strategies.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -55,6 +56,7 @@
 | 020 | Terraform Variables, Expressions and Defensive Configuration Production Capstone | Published |
 | 021 | Terraform Provider Configuration, Aliases, Version Constraints and Authentication | Published |
 | 022 | Terraform Provider Dependencies, Implicit and Explicit Resource Graphs and Lifecycle Ordering | Published |
+| 023 | Terraform Data Sources, External Dependencies and Cross-Module Data Flow | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -226,6 +228,14 @@
 - [x] Implicit/explicit dependencies, DAG, data reads, provider and lifecycle theory
 - [x] Offline terraform_data graph lab and sample plan JSON
 - [x] Python graph and plan policy with seventeen automated unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [x] Chapter and master index publication
+- [ ] Live lab execution and test evidence
+
+## Chapter 023 acceptance
+- [x] Data sources, read timing, cross-module output contracts and sensitive state theory
+- [x] Offline network/database Terraform module lab and dev/prod fixtures
+- [x] Python contract policy and twenty automated unit tests authored
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [x] Chapter and master index publication
 - [ ] Live lab execution and test evidence
