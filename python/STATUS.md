@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **50 chapters**
-- Remaining: **70 chapters**
-- Published labs: **50**
-- Next: **051 — Advanced Python Type Hints, Protocols and Static Analysis**
+- Published: **51 chapters**
+- Remaining: **69 chapters**
+- Published labs: **51**
+- Next: **052 — Python Iterators, Generators and Streaming Data Pipelines**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–050 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–051 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -81,3 +81,8 @@ Chapter 048: [Tutorial](05-files-exceptions-logging-configuration/048-python-dat
 Chapter 049: [Tutorial](05-files-exceptions-logging-configuration/049-python-serialization-data-validation-configuration-integration.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/049-safe-serialization-configuration-contract-sre-dbre-lab.md). Automated tests published; execution not yet verified.
 
 Chapter 050: [Tutorial](05-files-exceptions-logging-configuration/050-files-exceptions-logging-configuration-production-capstone.md) · [Hands-on capstone lab](05-files-exceptions-logging-configuration/labs/050-integrated-files-exceptions-logging-configuration-sre-dbre-capstone-lab.md). Automated tests and incident simulations published; execution pending.
+
+## Part 06 — Advanced Python, Typing and Concurrency
+- Published: **1/10** (Chapter 051)
+- [Chapter 051 tutorial](06-advanced-python-typing-concurrency/051-advanced-python-type-hints-protocols-static-analysis.md) · [Chapter 051 lab](06-advanced-python-typing-concurrency/labs/051-typed-sre-dbre-telemetry-analyzer-lab.md)
+- 40 local unit tests passed; strict mypy/pyright checks pending.
