@@ -3,18 +3,18 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **29 chapters**
-- Remaining: **91 chapters**
-- Published labs: **29**
-- Next: **030 — Functions, Modules and Packaging Capstone: Production-Ready SRE CLI**
+- Published: **30 chapters**
+- Remaining: **90 chapters**
+- Published labs: **30**
+- Next: **031 — Python Classes, Objects and Encapsulation**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–029 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–030 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
 - Part 01 — Python Fundamentals: **10/10**
 - Part 02 — Data Types, Collections and Algorithms: **10/10**
-- Part 03 — Functions, Modules and Packages: **9/10** (in progress)
+- Part 03 — Functions, Modules and Packages: **10/10** (complete)
 
 Chapter 020: [Tutorial](02-data-types-algorithms/020-sre-telemetry-analyzer-capstone.md) · [Capstone lab](02-data-types-algorithms/labs/020-sre-telemetry-analyzer-capstone-lab.md). Automated test code and acceptance checks are published; execution is not yet independently verified.
 
@@ -35,3 +35,5 @@ Chapter 027: [Tutorial](03-functions-modules-packages/027-python-packaging-publi
 Chapter 028: [Tutorial](03-functions-modules-packages/028-python-project-configuration-environment-variables-secrets-hygiene.md) · [Hands-on lab](03-functions-modules-packages/labs/028-layered-sre-configuration-secrets-hygiene-lab.md). Includes 30 tests; local execution is pending. No real secrets were accessed.
 
 Chapter 029: [Tutorial](03-functions-modules-packages/029-python-cli-design-argparse-operational-user-experience.md) · [Hands-on lab](03-functions-modules-packages/labs/029-operational-sre-cli-argparse-lab.md). Includes 30 tests; local execution is pending. CLI is read-only and offline.
+
+Chapter 030: [Tutorial](03-functions-modules-packages/030-functions-modules-packaging-production-ready-sre-cli-capstone.md) · [Capstone lab](03-functions-modules-packages/labs/030-production-ready-sre-cli-capstone-lab.md). Includes 45 tests, 100-point assessment and safety runbooks; local execution is pending. Part 03 complete.
