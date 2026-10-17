@@ -1,0 +1,27 @@
+{
+  "version": 4,
+  "terraform_version": "1.9.8",
+  "serial": -2,
+  "lineage": "not-a-uuid",
+  "outputs": {
+    "database_password": {
+      "value": "unsafe-fixture",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "aws_db_instance",
+      "name": "database",
+      "provider": "provider.aws",
+      "instances": [
+        {
+          "attributes": {
+            "password": "unsafe-fixture"
+          }
+        }
+      ]
+    }
+  ]
+}
