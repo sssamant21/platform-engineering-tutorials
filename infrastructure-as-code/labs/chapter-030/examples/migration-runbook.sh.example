@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# REFERENCE ONLY: no production execution without approved change.
+# Verify backend identity, IAM, encryption, versioning, locks.
+# Freeze writers; capture protected source state.
+# Rehearse in disposable sandbox; then under approval:
+# terraform init -migrate-state
+# terraform state list
+# terraform plan -detailed-exitcode
+# Verify lineage, serial, addresses and real resources.
