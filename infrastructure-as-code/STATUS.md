@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 31 / 120 chapters (25.83%)  
+**Progress:** 32 / 120 chapters (26.67%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -39,7 +39,8 @@
 **Chapter 029:** Published; live lab and recovery drill evidence pending.  
 **Chapter 030:** Published; Part 06 complete (live acceptance pending).  
 **Chapter 031:** Published; live lab evidence pending.  
-**Next:** Chapter 032 — Terraform Module Inputs, Outputs, Validation and Contract Testing.
+**Chapter 032:** Published; live lab evidence pending.  
+**Next:** Chapter 033 — Terraform Module Versioning, Registries and Dependency Management.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -74,6 +75,7 @@
 | 029 | Terraform State Migration, Backup, Restore and Disaster Recovery | Published |
 | 030 | Terraform State and Remote Backend Production Operations Capstone | Published |
 | 031 | Terraform Module Architecture, Interfaces and Reusable Design Patterns | Published |
+| 032 | Terraform Module Inputs, Outputs, Validation and Contract Testing | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -321,3 +323,11 @@
 - [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 07 started
 - [ ] Live Terraform validation, policy test execution and operational evidence
+
+## Chapter 032 acceptance
+- [x] Advanced typed inputs, optional attributes, validation, preconditions and output schema theory
+- [x] Offline Terraform network/database/application module contract lab with dev/prod fixtures
+- [x] Python contract/plan policy and thirty-three automated unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication
+- [ ] Live Terraform execution, automated test evidence and operational acceptance
