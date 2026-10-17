@@ -32,7 +32,7 @@ Each chapter includes theory, reproducible code, hands-on labs, validation, trou
 - **Part 02 — Data Types, Collections and Algorithms (011–020): Complete**
   - [Chapter 020 — SRE Telemetry Analyzer Capstone](02-data-types-algorithms/020-sre-telemetry-analyzer-capstone.md)
   - [Chapter 020 — Executable Hands-on Lab](02-data-types-algorithms/labs/020-sre-telemetry-analyzer-capstone-lab.md)
-- **Part 03 — Functions, Modules and Packages (021–030): In progress (9/10)**
+- **Part 03 — Functions, Modules and Packages (021–030): Complete (10/10)**
   - [Chapter 021 — Functions as Reusable Interfaces](03-functions-modules-packages/021-functions-reusable-interfaces-parameters-returns-contracts.md)
   - [Chapter 021 — SRE Alert Classification Functions Lab](03-functions-modules-packages/labs/021-sre-alert-classification-functions-lab.md)
   - [Chapter 022 — Function Scope, Closures and Higher-Order Functions](03-functions-modules-packages/022-function-scope-closures-higher-order-functions.md)
@@ -51,5 +51,7 @@ Each chapter includes theory, reproducible code, hands-on labs, validation, trou
   - [Chapter 028 — Layered SRE Configuration and Secrets Hygiene Lab](03-functions-modules-packages/labs/028-layered-sre-configuration-secrets-hygiene-lab.md)
   - [Chapter 029 — Python CLI Design, argparse and Operational User Experience](03-functions-modules-packages/029-python-cli-design-argparse-operational-user-experience.md)
   - [Chapter 029 — Operational SRE CLI Lab](03-functions-modules-packages/labs/029-operational-sre-cli-argparse-lab.md)
+  - [Chapter 030 — Functions, Modules and Packaging Capstone: Production-Ready SRE CLI](03-functions-modules-packages/030-functions-modules-packaging-production-ready-sre-cli-capstone.md)
+  - [Chapter 030 — Production-Ready SRE CLI Capstone Lab](03-functions-modules-packages/labs/030-production-ready-sre-cli-capstone-lab.md)
 
 The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, counters, deques, sliding windows, deterministic JSON reports, 30 automated test cases and failure-injection exercises. Test execution is required on the learner's machine; publication alone is not proof of passing tests.
