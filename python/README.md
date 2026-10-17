@@ -32,7 +32,7 @@ Each chapter includes theory, reproducible code, hands-on labs, validation, trou
 - **Part 02 — Data Types, Collections and Algorithms (011–020): Complete**
   - [Chapter 020 — SRE Telemetry Analyzer Capstone](02-data-types-algorithms/020-sre-telemetry-analyzer-capstone.md)
   - [Chapter 020 — Executable Hands-on Lab](02-data-types-algorithms/labs/020-sre-telemetry-analyzer-capstone-lab.md)
-- **Part 03 — Functions, Modules and Packages (021–030): In progress (7/10)**
+- **Part 03 — Functions, Modules and Packages (021–030): In progress (8/10)**
   - [Chapter 021 — Functions as Reusable Interfaces](03-functions-modules-packages/021-functions-reusable-interfaces-parameters-returns-contracts.md)
   - [Chapter 021 — SRE Alert Classification Functions Lab](03-functions-modules-packages/labs/021-sre-alert-classification-functions-lab.md)
   - [Chapter 022 — Function Scope, Closures and Higher-Order Functions](03-functions-modules-packages/022-function-scope-closures-higher-order-functions.md)
@@ -47,5 +47,7 @@ Each chapter includes theory, reproducible code, hands-on labs, validation, trou
   - [Chapter 026 — Reproducible SRE Wheel Build Lab](03-functions-modules-packages/labs/026-reproducible-sre-wheel-build-lab.md)
   - [Chapter 027 — Python Packaging, Publishing and Artifact Supply-Chain Security](03-functions-modules-packages/027-python-packaging-publishing-artifact-supply-chain-security.md)
   - [Chapter 027 — SRE Artifact Provenance and Packaging Lab](03-functions-modules-packages/labs/027-sre-artifact-provenance-packaging-lab.md)
+  - [Chapter 028 — Python Project Configuration, Environment Variables and Secrets Hygiene](03-functions-modules-packages/028-python-project-configuration-environment-variables-secrets-hygiene.md)
+  - [Chapter 028 — Layered SRE Configuration and Secrets Hygiene Lab](03-functions-modules-packages/labs/028-layered-sre-configuration-secrets-hygiene-lab.md)
 
 The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, counters, deques, sliding windows, deterministic JSON reports, 30 automated test cases and failure-injection exercises. Test execution is required on the learner's machine; publication alone is not proof of passing tests.
