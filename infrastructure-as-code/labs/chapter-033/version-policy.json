@@ -1,0 +1,34 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_modules": [
+    "network",
+    "database",
+    "application"
+  ],
+  "allowed_registry_hosts": [
+    "registry.terraform.io",
+    "app.terraform.io"
+  ],
+  "allowed_git_hosts": [
+    "github.com"
+  ],
+  "required_attestations": [
+    "provenance_verified",
+    "security_reviewed",
+    "contract_tests_passed",
+    "integration_tests_passed"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_release_owner": true,
+  "require_pinned_sources": true,
+  "require_approved_major": true,
+  "require_state_isolation": true,
+  "deny_destructive_actions": true
+}
