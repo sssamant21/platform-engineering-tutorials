@@ -78,7 +78,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
   - [Chapter 040 — Object-Oriented SRE/DBRE Production Capstone](04-object-oriented-programming/040-object-oriented-sre-dbre-production-capstone.md)
   - [Chapter 040 — Integrated Production Capstone Lab](04-object-oriented-programming/labs/040-object-oriented-sre-dbre-production-capstone-lab.md)
 
-- **Part 05 — Files, Exceptions, Logging and Configuration (041–050): In progress (4/10)**
+- **Part 05 — Files, Exceptions, Logging and Configuration (041–050): In progress (5/10)**
   - [Chapter 041 — Files, Paths and Filesystem Operations](05-files-exceptions-logging-configuration/041-files-paths-filesystem-operations.md)
   - [Chapter 041 — Safe Filesystem and Atomic SRE Report Lab](05-files-exceptions-logging-configuration/labs/041-safe-filesystem-atomic-sre-report-lab.md)
   - [Chapter 042 — File Formats, CSV, JSON and Structured Data Processing](05-files-exceptions-logging-configuration/042-file-formats-csv-json-structured-data-processing.md)
@@ -87,3 +87,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
   - [Chapter 043 — Resilient SRE/DBRE Probe and Retry Lab](05-files-exceptions-logging-configuration/labs/043-resilient-sre-dbre-probe-retry-lab.md)
   - [Chapter 044 — Python Logging, Structured Logs and Operational Observability](05-files-exceptions-logging-configuration/044-python-logging-structured-logs-operational-observability.md)
   - [Chapter 044 — Structured Logging and Correlation SRE/DBRE Lab](05-files-exceptions-logging-configuration/labs/044-structured-logging-correlation-sre-dbre-lab.md)
+  - [Chapter 045 — Python Configuration Management and Environment Variables](05-files-exceptions-logging-configuration/045-python-configuration-management-environment-variables.md)
+  - [Chapter 045 — Configuration Precedence, Secrets and Drift SRE/DBRE Lab](05-files-exceptions-logging-configuration/labs/045-configuration-precedence-secrets-drift-sre-dbre-lab.md)
