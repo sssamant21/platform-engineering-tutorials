@@ -57,7 +57,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 011 executable labs and tests](labs/chapter-011/)
 - [012 — Terraform Resource Blocks, Data Sources, Meta-Arguments and Dependency Graph](chapters/012-terraform-resource-blocks-data-sources-meta-arguments-dependency-graph.md)
 - [Chapter 012 executable labs and tests](labs/chapter-012/)
+- [013 — Terraform Plan, Apply, Refresh, Destroy and Execution Lifecycle](chapters/013-terraform-plan-apply-refresh-destroy-execution-lifecycle.md)
+- [Chapter 013 executable labs and tests](labs/chapter-013/)
 
-**Parts 01 and 02 complete (001–010); Part 03 underway (011–012 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 underway (011–013 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
