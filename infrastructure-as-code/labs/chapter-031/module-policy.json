@@ -1,0 +1,64 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_modules": [
+    "network",
+    "database",
+    "application"
+  ],
+  "required_contracts": {
+    "network": {
+      "inputs": [
+        "environment",
+        "cidr",
+        "owner"
+      ],
+      "outputs": [
+        "id",
+        "cidr",
+        "environment",
+        "owner"
+      ]
+    },
+    "database": {
+      "inputs": [
+        "environment",
+        "network",
+        "replicas",
+        "backup_enabled",
+        "encryption_enabled"
+      ],
+      "outputs": [
+        "id",
+        "environment",
+        "network_id",
+        "replicas",
+        "backup_enabled",
+        "encryption_enabled"
+      ]
+    },
+    "application": {
+      "inputs": [
+        "environment",
+        "database",
+        "owner"
+      ],
+      "outputs": [
+        "id",
+        "environment",
+        "database_id",
+        "owner"
+      ]
+    }
+  },
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_owner": true,
+  "require_pinned_remote_modules": true,
+  "deny_destructive_actions": true
+}
