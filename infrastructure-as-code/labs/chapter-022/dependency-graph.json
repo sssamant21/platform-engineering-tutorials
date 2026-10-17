@@ -1,0 +1,27 @@
+{
+  "nodes": [
+    "foundation",
+    "database",
+    "application",
+    "monitoring",
+    "audit"
+  ],
+  "edges": [
+    {
+      "before": "foundation",
+      "after": "database"
+    },
+    {
+      "before": "database",
+      "after": "application"
+    },
+    {
+      "before": "application",
+      "after": "monitoring"
+    },
+    {
+      "before": "monitoring",
+      "after": "audit"
+    }
+  ]
+}
