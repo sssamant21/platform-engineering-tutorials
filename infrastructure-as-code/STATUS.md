@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 32 / 120 chapters (26.67%)  
+**Progress:** 33 / 120 chapters (27.50%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -40,7 +40,8 @@
 **Chapter 030:** Published; Part 06 complete (live acceptance pending).  
 **Chapter 031:** Published; live lab evidence pending.  
 **Chapter 032:** Published; live lab evidence pending.  
-**Next:** Chapter 033 — Terraform Module Versioning, Registries and Dependency Management.
+**Chapter 033:** Published; live lab and registry evidence pending.  
+**Next:** Chapter 034 — Terraform Module Testing, Mock Providers and CI Quality Gates.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -76,6 +77,7 @@
 | 030 | Terraform State and Remote Backend Production Operations Capstone | Published |
 | 031 | Terraform Module Architecture, Interfaces and Reusable Design Patterns | Published |
 | 032 | Terraform Module Inputs, Outputs, Validation and Contract Testing | Published |
+| 033 | Terraform Module Versioning, Registries and Dependency Management | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -331,3 +333,11 @@
 - [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point rubric
 - [x] Chapter and master index publication
 - [ ] Live Terraform execution, automated test evidence and operational acceptance
+
+## Chapter 033 acceptance
+- [x] SemVer, public/private registries, Git pinning and provider dependency theory
+- [x] Offline Terraform module lab and illustrative registry/Git consumers
+- [x] Fail-closed release policy and forty-two Python unit tests authored
+- [x] Production SRE/DBRE scenarios, supply-chain troubleshooting and runbooks
+- [x] Chapter and master index publication
+- [ ] Live Terraform execution, unit test evidence, registry publishing and production acceptance
