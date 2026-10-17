@@ -1,0 +1,44 @@
+{
+  "backends": [
+    {
+      "environment": "prod",
+      "backend_type": "s3",
+      "state_key": "iac/prod/database/terraform.tfstate",
+      "identity_ref": "oidc://platform/prod",
+      "permissions": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:ListBucket"
+      ],
+      "public_access": false,
+      "controls": {
+        "encryption": true,
+        "versioning": true,
+        "locking": true,
+        "tls": true,
+        "audit_logging": true,
+        "restore_tested": true
+      }
+    },
+    {
+      "environment": "dev",
+      "backend_type": "azurerm",
+      "state_key": "iac/dev/app/terraform.tfstate",
+      "identity_ref": "managed-identity://platform/dev",
+      "permissions": [
+        "blob:read",
+        "blob:write",
+        "blob:lease"
+      ],
+      "public_access": false,
+      "controls": {
+        "encryption": true,
+        "versioning": true,
+        "locking": true,
+        "tls": true,
+        "audit_logging": true,
+        "restore_tested": true
+      }
+    }
+  ]
+}
