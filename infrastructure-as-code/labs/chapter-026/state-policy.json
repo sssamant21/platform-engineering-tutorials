@@ -1,0 +1,23 @@
+{
+  "supported_state_versions": [
+    4
+  ],
+  "min_serial": 0,
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "allowed_modes": [
+    "managed"
+  ],
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_resource_names": [
+    "network",
+    "database",
+    "application"
+  ],
+  "min_terraform_major": 1
+}
