@@ -1,0 +1,50 @@
+{
+  "format_version": "1.2",
+  "resource_changes": [
+    {
+      "address": "module.network.terraform_data.contract",
+      "type": "terraform_data",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    },
+    {
+      "address": "module.database.terraform_data.contract",
+      "type": "terraform_data",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    },
+    {
+      "address": "terraform_data.application",
+      "type": "terraform_data",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    },
+    {
+      "address": "terraform_data.monitoring",
+      "type": "terraform_data",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    },
+    {
+      "address": "terraform_data.audit",
+      "type": "terraform_data",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    }
+  ]
+}
