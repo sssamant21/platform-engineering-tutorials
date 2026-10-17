@@ -1,0 +1,33 @@
+{
+  "version": 4,
+  "terraform_version": "1.9.8",
+  "serial": 7,
+  "lineage": "5db6c8c3-35cb-4a61-9b0d-7cfba02f7a4d",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "network",
+      "instances": [
+        {
+          "attributes": {
+            "id": "demo-network"
+          }
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "database",
+      "instances": [
+        {
+          "attributes": {
+            "id": "demo-db"
+          }
+        }
+      ]
+    }
+  ]
+}
