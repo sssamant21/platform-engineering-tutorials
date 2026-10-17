@@ -87,7 +87,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 026 executable labs and tests](labs/chapter-026/)
 - [027 — Terraform Remote Backends, State Locking, Encryption and Access Control](chapters/027-terraform-remote-backends-state-locking-encryption-access-control.md)
 - [Chapter 027 executable labs and tests](labs/chapter-027/)
+- [028 — Terraform State Operations, Import, Move, Remove and Drift Reconciliation](chapters/028-terraform-state-operations-import-move-remove-drift-reconciliation.md)
+- [Chapter 028 executable labs and tests](labs/chapter-028/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 underway (026–027 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 underway (026–028 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
