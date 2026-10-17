@@ -1,0 +1,26 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_modules": [
+    "network",
+    "database",
+    "application"
+  ],
+  "required_attestations": [
+    "code_reviewed",
+    "terraform_tests_passed",
+    "contract_tests_passed",
+    "security_scan_passed"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "supported_schema_version": 1,
+  "require_ticket": true,
+  "require_owner": true,
+  "require_state_isolation": true,
+  "deny_destructive_actions": true
+}
