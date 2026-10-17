@@ -83,7 +83,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 024 executable labs and tests](labs/chapter-024/)
 - [025 — Terraform Providers, Dependencies and Lifecycle Production Capstone](chapters/025-terraform-providers-dependencies-lifecycle-production-capstone.md)
 - [Chapter 025 executable labs and tests](labs/chapter-025/)
+- [026 — Terraform State Architecture, State Files, Metadata and Backend Fundamentals](chapters/026-terraform-state-architecture-state-files-metadata-backend-fundamentals.md)
+- [Chapter 026 executable labs and tests](labs/chapter-026/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 underway (026 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
