@@ -1,0 +1,45 @@
+{
+  "environment": "prod",
+  "change_ticket": "",
+  "state_namespace": "iac-dev",
+  "release_owner": "platform-sre",
+  "provenance_verified": false,
+  "security_reviewed": true,
+  "contract_tests_passed": true,
+  "integration_tests_passed": true,
+  "modules": [
+    {
+      "name": "network",
+      "version": "1.4.2",
+      "source": "git::https://github.com/example/platform-modules.git//network?ref=main",
+      "owner": "platform-sre",
+      "approved_major": 1,
+      "depends_on": []
+    },
+    {
+      "name": "database",
+      "version": "3.0.0",
+      "source": "app.terraform.io/example-org/database/aws",
+      "owner": "dbre-team",
+      "approved_major": 2,
+      "depends_on": [
+        "network"
+      ]
+    },
+    {
+      "name": "application",
+      "version": "1.7.0",
+      "source": "git::https://github.com/example/platform-modules.git//application?ref=abcdef0123456789abcdef0123456789abcdef01",
+      "owner": "platform-sre",
+      "approved_major": 1,
+      "depends_on": [
+        "database"
+      ]
+    }
+  ],
+  "database": {
+    "replicas": 1,
+    "backup_enabled": false,
+    "encryption_enabled": false
+  }
+}
