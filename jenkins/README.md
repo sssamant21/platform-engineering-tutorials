@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 76/100 published**
+**100 chapters · 20 parts · 77/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -254,7 +254,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 076 — Jenkins Scaling Architecture, Controller Capacity and Executor Planning](part-16-scaling-controller-capacity-reliability/076-jenkins-scaling-architecture-controller-capacity-executor-planning.md)
 - [Chapter 076 — Companion hands-on lab](part-16-scaling-controller-capacity-reliability/labs/076-jenkins-scaling-architecture-controller-capacity-executor-planning-check.md)
 
-**Next:** Chapter 077 — Jenkins Kubernetes Agent Autoscaling, Dynamic Provisioning and Capacity Optimization.
+- [Chapter 077 — Jenkins Kubernetes Agent Autoscaling, Dynamic Provisioning and Capacity Optimization](part-16-scaling-controller-capacity-reliability/077-jenkins-kubernetes-agent-autoscaling-dynamic-provisioning-capacity-optimization.md)
+- [Chapter 077 — Companion hands-on lab](part-16-scaling-controller-capacity-reliability/labs/077-jenkins-kubernetes-agent-autoscaling-dynamic-provisioning-capacity-optimization-check.md)
+
+**Next:** Chapter 078 — Jenkins High Availability, Workload Isolation and Controller Reliability Engineering.
 
 ## Tutorial standard
 
