@@ -35,5 +35,7 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 ## Published
 - [001 — IaC Fundamentals, Architecture and Enterprise Use Cases](chapters/001-iac-fundamentals-architecture-enterprise-use-cases.md)
 - [Chapter 001 executable Terraform lab](labs/chapter-001/main.tf)
+- [002 — IaC Tooling Landscape and Selection Criteria](chapters/002-iac-tooling-landscape-selection-criteria.md)
+- [Chapter 002 executable labs and tests](labs/chapter-002/)
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
