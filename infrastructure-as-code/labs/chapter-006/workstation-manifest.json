@@ -1,0 +1,50 @@
+{
+  "required": [
+    {
+      "name": "Git",
+      "command": "git",
+      "args": [
+        "--version"
+      ]
+    },
+    {
+      "name": "Python",
+      "command": "python3",
+      "args": [
+        "--version"
+      ]
+    }
+  ],
+  "optional": [
+    {
+      "name": "VS Code",
+      "command": "code",
+      "args": [
+        "--version"
+      ]
+    },
+    {
+      "name": "Ansible",
+      "command": "ansible",
+      "args": [
+        "--version"
+      ]
+    }
+  ],
+  "iac_engines": [
+    {
+      "name": "Terraform",
+      "command": "terraform",
+      "args": [
+        "version"
+      ]
+    },
+    {
+      "name": "OpenTofu",
+      "command": "tofu",
+      "args": [
+        "version"
+      ]
+    }
+  ]
+}
