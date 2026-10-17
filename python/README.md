@@ -77,3 +77,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
   - [Chapter 039 — Exception-Safe SRE/DBRE Resource Management Lab](04-object-oriented-programming/labs/039-exception-safe-sre-dbre-resource-management-lab.md)
   - [Chapter 040 — Object-Oriented SRE/DBRE Production Capstone](04-object-oriented-programming/040-object-oriented-sre-dbre-production-capstone.md)
   - [Chapter 040 — Integrated Production Capstone Lab](04-object-oriented-programming/labs/040-object-oriented-sre-dbre-production-capstone-lab.md)
+
+- **Part 05 — Files, Exceptions, Logging and Configuration (041–050): In progress (1/10)**
+  - [Chapter 041 — Files, Paths and Filesystem Operations](05-files-exceptions-logging-configuration/041-files-paths-filesystem-operations.md)
+  - [Chapter 041 — Safe Filesystem and Atomic SRE Report Lab](05-files-exceptions-logging-configuration/labs/041-safe-filesystem-atomic-sre-report-lab.md)
