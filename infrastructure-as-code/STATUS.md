@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 10 / 120 chapters (8.33%)  
+**Progress:** 11 / 120 chapters (9.17%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -14,7 +14,9 @@
 **Chapter 008:** Published; live lab execution remains for learner verification.  
 **Chapter 009:** Published; live lab execution remains for learner verification.  
 **Chapter 010:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 011 — Terraform Configuration Language Fundamentals: Blocks, Arguments, Expressions and HCL Syntax.
+**Chapter 011:** Published; live lab execution remains for learner verification.  
+**Part 03:** 1/5 chapters published.  
+**Next:** Chapter 012 — Terraform Resource Blocks, Data Sources, Meta-Arguments and Dependency Graph.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -28,6 +30,7 @@
 | 008 | Terraform and OpenTofu Version Management, Provider Lockfiles and Reproducible Toolchains | Published |
 | 009 | Provider Installation, Plugin Caching, Registries and Network Troubleshooting | Published |
 | 010 | IaC Development Tooling Integration, CI Preflight and Environment Readiness Capstone | Published |
+| 011 | Terraform Configuration Language Fundamentals: Blocks, Arguments, Expressions and HCL Syntax | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -105,4 +108,12 @@
 - [x] Shell preflight and sample GitHub Actions workflow
 - [x] Production SRE/DBRE scenarios, troubleshooting, security and runbooks
 - [x] Part 02 final readiness assessment
+- [ ] Live lab execution evidence
+
+## Chapter 011 acceptance
+- [x] HCL blocks, arguments, expressions, types and dependency theory
+- [x] Typed variable validation and built-in Terraform/OpenTofu local lab
+- [x] Terraform console, negative tests and cleanup exercises
+- [x] Python HCL source-policy checks and automated unit tests
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [ ] Live lab execution evidence
