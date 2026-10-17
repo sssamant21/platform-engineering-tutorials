@@ -1,0 +1,27 @@
+{
+  "environment": "dev",
+  "owner": "platform-sre",
+  "change_ticket": "CHG-DEMO-DEV",
+  "zones": [
+    "a",
+    "b"
+  ],
+  "services": {
+    "api": {
+      "replicas": 2,
+      "enabled": true,
+      "tier": "frontend"
+    },
+    "worker": {
+      "replicas": 2,
+      "enabled": true,
+      "tier": "backend"
+    }
+  },
+  "database": {
+    "replicas": 2,
+    "backup_enabled": true,
+    "encrypted": true,
+    "deletion_protection": true
+  }
+}
