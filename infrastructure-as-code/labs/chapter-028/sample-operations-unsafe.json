@@ -1,0 +1,27 @@
+{
+  "environment": "prod",
+  "change_ticket": "",
+  "state_backup_verified": false,
+  "exclusive_lock_verified": false,
+  "operations": [
+    {
+      "operation": "move",
+      "from": "terraform_data.database",
+      "to": "terraform_data.database",
+      "owner": ""
+    },
+    {
+      "operation": "import",
+      "to": "terraform_data.existing_cache",
+      "object_id": "",
+      "ownership_verified": false,
+      "owner": ""
+    },
+    {
+      "operation": "forget",
+      "from": "terraform_data.legacy",
+      "destroy": true,
+      "handoff_owner": ""
+    }
+  ]
+}
