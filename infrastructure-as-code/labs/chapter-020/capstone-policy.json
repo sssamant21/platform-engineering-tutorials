@@ -1,0 +1,15 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_zones": [
+    "a",
+    "b",
+    "c"
+  ],
+  "min_production_replicas": 3,
+  "max_workloads": 30,
+  "deny_deletes": true
+}
