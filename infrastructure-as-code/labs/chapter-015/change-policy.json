@@ -1,0 +1,9 @@
+{
+  "environment": "staging",
+  "change_ticket": "CHG-IAC-015-DEMO",
+  "owner": "platform-sre",
+  "service_kind": "platform",
+  "production_approved": false,
+  "dbre_approved": false,
+  "allow_deletes": false
+}
