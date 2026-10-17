@@ -1,0 +1,11 @@
+environment = "prod"
+aws_account_id = "444455556666"
+primary_region = "us-east-1"
+dr_region = "us-west-2"
+owner = "dbre-team"
+cost_center = "production"
+change_ticket = "CHG-DEMO-PROD"
+database_replicas = 3
+backup_enabled = true
+encryption_enabled = true
+multi_az_enabled = true
