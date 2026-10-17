@@ -1,0 +1,8 @@
+# Illustrative only: Terraform >=1.7; receiving owner required.
+# Remove the original resource block before adding this.
+removed {
+  from = terraform_data.database
+  lifecycle {
+    destroy = false
+  }
+}
