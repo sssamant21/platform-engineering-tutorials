@@ -1,0 +1,13 @@
+{
+  "engine": "terraform",
+  "cli_version": "1.9.8",
+  "ci_image": "registry.example.invalid/infra/terraform@sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "providers": [
+    {
+      "source": "hashicorp/random",
+      "constraint": "~> 3.6",
+      "lockfile_committed": true
+    }
+  ],
+  "module_sources_pinned": true
+}
