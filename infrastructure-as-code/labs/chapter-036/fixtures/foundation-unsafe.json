@@ -1,0 +1,34 @@
+{
+  "environment": "prod",
+  "aws_account_id": "123",
+  "primary_region": "us-east-1",
+  "dr_region": "us-east-1",
+  "owner": "dbre-team",
+  "cost_center": "production",
+  "change_ticket": "",
+  "state_namespace": "iac-prod-444455556666",
+  "identity": {
+    "short_lived_credentials": false,
+    "oidc_federation": true,
+    "least_privilege_reviewed": true
+  },
+  "backend": {
+    "type": "s3",
+    "encrypted": true,
+    "versioning": false,
+    "lockfile": true,
+    "public_access_blocked": true
+  },
+  "database": {
+    "replicas": 3,
+    "backup_enabled": false,
+    "encryption_enabled": true,
+    "multi_az_enabled": true
+  },
+  "tags": {
+    "Environment": "prod",
+    "ManagedBy": "terraform",
+    "Owner": "",
+    "CostCenter": "production"
+  }
+}
