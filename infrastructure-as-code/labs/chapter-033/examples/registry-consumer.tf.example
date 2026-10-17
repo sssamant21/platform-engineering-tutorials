@@ -1,0 +1,5 @@
+# Illustrative only; requires actual published private registry module.
+module "database" {
+  source  = "app.terraform.io/example-org/database/aws"
+  version = "2.3.1"
+}
