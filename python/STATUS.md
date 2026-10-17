@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **47 chapters**
-- Remaining: **73 chapters**
-- Published labs: **47**
-- Next: **048 — Python Dates, Times, Time Zones and Scheduling Fundamentals**
+- Published: **48 chapters**
+- Remaining: **72 chapters**
+- Published labs: **48**
+- Next: **049 — Python Serialization, Data Validation and Configuration Integration**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–047 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–048 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -60,7 +60,7 @@ Chapter 039: [Tutorial](04-object-oriented-programming/039-context-managers-reso
 
 Chapter 040: [Tutorial](04-object-oriented-programming/040-object-oriented-sre-dbre-production-capstone.md) · [Capstone lab](04-object-oriented-programming/labs/040-object-oriented-sre-dbre-production-capstone-lab.md). Integrated synthetic project, automated tests and 100-point acceptance assessment; local execution pending. Part 04 complete.
 
-- Part 05 — Files, Exceptions, Logging and Configuration: **7/10** (in progress)
+- Part 05 — Files, Exceptions, Logging and Configuration: **8/10** (in progress)
 
 Chapter 041: [Tutorial](05-files-exceptions-logging-configuration/041-files-paths-filesystem-operations.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/041-safe-filesystem-atomic-sre-report-lab.md). 35 unit tests executed in Linux sandbox: PASS; Windows execution pending.
 
@@ -75,3 +75,5 @@ Chapter 045: [Tutorial](05-files-exceptions-logging-configuration/045-python-con
 Chapter 046: [Tutorial](05-files-exceptions-logging-configuration/046-python-command-line-arguments-argparse-operations.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/046-production-style-sre-dbre-argparse-cli-lab.md). 50 automated tests passed in Linux authoring sandbox; published-version platform verification pending.
 
 Chapter 047: [Tutorial](05-files-exceptions-logging-configuration/047-python-regular-expressions-operational-text-parsing.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/047-regex-operational-log-parser-sre-dbre-lab.md). 50 automated tests published; execution not yet verified.
+
+Chapter 048: [Tutorial](05-files-exceptions-logging-configuration/048-python-dates-times-time-zones-scheduling-fundamentals.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/048-dst-safe-maintenance-windows-scheduling-sre-dbre-lab.md). 50 automated tests published; execution not yet verified.
