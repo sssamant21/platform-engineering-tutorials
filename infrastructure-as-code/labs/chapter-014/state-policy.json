@@ -1,0 +1,10 @@
+{
+  "environment": "staging",
+  "expected_addresses": [
+    "terraform_data.seed",
+    "terraform_data.service[\"api\"]",
+    "terraform_data.service[\"worker\"]"
+  ],
+  "allow_unexpected": false,
+  "require_owner": true
+}
