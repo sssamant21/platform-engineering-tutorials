@@ -1,0 +1,9 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "min_production_replicas": 3,
+  "require_private_ipv4": true
+}
