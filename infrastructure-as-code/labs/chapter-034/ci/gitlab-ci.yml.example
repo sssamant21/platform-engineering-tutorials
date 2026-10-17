@@ -1,0 +1,14 @@
+# Illustrative GitLab pipeline; pin image by verified digest in production.
+stages:
+  - quality
+chapter034-quality:
+  stage: quality
+  image: hashicorp/terraform:1.7.5
+  before_script:
+    - apk add --no-cache python3 bash
+  script:
+    - cd infrastructure-as-code/labs/chapter-034
+    - bash run-preflight.sh
+  rules:
+    - changes:
+        - infrastructure-as-code/labs/chapter-034/**/*
