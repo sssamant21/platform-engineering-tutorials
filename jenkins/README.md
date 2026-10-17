@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 93/100 published**
+**100 chapters · 20 parts · 94/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -311,7 +311,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 093 — Jenkins Enterprise Capacity Planning, Cost Allocation and FinOps Optimization](part-19-enterprise-jenkins-sre-operations-finops/093-jenkins-enterprise-capacity-planning-cost-allocation-finops-optimization.md)
 - [Chapter 093 — Companion hands-on lab](part-19-enterprise-jenkins-sre-operations-finops/labs/093-jenkins-enterprise-capacity-planning-cost-allocation-finops-optimization-check.md)
 
-**Next:** Chapter 094 — Jenkins Enterprise Security, Compliance and Operational Risk Management.
+- [Chapter 094 — Jenkins Enterprise Security, Compliance and Operational Risk Management](part-19-enterprise-jenkins-sre-operations-finops/094-jenkins-enterprise-security-compliance-operational-risk-management.md)
+- [Chapter 094 — Companion hands-on lab](part-19-enterprise-jenkins-sre-operations-finops/labs/094-jenkins-enterprise-security-compliance-operational-risk-management-check.md)
+
+**Next:** Chapter 095 — Jenkins Enterprise SRE Operations, Security and FinOps Acceptance Capstone.
 
 ## Tutorial standard
 
