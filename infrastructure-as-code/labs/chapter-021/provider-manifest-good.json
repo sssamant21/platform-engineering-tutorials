@@ -1,0 +1,21 @@
+{
+  "environment": "prod",
+  "owner": "platform-sre",
+  "change_ticket": "CHG-DEMO-021",
+  "providers": [
+    {
+      "source": "hashicorp/aws",
+      "constraint": "~> 5.0",
+      "alias": "primary",
+      "region": "us-east-1",
+      "identity_ref": "oidc://ci/platform-prod"
+    },
+    {
+      "source": "hashicorp/aws",
+      "constraint": "~> 5.0",
+      "alias": "dr",
+      "region": "us-west-2",
+      "identity_ref": "role://platform-dr"
+    }
+  ]
+}
