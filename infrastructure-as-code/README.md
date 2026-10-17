@@ -45,6 +45,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 005 executable labs and tests](labs/chapter-005/)
 - [006 — IaC Workstation Setup, CLI Installation and Toolchain Validation](chapters/006-iac-workstation-setup-cli-installation-toolchain-validation.md)
 - [Chapter 006 executable labs and tests](labs/chapter-006/)
+- [007 — IaC Repository Structure, Environment Isolation and Workspace Standards](chapters/007-iac-repository-structure-environment-isolation-workspace-standards.md)
+- [Chapter 007 executable labs and tests](labs/chapter-007/)
 
 **Part 01 (001–005): all five chapters published; learner lab verification pending.**
 
