@@ -102,7 +102,9 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 
 ## Part 06 — Advanced Python, Typing and Concurrency (051–060)
 
-**Progress: 1/10 published**
+**Progress: 2/10 published**
 
 - [Chapter 051 — Advanced Python Type Hints, Protocols and Static Analysis](06-advanced-python-typing-concurrency/051-advanced-python-type-hints-protocols-static-analysis.md)
 - [Chapter 051 — Typed SRE/DBRE Telemetry Analyzer Lab](06-advanced-python-typing-concurrency/labs/051-typed-sre-dbre-telemetry-analyzer-lab.md)
+- [Chapter 052 — Python Iterators, Generators and Streaming Data Pipelines](06-advanced-python-typing-concurrency/052-python-iterators-generators-streaming-data-pipelines.md)
+- [Chapter 052 — Streaming SRE/DBRE Telemetry Pipeline Lab](06-advanced-python-typing-concurrency/labs/052-streaming-sre-dbre-telemetry-pipeline-lab.md)
