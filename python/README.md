@@ -25,3 +25,13 @@ A 120-chapter, lab-driven curriculum from Python fundamentals to production auto
 - [Progress tracker](STATUS.md)
 
 Each chapter includes theory, reproducible code, hands-on labs, validation, troubleshooting, and operational guidance. Run destructive or cloud-cost-incurring exercises only in isolated lab environments.
+
+## Completed learning milestones
+
+- **Part 01 — Fundamentals (001–010): Complete**
+- **Part 02 — Data Types, Collections and Algorithms (011–020): Complete**
+  - [Chapter 020 — SRE Telemetry Analyzer Capstone](02-data-types-algorithms/020-sre-telemetry-analyzer-capstone.md)
+  - [Chapter 020 — Executable Hands-on Lab](02-data-types-algorithms/labs/020-sre-telemetry-analyzer-capstone-lab.md)
+- **Part 03 — Functions, Modules and Packages (021–030): Next**
+
+The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, counters, deques, sliding windows, deterministic JSON reports, 30 automated test cases and failure-injection exercises. Test execution is required on the learner's machine; publication alone is not proof of passing tests.
