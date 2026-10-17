@@ -1,0 +1,28 @@
+{
+  "environment": "prod",
+  "owner": "dbre-team",
+  "change_ticket": "CHG-DEMO-PROD",
+  "zones": [
+    "a",
+    "b",
+    "c"
+  ],
+  "services": {
+    "api": {
+      "replicas": 3,
+      "enabled": true,
+      "tier": "frontend"
+    },
+    "worker": {
+      "replicas": 3,
+      "enabled": true,
+      "tier": "backend"
+    }
+  },
+  "database": {
+    "replicas": 3,
+    "backup_enabled": true,
+    "encrypted": true,
+    "deletion_protection": true
+  }
+}
