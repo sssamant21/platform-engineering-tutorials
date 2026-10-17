@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 17/100 published**
+**100 chapters · 20 parts · 18/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -11,7 +11,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 01 | 001–005 | Observability Fundamentals and Reliability Signals | 5/5 |
 | 02 | 006–010 | Linux and Infrastructure Monitoring | 5/5 |
 | 03 | 011–015 | Prometheus Architecture and Installation | 5/5 |
-| 04 | 016–020 | PromQL and Advanced Metrics | 2/5 |
+| 04 | 016–020 | PromQL and Advanced Metrics | 3/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 0/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 0/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 0/5 |
@@ -92,4 +92,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 017 — PromQL Aggregations, Vector Matching, Binary Operators and Label Transformations](part-04-promql-advanced-metrics/017-promql-aggregations-vector-matching-binary-operators-label-transformations.md)
 - [Chapter 017 — Executable companion lab](part-04-promql-advanced-metrics/labs/017-promql-aggregations-vector-matching-binary-operators-label-transformations-lab.md)
 
-**Next:** Chapter 018 — PromQL Rate, Increase, Histograms, Quantiles and Latency Analysis.
+- [Chapter 018 — PromQL Rate, Increase, Histograms, Quantiles and Latency Analysis](part-04-promql-advanced-metrics/018-promql-rate-increase-histograms-quantiles-latency-analysis.md)
+- [Chapter 018 — Executable companion lab](part-04-promql-advanced-metrics/labs/018-promql-rate-increase-histograms-quantiles-latency-analysis-lab.md)
+
+**Next:** Chapter 019 — Advanced PromQL Subqueries, Recording Rules, Query Performance and SLO Engineering.
