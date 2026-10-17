@@ -1,0 +1,7 @@
+# Illustrative only. Requires hashicorp/external provider and a reviewed program.
+# The program must accept JSON on stdin and return a JSON object with string values.
+# It must be read-only, deterministic, bounded and free of secrets in output.
+data "external" "catalog" {
+  program = ["python3", "reviewed_lookup.py"]
+  query = { environment = var.environment }
+}
