@@ -56,7 +56,7 @@ Each chapter includes theory, reproducible code, hands-on labs, validation, trou
 
 The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, counters, deques, sliding windows, deterministic JSON reports, 30 automated test cases and failure-injection exercises. Test execution is required on the learner's machine; publication alone is not proof of passing tests.
 
-- **Part 04 — Object-Oriented Programming (031–040): In progress (4/10)**
+- **Part 04 — Object-Oriented Programming (031–040): In progress (5/10)**
   - [Chapter 031 — Python Classes, Objects and Encapsulation](04-object-oriented-programming/031-python-classes-objects-encapsulation.md)
   - [Chapter 031 — Object-Oriented SRE/DBRE Monitoring Lab](04-object-oriented-programming/labs/031-object-oriented-sre-dbre-monitoring-lab.md)
   - [Chapter 032 — Instance Methods, Class Methods, Static Methods and Object Lifecycle](04-object-oriented-programming/032-instance-class-static-methods-object-lifecycle.md)
@@ -65,3 +65,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
   - [Chapter 033 — Inheritance and SRE/DBRE Health Adapters Lab](04-object-oriented-programming/labs/033-inheritance-sre-dbre-health-adapters-lab.md)
   - [Chapter 034 — Polymorphism, Duck Typing and Protocol-Based Design](04-object-oriented-programming/034-polymorphism-duck-typing-protocol-based-design.md)
   - [Chapter 034 — Protocol-Based SRE/DBRE Adapters Lab](04-object-oriented-programming/labs/034-protocol-based-sre-dbre-adapters-lab.md)
+  - [Chapter 035 — Abstract Base Classes, Interfaces and Composition Patterns](04-object-oriented-programming/035-abstract-base-classes-interfaces-composition-patterns.md)
+  - [Chapter 035 — Composable SRE/DBRE Health Service Lab](04-object-oriented-programming/labs/035-composable-sre-dbre-health-service-lab.md)
