@@ -1,0 +1,49 @@
+{
+  "environment": "prod",
+  "change_ticket": "CHG-DEMO-035",
+  "state_namespace": "iac-prod",
+  "release_owner": "platform-sre",
+  "provenance_verified": true,
+  "code_reviewed": true,
+  "native_tests_passed": true,
+  "integration_tests_passed": true,
+  "security_scan_passed": true,
+  "modules": [
+    {
+      "name": "network",
+      "version": "1.4.2",
+      "source": "git::https://github.com/example/platform-modules.git//network?ref=0123456789abcdef0123456789abcdef01234567",
+      "owner": "platform-sre",
+      "approved_major": 1,
+      "schema_version": 1,
+      "depends_on": []
+    },
+    {
+      "name": "database",
+      "version": "2.3.1",
+      "source": "app.terraform.io/example-org/database/aws",
+      "owner": "dbre-team",
+      "approved_major": 2,
+      "schema_version": 1,
+      "depends_on": [
+        "network"
+      ]
+    },
+    {
+      "name": "application",
+      "version": "1.7.0",
+      "source": "git::https://github.com/example/platform-modules.git//application?ref=abcdef0123456789abcdef0123456789abcdef01",
+      "owner": "platform-sre",
+      "approved_major": 1,
+      "schema_version": 1,
+      "depends_on": [
+        "database"
+      ]
+    }
+  ],
+  "database": {
+    "replicas": 3,
+    "backup_enabled": true,
+    "encryption_enabled": true
+  }
+}
