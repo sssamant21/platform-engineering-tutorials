@@ -53,7 +53,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 009 executable labs and tests](labs/chapter-009/)
 - [010 — IaC Development Tooling Integration, CI Preflight and Environment Readiness Capstone](chapters/010-iac-development-tooling-ci-preflight-environment-readiness-capstone.md)
 - [Chapter 010 executable labs and tests](labs/chapter-010/)
+- [011 — Terraform Configuration Language Fundamentals: Blocks, Arguments, Expressions and HCL Syntax](chapters/011-terraform-configuration-language-blocks-arguments-expressions-hcl-syntax.md)
+- [Chapter 011 executable labs and tests](labs/chapter-011/)
 
-**Part 01 (001–005) and Part 02 (006–010): all ten chapters published; learner lab verification pending.**
+**Parts 01 and 02 complete (001–010); Part 03 underway (011 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
