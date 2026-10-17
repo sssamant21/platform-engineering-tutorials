@@ -102,7 +102,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 
 ## Part 06 — Advanced Python, Typing and Concurrency (051–060)
 
-**Progress: 3/10 published**
+**Progress: 4/10 published**
 
 - [Chapter 051 — Advanced Python Type Hints, Protocols and Static Analysis](06-advanced-python-typing-concurrency/051-advanced-python-type-hints-protocols-static-analysis.md)
 - [Chapter 051 — Typed SRE/DBRE Telemetry Analyzer Lab](06-advanced-python-typing-concurrency/labs/051-typed-sre-dbre-telemetry-analyzer-lab.md)
@@ -110,4 +110,6 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 052 — Streaming SRE/DBRE Telemetry Pipeline Lab](06-advanced-python-typing-concurrency/labs/052-streaming-sre-dbre-telemetry-pipeline-lab.md)
 - [Chapter 053 — Python Decorators, Closures and Operational Instrumentation](06-advanced-python-typing-concurrency/053-python-decorators-closures-operational-instrumentation.md)
 - [Chapter 053 — Decorators, Closures and Instrumentation SRE/DBRE Lab](06-advanced-python-typing-concurrency/labs/053-decorators-closures-instrumentation-sre-dbre-lab.md)
+- [Chapter 054 — Python Context Managers and Resource Lifecycle Management](06-advanced-python-typing-concurrency/054-python-context-managers-resource-lifecycle-management.md)
+- [Chapter 054 — Context Managers and Resource Lifecycle SRE/DBRE Lab](06-advanced-python-typing-concurrency/labs/054-context-managers-resource-lifecycle-sre-dbre-lab.md)
 
