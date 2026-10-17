@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${AWS_PROFILE:?set an approved AWS_PROFILE}"
+: "${EXPECTED_AWS_ACCOUNT_ID:?set expected 12-digit account ID}"
+actual="$(aws sts get-caller-identity --query Account --output text)"
+if [[ "$actual" != "$EXPECTED_AWS_ACCOUNT_ID" ]]; then
+  echo "DENY: unexpected AWS account" >&2
+  exit 1
+fi
+echo "PASS: AWS account matches expected value"
+# No resource creation or apply in this script.
