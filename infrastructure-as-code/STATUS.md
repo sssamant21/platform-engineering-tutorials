@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 7 / 120 chapters (5.83%)  
+**Progress:** 8 / 120 chapters (6.67%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -9,9 +9,10 @@
 **Chapter 005:** Published; live lab execution remains for learner verification.  
 **Part 01:** 5/5 chapters published (labs not independently executed).  
 **Chapter 006:** Published; live lab execution remains for learner verification.  
-**Part 02:** 2/5 chapters published.  
+**Part 02:** 3/5 chapters published.  
 **Chapter 007:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 008 — Terraform and OpenTofu Version Management, Provider Lockfiles and Reproducible Toolchains.
+**Chapter 008:** Published; live lab execution remains for learner verification.  
+**Next:** Chapter 009 — Provider Installation, Plugin Caching, Registries and Network Troubleshooting.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -22,6 +23,7 @@
 | 005 | Enterprise IaC Architecture, Operating Models and Governance | Published |
 | 006 | IaC Workstation Setup, CLI Installation and Toolchain Validation | Published |
 | 007 | IaC Repository Structure, Environment Isolation and Workspace Standards | Published |
+| 008 | Terraform and OpenTofu Version Management, Provider Lockfiles and Reproducible Toolchains | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -72,5 +74,13 @@
 - [x] Reusable Terraform module and separate dev/staging roots
 - [x] Disposable workspace demonstration
 - [x] Python stack inventory validator and unit tests
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [ ] Live lab execution evidence
+
+## Chapter 008 acceptance
+- [x] CLI/provider/module/state compatibility and lockfile theory
+- [x] Executable local Terraform/OpenTofu smoke test
+- [x] Python manifest policy, CLI drift check and automated unit tests
+- [x] Optional provider lockfile and upgrade workflow
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [ ] Live lab execution evidence
