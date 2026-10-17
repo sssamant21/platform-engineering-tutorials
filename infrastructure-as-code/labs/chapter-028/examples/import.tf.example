@@ -1,0 +1,6 @@
+# Illustrative only. Requires an existing approved AWS bucket and provider.
+# Terraform import blocks are declarative; ID must identify the actual object.
+import {
+  to = aws_s3_bucket.existing
+  id = "REPLACE-approved-existing-bucket"
+}
