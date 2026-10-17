@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **49 chapters**
-- Remaining: **71 chapters**
-- Published labs: **49**
-- Next: **050 — Files, Exceptions, Logging and Configuration Production Capstone**
+- Published: **50 chapters**
+- Remaining: **70 chapters**
+- Published labs: **50**
+- Next: **051 — Advanced Python Type Hints, Protocols and Static Analysis**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–049 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–050 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -60,7 +60,7 @@ Chapter 039: [Tutorial](04-object-oriented-programming/039-context-managers-reso
 
 Chapter 040: [Tutorial](04-object-oriented-programming/040-object-oriented-sre-dbre-production-capstone.md) · [Capstone lab](04-object-oriented-programming/labs/040-object-oriented-sre-dbre-production-capstone-lab.md). Integrated synthetic project, automated tests and 100-point acceptance assessment; local execution pending. Part 04 complete.
 
-- Part 05 — Files, Exceptions, Logging and Configuration: **9/10** (in progress)
+- Part 05 — Files, Exceptions, Logging and Configuration: **10/10 (complete)** (in progress)
 
 Chapter 041: [Tutorial](05-files-exceptions-logging-configuration/041-files-paths-filesystem-operations.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/041-safe-filesystem-atomic-sre-report-lab.md). 35 unit tests executed in Linux sandbox: PASS; Windows execution pending.
 
@@ -79,3 +79,5 @@ Chapter 047: [Tutorial](05-files-exceptions-logging-configuration/047-python-reg
 Chapter 048: [Tutorial](05-files-exceptions-logging-configuration/048-python-dates-times-time-zones-scheduling-fundamentals.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/048-dst-safe-maintenance-windows-scheduling-sre-dbre-lab.md). 50 automated tests published; execution not yet verified.
 
 Chapter 049: [Tutorial](05-files-exceptions-logging-configuration/049-python-serialization-data-validation-configuration-integration.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/049-safe-serialization-configuration-contract-sre-dbre-lab.md). Automated tests published; execution not yet verified.
+
+Chapter 050: [Tutorial](05-files-exceptions-logging-configuration/050-files-exceptions-logging-configuration-production-capstone.md) · [Hands-on capstone lab](05-files-exceptions-logging-configuration/labs/050-integrated-files-exceptions-logging-configuration-sre-dbre-capstone-lab.md). Automated tests and incident simulations published; execution pending.
