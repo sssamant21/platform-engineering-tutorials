@@ -55,3 +55,7 @@ Each chapter includes theory, reproducible code, hands-on labs, validation, trou
   - [Chapter 030 — Production-Ready SRE CLI Capstone Lab](03-functions-modules-packages/labs/030-production-ready-sre-cli-capstone-lab.md)
 
 The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, counters, deques, sliding windows, deterministic JSON reports, 30 automated test cases and failure-injection exercises. Test execution is required on the learner's machine; publication alone is not proof of passing tests.
+
+- **Part 04 — Object-Oriented Programming (031–040): In progress (1/10)**
+  - [Chapter 031 — Python Classes, Objects and Encapsulation](04-object-oriented-programming/031-python-classes-objects-encapsulation.md)
+  - [Chapter 031 — Object-Oriented SRE/DBRE Monitoring Lab](04-object-oriented-programming/labs/031-object-oriented-sre-dbre-monitoring-lab.md)
