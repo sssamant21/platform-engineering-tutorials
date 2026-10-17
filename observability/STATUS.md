@@ -1,12 +1,12 @@
 # Observability Curriculum Status
 
-**Progress: 10 / 100 chapters (10%) · 20 parts · Part 02: 5/5**
+**Progress: 11 / 100 chapters (11%) · 20 parts · Part 03: 1/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
 | 01 — Observability Fundamentals and Reliability Signals | 001–005 | 5 | 5 | Complete |
 | 02 — Linux and Infrastructure Monitoring | 006–010 | 5 | 5 | Complete |
-| 03 — Prometheus Architecture and Installation | 011–015 | 0 | 5 | Planned |
+| 03 — Prometheus Architecture and Installation | 011–015 | 1 | 5 | In progress |
 | 04 — PromQL and Advanced Metrics | 016–020 | 0 | 5 | Planned |
 | 05 — Grafana Dashboards and Visualization | 021–025 | 0 | 5 | Planned |
 | 06 — Alertmanager and Alert Engineering | 026–030 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–010 and companion labs. Parts 01 and 02 complete (5/5 each).
+**Published:** Chapters 001–011 and companion labs. Parts 01 and 02 complete (5/5 each); Part 03 in progress (1/5).
 
-**Next:** Chapter 011 — Prometheus Architecture, Data Model, Scraping and Production Deployment Fundamentals (Part 03).
+**Next:** Chapter 012 — Prometheus Installation, Configuration, Service Discovery and Target Management.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
