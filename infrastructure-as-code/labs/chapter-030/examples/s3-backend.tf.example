@@ -1,0 +1,11 @@
+# Illustrative only: native S3 lockfile requires Terraform >=1.10.
+# Create private, versioned, encrypted bucket and scoped IAM before init.
+terraform {
+  backend "s3" {
+    bucket       = "REPLACE-approved-prod-state-bucket"
+    key          = "iac/prod/database/terraform.tfstate"
+    region       = "us-east-1"
+    encrypt      = true
+    use_lockfile = true
+  }
+}
