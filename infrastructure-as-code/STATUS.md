@@ -1,17 +1,19 @@
 # IaC Tutorial Status
 
-**Progress:** 3 / 120 chapters (2.50%)  
+**Progress:** 4 / 120 chapters (3.33%)  
 **Last update:** 2026-10-16  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
 **Chapter 003:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 004 — IaC Lifecycle, Version Control, Git Workflows and Change Management.
+**Chapter 004:** Published; live lab execution remains for learner verification.  
+**Next:** Chapter 005 — Enterprise IaC Architecture, Operating Models and Governance.
 
 | Chapter | Title | Status |
 |---|---|---|
 | 001 | IaC Fundamentals, Architecture and Enterprise Use Cases | Published |
 | 002 | IaC Tooling Landscape and Selection Criteria | Published |
 | 003 | Declarative vs Imperative IaC, Desired State, Drift and Idempotence | Published |
+| 004 | IaC Lifecycle, Version Control, Git Workflows and Change Management | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -32,4 +34,11 @@
 - [x] Python drift detector and unit tests
 - [x] Production SRE/DBRE scenarios and troubleshooting
 - [x] Runbooks, security and cleanup instructions
+- [ ] Live lab execution evidence
+
+## Chapter 004 acceptance
+- [x] Lifecycle, Git workflows, plan/apply approval theory
+- [x] Terraform and change-policy labs
+- [x] Python automated policy tests
+- [x] SRE/DBRE production cases, troubleshooting, runbooks
 - [ ] Live lab execution evidence
