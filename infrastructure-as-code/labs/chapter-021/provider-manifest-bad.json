@@ -1,0 +1,15 @@
+{
+  "environment": "prod",
+  "owner": "",
+  "change_ticket": "",
+  "providers": [
+    {
+      "source": "untrusted/aws",
+      "constraint": ">= 0",
+      "alias": "dr",
+      "region": "unknown",
+      "identity_ref": "AKIAEXAMPLE",
+      "access_key": "plaintext-unsafe"
+    }
+  ]
+}
