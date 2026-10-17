@@ -1,0 +1,8 @@
+# Illustrative ONLY. Bucket must be private, versioned, encrypted and scoped.
+terraform {
+  backend "gcs" {
+    bucket = "REPLACE-approved-terraform-state-bucket"
+    prefix = "iac/prod/database"
+  }
+}
+# Use Workload Identity Federation/approved ADC, not JSON service keys.
