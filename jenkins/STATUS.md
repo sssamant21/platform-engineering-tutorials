@@ -1,6 +1,6 @@
 # Jenkins Curriculum Status Tracker
 
-**Progress: 96 / 100 chapters (96%)**
+**Progress: 97 / 100 chapters (97%)**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -23,7 +23,7 @@
 | 17 — Backup, Restore, Upgrades and Disaster Recovery | 081–085 | 5 | 5 | Complete |
 | 18 — Terraform, Ansible and Infrastructure Automation | 086–090 | 5 | 5 | Complete |
 | 19 — Enterprise Jenkins SRE Operations and FinOps | 091–095 | 5 | 5 | Complete |
-| 20 — Final Enterprise Jenkins Capstone | 096–100 | 1 | 5 | In progress |
+| 20 — Final Enterprise Jenkins Capstone | 096–100 | 2 | 5 | In progress |
 
 ## Publication checklist
 
@@ -34,4 +34,4 @@
 - [ ] Update index and tracker after each published chapter
 - [ ] Audit all 100 chapters and links after completion
 
-**Next:** Chapter 097 — Jenkins Enterprise Platform Deployment and CI/CD Integration Capstone.
+**Next:** Chapter 098 — Jenkins Enterprise Failure Injection, Incident Recovery and Disaster Recovery Capstone.
