@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 24 / 120 chapters (20.00%)  
+**Progress:** 25 / 120 chapters (20.83%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -27,11 +27,12 @@
 **Chapter 019:** Published; live lab execution remains for learner verification.  
 **Chapter 020:** Published; Part 04 content complete; live lab execution remains for learner verification.  
 **Chapter 021:** Published; live lab evidence pending.  
-**Part 05:** 4/5 chapters published.  
+**Part 05:** 5/5 chapters published (live lab evidence pending).  
 **Chapter 022:** Published; live lab evidence pending.  
 **Chapter 023:** Published; live lab evidence pending.  
 **Chapter 024:** Published; live lab evidence pending.  
-**Next:** Chapter 025 — Terraform Providers, Dependencies and Lifecycle Production Capstone.
+**Chapter 025:** Published; Part 05 content complete, live lab evidence pending.  
+**Next:** Chapter 026 — Terraform State Architecture, State Files, Metadata and Backend Fundamentals.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -59,6 +60,7 @@
 | 022 | Terraform Provider Dependencies, Implicit and Explicit Resource Graphs and Lifecycle Ordering | Published |
 | 023 | Terraform Data Sources, External Dependencies and Cross-Module Data Flow | Published |
 | 024 | Terraform Lifecycle Meta-Arguments, Preconditions, Postconditions and Safe Replacement Strategies | Published |
+| 025 | Terraform Providers, Dependencies and Lifecycle Production Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -249,3 +251,11 @@
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [x] Chapter and master index publication
 - [ ] Live lab execution and test evidence
+
+## Chapter 025 acceptance
+- [x] Integrated provider trust, dependencies, module contracts and lifecycle theory
+- [x] Offline network/database/application/monitoring/audit Terraform capstone
+- [x] Provider manifest and fail-closed plan policy with twenty-five unit tests authored
+- [x] Production SRE/DBRE incident simulations, runbooks and 100-point assessment
+- [x] Part 05 curriculum content published (021–025)
+- [ ] Live Terraform execution, negative drills and final assessment evidence
