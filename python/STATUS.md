@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **40 chapters**
-- Remaining: **80 chapters**
-- Published labs: **40**
-- Next: **041 — Files, Paths and Filesystem Operations**
+- Published: **41 chapters**
+- Remaining: **79 chapters**
+- Published labs: **41**
+- Next: **042 — File Formats, CSV, JSON and Structured Data Processing**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–040 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–041 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -59,3 +59,7 @@ Chapter 038: [Tutorial](04-object-oriented-programming/038-iterators-generators-
 Chapter 039: [Tutorial](04-object-oriented-programming/039-context-managers-resource-management-exception-safe-operations.md) · [Hands-on lab](04-object-oriented-programming/labs/039-exception-safe-sre-dbre-resource-management-lab.md). Includes 32 unit tests; local execution pending.
 
 Chapter 040: [Tutorial](04-object-oriented-programming/040-object-oriented-sre-dbre-production-capstone.md) · [Capstone lab](04-object-oriented-programming/labs/040-object-oriented-sre-dbre-production-capstone-lab.md). Integrated synthetic project, automated tests and 100-point acceptance assessment; local execution pending. Part 04 complete.
+
+- Part 05 — Files, Exceptions, Logging and Configuration: **1/10** (in progress)
+
+Chapter 041: [Tutorial](05-files-exceptions-logging-configuration/041-files-paths-filesystem-operations.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/041-safe-filesystem-atomic-sre-report-lab.md). 35 unit tests executed in Linux sandbox: PASS; Windows execution pending.
