@@ -99,3 +99,10 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
   - [Chapter 049 — Safe Serialization and Configuration Contract SRE/DBRE Lab](05-files-exceptions-logging-configuration/labs/049-safe-serialization-configuration-contract-sre-dbre-lab.md)
   - [Chapter 050 — Files, Exceptions, Logging and Configuration Production Capstone](05-files-exceptions-logging-configuration/050-files-exceptions-logging-configuration-production-capstone.md)
   - [Chapter 050 — Integrated Files, Exceptions, Logging and Configuration SRE/DBRE Capstone Lab](05-files-exceptions-logging-configuration/labs/050-integrated-files-exceptions-logging-configuration-sre-dbre-capstone-lab.md)
+
+## Part 06 — Advanced Python, Typing and Concurrency (051–060)
+
+**Progress: 1/10 published**
+
+- [Chapter 051 — Advanced Python Type Hints, Protocols and Static Analysis](06-advanced-python-typing-concurrency/051-advanced-python-type-hints-protocols-static-analysis.md)
+- [Chapter 051 — Typed SRE/DBRE Telemetry Analyzer Lab](06-advanced-python-typing-concurrency/labs/051-typed-sre-dbre-telemetry-analyzer-lab.md)
