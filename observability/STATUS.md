@@ -1,10 +1,10 @@
 # Observability Curriculum Status
 
-**Progress: 3 / 100 chapters (3%) · 20 parts · Part 01: 3/5**
+**Progress: 4 / 100 chapters (4%) · 20 parts · Part 01: 4/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
-| 01 — Observability Fundamentals and Reliability Signals | 001–005 | 3 | 5 | In progress |
+| 01 — Observability Fundamentals and Reliability Signals | 001–005 | 4 | 5 | In progress |
 | 02 — Linux and Infrastructure Monitoring | 006–010 | 0 | 5 | Planned |
 | 03 — Prometheus Architecture and Installation | 011–015 | 0 | 5 | Planned |
 | 04 — PromQL and Advanced Metrics | 016–020 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–003 and companion labs.
+**Published:** Chapters 001–004 and companion labs.
 
-**Next:** Chapter 004 — Observability Instrumentation Strategy, Sampling and Telemetry Quality.
+**Next:** Chapter 005 — Observability Fundamentals Production Readiness and Reliability Capstone.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
