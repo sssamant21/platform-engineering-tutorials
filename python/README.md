@@ -56,7 +56,7 @@ Each chapter includes theory, reproducible code, hands-on labs, validation, trou
 
 The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, counters, deques, sliding windows, deterministic JSON reports, 30 automated test cases and failure-injection exercises. Test execution is required on the learner's machine; publication alone is not proof of passing tests.
 
-- **Part 04 — Object-Oriented Programming (031–040): In progress (8/10)**
+- **Part 04 — Object-Oriented Programming (031–040): In progress (9/10)**
   - [Chapter 031 — Python Classes, Objects and Encapsulation](04-object-oriented-programming/031-python-classes-objects-encapsulation.md)
   - [Chapter 031 — Object-Oriented SRE/DBRE Monitoring Lab](04-object-oriented-programming/labs/031-object-oriented-sre-dbre-monitoring-lab.md)
   - [Chapter 032 — Instance Methods, Class Methods, Static Methods and Object Lifecycle](04-object-oriented-programming/032-instance-class-static-methods-object-lifecycle.md)
@@ -73,3 +73,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
   - [Chapter 037 — Python Object Protocols for SRE/DBRE Metrics Lab](04-object-oriented-programming/labs/037-python-object-protocols-sre-dbre-metrics-lab.md)
   - [Chapter 038 — Iterators, Generators and Lazy Object-Oriented Pipelines](04-object-oriented-programming/038-iterators-generators-lazy-object-oriented-pipelines.md)
   - [Chapter 038 — Streaming SRE/DBRE Telemetry Pipeline Lab](04-object-oriented-programming/labs/038-streaming-sre-dbre-telemetry-pipeline-lab.md)
+  - [Chapter 039 — Context Managers, Resource Management and Exception-Safe Operations](04-object-oriented-programming/039-context-managers-resource-management-exception-safe-operations.md)
+  - [Chapter 039 — Exception-Safe SRE/DBRE Resource Management Lab](04-object-oriented-programming/labs/039-exception-safe-sre-dbre-resource-management-lab.md)
