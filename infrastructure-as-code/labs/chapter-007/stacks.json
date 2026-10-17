@@ -1,0 +1,55 @@
+{
+  "stacks": [
+    {
+      "id": "aws-dev-network",
+      "cloud": "aws",
+      "environment": "dev",
+      "owner": "platform-sre",
+      "service": "network",
+      "cost_center": "shared",
+      "backend_key": "iac/aws/dev/network.tfstate",
+      "state": {
+        "encrypted": true,
+        "locking": true,
+        "versioning": true
+      },
+      "auto_apply": true,
+      "approvals": []
+    },
+    {
+      "id": "aws-prod-rds",
+      "cloud": "aws",
+      "environment": "prod",
+      "owner": "dbre",
+      "service": "database",
+      "cost_center": "data",
+      "backend_key": "iac/aws/prod/rds.tfstate",
+      "state": {
+        "encrypted": true,
+        "locking": true,
+        "versioning": true
+      },
+      "auto_apply": false,
+      "approvals": [
+        "service-owner",
+        "dbre"
+      ]
+    },
+    {
+      "id": "azure-staging-aks",
+      "cloud": "azure",
+      "environment": "staging",
+      "owner": "platform-sre",
+      "service": "kubernetes",
+      "cost_center": "platform",
+      "backend_key": "iac/azure/staging/aks.tfstate",
+      "state": {
+        "encrypted": true,
+        "locking": true,
+        "versioning": true
+      },
+      "auto_apply": false,
+      "approvals": []
+    }
+  ]
+}
