@@ -1,0 +1,6 @@
+# Copy into a disposable lab only AFTER renaming the resource in main.tf.
+moved {
+  from = terraform_data.database
+  to   = terraform_data.primary_database
+}
+# Update references and review the plan before applying.
