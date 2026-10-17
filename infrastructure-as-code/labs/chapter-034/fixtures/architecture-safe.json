@@ -1,0 +1,41 @@
+{
+  "environment": "prod",
+  "change_ticket": "CHG-034",
+  "state_namespace": "iac-prod",
+  "release_owner": "platform-sre",
+  "attestations": {
+    "code_reviewed": true,
+    "terraform_tests_passed": true,
+    "contract_tests_passed": true,
+    "security_scan_passed": true
+  },
+  "modules": [
+    {
+      "name": "network",
+      "owner": "platform-sre",
+      "schema_version": 1,
+      "depends_on": []
+    },
+    {
+      "name": "database",
+      "owner": "dbre-team",
+      "schema_version": 1,
+      "depends_on": [
+        "network"
+      ]
+    },
+    {
+      "name": "application",
+      "owner": "platform-sre",
+      "schema_version": 1,
+      "depends_on": [
+        "database"
+      ]
+    }
+  ],
+  "database": {
+    "replicas": 3,
+    "backup_enabled": true,
+    "encryption_enabled": true
+  }
+}
