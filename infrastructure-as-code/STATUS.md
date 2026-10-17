@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 14 / 120 chapters (11.67%)  
+**Progress:** 15 / 120 chapters (12.50%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -15,11 +15,12 @@
 **Chapter 009:** Published; live lab execution remains for learner verification.  
 **Chapter 010:** Published; live lab execution remains for learner verification.  
 **Chapter 011:** Published; live lab execution remains for learner verification.  
-**Part 03:** 4/5 chapters published.  
+**Part 03:** 5/5 chapters published (live lab evidence pending).  
 **Chapter 012:** Published; live lab execution remains for learner verification.  
 **Chapter 013:** Published; live lab execution remains for learner verification.  
 **Chapter 014:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 015 — Terraform Language, Lifecycle, State and Change Management Capstone.
+**Chapter 015:** Published; Part 03 content complete; live lab execution remains for learner verification.  
+**Next:** Chapter 016 — Terraform Input Variables, Type Constraints, Defaults and Validation.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -37,6 +38,7 @@
 | 012 | Terraform Resource Blocks, Data Sources, Meta-Arguments and Dependency Graph | Published |
 | 013 | Terraform Plan, Apply, Refresh, Destroy and Execution Lifecycle | Published |
 | 014 | Terraform State Inspection, Drift Detection and Resource Address Management | Published |
+| 015 | Terraform Language, Lifecycle, State and Change Management Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -147,3 +149,11 @@
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [x] Safe cleanup and state artifact hygiene
 - [ ] Live lab execution evidence
+
+## Chapter 015 acceptance
+- [x] Integrated Part 03 HCL, dependency graph, lifecycle and state capstone
+- [x] No-cloud Terraform/OpenTofu project, saved plans and address migration lab
+- [x] Change-ticket/plan policy and eleven automated unit tests
+- [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point rubric
+- [x] Part 03 curriculum publication complete (011–015)
+- [ ] Live lab execution evidence and final assessment results
