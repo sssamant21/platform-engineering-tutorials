@@ -1,14 +1,16 @@
 # IaC Tutorial Status
 
-**Progress:** 5 / 120 chapters (4.17%)  
-**Last update:** 2026-10-16  
+**Progress:** 6 / 120 chapters (5.00%)  
+**Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
 **Chapter 003:** Published; live lab execution remains for learner verification.  
 **Chapter 004:** Published; live lab execution remains for learner verification.  
 **Chapter 005:** Published; live lab execution remains for learner verification.  
 **Part 01:** 5/5 chapters published (labs not independently executed).  
-**Next:** Chapter 006 — IaC Workstation Setup, CLI Installation and Toolchain Validation.
+**Chapter 006:** Published; live lab execution remains for learner verification.  
+**Part 02:** 1/5 chapters published.  
+**Next:** Chapter 007 — IaC Repository Structure, Environment Isolation and Workspace Standards.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -17,6 +19,7 @@
 | 003 | Declarative vs Imperative IaC, Desired State, Drift and Idempotence | Published |
 | 004 | IaC Lifecycle, Version Control, Git Workflows and Change Management | Published |
 | 005 | Enterprise IaC Architecture, Operating Models and Governance | Published |
+| 006 | IaC Workstation Setup, CLI Installation and Toolchain Validation | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -52,4 +55,12 @@
 - [x] Python governance inventory and unit tests
 - [x] SRE/DBRE cases, security controls, troubleshooting and runbooks
 - [x] Part 01 final assessment
+- [ ] Live lab execution evidence
+
+## Chapter 006 acceptance
+- [x] Windows/WSL2 and Linux workstation setup instructions
+- [x] Terraform/OpenTofu, Git, VS Code, Python toolchain guidance
+- [x] Executable no-cloud IaC smoke test
+- [x] Automated Python workstation audit and unit tests
+- [x] SRE/DBRE production cases, troubleshooting and runbooks
 - [ ] Live lab execution evidence
