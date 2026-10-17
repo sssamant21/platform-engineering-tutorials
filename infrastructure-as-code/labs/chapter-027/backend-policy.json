@@ -1,0 +1,25 @@
+{
+  "allowed_backend_types": [
+    "s3",
+    "azurerm",
+    "gcs",
+    "remote"
+  ],
+  "allowed_identity_prefixes": [
+    "oidc://",
+    "role://",
+    "managed-identity://",
+    "workload-identity://"
+  ],
+  "required_controls": [
+    "encryption",
+    "versioning",
+    "locking",
+    "tls",
+    "audit_logging",
+    "restore_tested"
+  ],
+  "require_private": true,
+  "require_prod_remote": true,
+  "forbid_wildcard_permissions": true
+}
