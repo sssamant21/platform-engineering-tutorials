@@ -1,0 +1,70 @@
+{
+  "environment": "prod",
+  "change_ticket": "CHG-DEMO-031",
+  "modules": [
+    {
+      "name": "network",
+      "source": "./modules/network",
+      "owner": "platform-sre",
+      "inputs": [
+        "environment",
+        "cidr",
+        "owner"
+      ],
+      "outputs": [
+        "id",
+        "cidr",
+        "environment",
+        "owner"
+      ],
+      "depends_on": []
+    },
+    {
+      "name": "database",
+      "source": "./modules/database",
+      "owner": "dbre-team",
+      "inputs": [
+        "environment",
+        "network",
+        "replicas",
+        "backup_enabled",
+        "encryption_enabled"
+      ],
+      "outputs": [
+        "id",
+        "environment",
+        "network_id",
+        "replicas",
+        "backup_enabled",
+        "encryption_enabled"
+      ],
+      "depends_on": [
+        "network"
+      ]
+    },
+    {
+      "name": "application",
+      "source": "./modules/application",
+      "owner": "platform-sre",
+      "inputs": [
+        "environment",
+        "database",
+        "owner"
+      ],
+      "outputs": [
+        "id",
+        "environment",
+        "database_id",
+        "owner"
+      ],
+      "depends_on": [
+        "database"
+      ]
+    }
+  ],
+  "database": {
+    "replicas": 3,
+    "backup_enabled": true,
+    "encryption_enabled": true
+  }
+}
