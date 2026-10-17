@@ -1,0 +1,11 @@
+environment = "dev"
+aws_account_id = "111122223333"
+primary_region = "us-east-1"
+dr_region = "us-west-2"
+owner = "platform-sre"
+cost_center = "sandbox"
+change_ticket = "CHG-DEMO-DEV"
+database_replicas = 2
+backup_enabled = true
+encryption_enabled = true
+multi_az_enabled = false
