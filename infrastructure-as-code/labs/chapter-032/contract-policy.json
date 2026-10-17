@@ -1,0 +1,64 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_modules": [
+    "network",
+    "database",
+    "application"
+  ],
+  "required_inputs": {
+    "network": [
+      "environment",
+      "cidr",
+      "owner"
+    ],
+    "database": [
+      "environment",
+      "network",
+      "replicas",
+      "backup_enabled",
+      "encryption_enabled"
+    ],
+    "application": [
+      "environment",
+      "database",
+      "owner"
+    ]
+  },
+  "required_outputs": {
+    "network": [
+      "schema_version",
+      "id",
+      "environment",
+      "cidr",
+      "owner"
+    ],
+    "database": [
+      "schema_version",
+      "id",
+      "environment",
+      "network_id",
+      "replicas",
+      "backup_enabled",
+      "encryption_enabled"
+    ],
+    "application": [
+      "schema_version",
+      "id",
+      "environment",
+      "database_id",
+      "owner"
+    ]
+  },
+  "supported_schema_version": 1,
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_owners": true,
+  "require_nonnullable_inputs": true,
+  "deny_destructive_actions": true
+}
