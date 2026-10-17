@@ -1,0 +1,27 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "required_controls": [
+    "state_backup_verified",
+    "exclusive_lock_verified",
+    "writers_frozen",
+    "encryption_verified",
+    "versioning_verified",
+    "audit_verified",
+    "restore_tested",
+    "identity_scoped",
+    "application_health_verified"
+  ],
+  "min_retention_days": 30,
+  "max_rpo_minutes": 60,
+  "max_rto_minutes": 240,
+  "require_ticket": true,
+  "require_distinct_dr_destination": true,
+  "deny_destructive_actions": true
+}
