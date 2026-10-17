@@ -1,0 +1,21 @@
+{
+  "environment": "prod",
+  "change_ticket": "",
+  "source_backend": "s3://iac-primary/prod/db",
+  "destination_backend": "s3://iac-primary/prod/db",
+  "snapshot_id": "",
+  "snapshot_sha256": "not-a-hash",
+  "snapshot_lineage": "wrong",
+  "snapshot_serial": 0,
+  "retention_days": 1,
+  "rpo_minutes": 300,
+  "rto_minutes": 900,
+  "controls": {
+    "encrypted": false,
+    "versioned": false,
+    "lock_verified": false,
+    "writers_frozen": false,
+    "restore_tested": false,
+    "integrity_verified": false
+  }
+}
