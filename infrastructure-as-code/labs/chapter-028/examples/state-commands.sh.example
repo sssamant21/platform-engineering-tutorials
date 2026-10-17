@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# READ-ONLY reference. Do not run against production without approval.
+terraform state list
+terraform state show terraform_data.database
+terraform plan -refresh-only
+# Mutating commands require backup, exclusive lock, reviewed plan and owner approval:
+# terraform state mv terraform_data.database terraform_data.primary_database
+# terraform state rm terraform_data.database
+# terraform import aws_s3_bucket.existing approved-existing-bucket
