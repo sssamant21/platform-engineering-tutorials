@@ -1,0 +1,29 @@
+{
+  "allowed_sources": [
+    "hashicorp/aws",
+    "hashicorp/azurerm",
+    "hashicorp/google",
+    "hashicorp/kubernetes",
+    "hashicorp/helm",
+    "snowflakedb/snowflake"
+  ],
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_regions": [
+    "us-east-1",
+    "us-west-2",
+    "eastus",
+    "westus2",
+    "us-central1"
+  ],
+  "identity_prefixes": [
+    "oidc://",
+    "role://",
+    "managed-identity://",
+    "workload-identity://"
+  ],
+  "require_prod_ticket": true
+}
