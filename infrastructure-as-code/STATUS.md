@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 19 / 120 chapters (15.83%)  
+**Progress:** 20 / 120 chapters (16.67%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -21,11 +21,12 @@
 **Chapter 014:** Published; live lab execution remains for learner verification.  
 **Chapter 015:** Published; Part 03 content complete; live lab execution remains for learner verification.  
 **Chapter 016:** Published; live lab execution remains for learner verification.  
-**Part 04:** 4/5 chapters published.  
+**Part 04:** 5/5 chapters published (live lab evidence pending).  
 **Chapter 017:** Published; live lab execution remains for learner verification.  
 **Chapter 018:** Published; live lab execution remains for learner verification.  
 **Chapter 019:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 020 — Terraform Variables, Expressions and Defensive Configuration Production Capstone.
+**Chapter 020:** Published; Part 04 content complete; live lab execution remains for learner verification.  
+**Next:** Chapter 021 — Terraform Provider Configuration, Aliases, Version Constraints and Authentication.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -48,6 +49,7 @@
 | 017 | Terraform Local Values, Expressions, Functions and Dynamic Configuration | Published |
 | 018 | Terraform Collections, for Expressions, Splat Expressions and Advanced Data Transformations | Published |
 | 019 | Terraform Conditional Expressions, Null Handling, try/can and Defensive Configuration Patterns | Published |
+| 020 | Terraform Variables, Expressions and Defensive Configuration Production Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -198,3 +200,11 @@
 - [x] Production SRE/DBRE scenarios, troubleshooting and operational runbooks
 - [x] GitHub chapter and master index publication
 - [ ] Live Terraform execution and unit-test evidence
+
+## Chapter 020 acceptance
+- [x] Integrated Part 04 typed variables, locals, expressions, transformations and defensive configuration
+- [x] No-cloud Terraform/OpenTofu capstone with dev/prod inputs and lifecycle preconditions
+- [x] Input/plan policy and twenty-two automated unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point rubric
+- [x] Part 04 curriculum publication complete (016–020)
+- [ ] Live Terraform execution, unit-test evidence and final assessment results
