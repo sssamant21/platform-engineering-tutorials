@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 88/100 published**
+**100 chapters · 20 parts · 89/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -294,7 +294,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 - [Chapter 088 — Ansible Roles, Dynamic Inventory and Jenkins Configuration Automation](part-18-terraform-ansible-infrastructure-automation/088-ansible-roles-dynamic-inventory-jenkins-configuration-automation.md)
 - [Chapter 088 — Companion hands-on lab](part-18-terraform-ansible-infrastructure-automation/labs/088-ansible-roles-dynamic-inventory-jenkins-configuration-automation-check.md)
 
-**Next:** Chapter 089 — Jenkins GitOps Infrastructure Pipelines, Drift Detection and Automated Compliance.
+- [Chapter 089 — Jenkins GitOps Infrastructure Pipelines, Drift Detection and Automated Compliance](part-18-terraform-ansible-infrastructure-automation/089-jenkins-gitops-infrastructure-pipelines-drift-detection-automated-compliance.md)
+- [Chapter 089 — Companion hands-on lab](part-18-terraform-ansible-infrastructure-automation/labs/089-jenkins-gitops-infrastructure-pipelines-drift-detection-automated-compliance-check.md)
+
+**Next:** Chapter 090 — Jenkins Infrastructure Automation, Drift and Compliance Acceptance Capstone.
 
 ## Tutorial standard
 
