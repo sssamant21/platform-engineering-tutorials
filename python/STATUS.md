@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **60 chapters**
-- Remaining: **60 chapters**
-- Published labs: **60**
-- Next: **061 — Python Testing Foundations with unittest and pytest**
+- Published: **61 chapters**
+- Remaining: **59 chapters**
+- Published labs: **61**
+- Next: **062 — Python Mocking, Test Doubles and Dependency Injection**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–060 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–061 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -104,3 +104,8 @@ Chapter 058: [Tutorial](06-advanced-python-typing-concurrency/058-python-asyncio
 Chapter 059: [Tutorial](06-advanced-python-typing-concurrency/059-python-advanced-asyncio-synchronization-resilient-concurrency.md) · [Hands-on lab](06-advanced-python-typing-concurrency/labs/059-advanced-asyncio-synchronization-sre-dbre-lab.md). Tests published; execution pending.
 
 Chapter 060: [Capstone tutorial](06-advanced-python-typing-concurrency/060-advanced-python-concurrency-capstone.md) · [Executable SRE/DBRE lab](06-advanced-python-typing-concurrency/labs/060-advanced-python-concurrency-capstone-sre-dbre-lab.md). Part 06 publication complete. Automated tests and acceptance execution pending.
+
+## Part 07 — Testing, Debugging and Code Quality
+Published: **1/10** (Chapter 061).
+
+Chapter 061: [Tutorial](07-testing-debugging-code-quality/061-python-testing-foundations-unittest-pytest.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/061-testing-foundations-unittest-pytest-sre-dbre-lab.md). unittest and pytest suites published; execution and coverage verification pending.
