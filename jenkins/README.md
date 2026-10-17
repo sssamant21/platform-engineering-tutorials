@@ -1,6 +1,6 @@
 # Jenkins Enterprise Administration, CI/CD & SRE Operations
 
-**100 chapters · 20 parts · 80/100 published**
+**100 chapters · 20 parts · 81/100 published**
 
 An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD, Kubernetes, security, reliability, automation and disaster recovery.
 
@@ -268,7 +268,10 @@ An enterprise SRE/DevOps curriculum covering Jenkins controllers, agents, CI/CD,
 
 **Part 16 complete:** Chapters 076–080.
 
-**Next:** Chapter 081 — Jenkins Backup Architecture, Recovery Strategy and RPO/RTO Planning (Part 17).
+- [Chapter 081 — Jenkins Backup Architecture, Recovery Strategy and RPO/RTO Planning](part-17-backup-restore-upgrades-disaster-recovery/081-jenkins-backup-architecture-recovery-strategy-rpo-rto-planning.md)
+- [Chapter 081 — Companion hands-on lab](part-17-backup-restore-upgrades-disaster-recovery/labs/081-jenkins-backup-architecture-recovery-strategy-rpo-rto-planning-check.md)
+
+**Next:** Chapter 082 — Jenkins Backup Automation, Secure Storage and Restore Validation.
 
 ## Tutorial standard
 
