@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **42 chapters**
-- Remaining: **78 chapters**
-- Published labs: **42**
-- Next: **043 — Python Exceptions, Custom Errors and Resilient Failure Handling**
+- Published: **43 chapters**
+- Remaining: **77 chapters**
+- Published labs: **43**
+- Next: **044 — Python Logging, Structured Logs and Operational Observability**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–042 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–043 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -60,8 +60,10 @@ Chapter 039: [Tutorial](04-object-oriented-programming/039-context-managers-reso
 
 Chapter 040: [Tutorial](04-object-oriented-programming/040-object-oriented-sre-dbre-production-capstone.md) · [Capstone lab](04-object-oriented-programming/labs/040-object-oriented-sre-dbre-production-capstone-lab.md). Integrated synthetic project, automated tests and 100-point acceptance assessment; local execution pending. Part 04 complete.
 
-- Part 05 — Files, Exceptions, Logging and Configuration: **2/10** (in progress)
+- Part 05 — Files, Exceptions, Logging and Configuration: **3/10** (in progress)
 
 Chapter 041: [Tutorial](05-files-exceptions-logging-configuration/041-files-paths-filesystem-operations.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/041-safe-filesystem-atomic-sre-report-lab.md). 35 unit tests executed in Linux sandbox: PASS; Windows execution pending.
 
 Chapter 042: [Tutorial](05-files-exceptions-logging-configuration/042-file-formats-csv-json-structured-data-processing.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/042-structured-sre-dbre-telemetry-ingestion-lab.md). Includes automated tests; local execution pending.
+
+Chapter 043: [Tutorial](05-files-exceptions-logging-configuration/043-python-exceptions-custom-errors-resilient-failure-handling.md) · [Hands-on lab](05-files-exceptions-logging-configuration/labs/043-resilient-sre-dbre-probe-retry-lab.md). 46-test authoring implementation passed Linux sandbox; published variant local execution pending.
