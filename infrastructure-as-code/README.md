@@ -51,7 +51,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 008 executable labs and tests](labs/chapter-008/)
 - [009 — Provider Installation, Plugin Caching, Registries and Network Troubleshooting](chapters/009-provider-installation-plugin-caching-registries-network-troubleshooting.md)
 - [Chapter 009 executable labs and tests](labs/chapter-009/)
+- [010 — IaC Development Tooling Integration, CI Preflight and Environment Readiness Capstone](chapters/010-iac-development-tooling-ci-preflight-environment-readiness-capstone.md)
+- [Chapter 010 executable labs and tests](labs/chapter-010/)
 
-**Part 01 (001–005): all five chapters published; learner lab verification pending.**
+**Part 01 (001–005) and Part 02 (006–010): all ten chapters published; learner lab verification pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
