@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# REFERENCE ONLY. Do not run against real state without approved change.
+# 1. Verify identity, backend key, versioning, encryption and lock behavior.
+# 2. Freeze all writers and capture an encrypted state backup.
+# 3. Configure destination backend in a disposable sandbox.
+# 4. Review the migration and rollback plan with SRE/DBRE owner.
+# terraform init -migrate-state
+# terraform state list
+# terraform plan -detailed-exitcode
+# 5. Compare lineage, serial, addresses and actual cloud objects.
+# 6. Preserve source state through the approved rollback period.
