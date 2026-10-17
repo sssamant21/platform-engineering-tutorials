@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 23 / 120 chapters (19.17%)  
+**Progress:** 24 / 120 chapters (20.00%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -27,10 +27,11 @@
 **Chapter 019:** Published; live lab execution remains for learner verification.  
 **Chapter 020:** Published; Part 04 content complete; live lab execution remains for learner verification.  
 **Chapter 021:** Published; live lab evidence pending.  
-**Part 05:** 3/5 chapters published.  
+**Part 05:** 4/5 chapters published.  
 **Chapter 022:** Published; live lab evidence pending.  
 **Chapter 023:** Published; live lab evidence pending.  
-**Next:** Chapter 024 — Terraform Lifecycle Meta-Arguments, Preconditions, Postconditions and Safe Replacement Strategies.
+**Chapter 024:** Published; live lab evidence pending.  
+**Next:** Chapter 025 — Terraform Providers, Dependencies and Lifecycle Production Capstone.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -57,6 +58,7 @@
 | 021 | Terraform Provider Configuration, Aliases, Version Constraints and Authentication | Published |
 | 022 | Terraform Provider Dependencies, Implicit and Explicit Resource Graphs and Lifecycle Ordering | Published |
 | 023 | Terraform Data Sources, External Dependencies and Cross-Module Data Flow | Published |
+| 024 | Terraform Lifecycle Meta-Arguments, Preconditions, Postconditions and Safe Replacement Strategies | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -236,6 +238,14 @@
 - [x] Data sources, read timing, cross-module output contracts and sensitive state theory
 - [x] Offline network/database Terraform module lab and dev/prod fixtures
 - [x] Python contract policy and twenty automated unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [x] Chapter and master index publication
+- [ ] Live lab execution and test evidence
+
+## Chapter 024 acceptance
+- [x] Lifecycle meta-arguments, pre/postconditions, replacement and drift theory
+- [x] Offline terraform_data lifecycle lab with dev/prod fixtures
+- [x] Python lifecycle policy and eighteen automated unit tests authored
 - [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
 - [x] Chapter and master index publication
 - [ ] Live lab execution and test evidence
