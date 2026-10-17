@@ -1,0 +1,16 @@
+---
+- name: Configure local SRE training artifact
+  hosts: local
+  gather_facts: false
+  tasks:
+    - name: Ensure lab directory exists
+      ansible.builtin.file:
+        path: /tmp/iac-chapter-002
+        state: directory
+        mode: "0755"
+
+    - name: Render ownership record
+      ansible.builtin.copy:
+        dest: /tmp/iac-chapter-002/owner.txt
+        content: "managed_by=ansible\nteam=sre-platform\n"
+        mode: "0644"
