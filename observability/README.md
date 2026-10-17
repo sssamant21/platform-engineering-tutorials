@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 10/100 published**
+**100 chapters · 20 parts · 11/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -10,7 +10,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 |---|---|---|---|
 | 01 | 001–005 | Observability Fundamentals and Reliability Signals | 5/5 |
 | 02 | 006–010 | Linux and Infrastructure Monitoring | 5/5 |
-| 03 | 011–015 | Prometheus Architecture and Installation | 0/5 |
+| 03 | 011–015 | Prometheus Architecture and Installation | 1/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 0/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 0/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 0/5 |
@@ -69,4 +69,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 
 **Part 02 complete: 5/5 chapters published.**
 
-**Next:** Chapter 011 — Prometheus Architecture, Data Model, Scraping and Production Deployment Fundamentals (Part 03).
+- [Chapter 011 — Prometheus Architecture, Data Model, Scraping and Production Deployment Fundamentals](part-03-prometheus-architecture-installation/011-prometheus-architecture-data-model-scraping-production-deployment-fundamentals.md)
+- [Chapter 011 — Executable companion lab](part-03-prometheus-architecture-installation/labs/011-prometheus-architecture-data-model-scraping-production-deployment-fundamentals-lab.md)
+
+**Next:** Chapter 012 — Prometheus Installation, Configuration, Service Discovery and Target Management.
