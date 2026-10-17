@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 13 / 120 chapters (10.83%)  
+**Progress:** 14 / 120 chapters (11.67%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -15,10 +15,11 @@
 **Chapter 009:** Published; live lab execution remains for learner verification.  
 **Chapter 010:** Published; live lab execution remains for learner verification.  
 **Chapter 011:** Published; live lab execution remains for learner verification.  
-**Part 03:** 3/5 chapters published.  
+**Part 03:** 4/5 chapters published.  
 **Chapter 012:** Published; live lab execution remains for learner verification.  
 **Chapter 013:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 014 — Terraform State Inspection, Drift Detection and Resource Address Management.
+**Chapter 014:** Published; live lab execution remains for learner verification.  
+**Next:** Chapter 015 — Terraform Language, Lifecycle, State and Change Management Capstone.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -35,6 +36,7 @@
 | 011 | Terraform Configuration Language Fundamentals: Blocks, Arguments, Expressions and HCL Syntax | Published |
 | 012 | Terraform Resource Blocks, Data Sources, Meta-Arguments and Dependency Graph | Published |
 | 013 | Terraform Plan, Apply, Refresh, Destroy and Execution Lifecycle | Published |
+| 014 | Terraform State Inspection, Drift Detection and Resource Address Management | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -136,4 +138,12 @@
 - [x] Python plan JSON policy, synthetic sample plan and ten unit tests
 - [x] Production SRE/DBRE scenarios, troubleshooting and operational runbooks
 - [x] Pre-apply shell workflow and safe cleanup instructions
+- [ ] Live lab execution evidence
+
+## Chapter 014 acceptance
+- [x] State architecture, drift taxonomy, resource address and migration theory
+- [x] Local Terraform/OpenTofu lab with state inspection and refresh-only exercise
+- [x] Read-only state JSON inventory validator and ten automated unit tests
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [x] Safe cleanup and state artifact hygiene
 - [ ] Live lab execution evidence
