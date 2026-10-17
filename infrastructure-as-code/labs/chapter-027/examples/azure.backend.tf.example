@@ -1,0 +1,11 @@
+# Illustrative ONLY. Validate current Terraform Azure backend auth flags.
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "REPLACE-state-rg"
+    storage_account_name = "REPLACEstateaccount"
+    container_name       = "tfstate"
+    key                  = "iac/prod/database/terraform.tfstate"
+    use_azuread_auth     = true
+  }
+}
+# Use approved Entra identity; never embed storage account keys.
