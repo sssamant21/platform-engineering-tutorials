@@ -1,0 +1,9 @@
+# Illustrative only; not part of offline Terraform init.
+# Requires approved AWS provider, read permissions and a verified account/region.
+data "aws_vpc" "selected" {
+  id = var.existing_vpc_id
+}
+data "aws_subnet" "selected" {
+  id = var.existing_subnet_id
+}
+# Exact IDs avoid ambiguous tag lookups. Do not assume lookup success implies health.
