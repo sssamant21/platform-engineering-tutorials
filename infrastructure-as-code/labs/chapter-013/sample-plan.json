@@ -1,0 +1,27 @@
+{
+  "format_version": "1.2",
+  "resource_changes": [
+    {
+      "address": "terraform_data.workload",
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "workload",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    },
+    {
+      "address": "terraform_data.audit",
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "audit",
+      "change": {
+        "actions": [
+          "create"
+        ]
+      }
+    }
+  ]
+}
