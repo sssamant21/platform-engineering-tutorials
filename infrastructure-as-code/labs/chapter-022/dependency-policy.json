@@ -1,0 +1,29 @@
+{
+  "required_nodes": [
+    "foundation",
+    "database",
+    "application",
+    "monitoring",
+    "audit"
+  ],
+  "required_edges": [
+    {
+      "before": "foundation",
+      "after": "database"
+    },
+    {
+      "before": "database",
+      "after": "application"
+    },
+    {
+      "before": "application",
+      "after": "monitoring"
+    },
+    {
+      "before": "monitoring",
+      "after": "audit"
+    }
+  ],
+  "deny_deletes": true,
+  "max_nodes": 30
+}
