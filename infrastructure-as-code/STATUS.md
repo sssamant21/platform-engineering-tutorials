@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 9 / 120 chapters (7.50%)  
+**Progress:** 10 / 120 chapters (8.33%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -9,11 +9,12 @@
 **Chapter 005:** Published; live lab execution remains for learner verification.  
 **Part 01:** 5/5 chapters published (labs not independently executed).  
 **Chapter 006:** Published; live lab execution remains for learner verification.  
-**Part 02:** 4/5 chapters published.  
+**Part 02:** 5/5 chapters published (live lab evidence pending).  
 **Chapter 007:** Published; live lab execution remains for learner verification.  
 **Chapter 008:** Published; live lab execution remains for learner verification.  
 **Chapter 009:** Published; live lab execution remains for learner verification.  
-**Next:** Chapter 010 — IaC Development Tooling Integration, CI Preflight and Environment Readiness Capstone.
+**Chapter 010:** Published; live lab execution remains for learner verification.  
+**Next:** Chapter 011 — Terraform Configuration Language Fundamentals: Blocks, Arguments, Expressions and HCL Syntax.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -26,6 +27,7 @@
 | 007 | IaC Repository Structure, Environment Isolation and Workspace Standards | Published |
 | 008 | Terraform and OpenTofu Version Management, Provider Lockfiles and Reproducible Toolchains | Published |
 | 009 | Provider Installation, Plugin Caching, Registries and Network Troubleshooting | Published |
+| 010 | IaC Development Tooling Integration, CI Preflight and Environment Readiness Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -94,4 +96,13 @@
 - [x] Python registry policy validator and automated tests
 - [x] DNS/TLS diagnostic helper and automated tests
 - [x] Production SRE/DBRE cases, troubleshooting and runbooks
+- [ ] Live lab execution evidence
+
+## Chapter 010 acceptance
+- [x] Integrated developer-to-CI preflight architecture and change gates
+- [x] No-cloud Terraform/OpenTofu smoke test
+- [x] Python readiness policy, artifact hygiene and automated unit tests
+- [x] Shell preflight and sample GitHub Actions workflow
+- [x] Production SRE/DBRE scenarios, troubleshooting, security and runbooks
+- [x] Part 02 final readiness assessment
 - [ ] Live lab execution evidence
