@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **52 chapters**
-- Remaining: **68 chapters**
-- Published labs: **52**
-- Next: **053 — Python Decorators, Closures and Operational Instrumentation**
+- Published: **53 chapters**
+- Remaining: **67 chapters**
+- Published labs: **53**
+- Next: **054 — Python Context Managers and Resource Lifecycle Management**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–052 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–053 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -83,8 +83,10 @@ Chapter 049: [Tutorial](05-files-exceptions-logging-configuration/049-python-ser
 Chapter 050: [Tutorial](05-files-exceptions-logging-configuration/050-files-exceptions-logging-configuration-production-capstone.md) · [Hands-on capstone lab](05-files-exceptions-logging-configuration/labs/050-integrated-files-exceptions-logging-configuration-sre-dbre-capstone-lab.md). Automated tests and incident simulations published; execution pending.
 
 ## Part 06 — Advanced Python, Typing and Concurrency
-- Published: **2/10** (Chapters 051–052)
+- Published: **3/10** (Chapters 051–053)
 - [Chapter 051 tutorial](06-advanced-python-typing-concurrency/051-advanced-python-type-hints-protocols-static-analysis.md) · [Chapter 051 lab](06-advanced-python-typing-concurrency/labs/051-typed-sre-dbre-telemetry-analyzer-lab.md)
 - 40 local unit tests passed; strict mypy/pyright checks pending.
 
 Chapter 052: [Tutorial](06-advanced-python-typing-concurrency/052-python-iterators-generators-streaming-data-pipelines.md) · [Hands-on lab](06-advanced-python-typing-concurrency/labs/052-streaming-sre-dbre-telemetry-pipeline-lab.md). Automated tests published; execution pending.
+
+Chapter 053: [Tutorial](06-advanced-python-typing-concurrency/053-python-decorators-closures-operational-instrumentation.md) · [Hands-on lab](06-advanced-python-typing-concurrency/labs/053-decorators-closures-instrumentation-sre-dbre-lab.md). Unit tests published; execution pending.
