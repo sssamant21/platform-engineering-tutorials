@@ -69,7 +69,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 017 executable labs and tests](labs/chapter-017/)
 - [018 — Terraform Collections, for Expressions, Splat Expressions and Advanced Data Transformations](chapters/018-terraform-collections-for-splat-expressions-advanced-data-transformations.md)
 - [Chapter 018 executable labs and tests](labs/chapter-018/)
+- [019 — Terraform Conditional Expressions, Null Handling, try/can and Defensive Configuration Patterns](chapters/019-terraform-conditional-expressions-null-try-can-defensive-configuration.md)
+- [Chapter 019 executable labs and tests](labs/chapter-019/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 underway (016–018 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 underway (016–019 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
