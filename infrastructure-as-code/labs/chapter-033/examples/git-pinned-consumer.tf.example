@@ -1,0 +1,4 @@
+# Illustrative only; replace with verified source and full commit SHA.
+module "network" {
+  source = "git::https://github.com/example/platform-modules.git//network?ref=0123456789abcdef0123456789abcdef01234567"
+}
