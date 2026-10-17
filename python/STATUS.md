@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **35 chapters**
-- Remaining: **85 chapters**
-- Published labs: **35**
-- Next: **036 — Dataclasses, Properties and Python Object Models**
+- Published: **36 chapters**
+- Remaining: **84 chapters**
+- Published labs: **36**
+- Next: **037 — Magic Methods, Dunder Protocols and Operator Overloading**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–035 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–036 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -38,7 +38,7 @@ Chapter 029: [Tutorial](03-functions-modules-packages/029-python-cli-design-argp
 
 Chapter 030: [Tutorial](03-functions-modules-packages/030-functions-modules-packaging-production-ready-sre-cli-capstone.md) · [Capstone lab](03-functions-modules-packages/labs/030-production-ready-sre-cli-capstone-lab.md). Includes 45 tests, 100-point assessment and safety runbooks; local execution is pending. Part 03 complete.
 
-- Part 04 — Object-Oriented Programming: **5/10** (in progress)
+- Part 04 — Object-Oriented Programming: **6/10** (in progress)
 
 Chapter 031: [Tutorial](04-object-oriented-programming/031-python-classes-objects-encapsulation.md) · [Hands-on lab](04-object-oriented-programming/labs/031-object-oriented-sre-dbre-monitoring-lab.md). Includes 30 unit tests; local execution pending.
 
@@ -49,3 +49,5 @@ Chapter 033: [Tutorial](04-object-oriented-programming/033-inheritance-method-ov
 Chapter 034: [Tutorial](04-object-oriented-programming/034-polymorphism-duck-typing-protocol-based-design.md) · [Hands-on lab](04-object-oriented-programming/labs/034-protocol-based-sre-dbre-adapters-lab.md). Includes 32 unit tests; local execution pending.
 
 Chapter 035: [Tutorial](04-object-oriented-programming/035-abstract-base-classes-interfaces-composition-patterns.md) · [Hands-on lab](04-object-oriented-programming/labs/035-composable-sre-dbre-health-service-lab.md). Includes 32 unit tests; local execution pending.
+
+Chapter 036: [Tutorial](04-object-oriented-programming/036-dataclasses-properties-python-object-models.md) · [Hands-on lab](04-object-oriented-programming/labs/036-immutable-sre-dbre-telemetry-object-models-lab.md). Includes 32 unit tests; local execution pending.
