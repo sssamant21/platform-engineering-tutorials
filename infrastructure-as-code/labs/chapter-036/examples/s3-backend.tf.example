@@ -1,0 +1,13 @@
+# Example only. Provision and secure bucket/KMS/IAM independently.
+# Terraform >=1.10 required for use_lockfile; validate installed version.
+terraform {
+  backend "s3" {
+    bucket       = "REPLACE-WITH-APPROVED-STATE-BUCKET"
+    key          = "prod/aws-foundation/terraform.tfstate"
+    region       = "us-east-1"
+    encrypt      = true
+    use_lockfile = true
+  }
+}
+# Require bucket versioning, Block Public Access, TLS-only policy,
+# KMS encryption, least-privilege IAM, access logs and recovery drills.
