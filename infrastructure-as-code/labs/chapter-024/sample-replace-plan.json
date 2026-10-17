@@ -1,0 +1,24 @@
+{
+  "format_version": "1.2",
+  "resource_changes": [
+    {
+      "address": "terraform_data.service",
+      "type": "terraform_data",
+      "change": {
+        "actions": [
+          "create",
+          "delete"
+        ]
+      }
+    },
+    {
+      "address": "terraform_data.audit",
+      "type": "terraform_data",
+      "change": {
+        "actions": [
+          "update"
+        ]
+      }
+    }
+  ]
+}
