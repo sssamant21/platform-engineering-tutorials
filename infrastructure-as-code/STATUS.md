@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 33 / 120 chapters (27.50%)  
+**Progress:** 34 / 120 chapters (28.33%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -41,7 +41,8 @@
 **Chapter 031:** Published; live lab evidence pending.  
 **Chapter 032:** Published; live lab evidence pending.  
 **Chapter 033:** Published; live lab and registry evidence pending.  
-**Next:** Chapter 034 — Terraform Module Testing, Mock Providers and CI Quality Gates.
+**Chapter 034:** Published; Terraform native tests, CI execution and production acceptance pending.  
+**Next:** Chapter 035 — Terraform Reusable Modules Production Engineering Capstone.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -78,6 +79,7 @@
 | 031 | Terraform Module Architecture, Interfaces and Reusable Design Patterns | Published |
 | 032 | Terraform Module Inputs, Outputs, Validation and Contract Testing | Published |
 | 033 | Terraform Module Versioning, Registries and Dependency Management | Published |
+| 034 | Terraform Module Testing, Mock Providers and CI Quality Gates | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -341,3 +343,13 @@
 - [x] Production SRE/DBRE scenarios, supply-chain troubleshooting and runbooks
 - [x] Chapter and master index publication
 - [ ] Live Terraform execution, unit test evidence, registry publishing and production acceptance
+
+## Chapter 034 acceptance
+- [x] Native Terraform test language, mock provider and CI quality gate theory
+- [x] Offline network/database/application module lab with dev/prod fixtures
+- [x] Positive, negative and mock-based Terraform test suites authored
+- [x] Python quality policy, unit tests and GitHub Actions/GitLab CI examples authored
+- [x] Production SRE/DBRE scenarios, troubleshooting and runbooks
+- [x] Chapter and master index publication
+- [ ] Live Terraform >=1.7 native test execution and CI acceptance evidence
+- [ ] Real provider integration and production SRE/DBRE evidence
