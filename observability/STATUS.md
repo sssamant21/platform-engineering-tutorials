@@ -1,11 +1,11 @@
 # Observability Curriculum Status
 
-**Progress: 6 / 100 chapters (6%) · 20 parts · Part 02: 1/5**
+**Progress: 7 / 100 chapters (7%) · 20 parts · Part 02: 2/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
 | 01 — Observability Fundamentals and Reliability Signals | 001–005 | 5 | 5 | Complete |
-| 02 — Linux and Infrastructure Monitoring | 006–010 | 1 | 5 | In progress |
+| 02 — Linux and Infrastructure Monitoring | 006–010 | 2 | 5 | In progress |
 | 03 — Prometheus Architecture and Installation | 011–015 | 0 | 5 | Planned |
 | 04 — PromQL and Advanced Metrics | 016–020 | 0 | 5 | Planned |
 | 05 — Grafana Dashboards and Visualization | 021–025 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–006 and companion labs. Part 01 complete (5/5); Part 02 in progress (1/5).
+**Published:** Chapters 001–007 and companion labs. Part 01 complete (5/5); Part 02 in progress (2/5).
 
-**Next:** Chapter 007 — Linux CPU Scheduling, Load Average, Run Queues and Performance Troubleshooting.
+**Next:** Chapter 008 — Linux Memory Management, Page Cache, Swap, PSI and OOM Troubleshooting.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
