@@ -1,0 +1,17 @@
+environment = "prod"
+aws_account_id = "444455556666"
+region = "us-east-1"
+owner = "compute-sre"
+change_ticket = "CHG-COMPUTE-PROD"
+availability_zones = ["us-east-1a", "us-east-1b"]
+asg_min = 2
+asg_desired = 3
+asg_max = 6
+imds_v2_required = true
+ebs_encrypted = true
+alb_https_enabled = true
+eks_private_endpoint = true
+eks_control_plane_logging = true
+eks_secrets_encrypted = true
+pod_identity_enabled = true
+cloudwatch_enabled = true
