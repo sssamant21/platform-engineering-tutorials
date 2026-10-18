@@ -1,0 +1,36 @@
+---
+- name: Chapter 064 safe inventory and security controls
+  hosts: sandbox
+  connection: local
+  gather_facts: false
+  become: false
+  serial: 1
+  vars:
+    sandbox_root: "{{ playbook_dir }}/../sandbox"
+  tasks:
+    - name: Require local sandbox identity
+      ansible.builtin.assert:
+        that:
+          - inventory_hostname in ['lab_a', 'lab_b']
+          - ansible_connection == 'local'
+          - lab_tenant == 'sandbox'
+    - name: Create sandbox directory
+      ansible.builtin.file:
+        path: "{{ sandbox_root }}"
+        state: directory
+        mode: '0750'
+    - name: Record non-secret governance marker
+      ansible.builtin.copy:
+        content: "host={{ inventory_hostname }}\ntenant=sandbox\nmanaged_by=ansible\n"
+        dest: "{{ sandbox_root }}/{{ inventory_hostname }}.policy"
+        mode: '0640'
+    - name: Inspect policy marker
+      ansible.builtin.stat:
+        path: "{{ sandbox_root }}/{{ inventory_hostname }}.policy"
+      register: marker
+      when: not ansible_check_mode
+    - name: Assert marker exists
+      ansible.builtin.assert:
+        that:
+          - marker.stat.exists
+      when: not ansible_check_mode
