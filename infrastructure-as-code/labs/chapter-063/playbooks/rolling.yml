@@ -1,0 +1,64 @@
+---
+- name: Safe serial canary with explicit rescue and failure gate
+  hosts: sandbox
+  gather_facts: false
+  connection: local
+  become: false
+  strategy: linear
+  serial: 1
+  any_errors_fatal: true
+  vars:
+    sandbox_root: "{{ playbook_dir }}/../sandbox"
+  tasks:
+    - name: Assert local-only scope and safe port
+      ansible.builtin.assert:
+        that:
+          - ansible_connection == 'local'
+          - inventory_hostname in ['canary_a', 'canary_b']
+          - service_port | int >= 1024
+          - service_port | int <= 65535
+    - name: Create sandbox directory
+      ansible.builtin.file:
+        path: "{{ sandbox_root }}"
+        state: directory
+        mode: '0750'
+    - name: Apply canary configuration with explicit failure handling
+      block:
+        - name: Render per-host configuration
+          ansible.builtin.template:
+            src: ../templates/service.conf.j2
+            dest: "{{ sandbox_root }}/{{ inventory_hostname }}.conf"
+            mode: '0640'
+          notify: Report canary change
+        - name: Deliberately inject a canary failure
+          ansible.builtin.assert:
+            that:
+              - not (inject_failure | bool and inventory_hostname == 'canary_a')
+            fail_msg: "Injected canary failure: halt rollout"
+      rescue:
+        - name: Record local failure marker
+          ansible.builtin.copy:
+            content: "failure={{ inventory_hostname }}\n"
+            dest: "{{ sandbox_root }}/{{ inventory_hostname }}.failed"
+            mode: '0640'
+        - name: Propagate failure instead of masking it
+          ansible.builtin.fail:
+            msg: "Canary failed and requires operator review"
+      always:
+        - name: Record completion of local inspection
+          ansible.builtin.debug:
+            msg: "Inspected {{ inventory_hostname }}; no real service restarted"
+    - name: Verify generated configuration after apply
+      ansible.builtin.stat:
+        path: "{{ sandbox_root }}/{{ inventory_hostname }}.conf"
+      register: config_file
+      when: not ansible_check_mode
+    - name: Assert configuration exists
+      ansible.builtin.assert:
+        that:
+          - config_file.stat.exists
+      when: not ansible_check_mode
+  handlers:
+    - name: Report canary change
+      ansible.builtin.debug:
+        msg: "Config changed; service restart requires separate approval"
