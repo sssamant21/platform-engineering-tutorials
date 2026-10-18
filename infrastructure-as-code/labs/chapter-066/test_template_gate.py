@@ -1,0 +1,63 @@
+import copy,json,unittest
+from pathlib import Path
+from template_gate import validate
+ROOT=Path(__file__).parent
+TEMPLATE=json.loads((ROOT/"template.json").read_text())
+SAFE=json.loads((ROOT/"fixtures/change-safe.json").read_text())
+UNSAFE=json.loads((ROOT/"fixtures/change-unsafe.json").read_text())
+POLICY=json.loads((ROOT/"policy.json").read_text())
+class CloudFormationGateTests(unittest.TestCase):
+    def bad(self,fn):
+        m=copy.deepcopy(SAFE);fn(m);self.assertTrue(validate(TEMPLATE,m,POLICY))
+    def test_safe(self):self.assertEqual(validate(TEMPLATE,SAFE,POLICY),[])
+    def test_unsafe(self):self.assertTrue(validate(TEMPLATE,UNSAFE,POLICY))
+    def test_environment(self):self.bad(lambda m:m.update(environment='prod'))
+    def test_account(self):self.bad(lambda m:m.update(account='prod'))
+    def test_region(self):self.bad(lambda m:m.update(region='eu-west-1'))
+    def test_stack(self):self.bad(lambda m:m.update(stack='production'))
+    def test_owner(self):self.bad(lambda m:m.update(owner=''))
+    def test_ticket(self):self.bad(lambda m:m.update(change_ticket=''))
+    def test_labels(self):self.bad(lambda m:m.pop('labels'))
+    def test_label_environment(self):self.bad(lambda m:m['labels'].update(environment='prod'))
+    def test_label_owner(self):self.bad(lambda m:m['labels'].update(owner='other'))
+    def test_label_manager(self):self.bad(lambda m:m['labels'].update(**{'managed-by':'manual'}))
+    def test_template_version_present(self):self.bad(lambda m:m['template'].update(version_present=False))
+    def test_template_resources_present(self):self.bad(lambda m:m['template'].update(resources_present=False))
+    def test_template_parameters_reviewed(self):self.bad(lambda m:m['template'].update(parameters_reviewed=False))
+    def test_template_outputs_no_secrets(self):self.bad(lambda m:m['template'].update(outputs_no_secrets=False))
+    def test_template_conditions_reviewed(self):self.bad(lambda m:m['template'].update(conditions_reviewed=False))
+    def test_template_retention_reviewed(self):self.bad(lambda m:m['template'].update(retention_reviewed=False))
+    def test_missing_template(self):self.bad(lambda m:m.pop('template'))
+    def test_change_set_account_verified(self):self.bad(lambda m:m['change_set'].update(account_verified=False))
+    def test_change_set_region_verified(self):self.bad(lambda m:m['change_set'].update(region_verified=False))
+    def test_change_set_replacement_reviewed(self):self.bad(lambda m:m['change_set'].update(replacement_reviewed=False))
+    def test_change_set_iam_changes_reviewed(self):self.bad(lambda m:m['change_set'].update(iam_changes_reviewed=False))
+    def test_change_set_change_set_fresh(self):self.bad(lambda m:m['change_set'].update(change_set_fresh=False))
+    def test_missing_change_set(self):self.bad(lambda m:m.pop('change_set'))
+    def test_security_least_privilege(self):self.bad(lambda m:m['security'].update(least_privilege=False))
+    def test_security_execution_role_scoped(self):self.bad(lambda m:m['security'].update(execution_role_scoped=False))
+    def test_security_no_plaintext_secrets(self):self.bad(lambda m:m['security'].update(no_plaintext_secrets=False))
+    def test_security_cloudtrail_enabled(self):self.bad(lambda m:m['security'].update(cloudtrail_enabled=False))
+    def test_security_termination_protection_reviewed(self):self.bad(lambda m:m['security'].update(termination_protection_reviewed=False))
+    def test_missing_security(self):self.bad(lambda m:m.pop('security'))
+    def test_operations_dbre_approved(self):self.bad(lambda m:m['operations'].update(dbre_approved=False))
+    def test_operations_backup_verified(self):self.bad(lambda m:m['operations'].update(backup_verified=False))
+    def test_operations_rollback_documented(self):self.bad(lambda m:m['operations'].update(rollback_documented=False))
+    def test_operations_drift_reviewed(self):self.bad(lambda m:m['operations'].update(drift_reviewed=False))
+    def test_operations_slo_reviewed(self):self.bad(lambda m:m['operations'].update(slo_reviewed=False))
+    def test_operations_change_approved(self):self.bad(lambda m:m['operations'].update(change_approved=False))
+    def test_missing_operations(self):self.bad(lambda m:m.pop('operations'))
+    def test_destructive(self):self.bad(lambda m:m['change_set'].update(destructive_action=True))
+    def test_bad_template_version(self):
+        t=copy.deepcopy(TEMPLATE);t["AWSTemplateFormatVersion"]="wrong";self.assertTrue(validate(t,SAFE,POLICY))
+    def test_missing_resources(self):
+        t=copy.deepcopy(TEMPLATE);t.pop("Resources");self.assertTrue(validate(t,SAFE,POLICY))
+    def test_unapproved_resource(self):
+        t=copy.deepcopy(TEMPLATE);t["Resources"]["Bad"]={"Type":"AWS::IAM::Role"};self.assertTrue(validate(t,SAFE,POLICY))
+    def test_invalid_manifest(self):self.assertTrue(validate(TEMPLATE,[],POLICY))
+    def test_invalid_policy(self):self.assertTrue(validate(TEMPLATE,SAFE,[]))
+    def test_fail_open_policy(self):
+        p=copy.deepcopy(POLICY);p["deny_prod_targets"]=False;self.assertTrue(validate(TEMPLATE,SAFE,p))
+    def test_missing_controls(self):
+        p=copy.deepcopy(POLICY);p.pop("required_controls");self.assertTrue(validate(TEMPLATE,SAFE,p))
+if __name__=="__main__":unittest.main()
