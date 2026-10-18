@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# REVIEW ONLY: authorized read-only Azure identity required.
+az account show --output json
+az group show --name APPROVED_RESOURCE_GROUP --output json
+az deployment sub list --output json
+az bicep build --file main.bicep --outfile /tmp/ch069-main.json
