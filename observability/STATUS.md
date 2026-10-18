@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 41 / 100 chapters (41%) · 20 parts · Part 09: 1/5**
+**Progress: 42 / 100 chapters (42%) · 20 parts · Part 09: 2/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -12,7 +12,7 @@
 | 06 — Alertmanager and Alert Engineering | 026–030 | 5 | 5 | Complete |
 | 07 — Exporters and Custom Instrumentation | 031–035 | 5 | 5 | Complete |
 | 08 — Centralized Logging with Loki | 036–040 | 5 | 5 | Complete |
-| 09 — Elasticsearch and OpenSearch Logging | 041–045 | 1 | 5 | In progress |
+| 09 — Elasticsearch and OpenSearch Logging | 041–045 | 2 | 5 | In progress |
 | 10 — OpenTelemetry Architecture and Instrumentation | 046–050 | 0 | 5 | Planned |
 | 11 — Distributed Tracing with Jaeger and Tempo | 051–055 | 0 | 5 | Planned |
 | 12 — Kubernetes EKS AKS and GKE Observability | 056–060 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–041 and companion labs. Parts 01, 02, 03, 04, 05, 06, 07 and 08 complete (5/5 each); Part 09 in progress (1/5).
+**Published:** Chapters 001–042 and companion labs. Parts 01, 02, 03, 04, 05, 06, 07 and 08 complete (5/5 each); Part 09 in progress (2/5).
 
-**Next:** Chapter 042 — Elasticsearch and OpenSearch Log Ingestion Pipelines, Fluent Bit, Parsing and Data Quality.
+**Next:** Chapter 043 — Elasticsearch and OpenSearch Log Search, Query DSL, Dashboards and Correlation.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
