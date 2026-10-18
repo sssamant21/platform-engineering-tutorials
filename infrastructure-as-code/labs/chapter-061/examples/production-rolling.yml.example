@@ -1,0 +1,15 @@
+---
+# REVIEW ONLY: inventory and health checks must be replaced.
+- name: Approved rolling database configuration
+  hosts: database
+  serial: 1
+  become: false
+  tasks:
+    - name: Require explicit approval
+      ansible.builtin.assert:
+        that:
+          - change_approved | default(false) | bool
+          - dbre_approved | default(false) | bool
+    - name: Describe gated next step
+      ansible.builtin.debug:
+        msg: "Check quorum, backups, SLO and replica health before a real change"
