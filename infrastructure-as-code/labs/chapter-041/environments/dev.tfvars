@@ -1,0 +1,14 @@
+environment = "dev"
+tenant_id = "11111111-1111-4111-8111-111111111111"
+subscription_id = "22222222-2222-4222-8222-222222222222"
+location = "eastus2"
+owner = "platform-sre"
+change_ticket = "CHG-AZURE-DEV"
+oidc_federation_enabled = true
+static_client_secret_used = false
+rbac_least_privilege_reviewed = true
+azure_policy_enabled = true
+state_encrypted = true
+state_private = true
+state_locking_enabled = true
+activity_logs_enabled = true
