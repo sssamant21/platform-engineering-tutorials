@@ -1,0 +1,11 @@
+# REVIEW ONLY — pin immutable module SHA.
+include "root" {
+  path = find_in_parent_folders("root.hcl")
+}
+terraform {
+  source = "git::https://example.invalid/platform/modules.git//network?ref=REPLACE-WITH-SHA"
+}
+inputs = {
+  environment = "dev"
+  cidr_block = "10.42.0.0/16"
+}
