@@ -127,7 +127,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 060 — Advanced Python Concurrency Capstone](06-advanced-python-typing-concurrency/060-advanced-python-concurrency-capstone.md)
 - [Chapter 060 — Advanced Python Concurrency Capstone SRE/DBRE Lab](06-advanced-python-typing-concurrency/labs/060-advanced-python-concurrency-capstone-sre-dbre-lab.md)
 
-### Part 07 — Testing, Debugging and Code Quality (5/10 published)
+### Part 07 — Testing, Debugging and Code Quality (6/10 published)
 - [Chapter 061 — Python Testing Foundations with unittest and pytest](07-testing-debugging-code-quality/061-python-testing-foundations-unittest-pytest.md)
 - [Chapter 061 — Testing Foundations SRE/DBRE Lab](07-testing-debugging-code-quality/labs/061-testing-foundations-unittest-pytest-sre-dbre-lab.md)
 - [Chapter 062 — Python Mocking, Test Doubles and Dependency Injection](07-testing-debugging-code-quality/062-python-mocking-test-doubles-dependency-injection.md)
@@ -138,3 +138,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 064 — Property-Based Testing and Hypothesis SRE/DBRE Lab](07-testing-debugging-code-quality/labs/064-property-based-testing-hypothesis-sre-dbre-lab.md)
 - [Chapter 065 — Python Integration Testing and Testcontainers](07-testing-debugging-code-quality/065-python-integration-testing-testcontainers.md)
 - [Chapter 065 — Integration Testing and Testcontainers SRE/DBRE Lab](07-testing-debugging-code-quality/labs/065-integration-testing-testcontainers-sre-dbre-lab.md)
+- [Chapter 066 — Python Debugging, Profiling and Diagnostics](07-testing-debugging-code-quality/066-python-debugging-profiling-diagnostics.md)
+- [Chapter 066 — Debugging, Profiling and Diagnostics SRE/DBRE Lab](07-testing-debugging-code-quality/labs/066-debugging-profiling-diagnostics-sre-dbre-lab.md)
