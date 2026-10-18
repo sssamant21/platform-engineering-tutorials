@@ -1,0 +1,42 @@
+{
+  "environment": "prod",
+  "subscription_id": "33333333-3333-4333-8333-333333333333",
+  "location": "eastus2",
+  "owner": "production-network-sre",
+  "change_ticket": "CHG-AZNET-042",
+  "state_namespace": "iac-prod-33333333-3333-4333-8333-333333333333-network",
+  "vnet_cidr": "10.52.0.0/16",
+  "subnets": {
+    "aks": "10.52.0.0/22",
+    "app": "10.52.4.0/24",
+    "private_endpoints": "10.52.5.0/24",
+    "database": "10.52.6.0/24"
+  },
+  "security": {
+    "nsg_reviewed": true,
+    "management_ports_public": false,
+    "allow_any_any_inbound": false,
+    "udr_reviewed": true,
+    "forced_tunnel_next_hop_reviewed": true,
+    "nat_reviewed": true
+  },
+  "private_connectivity": {
+    "private_endpoint_enabled": true,
+    "private_dns_zone_linked": true,
+    "private_dns_resolution_tested": true,
+    "database_subnet_delegated": true,
+    "public_database_access_disabled": true,
+    "private_endpoint_approved": true
+  },
+  "audit": {
+    "flow_logs_enabled": true,
+    "network_watcher_enabled": true,
+    "security_reviewed": true,
+    "dbre_connectivity_tested": true
+  },
+  "tags": {
+    "Environment": "prod",
+    "ManagedBy": "terraform",
+    "Owner": "production-network-sre"
+  }
+}
