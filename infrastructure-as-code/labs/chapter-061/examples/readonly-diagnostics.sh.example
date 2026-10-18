@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+ansible --version
+ansible-inventory -i inventory.ini --list
+ansible-playbook -i inventory.ini playbooks/site.yml --list-hosts
+ansible-playbook -i inventory.ini playbooks/site.yml --syntax-check
+ansible-playbook -i inventory.ini playbooks/site.yml --check --diff
