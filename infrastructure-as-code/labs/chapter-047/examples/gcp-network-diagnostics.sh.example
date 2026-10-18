@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${EXPECTED_GCP_PROJECT_ID:?set approved project}"
+actual="$(gcloud config get-value project 2>/dev/null)"
+[[ "$actual" == "$EXPECTED_GCP_PROJECT_ID" ]] || { echo "DENY: wrong project" >&2; exit 1; }
+gcloud compute networks list --project="$EXPECTED_GCP_PROJECT_ID"
+gcloud compute networks subnets list --project="$EXPECTED_GCP_PROJECT_ID"
+gcloud compute routes list --project="$EXPECTED_GCP_PROJECT_ID"
+gcloud compute firewall-rules list --project="$EXPECTED_GCP_PROJECT_ID"
