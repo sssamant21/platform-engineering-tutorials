@@ -1,0 +1,51 @@
+{
+  "environment": "lab",
+  "tenant": "offline-sandbox",
+  "subscription": "production",
+  "resource_group": "rg-ch068-lab",
+  "scope": "resourceGroup",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-BICEP-068",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "bicep",
+    "owner": "platform-sre-dbre"
+  },
+  "architecture": {
+    "arm_scope_reviewed": true,
+    "module_contract_reviewed": true,
+    "dependencies_reviewed": true,
+    "api_versions_reviewed": true,
+    "output_secrets_denied": true
+  },
+  "deployment": {
+    "what_if_reviewed": true,
+    "incremental_mode": true,
+    "target_subscription_verified": true,
+    "resource_group_verified": true,
+    "rollback_documented": true,
+    "destructive_change": true
+  },
+  "security": {
+    "least_privilege": true,
+    "federated_identity": true,
+    "azure_policy_reviewed": true,
+    "tls_enforced": true,
+    "public_blob_denied": false,
+    "secrets_external": true
+  },
+  "dbre": {
+    "backup_verified": false,
+    "restore_rehearsed": true,
+    "dbre_approved": true,
+    "slo_reviewed": true,
+    "quorum_reviewed": true
+  },
+  "governance": {
+    "change_approved": true,
+    "owner_verified": true,
+    "audit_enabled": true,
+    "module_pinned": true,
+    "cost_reviewed": true
+  }
+}
