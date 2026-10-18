@@ -1,0 +1,43 @@
+---
+- name: Chapter 061 local configuration management lab
+  hosts: sandbox
+  gather_facts: false
+  connection: local
+  become: false
+  vars:
+    lab_root: "{{ playbook_dir }}/../sandbox"
+  tasks:
+    - name: Validate local-only inventory and safe inputs
+      ansible.builtin.assert:
+        that:
+          - inventory_hostname == 'localhost'
+          - ansible_connection == 'local'
+          - service_port | int >= 1024
+          - service_port | int <= 65535
+          - service_name | length > 0
+    - name: Create sandbox directory
+      ansible.builtin.file:
+        path: "{{ lab_root }}"
+        state: directory
+        mode: '0750'
+    - name: Render deterministic sandbox configuration
+      ansible.builtin.template:
+        src: ../templates/service.conf.j2
+        dest: "{{ lab_root }}/service.conf"
+        mode: '0640'
+      notify: Record configuration update
+    - name: Read sandbox configuration
+      ansible.builtin.slurp:
+        src: "{{ lab_root }}/service.conf"
+      register: service_config
+      when: not ansible_check_mode
+    - name: Verify rendered configuration
+      ansible.builtin.assert:
+        that:
+          - "'service_name=' ~ service_name in (service_config.content | b64decode)"
+          - "'service_port=' ~ (service_port | string) in (service_config.content | b64decode)"
+      when: not ansible_check_mode
+  handlers:
+    - name: Record configuration update
+      ansible.builtin.debug:
+        msg: "Configuration changed; production service restart requires separate approval"
