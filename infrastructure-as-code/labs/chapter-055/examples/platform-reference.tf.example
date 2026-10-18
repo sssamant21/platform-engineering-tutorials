@@ -1,0 +1,19 @@
+# REVIEW ONLY: platform composition reference; no cloud or Kubernetes provider configured.
+# Split actual cloud cluster, namespace policy, Helm add-ons, GitOps apps and
+# DB operator into separate roots/stages with pinned providers and identities.
+# Illustrative only; these declarations create no infrastructure.
+locals {
+  platform_stages = [
+    "cluster-and-identity",
+    "cni-csi-dns",
+    "namespace-rbac-psa-networkpolicy",
+    "crds-and-operators",
+    "helm-addons",
+    "gitops-applications",
+    "database-backup-restore",
+    "slo-and-operational-acceptance"
+  ]
+}
+output "reference_stages" {
+  value = local.platform_stages
+}
