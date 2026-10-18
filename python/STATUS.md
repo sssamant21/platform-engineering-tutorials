@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **99 chapters**
-- Remaining: **21 chapters**
-- Published labs: **99**
-- Next: **100 — Python Cloud-Native Platform Engineering Production Capstone**
+- Published: **100 chapters**
+- Remaining: **20 chapters**
+- Published labs: **100**
+- Next: **101 — Python Production Security Architecture and Secure Coding**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–099 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–100 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -169,7 +169,7 @@ Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-
 - Chapter 090 — Python DevOps/SRE Automation Production Capstone: [Tutorial](09-devops-sre-automation/090-python-devops-sre-automation-production-capstone.md) · [Hands-on lab](09-devops-sre-automation/labs/090-devops-sre-automation-production-capstone-lab.md) · [Standalone code](09-devops-sre-automation/labs/090/README.md). Integrated synthetic inventory, monitoring, SLO budgets, burn rates, incident correlation, readiness, simulated approval, sandbox-only idempotent marker and JSONL audit. Offline tests and production incident drills published; committed runtime/CI validation pending. Part 09 completed (10/10).
 
 ## Part 10 — Kubernetes, AWS, Azure and GCP
-Published: **9/10** (Chapters 091–099). Chapter 091 — [Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md) · [Hands-on lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md) · [Executable code](10-kubernetes-cloud-platform-engineering/labs/091/README.md). Offline fake-client inventory, pagination, watch replay, retry, rollout health and optional read-only Kubernetes SDK adapter. Committed runtime tests, CI and live cluster validation pending.
+Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md) · [Hands-on lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md) · [Executable code](10-kubernetes-cloud-platform-engineering/labs/091/README.md). Offline fake-client inventory, pagination, watch replay, retry, rollout health and optional read-only Kubernetes SDK adapter. Committed runtime tests, CI and live cluster validation pending.
 
 - Chapter 092 — [Python Kubernetes Controllers, Operators and Reconciliation Automation](10-kubernetes-cloud-platform-engineering/092-python-kubernetes-controllers-operators-reconciliation-automation.md) · [SRE/DBRE lab](10-kubernetes-cloud-platform-engineering/labs/092-kubernetes-controllers-operators-reconciliation-sre-dbre-lab.md) · [Executable project](10-kubernetes-cloud-platform-engineering/labs/092/README.md). Custom-resource plans, fake API, deduplicating queue, synthetic watch/relist, lease fencing, finalizer holds, bounded retries, offline tests and incident simulations published. Runtime/CI and live Kubernetes validation pending.
 
@@ -186,3 +186,6 @@ Published: **9/10** (Chapters 091–099). Chapter 091 — [Kubernetes API and Cl
 - Chapter 098 — [Python Multi-Cloud Observability and Incident Automation](10-kubernetes-cloud-platform-engineering/098-python-multi-cloud-observability-incident-automation.md) · [SRE/DBRE lab](10-kubernetes-cloud-platform-engineering/labs/098-multi-cloud-observability-incident-sre-dbre-lab.md) · [Executable project](10-kubernetes-cloud-platform-engineering/labs/098/README.md). AWS CloudWatch/Azure Monitor/GCP Monitoring integration design, OpenTelemetry, normalized telemetry, SLO/error-budget checks, alert deduplication, incident correlation, advisory approval gates, dry-run and 36 offline tests. Equivalent local tests passed; committed CI and live cloud integration pending.
 
 - Chapter 099 — [Python Cloud Platform Security, Secrets and Compliance Automation](10-kubernetes-cloud-platform-engineering/099-python-cloud-platform-security-secrets-compliance-automation.md) · [SRE/DBRE lab](10-kubernetes-cloud-platform-engineering/labs/099-cloud-security-secrets-compliance-sre-dbre-lab.md) · [Executable project](10-kubernetes-cloud-platform-engineering/labs/099/README.md). AWS IAM/Secrets Manager, Azure Entra ID/Key Vault, GCP IAM/Secret Manager, Kubernetes Secrets, workload identities, metadata-only inventory, policy-as-code, rotation advisory, independent approval, audit, dry-run and 36 automated offline tests. Equivalent local implementation passed 36 tests; exact committed CI and live provider validation pending.
+
+- **Part 10 complete — Chapters 091–100 (10/10 published).** Publication milestone only; live integration and production validation remain pending.
+- Chapter 100 — [Python Cloud-Native Platform Engineering Production Capstone](10-kubernetes-cloud-platform-engineering/100-python-cloud-native-platform-engineering-production-capstone.md) · [SRE/DBRE lab](10-kubernetes-cloud-platform-engineering/labs/100-cloud-native-platform-engineering-production-capstone-lab.md) · [Executable project](10-kubernetes-cloud-platform-engineering/labs/100/README.md). Kubernetes/GitOps, AWS/Azure/GCP inventory, SLOs, incidents, IAM/secrets, capacity, FinOps, approval-gated advisory automation, dry-run, idempotency, 51 offline tests and a 100-point assessment. Equivalent local tests passed; exact committed revision, CI and live cloud integrations remain pending.
