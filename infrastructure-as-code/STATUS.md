@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 58 / 120 chapters (48.33%)  
+**Progress:** 59 / 120 chapters (49.17%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -56,7 +56,7 @@
 **Chapter 046:** Published; live Terraform, GCP integration and operational acceptance pending.  
 **Part 10:** 5/5 chapters published — complete (GCP).  
 **Part 11:** 5/5 chapters published — complete (Kubernetes and Helm).  
-**Part 12:** 3/5 chapters published — OpenTofu and Terragrunt.  
+**Part 12:** 4/5 chapters published — OpenTofu and Terragrunt.  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -69,7 +69,8 @@
 **Chapter 056:** Published; OpenTofu execution, compatibility verification, state migration and operational acceptance pending. Python policy gate is a basic declared-evidence validator; production-grade enforcement pending.  
 **Chapter 057:** Published; live OpenTofu, provider/module compatibility, state restore and operational acceptance pending.  
 **Chapter 058:** Published; live Terragrunt/OpenTofu orchestration, dependency graph, remote-state integration and operational acceptance pending.  
-**Next:** Chapter 059 — Terragrunt Dependency Graphs, Remote State, CI/CD and Enterprise Orchestration (proposed title).
+**Chapter 059:** Published; live Terragrunt/OpenTofu DAG orchestration, remote-state integration, native-plan CI policy and operational acceptance pending.  
+**Next:** Chapter 060 — OpenTofu and Terragrunt Enterprise Platform Engineering, Reliability and Migration Capstone (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -131,6 +132,7 @@
 | 056 | OpenTofu Fundamentals, Terraform Compatibility, Migration and Enterprise Adoption | Published |
 | 057 | OpenTofu State, Providers, Modules and Advanced Terraform Compatibility | Published |
 | 058 | Terragrunt Foundations, DRY Configuration, Includes and Multi-Environment Orchestration | Published |
+| 059 | Terragrunt Dependency Graphs, Remote State, CI/CD and Enterprise Orchestration | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -644,3 +646,13 @@
 - [x] Chapter and master index publication; Part 12 at 3/5
 - [ ] Live Terragrunt/OpenTofu execution and automated test evidence
 - [ ] Real dependency graph, remote-state locks, isolated restore, database recovery and operational acceptance
+
+## Chapter 059 acceptance — Terragrunt dependency graphs, remote state and CI/CD
+- [x] DAG architecture, remote state, exclusive locking, CI/CD approval and partial-failure theory
+- [x] Offline OpenTofu-compatible graph/state/CI/operations contracts with dev/prod fixtures
+- [x] Review-only Terragrunt network/database, backend and CI examples authored
+- [x] Fail-closed Python orchestration policy and fifty-three unit tests authored
+- [x] SRE/DBRE incident matrix, eight runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 12 at 4/5
+- [ ] Live Terragrunt/OpenTofu execution and automated test evidence
+- [ ] Native-plan adapter, real dependency graph, state backup/restore and operational acceptance
