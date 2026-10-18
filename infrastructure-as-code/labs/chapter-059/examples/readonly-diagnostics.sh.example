@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+terragrunt --version
+tofu version
+tofu fmt -check -recursive
+tofu init -backend=false -input=false
+tofu validate
+echo "Inventory graph, backend keys and module pins without applying."
