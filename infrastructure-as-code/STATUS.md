@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 47 / 120 chapters (39.17%)  
+**Progress:** 48 / 120 chapters (40.00%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -54,9 +54,10 @@
 **Chapter 044:** Published; live Terraform, Azure AKS/VMSS integration and SRE/DBRE acceptance pending.  
 **Chapter 045:** Published; live Terraform, Azure stateful-data integration, restore drills and DBRE acceptance pending.  
 **Chapter 046:** Published; live Terraform, GCP integration and operational acceptance pending.  
-**Part 10:** 2/5 chapters published (GCP).  
+**Part 10:** 3/5 chapters published (GCP).  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
-**Next:** Chapter 048 — GCP IAM, Cloud KMS, Secret Manager and Secure Infrastructure with Terraform (proposed title).
+**Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
+**Next:** Chapter 049 — GCP Compute, GKE and Application Infrastructure with Terraform (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -107,6 +108,7 @@
 | 045 | Azure Stateful Data, Storage, Resilience and Production Operations Capstone | Published |
 | 046 | Google Cloud Infrastructure as Code Foundations and Terraform Google Provider | Published |
 | 047 | GCP VPC, Subnets, Routing, Firewall Rules and Private Connectivity with Terraform | Published |
+| 048 | GCP IAM, Cloud KMS, Secret Manager and Secure Infrastructure with Terraform | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -510,3 +512,13 @@
 - [x] Chapter and master index publication; Part 10 at 2/5
 - [ ] Live Terraform execution and automated test evidence
 - [ ] GCP VPC/firewall/NAT/DNS/PSC connectivity, SRE/DBRE and operational acceptance
+
+## Chapter 048 acceptance — GCP IAM, KMS and Secret Manager
+- [x] IAM, organization policy, WIF, service accounts, Cloud KMS, CMEK and Secret Manager theory
+- [x] Offline Terraform IAM/WIF/KMS-secrets/operations contracts with dev/prod fixtures
+- [x] Review-only Google security and identity preflight examples authored
+- [x] Fail-closed Python security policy and sixty-two unit tests authored
+- [x] SRE/DBRE incidents, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 10 at 3/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] GCP IAM/WIF/KMS/Secret Manager integration, recovery drills and operational acceptance
