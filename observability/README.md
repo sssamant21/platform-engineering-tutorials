@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 56/100 published**
+**100 chapters · 20 parts · 57/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -19,7 +19,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 5/5 |
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 5/5 |
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 5/5 |
-| 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 1/5 |
+| 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 2/5 |
 | 13 | 061–065 | Database and Data Platform Observability | 0/5 |
 | 14 | 066–070 | Application Performance Monitoring | 0/5 |
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 0/5 |
@@ -225,4 +225,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 056 — Kubernetes Observability Architecture for EKS, AKS and GKE](part-12-kubernetes-eks-aks-gke-observability/056-kubernetes-observability-architecture-eks-aks-gke.md)
 - [Chapter 056 — Companion lab](part-12-kubernetes-eks-aks-gke-observability/labs/056-kubernetes-observability-architecture-eks-aks-gke-lab.md)
 
-**Next:** Chapter 057 — Kubernetes Cluster and Node Metrics, kube-state-metrics, cAdvisor and Exporters.
+- [Chapter 057 — Kubernetes Cluster and Node Metrics, kube-state-metrics, cAdvisor and Exporters](part-12-kubernetes-eks-aks-gke-observability/057-kubernetes-cluster-node-metrics-kube-state-metrics-cadvisor-exporters.md)
+- [Chapter 057 — Companion lab](part-12-kubernetes-eks-aks-gke-observability/labs/057-kubernetes-cluster-node-metrics-kube-state-metrics-cadvisor-exporters-lab.md)
+
+**Next:** Chapter 058 — Kubernetes Workload, Pod, Application Logs and Distributed Tracing Observability.
