@@ -143,7 +143,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 054 executable labs and tests](labs/chapter-054/)
 - [055 — Kubernetes and Helm Production Platform Engineering, Reliability and GitOps Capstone](chapters/055-kubernetes-helm-production-platform-reliability-gitops-capstone.md)
 - [Chapter 055 executable labs and tests](labs/chapter-055/)
+- [056 — OpenTofu Fundamentals, Terraform Compatibility, Migration and Enterprise Adoption](chapters/056-opentofu-fundamentals-terraform-compatibility-migration-enterprise-adoption.md)
+- [Chapter 056 executable labs and tests](labs/chapter-056/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 underway (056 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
