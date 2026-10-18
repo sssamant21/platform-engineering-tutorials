@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+command -v terragrunt >/dev/null || { echo "Terragrunt CLI missing" >&2; exit 1; }
+command -v tofu >/dev/null || { echo "OpenTofu CLI missing" >&2; exit 1; }
+terragrunt --version
+tofu version
+tofu fmt -check -recursive
+tofu init -backend=false -input=false
+tofu validate
+echo "Review include paths, module pins, graph and unique backend keys. No apply."
