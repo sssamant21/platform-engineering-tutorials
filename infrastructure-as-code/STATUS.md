@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 55 / 120 chapters (45.83%)  
+**Progress:** 56 / 120 chapters (46.67%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -56,6 +56,7 @@
 **Chapter 046:** Published; live Terraform, GCP integration and operational acceptance pending.  
 **Part 10:** 5/5 chapters published — complete (GCP).  
 **Part 11:** 5/5 chapters published — complete (Kubernetes and Helm).  
+**Part 12:** 1/5 chapters published — OpenTofu and Terragrunt.  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -65,7 +66,8 @@
 **Chapter 053:** Published; live Terraform, Kubernetes/Helm/CSI integration, DBRE recovery and operational acceptance pending.  
 **Chapter 054:** Published; live Terraform, Helm/GitOps/CRD integration, DBRE recovery and operational acceptance pending.  
 **Chapter 055:** Published; live Terraform, Kubernetes/Helm/GitOps integration, DBRE recovery and capstone acceptance pending.  
-**Next:** Chapter 056 — review the Part 12 master roadmap to confirm its title before publication.
+**Chapter 056:** Published; OpenTofu execution, compatibility verification, state migration and operational acceptance pending. Python policy gate is a basic declared-evidence validator; production-grade enforcement pending.  
+**Next:** Chapter 057 — OpenTofu State, Providers, Modules and Advanced Terraform Compatibility (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -124,6 +126,7 @@
 | 053 | Kubernetes Workloads, StatefulSets, Storage and Helm Releases with Terraform | Published |
 | 054 | Kubernetes Helm Provider, Chart Lifecycle, GitOps Integration and Policy Automation with Terraform | Published |
 | 055 | Kubernetes and Helm Production Platform Engineering, Reliability and GitOps Capstone | Published |
+| 056 | OpenTofu Fundamentals, Terraform Compatibility, Migration and Enterprise Adoption | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -607,3 +610,13 @@
 - [x] Chapter and master index publication; Part 11 at 5/5 — complete
 - [ ] Live Terraform execution and automated test evidence
 - [ ] Kubernetes/Helm/GitOps, database backup/restore, measured RPO/RTO and operational acceptance
+
+## Chapter 056 acceptance — OpenTofu fundamentals and migration
+- [x] OpenTofu governance, Terraform compatibility, provider/module/state/backend and migration theory
+- [x] Offline OpenTofu-compatible contracts with dev/prod fixtures
+- [x] Review-only migration inventory and audit examples authored
+- [x] Basic Python migration validator and six unit tests authored (not production-grade)
+- [x] SRE/DBRE incidents, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 12 at 1/5
+- [ ] Live OpenTofu execution and automated test evidence
+- [ ] Comprehensive native-plan policy enforcement, state migration, backup restore and operational acceptance
