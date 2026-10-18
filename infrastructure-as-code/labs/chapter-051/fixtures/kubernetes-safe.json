@@ -1,0 +1,48 @@
+{
+  "environment": "prod",
+  "cluster_name": "sample-iac-prod-051",
+  "namespace": "app-prod",
+  "owner": "production-platform-sre",
+  "change_ticket": "CHG-K8S-PROD-051",
+  "state_namespace": "iac-prod-sample-iac-prod-051-app-prod",
+  "labels": {
+    "environment": "prod",
+    "managed-by": "terraform",
+    "owner": "production-platform-sre"
+  },
+  "cluster": {
+    "context_verified": true,
+    "api_healthy": true,
+    "provider_pinned": true,
+    "state_isolated": true,
+    "short_lived_identity": true
+  },
+  "tenant": {
+    "namespace_isolated": true,
+    "rbac_least_privilege": true,
+    "network_default_deny": true,
+    "dns_egress_reviewed": true,
+    "quota_enabled": true,
+    "pod_security_enforced": true,
+    "wildcard_cluster_admin": false,
+    "default_service_account_used": false
+  },
+  "workload": {
+    "image_digest_pinned": true,
+    "readiness_probe": true,
+    "pdb_reviewed": true,
+    "resource_requests": true,
+    "db_connection_pool_reviewed": true,
+    "stateful_backup_tested": true,
+    "secret_payload_in_state": false
+  },
+  "operations": {
+    "monitoring_enabled": true,
+    "audit_logs_enabled": true,
+    "dr_runbook_tested": true,
+    "security_approved": true,
+    "dbre_approved": true,
+    "change_approved": true,
+    "unapproved_destroy": false
+  }
+}
