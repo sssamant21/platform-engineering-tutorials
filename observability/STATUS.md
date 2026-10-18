@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 39 / 100 chapters (39%) · 20 parts · Part 08: 4/5**
+**Progress: 40 / 100 chapters (40%) · 20 parts · Part 08: 5/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -11,7 +11,7 @@
 | 05 — Grafana Dashboards and Visualization | 021–025 | 5 | 5 | Complete |
 | 06 — Alertmanager and Alert Engineering | 026–030 | 5 | 5 | Complete |
 | 07 — Exporters and Custom Instrumentation | 031–035 | 5 | 5 | Complete |
-| 08 — Centralized Logging with Loki | 036–040 | 4 | 5 | In progress |
+| 08 — Centralized Logging with Loki | 036–040 | 5 | 5 | Complete |
 | 09 — Elasticsearch and OpenSearch Logging | 041–045 | 0 | 5 | Planned |
 | 10 — OpenTelemetry Architecture and Instrumentation | 046–050 | 0 | 5 | Planned |
 | 11 — Distributed Tracing with Jaeger and Tempo | 051–055 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–039 and companion labs. Parts 01, 02, 03, 04, 05, 06 and 07 complete (5/5 each); Part 08 in progress (4/5).
+**Published:** Chapters 001–040 and companion labs. Parts 01, 02, 03, 04, 05, 06, 07 and 08 complete (5/5 each).
 
-**Next:** Chapter 040 — Loki Production Reliability, Security, Troubleshooting and Logging Capstone.
+**Next:** Chapter 041 — Elasticsearch and OpenSearch Logging Architecture, Index Design and Ingestion Foundations (Part 09).
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
