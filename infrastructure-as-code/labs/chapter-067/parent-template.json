@@ -1,0 +1,37 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Chapter 067 offline parent nested-stack contract; DO NOT DEPLOY",
+  "Parameters": {
+    "Environment": {
+      "Type": "String",
+      "Default": "lab",
+      "AllowedValues": [
+        "lab",
+        "dev"
+      ]
+    }
+  },
+  "Resources": {
+    "NestedDemo": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://example.invalid/chapter067/child-template.json",
+        "Parameters": {
+          "Environment": {
+            "Ref": "Environment"
+          }
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "ChildEnvironment": {
+      "Value": {
+        "Fn::GetAtt": [
+          "NestedDemo",
+          "Outputs.Environment"
+        ]
+      }
+    }
+  }
+}
