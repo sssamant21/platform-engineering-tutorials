@@ -1,0 +1,11 @@
+# REVIEW ONLY: adapt to approved CI, runners, OIDC and environment approvals.
+stages:
+  - lint
+  - compatibility
+  - graph
+  - plan
+  - approval
+  - apply
+  - verify
+# Enforce unique backend keys, one writer, native-plan policy and DBRE approval.
+# Never provide prod cloud identity to untrusted PR jobs.
