@@ -1,0 +1,50 @@
+{
+  "environment": "prod",
+  "tenant_id": "11111111-1111-4111-8111-111111111111",
+  "subscription_id": "33333333-3333-4333-8333-333333333333",
+  "owner": "production-security-sre",
+  "change_ticket": "",
+  "state_namespace": "iac-prod-33333333-3333-4333-8333-333333333333-security",
+  "identity": {
+    "oidc_enabled": true,
+    "static_client_secret_used": true,
+    "oidc_issuer": "https://token.actions.githubusercontent.com",
+    "oidc_audience": "api://AzureADTokenExchange",
+    "oidc_subject": "repo:*",
+    "managed_identity_enabled": true
+  },
+  "rbac": {
+    "least_privilege_reviewed": true,
+    "privileged_role_assignment_used": true,
+    "wildcard_scope_used": false,
+    "role_assignments_audited": true
+  },
+  "key_vault": {
+    "rbac_enabled": true,
+    "private_access": false,
+    "purge_protection": true,
+    "soft_delete_enabled": true,
+    "secret_rotation_enabled": true,
+    "diagnostics_enabled": true,
+    "plaintext_secret_in_state": true,
+    "cmk_recovery_tested": true
+  },
+  "state": {
+    "encrypted": true,
+    "private": true,
+    "azuread_auth": true,
+    "locking_enabled": true,
+    "versioning_enabled": true
+  },
+  "audit": {
+    "activity_logs_enabled": true,
+    "security_reviewed": true,
+    "dbre_approved": true,
+    "rotation_drill_passed": true
+  },
+  "tags": {
+    "Environment": "prod",
+    "ManagedBy": "terraform",
+    "Owner": "production-security-sre"
+  }
+}
