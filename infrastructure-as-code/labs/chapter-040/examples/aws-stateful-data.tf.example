@@ -1,0 +1,58 @@
+# Review-only. Copy into a separate approved AWS root; may incur cost.
+# Does not include production IAM, VPC, cross-region replication or DR.
+terraform {
+  required_providers {
+    aws = { source = "hashicorp/aws", version = "~> 5.0" }
+  }
+}
+variable "region" { type = string }
+variable "account_id" { type = string }
+variable "db_subnet_ids" { type = list(string) }
+variable "db_security_group_id" { type = string }
+variable "kms_key_arn" { type = string }
+variable "db_master_password" { type = string, sensitive = true }
+provider "aws" {
+  region = var.region
+  allowed_account_ids = [var.account_id]
+}
+resource "aws_db_subnet_group" "review" {
+  name = "review-only-dbre"
+  subnet_ids = var.db_subnet_ids
+}
+resource "aws_db_instance" "review" {
+  identifier = "review-only-postgres"
+  engine = "postgres"
+  instance_class = "db.t3.micro"
+  allocated_storage = 20
+  username = "dbadmin"
+  password = var.db_master_password
+  db_subnet_group_name = aws_db_subnet_group.review.name
+  vpc_security_group_ids = [var.db_security_group_id]
+  multi_az = true
+  storage_encrypted = true
+  kms_key_id = var.kms_key_arn
+  backup_retention_period = 14
+  deletion_protection = true
+  skip_final_snapshot = false
+}
+# WARNING: password input above can be retained in Terraform state.
+# For production, prefer supported managed master password and runtime
+# retrieval with reviewed key/secret policies; do not apply this example.
+resource "aws_s3_bucket" "review" {
+  bucket_prefix = "review-only-dbre-"
+}
+resource "aws_s3_bucket_versioning" "review" {
+  bucket = aws_s3_bucket.review.id
+  versioning_configuration { status = "Enabled" }
+}
+resource "aws_s3_bucket_public_access_block" "review" {
+  bucket = aws_s3_bucket.review.id
+  block_public_acls = true
+  block_public_policy = true
+  ignore_public_acls = true
+  restrict_public_buckets = true
+}
+resource "aws_s3_bucket_server_side_encryption_configuration" "review" {
+  bucket = aws_s3_bucket.review.id
+  rule { apply_server_side_encryption_by_default { sse_algorithm = "aws:kms", kms_master_key_id = var.kms_key_arn } }
+}
