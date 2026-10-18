@@ -1,0 +1,33 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_backend_encryption": true,
+  "require_backend_key_uniqueness": true,
+  "require_locking": true,
+  "require_state_backup": true,
+  "require_restore_test": true,
+  "require_exclusive_writer": true,
+  "require_toolchain_pins": true,
+  "require_module_pinning": true,
+  "require_acyclic_graph": true,
+  "require_dependency_outputs": true,
+  "require_bounded_parallelism": true,
+  "deny_prod_mock_outputs": true,
+  "require_oidc": true,
+  "require_plan_approval": true,
+  "require_dbre_security_approval": true,
+  "deny_destructive_actions": true
+}
