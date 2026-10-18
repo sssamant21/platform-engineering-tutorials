@@ -1,0 +1,49 @@
+{
+  "environment": "prod",
+  "aws_account_id": "444455556666",
+  "region": "us-east-1",
+  "owner": "compute-sre",
+  "change_ticket": "CHG-COMPUTE-039",
+  "state_namespace": "iac-prod-444455556666-compute",
+  "availability_zones": [
+    "us-east-1a",
+    "us-east-1b"
+  ],
+  "compute": {
+    "private_instances": true,
+    "imds_v2_required": true,
+    "ebs_encrypted": true,
+    "asg_min": 2,
+    "asg_desired": 3,
+    "asg_max": 6,
+    "immutable_ami": true,
+    "instance_profile_scoped": true
+  },
+  "alb": {
+    "https_enabled": true,
+    "healthy_target_threshold": 2,
+    "readiness_path": "/readyz",
+    "security_group_reviewed": true
+  },
+  "eks": {
+    "private_endpoint": true,
+    "control_plane_logging": true,
+    "secrets_encrypted": true,
+    "managed_node_groups": true,
+    "node_min": 2,
+    "node_desired": 3,
+    "node_max": 6,
+    "pod_identity_scoped": true,
+    "addon_compatibility_reviewed": true
+  },
+  "audit": {
+    "cloudwatch_enabled": true,
+    "security_reviewed": true,
+    "slo_defined": true
+  },
+  "tags": {
+    "Environment": "prod",
+    "ManagedBy": "terraform",
+    "Owner": "compute-sre"
+  }
+}
