@@ -1,0 +1,36 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_locations": [
+    "eastus",
+    "eastus2",
+    "centralus",
+    "westus2"
+  ],
+  "required_tags": [
+    "Environment",
+    "ManagedBy",
+    "Owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_private_data": true,
+  "require_tls": true,
+  "require_ha": true,
+  "require_backup": true,
+  "require_pitr": true,
+  "require_storage_security": true,
+  "require_key_recovery": true,
+  "require_restore_drill": true,
+  "require_monitoring": true,
+  "require_dbre_approval": true,
+  "max_rpo_minutes": 60,
+  "max_rto_minutes": 240,
+  "deny_destructive_actions": true
+}
