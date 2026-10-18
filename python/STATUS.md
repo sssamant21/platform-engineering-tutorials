@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **86 chapters**
-- Remaining: **34 chapters**
-- Published labs: **86**
-- Next: **087 — Python Infrastructure Monitoring, Metrics and Alert Automation**
+- Published: **87 chapters**
+- Remaining: **33 chapters**
+- Published labs: **87**
+- Next: **088 — Python Incident Response, Diagnostics and Automated Remediation**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–086 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–087 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -151,7 +151,7 @@ Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-
 - Chapter 080 — Python APIs, Networking and Databases Production Integration Capstone: [Tutorial](08-apis-networking-databases/080-python-apis-networking-databases-production-integration-capstone.md) · [Hands-on lab](08-apis-networking-databases/labs/080-apis-networking-databases-production-integration-capstone-sre-dbre-lab.md). Async HTTP loopback integration, SQLAlchemy transactions, Alembic migrations and optional psycopg PostgreSQL smoke profile published; runtime and CI validation pending. **Part 08 complete: 10/10 chapters published.**
 
 ## Part 09 — DevOps, SRE and Automation
-- Published: **6/10** (Chapters 081–086)
+- Published: **7/10** (Chapters 081–087)
 - Chapter 081 — Python Infrastructure Automation, CLI Design and Operational Workflows: [Tutorial](09-devops-sre-automation/081-python-infrastructure-automation-cli-design-operational-workflows.md) · [Hands-on lab](09-devops-sre-automation/labs/081-safe-infrastructure-cli-automation-sre-devops-dbre-lab.md). argparse, safe subprocess, dry-run, idempotent atomic file reconciliation, JSON logging and retry tests published; execution pending.
 
 - Chapter 082 — Python Operating System, Process and Service Automation: [Tutorial](09-devops-sre-automation/082-python-operating-system-process-service-automation.md) · [Hands-on lab](09-devops-sre-automation/labs/082-os-process-service-automation-sre-devops-dbre-lab.md). psutil monitoring, safe filesystem automation, subprocess lifecycle and health-check tests published; execution pending. Production service-manager integrations remain guided exercises.
@@ -163,3 +163,5 @@ Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-
 - Chapter 085 — Python Cloud Infrastructure Automation with AWS, Azure and GCP: [Tutorial](09-devops-sre-automation/085-python-cloud-infrastructure-automation-aws-azure-gcp.md) · [Hands-on lab](09-devops-sre-automation/labs/085-multicloud-inventory-automation-sre-devops-dbre-lab.md) · [Standalone code](09-devops-sre-automation/labs/085/README.md). boto3, Azure Resource Management and GCP Resource Manager v3 read-only inventory adapters, offline fake SDKs, 17 automated test cases, pagination, partial-result safeguards, dry-run and optional live SDK mode published. Runtime/CI and live cloud validation pending.
 
 - Chapter 086 — Python Kubernetes and Container Automation: [Tutorial](09-devops-sre-automation/086-python-kubernetes-container-automation.md) · [Hands-on lab](09-devops-sre-automation/labs/086-kubernetes-container-automation-sre-devops-dbre-lab.md) · [Standalone code](09-devops-sre-automation/labs/086/README.md). Kubernetes Python client, Docker SDK, Pod/Deployment pagination and readiness, fake watch events, 20 offline tests, dry-run and optional live read-only inventory published. Runtime/CI and cluster/Docker validation pending; live watch reconnect and rate limiting are guided exercises.
+
+- Chapter 087 — Python Infrastructure Monitoring, Metrics and Alert Automation: [Tutorial](09-devops-sre-automation/087-python-infrastructure-monitoring-metrics-alert-automation.md) · [Hands-on lab](09-devops-sre-automation/labs/087-infrastructure-monitoring-metrics-alert-automation-sre-dbre-lab.md) · [Standalone code](09-devops-sre-automation/labs/087/README.md). Prometheus Python client exporter, OpenTelemetry SDK demo, psutil host sampling, threshold/hysteresis/deduplication, SLO error budgets and 24 offline tests published. Local prototype passed 24 tests; committed code and live exporters/CI require separate validation.
