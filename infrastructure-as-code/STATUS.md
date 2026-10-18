@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 40 / 120 chapters (33.33%)  
+**Progress:** 41 / 120 chapters (34.17%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -48,7 +48,8 @@
 **Chapter 038:** Published; Terraform, AWS security integration and operational acceptance evidence pending.  
 **Chapter 039:** Published; Terraform execution, AWS compute/EKS integration and SRE/DBRE acceptance pending.  
 **Chapter 040:** Published; live Terraform, AWS recovery drills and production acceptance pending.  
-**Next:** Chapter 041 — Azure Infrastructure as Code Foundations and Terraform AzureRM Provider.
+**Chapter 041:** Published; live Terraform, Azure integration and security acceptance pending.  
+**Next:** Chapter 042 — Azure Virtual Networks, Subnets, NSGs, Routing and Private Connectivity with Terraform.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -92,6 +93,7 @@
 | 038 | AWS IAM, KMS, Secrets and Secure Infrastructure with Terraform | Published |
 | 039 | AWS Compute, EKS and Application Infrastructure with Terraform | Published |
 | 040 | AWS Stateful Data, Storage, Resilience and Production Operations Capstone | Published |
+| 041 | Azure Infrastructure as Code Foundations and Terraform AzureRM Provider | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -425,3 +427,13 @@
 - [x] Chapter and master index publication; Part 08 publication complete
 - [ ] Live Terraform execution and automated test evidence
 - [ ] AWS integration, backup restore, observed RPO/RTO and operational acceptance
+
+## Chapter 041 acceptance — Azure foundations
+- [x] Azure tenant, subscription, management group, RBAC, Policy and AzureRM theory
+- [x] Offline Terraform subscription/governance/state/audit contract lab with dev/prod fixtures
+- [x] Review-only AzureRM provider, Azure backend and identity examples authored
+- [x] Fail-closed Python Azure policy and forty-nine unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 09 at 1/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] Azure provider integration, identity, state and security acceptance
