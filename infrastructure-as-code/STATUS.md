@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 37 / 120 chapters (30.83%)  
+**Progress:** 38 / 120 chapters (31.67%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -45,7 +45,8 @@
 **Chapter 035:** Published; capstone execution and operational acceptance pending.  
 **Chapter 036:** Published; AWS live lab and security evidence pending.  
 **Chapter 037:** Published; live network lab and security evidence pending.  
-**Next:** Chapter 038 — AWS IAM, KMS, Secrets and Secure Infrastructure with Terraform.
+**Chapter 038:** Published; Terraform, AWS security integration and operational acceptance evidence pending.  
+**Next:** Chapter 039 — AWS Compute, EKS and Application Infrastructure with Terraform.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -86,6 +87,7 @@
 | 035 | Terraform Reusable Modules Production Engineering Capstone | Published |
 | 036 | AWS Infrastructure as Code Foundations and Terraform AWS Provider | Published |
 | 037 | AWS VPC, Subnets, Routing and Network Security with Terraform | Published |
+| 038 | AWS IAM, KMS, Secrets and Secure Infrastructure with Terraform | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -389,3 +391,13 @@
 - [x] Chapter and master index publication; Part 08 at 2/5
 - [ ] Live Terraform execution and automated test evidence
 - [ ] AWS provider integration, security review and operational acceptance
+
+## Chapter 038 acceptance — AWS IAM, KMS and Secrets
+- [x] IAM policy evaluation, trust, STS/OIDC, KMS and Secrets Manager architecture
+- [x] Offline Terraform identity/KMS/secret/audit contract lab with dev/prod fixtures
+- [x] AWS IAM/KMS/Secrets, OIDC trust and identity preflight examples authored
+- [x] Fail-closed Python security policy and forty-nine unit tests authored
+- [x] SRE/DBRE scenarios, troubleshooting, incident runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 08 at 3/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] AWS security integration, IAM/KMS review, secret rotation and restore acceptance
