@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${EXPECTED_AZURE_TENANT_ID:?set approved tenant}"
+: "${EXPECTED_AZURE_SUBSCRIPTION_ID:?set approved subscription}"
+tenant="$(az account show --query tenantId -o tsv)"
+subscription="$(az account show --query id -o tsv)"
+[[ "$tenant" == "$EXPECTED_AZURE_TENANT_ID" && "$subscription" == "$EXPECTED_AZURE_SUBSCRIPTION_ID" ]] || { echo "DENY: Azure identity context mismatch" >&2; exit 1; }
+echo "PASS: identity context matches; verify DB, storage, backup and CMK separately"
