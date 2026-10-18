@@ -147,7 +147,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 056 executable labs and tests](labs/chapter-056/)
 - [057 — OpenTofu State, Providers, Modules and Advanced Terraform Compatibility](chapters/057-opentofu-state-providers-modules-advanced-terraform-compatibility.md)
 - [Chapter 057 executable labs and tests](labs/chapter-057/)
+- [058 — Terragrunt Foundations, DRY Configuration, Includes and Multi-Environment Orchestration](chapters/058-terragrunt-foundations-dry-configuration-includes-multi-environment-orchestration.md)
+- [Chapter 058 executable labs and tests](labs/chapter-058/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 underway (056–057 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 underway (056–058 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
