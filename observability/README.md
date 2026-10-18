@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 30/100 published**
+**100 chapters · 20 parts · 31/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -14,7 +14,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 04 | 016–020 | PromQL and Advanced Metrics | 5/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 5/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 5/5 |
-| 07 | 031–035 | Exporters and Custom Instrumentation | 0/5 |
+| 07 | 031–035 | Exporters and Custom Instrumentation | 1/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 0/5 |
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 0/5 |
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 0/5 |
@@ -137,4 +137,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 
 **Part 06 complete: 5/5 chapters published.**
 
-**Next:** Chapter 031 — Prometheus Exporters, Node Exporter and Enterprise Infrastructure Metrics Foundations (Part 07).
+- [Chapter 031 — Prometheus Exporters, Node Exporter and Enterprise Infrastructure Metrics Foundations](part-07-exporters-custom-instrumentation/031-prometheus-exporters-node-exporter-enterprise-infrastructure-metrics-foundations.md)
+- [Chapter 031 — Executable companion lab](part-07-exporters-custom-instrumentation/labs/031-prometheus-exporters-node-exporter-enterprise-infrastructure-metrics-foundations-lab.md)
+
+**Next:** Chapter 032 — Prometheus Database Exporters, PostgreSQL Monitoring and Custom Exporter Integration.
