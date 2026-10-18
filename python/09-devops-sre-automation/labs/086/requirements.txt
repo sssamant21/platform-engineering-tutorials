@@ -1,0 +1,2 @@
+kubernetes>=30,<36
+docker>=7,<8
