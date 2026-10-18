@@ -1,0 +1,13 @@
+.terraform/
+.terragrunt-cache/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*-plan.json
+__pycache__/
+crash.log
+crash.*.log
+*.auto.tfvars
+*.tfvars
+!environments/dev.tfvars
+!environments/prod.tfvars
