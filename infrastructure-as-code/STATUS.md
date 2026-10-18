@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 50 / 120 chapters (41.67%)  
+**Progress:** 51 / 120 chapters (42.50%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -55,11 +55,13 @@
 **Chapter 045:** Published; live Terraform, Azure stateful-data integration, restore drills and DBRE acceptance pending.  
 **Chapter 046:** Published; live Terraform, GCP integration and operational acceptance pending.  
 **Part 10:** 5/5 chapters published — complete (GCP).  
+**Part 11:** 1/5 chapters published — Kubernetes and Helm.  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
 **Chapter 050:** Published; live Terraform, GCP stateful service integration, backup/restore, measured RPO/RTO and operational acceptance pending.  
-**Next:** Chapter 051 — verify exact title against the master roadmap before publication.
+**Chapter 051:** Published; live Terraform, Kubernetes provider integration, RBAC/network policy and operational acceptance pending.  
+**Next:** Chapter 052 — Kubernetes Namespaces, RBAC, Network Policies and Multitenancy with Terraform (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -113,6 +115,7 @@
 | 048 | GCP IAM, Cloud KMS, Secret Manager and Secure Infrastructure with Terraform | Published |
 | 049 | GCP Compute, GKE and Application Infrastructure with Terraform | Published |
 | 050 | GCP Stateful Data, Storage, Resilience and Production Operations Capstone | Published |
+| 051 | Kubernetes Infrastructure as Code Foundations, Terraform Provider and Cluster Resource Management | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -546,3 +549,13 @@
 - [x] Chapter and master index publication; Part 10 complete (046–050)
 - [ ] Live Terraform execution and automated test evidence
 - [ ] GCP Cloud SQL/storage/KMS integration, actual restore, RPO/RTO, DR and security/DBRE acceptance
+
+## Chapter 051 acceptance — Kubernetes Terraform foundations
+- [x] Kubernetes provider, bootstrap, namespace, RBAC, network policy and GitOps ownership theory
+- [x] Offline Terraform cluster/tenant/workload/operations contracts with dev/prod fixtures
+- [x] Review-only Kubernetes provider and context diagnostics examples authored
+- [x] Fail-closed Python Kubernetes policy and fifty-two unit tests authored
+- [x] SRE/DBRE incidents, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 11 at 1/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] Kubernetes RBAC/network policy, workloads, drift, DBRE and operational acceptance
