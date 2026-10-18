@@ -1,0 +1,16 @@
+# REVIEW ONLY — isolated root; do not apply without validated versions.
+terraform {
+  required_version = ">= 1.7.0"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+# Replace with a tested, immutable internal module reference:
+# module "db" {
+#   source = "git::https://example.invalid/platform/db.git?ref=<commit-sha>"
+#   providers = { aws = aws }
+# }
+# Always inspect module address changes and provider schema upgrades.
