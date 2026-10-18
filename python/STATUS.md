@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **67 chapters**
-- Remaining: **53 chapters**
-- Published labs: **67**
-- Next: **068 — Python Static Analysis, Linting and Code Quality Automation**
+- Published: **68 chapters**
+- Remaining: **52 chapters**
+- Published labs: **68**
+- Next: **069 — Python Security Testing and Dependency Auditing**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–067 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–068 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -106,7 +106,7 @@ Chapter 059: [Tutorial](06-advanced-python-typing-concurrency/059-python-advance
 Chapter 060: [Capstone tutorial](06-advanced-python-typing-concurrency/060-advanced-python-concurrency-capstone.md) · [Executable SRE/DBRE lab](06-advanced-python-typing-concurrency/labs/060-advanced-python-concurrency-capstone-sre-dbre-lab.md). Part 06 publication complete. Automated tests and acceptance execution pending.
 
 ## Part 07 — Testing, Debugging and Code Quality
-Published: **7/10** (Chapters 061–067).
+Published: **8/10** (Chapters 061–068).
 
 Chapter 061: [Tutorial](07-testing-debugging-code-quality/061-python-testing-foundations-unittest-pytest.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/061-testing-foundations-unittest-pytest-sre-dbre-lab.md). unittest and pytest suites published; execution and coverage verification pending.
 
@@ -121,3 +121,5 @@ Chapter 065: [Tutorial](07-testing-debugging-code-quality/065-python-integration
 Chapter 066: [Tutorial](07-testing-debugging-code-quality/066-python-debugging-profiling-diagnostics.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/066-debugging-profiling-diagnostics-sre-dbre-lab.md). Tests and diagnostics published; execution pending.
 
 Chapter 067: [Tutorial](07-testing-debugging-code-quality/067-python-logging-structured-diagnostics-observability-testing.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/067-structured-logging-observability-sre-dbre-lab.md). Tests published; execution pending.
+
+Chapter 068: [Tutorial](07-testing-debugging-code-quality/068-python-static-analysis-linting-code-quality-automation.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/068-static-analysis-linting-code-quality-sre-dbre-lab.md). Ruff, mypy, pre-commit and automated tests published; execution pending.
