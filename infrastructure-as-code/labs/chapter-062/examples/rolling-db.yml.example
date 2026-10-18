@@ -1,0 +1,16 @@
+---
+# REVIEW ONLY: no production inventory or real DB tasks provided.
+- name: Approved database canary configuration
+  hosts: database
+  serial: 1
+  become: false
+  tasks:
+    - name: Require change and DBRE approvals
+      ansible.builtin.assert:
+        that:
+          - change_approved | default(false) | bool
+          - dbre_approved | default(false) | bool
+          - backup_verified | default(false) | bool
+    - name: Report safe next step
+      ansible.builtin.debug:
+        msg: "Check quorum, replication, connection budget and SLO before real tasks"
