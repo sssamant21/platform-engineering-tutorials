@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+command -v tofu >/dev/null || { echo "OpenTofu CLI required" >&2; exit 1; }
+tofu version
+tofu fmt -check -recursive
+tofu init -backend=false -input=false
+tofu validate
+tofu providers
+echo "Review lockfile and module sources without printing state or credentials."
