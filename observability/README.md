@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 59/100 published**
+**100 chapters · 20 parts · 60/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -19,7 +19,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 5/5 |
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 5/5 |
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 5/5 |
-| 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 4/5 |
+| 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 5/5 |
 | 13 | 061–065 | Database and Data Platform Observability | 0/5 |
 | 14 | 066–070 | Application Performance Monitoring | 0/5 |
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 0/5 |
@@ -234,4 +234,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 059 — Kubernetes Control Plane, Networking, Storage and Autoscaling Observability](part-12-kubernetes-eks-aks-gke-observability/059-kubernetes-control-plane-networking-storage-autoscaling-observability.md)
 - [Chapter 059 — Companion lab](part-12-kubernetes-eks-aks-gke-observability/labs/059-kubernetes-control-plane-networking-storage-autoscaling-observability-lab.md)
 
-**Next:** Chapter 060 — Kubernetes Multi-Cloud Observability, Reliability, Incident Response and Disaster Recovery Capstone.
+- [Chapter 060 — Kubernetes Multi-Cloud Observability, Reliability, Incident Response and Disaster Recovery Capstone](part-12-kubernetes-eks-aks-gke-observability/060-kubernetes-multi-cloud-observability-reliability-incident-response-disaster-recovery-capstone.md)
+- [Chapter 060 — Companion lab](part-12-kubernetes-eks-aks-gke-observability/labs/060-kubernetes-multi-cloud-observability-reliability-incident-response-disaster-recovery-capstone-lab.md)
+
+**Part 12 complete: 5/5 chapters published.**
+
+**Next:** Chapter 061 — Database and Data Platform Observability Architecture, Metrics and Reliability Signals (Part 13).
