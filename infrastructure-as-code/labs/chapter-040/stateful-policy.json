@@ -1,0 +1,40 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "allowed_database_engines": [
+    "postgres",
+    "aurora-postgresql"
+  ],
+  "required_tags": [
+    "Environment",
+    "ManagedBy",
+    "Owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_multi_az": true,
+  "require_database_encryption": true,
+  "require_deletion_protection": true,
+  "require_pitr": true,
+  "require_restorable_backups": true,
+  "require_s3_versioning": true,
+  "require_s3_encryption": true,
+  "deny_public_s3": true,
+  "require_volume_encryption": true,
+  "require_cross_region_dr": true,
+  "require_kms_recovery": true,
+  "require_dr_drill": true,
+  "require_audit": true,
+  "deny_destructive_actions": true
+}
