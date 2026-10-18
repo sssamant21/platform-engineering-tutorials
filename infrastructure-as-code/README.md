@@ -113,7 +113,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 039 executable labs and tests](labs/chapter-039/)
 - [040 — AWS Stateful Data, Storage, Resilience and Production Operations Capstone](chapters/040-aws-stateful-data-storage-resilience-production-operations-capstone.md)
 - [Chapter 040 executable labs and tests](labs/chapter-040/)
+- [041 — Azure Infrastructure as Code Foundations and Terraform AzureRM Provider](chapters/041-azure-iac-foundations-terraform-azurerm-provider.md)
+- [Chapter 041 executable labs and tests](labs/chapter-041/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 underway (041 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
