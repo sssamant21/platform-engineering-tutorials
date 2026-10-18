@@ -127,7 +127,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 060 — Advanced Python Concurrency Capstone](06-advanced-python-typing-concurrency/060-advanced-python-concurrency-capstone.md)
 - [Chapter 060 — Advanced Python Concurrency Capstone SRE/DBRE Lab](06-advanced-python-typing-concurrency/labs/060-advanced-python-concurrency-capstone-sre-dbre-lab.md)
 
-### Part 07 — Testing, Debugging and Code Quality (9/10 published)
+### Part 07 — Testing, Debugging and Code Quality (10/10 published — complete)
 - [Chapter 061 — Python Testing Foundations with unittest and pytest](07-testing-debugging-code-quality/061-python-testing-foundations-unittest-pytest.md)
 - [Chapter 061 — Testing Foundations SRE/DBRE Lab](07-testing-debugging-code-quality/labs/061-testing-foundations-unittest-pytest-sre-dbre-lab.md)
 - [Chapter 062 — Python Mocking, Test Doubles and Dependency Injection](07-testing-debugging-code-quality/062-python-mocking-test-doubles-dependency-injection.md)
@@ -146,3 +146,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 068 — Static Analysis and Code Quality SRE/DBRE Lab](07-testing-debugging-code-quality/labs/068-static-analysis-linting-code-quality-sre-dbre-lab.md)
 - [Chapter 069 — Python Security Testing and Dependency Auditing](07-testing-debugging-code-quality/069-python-security-testing-dependency-auditing.md)
 - [Chapter 069 — Security Testing and Dependency Auditing SRE/DBRE Lab](07-testing-debugging-code-quality/labs/069-security-testing-dependency-auditing-sre-dbre-lab.md)
+- [Chapter 070 — Testing, Debugging and Code Quality Capstone](07-testing-debugging-code-quality/070-testing-debugging-code-quality-capstone.md)
+- [Chapter 070 — Enterprise Testing and Code Quality Capstone SRE/DBRE Lab](07-testing-debugging-code-quality/labs/070-testing-debugging-code-quality-capstone-sre-dbre-lab.md)
