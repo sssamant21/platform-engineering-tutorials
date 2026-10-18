@@ -207,7 +207,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 090 — DevOps/SRE Automation Production Capstone Lab](09-devops-sre-automation/labs/090-devops-sre-automation-production-capstone-lab.md)
 - [Chapter 090 — Standalone Executable Project](09-devops-sre-automation/labs/090/README.md)
 
-### Part 10 — Kubernetes, AWS, Azure and GCP (3/10 published)
+### Part 10 — Kubernetes, AWS, Azure and GCP (4/10 published)
 
 - [Chapter 091 — Python Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md)
 - [Chapter 091 — Kubernetes API and Cloud-Native SRE/DBRE Lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md)
@@ -220,3 +220,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 093 — Python Kubernetes Deployment, GitOps and Release Automation](10-kubernetes-cloud-platform-engineering/093-python-kubernetes-deployment-gitops-release-automation.md)
 - [Chapter 093 — Kubernetes GitOps Release SRE/DBRE Lab](10-kubernetes-cloud-platform-engineering/labs/093-kubernetes-gitops-release-sre-dbre-lab.md)
 - [Chapter 093 — Standalone Executable Project](10-kubernetes-cloud-platform-engineering/labs/093/README.md)
+
+- [Chapter 094 — Python AWS Infrastructure and Cloud Operations Automation](10-kubernetes-cloud-platform-engineering/094-python-aws-infrastructure-cloud-operations-automation.md)
+- [Chapter 094 — AWS Infrastructure and Cloud Operations SRE/DBRE Lab](10-kubernetes-cloud-platform-engineering/labs/094-aws-infrastructure-cloud-operations-sre-dbre-lab.md)
+- [Chapter 094 — Standalone Executable Project](10-kubernetes-cloud-platform-engineering/labs/094/README.md)
