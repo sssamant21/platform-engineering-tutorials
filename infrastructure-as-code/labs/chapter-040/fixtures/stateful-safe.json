@@ -1,0 +1,51 @@
+{
+  "environment": "prod",
+  "aws_account_id": "444455556666",
+  "primary_region": "us-east-1",
+  "dr_region": "us-west-2",
+  "owner": "production-dbre",
+  "change_ticket": "CHG-STATEFUL-040",
+  "state_namespace": "iac-prod-444455556666-stateful",
+  "database": {
+    "engine": "postgres",
+    "multi_az": true,
+    "encrypted": true,
+    "deletion_protection": true,
+    "backup_retention_days": 14,
+    "pitr_enabled": true,
+    "private_subnets": true,
+    "backup_restore_tested": true
+  },
+  "s3": {
+    "versioning": true,
+    "encrypted": true,
+    "public_access_blocked": true,
+    "lifecycle_reviewed": true,
+    "restore_tested": true
+  },
+  "volumes": {
+    "ebs_encrypted": true,
+    "efs_encrypted": true,
+    "ebs_snapshot_tested": true,
+    "efs_restore_tested": true
+  },
+  "recovery": {
+    "rpo_minutes": 15,
+    "rto_minutes": 60,
+    "cross_region_backup": true,
+    "writer_fencing_tested": true,
+    "kms_decrypt_tested": true,
+    "dr_drill_passed": true
+  },
+  "audit": {
+    "cloudwatch_enabled": true,
+    "cloudtrail_enabled": true,
+    "security_reviewed": true,
+    "dbre_approved": true
+  },
+  "tags": {
+    "Environment": "prod",
+    "ManagedBy": "terraform",
+    "Owner": "production-dbre"
+  }
+}
