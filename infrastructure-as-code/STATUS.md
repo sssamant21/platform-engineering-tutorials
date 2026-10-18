@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 41 / 120 chapters (34.17%)  
+**Progress:** 42 / 120 chapters (35.00%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -49,7 +49,8 @@
 **Chapter 039:** Published; Terraform execution, AWS compute/EKS integration and SRE/DBRE acceptance pending.  
 **Chapter 040:** Published; live Terraform, AWS recovery drills and production acceptance pending.  
 **Chapter 041:** Published; live Terraform, Azure integration and security acceptance pending.  
-**Next:** Chapter 042 — Azure Virtual Networks, Subnets, NSGs, Routing and Private Connectivity with Terraform.
+**Chapter 042:** Published; live Terraform, Azure network integration and SRE/DBRE acceptance pending.  
+**Next:** Chapter 043 — Azure Identity, Key Vault, Managed Identities and Secure Infrastructure with Terraform.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -94,6 +95,7 @@
 | 039 | AWS Compute, EKS and Application Infrastructure with Terraform | Published |
 | 040 | AWS Stateful Data, Storage, Resilience and Production Operations Capstone | Published |
 | 041 | Azure Infrastructure as Code Foundations and Terraform AzureRM Provider | Published |
+| 042 | Azure Virtual Networks, Subnets, NSGs, Routing and Private Connectivity with Terraform | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -437,3 +439,13 @@
 - [x] Chapter and master index publication; Part 09 at 1/5
 - [ ] Live Terraform execution and automated test evidence
 - [ ] Azure provider integration, identity, state and security acceptance
+
+## Chapter 042 acceptance — Azure network foundations
+- [x] VNet, subnet, NSG, UDR, NAT, peering, Private Link, DNS and PostgreSQL networking theory
+- [x] Offline Terraform VNet/security/private connectivity/observability contracts with dev/prod fixtures
+- [x] Review-only AzureRM VNet and Azure identity/network diagnostics examples authored
+- [x] Fail-closed Python network policy and fifty unit tests authored
+- [x] SRE/DBRE incidents, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 09 at 2/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] Azure effective routes/NSGs, DNS, private connectivity and DBRE acceptance
