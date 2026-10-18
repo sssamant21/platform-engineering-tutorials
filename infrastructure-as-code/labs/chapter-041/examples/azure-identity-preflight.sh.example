@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${EXPECTED_AZURE_TENANT_ID:?set approved tenant}"
+: "${EXPECTED_AZURE_SUBSCRIPTION_ID:?set approved subscription}"
+actual_tenant="$(az account show --query tenantId -o tsv)"
+actual_subscription="$(az account show --query id -o tsv)"
+if [[ "$actual_tenant" != "$EXPECTED_AZURE_TENANT_ID" || "$actual_subscription" != "$EXPECTED_AZURE_SUBSCRIPTION_ID" ]]; then
+  echo "DENY: Azure tenant or subscription mismatch" >&2
+  exit 1
+fi
+echo "PASS: Azure tenant and subscription verified (not an RBAC attestation)"
