@@ -1,0 +1,42 @@
+# REVIEW ONLY: separate Terraform root; billable resources may result from apply.
+terraform {
+  required_providers {
+    google = { source = "hashicorp/google", version = "~> 6.0" }
+  }
+}
+variable "project_id" { type = string }
+variable "region" { type = string }
+provider "google" {
+  project = var.project_id
+  region = var.region
+}
+resource "google_compute_network" "review" {
+  name = "vpc-review-only"
+  auto_create_subnetworks = false
+}
+resource "google_compute_subnetwork" "review" {
+  name = "subnet-review-only"
+  region = var.region
+  network = google_compute_network.review.id
+  ip_cidr_range = "10.84.0.0/20"
+  private_ip_google_access = true
+  log_config {
+    aggregation_interval = "INTERVAL_5_SEC"
+    flow_sampling = 0.5
+    metadata = "INCLUDE_ALL_METADATA"
+  }
+}
+resource "google_compute_firewall" "deny_ssh" {
+  name = "deny-public-ssh-review-only"
+  network = google_compute_network.review.name
+  direction = "INGRESS"
+  priority = 1000
+  deny {
+    protocol = "tcp"
+    ports = ["22", "3389", "5432", "9200", "6379"]
+  }
+  source_ranges = ["0.0.0.0/0"]
+  log_config { metadata = "INCLUDE_ALL_METADATA" }
+}
+# Add explicit least-privilege workload allow rules, service identity targeting,
+# Cloud Router/NAT, private service access, DNS and org policy under review.
