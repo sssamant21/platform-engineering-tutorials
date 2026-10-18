@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **96 chapters**
-- Remaining: **24 chapters**
-- Published labs: **96**
-- Next: **097 — Python Multi-Cloud Infrastructure Inventory and Governance**
+- Published: **97 chapters**
+- Remaining: **23 chapters**
+- Published labs: **97**
+- Next: **098 — Python Multi-Cloud Observability and Incident Automation**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–096 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–097 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -169,7 +169,7 @@ Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-
 - Chapter 090 — Python DevOps/SRE Automation Production Capstone: [Tutorial](09-devops-sre-automation/090-python-devops-sre-automation-production-capstone.md) · [Hands-on lab](09-devops-sre-automation/labs/090-devops-sre-automation-production-capstone-lab.md) · [Standalone code](09-devops-sre-automation/labs/090/README.md). Integrated synthetic inventory, monitoring, SLO budgets, burn rates, incident correlation, readiness, simulated approval, sandbox-only idempotent marker and JSONL audit. Offline tests and production incident drills published; committed runtime/CI validation pending. Part 09 completed (10/10).
 
 ## Part 10 — Kubernetes, AWS, Azure and GCP
-Published: **6/10** (Chapters 091–096). Chapter 091 — [Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md) · [Hands-on lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md) · [Executable code](10-kubernetes-cloud-platform-engineering/labs/091/README.md). Offline fake-client inventory, pagination, watch replay, retry, rollout health and optional read-only Kubernetes SDK adapter. Committed runtime tests, CI and live cluster validation pending.
+Published: **7/10** (Chapters 091–097). Chapter 091 — [Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md) · [Hands-on lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md) · [Executable code](10-kubernetes-cloud-platform-engineering/labs/091/README.md). Offline fake-client inventory, pagination, watch replay, retry, rollout health and optional read-only Kubernetes SDK adapter. Committed runtime tests, CI and live cluster validation pending.
 
 - Chapter 092 — [Python Kubernetes Controllers, Operators and Reconciliation Automation](10-kubernetes-cloud-platform-engineering/092-python-kubernetes-controllers-operators-reconciliation-automation.md) · [SRE/DBRE lab](10-kubernetes-cloud-platform-engineering/labs/092-kubernetes-controllers-operators-reconciliation-sre-dbre-lab.md) · [Executable project](10-kubernetes-cloud-platform-engineering/labs/092/README.md). Custom-resource plans, fake API, deduplicating queue, synthetic watch/relist, lease fencing, finalizer holds, bounded retries, offline tests and incident simulations published. Runtime/CI and live Kubernetes validation pending.
 
@@ -180,3 +180,5 @@ Published: **6/10** (Chapters 091–096). Chapter 091 — [Kubernetes API and Cl
 - Chapter 095 — [Python Azure Infrastructure and Cloud Operations Automation](10-kubernetes-cloud-platform-engineering/095-python-azure-infrastructure-cloud-operations-automation.md) · [SRE/DBRE lab](10-kubernetes-cloud-platform-engineering/labs/095-azure-infrastructure-cloud-operations-sre-dbre-lab.md) · [Executable project](10-kubernetes-cloud-platform-engineering/labs/095/README.md). Microsoft Entra ID, managed identities, VM/AKS/PostgreSQL inventory design, Azure Monitor, capacity and cost checks, dry-run approval, offline tests and optional read-only Azure SDK adapter. Runtime/CI and live Azure validation pending.
 
 - Chapter 096 — [Python Google Cloud Infrastructure and Operations Automation](10-kubernetes-cloud-platform-engineering/096-python-google-cloud-infrastructure-operations-automation.md) · [SRE/DBRE lab](10-kubernetes-cloud-platform-engineering/labs/096-gcp-infrastructure-operations-sre-dbre-lab.md) · [Executable project](10-kubernetes-cloud-platform-engineering/labs/096/README.md). IAM/ADC, Workload Identity, Compute/GKE/Cloud SQL inventory design, Cloud Monitoring, capacity, cost proxy, dry-run approval, offline tests and optional read-only GCP SDK adapter. Runtime/CI and live GCP validation pending.
+
+- Chapter 097 — [Python Multi-Cloud Infrastructure Inventory and Governance](10-kubernetes-cloud-platform-engineering/097-python-multi-cloud-infrastructure-inventory-governance.md) · [SRE/DBRE lab](10-kubernetes-cloud-platform-engineering/labs/097-multi-cloud-inventory-governance-sre-dbre-lab.md) · [Executable project](10-kubernetes-cloud-platform-engineering/labs/097/README.md). AWS/Azure/GCP normalized resource models, identity and scope, ownership/tagging, snapshot drift, compliance, capacity, FinOps, bounded pagination, dry-run advisory approvals and offline automated tests. Runtime/CI and live cloud integrations pending.
