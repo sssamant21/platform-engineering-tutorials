@@ -1,0 +1,16 @@
+# REVIEW ONLY — do not deploy placeholder backend.
+locals {
+  environment = "dev"
+  account = "sandbox"
+  region = "us-east-1"
+}
+remote_state {
+  backend = "s3"
+  config = {
+    bucket = "REPLACE-WITH-ENCRYPTED-VERSIONED-BUCKET"
+    key = "iac/${local.account}/${local.environment}/${local.region}/network/tofu.tfstate"
+    region = local.region
+    encrypt = true
+    use_lockfile = true
+  }
+}
