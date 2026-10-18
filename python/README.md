@@ -127,7 +127,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 060 — Advanced Python Concurrency Capstone](06-advanced-python-typing-concurrency/060-advanced-python-concurrency-capstone.md)
 - [Chapter 060 — Advanced Python Concurrency Capstone SRE/DBRE Lab](06-advanced-python-typing-concurrency/labs/060-advanced-python-concurrency-capstone-sre-dbre-lab.md)
 
-### Part 07 — Testing, Debugging and Code Quality (7/10 published)
+### Part 07 — Testing, Debugging and Code Quality (8/10 published)
 - [Chapter 061 — Python Testing Foundations with unittest and pytest](07-testing-debugging-code-quality/061-python-testing-foundations-unittest-pytest.md)
 - [Chapter 061 — Testing Foundations SRE/DBRE Lab](07-testing-debugging-code-quality/labs/061-testing-foundations-unittest-pytest-sre-dbre-lab.md)
 - [Chapter 062 — Python Mocking, Test Doubles and Dependency Injection](07-testing-debugging-code-quality/062-python-mocking-test-doubles-dependency-injection.md)
@@ -142,3 +142,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 066 — Debugging, Profiling and Diagnostics SRE/DBRE Lab](07-testing-debugging-code-quality/labs/066-debugging-profiling-diagnostics-sre-dbre-lab.md)
 - [Chapter 067 — Python Logging, Structured Diagnostics and Observability Testing](07-testing-debugging-code-quality/067-python-logging-structured-diagnostics-observability-testing.md)
 - [Chapter 067 — Structured Logging and Observability SRE/DBRE Lab](07-testing-debugging-code-quality/labs/067-structured-logging-observability-sre-dbre-lab.md)
+- [Chapter 068 — Python Static Analysis, Linting and Code Quality Automation](07-testing-debugging-code-quality/068-python-static-analysis-linting-code-quality-automation.md)
+- [Chapter 068 — Static Analysis and Code Quality SRE/DBRE Lab](07-testing-debugging-code-quality/labs/068-static-analysis-linting-code-quality-sre-dbre-lab.md)
