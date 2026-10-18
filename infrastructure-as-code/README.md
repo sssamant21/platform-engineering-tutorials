@@ -133,7 +133,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 049 executable labs and tests](labs/chapter-049/)
 - [050 — GCP Stateful Data, Storage, Resilience and Production Operations Capstone](chapters/050-gcp-stateful-data-storage-resilience-production-operations-capstone.md)
 - [Chapter 050 executable labs and tests](labs/chapter-050/)
+- [051 — Kubernetes Infrastructure as Code Foundations, Terraform Provider and Cluster Resource Management](chapters/051-kubernetes-terraform-provider-cluster-bootstrap-resource-management.md)
+- [Chapter 051 executable labs and tests](labs/chapter-051/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 underway (051 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
