@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${EXPECTED_GCP_PROJECT_ID:?set approved project}"
+actual="$(gcloud config get-value project 2>/dev/null)"
+[[ "$actual" == "$EXPECTED_GCP_PROJECT_ID" ]] || { echo "DENY: project mismatch" >&2; exit 1; }
+gcloud compute instances list --project="$EXPECTED_GCP_PROJECT_ID"
+gcloud compute instance-groups managed list --project="$EXPECTED_GCP_PROJECT_ID"
+gcloud container clusters list --project="$EXPECTED_GCP_PROJECT_ID"
