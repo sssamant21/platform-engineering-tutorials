@@ -1,0 +1,50 @@
+{
+  "environment": "prod",
+  "project_id": "sample-iac-prod-050",
+  "region": "us-east4",
+  "owner": "production-dbre",
+  "change_ticket": "CHG-GCP-DATA-050",
+  "state_namespace": "iac-prod-sample-iac-prod-050-data",
+  "labels": {
+    "environment": "prod",
+    "managed-by": "terraform",
+    "owner": "production-dbre"
+  },
+  "database": {
+    "db_ha": true,
+    "db_pitr": true,
+    "db_backup_enabled": true,
+    "db_restore_tested": true,
+    "db_private_connectivity": true,
+    "db_connection_pool_reviewed": true,
+    "db_replication_reviewed": true,
+    "db_public_ingress": false
+  },
+  "storage": {
+    "storage_public_access_prevention": true,
+    "storage_uniform_access": true,
+    "storage_versioning": true,
+    "storage_retention_reviewed": true,
+    "storage_lifecycle_reviewed": true,
+    "storage_encrypted": true,
+    "storage_recovery_tested": true
+  },
+  "security": {
+    "kms_enabled": true,
+    "kms_recovery_tested": true,
+    "kms_service_agent_reviewed": true,
+    "workload_identity": true,
+    "private_dns_reviewed": true,
+    "static_keys": false,
+    "secret_payload_in_state": false
+  },
+  "operations": {
+    "monitoring_enabled": true,
+    "audit_logs_enabled": true,
+    "dr_runbook_tested": true,
+    "rpo_rto_measured": true,
+    "dbre_approved": true,
+    "security_approved": true,
+    "change_approved": true
+  }
+}
