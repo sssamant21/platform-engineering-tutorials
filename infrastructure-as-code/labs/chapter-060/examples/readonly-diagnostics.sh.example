@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+terragrunt --version
+tofu version
+tofu fmt -check -recursive
+tofu init -backend=false -input=false
+tofu validate
+tofu providers
+echo "Review state keys, graph and provider/module pins without applying."
