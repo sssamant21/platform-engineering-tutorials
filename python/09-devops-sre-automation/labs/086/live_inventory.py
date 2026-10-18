@@ -18,13 +18,15 @@ def collect(namespace: str, *, use_docker: bool=False, in_cluster: bool=False,
     try:
         core=client.CoreV1Api(api_client)
         apps=client.AppsV1Api(api_client)
-        records=list(pod_records(core,namespace))
-        records.extend(deployment_records(apps,namespace))
+        def records():
+            yield from pod_records(core,namespace)
+            yield from deployment_records(apps,namespace)
+            if use_docker:
+                yield from docker_records(docker_client)
         if use_docker:
             import docker
             docker_client=docker.from_env()
-            records.extend(docker_records(docker_client))
-        return limited(records,max_records)
+        return limited(records(),max_records)
     finally:
         if docker_client is not None: docker_client.close()
         api_client.close()
