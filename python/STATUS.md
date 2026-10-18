@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **90 chapters**
-- Remaining: **30 chapters**
-- Published labs: **90**
-- Next: **091 — Python Kubernetes API and Cloud-Native Platform Engineering**
+- Published: **91 chapters**
+- Remaining: **29 chapters**
+- Published labs: **91**
+- Next: **092 — Python Kubernetes Controllers, Operators and Reconciliation Automation**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–090 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–091 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -167,3 +167,6 @@ Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-
 - Chapter 087 — Python Infrastructure Monitoring, Metrics and Alert Automation: [Tutorial](09-devops-sre-automation/087-python-infrastructure-monitoring-metrics-alert-automation.md) · [Hands-on lab](09-devops-sre-automation/labs/087-infrastructure-monitoring-metrics-alert-automation-sre-dbre-lab.md) · [Standalone code](09-devops-sre-automation/labs/087/README.md). Prometheus Python client exporter, OpenTelemetry SDK demo, psutil host sampling, threshold/hysteresis/deduplication, SLO error budgets and 24 offline tests published. Local prototype passed 24 tests; committed code and live exporters/CI require separate validation.
 
 - Chapter 090 — Python DevOps/SRE Automation Production Capstone: [Tutorial](09-devops-sre-automation/090-python-devops-sre-automation-production-capstone.md) · [Hands-on lab](09-devops-sre-automation/labs/090-devops-sre-automation-production-capstone-lab.md) · [Standalone code](09-devops-sre-automation/labs/090/README.md). Integrated synthetic inventory, monitoring, SLO budgets, burn rates, incident correlation, readiness, simulated approval, sandbox-only idempotent marker and JSONL audit. Offline tests and production incident drills published; committed runtime/CI validation pending. Part 09 completed (10/10).
+
+## Part 10 — Kubernetes, AWS, Azure and GCP
+Published: **1/10** (Chapter 091). Chapter 091 — [Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md) · [Hands-on lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md) · [Executable code](10-kubernetes-cloud-platform-engineering/labs/091/README.md). Offline fake-client inventory, pagination, watch replay, retry, rollout health and optional read-only Kubernetes SDK adapter. Committed runtime tests, CI and live cluster validation pending.
