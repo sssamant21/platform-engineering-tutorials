@@ -207,7 +207,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 090 — DevOps/SRE Automation Production Capstone Lab](09-devops-sre-automation/labs/090-devops-sre-automation-production-capstone-lab.md)
 - [Chapter 090 — Standalone Executable Project](09-devops-sre-automation/labs/090/README.md)
 
-### Part 10 — Kubernetes, AWS, Azure and GCP (9/10 published)
+### Part 10 — Kubernetes, AWS, Azure and GCP (10/10 published — complete)
 
 - [Chapter 091 — Python Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md)
 - [Chapter 091 — Kubernetes API and Cloud-Native SRE/DBRE Lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md)
@@ -244,3 +244,10 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 099 — Python Cloud Platform Security, Secrets and Compliance Automation](10-kubernetes-cloud-platform-engineering/099-python-cloud-platform-security-secrets-compliance-automation.md)
 - [Chapter 099 — Cloud Security, Secrets and Compliance SRE/DBRE Lab](10-kubernetes-cloud-platform-engineering/labs/099-cloud-security-secrets-compliance-sre-dbre-lab.md)
 - [Chapter 099 — Standalone Executable Project](10-kubernetes-cloud-platform-engineering/labs/099/README.md)
+
+## Part 10 completion — Chapters 091–100
+
+- **Part 10 — Kubernetes, AWS, Azure and GCP: Complete (10/10 chapters published).** Live cloud validation and CI remain pending.
+- [Chapter 100 — Python Cloud-Native Platform Engineering Production Capstone](10-kubernetes-cloud-platform-engineering/100-python-cloud-native-platform-engineering-production-capstone.md)
+- [Chapter 100 — Integrated SRE/DBRE Production Capstone Lab](10-kubernetes-cloud-platform-engineering/labs/100-cloud-native-platform-engineering-production-capstone-lab.md)
+- [Chapter 100 — Executable Capstone and 51 Unit Tests](10-kubernetes-cloud-platform-engineering/labs/100/README.md)
