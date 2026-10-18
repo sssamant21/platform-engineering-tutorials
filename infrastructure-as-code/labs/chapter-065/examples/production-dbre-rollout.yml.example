@@ -1,0 +1,17 @@
+---
+# REVIEW ONLY — no real database mutation.
+- name: DBRE-approved rolling service maintenance
+  hosts: database
+  serial: 1
+  become: false
+  tasks:
+    - name: Require change, DBRE and backup approval
+      ansible.builtin.assert:
+        that:
+          - change_approved | default(false) | bool
+          - dbre_approved | default(false) | bool
+          - backup_verified | default(false) | bool
+          - quorum_verified | default(false) | bool
+    - name: Report review-only gate
+      ansible.builtin.debug:
+        msg: "No database modification performed"
