@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 21/100 published**
+**100 chapters · 20 parts · 22/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -12,7 +12,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 02 | 006–010 | Linux and Infrastructure Monitoring | 5/5 |
 | 03 | 011–015 | Prometheus Architecture and Installation | 5/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 5/5 |
-| 05 | 021–025 | Grafana Dashboards and Visualization | 1/5 |
+| 05 | 021–025 | Grafana Dashboards and Visualization | 2/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 0/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 0/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 0/5 |
@@ -106,4 +106,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 021 — Grafana Architecture, Installation, Data Sources and Enterprise Dashboard Foundations](part-05-grafana-dashboards-visualization/021-grafana-architecture-installation-data-sources-enterprise-dashboard-foundations.md)
 - [Chapter 021 — Executable companion lab](part-05-grafana-dashboards-visualization/labs/021-grafana-architecture-installation-data-sources-enterprise-dashboard-foundations-lab.md)
 
-**Next:** Chapter 022 — Grafana Dashboard Design, Variables, Panels, Transformations and Production Visualization Patterns.
+- [Chapter 022 — Grafana Dashboard Design, Variables, Panels, Transformations and Production Visualization Patterns](part-05-grafana-dashboards-visualization/022-grafana-dashboard-design-variables-panels-transformations-production-visualization-patterns.md)
+- [Chapter 022 — Executable companion lab](part-05-grafana-dashboards-visualization/labs/022-grafana-dashboard-design-variables-panels-transformations-production-visualization-patterns-lab.md)
+
+**Next:** Chapter 023 — Grafana Advanced Dashboards, Provisioning, GitOps and Reusable Dashboard Libraries.
