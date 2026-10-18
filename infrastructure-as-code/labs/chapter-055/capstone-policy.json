@@ -1,0 +1,33 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_cni_csi": true,
+  "require_observability": true,
+  "require_least_privilege": true,
+  "require_psa": true,
+  "require_network_isolation": true,
+  "deny_secret_state": true,
+  "require_chart_pinning": true,
+  "require_crd_staging": true,
+  "require_gitops_ownership": true,
+  "deny_dual_reconciliation": true,
+  "require_rollout_rollback": true,
+  "require_backup_restore": true,
+  "require_rpo_rto": true,
+  "require_game_day": true,
+  "require_approvals": true,
+  "deny_destructive_actions": true
+}
