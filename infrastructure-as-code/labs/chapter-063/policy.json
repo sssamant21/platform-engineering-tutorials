@@ -1,0 +1,71 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev"
+  ],
+  "allowed_connections": [
+    "local"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "inventory": [
+      "local_only",
+      "target_reviewed",
+      "limit_verified",
+      "ownership_reviewed",
+      "no_prod_hosts"
+    ],
+    "execution": [
+      "serial_one",
+      "linear_strategy",
+      "bounded_forks",
+      "canary_first",
+      "handlers_change_only",
+      "run_once_semantics_reviewed"
+    ],
+    "errors": [
+      "block_rescue_always",
+      "failure_not_masked",
+      "unreachable_handled",
+      "bounded_retries",
+      "async_status_reviewed",
+      "partial_state_audited"
+    ],
+    "delegation": [
+      "delegate_target_reviewed",
+      "delegate_credentials_scoped",
+      "delegate_facts_reviewed",
+      "controller_actions_safe"
+    ],
+    "security": [
+      "least_privilege",
+      "no_plaintext_secrets",
+      "diff_safe",
+      "ansible_pinned",
+      "change_approved"
+    ],
+    "dbre": [
+      "backup_verified",
+      "dbre_approved",
+      "quorum_reviewed",
+      "slo_reviewed",
+      "rollback_documented",
+      "unapproved_restart"
+    ]
+  },
+  "forbidden_controls": {
+    "dbre": [
+      "unapproved_restart"
+    ]
+  },
+  "require_ticket": true,
+  "deny_prod_targets": true,
+  "require_serial_one": true,
+  "require_failure_gate": true,
+  "require_dbre_approval": true,
+  "deny_plaintext_secrets": true
+}
