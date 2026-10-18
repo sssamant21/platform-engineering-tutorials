@@ -1,0 +1,10 @@
+environment = "prod"
+aws_account_id = "444455556666"
+owner = "security-sre"
+change_ticket = "CHG-SEC-PROD"
+oidc_subject = "repo:example-org/platform-infra:environment:prod"
+oidc_audience = "sts.amazonaws.com"
+kms_rotation_enabled = true
+kms_deletion_window_days = 30
+secret_rotation_enabled = true
+cloudtrail_enabled = true
