@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# REVIEW ONLY: approved read-only identities required.
+aws sts get-caller-identity --profile approved-readonly
+aws cloudformation list-stack-sets --status ACTIVE --profile approved-readonly
+az account show --output json
+az deployment sub list --output json
+az bicep build --file azure/main.bicep --outfile /tmp/ch070-azure.json
