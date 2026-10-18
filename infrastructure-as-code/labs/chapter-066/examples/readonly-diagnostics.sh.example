@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# REVIEW ONLY: approved read-only AWS profile and known stack required.
+aws sts get-caller-identity --profile approved-readonly
+aws cloudformation validate-template --template-body file://template.json --profile approved-readonly
+aws cloudformation list-stacks --stack-status-filter CREATE_COMPLETE UPDATE_COMPLETE --profile approved-readonly
