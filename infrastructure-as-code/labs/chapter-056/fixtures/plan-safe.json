@@ -1,0 +1,23 @@
+{
+  "format_version": "1.2",
+  "resource_changes": [
+    {
+      "address": "terraform_data.compatibility_contract",
+      "type": "terraform_data",
+      "change": {
+        "actions": [
+          "no-op"
+        ]
+      }
+    },
+    {
+      "address": "terraform_data.state_contract",
+      "type": "terraform_data",
+      "change": {
+        "actions": [
+          "update"
+        ]
+      }
+    }
+  ]
+}
