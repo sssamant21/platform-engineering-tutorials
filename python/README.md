@@ -149,7 +149,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 070 — Testing, Debugging and Code Quality Capstone](07-testing-debugging-code-quality/070-testing-debugging-code-quality-capstone.md)
 - [Chapter 070 — Enterprise Testing and Code Quality Capstone SRE/DBRE Lab](07-testing-debugging-code-quality/labs/070-testing-debugging-code-quality-capstone-sre-dbre-lab.md)
 
-### Part 08 — APIs, Networking and Databases (9/10 published)
+### Part 08 — APIs, Networking and Databases (10/10 published — complete)
 - [Chapter 071 — Python HTTP Fundamentals, REST APIs and Reliable API Clients](08-apis-networking-databases/071-python-http-fundamentals-rest-apis-reliable-api-clients.md)
 - [Chapter 071 — Reliable HTTP API Client SRE/DBRE Lab](08-apis-networking-databases/labs/071-reliable-http-api-client-sre-dbre-lab.md)
 - [Chapter 072 — Python HTTP Authentication, API Security and Production Client Patterns](08-apis-networking-databases/072-python-http-authentication-api-security-production-client-patterns.md)
@@ -168,3 +168,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 078 — PostgreSQL Query Performance, Batching and Streaming SRE/DBRE Lab](08-apis-networking-databases/labs/078-postgresql-query-performance-batching-streaming-sre-dbre-lab.md)
 - [Chapter 079 — Python Database Migrations, Schema Evolution and Operational Automation](08-apis-networking-databases/079-python-database-migrations-schema-evolution-operational-automation.md)
 - [Chapter 079 — Alembic, Expand–Contract and Schema Migration SRE/DBRE Lab](08-apis-networking-databases/labs/079-alembic-schema-migrations-expand-contract-sre-dbre-lab.md)
+- [Chapter 080 — Python APIs, Networking and Databases Production Integration Capstone](08-apis-networking-databases/080-python-apis-networking-databases-production-integration-capstone.md)
+- [Chapter 080 — APIs, Networking and Databases Production Integration Capstone SRE/DBRE Lab](08-apis-networking-databases/labs/080-apis-networking-databases-production-integration-capstone-sre-dbre-lab.md)
