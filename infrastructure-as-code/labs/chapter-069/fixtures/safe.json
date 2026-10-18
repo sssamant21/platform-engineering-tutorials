@@ -1,0 +1,52 @@
+{
+  "environment": "lab",
+  "tenant": "offline-sandbox",
+  "subscription": "offline-sandbox",
+  "resource_group": "rg-ch069-lab",
+  "scope": "subscription",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-BICEP-069",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "bicep",
+    "owner": "platform-sre-dbre"
+  },
+  "architecture": {
+    "subscription_scope_reviewed": true,
+    "module_contract_reviewed": true,
+    "existing_resource_group": true,
+    "dependencies_reviewed": true,
+    "module_pinned": true,
+    "secret_outputs_denied": true
+  },
+  "deployment": {
+    "what_if_reviewed": true,
+    "canary_approved": true,
+    "target_matrix_signed": true,
+    "bounded_concurrency": true,
+    "rollback_documented": true,
+    "delete_all": false
+  },
+  "security": {
+    "least_privilege": true,
+    "federated_identity": true,
+    "policy_reviewed": true,
+    "deny_settings_reviewed": true,
+    "module_provenance_verified": true,
+    "secrets_external": true
+  },
+  "dbre": {
+    "backup_verified": true,
+    "restore_rehearsed": true,
+    "dbre_approved": true,
+    "slo_reviewed": true,
+    "rpo_rto_reviewed": true
+  },
+  "governance": {
+    "change_approved": true,
+    "owner_verified": true,
+    "activity_log_enabled": true,
+    "cost_reviewed": true,
+    "drift_reviewed": true
+  }
+}
