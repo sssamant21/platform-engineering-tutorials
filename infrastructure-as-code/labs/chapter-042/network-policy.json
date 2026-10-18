@@ -1,0 +1,40 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_locations": [
+    "eastus",
+    "eastus2",
+    "centralus",
+    "westus2"
+  ],
+  "required_subnets": [
+    "aks",
+    "app",
+    "private_endpoints",
+    "database"
+  ],
+  "required_tags": [
+    "Environment",
+    "ManagedBy",
+    "Owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_nonoverlap": true,
+  "require_private_cidrs": true,
+  "require_nsg_review": true,
+  "deny_public_management": true,
+  "require_udr_review": true,
+  "require_private_endpoint": true,
+  "require_private_dns": true,
+  "require_database_delegation": true,
+  "deny_public_database": true,
+  "require_network_audit": true,
+  "deny_destructive_actions": true
+}
