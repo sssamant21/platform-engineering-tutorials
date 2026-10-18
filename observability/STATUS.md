@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 26 / 100 chapters (26%) · 20 parts · Part 06: 1/5**
+**Progress: 27 / 100 chapters (27%) · 20 parts · Part 06: 2/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -9,7 +9,7 @@
 | 03 — Prometheus Architecture and Installation | 011–015 | 5 | 5 | Complete |
 | 04 — PromQL and Advanced Metrics | 016–020 | 5 | 5 | Complete |
 | 05 — Grafana Dashboards and Visualization | 021–025 | 5 | 5 | Complete |
-| 06 — Alertmanager and Alert Engineering | 026–030 | 1 | 5 | In progress |
+| 06 — Alertmanager and Alert Engineering | 026–030 | 2 | 5 | In progress |
 | 07 — Exporters and Custom Instrumentation | 031–035 | 0 | 5 | Planned |
 | 08 — Centralized Logging with Loki | 036–040 | 0 | 5 | Planned |
 | 09 — Elasticsearch and OpenSearch Logging | 041–045 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–026 and companion labs. Parts 01, 02, 03, 04 and 05 complete (5/5 each); Part 06 in progress (1/5).
+**Published:** Chapters 001–027 and companion labs. Parts 01, 02, 03, 04 and 05 complete (5/5 each); Part 06 in progress (2/5).
 
-**Next:** Chapter 027 — Alertmanager Advanced Routing, Inhibition, Silences, High Availability and Incident Escalation.
+**Next:** Chapter 028 — Alertmanager Notification Templates, Receiver Integrations, Security and Delivery Reliability.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
