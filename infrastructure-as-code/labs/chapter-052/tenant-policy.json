@@ -1,0 +1,30 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_namespace_governance": true,
+  "require_quota": true,
+  "require_psa": true,
+  "require_rbac": true,
+  "deny_cluster_admin": true,
+  "deny_default_sa": true,
+  "require_default_deny": true,
+  "require_dns_egress": true,
+  "deny_broad_egress": true,
+  "require_db_review": true,
+  "require_audit": true,
+  "require_approvals": true,
+  "deny_destructive_actions": true
+}
