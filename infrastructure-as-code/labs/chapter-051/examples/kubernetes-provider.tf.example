@@ -1,0 +1,32 @@
+# REVIEW ONLY: separate root, needs explicit approved kubeconfig and context.
+terraform {
+  required_providers {
+    kubernetes = { source = "hashicorp/kubernetes", version = "~> 2.0" }
+  }
+}
+variable "kubeconfig_path" { type = string }
+variable "kube_context" { type = string }
+provider "kubernetes" {
+  config_path = var.kubeconfig_path
+  config_context = var.kube_context
+}
+resource "kubernetes_namespace_v1" "review" {
+  metadata {
+    name = "iac-review-sandbox"
+    labels = { "pod-security.kubernetes.io/enforce" = "restricted" }
+  }
+}
+resource "kubernetes_resource_quota_v1" "review" {
+  metadata {
+    name = "sandbox-quota"
+    namespace = kubernetes_namespace_v1.review.metadata[0].name
+  }
+  spec {
+    hard = {
+      "requests.cpu" = "2"
+      "requests.memory" = "4Gi"
+      "pods" = "10"
+    }
+  }
+}
+# Before apply: verify context, RBAC, CNI policy, provider schema and ownership.
