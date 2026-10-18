@@ -1,0 +1,54 @@
+# Review-only AWS example: separate approved root, no automatic apply.
+# EKS, ALB, NAT, EC2 and EBS can incur substantial cost.
+terraform {
+  required_providers {
+    aws = { source = "hashicorp/aws", version = "~> 5.0" }
+  }
+}
+variable "region" { type = string }
+variable "account_id" { type = string }
+variable "private_subnet_ids" { type = list(string) }
+variable "cluster_role_arn" { type = string }
+variable "node_role_arn" { type = string }
+variable "ami_id" { type = string }
+variable "instance_profile_name" { type = string }
+variable "security_group_id" { type = string }
+provider "aws" {
+  region = var.region
+  allowed_account_ids = [var.account_id]
+}
+resource "aws_launch_template" "app" {
+  name_prefix = "review-app-"
+  image_id = var.ami_id
+  instance_type = "t3.small"
+  iam_instance_profile { name = var.instance_profile_name }
+  vpc_security_group_ids = [var.security_group_id]
+  metadata_options {
+    http_endpoint = "enabled"
+    http_tokens = "required"
+  }
+  block_device_mappings {
+    device_name = "/dev/xvda"
+    ebs { encrypted = true, volume_size = 30, volume_type = "gp3" }
+  }
+}
+resource "aws_eks_cluster" "review" {
+  name = "review-only-eks"
+  role_arn = var.cluster_role_arn
+  vpc_config {
+    subnet_ids = var.private_subnet_ids
+    endpoint_private_access = true
+    endpoint_public_access = false
+  }
+  enabled_cluster_log_types = ["api", "audit", "authenticator", "controllerManager", "scheduler"]
+}
+resource "aws_eks_node_group" "review" {
+  cluster_name = aws_eks_cluster.review.name
+  node_group_name = "review-workers"
+  node_role_arn = var.node_role_arn
+  subnet_ids = var.private_subnet_ids
+  scaling_config { desired_size = 2, min_size = 2, max_size = 4 }
+  depends_on = [aws_eks_cluster.review]
+}
+# Not a complete deployable production design: supply IAM, SGs, endpoints,
+# private API access, encryption configuration, addon and upgrade plans.
