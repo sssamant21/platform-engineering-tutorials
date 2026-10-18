@@ -1,0 +1,49 @@
+---
+- name: Require local-only canary scope
+  ansible.builtin.assert:
+    that:
+      - inventory_hostname in ['canary_a', 'canary_b']
+      - ansible_connection == 'local'
+      - service_port | int >= 1024
+      - service_port | int <= 65535
+- name: Create isolated sandbox
+  ansible.builtin.file:
+    path: "{{ playbook_dir }}/../sandbox"
+    state: directory
+    mode: '0750'
+- name: Apply canary configuration with explicit failure handling
+  block:
+    - name: Render deterministic per-host configuration
+      ansible.builtin.template:
+        src: service.conf.j2
+        dest: "{{ playbook_dir }}/../sandbox/{{ inventory_hostname }}.conf"
+        mode: '0640'
+      notify: Record config change
+    - name: Inject deliberate canary failure
+      ansible.builtin.assert:
+        that:
+          - not (inject_failure | bool and inventory_hostname == 'canary_a')
+        fail_msg: "Injected canary failure — stop rollout"
+  rescue:
+    - name: Record failure marker
+      ansible.builtin.copy:
+        content: "failure={{ inventory_hostname }}\n"
+        dest: "{{ playbook_dir }}/../sandbox/{{ inventory_hostname }}.failed"
+        mode: '0640'
+    - name: Propagate failure and block next batch
+      ansible.builtin.fail:
+        msg: "Canary failed; operator review required"
+  always:
+    - name: Audit local inspection
+      ansible.builtin.debug:
+        msg: "Inspected {{ inventory_hostname }}; no real service restarted"
+- name: Check config presence after apply
+  ansible.builtin.stat:
+    path: "{{ playbook_dir }}/../sandbox/{{ inventory_hostname }}.conf"
+  register: config_file
+  when: not ansible_check_mode
+- name: Assert config exists
+  ansible.builtin.assert:
+    that:
+      - config_file.stat.exists
+  when: not ansible_check_mode
