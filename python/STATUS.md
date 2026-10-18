@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **62 chapters**
-- Remaining: **58 chapters**
-- Published labs: **62**
-- Next: **063 — Python Test Fixtures, Parameterization and Coverage Engineering**
+- Published: **63 chapters**
+- Remaining: **57 chapters**
+- Published labs: **63**
+- Next: **064 — Python Property-Based Testing and Hypothesis**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–062 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–063 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -106,8 +106,10 @@ Chapter 059: [Tutorial](06-advanced-python-typing-concurrency/059-python-advance
 Chapter 060: [Capstone tutorial](06-advanced-python-typing-concurrency/060-advanced-python-concurrency-capstone.md) · [Executable SRE/DBRE lab](06-advanced-python-typing-concurrency/labs/060-advanced-python-concurrency-capstone-sre-dbre-lab.md). Part 06 publication complete. Automated tests and acceptance execution pending.
 
 ## Part 07 — Testing, Debugging and Code Quality
-Published: **2/10** (Chapters 061–062).
+Published: **3/10** (Chapters 061–063).
 
 Chapter 061: [Tutorial](07-testing-debugging-code-quality/061-python-testing-foundations-unittest-pytest.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/061-testing-foundations-unittest-pytest-sre-dbre-lab.md). unittest and pytest suites published; execution and coverage verification pending.
 
 Chapter 062: [Tutorial](07-testing-debugging-code-quality/062-python-mocking-test-doubles-dependency-injection.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/062-mocking-test-doubles-dependency-injection-sre-dbre-lab.md). Tests published; execution pending.
+
+Chapter 063: [Tutorial](07-testing-debugging-code-quality/063-python-test-fixtures-parameterization-coverage-engineering.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/063-fixtures-parameterization-coverage-sre-dbre-lab.md). Tests and coverage acceptance criteria published; execution pending.
