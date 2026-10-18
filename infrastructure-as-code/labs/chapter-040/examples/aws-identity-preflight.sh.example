@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${AWS_PROFILE:?set approved AWS profile}"
+: "${EXPECTED_AWS_ACCOUNT_ID:?set expected AWS account ID}"
+actual="$(aws sts get-caller-identity --query Account --output text)"
+if [[ "$actual" != "$EXPECTED_AWS_ACCOUNT_ID" ]]; then
+  echo "DENY: unexpected AWS account" >&2
+  exit 1
+fi
+echo "PASS: AWS account verified (not a security acceptance test)"
