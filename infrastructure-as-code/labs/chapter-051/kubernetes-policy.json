@@ -1,0 +1,29 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_cluster_context": true,
+  "require_scoped_identity": true,
+  "require_rbac": true,
+  "deny_cluster_admin": true,
+  "require_default_deny": true,
+  "require_pod_security": true,
+  "require_pdb": true,
+  "require_backup": true,
+  "deny_secret_state": true,
+  "require_monitoring": true,
+  "require_approvals": true,
+  "deny_destructive_actions": true
+}
