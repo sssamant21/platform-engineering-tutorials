@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 55 / 100 chapters (55%) · 20 parts · Part 11: 5/5**
+**Progress: 56 / 100 chapters (56%) · 20 parts · Part 12: 1/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -15,7 +15,7 @@
 | 09 — Elasticsearch and OpenSearch Logging | 041–045 | 5 | 5 | Complete |
 | 10 — OpenTelemetry Architecture and Instrumentation | 046–050 | 5 | 5 | Complete |
 | 11 — Distributed Tracing with Jaeger and Tempo | 051–055 | 5 | 5 | Complete |
-| 12 — Kubernetes EKS AKS and GKE Observability | 056–060 | 0 | 5 | Planned |
+| 12 — Kubernetes EKS AKS and GKE Observability | 056–060 | 1 | 5 | In progress |
 | 13 — Database and Data Platform Observability | 061–065 | 0 | 5 | Planned |
 | 14 — Application Performance Monitoring | 066–070 | 0 | 5 | Planned |
 | 15 — SLIs SLOs and Error Budgets | 071–075 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–055 and companion labs. Parts 01–11 complete (5/5 each).
+**Published:** Chapters 001–056 and companion labs. Parts 01–11 complete (5/5 each); Part 12 in progress (1/5).
 
-**Next:** Chapter 056 — Kubernetes Observability Architecture for EKS, AKS and GKE (Part 12).
+**Next:** Chapter 057 — Kubernetes Cluster and Node Metrics, kube-state-metrics, cAdvisor and Exporters.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
