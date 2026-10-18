@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **100 chapters**
-- Remaining: **20 chapters**
-- Published labs: **100**
-- Next: **101 — Python Production Security Architecture and Secure Coding**
+- Published: **101 chapters**
+- Remaining: **19 chapters**
+- Published labs: **101**
+- Next: **102 — Python Identity, Authentication and Authorization for Production Systems**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–100 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–101 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -189,3 +189,8 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 
 - **Part 10 complete — Chapters 091–100 (10/10 published).** Publication milestone only; live integration and production validation remain pending.
 - Chapter 100 — [Python Cloud-Native Platform Engineering Production Capstone](10-kubernetes-cloud-platform-engineering/100-python-cloud-native-platform-engineering-production-capstone.md) · [SRE/DBRE lab](10-kubernetes-cloud-platform-engineering/labs/100-cloud-native-platform-engineering-production-capstone-lab.md) · [Executable project](10-kubernetes-cloud-platform-engineering/labs/100/README.md). Kubernetes/GitOps, AWS/Azure/GCP inventory, SLOs, incidents, IAM/secrets, capacity, FinOps, approval-gated advisory automation, dry-run, idempotency, 51 offline tests and a 100-point assessment. Equivalent local tests passed; exact committed revision, CI and live cloud integrations remain pending.
+
+## Part 11 — Production Security and Performance
+
+- **Published: 1/10 (Chapter 101); 9 chapters remaining in Part 11.**
+- Chapter 101 — [Python Production Security Architecture and Secure Coding](11-production-security-performance/101-python-production-security-architecture-secure-coding.md) · [SRE/DBRE lab](11-production-security-performance/labs/101-production-security-secure-coding-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/101/README.md). Threat modeling, OWASP, strict input validation, authorization model, supply-chain integrity, secrets redaction, advisory approvals, incident simulations and automated tests. Exact committed test execution, CI and production security review pending.
