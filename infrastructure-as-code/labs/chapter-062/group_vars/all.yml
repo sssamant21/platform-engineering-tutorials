@@ -1,0 +1,4 @@
+---
+service_name: chapter062-demo
+service_port: 18062
+service_owner: platform-sre-dbre
