@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 66 / 120 chapters (55.00%)  
+**Progress:** 67 / 120 chapters (55.83%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -58,7 +58,7 @@
 **Part 11:** 5/5 chapters published — complete (Kubernetes and Helm).  
 **Part 12:** 5/5 chapters published — OpenTofu and Terragrunt (content complete; live acceptance pending).  
 **Part 13:** 5/5 chapters published — Ansible (content complete; live acceptance pending).  
-**Part 14:** 1/5 chapters published — CloudFormation and Bicep.  
+**Part 14:** 2/5 chapters published — CloudFormation and Bicep.  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -79,7 +79,8 @@
 **Chapter 064:** Published; dynamic inventory, local security playbook, declared-evidence governance gate and 56 unit tests authored; live execution and security acceptance pending.  
 **Chapter 065:** Published; local Ansible capstone, backup/restore checksum drill, declared-evidence policy and 49 unit tests authored; live execution, DBRE DR and operational acceptance pending.  
 **Chapter 066:** Published; offline CloudFormation template, change-evidence gate and 46 unit tests authored; live execution, AWS-native change sets and operational acceptance pending.  
-**Next:** Chapter 067 — AWS CloudFormation Advanced Templates, Nested Stacks, StackSets and Enterprise Operations (proposed title).
+**Chapter 067:** Published; offline nested-stack templates, declared-evidence StackSet gate and 51 unit tests authored; AWS-native integration and operational acceptance pending.  
+**Next:** Chapter 068 — Azure Bicep Foundations, ARM Templates, Modules and Deployment Operations (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -149,6 +150,7 @@
 | 064 | Ansible Security, Vault, Dynamic Inventory and Enterprise Automation Governance | Published |
 | 065 | Ansible Enterprise Automation, Security, Operations and Disaster Recovery Capstone | Published |
 | 066 | AWS CloudFormation Foundations, Template Architecture, Stacks and Change Sets | Published |
+| 067 | AWS CloudFormation Advanced Templates, Nested Stacks, StackSets and Enterprise Operations | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -736,3 +738,12 @@
 - [x] Chapter and master index publication; Part 14 underway at 1/5
 - [ ] Offline Python test execution and AWS-native template validation evidence
 - [ ] Production change-set, RDS restore and operational acceptance
+
+## Chapter 067 acceptance — CloudFormation nested stacks and StackSets
+- [x] Advanced templates, nested stacks, StackSets, cross-account governance and recovery theory
+- [x] Offline parent/child templates and declared StackSet policy fixtures
+- [x] Fail-closed Python gate and 51 unit tests authored
+- [x] Twenty-four SRE/DBRE incident scenarios, ten runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 14 at 2/5
+- [ ] Offline Python test execution and AWS-native template validation evidence
+- [ ] StackSet multi-account/region operation, DBRE restore and production acceptance
