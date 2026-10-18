@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 24/100 published**
+**100 chapters · 20 parts · 25/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -12,7 +12,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 02 | 006–010 | Linux and Infrastructure Monitoring | 5/5 |
 | 03 | 011–015 | Prometheus Architecture and Installation | 5/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 5/5 |
-| 05 | 021–025 | Grafana Dashboards and Visualization | 4/5 |
+| 05 | 021–025 | Grafana Dashboards and Visualization | 5/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 0/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 0/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 0/5 |
@@ -115,4 +115,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 024 — Grafana Alerting, Contact Points, Notification Policies and SRE Incident Workflows](part-05-grafana-dashboards-visualization/024-grafana-alerting-contact-points-notification-policies-sre-incident-workflows.md)
 - [Chapter 024 — Executable companion lab](part-05-grafana-dashboards-visualization/labs/024-grafana-alerting-contact-points-notification-policies-sre-incident-workflows-lab.md)
 
-**Next:** Chapter 025 — Grafana Enterprise Dashboards, Alerting, Security and Production Operations Capstone.
+- [Chapter 025 — Grafana Enterprise Dashboards, Alerting, Security and Production Operations Capstone](part-05-grafana-dashboards-visualization/025-grafana-enterprise-dashboards-alerting-security-production-operations-capstone.md)
+- [Chapter 025 — Executable companion lab](part-05-grafana-dashboards-visualization/labs/025-grafana-enterprise-dashboards-alerting-security-production-operations-capstone-lab.md)
+
+**Part 05 complete: 5/5 chapters published.**
+
+**Next:** Chapter 026 — Prometheus Alertmanager Architecture, Installation and Notification Routing Fundamentals (Part 06).
