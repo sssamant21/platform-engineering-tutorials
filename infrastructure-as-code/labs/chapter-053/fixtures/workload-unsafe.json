@@ -1,0 +1,52 @@
+{
+  "environment": "prod",
+  "cluster_name": "sample-iac-prod-053",
+  "namespace": "app-prod",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "CHG-K8S-PROD-053",
+  "state_namespace": "iac-prod-sample-iac-prod-053-app-prod",
+  "labels": {
+    "environment": "prod",
+    "managed-by": "terraform",
+    "owner": "platform-sre-dbre"
+  },
+  "workload": {
+    "immutable_image": true,
+    "readiness_probe": false,
+    "liveness_probe": true,
+    "startup_probe": true,
+    "resource_requests": true,
+    "pdb_reviewed": true,
+    "hpa_pool_capacity_reviewed": true,
+    "graceful_shutdown": true
+  },
+  "storage": {
+    "stateful_operator_reviewed": true,
+    "pvc_reclaim_reviewed": true,
+    "csi_topology_reviewed": true,
+    "snapshot_policy_reviewed": true,
+    "backup_tested": true,
+    "restore_tested": false,
+    "rpo_rto_measured": true
+  },
+  "helm": {
+    "provider_pinned": true,
+    "chart_version_pinned": true,
+    "image_digest_pinned": true,
+    "crd_staged": true,
+    "chart_rbac_reviewed": true,
+    "gitops_ownership_defined": true,
+    "secrets_excluded_from_state": true,
+    "unapproved_uninstall": true
+  },
+  "operations": {
+    "audit_logs_enabled": true,
+    "monitoring_enabled": true,
+    "rollback_tested": true,
+    "dr_runbook_tested": true,
+    "security_approved": true,
+    "dbre_approved": false,
+    "change_approved": true,
+    "unapproved_destroy": false
+  }
+}
