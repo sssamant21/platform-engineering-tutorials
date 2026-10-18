@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **64 chapters**
-- Remaining: **56 chapters**
-- Published labs: **64**
-- Next: **065 — Python Integration Testing and Testcontainers**
+- Published: **65 chapters**
+- Remaining: **55 chapters**
+- Published labs: **65**
+- Next: **066 — Python Debugging, Profiling and Diagnostics**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–064 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–065 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -106,7 +106,7 @@ Chapter 059: [Tutorial](06-advanced-python-typing-concurrency/059-python-advance
 Chapter 060: [Capstone tutorial](06-advanced-python-typing-concurrency/060-advanced-python-concurrency-capstone.md) · [Executable SRE/DBRE lab](06-advanced-python-typing-concurrency/labs/060-advanced-python-concurrency-capstone-sre-dbre-lab.md). Part 06 publication complete. Automated tests and acceptance execution pending.
 
 ## Part 07 — Testing, Debugging and Code Quality
-Published: **4/10** (Chapters 061–064).
+Published: **5/10** (Chapters 061–065).
 
 Chapter 061: [Tutorial](07-testing-debugging-code-quality/061-python-testing-foundations-unittest-pytest.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/061-testing-foundations-unittest-pytest-sre-dbre-lab.md). unittest and pytest suites published; execution and coverage verification pending.
 
@@ -115,3 +115,5 @@ Chapter 062: [Tutorial](07-testing-debugging-code-quality/062-python-mocking-tes
 Chapter 063: [Tutorial](07-testing-debugging-code-quality/063-python-test-fixtures-parameterization-coverage-engineering.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/063-fixtures-parameterization-coverage-sre-dbre-lab.md). Tests and coverage acceptance criteria published; execution pending.
 
 Chapter 064: [Tutorial](07-testing-debugging-code-quality/064-python-property-based-testing-hypothesis.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/064-property-based-testing-hypothesis-sre-dbre-lab.md). Tests published; execution pending.
+
+Chapter 065: [Tutorial](07-testing-debugging-code-quality/065-python-integration-testing-testcontainers.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/065-integration-testing-testcontainers-sre-dbre-lab.md). Tests published; Docker integration execution pending.
