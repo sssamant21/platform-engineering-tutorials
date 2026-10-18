@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 36/100 published**
+**100 chapters · 20 parts · 37/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -15,7 +15,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 05 | 021–025 | Grafana Dashboards and Visualization | 5/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 5/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 5/5 |
-| 08 | 036–040 | Centralized Logging with Loki | 1/5 |
+| 08 | 036–040 | Centralized Logging with Loki | 2/5 |
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 0/5 |
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 0/5 |
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 0/5 |
@@ -157,4 +157,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 036 — Centralized Logging Architecture, Grafana Loki and Log Collection Fundamentals](part-08-centralized-logging-loki/036-centralized-logging-architecture-grafana-loki-log-collection-fundamentals.md)
 - [Chapter 036 — Executable companion lab](part-08-centralized-logging-loki/labs/036-centralized-logging-architecture-grafana-loki-log-collection-fundamentals-lab.md)
 
-**Next:** Chapter 037 — Grafana Alloy Log Pipelines, Parsing, Labeling and Kubernetes Collection.
+- [Chapter 037 — Grafana Alloy Log Pipelines, Parsing, Labeling and Kubernetes Collection](part-08-centralized-logging-loki/037-grafana-alloy-log-pipelines-parsing-labeling-kubernetes-collection.md)
+- [Chapter 037 — Companion lab](part-08-centralized-logging-loki/labs/037-grafana-alloy-log-pipelines-parsing-labeling-kubernetes-collection-lab.md)
+
+**Next:** Chapter 038 — Loki LogQL Advanced Queries, Log-Based Metrics and Troubleshooting.
