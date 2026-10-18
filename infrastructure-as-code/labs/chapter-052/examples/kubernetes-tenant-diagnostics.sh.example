@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${EXPECTED_KUBE_CONTEXT:?set approved context}"
+actual="$(kubectl config current-context)"
+[[ "$actual" == "$EXPECTED_KUBE_CONTEXT" ]] || { echo "DENY: wrong context" >&2; exit 1; }
+kubectl get ns --show-labels
+kubectl get role,rolebinding,serviceaccount,networkpolicy,resourcequota,limitrange -n payments-sandbox
