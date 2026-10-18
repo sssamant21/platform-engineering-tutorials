@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 69 / 120 chapters (57.50%)  
+**Progress:** 70 / 120 chapters (58.33%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -58,7 +58,7 @@
 **Part 11:** 5/5 chapters published — complete (Kubernetes and Helm).  
 **Part 12:** 5/5 chapters published — OpenTofu and Terragrunt (content complete; live acceptance pending).  
 **Part 13:** 5/5 chapters published — Ansible (content complete; live acceptance pending).  
-**Part 14:** 4/5 chapters published — CloudFormation and Bicep.  
+**Part 14:** 5/5 chapters published — CloudFormation and Bicep (content complete; live acceptance pending).  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -82,7 +82,8 @@
 **Chapter 067:** Published; offline nested-stack templates, declared-evidence StackSet gate and 51 unit tests authored; AWS-native integration and operational acceptance pending.  
 **Chapter 068:** Published; Bicep module lab, declared-evidence gate and 49 unit tests authored; native Bicep compilation, Azure what-if and operational acceptance pending.  
 **Chapter 069:** Published; subscription-scoped Bicep module, declared-evidence policy gate and 50 unit tests authored; Bicep compilation, Azure what-if and operational acceptance pending.  
-**Next:** Chapter 070 — CloudFormation and Bicep Enterprise Multi-Cloud Automation and Reliability Capstone (proposed title).
+**Chapter 070:** Published; offline AWS/Azure templates, declared-evidence multi-cloud gate and 57 unit tests authored; native cloud integration, DBRE DR and operational acceptance pending.  
+**Next:** Chapter 071 — Pulumi Foundations, Architecture, Stacks and Infrastructure as Code with Programming Languages (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -155,6 +156,7 @@
 | 067 | AWS CloudFormation Advanced Templates, Nested Stacks, StackSets and Enterprise Operations | Published |
 | 068 | Azure Bicep Foundations, ARM Templates, Modules and Deployment Operations | Published |
 | 069 | Azure Bicep Advanced Modules, Deployment Stacks, Governance and Multi-Subscription Operations | Published |
+| 070 | CloudFormation and Bicep Enterprise Multi-Cloud Automation and Reliability Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -769,3 +771,12 @@
 - [x] Chapter and master index publication; Part 14 at 4/5
 - [ ] Offline Python tests and native Bicep compilation evidence
 - [ ] Azure what-if, deployment-stack integration, DBRE restore and operational acceptance
+
+## Chapter 070 acceptance — CloudFormation and Bicep Part 14 multi-cloud capstone
+- [x] Multi-cloud architecture, CloudFormation/StackSets, Bicep/deployment stacks and DR theory
+- [x] Offline AWS nested templates, Azure Bicep module and declared policy fixtures
+- [x] Fail-closed Python gate and 57 unit tests authored
+- [x] Thirty SRE/DBRE incident simulations, ten runbooks and 100-point final assessment
+- [x] Chapter and master index publication; Part 14 content complete at 5/5
+- [ ] Offline Python tests and native Bicep compilation evidence
+- [ ] AWS/Azure change previews, DBRE restore, SLO game day and production acceptance
