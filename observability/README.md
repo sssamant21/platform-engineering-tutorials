@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 49/100 published**
+**100 chapters · 20 parts · 50/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -17,7 +17,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 07 | 031–035 | Exporters and Custom Instrumentation | 5/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 5/5 |
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 5/5 |
-| 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 4/5 |
+| 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 5/5 |
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 0/5 |
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 0/5 |
 | 13 | 061–065 | Database and Data Platform Observability | 0/5 |
@@ -200,4 +200,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 049 — OpenTelemetry Collector Reliability, Scaling, Tail Sampling and Advanced Processing](part-10-opentelemetry-architecture-instrumentation/049-opentelemetry-collector-reliability-scaling-tail-sampling-advanced-processing.md)
 - [Chapter 049 — Companion lab](part-10-opentelemetry-architecture-instrumentation/labs/049-opentelemetry-collector-reliability-scaling-tail-sampling-advanced-processing-lab.md)
 
-**Next:** Chapter 050 — OpenTelemetry Enterprise Instrumentation, Collector Reliability and Incident Response Capstone.
+- [Chapter 050 — OpenTelemetry Enterprise Instrumentation, Collector Reliability and Incident Response Capstone](part-10-opentelemetry-architecture-instrumentation/050-opentelemetry-enterprise-instrumentation-collector-reliability-incident-response-capstone.md)
+- [Chapter 050 — Companion lab](part-10-opentelemetry-architecture-instrumentation/labs/050-opentelemetry-enterprise-instrumentation-collector-reliability-incident-response-capstone-lab.md)
+
+**Part 10 complete: 5/5 chapters published. Halfway milestone: 50/100.**
+
+**Next:** Chapter 051 — Distributed Tracing Architecture with Jaeger and Grafana Tempo (Part 11).
