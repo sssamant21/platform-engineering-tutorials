@@ -1,0 +1,46 @@
+{
+  "environment": "prod",
+  "cluster_name": "sample-iac-prod-052",
+  "namespace": {
+    "namespace_owner_verified": true,
+    "quota_enabled": true,
+    "limitrange_enabled": true,
+    "psa_restricted": true,
+    "namespace_deletion_protected": true
+  },
+  "owner": "platform-sre",
+  "change_ticket": "CHG-K8S-PROD-052",
+  "state_namespace": "iac-prod-sample-iac-prod-052-payments-prod",
+  "labels": {
+    "environment": "prod",
+    "managed-by": "terraform",
+    "owner": "platform-sre"
+  },
+  "rbac": {
+    "dedicated_service_accounts": true,
+    "rbac_least_privilege": true,
+    "rbac_scoped_rolebindings": true,
+    "effective_permissions_tested": true,
+    "token_automount_disabled": true,
+    "wildcard_cluster_admin": true,
+    "default_service_account_used": false
+  },
+  "network": {
+    "default_deny_ingress": true,
+    "default_deny_egress": false,
+    "dns_egress_explicit": true,
+    "database_egress_scoped": true,
+    "cni_enforcement_tested": true,
+    "broad_egress": false
+  },
+  "operations": {
+    "audit_logs_enabled": true,
+    "monitoring_enabled": true,
+    "tenant_cost_labels": true,
+    "backup_reviewed": true,
+    "dbre_approved": false,
+    "security_approved": true,
+    "change_approved": true,
+    "unapproved_destroy": false
+  }
+}
