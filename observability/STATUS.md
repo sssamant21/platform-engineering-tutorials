@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 32 / 100 chapters (32%) · 20 parts · Part 07: 2/5**
+**Progress: 33 / 100 chapters (33%) · 20 parts · Part 07: 3/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -10,7 +10,7 @@
 | 04 — PromQL and Advanced Metrics | 016–020 | 5 | 5 | Complete |
 | 05 — Grafana Dashboards and Visualization | 021–025 | 5 | 5 | Complete |
 | 06 — Alertmanager and Alert Engineering | 026–030 | 5 | 5 | Complete |
-| 07 — Exporters and Custom Instrumentation | 031–035 | 2 | 5 | In progress |
+| 07 — Exporters and Custom Instrumentation | 031–035 | 3 | 5 | In progress |
 | 08 — Centralized Logging with Loki | 036–040 | 0 | 5 | Planned |
 | 09 — Elasticsearch and OpenSearch Logging | 041–045 | 0 | 5 | Planned |
 | 10 — OpenTelemetry Architecture and Instrumentation | 046–050 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–032 and companion labs. Parts 01, 02, 03, 04, 05 and 06 complete (5/5 each); Part 07 in progress (2/5).
+**Published:** Chapters 001–033 and companion labs. Parts 01, 02, 03, 04, 05 and 06 complete (5/5 each); Part 07 in progress (3/5).
 
-**Next:** Chapter 033 — Prometheus Application Exporters, Blackbox Exporter and Service Availability Monitoring.
+**Next:** Chapter 034 — Custom Prometheus Exporters, Python Instrumentation, Metric Design and Cardinality Control.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
