@@ -172,7 +172,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 080 — APIs, Networking and Databases Production Integration Capstone SRE/DBRE Lab](08-apis-networking-databases/labs/080-apis-networking-databases-production-integration-capstone-sre-dbre-lab.md)
 
 
-### Part 09 — DevOps, SRE and Automation (5/10 published)
+### Part 09 — DevOps, SRE and Automation (6/10 published)
 - [Chapter 081 — Python Infrastructure Automation, CLI Design and Operational Workflows](09-devops-sre-automation/081-python-infrastructure-automation-cli-design-operational-workflows.md)
 - [Chapter 081 — Safe Infrastructure CLI Automation SRE/DevOps/DBRE Lab](09-devops-sre-automation/labs/081-safe-infrastructure-cli-automation-sre-devops-dbre-lab.md)
 - [Chapter 082 — Python Operating System, Process and Service Automation](09-devops-sre-automation/082-python-operating-system-process-service-automation.md)
@@ -186,3 +186,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 085 — Python Cloud Infrastructure Automation with AWS, Azure and GCP](09-devops-sre-automation/085-python-cloud-infrastructure-automation-aws-azure-gcp.md)
 - [Chapter 085 — Multicloud Inventory Automation SRE/DevOps/DBRE Lab](09-devops-sre-automation/labs/085-multicloud-inventory-automation-sre-devops-dbre-lab.md)
 - [Chapter 085 — Standalone Executable Lab Project](09-devops-sre-automation/labs/085/README.md)
+
+- [Chapter 086 — Python Kubernetes and Container Automation](09-devops-sre-automation/086-python-kubernetes-container-automation.md)
+- [Chapter 086 — Kubernetes and Container Automation SRE/DevOps/DBRE Lab](09-devops-sre-automation/labs/086-kubernetes-container-automation-sre-devops-dbre-lab.md)
+- [Chapter 086 — Standalone Executable Project](09-devops-sre-automation/labs/086/README.md)
