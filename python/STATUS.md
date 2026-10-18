@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **78 chapters**
-- Remaining: **42 chapters**
-- Published labs: **78**
-- Next: **079 — Python Database Migrations, Schema Evolution and Operational Automation**
+- Published: **79 chapters**
+- Remaining: **41 chapters**
+- Published labs: **79**
+- Next: **080 — Python APIs, Networking and Databases Production Integration Capstone**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–078 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–079 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -129,7 +129,7 @@ Chapter 069: [Tutorial](07-testing-debugging-code-quality/069-python-security-te
 Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-code-quality-capstone.md) · [Enterprise capstone lab](07-testing-debugging-code-quality/labs/070-testing-debugging-code-quality-capstone-sre-dbre-lab.md). Part 07 content published; tests, SAST, SCA and CI execution pending.
 
 ## Part 08 — APIs, Networking and Databases
-- Published: **8/10** (Chapters 071–078)
+- Published: **9/10** (Chapters 071–079)
 - Chapter 071 — Python HTTP Fundamentals, REST APIs and Reliable API Clients: [Tutorial](08-apis-networking-databases/071-python-http-fundamentals-rest-apis-reliable-api-clients.md) · [Hands-on lab](08-apis-networking-databases/labs/071-reliable-http-api-client-sre-dbre-lab.md). Local HTTP integration tests published; execution pending. Chapter title established when Part 08 began because the prior master curriculum named only the part.
 
 - Chapter 072 — Python HTTP Authentication, API Security and Production Client Patterns: [Tutorial](08-apis-networking-databases/072-python-http-authentication-api-security-production-client-patterns.md) · [Hands-on lab](08-apis-networking-databases/labs/072-secure-http-authentication-api-client-sre-dbre-lab.md). Synthetic loopback authentication and integration tests published; execution pending. OAuth 2.0 and TLS are conceptual, not live provider integrations.
@@ -145,3 +145,5 @@ Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-
 - Chapter 077 — Python PostgreSQL Transactions, Isolation and Reliable Database Operations: [Tutorial](08-apis-networking-databases/077-python-postgresql-transactions-isolation-reliable-database-operations.md) · [Hands-on lab](08-apis-networking-databases/labs/077-postgresql-transactions-isolation-reliability-sre-dbre-lab.md). psycopg 3 integration suite and guided isolation/deadlock simulations published; execution pending. Live tests require an explicitly approved disposable PostgreSQL database.
 
 - Chapter 078 — Python Database Query Performance, Batching and Streaming Results: [Tutorial](08-apis-networking-databases/078-python-database-query-performance-batching-streaming-results.md) · [Hands-on lab](08-apis-networking-databases/labs/078-postgresql-query-performance-batching-streaming-sre-dbre-lab.md). psycopg 3 EXPLAIN, batch insert, COPY, named cursor and timeout integration tests published; execution pending. Requires an explicitly approved disposable PostgreSQL database.
+
+- Chapter 079 — Python Database Migrations, Schema Evolution and Operational Automation: [Tutorial](08-apis-networking-databases/079-python-database-migrations-schema-evolution-operational-automation.md) · [Hands-on lab](08-apis-networking-databases/labs/079-alembic-schema-migrations-expand-contract-sre-dbre-lab.md). Alembic revisions, SQLite smoke tests and optional disposable PostgreSQL migration tests published; execution pending. PostgreSQL online DDL and lock drills are guided exercises.
