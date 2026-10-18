@@ -1,0 +1,60 @@
+{
+  "environment": "lab",
+  "inventory": {
+    "approved_source": true,
+    "host_count_reviewed": true,
+    "tenant_isolated": true,
+    "account_region_scoped": true,
+    "owner_verified": true,
+    "cache_ttl_reviewed": true,
+    "no_prod_targets": true
+  },
+  "target_hosts": [
+    "prod-db-01"
+  ],
+  "owner": "platform-sre-dbre",
+  "tenant": "production",
+  "change_ticket": "LAB-ANS-064",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "ansible",
+    "owner": "platform-sre-dbre"
+  },
+  "secrets": {
+    "vault_policy_reviewed": true,
+    "vault_keys_external": true,
+    "no_plaintext_secrets": false,
+    "no_log_sensitive": true,
+    "diff_secrets_disabled": true,
+    "rotation_tested": true
+  },
+  "identity": {
+    "least_privilege": true,
+    "become_disabled_lab": true,
+    "ssh_host_keys_verified": true,
+    "runner_oidc_scoped": true,
+    "untrusted_pr_denied": true
+  },
+  "supply_chain": {
+    "ansible_pinned": true,
+    "collections_pinned": true,
+    "artifact_provenance_reviewed": true,
+    "callback_plugins_reviewed": true,
+    "execution_environment_reviewed": true
+  },
+  "governance": {
+    "change_approved": true,
+    "security_approved": true,
+    "inventory_snapshot_recorded": true,
+    "audit_enabled": true,
+    "segregation_of_duties": true
+  },
+  "dbre": {
+    "backup_verified": true,
+    "dbre_approved": true,
+    "quorum_reviewed": true,
+    "slo_reviewed": true,
+    "rollback_documented": true,
+    "unapproved_restart": true
+  }
+}
