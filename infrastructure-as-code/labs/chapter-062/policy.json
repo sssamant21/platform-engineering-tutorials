@@ -1,0 +1,58 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "inventory": [
+      "localhost_only",
+      "hosts_reviewed",
+      "inventory_isolated",
+      "limit_verified",
+      "owner_defined"
+    ],
+    "roles": [
+      "role_reusable",
+      "defaults_defined",
+      "tasks_fqcn",
+      "templates_reviewed",
+      "handlers_change_only",
+      "variable_contracts_validated",
+      "idempotence_verified"
+    ],
+    "security": [
+      "least_privilege",
+      "become_disabled",
+      "secrets_external",
+      "diff_safe",
+      "dependencies_pinned",
+      "change_approved"
+    ],
+    "operations": [
+      "check_mode_reviewed",
+      "drift_tested",
+      "backup_verified",
+      "dbre_approved",
+      "rollback_documented",
+      "slo_reviewed"
+    ]
+  },
+  "forbidden_controls": {
+    "operations": [
+      "unapproved_restart"
+    ],
+    "security": [
+      "plaintext_secrets"
+    ]
+  },
+  "require_ticket": true,
+  "deny_prod_targets": true,
+  "require_idempotence": true,
+  "require_approval": true,
+  "require_backup": true
+}
