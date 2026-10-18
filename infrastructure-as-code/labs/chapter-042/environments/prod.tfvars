@@ -1,0 +1,17 @@
+environment = "prod"
+subscription_id = "33333333-3333-4333-8333-333333333333"
+location = "eastus2"
+owner = "production-network-sre"
+change_ticket = "CHG-AZNET-PROD"
+vnet_cidr = "10.52.0.0/16"
+aks_subnet_cidr = "10.52.0.0/22"
+app_subnet_cidr = "10.52.4.0/24"
+endpoint_subnet_cidr = "10.52.5.0/24"
+database_subnet_cidr = "10.52.6.0/24"
+nsg_reviewed = true
+udr_reviewed = true
+private_endpoint_enabled = true
+private_dns_linked = true
+database_subnet_delegated = true
+public_database_access_disabled = true
+flow_logs_enabled = true
