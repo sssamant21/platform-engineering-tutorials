@@ -1,13 +1,13 @@
 # Observability Curriculum Status
 
-**Progress: 19 / 100 chapters (19%) · 20 parts · Part 04: 4/5**
+**Progress: 20 / 100 chapters (20%) · 20 parts · Part 04: 5/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
 | 01 — Observability Fundamentals and Reliability Signals | 001–005 | 5 | 5 | Complete |
 | 02 — Linux and Infrastructure Monitoring | 006–010 | 5 | 5 | Complete |
 | 03 — Prometheus Architecture and Installation | 011–015 | 5 | 5 | Complete |
-| 04 — PromQL and Advanced Metrics | 016–020 | 4 | 5 | In progress |
+| 04 — PromQL and Advanced Metrics | 016–020 | 5 | 5 | Complete |
 | 05 — Grafana Dashboards and Visualization | 021–025 | 0 | 5 | Planned |
 | 06 — Alertmanager and Alert Engineering | 026–030 | 0 | 5 | Planned |
 | 07 — Exporters and Custom Instrumentation | 031–035 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–019 and companion labs. Parts 01, 02 and 03 complete (5/5 each); Part 04 in progress (4/5).
+**Published:** Chapters 001–020 and companion labs. Parts 01, 02, 03 and 04 complete (5/5 each).
 
-**Next:** Chapter 020 — PromQL Production Query Engineering, SLO Alerting and Performance Capstone.
+**Next:** Chapter 021 — Grafana Architecture, Installation, Data Sources and Enterprise Dashboard Foundations (Part 05).
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
