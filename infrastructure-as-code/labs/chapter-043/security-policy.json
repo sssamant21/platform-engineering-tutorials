@@ -1,0 +1,37 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_oidc_issuers": [
+    "https://token.actions.githubusercontent.com"
+  ],
+  "allowed_oidc_audiences": [
+    "api://AzureADTokenExchange"
+  ],
+  "required_tags": [
+    "Environment",
+    "ManagedBy",
+    "Owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_oidc": true,
+  "deny_static_secrets": true,
+  "require_managed_identity": true,
+  "require_scoped_rbac": true,
+  "deny_privileged_roles": true,
+  "require_key_vault_private": true,
+  "require_key_vault_rbac": true,
+  "require_purge_protection": true,
+  "require_secret_rotation": true,
+  "deny_plaintext_secret_state": true,
+  "require_cmk_recovery": true,
+  "require_secure_state": true,
+  "require_audit": true,
+  "deny_destructive_actions": true
+}
