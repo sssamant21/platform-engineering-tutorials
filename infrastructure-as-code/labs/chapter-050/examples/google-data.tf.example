@@ -1,0 +1,28 @@
+# REVIEW ONLY: separate root; billable, not production-ready.
+terraform { required_providers { google = { source = "hashicorp/google", version = "~> 6.0" } } }
+variable "project_id" { type = string }
+variable "region" { type = string }
+variable "private_network_id" { type = string }
+provider "google" { project = var.project_id, region = var.region }
+resource "google_storage_bucket" "recovery_artifacts" {
+  name = "REPLACE-WITH-APPROVED-GLOBALLY-UNIQUE-BUCKET"
+  location = var.region
+  uniform_bucket_level_access = true
+  public_access_prevention = "enforced"
+  versioning { enabled = true }
+  lifecycle { prevent_destroy = true }
+}
+resource "google_sql_database_instance" "review" {
+  name = "iac-review-postgres"
+  region = var.region
+  database_version = "POSTGRES_16"
+  deletion_protection = true
+  settings {
+    tier = "db-custom-2-7680"
+    availability_type = "REGIONAL"
+    backup_configuration { enabled = true, point_in_time_recovery_enabled = true }
+    ip_configuration { ipv4_enabled = false, private_network = var.private_network_id }
+  }
+  lifecycle { prevent_destroy = true }
+}
+# Verify provider schema, API, PSA, backup support, quota, pricing and approvals.
