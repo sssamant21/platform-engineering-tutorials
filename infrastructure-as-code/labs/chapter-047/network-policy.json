@@ -1,0 +1,35 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_regions": [
+    "us-central1",
+    "us-east1",
+    "us-east4",
+    "us-west1"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_custom_vpc": true,
+  "require_nonoverlapping_cidrs": true,
+  "require_private_google_access": true,
+  "require_restricted_firewall": true,
+  "deny_public_management_and_database_ingress": true,
+  "require_nat": true,
+  "require_private_service_review": true,
+  "require_dns_review": true,
+  "require_hybrid_review": true,
+  "require_flow_logs": true,
+  "require_dbre_approval": true,
+  "deny_destructive_actions": true
+}
