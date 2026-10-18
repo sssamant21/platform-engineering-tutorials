@@ -149,7 +149,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 070 — Testing, Debugging and Code Quality Capstone](07-testing-debugging-code-quality/070-testing-debugging-code-quality-capstone.md)
 - [Chapter 070 — Enterprise Testing and Code Quality Capstone SRE/DBRE Lab](07-testing-debugging-code-quality/labs/070-testing-debugging-code-quality-capstone-sre-dbre-lab.md)
 
-### Part 08 — APIs, Networking and Databases (4/10 published)
+### Part 08 — APIs, Networking and Databases (5/10 published)
 - [Chapter 071 — Python HTTP Fundamentals, REST APIs and Reliable API Clients](08-apis-networking-databases/071-python-http-fundamentals-rest-apis-reliable-api-clients.md)
 - [Chapter 071 — Reliable HTTP API Client SRE/DBRE Lab](08-apis-networking-databases/labs/071-reliable-http-api-client-sre-dbre-lab.md)
 - [Chapter 072 — Python HTTP Authentication, API Security and Production Client Patterns](08-apis-networking-databases/072-python-http-authentication-api-security-production-client-patterns.md)
@@ -158,3 +158,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 073 — Resilient HTTP Sessions and Pagination SRE/DBRE Lab](08-apis-networking-databases/labs/073-resilient-http-sessions-pagination-sre-dbre-lab.md)
 - [Chapter 074 — Python Async HTTP Clients and Concurrent API Operations](08-apis-networking-databases/074-python-async-http-clients-concurrent-api-operations.md)
 - [Chapter 074 — Async HTTP and Concurrency SRE/DBRE Lab](08-apis-networking-databases/labs/074-async-http-concurrency-sre-dbre-lab.md)
+- [Chapter 075 — Python Socket Programming, DNS and Network Troubleshooting](08-apis-networking-databases/075-python-socket-programming-dns-network-troubleshooting.md)
+- [Chapter 075 — TCP, UDP, DNS and TLS Network Troubleshooting SRE/DBRE Lab](08-apis-networking-databases/labs/075-tcp-udp-dns-tls-network-troubleshooting-sre-dbre-lab.md)
