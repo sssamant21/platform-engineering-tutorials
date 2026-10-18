@@ -1,0 +1,49 @@
+{
+  "environment": "prod",
+  "subscription_id": "33333333-3333-4333-8333-333333333333",
+  "location": "eastus2",
+  "owner": "production-platform-sre",
+  "change_ticket": "CHG-AZAKS-044",
+  "state_namespace": "iac-prod-33333333-3333-4333-8333-333333333333-compute",
+  "compute": {
+    "vm_sku": "Standard_D4s_v5",
+    "node_count": 3,
+    "availability_zones": [
+      "1",
+      "2",
+      "3"
+    ],
+    "vmss_health_probes": true,
+    "upgrade_reviewed": true
+  },
+  "aks": {
+    "private_cluster": true,
+    "oidc_issuer_enabled": true,
+    "workload_identity_enabled": true,
+    "kubernetes_version_reviewed": true,
+    "system_pool_dedicated": true,
+    "autoscaler_enabled": true,
+    "network_model_reviewed": true
+  },
+  "application": {
+    "image_digest_pinned": true,
+    "acr_private": true,
+    "acr_identity_reviewed": true,
+    "pdb_enabled": true,
+    "replicas": 3,
+    "private_database_access": true,
+    "ingress_tls_enabled": true
+  },
+  "audit": {
+    "diagnostics_enabled": true,
+    "alerting_enabled": true,
+    "slo_reviewed": true,
+    "dbre_connection_tested": true,
+    "rollback_drill_passed": true
+  },
+  "tags": {
+    "Environment": "prod",
+    "ManagedBy": "terraform",
+    "Owner": "production-platform-sre"
+  }
+}
