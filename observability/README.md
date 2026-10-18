@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 19/100 published**
+**100 chapters · 20 parts · 20/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -11,7 +11,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 01 | 001–005 | Observability Fundamentals and Reliability Signals | 5/5 |
 | 02 | 006–010 | Linux and Infrastructure Monitoring | 5/5 |
 | 03 | 011–015 | Prometheus Architecture and Installation | 5/5 |
-| 04 | 016–020 | PromQL and Advanced Metrics | 4/5 |
+| 04 | 016–020 | PromQL and Advanced Metrics | 5/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 0/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 0/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 0/5 |
@@ -98,4 +98,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 019 — Advanced PromQL Subqueries, Recording Rules, Query Performance and SLO Engineering](part-04-promql-advanced-metrics/019-advanced-promql-subqueries-recording-rules-query-performance-slo-engineering.md)
 - [Chapter 019 — Executable companion lab](part-04-promql-advanced-metrics/labs/019-advanced-promql-subqueries-recording-rules-query-performance-slo-engineering-lab.md)
 
-**Next:** Chapter 020 — PromQL Production Query Engineering, SLO Alerting and Performance Capstone.
+- [Chapter 020 — PromQL Production Query Engineering, SLO Alerting and Performance Capstone](part-04-promql-advanced-metrics/020-promql-production-query-engineering-slo-alerting-performance-capstone.md)
+- [Chapter 020 — Executable companion lab](part-04-promql-advanced-metrics/labs/020-promql-production-query-engineering-slo-alerting-performance-capstone-lab.md)
+
+**Part 04 complete: 5/5 chapters published.**
+
+**Next:** Chapter 021 — Grafana Architecture, Installation, Data Sources and Enterprise Dashboard Foundations (Part 05).
