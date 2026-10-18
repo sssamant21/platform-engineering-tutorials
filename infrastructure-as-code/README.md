@@ -155,7 +155,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 060 executable labs and tests](labs/chapter-060/)
 - [061 — Ansible Foundations, Architecture, Inventory and Configuration Management](chapters/061-ansible-foundations-architecture-inventory-configuration-management.md)
 - [Chapter 061 executable labs and tests](labs/chapter-061/)
+- [062 — Ansible Playbooks, Roles, Variables, Templates and Reusable Automation](chapters/062-ansible-playbooks-roles-variables-templates-reusable-automation.md)
+- [Chapter 062 executable labs and tests](labs/chapter-062/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 underway (061 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 underway (061–062 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
