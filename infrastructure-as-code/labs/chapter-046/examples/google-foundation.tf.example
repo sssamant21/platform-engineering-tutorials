@@ -1,0 +1,24 @@
+# REVIEW ONLY: separate root and approved project; may create billable resources.
+terraform {
+  required_providers {
+    google = { source = "hashicorp/google", version = "~> 6.0" }
+  }
+}
+variable "project_id" { type = string }
+variable "region" { type = string }
+provider "google" {
+  project = var.project_id
+  region = var.region
+}
+resource "google_project_service" "serviceusage" {
+  project = var.project_id
+  service = "serviceusage.googleapis.com"
+  disable_on_destroy = false
+}
+resource "google_project_service" "compute" {
+  project = var.project_id
+  service = "compute.googleapis.com"
+  disable_on_destroy = false
+  depends_on = [google_project_service.serviceusage]
+}
+# Before applying: verify billing, org policy, IAM, quotas, audit logs and cost.
