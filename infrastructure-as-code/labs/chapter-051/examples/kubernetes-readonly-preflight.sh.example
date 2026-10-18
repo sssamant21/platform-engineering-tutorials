@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${EXPECTED_KUBE_CONTEXT:?set approved context}"
+actual="$(kubectl config current-context)"
+[[ "$actual" == "$EXPECTED_KUBE_CONTEXT" ]] || { echo "DENY: wrong cluster context" >&2; exit 1; }
+kubectl cluster-info
+kubectl get namespaces
+kubectl auth can-i list deployments --all-namespaces
