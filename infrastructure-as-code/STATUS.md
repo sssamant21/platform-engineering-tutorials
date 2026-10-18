@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 70 / 120 chapters (58.33%)  
+**Progress:** 71 / 120 chapters (59.17%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -59,6 +59,7 @@
 **Part 12:** 5/5 chapters published — OpenTofu and Terragrunt (content complete; live acceptance pending).  
 **Part 13:** 5/5 chapters published — Ansible (content complete; live acceptance pending).  
 **Part 14:** 5/5 chapters published — CloudFormation and Bicep (content complete; live acceptance pending).  
+**Part 15:** 1/5 chapters published — Pulumi.  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -83,7 +84,8 @@
 **Chapter 068:** Published; Bicep module lab, declared-evidence gate and 49 unit tests authored; native Bicep compilation, Azure what-if and operational acceptance pending.  
 **Chapter 069:** Published; subscription-scoped Bicep module, declared-evidence policy gate and 50 unit tests authored; Bicep compilation, Azure what-if and operational acceptance pending.  
 **Chapter 070:** Published; offline AWS/Azure templates, declared-evidence multi-cloud gate and 57 unit tests authored; native cloud integration, DBRE DR and operational acceptance pending.  
-**Next:** Chapter 071 — Pulumi Foundations, Architecture, Stacks and Infrastructure as Code with Programming Languages (proposed title).
+**Chapter 071:** Published; local-only Pulumi Python program, declared-evidence gate and 48 unit tests authored; native Pulumi execution and operational acceptance pending.  
+**Next:** Chapter 072 — Pulumi Resource Models, Providers, Components and Dependency Management (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -157,6 +159,7 @@
 | 068 | Azure Bicep Foundations, ARM Templates, Modules and Deployment Operations | Published |
 | 069 | Azure Bicep Advanced Modules, Deployment Stacks, Governance and Multi-Subscription Operations | Published |
 | 070 | CloudFormation and Bicep Enterprise Multi-Cloud Automation and Reliability Capstone | Published |
+| 071 | Pulumi Foundations, Architecture, Stacks and Infrastructure as Code with Programming Languages | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -780,3 +783,12 @@
 - [x] Chapter and master index publication; Part 14 content complete at 5/5
 - [ ] Offline Python tests and native Bicep compilation evidence
 - [ ] AWS/Azure change previews, DBRE restore, SLO game day and production acceptance
+
+## Chapter 071 acceptance — Pulumi foundations and stacks
+- [x] Pulumi engine, providers, stacks, state, secrets and resource graph theory
+- [x] Local-only Python Pulumi project and declared policy fixtures
+- [x] Fail-closed Python gate and 48 unit tests authored
+- [x] Twenty-eight SRE/DBRE incident scenarios, ten runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 15 underway at 1/5
+- [ ] Offline Python test execution and Pulumi preview/up/destroy evidence
+- [ ] State recovery rehearsal, DBRE restore and production operational acceptance
