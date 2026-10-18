@@ -1,0 +1,6 @@
+name: iac-ch071-pulumi
+runtime:
+  name: python
+  options:
+    virtualenv: .venv
+description: Local-only Pulumi fundamentals lab (no cloud resources)
