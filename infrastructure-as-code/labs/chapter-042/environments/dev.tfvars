@@ -1,0 +1,17 @@
+environment = "dev"
+subscription_id = "22222222-2222-4222-8222-222222222222"
+location = "eastus2"
+owner = "network-sre"
+change_ticket = "CHG-AZNET-DEV"
+vnet_cidr = "10.42.0.0/16"
+aks_subnet_cidr = "10.42.0.0/22"
+app_subnet_cidr = "10.42.4.0/24"
+endpoint_subnet_cidr = "10.42.5.0/24"
+database_subnet_cidr = "10.42.6.0/24"
+nsg_reviewed = true
+udr_reviewed = true
+private_endpoint_enabled = true
+private_dns_linked = true
+database_subnet_delegated = true
+public_database_access_disabled = true
+flow_logs_enabled = true
