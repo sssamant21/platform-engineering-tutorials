@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 40/100 published**
+**100 chapters · 20 parts · 41/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -16,7 +16,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 06 | 026–030 | Alertmanager and Alert Engineering | 5/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 5/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 5/5 |
-| 09 | 041–045 | Elasticsearch and OpenSearch Logging | 0/5 |
+| 09 | 041–045 | Elasticsearch and OpenSearch Logging | 1/5 |
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 0/5 |
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 0/5 |
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 0/5 |
@@ -171,4 +171,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 
 **Part 08 complete: 5/5 chapters published.**
 
-**Next:** Chapter 041 — Elasticsearch and OpenSearch Logging Architecture, Index Design and Ingestion Foundations (Part 09).
+- [Chapter 041 — Elasticsearch and OpenSearch Logging Architecture, Index Design and Ingestion Foundations](part-09-elasticsearch-opensearch-logging/041-elasticsearch-opensearch-logging-architecture-index-design-ingestion-foundations.md)
+- [Chapter 041 — Companion lab](part-09-elasticsearch-opensearch-logging/labs/041-elasticsearch-opensearch-logging-architecture-index-design-ingestion-foundations-lab.md)
+
+**Next:** Chapter 042 — Elasticsearch and OpenSearch Log Ingestion Pipelines, Fluent Bit, Parsing and Data Quality.
