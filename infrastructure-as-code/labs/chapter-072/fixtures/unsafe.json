@@ -1,0 +1,50 @@
+{
+  "environment": "lab",
+  "stack": "dev",
+  "project": "iac-ch072-pulumi",
+  "provider_target": "production",
+  "region": "local",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-PULUMI-072",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "pulumi",
+    "owner": "platform-sre-dbre"
+  },
+  "architecture": {
+    "custom_resource_reviewed": true,
+    "component_contract_reviewed": true,
+    "provider_isolation_reviewed": true,
+    "dependency_graph_reviewed": true,
+    "urn_aliases_reviewed": true
+  },
+  "resources": {
+    "stateful_protected": false,
+    "parents_explicit": true,
+    "providers_pinned": true,
+    "secret_outputs_denied": true,
+    "replacement_approved": true,
+    "destructive_action": true
+  },
+  "security": {
+    "least_privilege": true,
+    "no_plaintext_secrets": true,
+    "supply_chain_verified": true,
+    "audit_enabled": true,
+    "workload_identity_reviewed": true
+  },
+  "operations": {
+    "preview_reviewed": true,
+    "canary_approved": true,
+    "rollback_documented": true,
+    "state_backup_verified": true,
+    "slo_reviewed": true
+  },
+  "dbre": {
+    "backup_verified": false,
+    "restore_rehearsed": true,
+    "dbre_approved": true,
+    "quorum_reviewed": true,
+    "rpo_rto_reviewed": true
+  }
+}
