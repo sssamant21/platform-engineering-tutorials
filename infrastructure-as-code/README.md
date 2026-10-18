@@ -121,7 +121,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 043 executable labs and tests](labs/chapter-043/)
 - [044 — Azure Compute, AKS and Application Infrastructure with Terraform](chapters/044-azure-compute-aks-application-infrastructure-terraform.md)
 - [Chapter 044 executable labs and tests](labs/chapter-044/)
+- [045 — Azure Stateful Data, Storage, Resilience and Production Operations Capstone](chapters/045-azure-stateful-data-storage-resilience-production-operations-capstone.md)
+- [Chapter 045 executable labs and tests](labs/chapter-045/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 underway (041–044 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
