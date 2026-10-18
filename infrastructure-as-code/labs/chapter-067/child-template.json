@@ -1,0 +1,27 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Chapter 067 offline child contract; DO NOT DEPLOY",
+  "Parameters": {
+    "Environment": {
+      "Type": "String",
+      "Default": "lab",
+      "AllowedValues": [
+        "lab",
+        "dev"
+      ]
+    }
+  },
+  "Resources": {
+    "DemoHandle": {
+      "Type": "AWS::CloudFormation::WaitConditionHandle",
+      "DeletionPolicy": "Retain"
+    }
+  },
+  "Outputs": {
+    "Environment": {
+      "Value": {
+        "Ref": "Environment"
+      }
+    }
+  }
+}
