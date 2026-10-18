@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 43/100 published**
+**100 chapters · 20 parts · 44/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -16,7 +16,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 06 | 026–030 | Alertmanager and Alert Engineering | 5/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 5/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 5/5 |
-| 09 | 041–045 | Elasticsearch and OpenSearch Logging | 3/5 |
+| 09 | 041–045 | Elasticsearch and OpenSearch Logging | 4/5 |
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 0/5 |
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 0/5 |
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 0/5 |
@@ -180,4 +180,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 043 — Elasticsearch and OpenSearch Log Search, Query DSL, Dashboards and Correlation](part-09-elasticsearch-opensearch-logging/043-elasticsearch-opensearch-log-search-query-dsl-dashboards-correlation.md)
 - [Chapter 043 — Companion lab](part-09-elasticsearch-opensearch-logging/labs/043-elasticsearch-opensearch-log-search-query-dsl-dashboards-correlation-lab.md)
 
-**Next:** Chapter 044 — Elasticsearch and OpenSearch Logging Lifecycle, Retention, Shard Optimization and Cost Management.
+- [Chapter 044 — Elasticsearch and OpenSearch Logging Lifecycle, Retention, Shard Optimization and Cost Management](part-09-elasticsearch-opensearch-logging/044-elasticsearch-opensearch-logging-lifecycle-retention-shard-optimization-cost-management.md)
+- [Chapter 044 — Companion lab](part-09-elasticsearch-opensearch-logging/labs/044-elasticsearch-opensearch-logging-lifecycle-retention-shard-optimization-cost-management-lab.md)
+
+**Next:** Chapter 045 — Elasticsearch and OpenSearch Production Logging Reliability, Security and Troubleshooting Capstone.
