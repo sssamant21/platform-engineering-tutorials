@@ -1,0 +1,50 @@
+{
+  "environment": "prod",
+  "root_name": "iac-terragrunt-prod-058",
+  "backend_key": "iac/prod/chapter-058.tfstate",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "CHG-TG-PROD-058",
+  "state_namespace": "iac-prod-iac-terragrunt-prod-058",
+  "labels": {
+    "environment": "prod",
+    "managed-by": "terragrunt",
+    "owner": "platform-sre-dbre"
+  },
+  "composition": {
+    "terragrunt_version_pinned": true,
+    "tofu_version_pinned": true,
+    "include_paths_reviewed": true,
+    "parent_local_scope_reviewed": true,
+    "environment_inputs_explicit": true,
+    "module_source_pinned": true,
+    "effective_config_reviewed": true
+  },
+  "state": {
+    "backend_keys_unique": true,
+    "backend_encrypted": true,
+    "backend_lock_verified": true,
+    "state_backup_verified": true,
+    "restore_tested": true,
+    "account_region_isolated": true,
+    "concurrent_writers": false
+  },
+  "dependency": {
+    "graph_acyclic": true,
+    "dependency_outputs_reviewed": true,
+    "mock_outputs_disabled_prod": true,
+    "bounded_parallelism": true,
+    "partial_failure_runbook": true,
+    "promotions_approved": true,
+    "competing_orchestrators": false
+  },
+  "operations": {
+    "oidc_short_lived": true,
+    "policy_gate_enabled": true,
+    "drift_reviewed": true,
+    "slo_monitored": true,
+    "dbre_approved": true,
+    "security_approved": true,
+    "change_approved": true,
+    "unapproved_destroy": false
+  }
+}
