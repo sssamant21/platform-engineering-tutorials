@@ -172,8 +172,10 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 080 — APIs, Networking and Databases Production Integration Capstone SRE/DBRE Lab](08-apis-networking-databases/labs/080-apis-networking-databases-production-integration-capstone-sre-dbre-lab.md)
 
 
-### Part 09 — DevOps, SRE and Automation (2/10 published)
+### Part 09 — DevOps, SRE and Automation (3/10 published)
 - [Chapter 081 — Python Infrastructure Automation, CLI Design and Operational Workflows](09-devops-sre-automation/081-python-infrastructure-automation-cli-design-operational-workflows.md)
 - [Chapter 081 — Safe Infrastructure CLI Automation SRE/DevOps/DBRE Lab](09-devops-sre-automation/labs/081-safe-infrastructure-cli-automation-sre-devops-dbre-lab.md)
 - [Chapter 082 — Python Operating System, Process and Service Automation](09-devops-sre-automation/082-python-operating-system-process-service-automation.md)
 - [Chapter 082 — OS, Process and Service Automation SRE/DevOps/DBRE Lab](09-devops-sre-automation/labs/082-os-process-service-automation-sre-devops-dbre-lab.md)
+- [Chapter 083 — Python Scheduling, Background Jobs and Reliable Task Automation](09-devops-sre-automation/083-python-scheduling-background-jobs-reliable-task-automation.md)
+- [Chapter 083 — Scheduling, Background Jobs and Reliable Task Automation SRE/DBRE Lab](09-devops-sre-automation/labs/083-scheduling-background-jobs-reliable-task-automation-sre-dbre-lab.md)
