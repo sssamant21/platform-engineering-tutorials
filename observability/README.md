@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 53/100 published**
+**100 chapters · 20 parts · 54/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -18,7 +18,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 08 | 036–040 | Centralized Logging with Loki | 5/5 |
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 5/5 |
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 5/5 |
-| 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 3/5 |
+| 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 4/5 |
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 0/5 |
 | 13 | 061–065 | Database and Data Platform Observability | 0/5 |
 | 14 | 066–070 | Application Performance Monitoring | 0/5 |
@@ -214,4 +214,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 053 — Grafana Tempo Deployment, Object Storage, TraceQL and Query Operations](part-11-distributed-tracing-jaeger-tempo/053-grafana-tempo-deployment-object-storage-traceql-query-operations.md)
 - [Chapter 053 — Companion lab](part-11-distributed-tracing-jaeger-tempo/labs/053-grafana-tempo-deployment-object-storage-traceql-query-operations-lab.md)
 
-**Next:** Chapter 054 — Distributed Trace Analysis, Service Dependencies, Sampling and Metrics Correlation.
+- [Chapter 054 — Distributed Trace Analysis, Service Dependencies, Sampling and Metrics Correlation](part-11-distributed-tracing-jaeger-tempo/054-distributed-trace-analysis-service-dependencies-sampling-metrics-correlation.md)
+- [Chapter 054 — Companion lab](part-11-distributed-tracing-jaeger-tempo/labs/054-distributed-trace-analysis-service-dependencies-sampling-metrics-correlation-lab.md)
+
+**Next:** Chapter 055 — Jaeger and Tempo Production Reliability, Performance, Security and Troubleshooting Capstone.
