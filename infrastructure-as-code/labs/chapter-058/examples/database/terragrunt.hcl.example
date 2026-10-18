@@ -1,0 +1,15 @@
+# REVIEW ONLY — do not use dependency mocks in production apply.
+include "root" {
+  path = find_in_parent_folders("root.hcl")
+}
+terraform {
+  source = "git::https://example.invalid/platform/modules.git//database?ref=REPLACE-WITH-IMMUTABLE-SHA"
+}
+dependency "network" {
+  config_path = "../network"
+}
+inputs = {
+  environment     = "dev"
+  private_subnets = dependency.network.outputs.private_subnet_ids
+  deletion_protection = true
+}
