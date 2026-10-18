@@ -1,0 +1,46 @@
+{
+  "environment": "lab",
+  "inventory": {
+    "localhost_only": true,
+    "inventory_reviewed": true,
+    "limit_verified": true,
+    "no_prod_hosts": true,
+    "host_group_ownership": true,
+    "connection_local": true
+  },
+  "target_hosts": [
+    "localhost"
+  ],
+  "connection": "local",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-ANSIBLE-061",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "ansible",
+    "owner": "platform-sre-dbre"
+  },
+  "configuration": {
+    "modules_fqcn": true,
+    "idempotence_verified": true,
+    "check_mode_reviewed": true,
+    "template_reviewed": true,
+    "variables_validated": true,
+    "handlers_change_only": true
+  },
+  "security": {
+    "least_privilege": true,
+    "become_disabled_lab": true,
+    "secrets_not_plaintext": true,
+    "diff_no_secrets": true,
+    "collections_pinned": true,
+    "change_approved": true
+  },
+  "operations": {
+    "slo_reviewed": true,
+    "dbre_approved": true,
+    "backup_verified": true,
+    "rollback_documented": true,
+    "serial_rollout": true,
+    "unapproved_restart": false
+  }
+}
