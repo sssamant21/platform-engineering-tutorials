@@ -1,0 +1,53 @@
+{
+  "environment": "prod",
+  "cluster_name": "sample-iac-prod-055",
+  "namespace": "capstone-prod",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "CHG-K8S-PROD-055",
+  "state_namespace": "iac-prod-sample-iac-prod-055-capstone-prod",
+  "labels": {
+    "environment": "prod",
+    "managed-by": "terraform",
+    "owner": "platform-sre-dbre"
+  },
+  "foundation": {
+    "cluster_context_verified": true,
+    "state_isolated": true,
+    "cni_enforced": true,
+    "csi_ready": true,
+    "observability_ready": true,
+    "capacity_reviewed": true
+  },
+  "security": {
+    "dedicated_service_accounts": true,
+    "rbac_least_privilege": true,
+    "psa_restricted": true,
+    "default_deny_network": true,
+    "dns_db_egress_scoped": true,
+    "quotas_enforced": true,
+    "secrets_excluded_from_state": true,
+    "wildcard_cluster_admin": false
+  },
+  "delivery": {
+    "provider_chart_pinned": true,
+    "chart_provenance_reviewed": true,
+    "crd_staged": true,
+    "single_gitops_owner": true,
+    "rollout_tested": true,
+    "pdb_reviewed": true,
+    "rollback_tested": true,
+    "competing_reconciler": false
+  },
+  "operations": {
+    "backup_tested": true,
+    "restore_tested": true,
+    "rpo_rto_measured": true,
+    "game_day_completed": true,
+    "audit_logs_enabled": true,
+    "security_approved": true,
+    "dbre_approved": true,
+    "change_approved": true,
+    "unapproved_destroy": false,
+    "unapproved_pvc_delete": false
+  }
+}
