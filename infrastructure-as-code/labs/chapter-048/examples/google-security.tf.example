@@ -1,0 +1,32 @@
+# REVIEW ONLY: separate root; may create billable resources and security changes.
+terraform {
+  required_providers {
+    google = { source = "hashicorp/google", version = "~> 6.0" }
+  }
+}
+variable "project_id" { type = string }
+variable "region" { type = string }
+provider "google" {
+  project = var.project_id
+  region = var.region
+}
+resource "google_service_account" "ci" {
+  account_id = "terraform-review-ci"
+  display_name = "Review-only Terraform CI identity"
+}
+resource "google_kms_key_ring" "review" {
+  name = "iac-review-ring"
+  location = var.region
+}
+resource "google_kms_crypto_key" "review" {
+  name = "iac-review-key"
+  key_ring = google_kms_key_ring.review.id
+  rotation_period = "7776000s"
+  lifecycle { prevent_destroy = true }
+}
+resource "google_secret_manager_secret" "metadata" {
+  secret_id = "iac-review-metadata"
+  replication { auto {} }
+}
+# Intentionally NO secret payload, IAM Owner/Editor, key destruction or WIF wildcard.
+# Review APIs, CMEK service agents, WIF attribute conditions and KMS costs first.
