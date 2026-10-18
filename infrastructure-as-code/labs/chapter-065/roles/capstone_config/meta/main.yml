@@ -1,0 +1,7 @@
+---
+galaxy_info:
+  author: platform-sre-dbre
+  description: Local-only Ansible capstone role
+  license: MIT
+  min_ansible_version: '2.16'
+dependencies: []
