@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 29 / 100 chapters (29%) · 20 parts · Part 06: 4/5**
+**Progress: 30 / 100 chapters (30%) · 20 parts · Part 06: 5/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -9,7 +9,7 @@
 | 03 — Prometheus Architecture and Installation | 011–015 | 5 | 5 | Complete |
 | 04 — PromQL and Advanced Metrics | 016–020 | 5 | 5 | Complete |
 | 05 — Grafana Dashboards and Visualization | 021–025 | 5 | 5 | Complete |
-| 06 — Alertmanager and Alert Engineering | 026–030 | 4 | 5 | In progress |
+| 06 — Alertmanager and Alert Engineering | 026–030 | 5 | 5 | Complete |
 | 07 — Exporters and Custom Instrumentation | 031–035 | 0 | 5 | Planned |
 | 08 — Centralized Logging with Loki | 036–040 | 0 | 5 | Planned |
 | 09 — Elasticsearch and OpenSearch Logging | 041–045 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–029 and companion labs. Parts 01, 02, 03, 04 and 05 complete (5/5 each); Part 06 in progress (4/5).
+**Published:** Chapters 001–030 and companion labs. Parts 01, 02, 03, 04, 05 and 06 complete (5/5 each).
 
-**Next:** Chapter 030 — Enterprise Alert Engineering, SLOs, On-Call and Incident Response Production Capstone.
+**Next:** Chapter 031 — Prometheus Exporters, Node Exporter and Enterprise Infrastructure Metrics Foundations (Part 07).
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
