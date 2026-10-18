@@ -207,8 +207,12 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 090 — DevOps/SRE Automation Production Capstone Lab](09-devops-sre-automation/labs/090-devops-sre-automation-production-capstone-lab.md)
 - [Chapter 090 — Standalone Executable Project](09-devops-sre-automation/labs/090/README.md)
 
-### Part 10 — Kubernetes, AWS, Azure and GCP (1/10 published)
+### Part 10 — Kubernetes, AWS, Azure and GCP (2/10 published)
 
 - [Chapter 091 — Python Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md)
 - [Chapter 091 — Kubernetes API and Cloud-Native SRE/DBRE Lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md)
 - [Chapter 091 — Standalone Executable Project](10-kubernetes-cloud-platform-engineering/labs/091/README.md)
+
+- [Chapter 092 — Python Kubernetes Controllers, Operators and Reconciliation Automation](10-kubernetes-cloud-platform-engineering/092-python-kubernetes-controllers-operators-reconciliation-automation.md)
+- [Chapter 092 — Controllers, Operators and Reconciliation SRE/DBRE Lab](10-kubernetes-cloud-platform-engineering/labs/092-kubernetes-controllers-operators-reconciliation-sre-dbre-lab.md)
+- [Chapter 092 — Standalone Executable Project](10-kubernetes-cloud-platform-engineering/labs/092/README.md)
