@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 47 / 100 chapters (47%) · 20 parts · Part 10: 2/5**
+**Progress: 48 / 100 chapters (48%) · 20 parts · Part 10: 3/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -13,7 +13,7 @@
 | 07 — Exporters and Custom Instrumentation | 031–035 | 5 | 5 | Complete |
 | 08 — Centralized Logging with Loki | 036–040 | 5 | 5 | Complete |
 | 09 — Elasticsearch and OpenSearch Logging | 041–045 | 5 | 5 | Complete |
-| 10 — OpenTelemetry Architecture and Instrumentation | 046–050 | 2 | 5 | In progress |
+| 10 — OpenTelemetry Architecture and Instrumentation | 046–050 | 3 | 5 | In progress |
 | 11 — Distributed Tracing with Jaeger and Tempo | 051–055 | 0 | 5 | Planned |
 | 12 — Kubernetes EKS AKS and GKE Observability | 056–060 | 0 | 5 | Planned |
 | 13 — Database and Data Platform Observability | 061–065 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–047 and companion labs. Parts 01–09 complete (5/5 each); Part 10 in progress (2/5).
+**Published:** Chapters 001–048 and companion labs. Parts 01–09 complete (5/5 each); Part 10 in progress (3/5).
 
-**Next:** Chapter 048 — OpenTelemetry Collector Pipelines, Processors, Exporters and Production Deployment.
+**Next:** Chapter 049 — OpenTelemetry Collector Reliability, Scaling, Tail Sampling and Advanced Processing.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
