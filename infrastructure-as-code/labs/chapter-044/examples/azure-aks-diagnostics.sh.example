@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${EXPECTED_AZURE_SUBSCRIPTION_ID:?set approved subscription}"
+actual="$(az account show --query id -o tsv)"
+[[ "$actual" == "$EXPECTED_AZURE_SUBSCRIPTION_ID" ]] || { echo "DENY: wrong subscription" >&2; exit 1; }
+kubectl get nodes -o wide
+kubectl get pods -A -o wide
+kubectl get events -A --sort-by=.lastTimestamp
+kubectl top nodes || echo "Metrics Server may not be available"
