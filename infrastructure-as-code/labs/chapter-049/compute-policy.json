@@ -1,0 +1,38 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_regions": [
+    "us-central1",
+    "us-east1",
+    "us-east4",
+    "us-west1"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_regional_mig": true,
+  "require_shielded_vm": true,
+  "deny_public_vm": true,
+  "require_private_gke": true,
+  "require_workload_identity": true,
+  "deny_static_keys": true,
+  "require_gke_network_policy": true,
+  "require_pdb_and_autoscaling": true,
+  "require_tls_and_health_checks": true,
+  "require_immutable_images": true,
+  "deny_secret_payload_in_state": true,
+  "require_db_review": true,
+  "require_monitoring": true,
+  "require_dbre_approval": true,
+  "deny_destructive_actions": true
+}
