@@ -127,7 +127,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 046 executable labs and tests](labs/chapter-046/)
 - [047 — GCP VPC, Subnets, Routing, Firewall Rules and Private Connectivity with Terraform](chapters/047-gcp-vpc-subnets-routing-firewall-rules-private-connectivity-terraform.md)
 - [Chapter 047 executable labs and tests](labs/chapter-047/)
+- [048 — GCP IAM, Cloud KMS, Secret Manager and Secure Infrastructure with Terraform](chapters/048-gcp-iam-cloud-kms-secret-manager-secure-infrastructure-terraform.md)
+- [Chapter 048 executable labs and tests](labs/chapter-048/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 underway (046–047 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 underway (046–048 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
