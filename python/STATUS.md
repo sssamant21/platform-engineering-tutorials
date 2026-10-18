@@ -1,14 +1,14 @@
 # Python curriculum status
 
-Last updated: 2026-10-17
+Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **71 chapters**
-- Remaining: **49 chapters**
-- Published labs: **71**
-- Next: **072 — Python HTTP Authentication, API Security and Production Client Patterns**
+- Published: **72 chapters**
+- Remaining: **48 chapters**
+- Published labs: **72**
+- Next: **073 — Python HTTP Requests, Sessions, Pagination and Resilient API Integrations**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–071 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–072 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -129,5 +129,7 @@ Chapter 069: [Tutorial](07-testing-debugging-code-quality/069-python-security-te
 Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-code-quality-capstone.md) · [Enterprise capstone lab](07-testing-debugging-code-quality/labs/070-testing-debugging-code-quality-capstone-sre-dbre-lab.md). Part 07 content published; tests, SAST, SCA and CI execution pending.
 
 ## Part 08 — APIs, Networking and Databases
-- Published: **1/10** (Chapter 071)
+- Published: **2/10** (Chapters 071–072)
 - Chapter 071 — Python HTTP Fundamentals, REST APIs and Reliable API Clients: [Tutorial](08-apis-networking-databases/071-python-http-fundamentals-rest-apis-reliable-api-clients.md) · [Hands-on lab](08-apis-networking-databases/labs/071-reliable-http-api-client-sre-dbre-lab.md). Local HTTP integration tests published; execution pending. Chapter title established when Part 08 began because the prior master curriculum named only the part.
+
+- Chapter 072 — Python HTTP Authentication, API Security and Production Client Patterns: [Tutorial](08-apis-networking-databases/072-python-http-authentication-api-security-production-client-patterns.md) · [Hands-on lab](08-apis-networking-databases/labs/072-secure-http-authentication-api-client-sre-dbre-lab.md). Synthetic loopback authentication and integration tests published; execution pending. OAuth 2.0 and TLS are conceptual, not live provider integrations.
