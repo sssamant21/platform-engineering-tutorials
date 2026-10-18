@@ -1,0 +1,8 @@
+.venv/
+.pulumi-state/
+.pulumi/
+sandbox/
+__pycache__/
+*.pyc
+*.secret
+*.pem
