@@ -1,0 +1,60 @@
+{
+  "environment": "prod",
+  "project_id": "sample-iac-prod-048",
+  "project_number": "222222222222",
+  "region": "us-east4",
+  "owner": "production-security-sre",
+  "change_ticket": "CHG-GCP-SEC-048",
+  "state_namespace": "iac-prod-sample-iac-prod-048-security",
+  "iam": {
+    "least_privilege": true,
+    "primitive_roles_used": false,
+    "iam_deny_reviewed": true,
+    "org_policy_reviewed": true,
+    "break_glass_tested": true,
+    "service_agent_access_reviewed": true
+  },
+  "identity": {
+    "wif_enabled": true,
+    "static_service_account_keys": false,
+    "oidc_issuer": "https://token.actions.githubusercontent.com",
+    "oidc_audience": "https://iam.googleapis.com/projects/222222222222/locations/global/workloadIdentityPools/ci/providers/github",
+    "oidc_subject": "repo:example-org/platform-infra:environment:prod",
+    "impersonation_scoped": true,
+    "gke_workload_identity_reviewed": true
+  },
+  "kms": {
+    "enabled": true,
+    "rotation_reviewed": true,
+    "recovery_tested": true,
+    "service_agent_grants_reviewed": true,
+    "key_version_destruction_approved": false
+  },
+  "secrets": {
+    "metadata_only": true,
+    "payload_in_state": false,
+    "rotation_owner_assigned": true,
+    "secret_accessor_least_privilege": true,
+    "version_recovery_tested": true
+  },
+  "state": {
+    "private": true,
+    "public_access_prevention": true,
+    "versioned": true,
+    "encrypted": true,
+    "locking": true,
+    "environment_isolated": true
+  },
+  "audit": {
+    "logs_enabled": true,
+    "security_monitoring_enabled": true,
+    "security_approved": true,
+    "dbre_approved": true,
+    "change_approved": true
+  },
+  "labels": {
+    "environment": "prod",
+    "managed-by": "terraform",
+    "owner": "production-security-sre"
+  }
+}
