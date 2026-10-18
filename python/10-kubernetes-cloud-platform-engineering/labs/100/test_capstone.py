@@ -1,0 +1,71 @@
+import json,unittest
+from dataclasses import replace
+from io import StringIO
+from contextlib import redirect_stdout
+from capstone import Resource,Signal,PolicyError,paginate,FakePager,inventory,drift,policies,slo,incidents,finops,Plan,gate,samples,demo,main
+class Tests(unittest.TestCase):
+    def setUp(self):
+        self.rs=samples();self.sig=Signal("aws","123","svc",2,1000,1000)
+        self.p=Plan("aws","123","rds-pg","review-capacity","INC-100","sha256:a1")
+    def reject(self,fn):
+        with self.assertRaises(PolicyError):fn()
+    def test_four_providers(self):self.assertEqual({r.provider for r in self.rs},{"aws","azure","gcp","kubernetes"})
+    def test_resource(self):self.rs[0].validate()
+    def test_provider(self):self.reject(lambda:replace(self.rs[0],provider="unknown").validate())
+    def test_identity(self):self.reject(lambda:replace(self.rs[0],scope="../bad").validate())
+    def test_cost(self):self.reject(lambda:replace(self.rs[0],cost_monthly_usd=-1).validate())
+    def test_nan(self):self.reject(lambda:replace(self.rs[0],cost_monthly_usd=float("nan")).validate())
+    def test_capacity(self):self.reject(lambda:replace(self.rs[0],storage_free_pct=101).validate())
+    def test_rotation(self):self.reject(lambda:replace(self.rs[0],secret_age_days=-1).validate())
+    def test_azure_id(self):self.assertEqual(self.rs[1].key(),replace(self.rs[1],uid=self.rs[1].uid.upper()).key())
+    def test_pagination(self):self.assertEqual(paginate(FakePager([1,2,3],1).fetch),[1,2,3])
+    def test_empty(self):self.assertEqual(paginate(FakePager([]).fetch),[])
+    def test_page_limit(self):self.reject(lambda:paginate(FakePager([1,2,3],1).fetch,max_pages=2))
+    def test_item_limit(self):self.reject(lambda:paginate(FakePager([1,2,3],1).fetch,max_items=2))
+    def test_loop(self):self.reject(lambda:paginate(lambda t:{"items":[],"next":"loop"}))
+    def test_malformed_page(self):self.reject(lambda:paginate(lambda t:{"items":None}))
+    def test_bad_budget(self):self.reject(lambda:paginate(FakePager([]).fetch,max_pages=0))
+    def test_inventory(self):self.assertEqual(len(inventory(self.rs)["resources"]),4)
+    def test_duplicate(self):self.reject(lambda:inventory([self.rs[0]]*2))
+    def test_invalid_record(self):self.reject(lambda:inventory([{}]))
+    def test_drift_removed(self):self.assertEqual(drift(inventory(self.rs),inventory(self.rs[:3]))["removed"],1)
+    def test_partial_unknown(self):self.assertIsNone(drift(inventory(self.rs),inventory(self.rs[:3],False))["removed"])
+    def test_drift_changed(self):self.assertEqual(drift(inventory(self.rs),inventory([replace(self.rs[0],owner="other")]+self.rs[1:]))["changed"],1)
+    def test_storage_policy(self):self.assertIn("storage-pressure",{f["policy"] for f in policies(self.rs)})
+    def test_gitops(self):self.assertIn("gitops-drift",{f["policy"] for f in policies(self.rs)})
+    def test_rotation_overdue(self):self.assertIn("rotation-overdue",{f["policy"] for f in policies(self.rs)})
+    def test_identity_policy(self):self.assertIn("static-identity-review",{f["policy"] for f in policies(self.rs)})
+    def test_audit_policy(self):self.assertIn("audit-disabled",{f["policy"] for f in policies(self.rs)})
+    def test_missing_owner(self):self.assertIn("owner-required",{f["policy"] for f in policies([replace(self.rs[0],owner=None)])})
+    def test_signal(self):self.sig.validate(1100)
+    def test_signal_stale(self):self.reject(lambda:self.sig.validate(1400))
+    def test_signal_future(self):self.reject(lambda:self.sig.validate(999))
+    def test_signal_bad(self):self.reject(lambda:replace(self.sig,bad_requests=1001).validate(1100))
+    def test_slo(self):self.assertTrue(slo([self.sig],1100)["breached"])
+    def test_slo_missing(self):self.reject(lambda:slo([],1100))
+    def test_slo_target(self):self.reject(lambda:slo([self.sig],1100,target=1))
+    def test_incident_dedup(self):self.assertEqual(incidents([self.sig,self.sig],1100)[0]["signals"],1)
+    def test_incident_no_cause(self):self.assertEqual(incidents([self.sig],1100)[0]["causality"],"not-established")
+    def test_incident_separate(self):self.assertEqual(len(incidents([self.sig,replace(self.sig,service="db")],1100)),2)
+    def test_cost(self):self.assertEqual(finops(self.rs)["synthetic_monthly_usd"],1030)
+    def test_plan_digest(self):self.assertEqual(len(self.p.digest()),64)
+    def test_destructive(self):self.reject(lambda:replace(self.p,action="delete-db").digest())
+    def test_gate_hold(self):self.assertEqual(gate(self.p)["decision"],"hold")
+    def approved(self):return {"approved":True,"digest":self.p.digest(),"rollback_tested":True,"owner":"dbre","approver":"security","expires_at":200}
+    def test_gate_approved(self):self.assertEqual(gate(self.p,self.approved(),100)["decision"],"advisory-only")
+    def test_expired(self):self.assertFalse(gate(self.p,self.approved(),200)["approved"])
+    def test_self_approval(self):
+        a=self.approved();a["approver"]="dbre";self.assertFalse(gate(self.p,a,100)["approved"])
+    def test_bad_digest(self):
+        a=self.approved();a["digest"]="wrong";self.assertFalse(gate(self.p,a,100)["approved"])
+    def test_rollback(self):
+        a=self.approved();a["rollback_tested"]=False;self.assertFalse(gate(self.p,a,100)["approved"])
+    def test_no_writes(self):self.assertEqual(gate(self.p,self.approved(),100,False)["mutations"],0)
+    def test_demo(self):self.assertEqual(demo()["resources"],4)
+    def test_demo_partial(self):self.assertEqual(demo(True)["drift"]["removal_status"],"unknown")
+    def test_no_secrets(self):self.assertEqual(demo()["secret_values_accessed"],0)
+    def test_cli(self):
+        out=StringIO()
+        with redirect_stdout(out):self.assertEqual(main(["--dry-run"]),0)
+        self.assertEqual(json.loads(out.getvalue())["network_calls"],0)
+if __name__=="__main__":unittest.main()
