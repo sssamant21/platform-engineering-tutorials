@@ -3,12 +3,12 @@
 Last updated: 2026-10-17
 
 - Planned: **120 chapters**
-- Published: **70 chapters**
-- Remaining: **50 chapters**
-- Published labs: **70**
-- Next: **071 — APIs, Networking and Databases (Part 08)**
+- Published: **71 chapters**
+- Remaining: **49 chapters**
+- Published labs: **71**
+- Next: **072 — Python HTTP Authentication, API Security and Production Client Patterns**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–070 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–071 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -127,3 +127,7 @@ Chapter 068: [Tutorial](07-testing-debugging-code-quality/068-python-static-anal
 Chapter 069: [Tutorial](07-testing-debugging-code-quality/069-python-security-testing-dependency-auditing.md) · [Hands-on lab](07-testing-debugging-code-quality/labs/069-security-testing-dependency-auditing-sre-dbre-lab.md). Security scans and tests published; execution pending.
 
 Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-code-quality-capstone.md) · [Enterprise capstone lab](07-testing-debugging-code-quality/labs/070-testing-debugging-code-quality-capstone-sre-dbre-lab.md). Part 07 content published; tests, SAST, SCA and CI execution pending.
+
+## Part 08 — APIs, Networking and Databases
+- Published: **1/10** (Chapter 071)
+- Chapter 071 — Python HTTP Fundamentals, REST APIs and Reliable API Clients: [Tutorial](08-apis-networking-databases/071-python-http-fundamentals-rest-apis-reliable-api-clients.md) · [Hands-on lab](08-apis-networking-databases/labs/071-reliable-http-api-client-sre-dbre-lab.md). Local HTTP integration tests published; execution pending. Chapter title established when Part 08 began because the prior master curriculum named only the part.
