@@ -175,7 +175,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 070 executable labs and tests](labs/chapter-070/)
 - [071 — Pulumi Foundations, Architecture, Stacks and Infrastructure as Code with Programming Languages](chapters/071-pulumi-foundations-architecture-stacks-programming-languages.md)
 - [Chapter 071 executable labs and tests](labs/chapter-071/)
+- [072 — Pulumi Resource Models, Providers, Components and Dependency Management](chapters/072-pulumi-resource-models-providers-components-dependency-management.md)
+- [Chapter 072 executable labs and tests](labs/chapter-072/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 underway (071 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 underway (071–072 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
