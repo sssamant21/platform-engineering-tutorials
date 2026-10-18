@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 39 / 120 chapters (32.50%)  
+**Progress:** 40 / 120 chapters (33.33%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -47,7 +47,8 @@
 **Chapter 037:** Published; live network lab and security evidence pending.  
 **Chapter 038:** Published; Terraform, AWS security integration and operational acceptance evidence pending.  
 **Chapter 039:** Published; Terraform execution, AWS compute/EKS integration and SRE/DBRE acceptance pending.  
-**Next:** Chapter 040 — AWS Stateful Data, Storage, Resilience and Production Operations Capstone.
+**Chapter 040:** Published; live Terraform, AWS recovery drills and production acceptance pending.  
+**Next:** Chapter 041 — Azure Infrastructure as Code Foundations and Terraform AzureRM Provider.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -90,6 +91,7 @@
 | 037 | AWS VPC, Subnets, Routing and Network Security with Terraform | Published |
 | 038 | AWS IAM, KMS, Secrets and Secure Infrastructure with Terraform | Published |
 | 039 | AWS Compute, EKS and Application Infrastructure with Terraform | Published |
+| 040 | AWS Stateful Data, Storage, Resilience and Production Operations Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -413,3 +415,13 @@
 - [x] Chapter and master index publication; Part 08 at 4/5
 - [ ] Live Terraform execution and automated test evidence
 - [ ] AWS compute/EKS integration, SLO, IAM and operational acceptance
+
+## Chapter 040 acceptance — Part 08 AWS capstone
+- [x] RDS/Aurora, S3, EBS, EFS, KMS, backup/restore and DR architecture
+- [x] Offline Terraform data/storage/recovery contract lab with dev/prod fixtures
+- [x] Review-only AWS stateful data and identity examples authored
+- [x] Fail-closed Python stateful-data policy and sixty unit tests authored
+- [x] Production SRE/DBRE scenarios, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 08 publication complete
+- [ ] Live Terraform execution and automated test evidence
+- [ ] AWS integration, backup restore, observed RPO/RTO and operational acceptance
