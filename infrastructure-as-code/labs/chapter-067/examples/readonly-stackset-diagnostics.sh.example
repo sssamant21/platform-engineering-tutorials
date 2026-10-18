@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+# REVIEW ONLY: authorized read-only profile and StackSet required.
+aws sts get-caller-identity --profile approved-readonly
+aws cloudformation validate-template --template-body file://child-template.json --profile approved-readonly
+aws cloudformation list-stack-sets --status ACTIVE --profile approved-readonly
+aws cloudformation describe-stack-set --stack-set-name APPROVED_STACKSET --profile approved-readonly
+aws cloudformation list-stack-instances --stack-set-name APPROVED_STACKSET --profile approved-readonly
