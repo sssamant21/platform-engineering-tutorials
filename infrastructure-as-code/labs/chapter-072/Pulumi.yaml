@@ -1,0 +1,6 @@
+name: iac-ch072-pulumi
+runtime:
+  name: python
+  options:
+    virtualenv: .venv
+description: Mock-only component resource lab
