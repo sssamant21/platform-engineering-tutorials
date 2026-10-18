@@ -1,0 +1,47 @@
+{
+  "environment": "prod",
+  "project_id": "sample-iac-prod-046",
+  "project_number": "222222222222",
+  "region": "us-east4",
+  "owner": "production-platform-sre",
+  "change_ticket": "CHG-GCP-046",
+  "state_namespace": "iac-prod-sample-iac-prod-046-foundation",
+  "project": {
+    "billing_reviewed": true,
+    "org_policy_reviewed": true,
+    "service_apis_reviewed": true,
+    "quota_reviewed": true,
+    "api_enablement_approved": true,
+    "environment_isolated": true
+  },
+  "identity": {
+    "wif_enabled": true,
+    "static_service_account_key_used": false,
+    "least_privilege_reviewed": true,
+    "oidc_issuer": "https://token.actions.githubusercontent.com",
+    "oidc_audience": "https://iam.googleapis.com/projects/222222222222/locations/global/workloadIdentityPools/ci/providers/github",
+    "oidc_subject": "repo:example-org/platform-infra:environment:prod",
+    "service_account_impersonation_reviewed": true
+  },
+  "state": {
+    "private": true,
+    "uniform_bucket_access": true,
+    "public_access_prevention": true,
+    "versioning": true,
+    "encrypted": true,
+    "locking": true,
+    "environment_isolated": true
+  },
+  "audit": {
+    "cloud_audit_logs_enabled": true,
+    "monitoring_enabled": true,
+    "budget_alerts_enabled": true,
+    "security_approved": true,
+    "dbre_approved": true
+  },
+  "labels": {
+    "environment": "prod",
+    "managed-by": "terraform",
+    "owner": "production-platform-sre"
+  }
+}
