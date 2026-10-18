@@ -172,7 +172,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 080 — APIs, Networking and Databases Production Integration Capstone SRE/DBRE Lab](08-apis-networking-databases/labs/080-apis-networking-databases-production-integration-capstone-sre-dbre-lab.md)
 
 
-### Part 09 — DevOps, SRE and Automation (9/10 published)
+### Part 09 — DevOps, SRE and Automation (10/10 published — complete)
 - [Chapter 081 — Python Infrastructure Automation, CLI Design and Operational Workflows](09-devops-sre-automation/081-python-infrastructure-automation-cli-design-operational-workflows.md)
 - [Chapter 081 — Safe Infrastructure CLI Automation SRE/DevOps/DBRE Lab](09-devops-sre-automation/labs/081-safe-infrastructure-cli-automation-sre-devops-dbre-lab.md)
 - [Chapter 082 — Python Operating System, Process and Service Automation](09-devops-sre-automation/082-python-operating-system-process-service-automation.md)
@@ -202,3 +202,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 089 — Python Reliability Engineering, SLO Automation and Operational Readiness](09-devops-sre-automation/089-python-reliability-engineering-slo-automation-operational-readiness.md)
 - [Chapter 089 — Reliability Engineering, SLO and Readiness SRE/DBRE Lab](09-devops-sre-automation/labs/089-slo-reliability-operational-readiness-sre-dbre-lab.md)
 - [Chapter 089 — Standalone Executable Project](09-devops-sre-automation/labs/089/README.md)
+
+- [Chapter 090 — Python DevOps/SRE Automation Production Capstone](09-devops-sre-automation/090-python-devops-sre-automation-production-capstone.md)
+- [Chapter 090 — DevOps/SRE Automation Production Capstone Lab](09-devops-sre-automation/labs/090-devops-sre-automation-production-capstone-lab.md)
+- [Chapter 090 — Standalone Executable Project](09-devops-sre-automation/labs/090/README.md)
