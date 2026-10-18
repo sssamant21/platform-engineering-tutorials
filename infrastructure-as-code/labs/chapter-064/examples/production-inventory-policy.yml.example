@@ -1,0 +1,17 @@
+---
+# REVIEW ONLY: production requires approved dynamic inventory and tenant verification.
+- name: Governed DBRE canary
+  hosts: database
+  serial: 1
+  become: false
+  tasks:
+    - name: Require independent approvals and backup
+      ansible.builtin.assert:
+        that:
+          - change_approved | default(false) | bool
+          - dbre_approved | default(false) | bool
+          - backup_verified | default(false) | bool
+          - inventory_approved | default(false) | bool
+    - name: No production mutation in example
+      ansible.builtin.debug:
+        msg: "Policy gate only"
