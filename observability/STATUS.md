@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 23 / 100 chapters (23%) · 20 parts · Part 05: 3/5**
+**Progress: 24 / 100 chapters (24%) · 20 parts · Part 05: 4/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -8,7 +8,7 @@
 | 02 — Linux and Infrastructure Monitoring | 006–010 | 5 | 5 | Complete |
 | 03 — Prometheus Architecture and Installation | 011–015 | 5 | 5 | Complete |
 | 04 — PromQL and Advanced Metrics | 016–020 | 5 | 5 | Complete |
-| 05 — Grafana Dashboards and Visualization | 021–025 | 3 | 5 | In progress |
+| 05 — Grafana Dashboards and Visualization | 021–025 | 4 | 5 | In progress |
 | 06 — Alertmanager and Alert Engineering | 026–030 | 0 | 5 | Planned |
 | 07 — Exporters and Custom Instrumentation | 031–035 | 0 | 5 | Planned |
 | 08 — Centralized Logging with Loki | 036–040 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–023 and companion labs. Parts 01, 02, 03 and 04 complete (5/5 each); Part 05 in progress (3/5).
+**Published:** Chapters 001–024 and companion labs. Parts 01, 02, 03 and 04 complete (5/5 each); Part 05 in progress (4/5).
 
-**Next:** Chapter 024 — Grafana Alerting, Contact Points, Notification Policies and SRE Incident Workflows.
+**Next:** Chapter 025 — Grafana Enterprise Dashboards, Alerting, Security and Production Operations Capstone.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
