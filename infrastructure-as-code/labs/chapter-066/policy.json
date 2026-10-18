@@ -1,0 +1,55 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "template": [
+      "version_present",
+      "resources_present",
+      "parameters_reviewed",
+      "outputs_no_secrets",
+      "conditions_reviewed",
+      "retention_reviewed"
+    ],
+    "change_set": [
+      "account_verified",
+      "region_verified",
+      "replacement_reviewed",
+      "iam_changes_reviewed",
+      "change_set_fresh",
+      "destructive_action"
+    ],
+    "security": [
+      "least_privilege",
+      "execution_role_scoped",
+      "no_plaintext_secrets",
+      "cloudtrail_enabled",
+      "termination_protection_reviewed"
+    ],
+    "operations": [
+      "dbre_approved",
+      "backup_verified",
+      "rollback_documented",
+      "drift_reviewed",
+      "slo_reviewed",
+      "change_approved"
+    ]
+  },
+  "forbidden_controls": {
+    "change_set": [
+      "destructive_action"
+    ]
+  },
+  "require_ticket": true,
+  "deny_prod_targets": true,
+  "require_iam_review": true,
+  "require_dbre_backup": true,
+  "require_rollback": true,
+  "deny_destructive_actions": true
+}
