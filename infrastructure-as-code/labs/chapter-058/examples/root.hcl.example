@@ -1,0 +1,16 @@
+# REVIEW ONLY — placeholder backend values must be replaced.
+locals {
+  environment = "dev"
+  account     = "sandbox"
+  region      = "us-east-1"
+}
+remote_state {
+  backend = "s3"
+  config = {
+    bucket         = "REPLACE-WITH-APPROVED-VERSIONED-ENCRYPTED-BUCKET"
+    key            = "iac/${local.environment}/${local.account}/${local.region}/network.tfstate"
+    region         = local.region
+    encrypt        = true
+    use_lockfile   = true
+  }
+}
