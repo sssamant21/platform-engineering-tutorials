@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 33/100 published**
+**100 chapters · 20 parts · 34/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -14,7 +14,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 04 | 016–020 | PromQL and Advanced Metrics | 5/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 5/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 5/5 |
-| 07 | 031–035 | Exporters and Custom Instrumentation | 3/5 |
+| 07 | 031–035 | Exporters and Custom Instrumentation | 4/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 0/5 |
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 0/5 |
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 0/5 |
@@ -146,4 +146,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 033 — Prometheus Application Exporters, Blackbox Exporter and Service Availability Monitoring](part-07-exporters-custom-instrumentation/033-prometheus-application-exporters-blackbox-exporter-service-availability-monitoring.md)
 - [Chapter 033 — Executable companion lab](part-07-exporters-custom-instrumentation/labs/033-prometheus-application-exporters-blackbox-exporter-service-availability-monitoring-lab.md)
 
-**Next:** Chapter 034 — Custom Prometheus Exporters, Python Instrumentation, Metric Design and Cardinality Control.
+- [Chapter 034 — Custom Prometheus Exporters, Python Instrumentation, Metric Design and Cardinality Control](part-07-exporters-custom-instrumentation/034-custom-prometheus-exporters-python-instrumentation-metric-design-cardinality-control.md)
+- [Chapter 034 — Executable companion lab](part-07-exporters-custom-instrumentation/labs/034-custom-prometheus-exporters-python-instrumentation-metric-design-cardinality-control-lab.md)
+
+**Next:** Chapter 035 — Enterprise Exporter Integration, Metrics Governance and Production Readiness Capstone.
