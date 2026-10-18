@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 49 / 120 chapters (40.83%)  
+**Progress:** 50 / 120 chapters (41.67%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -54,11 +54,12 @@
 **Chapter 044:** Published; live Terraform, Azure AKS/VMSS integration and SRE/DBRE acceptance pending.  
 **Chapter 045:** Published; live Terraform, Azure stateful-data integration, restore drills and DBRE acceptance pending.  
 **Chapter 046:** Published; live Terraform, GCP integration and operational acceptance pending.  
-**Part 10:** 4/5 chapters published (GCP).  
+**Part 10:** 5/5 chapters published — complete (GCP).  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
-**Next:** Chapter 050 — GCP Stateful Data, Storage, Resilience and Production Operations Capstone (proposed title).
+**Chapter 050:** Published; live Terraform, GCP stateful service integration, backup/restore, measured RPO/RTO and operational acceptance pending.  
+**Next:** Chapter 051 — verify exact title against the master roadmap before publication.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -111,6 +112,7 @@
 | 047 | GCP VPC, Subnets, Routing, Firewall Rules and Private Connectivity with Terraform | Published |
 | 048 | GCP IAM, Cloud KMS, Secret Manager and Secure Infrastructure with Terraform | Published |
 | 049 | GCP Compute, GKE and Application Infrastructure with Terraform | Published |
+| 050 | GCP Stateful Data, Storage, Resilience and Production Operations Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -534,3 +536,13 @@
 - [x] Chapter and master index publication; Part 10 at 4/5
 - [ ] Live Terraform execution and automated test evidence
 - [ ] GCP Compute/MIG/GKE integration, upgrades, rollback, DBRE and operational acceptance
+
+## Chapter 050 acceptance — GCP stateful data and Part 10 capstone
+- [x] Cloud SQL, AlloyDB, storage, HA, PITR, DR, private networking and encryption theory
+- [x] Offline Terraform database/storage/security/operations contracts with dev/prod fixtures
+- [x] Review-only GCP data resources and diagnostics examples authored
+- [x] Fail-closed Python data policy and fifty-four unit tests authored
+- [x] SRE/DBRE incident scenarios, troubleshooting, runbooks and 100-point final rubric
+- [x] Chapter and master index publication; Part 10 complete (046–050)
+- [ ] Live Terraform execution and automated test evidence
+- [ ] GCP Cloud SQL/storage/KMS integration, actual restore, RPO/RTO, DR and security/DBRE acceptance
