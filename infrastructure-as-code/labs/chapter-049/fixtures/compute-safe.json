@@ -1,0 +1,51 @@
+{
+  "environment": "prod",
+  "project_id": "sample-iac-prod-049",
+  "project_number": "222222222222",
+  "region": "us-east4",
+  "owner": "production-platform-sre",
+  "change_ticket": "CHG-GCP-COMPUTE-049",
+  "state_namespace": "iac-prod-sample-iac-prod-049-compute",
+  "compute": {
+    "mig_regional": true,
+    "mig_autohealing": true,
+    "mig_autoscaling": true,
+    "vm_shielded": true,
+    "vm_os_login": true,
+    "vm_public_ip": false,
+    "quota_reviewed": true
+  },
+  "gke": {
+    "private_nodes": true,
+    "private_endpoint_reviewed": true,
+    "workload_identity": true,
+    "network_policy": true,
+    "release_channel_reviewed": true,
+    "pdb_reviewed": true,
+    "autoscaling_reviewed": true,
+    "secondary_ranges_reviewed": true,
+    "static_service_account_keys": false
+  },
+  "application": {
+    "ingress_tls": true,
+    "health_checks": true,
+    "image_digest_pinned": true,
+    "image_provenance_reviewed": true,
+    "db_private_connectivity_reviewed": true,
+    "db_connection_pooling_reviewed": true,
+    "secret_payload_in_state": false
+  },
+  "operations": {
+    "monitoring_enabled": true,
+    "audit_logs_enabled": true,
+    "rollback_tested": true,
+    "dbre_approved": true,
+    "security_approved": true,
+    "change_approved": true
+  },
+  "labels": {
+    "environment": "prod",
+    "managed-by": "terraform",
+    "owner": "production-platform-sre"
+  }
+}
