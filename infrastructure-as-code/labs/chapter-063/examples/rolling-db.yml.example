@@ -1,0 +1,19 @@
+---
+# REVIEW ONLY — production inventory, health checks and approvals required.
+- name: DBRE-approved rolling service configuration
+  hosts: database
+  serial: 1
+  strategy: linear
+  any_errors_fatal: true
+  become: false
+  tasks:
+    - name: Validate approvals and backups
+      ansible.builtin.assert:
+        that:
+          - change_approved | default(false) | bool
+          - dbre_approved | default(false) | bool
+          - backup_verified | default(false) | bool
+          - quorum_verified | default(false) | bool
+    - name: Report gate only
+      ansible.builtin.debug:
+        msg: "No database changes performed"
