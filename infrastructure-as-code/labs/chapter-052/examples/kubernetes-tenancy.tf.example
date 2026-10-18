@@ -1,0 +1,69 @@
+# REVIEW ONLY: use as a separate root with an approved disposable cluster.
+terraform {
+  required_providers {
+    kubernetes = {
+      source = "hashicorp/kubernetes"
+      version = "~> 2.0"
+    }
+  }
+}
+variable "kubeconfig_path" { type = string }
+variable "kube_context" { type = string }
+provider "kubernetes" {
+  config_path = var.kubeconfig_path
+  config_context = var.kube_context
+}
+resource "kubernetes_namespace_v1" "tenant" {
+  metadata {
+    name = "payments-sandbox"
+    labels = {
+      "pod-security.kubernetes.io/enforce" = "restricted"
+      "owner" = "platform-sre"
+    }
+  }
+}
+resource "kubernetes_service_account_v1" "observer" {
+  metadata {
+    name = "app-observer"
+    namespace = kubernetes_namespace_v1.tenant.metadata[0].name
+  }
+  automount_service_account_token = false
+}
+resource "kubernetes_role_v1" "reader" {
+  metadata {
+    name = "app-reader"
+    namespace = kubernetes_namespace_v1.tenant.metadata[0].name
+  }
+  rule {
+    api_groups = ["apps"]
+    resources = ["deployments"]
+    verbs = ["get", "list", "watch"]
+  }
+}
+resource "kubernetes_role_binding_v1" "reader" {
+  metadata {
+    name = "app-reader-binding"
+    namespace = kubernetes_namespace_v1.tenant.metadata[0].name
+  }
+  role_ref {
+    api_group = "rbac.authorization.k8s.io"
+    kind = "Role"
+    name = kubernetes_role_v1.reader.metadata[0].name
+  }
+  subject {
+    kind = "ServiceAccount"
+    name = kubernetes_service_account_v1.observer.metadata[0].name
+    namespace = kubernetes_namespace_v1.tenant.metadata[0].name
+  }
+}
+resource "kubernetes_network_policy_v1" "default_deny" {
+  metadata {
+    name = "default-deny"
+    namespace = kubernetes_namespace_v1.tenant.metadata[0].name
+  }
+  spec {
+    pod_selector {}
+    policy_types = ["Ingress", "Egress"]
+  }
+}
+# Add DNS, quota, LimitRange and scoped DB allow policies after review.
