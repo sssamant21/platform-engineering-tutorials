@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${EXPECTED_GCP_PROJECT_ID:?set approved project ID}"
+: "${EXPECTED_GCP_PROJECT_NUMBER:?set approved project number}"
+actual="$(gcloud config get-value project 2>/dev/null)"
+number="$(gcloud projects describe "$EXPECTED_GCP_PROJECT_ID" --format='value(projectNumber)')"
+[[ "$actual" == "$EXPECTED_GCP_PROJECT_ID" && "$number" == "$EXPECTED_GCP_PROJECT_NUMBER" ]] || { echo "DENY: wrong GCP project context" >&2; exit 1; }
+gcloud auth list --filter='status:ACTIVE' --format='value(account)'
+echo "PASS: CLI context matches; ADC, WIF and Terraform provider identity require separate verification"
