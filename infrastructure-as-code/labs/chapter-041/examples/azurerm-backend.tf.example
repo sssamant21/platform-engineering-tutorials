@@ -1,0 +1,11 @@
+# Example only. Backend is provisioned separately with approved RBAC.
+terraform {
+  backend "azurerm" {
+    resource_group_name = "rg-terraform-state"
+    storage_account_name = "REPLACEWITHAPPROVEDACCOUNT"
+    container_name = "tfstate"
+    key = "prod/platform.tfstate"
+    use_azuread_auth = true
+    use_oidc = true
+  }
+}
