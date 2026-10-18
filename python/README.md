@@ -207,7 +207,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 090 — DevOps/SRE Automation Production Capstone Lab](09-devops-sre-automation/labs/090-devops-sre-automation-production-capstone-lab.md)
 - [Chapter 090 — Standalone Executable Project](09-devops-sre-automation/labs/090/README.md)
 
-### Part 10 — Kubernetes, AWS, Azure and GCP (6/10 published)
+### Part 10 — Kubernetes, AWS, Azure and GCP (7/10 published)
 
 - [Chapter 091 — Python Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md)
 - [Chapter 091 — Kubernetes API and Cloud-Native SRE/DBRE Lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md)
@@ -232,3 +232,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 096 — Python Google Cloud Infrastructure and Operations Automation](10-kubernetes-cloud-platform-engineering/096-python-google-cloud-infrastructure-operations-automation.md)
 - [Chapter 096 — GCP Infrastructure and Operations SRE/DBRE Lab](10-kubernetes-cloud-platform-engineering/labs/096-gcp-infrastructure-operations-sre-dbre-lab.md)
 - [Chapter 096 — Standalone Executable Project](10-kubernetes-cloud-platform-engineering/labs/096/README.md)
+
+- [Chapter 097 — Python Multi-Cloud Infrastructure Inventory and Governance](10-kubernetes-cloud-platform-engineering/097-python-multi-cloud-infrastructure-inventory-governance.md)
+- [Chapter 097 — Multi-Cloud Inventory and Governance SRE/DBRE Lab](10-kubernetes-cloud-platform-engineering/labs/097-multi-cloud-inventory-governance-sre-dbre-lab.md)
+- [Chapter 097 — Standalone Executable Project](10-kubernetes-cloud-platform-engineering/labs/097/README.md)
