@@ -1,0 +1,7 @@
+sandbox/
+*.retry
+__pycache__/
+*.pyc
+.venv/
+.vault_pass
+*.secret
