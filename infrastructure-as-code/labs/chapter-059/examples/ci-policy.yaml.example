@@ -1,0 +1,9 @@
+# REVIEW ONLY: adapt to GitLab/GitHub CI and approved OIDC identity.
+stages:
+  - validate
+  - plan
+  - approval
+  - apply
+# Pin executor and module revisions. Isolate plan artifacts and state locks.
+# Never grant production credentials to untrusted pull requests.
+# Run native-plan policy, DBRE approval and post-apply SLO validation.
