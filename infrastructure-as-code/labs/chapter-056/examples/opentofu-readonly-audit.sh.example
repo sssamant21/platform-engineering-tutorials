@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -euo pipefail
+command -v tofu >/dev/null || { echo "OpenTofu CLI missing" >&2; exit 1; }
+tofu version
+if command -v terraform >/dev/null; then terraform version; fi
+tofu fmt -check -recursive
+tofu init -backend=false -input=false
+tofu validate
+tofu providers
+echo "Read-only audit complete. Do not dump state or credentials."
