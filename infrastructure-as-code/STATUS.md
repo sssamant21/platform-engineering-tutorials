@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 62 / 120 chapters (51.67%)  
+**Progress:** 63 / 120 chapters (52.50%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -57,7 +57,7 @@
 **Part 10:** 5/5 chapters published — complete (GCP).  
 **Part 11:** 5/5 chapters published — complete (Kubernetes and Helm).  
 **Part 12:** 5/5 chapters published — OpenTofu and Terragrunt (content complete; live acceptance pending).  
-**Part 13:** 2/5 chapters published — Ansible.  
+**Part 13:** 3/5 chapters published — Ansible.  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -74,7 +74,8 @@
 **Chapter 060:** Published; Part 12 content complete. Live OpenTofu/Terragrunt migration, remote-state restore, native-plan policy, DBRE game days and operational acceptance pending.  
 **Chapter 061:** Published; Ansible localhost playbook, inventory, templates, policy and tests authored; live execution and operational acceptance pending.  
 **Chapter 062:** Published; reusable Ansible role, inventory, templates, handlers, policy and 45 unit tests authored; execution and operational acceptance pending.  
-**Next:** Chapter 063 — Ansible Advanced Execution, Error Handling, Delegation and Rolling Operations (proposed title).
+**Chapter 063:** Published; local canary simulation, rolling execution, failure injection, declared-evidence policy and 54 unit tests authored; live execution and operational acceptance pending.  
+**Next:** Chapter 064 — Ansible Security, Vault, Dynamic Inventory and Enterprise Automation Governance (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -140,6 +141,7 @@
 | 060 | OpenTofu and Terragrunt Enterprise Platform Engineering, Reliability and Migration Capstone | Published |
 | 061 | Ansible Foundations, Architecture, Inventory and Configuration Management | Published |
 | 062 | Ansible Playbooks, Roles, Variables, Templates and Reusable Automation | Published |
+| 063 | Ansible Advanced Execution, Error Handling, Delegation and Rolling Operations | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -691,3 +693,12 @@
 - [x] Chapter and master index publication; Part 13 at 2/5
 - [ ] Ansible and Python test execution evidence
 - [ ] Production canary, DBRE rollback and operational acceptance
+
+## Chapter 063 acceptance — Ansible advanced execution and rolling operations
+- [x] Serial/forks/strategies, delegation, retry/async, handler and rescue theory
+- [x] Local two-target serial canary simulation and failure injection playbook
+- [x] Fail-closed declared-evidence Python gate and 54 unit tests authored
+- [x] SRE/DBRE incident matrix, nine runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 13 at 3/5
+- [ ] Ansible and Python test execution evidence
+- [ ] Real multi-host canary, database recovery and production operational acceptance
