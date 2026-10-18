@@ -1,0 +1,60 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "architecture": [
+      "custom_resource_reviewed",
+      "component_contract_reviewed",
+      "provider_isolation_reviewed",
+      "dependency_graph_reviewed",
+      "urn_aliases_reviewed"
+    ],
+    "resources": [
+      "stateful_protected",
+      "parents_explicit",
+      "providers_pinned",
+      "secret_outputs_denied",
+      "replacement_approved",
+      "destructive_action"
+    ],
+    "security": [
+      "least_privilege",
+      "no_plaintext_secrets",
+      "supply_chain_verified",
+      "audit_enabled",
+      "workload_identity_reviewed"
+    ],
+    "operations": [
+      "preview_reviewed",
+      "canary_approved",
+      "rollback_documented",
+      "state_backup_verified",
+      "slo_reviewed"
+    ],
+    "dbre": [
+      "backup_verified",
+      "restore_rehearsed",
+      "dbre_approved",
+      "quorum_reviewed",
+      "rpo_rto_reviewed"
+    ]
+  },
+  "forbidden_controls": {
+    "resources": [
+      "destructive_action"
+    ]
+  },
+  "require_ticket": true,
+  "deny_prod_targets": true,
+  "require_provider_review": true,
+  "require_preview": true,
+  "require_backup": true,
+  "require_dbre_approval": true
+}
