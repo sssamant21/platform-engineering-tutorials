@@ -3,7 +3,10 @@ terraform { required_providers { google = { source = "hashicorp/google", version
 variable "project_id" { type = string }
 variable "region" { type = string }
 variable "private_network_id" { type = string }
-provider "google" { project = var.project_id, region = var.region }
+provider "google" {
+  project = var.project_id
+  region = var.region
+}
 resource "google_storage_bucket" "recovery_artifacts" {
   name = "REPLACE-WITH-APPROVED-GLOBALLY-UNIQUE-BUCKET"
   location = var.region
@@ -20,8 +23,14 @@ resource "google_sql_database_instance" "review" {
   settings {
     tier = "db-custom-2-7680"
     availability_type = "REGIONAL"
-    backup_configuration { enabled = true, point_in_time_recovery_enabled = true }
-    ip_configuration { ipv4_enabled = false, private_network = var.private_network_id }
+    backup_configuration {
+      enabled = true
+      point_in_time_recovery_enabled = true
+    }
+    ip_configuration {
+      ipv4_enabled = false
+      private_network = var.private_network_id
+    }
   }
   lifecycle { prevent_destroy = true }
 }
