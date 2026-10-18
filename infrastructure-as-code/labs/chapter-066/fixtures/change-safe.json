@@ -1,0 +1,44 @@
+{
+  "environment": "lab",
+  "account": "offline",
+  "region": "us-east-1",
+  "stack": "chapter066-offline",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-CFN-066",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "cloudformation",
+    "owner": "platform-sre-dbre"
+  },
+  "template": {
+    "version_present": true,
+    "resources_present": true,
+    "parameters_reviewed": true,
+    "outputs_no_secrets": true,
+    "conditions_reviewed": true,
+    "retention_reviewed": true
+  },
+  "change_set": {
+    "account_verified": true,
+    "region_verified": true,
+    "replacement_reviewed": true,
+    "iam_changes_reviewed": true,
+    "change_set_fresh": true,
+    "destructive_action": false
+  },
+  "security": {
+    "least_privilege": true,
+    "execution_role_scoped": true,
+    "no_plaintext_secrets": true,
+    "cloudtrail_enabled": true,
+    "termination_protection_reviewed": true
+  },
+  "operations": {
+    "dbre_approved": true,
+    "backup_verified": true,
+    "rollback_documented": true,
+    "drift_reviewed": true,
+    "slo_reviewed": true,
+    "change_approved": true
+  }
+}
