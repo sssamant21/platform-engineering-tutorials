@@ -139,7 +139,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 052 executable labs and tests](labs/chapter-052/)
 - [053 — Kubernetes Workloads, StatefulSets, Storage and Helm Releases with Terraform](chapters/053-kubernetes-workloads-statefulsets-storage-helm-releases-terraform.md)
 - [Chapter 053 executable labs and tests](labs/chapter-053/)
+- [054 — Kubernetes Helm Provider, Chart Lifecycle, GitOps Integration and Policy Automation with Terraform](chapters/054-kubernetes-helm-provider-chart-lifecycle-gitops-policy-automation-terraform.md)
+- [Chapter 054 executable labs and tests](labs/chapter-054/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 underway (051–053 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 underway (051–054 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
