@@ -1,0 +1,62 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "architecture": [
+      "subscription_scope_reviewed",
+      "module_contract_reviewed",
+      "existing_resource_group",
+      "dependencies_reviewed",
+      "module_pinned",
+      "secret_outputs_denied"
+    ],
+    "deployment": [
+      "what_if_reviewed",
+      "canary_approved",
+      "target_matrix_signed",
+      "bounded_concurrency",
+      "rollback_documented",
+      "delete_all"
+    ],
+    "security": [
+      "least_privilege",
+      "federated_identity",
+      "policy_reviewed",
+      "deny_settings_reviewed",
+      "module_provenance_verified",
+      "secrets_external"
+    ],
+    "dbre": [
+      "backup_verified",
+      "restore_rehearsed",
+      "dbre_approved",
+      "slo_reviewed",
+      "rpo_rto_reviewed"
+    ],
+    "governance": [
+      "change_approved",
+      "owner_verified",
+      "activity_log_enabled",
+      "cost_reviewed",
+      "drift_reviewed"
+    ]
+  },
+  "forbidden_controls": {
+    "deployment": [
+      "delete_all"
+    ]
+  },
+  "require_ticket": true,
+  "deny_prod_targets": true,
+  "require_what_if": true,
+  "require_target_review": true,
+  "require_dbre_backup": true,
+  "require_approval": true
+}
