@@ -1,0 +1,10 @@
+environment = "dev"
+aws_account_id = "111122223333"
+owner = "platform-sre"
+change_ticket = "CHG-SEC-DEV"
+oidc_subject = "repo:example-org/platform-infra:environment:dev"
+oidc_audience = "sts.amazonaws.com"
+kms_rotation_enabled = true
+kms_deletion_window_days = 14
+secret_rotation_enabled = true
+cloudtrail_enabled = true
