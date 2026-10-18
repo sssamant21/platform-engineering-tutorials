@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 23/100 published**
+**100 chapters · 20 parts · 24/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -12,7 +12,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 02 | 006–010 | Linux and Infrastructure Monitoring | 5/5 |
 | 03 | 011–015 | Prometheus Architecture and Installation | 5/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 5/5 |
-| 05 | 021–025 | Grafana Dashboards and Visualization | 3/5 |
+| 05 | 021–025 | Grafana Dashboards and Visualization | 4/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 0/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 0/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 0/5 |
@@ -112,4 +112,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 023 — Grafana Advanced Dashboards, Provisioning, GitOps and Reusable Dashboard Libraries](part-05-grafana-dashboards-visualization/023-grafana-advanced-dashboards-provisioning-gitops-reusable-dashboard-libraries.md)
 - [Chapter 023 — Executable companion lab](part-05-grafana-dashboards-visualization/labs/023-grafana-advanced-dashboards-provisioning-gitops-reusable-dashboard-libraries-lab.md)
 
-**Next:** Chapter 024 — Grafana Alerting, Contact Points, Notification Policies and SRE Incident Workflows.
+- [Chapter 024 — Grafana Alerting, Contact Points, Notification Policies and SRE Incident Workflows](part-05-grafana-dashboards-visualization/024-grafana-alerting-contact-points-notification-policies-sre-incident-workflows.md)
+- [Chapter 024 — Executable companion lab](part-05-grafana-dashboards-visualization/labs/024-grafana-alerting-contact-points-notification-policies-sre-incident-workflows-lab.md)
+
+**Next:** Chapter 025 — Grafana Enterprise Dashboards, Alerting, Security and Production Operations Capstone.
