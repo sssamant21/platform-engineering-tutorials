@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 25/100 published**
+**100 chapters · 20 parts · 26/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -13,7 +13,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 03 | 011–015 | Prometheus Architecture and Installation | 5/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 5/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 5/5 |
-| 06 | 026–030 | Alertmanager and Alert Engineering | 0/5 |
+| 06 | 026–030 | Alertmanager and Alert Engineering | 1/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 0/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 0/5 |
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 0/5 |
@@ -120,4 +120,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 
 **Part 05 complete: 5/5 chapters published.**
 
-**Next:** Chapter 026 — Prometheus Alertmanager Architecture, Installation and Notification Routing Fundamentals (Part 06).
+- [Chapter 026 — Prometheus Alertmanager Architecture, Installation and Notification Routing Fundamentals](part-06-alertmanager-alert-engineering/026-prometheus-alertmanager-architecture-installation-notification-routing-fundamentals.md)
+- [Chapter 026 — Executable companion lab](part-06-alertmanager-alert-engineering/labs/026-prometheus-alertmanager-architecture-installation-notification-routing-fundamentals-lab.md)
+
+**Next:** Chapter 027 — Alertmanager Advanced Routing, Inhibition, Silences, High Availability and Incident Escalation.
