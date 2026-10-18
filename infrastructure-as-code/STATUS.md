@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 42 / 120 chapters (35.00%)  
+**Progress:** 43 / 120 chapters (35.83%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -50,7 +50,8 @@
 **Chapter 040:** Published; live Terraform, AWS recovery drills and production acceptance pending.  
 **Chapter 041:** Published; live Terraform, Azure integration and security acceptance pending.  
 **Chapter 042:** Published; live Terraform, Azure network integration and SRE/DBRE acceptance pending.  
-**Next:** Chapter 043 — Azure Identity, Key Vault, Managed Identities and Secure Infrastructure with Terraform.
+**Chapter 043:** Published; live Terraform, Azure Key Vault integration and security acceptance pending.  
+**Next:** Chapter 044 — Azure Compute, AKS and Application Infrastructure with Terraform.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -96,6 +97,7 @@
 | 040 | AWS Stateful Data, Storage, Resilience and Production Operations Capstone | Published |
 | 041 | Azure Infrastructure as Code Foundations and Terraform AzureRM Provider | Published |
 | 042 | Azure Virtual Networks, Subnets, NSGs, Routing and Private Connectivity with Terraform | Published |
+| 043 | Azure Identity, Key Vault, Managed Identities and Secure Infrastructure with Terraform | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -449,3 +451,13 @@
 - [x] Chapter and master index publication; Part 09 at 2/5
 - [ ] Live Terraform execution and automated test evidence
 - [ ] Azure effective routes/NSGs, DNS, private connectivity and DBRE acceptance
+
+## Chapter 043 acceptance — Azure identity and Key Vault
+- [x] Entra ID, OIDC federation, RBAC, managed identities, Key Vault and CMK architecture
+- [x] Offline Terraform identity/RBAC/vault/audit contracts with dev/prod fixtures
+- [x] Review-only AzureRM Key Vault and identity preflight examples authored
+- [x] Fail-closed Python security policy and fifty-four unit tests authored
+- [x] SRE/DBRE security incidents, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 09 at 3/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] Azure Key Vault, OIDC, RBAC, secret rotation and CMK recovery acceptance
