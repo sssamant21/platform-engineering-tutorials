@@ -1,0 +1,61 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev",
+    "staging"
+  ],
+  "allowed_connections": [
+    "local"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "inventory": [
+      "localhost_only",
+      "inventory_reviewed",
+      "limit_verified",
+      "no_prod_hosts",
+      "host_group_ownership",
+      "connection_local"
+    ],
+    "configuration": [
+      "modules_fqcn",
+      "idempotence_verified",
+      "check_mode_reviewed",
+      "template_reviewed",
+      "variables_validated",
+      "handlers_change_only"
+    ],
+    "security": [
+      "least_privilege",
+      "become_disabled_lab",
+      "secrets_not_plaintext",
+      "diff_no_secrets",
+      "collections_pinned",
+      "change_approved"
+    ],
+    "operations": [
+      "slo_reviewed",
+      "dbre_approved",
+      "backup_verified",
+      "rollback_documented",
+      "serial_rollout",
+      "unapproved_restart"
+    ]
+  },
+  "forbidden_controls": {
+    "operations": [
+      "unapproved_restart"
+    ]
+  },
+  "require_ticket": true,
+  "require_local_scope": true,
+  "deny_prod_targets": true,
+  "require_idempotence": true,
+  "require_approval": true,
+  "require_dbre_backup": true,
+  "deny_plaintext_secrets": true
+}
