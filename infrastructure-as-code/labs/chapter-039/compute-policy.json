@@ -1,0 +1,33 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_regions": [
+    "us-east-1",
+    "us-east-2",
+    "us-west-2"
+  ],
+  "required_tags": [
+    "Environment",
+    "ManagedBy",
+    "Owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_two_azs": true,
+  "require_private_compute": true,
+  "require_imdsv2": true,
+  "require_ebs_encryption": true,
+  "require_alb_https": true,
+  "require_eks_private_endpoint": true,
+  "require_eks_logging": true,
+  "require_eks_encryption": true,
+  "require_scoped_pod_identity": true,
+  "require_monitoring": true,
+  "deny_destructive_actions": true
+}
