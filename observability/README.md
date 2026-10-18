@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 28/100 published**
+**100 chapters · 20 parts · 29/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -13,7 +13,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 03 | 011–015 | Prometheus Architecture and Installation | 5/5 |
 | 04 | 016–020 | PromQL and Advanced Metrics | 5/5 |
 | 05 | 021–025 | Grafana Dashboards and Visualization | 5/5 |
-| 06 | 026–030 | Alertmanager and Alert Engineering | 3/5 |
+| 06 | 026–030 | Alertmanager and Alert Engineering | 4/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 0/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 0/5 |
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 0/5 |
@@ -129,4 +129,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 028 — Alertmanager Notification Templates, Receiver Integrations, Security and Delivery Reliability](part-06-alertmanager-alert-engineering/028-alertmanager-notification-templates-receiver-integrations-security-delivery-reliability.md)
 - [Chapter 028 — Executable companion lab](part-06-alertmanager-alert-engineering/labs/028-alertmanager-notification-templates-receiver-integrations-security-delivery-reliability-lab.md)
 
-**Next:** Chapter 029 — Alert Quality Engineering, Noise Reduction, SLO Burn-Rate Alerts and Incident Signal Design.
+- [Chapter 029 — Alert Quality Engineering, Noise Reduction, SLO Burn-Rate Alerts and Incident Signal Design](part-06-alertmanager-alert-engineering/029-alert-quality-engineering-noise-reduction-slo-burn-rate-alerts-incident-signal-design.md)
+- [Chapter 029 — Executable companion lab](part-06-alertmanager-alert-engineering/labs/029-alert-quality-engineering-noise-reduction-slo-burn-rate-alerts-incident-signal-design-lab.md)
+
+**Next:** Chapter 030 — Enterprise Alert Engineering, SLOs, On-Call and Incident Response Production Capstone.
