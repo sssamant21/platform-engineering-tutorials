@@ -1,0 +1,47 @@
+{
+  "environment": "lab",
+  "inventory": {
+    "localhost_only": true,
+    "hosts_reviewed": true,
+    "inventory_isolated": true,
+    "limit_verified": true,
+    "owner_defined": true
+  },
+  "target_hosts": [
+    "prod-db-01"
+  ],
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-ANS-062",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "ansible",
+    "owner": "platform-sre-dbre"
+  },
+  "roles": {
+    "role_reusable": true,
+    "defaults_defined": true,
+    "tasks_fqcn": true,
+    "templates_reviewed": true,
+    "handlers_change_only": true,
+    "variable_contracts_validated": true,
+    "idempotence_verified": true
+  },
+  "security": {
+    "least_privilege": true,
+    "become_disabled": true,
+    "secrets_external": true,
+    "diff_safe": true,
+    "dependencies_pinned": true,
+    "change_approved": true,
+    "plaintext_secrets": true
+  },
+  "operations": {
+    "check_mode_reviewed": true,
+    "drift_tested": true,
+    "backup_verified": true,
+    "dbre_approved": false,
+    "rollback_documented": true,
+    "slo_reviewed": true,
+    "unapproved_restart": false
+  }
+}
