@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 53 / 100 chapters (53%) · 20 parts · Part 11: 3/5**
+**Progress: 54 / 100 chapters (54%) · 20 parts · Part 11: 4/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -14,7 +14,7 @@
 | 08 — Centralized Logging with Loki | 036–040 | 5 | 5 | Complete |
 | 09 — Elasticsearch and OpenSearch Logging | 041–045 | 5 | 5 | Complete |
 | 10 — OpenTelemetry Architecture and Instrumentation | 046–050 | 5 | 5 | Complete |
-| 11 — Distributed Tracing with Jaeger and Tempo | 051–055 | 3 | 5 | In progress |
+| 11 — Distributed Tracing with Jaeger and Tempo | 051–055 | 4 | 5 | In progress |
 | 12 — Kubernetes EKS AKS and GKE Observability | 056–060 | 0 | 5 | Planned |
 | 13 — Database and Data Platform Observability | 061–065 | 0 | 5 | Planned |
 | 14 — Application Performance Monitoring | 066–070 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–053 and companion labs. Parts 01–10 complete (5/5 each); Part 11 in progress (3/5).
+**Published:** Chapters 001–054 and companion labs. Parts 01–10 complete (5/5 each); Part 11 in progress (4/5).
 
-**Next:** Chapter 054 — Distributed Trace Analysis, Service Dependencies, Sampling and Metrics Correlation.
+**Next:** Chapter 055 — Jaeger and Tempo Production Reliability, Performance, Security and Troubleshooting Capstone.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
