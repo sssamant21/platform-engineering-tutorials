@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${EXPECTED_AZURE_TENANT_ID:?set approved tenant}"
+: "${EXPECTED_AZURE_SUBSCRIPTION_ID:?set approved subscription}"
+tenant="$(az account show --query tenantId -o tsv)"
+subscription="$(az account show --query id -o tsv)"
+if [[ "$tenant" != "$EXPECTED_AZURE_TENANT_ID" || "$subscription" != "$EXPECTED_AZURE_SUBSCRIPTION_ID" ]]; then
+  echo "DENY: wrong tenant or subscription" >&2
+  exit 1
+fi
+echo "PASS: identity context matches expected tenant/subscription; verify RBAC separately"
