@@ -1,0 +1,52 @@
+# REVIEW ONLY: separate root and approved disposable cluster; inspect provider/chart schema.
+terraform {
+  required_providers {
+    kubernetes = { source = "hashicorp/kubernetes", version = "~> 2.0" }
+    helm = { source = "hashicorp/helm", version = "~> 2.0" }
+  }
+}
+variable "kubeconfig_path" { type = string }
+variable "kube_context" { type = string }
+provider "kubernetes" {
+  config_path = var.kubeconfig_path
+  config_context = var.kube_context
+}
+provider "helm" {
+  kubernetes {
+    config_path = var.kubeconfig_path
+    config_context = var.kube_context
+  }
+}
+resource "kubernetes_namespace_v1" "sandbox" {
+  metadata { name = "iac-helm-sandbox" }
+}
+resource "kubernetes_deployment_v1" "web" {
+  metadata {
+    name = "web"
+    namespace = kubernetes_namespace_v1.sandbox.metadata[0].name
+  }
+  spec {
+    replicas = 2
+    selector { match_labels = { app = "web" } }
+    template {
+      metadata { labels = { app = "web" } }
+      spec {
+        container {
+          name = "web"
+          image = "nginx@sha256:REPLACE_WITH_VERIFIED_DIGEST"
+          port { container_port = 80 }
+          resources {
+            requests = { cpu = "100m", memory = "128Mi" }
+            limits = { cpu = "500m", memory = "256Mi" }
+          }
+          readiness_probe {
+            http_get { path = "/", port = 80 }
+            initial_delay_seconds = 2
+          }
+        }
+      }
+    }
+  }
+}
+# Add PDB, NetworkPolicy, Service, approved chart repository/version and tested
+# helm_release in a separate platform-addons root. Never apply placeholder digest.
