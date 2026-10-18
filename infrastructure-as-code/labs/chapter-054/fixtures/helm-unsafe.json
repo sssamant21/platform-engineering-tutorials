@@ -1,0 +1,49 @@
+{
+  "environment": "prod",
+  "cluster_name": "sample-iac-prod-054",
+  "namespace": "platform-prod",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "CHG-HELM-PROD-054",
+  "state_namespace": "iac-prod-sample-iac-prod-054-platform-prod",
+  "labels": {
+    "environment": "prod",
+    "managed-by": "terraform",
+    "owner": "platform-sre-dbre"
+  },
+  "supply": {
+    "provider_pinned": true,
+    "chart_version_pinned": false,
+    "repository_verified": true,
+    "image_digest_pinned": true,
+    "chart_render_reviewed": true,
+    "chart_rbac_reviewed": true,
+    "chart_hooks_reviewed": true
+  },
+  "release": {
+    "crd_staged": true,
+    "rollout_health_checked": true,
+    "rollback_tested": true,
+    "pdb_reviewed": true,
+    "secrets_excluded_from_state": true,
+    "unapproved_uninstall": true,
+    "unapproved_crd_delete": false
+  },
+  "gitops": {
+    "owner_registry": true,
+    "single_reconciler": true,
+    "drift_reviewed": true,
+    "handoff_documented": true,
+    "policy_gate_enabled": true,
+    "competing_reconciler": true
+  },
+  "operations": {
+    "audit_logs_enabled": true,
+    "monitoring_enabled": true,
+    "backup_tested": true,
+    "rpo_rto_measured": true,
+    "security_approved": true,
+    "dbre_approved": false,
+    "change_approved": true,
+    "unapproved_destroy": false
+  }
+}
