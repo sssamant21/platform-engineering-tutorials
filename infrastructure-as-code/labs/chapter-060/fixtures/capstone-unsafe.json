@@ -1,0 +1,59 @@
+{
+  "environment": "prod",
+  "root_name": "iac-capstone-prod-060",
+  "backend_key": "iac/prod/chapter-060.tfstate",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "CHG-IAC-PROD-060",
+  "state_namespace": "iac-prod-iac-capstone-prod-060",
+  "labels": {
+    "environment": "prod",
+    "managed-by": "opentofu-terragrunt",
+    "owner": "platform-sre-dbre"
+  },
+  "migration": {
+    "tofu_version_pinned": true,
+    "terraform_baseline_recorded": true,
+    "provider_versions_pinned": true,
+    "module_revisions_pinned": true,
+    "schema_compatibility_reviewed": false,
+    "migration_rehearsed": true,
+    "rollback_documented": true
+  },
+  "state": {
+    "backend_keys_unique": true,
+    "backend_encrypted": true,
+    "backend_lock_verified": true,
+    "lineage_serial_recorded": true,
+    "state_backup_verified": true,
+    "isolated_restore_tested": true,
+    "exclusive_writer": true,
+    "concurrent_writers": true
+  },
+  "graph": {
+    "dag_acyclic": true,
+    "dependency_outputs_reviewed": true,
+    "prod_mock_outputs_disabled": true,
+    "bounded_parallelism": true,
+    "partial_failure_runbook": true,
+    "gitops_single_writer": true,
+    "competing_orchestrators": true
+  },
+  "delivery": {
+    "oidc_short_lived": true,
+    "native_plan_adapter_reviewed": true,
+    "plan_policy_enabled": true,
+    "immutable_artifacts": true,
+    "environment_approvals": true,
+    "untrusted_pr_prod_access": false
+  },
+  "recovery": {
+    "dbre_approved": false,
+    "security_approved": true,
+    "change_approved": true,
+    "pitr_verified": true,
+    "rpo_rto_measured": true,
+    "slo_monitored": true,
+    "incident_game_day": true,
+    "unapproved_destroy": false
+  }
+}
