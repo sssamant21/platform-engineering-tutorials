@@ -1,0 +1,4 @@
+---
+- name: Record role configuration change
+  ansible.builtin.debug:
+    msg: "Config changed; no real service restart is performed in this lab"
