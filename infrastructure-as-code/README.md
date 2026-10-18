@@ -161,7 +161,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 063 executable labs and tests](labs/chapter-063/)
 - [064 — Ansible Security, Vault, Dynamic Inventory and Enterprise Automation Governance](chapters/064-ansible-security-vault-dynamic-inventory-enterprise-automation-governance.md)
 - [Chapter 064 executable labs and tests](labs/chapter-064/)
+- [065 — Ansible Enterprise Automation, Security, Operations and Disaster Recovery Capstone](chapters/065-ansible-enterprise-automation-security-operations-disaster-recovery-capstone.md)
+- [Chapter 065 executable labs and tests](labs/chapter-065/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 underway (061–064 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
