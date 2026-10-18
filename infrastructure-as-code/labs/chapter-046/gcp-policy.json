@@ -1,0 +1,34 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_regions": [
+    "us-central1",
+    "us-east1",
+    "us-east4",
+    "us-west1"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_project_isolation": true,
+  "require_billing_review": true,
+  "require_org_policy": true,
+  "require_apis": true,
+  "require_quota_review": true,
+  "require_wif": true,
+  "deny_static_keys": true,
+  "require_least_privilege": true,
+  "require_secure_state": true,
+  "require_audit": true,
+  "require_budgets": true,
+  "deny_destructive_actions": true
+}
