@@ -1,0 +1,36 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_regions": [
+    "us-central1",
+    "us-east1",
+    "us-east4",
+    "us-west1"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_ha": true,
+  "require_pitr": true,
+  "require_restore_test": true,
+  "deny_public_db": true,
+  "require_private_db": true,
+  "require_storage_protection": true,
+  "require_kms_recovery": true,
+  "deny_static_keys": true,
+  "deny_secret_payload": true,
+  "require_dr_test": true,
+  "require_rpo_rto_evidence": true,
+  "require_approvals": true,
+  "deny_destructive_actions": true
+}
