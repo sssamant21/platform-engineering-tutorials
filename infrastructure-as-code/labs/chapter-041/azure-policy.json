@@ -1,0 +1,39 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_locations": [
+    "eastus",
+    "eastus2",
+    "centralus",
+    "westus2"
+  ],
+  "allowed_oidc_issuers": [
+    "https://token.actions.githubusercontent.com"
+  ],
+  "allowed_oidc_audiences": [
+    "api://AzureADTokenExchange"
+  ],
+  "required_tags": [
+    "Environment",
+    "ManagedBy",
+    "Owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_oidc": true,
+  "deny_static_secrets": true,
+  "require_scoped_rbac": true,
+  "require_azure_policy": true,
+  "require_secure_state": true,
+  "require_state_recovery": true,
+  "require_key_vault_private": true,
+  "require_managed_identity": true,
+  "require_activity_logs": true,
+  "deny_destructive_actions": true
+}
