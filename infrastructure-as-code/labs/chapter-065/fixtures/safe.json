@@ -1,0 +1,54 @@
+{
+  "environment": "lab",
+  "inventory": "inventory/hosts.ini",
+  "target_hosts": [
+    "canary_a",
+    "canary_b"
+  ],
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-ANS-065",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "ansible",
+    "owner": "platform-sre-dbre"
+  },
+  "architecture": {
+    "roles_reusable": true,
+    "inventory_isolated": true,
+    "ownership_defined": true,
+    "gitops_single_writer": true,
+    "config_contracts_reviewed": true
+  },
+  "security": {
+    "least_privilege": true,
+    "vault_policy_reviewed": true,
+    "secrets_external": true,
+    "no_log_sensitive": true,
+    "supply_chain_pinned": true,
+    "change_approved": true
+  },
+  "execution": {
+    "serial_one": true,
+    "canary_first": true,
+    "bounded_forks": true,
+    "failure_not_masked": true,
+    "idempotence_verified": true,
+    "drift_tested": true
+  },
+  "operations": {
+    "slo_reviewed": true,
+    "dbre_approved": true,
+    "backup_verified": true,
+    "restore_rehearsed": true,
+    "rollback_documented": true,
+    "audit_enabled": true,
+    "unapproved_restart": false
+  },
+  "recovery": {
+    "rpo_rto_defined": true,
+    "checksum_verified": true,
+    "isolation_verified": true,
+    "game_day_reviewed": true,
+    "incident_commander_defined": true
+  }
+}
