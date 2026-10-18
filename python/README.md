@@ -149,7 +149,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 070 — Testing, Debugging and Code Quality Capstone](07-testing-debugging-code-quality/070-testing-debugging-code-quality-capstone.md)
 - [Chapter 070 — Enterprise Testing and Code Quality Capstone SRE/DBRE Lab](07-testing-debugging-code-quality/labs/070-testing-debugging-code-quality-capstone-sre-dbre-lab.md)
 
-### Part 08 — APIs, Networking and Databases (7/10 published)
+### Part 08 — APIs, Networking and Databases (8/10 published)
 - [Chapter 071 — Python HTTP Fundamentals, REST APIs and Reliable API Clients](08-apis-networking-databases/071-python-http-fundamentals-rest-apis-reliable-api-clients.md)
 - [Chapter 071 — Reliable HTTP API Client SRE/DBRE Lab](08-apis-networking-databases/labs/071-reliable-http-api-client-sre-dbre-lab.md)
 - [Chapter 072 — Python HTTP Authentication, API Security and Production Client Patterns](08-apis-networking-databases/072-python-http-authentication-api-security-production-client-patterns.md)
@@ -164,3 +164,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 076 — Database Connectivity, Pooling and Transactions SRE/DBRE Lab](08-apis-networking-databases/labs/076-database-connectivity-pooling-transactions-sre-dbre-lab.md)
 - [Chapter 077 — Python PostgreSQL Transactions, Isolation and Reliable Database Operations](08-apis-networking-databases/077-python-postgresql-transactions-isolation-reliable-database-operations.md)
 - [Chapter 077 — PostgreSQL Transactions, Isolation and Reliability SRE/DBRE Lab](08-apis-networking-databases/labs/077-postgresql-transactions-isolation-reliability-sre-dbre-lab.md)
+- [Chapter 078 — Python Database Query Performance, Batching and Streaming Results](08-apis-networking-databases/078-python-database-query-performance-batching-streaming-results.md)
+- [Chapter 078 — PostgreSQL Query Performance, Batching and Streaming SRE/DBRE Lab](08-apis-networking-databases/labs/078-postgresql-query-performance-batching-streaming-sre-dbre-lab.md)
