@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **80 chapters**
-- Remaining: **40 chapters**
-- Published labs: **80**
-- Next: **081 — Python Infrastructure Automation, CLI Design and Operational Workflows**
+- Published: **81 chapters**
+- Remaining: **39 chapters**
+- Published labs: **81**
+- Next: **082 — Python Operating System, Process and Service Automation**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–080 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–081 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -149,3 +149,7 @@ Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-
 - Chapter 079 — Python Database Migrations, Schema Evolution and Operational Automation: [Tutorial](08-apis-networking-databases/079-python-database-migrations-schema-evolution-operational-automation.md) · [Hands-on lab](08-apis-networking-databases/labs/079-alembic-schema-migrations-expand-contract-sre-dbre-lab.md). Alembic revisions, SQLite smoke tests and optional disposable PostgreSQL migration tests published; execution pending. PostgreSQL online DDL and lock drills are guided exercises.
 
 - Chapter 080 — Python APIs, Networking and Databases Production Integration Capstone: [Tutorial](08-apis-networking-databases/080-python-apis-networking-databases-production-integration-capstone.md) · [Hands-on lab](08-apis-networking-databases/labs/080-apis-networking-databases-production-integration-capstone-sre-dbre-lab.md). Async HTTP loopback integration, SQLAlchemy transactions, Alembic migrations and optional psycopg PostgreSQL smoke profile published; runtime and CI validation pending. **Part 08 complete: 10/10 chapters published.**
+
+## Part 09 — DevOps, SRE and Automation
+- Published: **1/10** (Chapter 081)
+- Chapter 081 — Python Infrastructure Automation, CLI Design and Operational Workflows: [Tutorial](09-devops-sre-automation/081-python-infrastructure-automation-cli-design-operational-workflows.md) · [Hands-on lab](09-devops-sre-automation/labs/081-safe-infrastructure-cli-automation-sre-devops-dbre-lab.md). argparse, safe subprocess, dry-run, idempotent atomic file reconciliation, JSON logging and retry tests published; execution pending.
