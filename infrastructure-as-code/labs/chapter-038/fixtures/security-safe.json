@@ -1,0 +1,40 @@
+{
+  "environment": "prod",
+  "aws_account_id": "444455556666",
+  "owner": "security-sre",
+  "change_ticket": "CHG-SEC-038",
+  "state_namespace": "iac-prod-444455556666",
+  "identity": {
+    "short_lived_credentials": true,
+    "static_access_keys": false,
+    "oidc_issuer": "token.actions.githubusercontent.com",
+    "oidc_audience": "sts.amazonaws.com",
+    "oidc_subject": "repo:example-org/platform-infra:environment:prod",
+    "least_privilege_reviewed": true,
+    "passrole_restricted": true,
+    "wildcard_admin": false
+  },
+  "kms": {
+    "customer_managed": true,
+    "rotation_enabled": true,
+    "deletion_window_days": 30,
+    "unrestricted_decrypt": false,
+    "key_policy_reviewed": true
+  },
+  "secrets": {
+    "plaintext_in_state": false,
+    "rotation_enabled": true,
+    "resource_policy_public": false,
+    "runtime_identity_retrieval": true
+  },
+  "audit": {
+    "cloudtrail_enabled": true,
+    "config_enabled": true,
+    "security_reviewed": true
+  },
+  "tags": {
+    "Environment": "prod",
+    "ManagedBy": "terraform",
+    "Owner": "security-sre"
+  }
+}
