@@ -1,0 +1,63 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "architecture": [
+      "roles_reusable",
+      "inventory_isolated",
+      "ownership_defined",
+      "gitops_single_writer",
+      "config_contracts_reviewed"
+    ],
+    "security": [
+      "least_privilege",
+      "vault_policy_reviewed",
+      "secrets_external",
+      "no_log_sensitive",
+      "supply_chain_pinned",
+      "change_approved"
+    ],
+    "execution": [
+      "serial_one",
+      "canary_first",
+      "bounded_forks",
+      "failure_not_masked",
+      "idempotence_verified",
+      "drift_tested"
+    ],
+    "operations": [
+      "slo_reviewed",
+      "dbre_approved",
+      "backup_verified",
+      "restore_rehearsed",
+      "rollback_documented",
+      "audit_enabled",
+      "unapproved_restart"
+    ],
+    "recovery": [
+      "rpo_rto_defined",
+      "checksum_verified",
+      "isolation_verified",
+      "game_day_reviewed",
+      "incident_commander_defined"
+    ]
+  },
+  "forbidden_controls": {
+    "operations": [
+      "unapproved_restart"
+    ]
+  },
+  "require_ticket": true,
+  "deny_prod_targets": true,
+  "require_backup": true,
+  "require_restore": true,
+  "require_dbre_approval": true,
+  "require_security_review": true
+}
