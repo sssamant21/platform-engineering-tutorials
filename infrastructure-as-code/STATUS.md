@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 59 / 120 chapters (49.17%)  
+**Progress:** 60 / 120 chapters (50.00%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -56,7 +56,7 @@
 **Chapter 046:** Published; live Terraform, GCP integration and operational acceptance pending.  
 **Part 10:** 5/5 chapters published — complete (GCP).  
 **Part 11:** 5/5 chapters published — complete (Kubernetes and Helm).  
-**Part 12:** 4/5 chapters published — OpenTofu and Terragrunt.  
+**Part 12:** 5/5 chapters published — OpenTofu and Terragrunt (content complete; live acceptance pending).  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -70,7 +70,8 @@
 **Chapter 057:** Published; live OpenTofu, provider/module compatibility, state restore and operational acceptance pending.  
 **Chapter 058:** Published; live Terragrunt/OpenTofu orchestration, dependency graph, remote-state integration and operational acceptance pending.  
 **Chapter 059:** Published; live Terragrunt/OpenTofu DAG orchestration, remote-state integration, native-plan CI policy and operational acceptance pending.  
-**Next:** Chapter 060 — OpenTofu and Terragrunt Enterprise Platform Engineering, Reliability and Migration Capstone (proposed title).
+**Chapter 060:** Published; Part 12 content complete. Live OpenTofu/Terragrunt migration, remote-state restore, native-plan policy, DBRE game days and operational acceptance pending.  
+**Next:** Chapter 061 — confirm the exact Part 13 master roadmap title before publication.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -133,6 +134,7 @@
 | 057 | OpenTofu State, Providers, Modules and Advanced Terraform Compatibility | Published |
 | 058 | Terragrunt Foundations, DRY Configuration, Includes and Multi-Environment Orchestration | Published |
 | 059 | Terragrunt Dependency Graphs, Remote State, CI/CD and Enterprise Orchestration | Published |
+| 060 | OpenTofu and Terragrunt Enterprise Platform Engineering, Reliability and Migration Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -656,3 +658,13 @@
 - [x] Chapter and master index publication; Part 12 at 4/5
 - [ ] Live Terragrunt/OpenTofu execution and automated test evidence
 - [ ] Native-plan adapter, real dependency graph, state backup/restore and operational acceptance
+
+## Chapter 060 acceptance — OpenTofu and Terragrunt Part 12 capstone
+- [x] Terraform-to-OpenTofu compatibility, migration architecture and rollback theory
+- [x] Offline OpenTofu-compatible migration/state/graph/delivery/recovery contracts with dev/prod fixtures
+- [x] Review-only Terragrunt network/database, backend and CI examples authored
+- [x] Fail-closed declared-evidence Python capstone policy and sixty-two unit tests authored
+- [x] Twenty production incident scenarios, nine runbooks and 100-point final rubric
+- [x] Chapter and master index publication; Part 12 content complete at 5/5
+- [ ] Live OpenTofu/Terragrunt execution and automated test evidence
+- [ ] Native-plan policy, isolated state restore, database recovery, measured RPO/RTO and operational acceptance
