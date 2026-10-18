@@ -1,0 +1,36 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_oidc_issuers": [
+    "token.actions.githubusercontent.com"
+  ],
+  "allowed_oidc_audiences": [
+    "sts.amazonaws.com"
+  ],
+  "required_tags": [
+    "Environment",
+    "ManagedBy",
+    "Owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_short_lived_credentials": true,
+  "deny_static_access_keys": true,
+  "require_oidc_subject_scope": true,
+  "require_least_privilege": true,
+  "deny_wildcard_admin": true,
+  "require_kms_rotation": true,
+  "require_kms_key_policy_review": true,
+  "deny_unrestricted_decrypt": true,
+  "deny_secret_plaintext_in_state": true,
+  "require_secret_rotation": true,
+  "deny_public_secret_policy": true,
+  "require_cloudtrail": true,
+  "deny_destructive_actions": true
+}
