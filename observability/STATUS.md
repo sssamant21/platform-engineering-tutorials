@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 45 / 100 chapters (45%) · 20 parts · Part 09: 5/5**
+**Progress: 46 / 100 chapters (46%) · 20 parts · Part 10: 1/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -13,7 +13,7 @@
 | 07 — Exporters and Custom Instrumentation | 031–035 | 5 | 5 | Complete |
 | 08 — Centralized Logging with Loki | 036–040 | 5 | 5 | Complete |
 | 09 — Elasticsearch and OpenSearch Logging | 041–045 | 5 | 5 | Complete |
-| 10 — OpenTelemetry Architecture and Instrumentation | 046–050 | 0 | 5 | Planned |
+| 10 — OpenTelemetry Architecture and Instrumentation | 046–050 | 1 | 5 | In progress |
 | 11 — Distributed Tracing with Jaeger and Tempo | 051–055 | 0 | 5 | Planned |
 | 12 — Kubernetes EKS AKS and GKE Observability | 056–060 | 0 | 5 | Planned |
 | 13 — Database and Data Platform Observability | 061–065 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–045 and companion labs. Parts 01, 02, 03, 04, 05, 06, 07, 08 and 09 complete (5/5 each).
+**Published:** Chapters 001–046 and companion labs. Parts 01–09 complete (5/5 each); Part 10 in progress (1/5).
 
-**Next:** Chapter 046 — OpenTelemetry Architecture, Signals, SDKs and Collector Fundamentals (Part 10).
+**Next:** Chapter 047 — OpenTelemetry SDK Instrumentation, Context Propagation and Application Telemetry.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
