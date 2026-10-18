@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 51/100 published**
+**100 chapters · 20 parts · 52/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -18,7 +18,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 08 | 036–040 | Centralized Logging with Loki | 5/5 |
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 5/5 |
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 5/5 |
-| 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 1/5 |
+| 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 2/5 |
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 0/5 |
 | 13 | 061–065 | Database and Data Platform Observability | 0/5 |
 | 14 | 066–070 | Application Performance Monitoring | 0/5 |
@@ -208,4 +208,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 051 — Distributed Tracing Architecture with Jaeger and Grafana Tempo](part-11-distributed-tracing-jaeger-tempo/051-distributed-tracing-architecture-jaeger-grafana-tempo.md)
 - [Chapter 051 — Companion lab](part-11-distributed-tracing-jaeger-tempo/labs/051-distributed-tracing-architecture-jaeger-grafana-tempo-lab.md)
 
-**Next:** Chapter 052 — Jaeger Deployment, Trace Collection, Storage and Query Operations.
+- [Chapter 052 — Jaeger Deployment, Trace Collection, Storage and Query Operations](part-11-distributed-tracing-jaeger-tempo/052-jaeger-deployment-trace-collection-storage-query-operations.md)
+- [Chapter 052 — Companion lab](part-11-distributed-tracing-jaeger-tempo/labs/052-jaeger-deployment-trace-collection-storage-query-operations-lab.md)
+
+**Next:** Chapter 053 — Grafana Tempo Deployment, Object Storage, TraceQL and Query Operations.
