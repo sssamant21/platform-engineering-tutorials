@@ -148,3 +148,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 069 — Security Testing and Dependency Auditing SRE/DBRE Lab](07-testing-debugging-code-quality/labs/069-security-testing-dependency-auditing-sre-dbre-lab.md)
 - [Chapter 070 — Testing, Debugging and Code Quality Capstone](07-testing-debugging-code-quality/070-testing-debugging-code-quality-capstone.md)
 - [Chapter 070 — Enterprise Testing and Code Quality Capstone SRE/DBRE Lab](07-testing-debugging-code-quality/labs/070-testing-debugging-code-quality-capstone-sre-dbre-lab.md)
+
+### Part 08 — APIs, Networking and Databases (1/10 published)
+- [Chapter 071 — Python HTTP Fundamentals, REST APIs and Reliable API Clients](08-apis-networking-databases/071-python-http-fundamentals-rest-apis-reliable-api-clients.md)
+- [Chapter 071 — Reliable HTTP API Client SRE/DBRE Lab](08-apis-networking-databases/labs/071-reliable-http-api-client-sre-dbre-lab.md)
