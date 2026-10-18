@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 53 / 120 chapters (44.17%)  
+**Progress:** 54 / 120 chapters (45.00%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -55,7 +55,7 @@
 **Chapter 045:** Published; live Terraform, Azure stateful-data integration, restore drills and DBRE acceptance pending.  
 **Chapter 046:** Published; live Terraform, GCP integration and operational acceptance pending.  
 **Part 10:** 5/5 chapters published — complete (GCP).  
-**Part 11:** 3/5 chapters published — Kubernetes and Helm.  
+**Part 11:** 4/5 chapters published — Kubernetes and Helm.  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -63,7 +63,8 @@
 **Chapter 051:** Published; live Terraform, Kubernetes provider integration, RBAC/network policy and operational acceptance pending.  
 **Chapter 052:** Published; live Terraform, Kubernetes RBAC/NetworkPolicy/PSA enforcement and operational acceptance pending.  
 **Chapter 053:** Published; live Terraform, Kubernetes/Helm/CSI integration, DBRE recovery and operational acceptance pending.  
-**Next:** Chapter 054 — Kubernetes Helm Provider, Chart Lifecycle, GitOps Integration and Policy Automation with Terraform (proposed title).
+**Chapter 054:** Published; live Terraform, Helm/GitOps/CRD integration, DBRE recovery and operational acceptance pending.  
+**Next:** Chapter 055 — Kubernetes and Helm Production Platform Engineering, Reliability and GitOps Capstone (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -120,6 +121,7 @@
 | 051 | Kubernetes Infrastructure as Code Foundations, Terraform Provider and Cluster Resource Management | Published |
 | 052 | Kubernetes Namespaces, RBAC, Network Policies and Multitenancy with Terraform | Published |
 | 053 | Kubernetes Workloads, StatefulSets, Storage and Helm Releases with Terraform | Published |
+| 054 | Kubernetes Helm Provider, Chart Lifecycle, GitOps Integration and Policy Automation with Terraform | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -583,3 +585,13 @@
 - [x] Chapter and master index publication; Part 11 at 3/5
 - [ ] Live Terraform execution and automated test evidence
 - [ ] Kubernetes/Helm/CSI, database backup/restore, RPO/RTO and operational acceptance
+
+## Chapter 054 acceptance — Helm provider, GitOps and policy automation
+- [x] Helm lifecycle, chart provenance, CRDs, GitOps ownership, policy-as-code and CI/CD theory
+- [x] Offline Terraform chart/release/GitOps/operations contracts with dev/prod fixtures
+- [x] Review-only Helm provider and context diagnostics examples authored
+- [x] Fail-closed Python Helm policy and fifty-three unit tests authored
+- [x] SRE/DBRE incidents, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 11 at 4/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] Helm/CRD/GitOps integration, database recovery, RPO/RTO and operational acceptance
