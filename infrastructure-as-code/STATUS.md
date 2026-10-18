@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 48 / 120 chapters (40.00%)  
+**Progress:** 49 / 120 chapters (40.83%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -54,10 +54,11 @@
 **Chapter 044:** Published; live Terraform, Azure AKS/VMSS integration and SRE/DBRE acceptance pending.  
 **Chapter 045:** Published; live Terraform, Azure stateful-data integration, restore drills and DBRE acceptance pending.  
 **Chapter 046:** Published; live Terraform, GCP integration and operational acceptance pending.  
-**Part 10:** 3/5 chapters published (GCP).  
+**Part 10:** 4/5 chapters published (GCP).  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
-**Next:** Chapter 049 — GCP Compute, GKE and Application Infrastructure with Terraform (proposed title).
+**Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
+**Next:** Chapter 050 — GCP Stateful Data, Storage, Resilience and Production Operations Capstone (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -109,6 +110,7 @@
 | 046 | Google Cloud Infrastructure as Code Foundations and Terraform Google Provider | Published |
 | 047 | GCP VPC, Subnets, Routing, Firewall Rules and Private Connectivity with Terraform | Published |
 | 048 | GCP IAM, Cloud KMS, Secret Manager and Secure Infrastructure with Terraform | Published |
+| 049 | GCP Compute, GKE and Application Infrastructure with Terraform | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -522,3 +524,13 @@
 - [x] Chapter and master index publication; Part 10 at 3/5
 - [ ] Live Terraform execution and automated test evidence
 - [ ] GCP IAM/WIF/KMS/Secret Manager integration, recovery drills and operational acceptance
+
+## Chapter 049 acceptance — GCP Compute, GKE and applications
+- [x] Compute Engine, MIG, GKE Standard/Autopilot, private cluster, autoscaling and application ingress theory
+- [x] Offline Terraform compute/GKE/application/operations contracts with dev/prod fixtures
+- [x] Review-only GCP Compute/GKE and diagnostics examples authored
+- [x] Fail-closed Python compute/GKE policy and fifty-five unit tests authored
+- [x] SRE/DBRE incidents, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 10 at 4/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] GCP Compute/MIG/GKE integration, upgrades, rollback, DBRE and operational acceptance
