@@ -1,0 +1,11 @@
+---
+- name: Chapter 065 Ansible enterprise capstone local canary
+  hosts: sandbox
+  connection: local
+  gather_facts: false
+  become: false
+  strategy: linear
+  serial: 1
+  any_errors_fatal: true
+  roles:
+    - role: capstone_config
