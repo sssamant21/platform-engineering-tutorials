@@ -1,0 +1,35 @@
+# REVIEW ONLY. Copy to a separate approved sandbox root; NOT production complete.
+# Requires private networking, DNS, backups, identity, HA, diagnostics and budget review.
+terraform {
+  required_providers {
+    azurerm = { source = "hashicorp/azurerm", version = "~> 4.0" }
+  }
+}
+variable "tenant_id" { type = string }
+variable "subscription_id" { type = string }
+variable "location" { type = string }
+variable "resource_group_name" { type = string }
+variable "storage_account_name" { type = string }
+provider "azurerm" {
+  features {}
+  tenant_id = var.tenant_id
+  subscription_id = var.subscription_id
+}
+resource "azurerm_resource_group" "data" {
+  name = var.resource_group_name
+  location = var.location
+}
+resource "azurerm_storage_account" "review" {
+  name = var.storage_account_name
+  resource_group_name = azurerm_resource_group.data.name
+  location = azurerm_resource_group.data.location
+  account_tier = "Standard"
+  account_replication_type = "ZRS"
+  min_tls_version = "TLS1_2"
+  allow_nested_items_to_be_public = false
+  public_network_access_enabled = false
+  shared_access_key_enabled = false
+}
+# This sketch deliberately omits database resources until private DNS,
+# delegated subnet, service-specific backup/HA and DR decisions are approved.
+# A private endpoint and data-plane RBAC are required for usable private access.
