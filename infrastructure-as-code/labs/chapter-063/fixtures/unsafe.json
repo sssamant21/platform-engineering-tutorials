@@ -1,0 +1,58 @@
+{
+  "environment": "lab",
+  "inventory": {
+    "local_only": true,
+    "target_reviewed": true,
+    "limit_verified": true,
+    "ownership_reviewed": true,
+    "no_prod_hosts": true
+  },
+  "target_hosts": [
+    "prod-db-01"
+  ],
+  "connection": "local",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-ANS-063",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "ansible",
+    "owner": "platform-sre-dbre"
+  },
+  "execution": {
+    "serial_one": false,
+    "linear_strategy": true,
+    "bounded_forks": true,
+    "canary_first": true,
+    "handlers_change_only": true,
+    "run_once_semantics_reviewed": true
+  },
+  "errors": {
+    "block_rescue_always": true,
+    "failure_not_masked": false,
+    "unreachable_handled": true,
+    "bounded_retries": true,
+    "async_status_reviewed": true,
+    "partial_state_audited": true
+  },
+  "delegation": {
+    "delegate_target_reviewed": true,
+    "delegate_credentials_scoped": true,
+    "delegate_facts_reviewed": true,
+    "controller_actions_safe": true
+  },
+  "security": {
+    "least_privilege": true,
+    "no_plaintext_secrets": true,
+    "diff_safe": true,
+    "ansible_pinned": true,
+    "change_approved": true
+  },
+  "dbre": {
+    "backup_verified": true,
+    "dbre_approved": true,
+    "quorum_reviewed": true,
+    "slo_reviewed": true,
+    "rollback_documented": true,
+    "unapproved_restart": true
+  }
+}
