@@ -117,7 +117,9 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 041 executable labs and tests](labs/chapter-041/)
 - [042 — Azure Virtual Networks, Subnets, NSGs, Routing and Private Connectivity with Terraform](chapters/042-azure-virtual-networks-subnets-nsgs-routing-private-connectivity-terraform.md)
 - [Chapter 042 executable labs and tests](labs/chapter-042/)
+- [043 — Azure Identity, Key Vault, Managed Identities and Secure Infrastructure with Terraform](chapters/043-azure-identity-key-vault-managed-identities-secure-infrastructure-terraform.md)
+- [Chapter 043 executable labs and tests](labs/chapter-043/)
 
-**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 underway (041–042 published). Learner lab execution evidence pending.**
+**Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 underway (041–043 published). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
