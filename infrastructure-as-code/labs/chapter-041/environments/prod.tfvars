@@ -1,0 +1,14 @@
+environment = "prod"
+tenant_id = "11111111-1111-4111-8111-111111111111"
+subscription_id = "33333333-3333-4333-8333-333333333333"
+location = "eastus2"
+owner = "cloud-security-sre"
+change_ticket = "CHG-AZURE-PROD"
+oidc_federation_enabled = true
+static_client_secret_used = false
+rbac_least_privilege_reviewed = true
+azure_policy_enabled = true
+state_encrypted = true
+state_private = true
+state_locking_enabled = true
+activity_logs_enabled = true
