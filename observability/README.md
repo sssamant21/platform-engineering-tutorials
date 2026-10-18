@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 45/100 published**
+**100 chapters · 20 parts · 46/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -17,7 +17,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 07 | 031–035 | Exporters and Custom Instrumentation | 5/5 |
 | 08 | 036–040 | Centralized Logging with Loki | 5/5 |
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 5/5 |
-| 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 0/5 |
+| 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 1/5 |
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 0/5 |
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 0/5 |
 | 13 | 061–065 | Database and Data Platform Observability | 0/5 |
@@ -188,4 +188,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 
 **Part 09 complete: 5/5 chapters published.**
 
-**Next:** Chapter 046 — OpenTelemetry Architecture, Signals, SDKs and Collector Fundamentals (Part 10).
+- [Chapter 046 — OpenTelemetry Architecture, Signals, SDKs and Collector Fundamentals](part-10-opentelemetry-architecture-instrumentation/046-opentelemetry-architecture-signals-sdks-collector-fundamentals.md)
+- [Chapter 046 — Companion lab](part-10-opentelemetry-architecture-instrumentation/labs/046-opentelemetry-architecture-signals-sdks-collector-fundamentals-lab.md)
+
+**Next:** Chapter 047 — OpenTelemetry SDK Instrumentation, Context Propagation and Application Telemetry.
