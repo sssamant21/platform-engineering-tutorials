@@ -1,0 +1,8 @@
+---
+- name: Reusable Ansible role local lab
+  hosts: sandbox
+  connection: local
+  gather_facts: false
+  become: false
+  roles:
+    - role: service_config
