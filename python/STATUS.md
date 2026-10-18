@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **91 chapters**
-- Remaining: **29 chapters**
-- Published labs: **91**
-- Next: **092 — Python Kubernetes Controllers, Operators and Reconciliation Automation**
+- Published: **92 chapters**
+- Remaining: **28 chapters**
+- Published labs: **92**
+- Next: **093 — Python Kubernetes Deployment, GitOps and Release Automation**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–091 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–092 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -169,4 +169,6 @@ Chapter 070: [Tutorial](07-testing-debugging-code-quality/070-testing-debugging-
 - Chapter 090 — Python DevOps/SRE Automation Production Capstone: [Tutorial](09-devops-sre-automation/090-python-devops-sre-automation-production-capstone.md) · [Hands-on lab](09-devops-sre-automation/labs/090-devops-sre-automation-production-capstone-lab.md) · [Standalone code](09-devops-sre-automation/labs/090/README.md). Integrated synthetic inventory, monitoring, SLO budgets, burn rates, incident correlation, readiness, simulated approval, sandbox-only idempotent marker and JSONL audit. Offline tests and production incident drills published; committed runtime/CI validation pending. Part 09 completed (10/10).
 
 ## Part 10 — Kubernetes, AWS, Azure and GCP
-Published: **1/10** (Chapter 091). Chapter 091 — [Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md) · [Hands-on lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md) · [Executable code](10-kubernetes-cloud-platform-engineering/labs/091/README.md). Offline fake-client inventory, pagination, watch replay, retry, rollout health and optional read-only Kubernetes SDK adapter. Committed runtime tests, CI and live cluster validation pending.
+Published: **2/10** (Chapters 091–092). Chapter 091 — [Kubernetes API and Cloud-Native Platform Engineering](10-kubernetes-cloud-platform-engineering/091-python-kubernetes-api-cloud-native-platform-engineering.md) · [Hands-on lab](10-kubernetes-cloud-platform-engineering/labs/091-kubernetes-api-cloud-native-sre-dbre-lab.md) · [Executable code](10-kubernetes-cloud-platform-engineering/labs/091/README.md). Offline fake-client inventory, pagination, watch replay, retry, rollout health and optional read-only Kubernetes SDK adapter. Committed runtime tests, CI and live cluster validation pending.
+
+- Chapter 092 — [Python Kubernetes Controllers, Operators and Reconciliation Automation](10-kubernetes-cloud-platform-engineering/092-python-kubernetes-controllers-operators-reconciliation-automation.md) · [SRE/DBRE lab](10-kubernetes-cloud-platform-engineering/labs/092-kubernetes-controllers-operators-reconciliation-sre-dbre-lab.md) · [Executable project](10-kubernetes-cloud-platform-engineering/labs/092/README.md). Custom-resource plans, fake API, deduplicating queue, synthetic watch/relist, lease fencing, finalizer holds, bounded retries, offline tests and incident simulations published. Runtime/CI and live Kubernetes validation pending.
