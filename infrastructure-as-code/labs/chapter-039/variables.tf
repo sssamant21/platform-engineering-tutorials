@@ -70,11 +70,19 @@ variable "asg_max" {
     error_message = "ASG maximum must be positive integer"
   }
 }
-variable "imds_v2_required" { type = bool, nullable = false }
-variable "ebs_encrypted" { type = bool, nullable = false }
-variable "alb_https_enabled" { type = bool, nullable = false }
-variable "eks_private_endpoint" { type = bool, nullable = false }
-variable "eks_control_plane_logging" { type = bool, nullable = false }
-variable "eks_secrets_encrypted" { type = bool, nullable = false }
-variable "pod_identity_enabled" { type = bool, nullable = false }
-variable "cloudwatch_enabled" { type = bool, nullable = false }
+variable "imds_v2_required" { type = bool
+  nullable = false }
+variable "ebs_encrypted" { type = bool
+  nullable = false }
+variable "alb_https_enabled" { type = bool
+  nullable = false }
+variable "eks_private_endpoint" { type = bool
+  nullable = false }
+variable "eks_control_plane_logging" { type = bool
+  nullable = false }
+variable "eks_secrets_encrypted" { type = bool
+  nullable = false }
+variable "pod_identity_enabled" { type = bool
+  nullable = false }
+variable "cloudwatch_enabled" { type = bool
+  nullable = false }
