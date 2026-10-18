@@ -1,0 +1,19 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "REVIEW ONLY - not deployable without reviewed parameters and IAM",
+  "Resources": {
+    "Database": {
+      "Type": "AWS::RDS::DBInstance",
+      "DeletionPolicy": "Snapshot",
+      "UpdateReplacePolicy": "Snapshot",
+      "Properties": {
+        "DBInstanceIdentifier": "REPLACE_WITH_APPROVED_ID",
+        "DBInstanceClass": "db.t3.micro",
+        "Engine": "postgres",
+        "AllocatedStorage": 20,
+        "MasterUsername": "REPLACE_WITH_DYNAMIC_REFERENCE",
+        "MasterUserPassword": "REPLACE_WITH_SECRET_MANAGER_DYNAMIC_REFERENCE"
+      }
+    }
+  }
+}
