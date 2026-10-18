@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 44 / 120 chapters (36.67%)  
+**Progress:** 45 / 120 chapters (37.50%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -52,7 +52,8 @@
 **Chapter 042:** Published; live Terraform, Azure network integration and SRE/DBRE acceptance pending.  
 **Chapter 043:** Published; live Terraform, Azure Key Vault integration and security acceptance pending.  
 **Chapter 044:** Published; live Terraform, Azure AKS/VMSS integration and SRE/DBRE acceptance pending.  
-**Next:** Chapter 045 — Azure Stateful Data, Storage, Resilience and Production Operations Capstone.
+**Chapter 045:** Published; live Terraform, Azure stateful-data integration, restore drills and DBRE acceptance pending.  
+**Next:** Chapter 046 — Google Cloud Infrastructure as Code Foundations and Terraform Google Provider (verify against master roadmap).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -100,6 +101,7 @@
 | 042 | Azure Virtual Networks, Subnets, NSGs, Routing and Private Connectivity with Terraform | Published |
 | 043 | Azure Identity, Key Vault, Managed Identities and Secure Infrastructure with Terraform | Published |
 | 044 | Azure Compute, AKS and Application Infrastructure with Terraform | Published |
+| 045 | Azure Stateful Data, Storage, Resilience and Production Operations Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -473,3 +475,13 @@
 - [x] Chapter and master index publication; Part 09 at 4/5
 - [ ] Live Terraform execution and automated test evidence
 - [ ] Azure AKS/VMSS integration, workload, identity, SLO and DBRE acceptance
+
+## Chapter 045 acceptance — Azure stateful data and Part 09 capstone
+- [x] PostgreSQL Flexible Server, Azure SQL, Blob/Files/disks, encryption, HA, PITR and DR theory
+- [x] Offline Terraform data/storage/recovery/operations contract lab with dev/prod fixtures
+- [x] Review-only AzureRM storage and identity preflight examples authored
+- [x] Fail-closed Python stateful-data policy and sixty-one unit tests authored
+- [x] SRE/DBRE incidents, troubleshooting, restore runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 09 publication complete
+- [ ] Live Terraform execution and automated test evidence
+- [ ] Azure database/storage integration, actual restores, observed RPO/RTO and operational acceptance
