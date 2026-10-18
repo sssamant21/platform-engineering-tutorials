@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 43 / 120 chapters (35.83%)  
+**Progress:** 44 / 120 chapters (36.67%)  
 **Last update:** 2026-10-17  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -51,7 +51,8 @@
 **Chapter 041:** Published; live Terraform, Azure integration and security acceptance pending.  
 **Chapter 042:** Published; live Terraform, Azure network integration and SRE/DBRE acceptance pending.  
 **Chapter 043:** Published; live Terraform, Azure Key Vault integration and security acceptance pending.  
-**Next:** Chapter 044 — Azure Compute, AKS and Application Infrastructure with Terraform.
+**Chapter 044:** Published; live Terraform, Azure AKS/VMSS integration and SRE/DBRE acceptance pending.  
+**Next:** Chapter 045 — Azure Stateful Data, Storage, Resilience and Production Operations Capstone.
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -98,6 +99,7 @@
 | 041 | Azure Infrastructure as Code Foundations and Terraform AzureRM Provider | Published |
 | 042 | Azure Virtual Networks, Subnets, NSGs, Routing and Private Connectivity with Terraform | Published |
 | 043 | Azure Identity, Key Vault, Managed Identities and Secure Infrastructure with Terraform | Published |
+| 044 | Azure Compute, AKS and Application Infrastructure with Terraform | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -461,3 +463,13 @@
 - [x] Chapter and master index publication; Part 09 at 3/5
 - [ ] Live Terraform execution and automated test evidence
 - [ ] Azure Key Vault, OIDC, RBAC, secret rotation and CMK recovery acceptance
+
+## Chapter 044 acceptance — Azure compute and AKS
+- [x] Azure VM, VMSS, AKS, node pools, ACR, autoscaling, private networking and ingress theory
+- [x] Offline Terraform compute/AKS/application/operations contracts with dev/prod fixtures
+- [x] Review-only AzureRM AKS and diagnostics examples authored
+- [x] Fail-closed Python compute policy and fifty-two unit tests authored
+- [x] SRE/DBRE incidents, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 09 at 4/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] Azure AKS/VMSS integration, workload, identity, SLO and DBRE acceptance
