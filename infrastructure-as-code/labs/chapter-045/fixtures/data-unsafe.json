@@ -1,0 +1,56 @@
+{
+  "environment": "prod",
+  "subscription_id": "33333333-3333-4333-8333-333333333333",
+  "location": "eastus2",
+  "owner": "production-dbre",
+  "change_ticket": "",
+  "state_namespace": "iac-prod-33333333-3333-4333-8333-333333333333-data",
+  "database": {
+    "postgresql_private": false,
+    "postgresql_tls": true,
+    "postgresql_ha": true,
+    "postgresql_pitr": true,
+    "postgresql_backup_retention_reviewed": true,
+    "sql_private": true,
+    "sql_backup_enabled": true,
+    "sql_restore_tested": true,
+    "connection_pool_reviewed": true
+  },
+  "storage": {
+    "private": false,
+    "versioning": true,
+    "soft_delete": true,
+    "encrypted": true,
+    "shared_keys_disabled": true,
+    "replication_reviewed": true,
+    "restore_tested": true
+  },
+  "security": {
+    "key_vault_private": true,
+    "purge_protection": false,
+    "cmk_access_reviewed": true,
+    "cmk_recovery_tested": true,
+    "plaintext_secret_in_state": false,
+    "managed_identity_enabled": true
+  },
+  "recovery": {
+    "backup_enabled": true,
+    "restore_drill_tested": false,
+    "rpo_minutes": 60,
+    "rto_minutes": 240,
+    "geo_recovery_reviewed": true,
+    "integrity_verified": true
+  },
+  "audit": {
+    "diagnostics_enabled": true,
+    "alerts_enabled": true,
+    "dbre_approved": false,
+    "security_approved": true,
+    "change_approved": true
+  },
+  "tags": {
+    "Environment": "prod",
+    "ManagedBy": "terraform",
+    "Owner": "production-dbre"
+  }
+}
