@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# REVIEW ONLY — disposable non-secret content; never commit vault password files.
+set -euo pipefail
+echo "Create a temporary external password file with mode 0600 in a private directory."
+echo "Use ansible-vault encrypt --vault-password-file /secure/path/password demo.yml"
+echo "Never put secrets in CLI arguments, logs or repository history."
