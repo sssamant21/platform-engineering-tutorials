@@ -1,7 +1,7 @@
 # IaC Tutorial Status
 
-**Progress:** 45 / 120 chapters (37.50%)  
-**Last update:** 2026-10-17  
+**Progress:** 46 / 120 chapters (38.33%)  
+**Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
 **Chapter 003:** Published; live lab execution remains for learner verification.  
@@ -53,7 +53,9 @@
 **Chapter 043:** Published; live Terraform, Azure Key Vault integration and security acceptance pending.  
 **Chapter 044:** Published; live Terraform, Azure AKS/VMSS integration and SRE/DBRE acceptance pending.  
 **Chapter 045:** Published; live Terraform, Azure stateful-data integration, restore drills and DBRE acceptance pending.  
-**Next:** Chapter 046 — Google Cloud Infrastructure as Code Foundations and Terraform Google Provider (verify against master roadmap).
+**Chapter 046:** Published; live Terraform, GCP integration and operational acceptance pending.  
+**Part 10:** 1/5 chapters published (GCP).  
+**Next:** Chapter 047 — GCP VPC, Subnets, Routing, Firewall Rules and Private Connectivity with Terraform (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -102,6 +104,7 @@
 | 043 | Azure Identity, Key Vault, Managed Identities and Secure Infrastructure with Terraform | Published |
 | 044 | Azure Compute, AKS and Application Infrastructure with Terraform | Published |
 | 045 | Azure Stateful Data, Storage, Resilience and Production Operations Capstone | Published |
+| 046 | Google Cloud Infrastructure as Code Foundations and Terraform Google Provider | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -485,3 +488,13 @@
 - [x] Chapter and master index publication; Part 09 publication complete
 - [ ] Live Terraform execution and automated test evidence
 - [ ] Azure database/storage integration, actual restores, observed RPO/RTO and operational acceptance
+
+## Chapter 046 acceptance — GCP Terraform foundations
+- [x] Organization, folders, projects, billing, IAM, WIF, Google provider, service APIs and GCS state theory
+- [x] Offline Terraform project/identity/state/operations contracts with dev/prod fixtures
+- [x] Review-only Google provider and GCP identity preflight examples authored
+- [x] Fail-closed Python GCP foundation policy and fifty-one unit tests authored
+- [x] SRE/DBRE incidents, troubleshooting, runbooks and 100-point rubric
+- [x] Chapter and master index publication; Part 10 at 1/5
+- [ ] Live Terraform execution and automated test evidence
+- [ ] GCP project/IAM/API/GCS backend integration, SRE/DBRE and operational acceptance
