@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 39/100 published**
+**100 chapters · 20 parts · 40/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -15,7 +15,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 05 | 021–025 | Grafana Dashboards and Visualization | 5/5 |
 | 06 | 026–030 | Alertmanager and Alert Engineering | 5/5 |
 | 07 | 031–035 | Exporters and Custom Instrumentation | 5/5 |
-| 08 | 036–040 | Centralized Logging with Loki | 4/5 |
+| 08 | 036–040 | Centralized Logging with Loki | 5/5 |
 | 09 | 041–045 | Elasticsearch and OpenSearch Logging | 0/5 |
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 0/5 |
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 0/5 |
@@ -166,4 +166,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 039 — Loki Alerting, Recording Rules, Retention and Enterprise Operations](part-08-centralized-logging-loki/039-loki-alerting-recording-rules-retention-enterprise-operations.md)
 - [Chapter 039 — Companion lab](part-08-centralized-logging-loki/labs/039-loki-alerting-recording-rules-retention-enterprise-operations-lab.md)
 
-**Next:** Chapter 040 — Loki Production Reliability, Security, Troubleshooting and Logging Capstone.
+- [Chapter 040 — Loki Production Reliability, Security, Troubleshooting and Logging Capstone](part-08-centralized-logging-loki/040-loki-production-reliability-security-troubleshooting-logging-capstone.md)
+- [Chapter 040 — Executable companion lab](part-08-centralized-logging-loki/labs/040-loki-production-reliability-security-troubleshooting-logging-capstone-lab.md)
+
+**Part 08 complete: 5/5 chapters published.**
+
+**Next:** Chapter 041 — Elasticsearch and OpenSearch Logging Architecture, Index Design and Ingestion Foundations (Part 09).
