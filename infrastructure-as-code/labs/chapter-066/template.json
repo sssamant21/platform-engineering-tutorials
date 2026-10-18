@@ -1,0 +1,42 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Chapter 066 offline CloudFormation template contract (do not deploy)",
+  "Parameters": {
+    "Environment": {
+      "Type": "String",
+      "Default": "lab",
+      "AllowedValues": [
+        "lab",
+        "dev"
+      ]
+    }
+  },
+  "Conditions": {
+    "IsDev": {
+      "Fn::Equals": [
+        {
+          "Ref": "Environment"
+        },
+        "dev"
+      ]
+    }
+  },
+  "Resources": {
+    "DemoHandle": {
+      "Type": "AWS::CloudFormation::WaitConditionHandle",
+      "DeletionPolicy": "Retain"
+    }
+  },
+  "Outputs": {
+    "Environment": {
+      "Value": {
+        "Ref": "Environment"
+      }
+    },
+    "HandleReference": {
+      "Value": {
+        "Ref": "DemoHandle"
+      }
+    }
+  }
+}
