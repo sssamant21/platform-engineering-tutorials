@@ -1,0 +1,4 @@
+---
+- name: Record config change
+  ansible.builtin.debug:
+    msg: "Config changed; no production service restart in capstone lab"
