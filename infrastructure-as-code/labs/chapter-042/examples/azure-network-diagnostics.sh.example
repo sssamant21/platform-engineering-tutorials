@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+: "${EXPECTED_AZURE_SUBSCRIPTION_ID:?set approved subscription}"
+: "${PRIVATE_FQDN:?set approved private service FQDN}"
+actual="$(az account show --query id -o tsv)"
+[[ "$actual" == "$EXPECTED_AZURE_SUBSCRIPTION_ID" ]] || { echo "DENY: wrong subscription" >&2; exit 1; }
+nslookup "$PRIVATE_FQDN"
+echo "Inspect DNS result for expected private address; DNS alone does not prove connectivity"
