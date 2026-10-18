@@ -1,0 +1,47 @@
+{
+  "environment": "lab",
+  "account": "offline-sandbox",
+  "region": "us-east-1",
+  "ou": "sandbox",
+  "stackset": {
+    "account_allowlisted": true,
+    "region_allowlisted": true,
+    "ou_scope_reviewed": true,
+    "permission_model_reviewed": true,
+    "concurrency_bounded": true,
+    "failure_tolerance_zero": true,
+    "target_matrix_signed": true,
+    "destructive_operation": false
+  },
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-CFN-067",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "cloudformation",
+    "owner": "platform-sre-dbre"
+  },
+  "template": {
+    "parent_contract_validated": true,
+    "child_contract_validated": true,
+    "immutable_artifacts": true,
+    "parameter_contracts_reviewed": true,
+    "exports_reviewed": true,
+    "no_embedded_secrets": true
+  },
+  "security": {
+    "least_privilege": true,
+    "execution_role_scoped": true,
+    "no_plaintext_secrets": true,
+    "cloudtrail_enabled": true,
+    "provenance_verified": true,
+    "change_approved": true
+  },
+  "operations": {
+    "dbre_approved": true,
+    "backup_verified": true,
+    "rollback_documented": true,
+    "drift_reviewed": true,
+    "slo_reviewed": true,
+    "restore_tested": true
+  }
+}
