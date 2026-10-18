@@ -1,0 +1,60 @@
+{
+  "environment": "lab",
+  "aws_account": "offline-sandbox",
+  "aws_region": "us-east-1",
+  "azure_tenant": "offline-sandbox",
+  "azure_subscription": "offline-sandbox",
+  "azure_resource_group": "rg-ch070-lab",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-MC-070",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "native-iac",
+    "owner": "platform-sre-dbre"
+  },
+  "architecture": {
+    "ownership_defined": true,
+    "aws_nested_contract_reviewed": true,
+    "azure_module_contract_reviewed": true,
+    "artifact_pinned": true,
+    "target_matrix_signed": true
+  },
+  "aws": {
+    "account_verified": true,
+    "region_verified": true,
+    "stackset_scope_reviewed": true,
+    "change_set_reviewed": true,
+    "execution_role_scoped": true,
+    "destructive_action": false
+  },
+  "azure": {
+    "tenant_verified": true,
+    "subscription_verified": true,
+    "what_if_reviewed": true,
+    "rbac_scoped": true,
+    "deployment_stack_policy_reviewed": true,
+    "delete_all": false
+  },
+  "security": {
+    "least_privilege": true,
+    "oidc_scoped": true,
+    "no_plaintext_secrets": true,
+    "audit_enabled": true,
+    "supply_chain_verified": true,
+    "change_approved": true
+  },
+  "operations": {
+    "canary_approved": true,
+    "slo_reviewed": true,
+    "rollback_documented": true,
+    "drift_reviewed": true,
+    "incident_commander_defined": true
+  },
+  "dbre": {
+    "backup_verified": true,
+    "restore_rehearsed": true,
+    "dbre_approved": true,
+    "quorum_reviewed": true,
+    "rpo_rto_reviewed": true
+  }
+}
