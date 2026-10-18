@@ -1,0 +1,39 @@
+{
+  "allowed_environments": [
+    "dev",
+    "staging",
+    "prod"
+  ],
+  "allowed_locations": [
+    "eastus",
+    "eastus2",
+    "centralus",
+    "westus2"
+  ],
+  "allowed_vm_skus": [
+    "Standard_D4s_v5",
+    "Standard_D8s_v5",
+    "Standard_D4ds_v5"
+  ],
+  "required_tags": [
+    "Environment",
+    "ManagedBy",
+    "Owner"
+  ],
+  "allowed_resource_types": [
+    "terraform_data"
+  ],
+  "require_ticket": true,
+  "require_state_isolation": true,
+  "require_zone_spread": true,
+  "require_private_cluster": true,
+  "require_oidc": true,
+  "require_workload_identity": true,
+  "require_acr_private": true,
+  "require_image_digest": true,
+  "require_pdb": true,
+  "require_autoscaling": true,
+  "require_private_database": true,
+  "require_monitoring": true,
+  "deny_destructive_actions": true
+}
