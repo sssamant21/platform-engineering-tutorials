@@ -1,0 +1,71 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "inventory": [
+      "approved_source",
+      "host_count_reviewed",
+      "tenant_isolated",
+      "account_region_scoped",
+      "owner_verified",
+      "cache_ttl_reviewed",
+      "no_prod_targets"
+    ],
+    "secrets": [
+      "vault_policy_reviewed",
+      "vault_keys_external",
+      "no_plaintext_secrets",
+      "no_log_sensitive",
+      "diff_secrets_disabled",
+      "rotation_tested"
+    ],
+    "identity": [
+      "least_privilege",
+      "become_disabled_lab",
+      "ssh_host_keys_verified",
+      "runner_oidc_scoped",
+      "untrusted_pr_denied"
+    ],
+    "supply_chain": [
+      "ansible_pinned",
+      "collections_pinned",
+      "artifact_provenance_reviewed",
+      "callback_plugins_reviewed",
+      "execution_environment_reviewed"
+    ],
+    "governance": [
+      "change_approved",
+      "security_approved",
+      "inventory_snapshot_recorded",
+      "audit_enabled",
+      "segregation_of_duties"
+    ],
+    "dbre": [
+      "backup_verified",
+      "dbre_approved",
+      "quorum_reviewed",
+      "slo_reviewed",
+      "rollback_documented",
+      "unapproved_restart"
+    ]
+  },
+  "forbidden_controls": {
+    "dbre": [
+      "unapproved_restart"
+    ]
+  },
+  "require_ticket": true,
+  "deny_prod_targets": true,
+  "require_tenant_isolation": true,
+  "require_vault_policy": true,
+  "require_provenance": true,
+  "require_approval": true,
+  "require_dbre_backup": true
+}
