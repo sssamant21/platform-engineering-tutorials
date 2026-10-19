@@ -77,7 +77,7 @@ class MemoryMongo:
     docs:dict=field(default_factory=dict)
     def put(self,ident,document):
         validate_id(ident);require(type(document) is dict and set(document)<= {"tags","note"},422,"INVALID_DOCUMENT","unsupported document fields")
-        require(all(type(t) is str and len(t)<=32 for t in document.get("tags",[])) and type(document.get("tags",[])) is list,422,"INVALID_TAGS","invalid tags")
+        require(type(document.get("tags",[])) is list and all(type(t) is str and len(t)<=32 for t in document.get("tags",[])),422,"INVALID_TAGS","invalid tags")
         require(type(document.get("note","")) is str and len(document.get("note",""))<=200,422,"INVALID_NOTE","invalid note")
         self.docs[ident]=json.loads(json.dumps(document))
     def get(self,ident):
