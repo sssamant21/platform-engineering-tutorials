@@ -217,6 +217,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 091 executable labs and tests](labs/chapter-091/)
 - [092 — IaC Drift Observability, State Reconciliation, Change Intelligence and Automated Detection](chapters/092-iac-drift-observability-state-reconciliation-change-intelligence-automated-detection.md)
 - [Chapter 092 executable labs and tests](labs/chapter-092/)
+- [093 — IaC Incident Correlation, Root Cause Analysis, Change Failure Detection and Reliability Engineering](chapters/093-iac-incident-correlation-root-cause-analysis-change-failure-detection-reliability-engineering.md)
+- [Chapter 093 executable labs and tests](labs/chapter-093/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -228,4 +230,4 @@ Part 17 publication complete (081–085 published; security and operational acce
 
 Part 18 complete: Chapters 086–090 published; native testing and production acceptance pending.
 
-Part 19 underway: Chapters 091–092 published (2/5); native observability/drift integration and operational acceptance pending.
+Part 19 underway: Chapters 091–093 published (3/5); native observability, incident correlation and operational acceptance pending.
