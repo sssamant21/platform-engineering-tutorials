@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 64/100 published**
+**100 chapters · 20 parts · 65/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -20,7 +20,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 5/5 |
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 5/5 |
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 5/5 |
-| 13 | 061–065 | Database and Data Platform Observability | 4/5 |
+| 13 | 061–065 | Database and Data Platform Observability | 5/5 |
 | 14 | 066–070 | Application Performance Monitoring | 0/5 |
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 0/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 0/5 |
@@ -251,4 +251,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 064 — Kafka/MSK and Snowflake Observability, Consumer Lag, Query Performance and Data Freshness](part-13-database-data-platform-observability/064-kafka-msk-snowflake-observability-consumer-lag-query-performance-data-freshness.md)
 - [Chapter 064 — Companion lab](part-13-database-data-platform-observability/labs/064-kafka-msk-snowflake-observability-consumer-lag-query-performance-data-freshness-lab.md)
 
-**Next:** Chapter 065 — Enterprise Database and Data Platform Observability, Incident Response and Reliability Capstone.
+- [Chapter 065 — Enterprise Database and Data Platform Observability, Incident Response and Reliability Capstone](part-13-database-data-platform-observability/065-enterprise-database-data-platform-observability-incident-response-reliability-capstone.md)
+- [Chapter 065 — Companion lab](part-13-database-data-platform-observability/labs/065-enterprise-database-data-platform-observability-incident-response-reliability-capstone-lab.md)
+
+**Part 13 complete: 5/5 chapters published.**
+
+**Next:** Chapter 066 — Application Performance Monitoring Architecture, Instrumentation and Golden Signals (Part 14).
