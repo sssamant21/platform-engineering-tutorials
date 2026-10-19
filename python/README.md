@@ -290,7 +290,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 
 - [Chapter 110 — Production Security, Performance and Reliability Capstone](11-production-security-performance/110-python-production-security-performance-reliability-capstone.md) · [SRE/DBRE capstone lab](11-production-security-performance/labs/110-production-security-performance-reliability-capstone-sre-dbre-lab.md) · [Executable project and tests](11-production-security-performance/labs/110/README.md)
 
-## Part 12 — Enterprise Capstone Projects (6/10 published)
+## Part 12 — Enterprise Capstone Projects (7/10 published)
 
 - [Chapter 111 — Enterprise Python SRE/DBRE Capstone Architecture and Project Foundations](12-enterprise-capstones/111-enterprise-python-sre-dbre-capstone-architecture-project-foundations.md)
 - [Chapter 111 — Complete Architecture SRE/DBRE Lab](12-enterprise-capstones/labs/111-enterprise-python-architecture-project-foundations-sre-dbre-lab.md)
@@ -305,3 +305,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 115 — Enterprise Python Observability, SLOs, Incident Response and Reliability Operations](12-enterprise-capstones/115-enterprise-python-observability-slos-incident-response-reliability-operations.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/115-enterprise-observability-slo-incident-response-sre-dbre-lab.md) · [Executable project and tests](12-enterprise-capstones/labs/115/README.md)
 
 - [Chapter 116 — Enterprise Python Security, Compliance and Disaster Recovery Operations](12-enterprise-capstones/116-enterprise-python-security-compliance-disaster-recovery-operations.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/116-enterprise-security-compliance-disaster-recovery-sre-dbre-lab.md) · [Executable project and tests](12-enterprise-capstones/labs/116/README.md)
+
+- [Chapter 117 — Enterprise Python Capacity Planning, Performance Engineering and FinOps Capstone](12-enterprise-capstones/117-enterprise-python-capacity-planning-performance-finops-capstone.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/117-capacity-performance-finops-sre-dbre-lab.md) · [Executable project and tests](12-enterprise-capstones/labs/117/README.md)
