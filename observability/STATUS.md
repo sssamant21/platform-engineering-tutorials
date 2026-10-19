@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 74 / 100 chapters (74%) · 20 parts · Part 15: 4/5**
+**Progress: 75 / 100 chapters (75%) · 20 parts · Part 15: 5/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -18,15 +18,15 @@
 | 12 — Kubernetes EKS AKS and GKE Observability | 056–060 | 5 | 5 | Complete |
 | 13 — Database and Data Platform Observability | 061–065 | 5 | 5 | Complete |
 | 14 — Application Performance Monitoring | 066–070 | 5 | 5 | Complete |
-| 15 — SLIs SLOs and Error Budgets | 071–075 | 4 | 5 | In progress |
+| 15 — SLIs SLOs and Error Budgets | 071–075 | 5 | 5 | Complete |
 | 16 — Incident Response and Troubleshooting | 076–080 | 0 | 5 | Planned |
 | 17 — Observability as Code and GitOps | 081–085 | 0 | 5 | Planned |
 | 18 — Scaling High Availability and FinOps | 086–090 | 0 | 5 | Planned |
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–074 and companion labs. Parts 01–14 complete (5/5 each); Part 15 in progress (4/5).
+**Published:** Chapters 001–075 and companion labs. Parts 01–15 complete (5/5 each).
 
-**Next:** Chapter 075 — Enterprise SLI/SLO and Error Budget Reliability Acceptance Capstone.
+**Next:** Chapter 076 — Enterprise Incident Response Architecture, Severity Models and On-Call Operations (Part 16).
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
