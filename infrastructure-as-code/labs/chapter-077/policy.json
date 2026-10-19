@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "expected": {
+    "environment": "lab",
+    "workspace": "lab",
+    "cloud_account": "offline-sandbox",
+    "backend": "local-fixture",
+    "tool": "opentofu",
+    "commit": "0123456789abcdef"
+  },
+  "required_controls": [
+    "signed_source",
+    "pinned_toolchain",
+    "oidc_scoped",
+    "backend_encrypted",
+    "backend_versioned",
+    "lock_enabled",
+    "init_readonly",
+    "plan_exitcode_checked",
+    "plan_artifact_encrypted",
+    "plan_digest_verified",
+    "commit_binding_verified",
+    "target_binding_verified",
+    "policy_approved",
+    "change_approved",
+    "separation_of_duties",
+    "freshness_verified",
+    "no_destroy",
+    "no_stateful_replace",
+    "backup_verified",
+    "restore_tested",
+    "dbre_approved",
+    "canary_healthy",
+    "slo_healthy",
+    "audit_recorded"
+  ],
+  "require_exact_controls": true
+}
