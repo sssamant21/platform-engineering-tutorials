@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 95 / 120 chapters (79.17%)  
+**Progress:** 96 / 120 chapters (80.00%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -110,7 +110,8 @@
 **Chapter 093:** Published; incident correlation, RCA hypotheses, change failure metrics and reliability, 103 tests authored; execution and native cloud/DBRE acceptance pending.  
 **Chapter 094:** Published; SLO engineering, error budgets, burn-rate alerts and safe reliability controls, 113 tests authored; execution and native Prometheus/Alertmanager/DBRE acceptance pending.  
 **Chapter 095:** Published; enterprise observability/drift/SLO/incident-response capstone, 127 tests authored; execution, live paging, cloud drift and DBRE acceptance pending.  
-**Next:** Chapter 096 — IaC Cost Observability, Cloud Billing Data, Tagging and FinOps Fundamentals (proposed title; begins Part 20).
+**Chapter 096:** Published; cloud billing, ownership tagging, cost allocation, anomalies and safe FinOps, 83 tests authored; execution and native billing acceptance pending.  
+**Next:** Chapter 097 — IaC Cost Allocation, Showback, Chargeback and Shared Platform Cost Models (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -209,6 +210,7 @@
 | 093 | IaC Incident Correlation, Root Cause Analysis, Change Failure Detection and Reliability Engineering | Published |
 | 094 | IaC SLO Engineering, Error Budgets, Alerting, Incident Response and Automated Reliability Controls | Published |
 | 095 | Enterprise IaC Observability, Drift, SLO and Incident Response Reliability Acceptance Capstone | Published |
+| 096 | IaC Cost Observability, Cloud Billing Data, Tagging and FinOps Fundamentals | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -1043,3 +1045,13 @@
 - [x] Sixty SRE/DBRE incident simulations, twelve runbooks and 100-point final assessment
 - [x] Chapter and master index publication; Part 19 content complete at 5/5
 - [ ] Offline execution, native OTel/Prometheus/Alertmanager paging, real cloud drift, actual DBRE restore, independent security review and production acceptance
+
+**Part 20:** 1/5 chapters published — FinOps (native billing and operational acceptance pending).
+
+## Chapter 096 acceptance — IaC cost observability and FinOps fundamentals
+- [x] AWS CUR/Data Exports, Azure Cost Management, GCP BigQuery Billing, Terraform/OpenTofu, Kubernetes and DBRE cost theory
+- [x] Offline billing contract, allocation, anomaly and reliability-safe optimization labs
+- [x] 83 Python unit tests authored; not executed
+- [x] Sixty production SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 20 at 1/5
+- [ ] Offline execution, native billing exports, invoice reconciliation, tag propagation, real DBRE capacity/SLO verification and independent production acceptance
