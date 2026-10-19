@@ -1,0 +1,36 @@
+{
+  "environment": "lab",
+  "stack": "dev",
+  "cloud_account": "offline-sandbox",
+  "backend": "local-fixture",
+  "owner": "sre-dbre",
+  "change_ticket": "CHG-076-TEST",
+  "commit_sha": "0123456789abcdef",
+  "plan_digest": "sha256:example-test",
+  "controls": {
+    "source_signed": true,
+    "runner_pinned": true,
+    "oidc_scoped": true,
+    "least_privilege": true,
+    "plan_fresh": true,
+    "policy_passed": true,
+    "state_locked": true,
+    "backup_verified": true,
+    "restore_tested": true,
+    "dbre_approved": true,
+    "slo_healthy": true,
+    "audit_recorded": true,
+    "no_destructive_changes": true
+  },
+  "stages": [
+    "lint",
+    "unit",
+    "security",
+    "plan",
+    "approval",
+    "backup",
+    "canary",
+    "slo",
+    "audit"
+  ]
+}
