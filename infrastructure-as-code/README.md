@@ -221,6 +221,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 093 executable labs and tests](labs/chapter-093/)
 - [094 — IaC SLO Engineering, Error Budgets, Alerting, Incident Response and Automated Reliability Controls](chapters/094-iac-slo-engineering-error-budgets-alerting-incident-response-automated-reliability-controls.md)
 - [Chapter 094 executable labs and tests](labs/chapter-094/)
+- [095 — Enterprise IaC Observability, Drift, SLO and Incident Response Reliability Acceptance Capstone](chapters/095-enterprise-iac-observability-drift-slo-incident-response-reliability-acceptance-capstone.md)
+- [Chapter 095 executable labs and tests](labs/chapter-095/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -232,4 +234,6 @@ Part 17 publication complete (081–085 published; security and operational acce
 
 Part 18 complete: Chapters 086–090 published; native testing and production acceptance pending.
 
-Part 19 underway: Chapters 091–094 published (4/5); native SLO/alerting and operational acceptance pending.
+Part 19 complete: Chapters 091–095 published (5/5); native observability, drift, SLO, incident response and DBRE operational acceptance pending.
+
+Part 20 — FinOps begins at Chapter 096 (planned); Chapter 095 capstone tests and live acceptance remain pending.
