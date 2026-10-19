@@ -1,0 +1,16 @@
+stages: [validate, policy, deploy]
+offline_policy:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-082/run-preflight.sh
+policy_review_placeholder:
+  stage: policy
+  when: manual
+  script:
+    - echo 'NOT ENABLED: verify native OPA/Sentinel, policy bundle provenance and real plan'
+deploy_disabled:
+  stage: deploy
+  when: manual
+  script:
+    - echo 'NO APPLY: protected OIDC, independent approval and DBRE restore required'
