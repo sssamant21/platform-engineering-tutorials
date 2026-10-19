@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 61/100 published**
+**100 chapters · 20 parts · 62/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -20,7 +20,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 10 | 046–050 | OpenTelemetry Architecture and Instrumentation | 5/5 |
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 5/5 |
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 5/5 |
-| 13 | 061–065 | Database and Data Platform Observability | 1/5 |
+| 13 | 061–065 | Database and Data Platform Observability | 2/5 |
 | 14 | 066–070 | Application Performance Monitoring | 0/5 |
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 0/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 0/5 |
@@ -242,4 +242,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 061 — Database and Data Platform Observability Architecture, Metrics and Reliability Signals](part-13-database-data-platform-observability/061-database-data-platform-observability-architecture-metrics-reliability-signals.md)
 - [Chapter 061 — Companion lab](part-13-database-data-platform-observability/labs/061-database-data-platform-observability-architecture-metrics-reliability-signals-lab.md)
 
-**Next:** Chapter 062 — PostgreSQL, RDS and Aurora Observability, Query Performance, Replication and Storage.
+- [Chapter 062 — PostgreSQL, RDS and Aurora Observability, Query Performance, Replication and Storage](part-13-database-data-platform-observability/062-postgresql-rds-aurora-observability-query-performance-replication-storage.md)
+- [Chapter 062 — Companion lab](part-13-database-data-platform-observability/labs/062-postgresql-rds-aurora-observability-query-performance-replication-storage-lab.md)
+
+**Next:** Chapter 063 — MongoDB, Redis and Elasticsearch/OpenSearch Observability, Performance and Reliability.
