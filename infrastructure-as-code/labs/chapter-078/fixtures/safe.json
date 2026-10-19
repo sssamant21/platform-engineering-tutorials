@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "environment": "lab",
+  "commit": "0123456789abcdef",
+  "ticket": "CHG-078-LAB",
+  "owner": "sre-dbre",
+  "preview_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "targets": {
+    "pulumi": "offline-dev-stack",
+    "cloudformation": "offline-aws-stack",
+    "bicep": "offline-azure-subscription"
+  },
+  "tools": [
+    "pulumi",
+    "cloudformation",
+    "bicep"
+  ],
+  "controls": {
+    "signed_source": true,
+    "pinned_toolchain": true,
+    "oidc_scoped": true,
+    "least_privilege": true,
+    "preview_reviewed": true,
+    "policy_enforced": true,
+    "approval_signed": true,
+    "preview_digest_verified": true,
+    "commit_binding_verified": true,
+    "target_binding_verified": true,
+    "no_destroy": true,
+    "no_stateful_replacement": true,
+    "state_backup_verified": true,
+    "db_backup_verified": true,
+    "restore_rehearsed": true,
+    "dbre_approved": true,
+    "canary_approved": true,
+    "slo_healthy": true,
+    "audit_enabled": true,
+    "gitops_ownership_reviewed": true
+  }
+}
