@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 67/100 published**
+**100 chapters · 20 parts · 68/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -21,7 +21,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 11 | 051–055 | Distributed Tracing with Jaeger and Tempo | 5/5 |
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 5/5 |
 | 13 | 061–065 | Database and Data Platform Observability | 5/5 |
-| 14 | 066–070 | Application Performance Monitoring | 2/5 |
+| 14 | 066–070 | Application Performance Monitoring | 3/5 |
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 0/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 0/5 |
 | 17 | 081–085 | Observability as Code and GitOps | 0/5 |
@@ -262,4 +262,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 067 — Application Distributed Tracing, Service Maps and Dependency Performance Analysis](part-14-application-performance-monitoring/067-application-distributed-tracing-service-maps-dependency-performance-analysis.md)
 - [Chapter 067 — Companion lab](part-14-application-performance-monitoring/labs/067-application-distributed-tracing-service-maps-dependency-performance-analysis-lab.md)
 
-**Next:** Chapter 068 — Application Profiling, Runtime Diagnostics, Memory, CPU and Performance Bottlenecks.
+- [Chapter 068 — Application Profiling, Runtime Diagnostics, Memory, CPU and Performance Bottlenecks](part-14-application-performance-monitoring/068-application-profiling-runtime-diagnostics-memory-cpu-performance-bottlenecks.md)
+- [Chapter 068 — Companion lab](part-14-application-performance-monitoring/labs/068-application-profiling-runtime-diagnostics-memory-cpu-performance-bottlenecks-lab.md)
+
+**Next:** Chapter 069 — Application Performance Testing, Load, Stress, Soak and Capacity Observability.
