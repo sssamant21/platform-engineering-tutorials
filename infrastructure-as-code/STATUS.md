@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 100 / 120 chapters (83.33%)  
+**Progress:** 101 / 120 chapters (84.17%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,4 +1094,13 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 101 — IaC Disaster Recovery Foundations, RPO/RTO, Backup Architecture and Recovery Design.
+**Next:** Chapter 102 — IaC Backup Automation, Cross-Region Replication, Immutable Recovery Points and Recovery Validation.
+
+**Part 21:** 1/5 chapters published — Disaster Recovery (native drills pending).
+
+## Chapter 101 acceptance — DR foundations, RPO/RTO and recovery design
+- [x] AWS/Azure/GCP, Terraform/OpenTofu, Kubernetes and DBRE DR architecture published
+- [x] Offline RPO/RTO evidence gate and Python negative tests authored; execution not independently verified
+- [x] Manual recovery dependency and failure injection labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
+- [x] Chapter and trackers published; Part 21 at 1/5
+- [ ] Native cross-region restores, real backup integrity, application-consistent PITR, failover fencing, RPO/RTO drills and independent SRE/DBRE production acceptance
