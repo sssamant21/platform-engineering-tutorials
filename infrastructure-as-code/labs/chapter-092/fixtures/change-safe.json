@@ -1,0 +1,11 @@
+{
+  "ticket": "CHG-092-LAB",
+  "commit": "0123456789abcdef",
+  "approved_commit": "0123456789abcdef",
+  "actor": "sre-lab",
+  "approved_actor": "sre-lab",
+  "policy_version": "v1",
+  "approved_policy_version": "v1",
+  "time_skew_minutes": 3,
+  "exception_valid": true
+}
