@@ -213,6 +213,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 089 executable labs and tests](labs/chapter-089/)
 - [090 — Enterprise IaC Testing, Compliance, Drift and Audit Reliability Capstone](chapters/090-enterprise-iac-testing-compliance-drift-audit-reliability-capstone.md)
 - [Chapter 090 executable labs and tests](labs/chapter-090/)
+- [091 — IaC Observability Architecture, Telemetry, SLOs and Operational Dashboards](chapters/091-iac-observability-architecture-telemetry-slos-operational-dashboards.md)
+- [Chapter 091 executable labs and tests](labs/chapter-091/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -223,3 +225,5 @@ Part 16 complete (076–080 published; production acceptance pending).
 Part 17 publication complete (081–085 published; security and operational acceptance pending).
 
 Part 18 complete: Chapters 086–090 published; native testing and production acceptance pending.
+
+Part 19 underway: Chapter 091 published (1/5); observability live integration and operational acceptance pending.
