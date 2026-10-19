@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 88 / 120 chapters (73.33%)  
+**Progress:** 89 / 120 chapters (74.17%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -103,7 +103,8 @@
 **Chapter 086:** Published; IaC testing strategy, policy automation and offline CI lab, 90 tests authored; execution and native integration/DBRE acceptance pending.  
 **Chapter 087:** Published; ephemeral integration testing, Terratest/Molecule, cloud validation and cleanup lab, 105 tests authored; execution and native cloud/DBRE acceptance pending.  
 **Chapter 088:** Published; compliance testing, audit evidence, control mapping and offline assurance labs, 97 tests authored; execution and native cloud/DBRE/audit acceptance pending.  
-**Next:** Chapter 089 — IaC Continuous Compliance Monitoring, Drift Detection, Remediation and Audit Automation (proposed title).
+**Chapter 089:** Published; continuous compliance, drift classification, safe remediation and audit automation, 92 tests authored; execution and native cloud/DBRE acceptance pending.  
+**Next:** Chapter 090 — Enterprise IaC Testing, Compliance, Drift and Audit Reliability Capstone (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -195,6 +196,7 @@
 | 086 | IaC Testing Strategy, Static Validation, Unit Tests and Policy Test Automation | Published |
 | 087 | IaC Integration Testing, Ephemeral Environments, Terratest, Molecule and Cloud Resource Validation | Published |
 | 088 | IaC Compliance Testing, Audit Evidence, Control Mapping and Continuous Assurance | Published |
+| 089 | IaC Continuous Compliance Monitoring, Drift Detection, Remediation and Audit Automation | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -946,7 +948,7 @@
 - [x] Chapter and master index publication; Part 17 publication complete at 5/5
 - [ ] Offline test execution, native IAM/policy/admission, cryptographic provenance, DB restore, RPO/RTO and production acceptance
 
-**Part 18:** 3/5 chapters published — Testing and Compliance.
+**Part 18:** 4/5 chapters published — Testing and Compliance.
 
 ## Chapter 086 acceptance — Testing strategy and policy automation
 - [x] Multi-tool IaC testing, policy-as-code, Kubernetes/GitOps and DBRE theory
@@ -971,3 +973,11 @@
 - [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 18 at 3/5
 - [ ] Offline execution, native compliance/policy evidence, actual DB restore, independent audit and production acceptance
+
+## Chapter 089 acceptance — Continuous compliance and drift assurance
+- [x] Terraform/OpenTofu, Pulumi, CloudFormation, Bicep, AWS/Azure/GCP, Kubernetes/GitOps and DBRE theory
+- [x] Offline drift assurance, risk scoring, remediation state machine and audit-chain labs
+- [x] 92 Python unit tests authored; not executed
+- [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 18 at 4/5
+- [ ] Offline execution, native drift detection/remediation, actual DB restore, independent audit and production acceptance
