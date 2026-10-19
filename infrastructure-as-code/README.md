@@ -191,9 +191,11 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 078 executable labs and tests](labs/chapter-078/)
 - [079 — Ansible, Kubernetes and GitOps CI/CD Automation, Environment Promotion and Production Change Controls](chapters/079-ansible-kubernetes-gitops-ci-cd-automation-environment-promotion-production-change-controls.md)
 - [Chapter 079 executable labs and tests](labs/chapter-079/)
+- [080 — Enterprise IaC CI/CD Reliability, Security, Disaster Recovery and GitOps Production Capstone](chapters/080-enterprise-iac-ci-cd-reliability-security-disaster-recovery-gitops-production-capstone.md)
+- [Chapter 080 executable labs and tests](labs/chapter-080/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
 See [STATUS.md](STATUS.md). Each chapter includes theory, reproducible labs, tests, troubleshooting, SRE/DBRE cases, runbooks, and cleanup.
 
-Part 16 underway (076–079 published; production acceptance pending).
+Part 16 complete (076–080 published; production acceptance pending).
