@@ -3,12 +3,12 @@
 Last updated: 2026-10-19
 
 - Planned: **120 chapters**
-- Published: **119 chapters**
-- Remaining: **1 chapter**
-- Published labs: **119**
-- Next: **120 — Enterprise Python Final SRE/DevOps/DBRE Capstone, Operational Assessment and Curriculum Completion**
+- Published: **120 chapters**
+- Remaining: **0 chapters**
+- Published labs: **120**
+- Next: **Post-publication validation, repository audit and operational acceptance**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–119 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–120 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -213,7 +213,7 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 
 - Chapter 110 — [Python Production Security, Performance and Reliability Capstone](11-production-security-performance/110-python-production-security-performance-reliability-capstone.md) · [SRE/DBRE lab](11-production-security-performance/labs/110-production-security-performance-reliability-capstone-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/110/README.md). Integrates Chapters 101–109: identity, secrets, compliance, supply-chain metadata, p99 profiling budgets, concurrency limits, SLOs, retries, redaction and advisory release gates. Automated tests published; exact committed execution, CI, security review and production integration validation pending. Part 11 complete.
 
-- Part 12 — Enterprise Capstone Projects: **9/10** chapters published; 1 remaining.
+- Part 12 — Enterprise Capstone Projects: **10/10** chapters published; 0 remaining.
 
 - Chapter 111 — [Enterprise Python SRE/DBRE Capstone Architecture and Project Foundations](12-enterprise-capstones/111-enterprise-python-sre-dbre-capstone-architecture-project-foundations.md) · [Complete SRE/DBRE lab](12-enterprise-capstones/labs/111-enterprise-python-architecture-project-foundations-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/111/README.md). Architecture, API/worker boundaries, PostgreSQL/Elasticsearch/MongoDB/Redis/Kafka/Kubernetes patterns, security, capacity, SLOs, offline simulator and automated tests. Exact committed execution, CI, live integration and production acceptance pending.
 
@@ -232,3 +232,13 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 - Chapter 118 — [Enterprise Python Multi-Region High Availability, Failover and Recovery Capstone](12-enterprise-capstones/118-enterprise-python-multi-region-high-availability-failover-recovery-capstone.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/118-multi-region-ha-failover-recovery-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/118/README.md). Multi-region HA, leader/quorum/fencing concepts, split-brain prevention, PostgreSQL/MongoDB/Kafka/Elasticsearch/Redis/Snowflake DR, RPO/RTO, synthetic chaos, automated tests and runbooks. Exact committed execution, CI, staging DR drills and production acceptance pending.
 
 - Chapter 119 — [Enterprise Python Production Readiness, Chaos Engineering and Reliability Acceptance Capstone](12-enterprise-capstones/119-enterprise-python-production-readiness-chaos-reliability-acceptance-capstone.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/119-production-readiness-chaos-reliability-acceptance-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/119/README.md). Architecture reviews, deployment gates, OTel/SLO/error budgets, security, capacity, backup/DR, synthetic chaos planning, 40 incident scenarios, automated tests, runbooks and 100-point acceptance. Exact committed execution, CI, staging chaos drills and production acceptance pending.
+
+- Chapter 120 — [Enterprise Python Final SRE/DevOps/DBRE Capstone, Operational Assessment and Curriculum Completion](12-enterprise-capstones/120-enterprise-python-final-sre-devops-dbre-capstone-operational-assessment.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/120-enterprise-final-platform-sre-dbre-assessment-lab.md) · [Executable project](12-enterprise-capstones/labs/120/README.md). End-to-end offline API/event/CDC/Kafka-like simulator, PostgreSQL/MongoDB source architecture, Elasticsearch/Snowflake reconciliation, Redis/Kubernetes design, security, SLOs, capacity, DR, 40 incidents, automated tests, runbooks and final 100-point acceptance. Exact committed execution, CI, staging integration and production acceptance pending.
+
+## Curriculum publication completion and audit status
+
+- **Publication:** 120/120 planned chapters (100%); Part 12 10/10; 0 planned chapters remaining.
+- **Current-turn spot-check:** Chapter 120 tutorial, lab, project README, simulator and automated test source were committed; master README chapter-number reference scan showed 101 distinct numbered chapter references before the Chapter 120 index update, with 002–019 not explicitly enumerated. This is a README index coverage gap, **not proof that files are missing**.
+- **Full repository audit:** NOT VERIFIED. Enumerate the actual GitHub tree, check 120 chapter files, all lab links, duplicates, file naming, Markdown link targets, code imports, safety caveats and status consistency.
+- **Runtime validation:** PENDING. Execute exact committed source/tests locally, capture outputs, configure CI, review security, run authorized staging integrations, load/soak/chaos tests, restore/DR drills and get owner acceptance.
+- **Completion definition:** The chapter **publication** milestone is complete. Technical validation and production readiness are **not** certified.
