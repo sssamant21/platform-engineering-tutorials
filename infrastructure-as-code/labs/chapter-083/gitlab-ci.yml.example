@@ -1,0 +1,16 @@
+stages: [validate, security, deploy]
+offline_security:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-083/run-preflight.sh
+native_scanners_disabled:
+  stage: security
+  when: manual
+  script:
+    - echo 'NOT ENABLED: pin native scanners, verify SBOM, provenance and signature trust'
+deploy_disabled:
+  stage: deploy
+  when: manual
+  script:
+    - echo 'NO APPLY: protected OIDC, approval, DBRE restore and SLO required'
