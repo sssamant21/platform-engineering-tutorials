@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "environment": "offline-chargeback-lab",
+  "billing_account": "production",
+  "usage_month": "2026-09",
+  "currency": "USD",
+  "cost_basis": "amortized",
+  "repository": "sssamant21/platform-engineering-tutorials",
+  "export_age_hours": 3,
+  "records": [
+    {
+      "line_id": "compute-a",
+      "kind": "direct",
+      "cents": 1234,
+      "provider": "aws",
+      "billing_account": "offline-097",
+      "usage_month": "2026-09",
+      "currency": "USD",
+      "cost_basis": "amortized",
+      "export_id": "EXPORT-097",
+      "source_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "tags": {
+        "owner": "platform",
+        "cost_center": "payments",
+        "application": "training"
+      },
+      "weights": {}
+    },
+    {
+      "line_id": "shared-k8s",
+      "kind": "shared",
+      "cents": 1001,
+      "provider": "aws",
+      "billing_account": "offline-097",
+      "usage_month": "2026-09",
+      "currency": "USD",
+      "cost_basis": "amortized",
+      "export_id": "EXPORT-097",
+      "source_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "tags": {
+        "owner": "platform",
+        "cost_center": "platform",
+        "application": "training"
+      },
+      "weights": {}
+    },
+    {
+      "line_id": "compute-a",
+      "kind": "unallocated",
+      "cents": 99,
+      "provider": "aws",
+      "billing_account": "offline-097",
+      "usage_month": "2026-09",
+      "currency": "USD",
+      "cost_basis": "amortized",
+      "export_id": "EXPORT-097",
+      "source_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "tags": {
+        "owner": "platform",
+        "cost_center": "unallocated",
+        "application": "training"
+      },
+      "weights": {}
+    }
+  ]
+}
