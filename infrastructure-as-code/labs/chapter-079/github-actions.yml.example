@@ -1,0 +1,11 @@
+name: iac-079-offline-validation
+on:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4 # pin immutable commit for production
+      - run: bash infrastructure-as-code/labs/chapter-079/run-preflight.sh
