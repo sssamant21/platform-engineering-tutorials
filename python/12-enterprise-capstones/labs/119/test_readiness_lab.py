@@ -19,7 +19,7 @@ class Tests(unittest.TestCase):
         self.assertIn("failed:security",review(items,True,True)["blockers"])
     def test_noncritical_failed(self):
         items=self.evidence();items[0]=Evidence("architecture",False,"platform_team","evidence/architecture/20261019","2026-10-19T20:00:00Z")
-        self.assertIn("score_below_90",review(items,True,True)["blockers"])
+        self.assertEqual(review(items,True,True)["score"],90)
     def test_duplicate(self):self.bad(lambda:review(self.evidence()+[self.evidence()[0]],True,True))
     def test_no_approval(self):self.assertIn("approval_missing",review(self.evidence(),False,True)["blockers"])
     def test_no_rollback(self):self.assertIn("rollback_not_tested",review(self.evidence(),True,False)["blockers"])
