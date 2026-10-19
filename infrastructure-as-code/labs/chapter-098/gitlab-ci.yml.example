@@ -1,0 +1,11 @@
+stages: [validate, native-finops]
+offline_forecast:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-098/run-preflight.sh
+native_finops_disabled:
+  stage: native-finops
+  when: manual
+  script:
+    - echo 'NOT ENABLED: live provider billing, budget paging and independent SRE/DBRE/Finance acceptance required'
