@@ -1,0 +1,11 @@
+name: iac-087-offline-integration
+on:
+  pull_request:
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4 # pin immutable commit in production
+      - run: bash infrastructure-as-code/labs/chapter-087/run-preflight.sh
