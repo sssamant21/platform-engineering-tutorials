@@ -1,0 +1,23 @@
+{
+  "incident": {
+    "service": "payments",
+    "environment": "staging",
+    "onset": "2026-10-19T20:00:00Z"
+  },
+  "changes": [
+    {
+      "change_id": "CHG-095-A",
+      "service": "payments",
+      "environment": "staging",
+      "timestamp": "2026-10-19T19:55:00Z",
+      "evidence_complete": true
+    },
+    {
+      "change_id": "CHG-095-B",
+      "service": "other",
+      "environment": "staging",
+      "timestamp": "2026-10-19T19:58:00Z",
+      "evidence_complete": false
+    }
+  ]
+}
