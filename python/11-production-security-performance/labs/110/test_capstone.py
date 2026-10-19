@@ -1,0 +1,62 @@
+import json,math,unittest
+from io import StringIO
+from contextlib import redirect_stdout
+from capstone import LabError,identity,secrets,compliance,supply_chain,percentile,performance,concurrency,slo,retry,redact,release,demo,main
+class Tests(unittest.TestCase):
+    def reject(self,fn):
+        with self.assertRaises(LabError):fn()
+    def pkg(self,trusted=True):return [{"name":"psycopg","version":"3.2.1","sha256":"a"*64,"trusted":trusted}]
+    def test_identity_allow(self):self.assertTrue(identity(["read"],"read")["allowed"])
+    def test_identity_deny(self):self.assertFalse(identity(["read"],"write")["allowed"])
+    def test_identity_excess(self):self.assertFalse(identity(["read","write","admin"],"read")["least_privilege"])
+    def test_identity_invalid(self):self.reject(lambda:identity("read","read"))
+    def test_secret_fresh(self):self.assertFalse(secrets(30)["rotation_due"])
+    def test_secret_due(self):self.assertTrue(secrets(90)["rotation_due"])
+    def test_secret_invalid(self):self.reject(lambda:secrets(-1))
+    def test_secret_no_export(self):self.assertFalse(secrets(10)["secret_material_exported"])
+    def test_compliance_pass(self):self.assertEqual(compliance(["pass"])["status"],"pass")
+    def test_compliance_fail(self):self.assertEqual(compliance(["fail"])["status"],"fail")
+    def test_compliance_unknown(self):self.assertEqual(compliance(["pass","unknown"])["status"],"unknown")
+    def test_compliance_empty(self):self.assertEqual(compliance([])["status"],"unknown")
+    def test_compliance_invalid(self):self.reject(lambda:compliance(["ignored"]))
+    def test_supply_trusted(self):self.assertEqual(supply_chain(self.pkg())["status"],"pass")
+    def test_supply_untrusted(self):self.assertEqual(supply_chain(self.pkg(False))["status"],"fail")
+    def test_supply_empty(self):self.assertEqual(supply_chain([])["status"],"unknown")
+    def test_supply_duplicate(self):self.reject(lambda:supply_chain(self.pkg()*2))
+    def test_supply_hash(self):self.reject(lambda:supply_chain([dict(self.pkg()[0],sha256="bad")]))
+    def test_supply_no_signature(self):self.assertFalse(supply_chain(self.pkg())["signature_verified"])
+    def test_p50(self):self.assertEqual(percentile([1,2,3],50),2)
+    def test_p95(self):self.assertAlmostEqual(percentile([0,100],95),95)
+    def test_p99(self):self.assertAlmostEqual(percentile([0,100],99),99)
+    def test_p_invalid(self):self.reject(lambda:percentile([1],101))
+    def test_p_nan(self):self.reject(lambda:percentile([math.nan],50))
+    def test_performance_pass(self):self.assertTrue(performance([10,20,30])["pass"])
+    def test_performance_fail(self):self.assertFalse(performance([10,300],100)["pass"])
+    def test_concurrency(self):self.assertEqual(concurrency(20,5,3)["rejected"],12)
+    def test_concurrency_invalid(self):self.reject(lambda:concurrency(20,0,3))
+    def test_slo_pass(self):self.assertEqual(slo(100,100)["status"],"pass")
+    def test_slo_breach(self):self.assertEqual(slo(90,100)["status"],"breached")
+    def test_slo_unknown(self):self.assertEqual(slo(0,0)["status"],"unknown")
+    def test_slo_invalid(self):self.reject(lambda:slo(101,100))
+    def test_retry_success(self):self.assertEqual(retry(1,3,True)["status"],"success")
+    def test_retry_exhausted(self):self.assertEqual(retry(3,3,True)["status"],"exhausted")
+    def test_retry_nonidempotent(self):self.assertEqual(retry(1,3,False)["status"],"blocked")
+    def test_retry_invalid(self):self.reject(lambda:retry(1,0,True))
+    def test_redact(self):self.assertEqual(redact({"password":"abc"})["password"],"[REDACTED]")
+    def test_release_ready(self):
+        d=demo();self.assertEqual(d["release"]["decision"],"advisory-ready")
+    def test_release_partial(self):self.assertEqual(demo(True)["release"]["decision"],"hold")
+    def test_release_unapproved(self):
+        d=demo();self.assertIn("approval",release(d["identity"],d["secrets"],d["compliance"],d["supply_chain"],d["performance"],d["slo"],False)["blockers"])
+    def test_no_network(self):self.assertEqual(demo()["network_calls"],0)
+    def test_no_mutation(self):self.assertEqual(demo()["mutations"],0)
+    def test_hash_changes(self):self.assertNotEqual(demo()["sha256"],demo(True)["sha256"])
+    def test_cli(self):
+        out=StringIO()
+        with redirect_stdout(out):self.assertEqual(main(["--dry-run"]),0)
+        self.assertEqual(json.loads(out.getvalue())["mode"],"offline")
+    def test_partial_cli(self):
+        out=StringIO()
+        with redirect_stdout(out):main(["--partial"])
+        self.assertEqual(json.loads(out.getvalue())["release"]["decision"],"hold")
+if __name__=="__main__":unittest.main()
