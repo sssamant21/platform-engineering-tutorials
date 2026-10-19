@@ -1,0 +1,12 @@
+[
+  {
+    "event_id": "e1",
+    "change_id": "CHG-093-A",
+    "timestamp": "2026-10-19T19:55:00Z"
+  },
+  {
+    "event_id": "e2",
+    "change_id": "CHG-093-A",
+    "timestamp": "2026-10-19T20:00:00Z"
+  }
+]
