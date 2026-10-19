@@ -1,0 +1,25 @@
+import unittest
+from remediation_gate import decide
+BASE={'environment':'dev','kind':'configuration','severity':'low','destructive':False,'database':False,'fresh':True,'inventory_complete':True,'approved':True,'allowlisted':True}
+class RemediationTests(unittest.TestCase):
+    def outcome(self,expected,**changes):self.assertEqual(decide(dict(BASE,**changes)),expected)
+    def test_safe(self):self.outcome('proposal_only')
+    def test_staging(self):self.outcome('proposal_only',environment='staging')
+    def test_prod(self):self.outcome('review',environment='production')
+    def test_medium(self):self.outcome('review',severity='medium')
+    def test_destructive(self):self.outcome('quarantine',destructive=True)
+    def test_database(self):self.outcome('quarantine',database=True)
+    def test_identity(self):self.outcome('quarantine',kind='identity')
+    def test_policy(self):self.outcome('quarantine',kind='policy')
+    def test_state(self):self.outcome('quarantine',kind='state')
+    def test_high(self):self.outcome('quarantine',severity='high')
+    def test_critical(self):self.outcome('quarantine',severity='critical')
+    def test_stale(self):self.outcome('quarantine',fresh=False)
+    def test_partial(self):self.outcome('quarantine',inventory_complete=False)
+    def test_unapproved(self):self.outcome('review',approved=False)
+    def test_not_allowlisted(self):self.outcome('review',allowlisted=False)
+    def test_unknown(self):self.outcome('quarantine',kind='unknown')
+    def test_invalid(self):self.assertEqual(decide(None),'quarantine')
+    def test_missing(self):self.assertEqual(decide({}),'quarantine')
+    def test_type(self):self.outcome('quarantine',destructive='false')
+if __name__=="__main__":unittest.main()
