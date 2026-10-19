@@ -1,0 +1,11 @@
+name: iac-080-offline-capstone
+on:
+  pull_request:
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4 # pin by commit SHA for production
+      - run: bash infrastructure-as-code/labs/chapter-080/run-preflight.sh
