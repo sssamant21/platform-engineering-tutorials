@@ -1,0 +1,26 @@
+import json,unittest
+from pathlib import Path
+from automation_gate import decide
+SAFE=json.loads((Path(__file__).parent/'fixtures/change-safe.json').read_text())
+class AutomationTests(unittest.TestCase):
+    def result(self,expected,**changes):self.assertEqual(decide(dict(SAFE,**changes)),expected)
+    def test_safe(self):self.result('PROPOSAL_ONLY')
+    def test_prod(self):self.result('HOLD',environment='production')
+    def test_medium(self):self.result('HOLD',risk='medium')
+    def test_high(self):self.result('QUARANTINE',risk='high')
+    def test_critical(self):self.result('QUARANTINE',risk='critical')
+    def test_destructive(self):self.result('QUARANTINE',destructive=True)
+    def test_database(self):self.result('QUARANTINE',database=True)
+    def test_incomplete(self):self.result('QUARANTINE',source_complete=False)
+    def test_alert(self):self.result('QUARANTINE',alert_delivered=False)
+    def test_rpo(self):self.result('QUARANTINE',rpo_healthy=False)
+    def test_rto(self):self.result('QUARANTINE',rto_healthy=False)
+    def test_capacity(self):self.result('QUARANTINE',capacity_verified=False)
+    def test_approval(self):self.result('HOLD',approved=False)
+    def test_finance(self):self.result('HOLD',finance_approved=False)
+    def test_slo(self):self.result('HOLD',slo_healthy=False)
+    def test_invalid(self):self.assertEqual(decide(None),'QUARANTINE')
+    def test_missing(self):self.assertEqual(decide({}),'QUARANTINE')
+    def test_wrong_type(self):self.result('QUARANTINE',destructive='false')
+    def test_unknown_env(self):self.result('QUARANTINE',environment='unknown')
+if __name__=="__main__":unittest.main()
