@@ -1,0 +1,6 @@
+name: iac-ch075-pulumi
+runtime:
+  name: python
+  options:
+    virtualenv: .venv
+description: Mock-only multi-cloud Pulumi capstone
