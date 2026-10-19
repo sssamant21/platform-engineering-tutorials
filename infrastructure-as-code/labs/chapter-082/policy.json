@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "target": {
+    "environment": "lab",
+    "aws_account": "offline",
+    "azure_subscription": "offline",
+    "gcp_project": "offline",
+    "kube_context": "offline-kind",
+    "policy_version": "v1.0.0"
+  },
+  "required_controls": [
+    "signed_source",
+    "pinned_providers",
+    "artifact_verified",
+    "oidc_scoped",
+    "least_privilege",
+    "state_encrypted",
+    "state_versioned",
+    "state_lock",
+    "secrets_redacted",
+    "policy_bundle_verified",
+    "policy_enforced",
+    "cloud_guardrails",
+    "k8s_admission",
+    "gitops_owner_verified",
+    "dbre_approved",
+    "backup_verified",
+    "restore_rehearsed",
+    "slo_healthy",
+    "audit_immutable"
+  ],
+  "max_destroy": 0,
+  "max_replace": 0,
+  "require_exact_controls": true
+}
