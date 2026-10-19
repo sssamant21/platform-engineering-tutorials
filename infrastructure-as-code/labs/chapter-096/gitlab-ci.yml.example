@@ -1,0 +1,11 @@
+stages: [validate, billing-acceptance]
+offline_finops:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-096/run-preflight.sh
+native_billing_disabled:
+  stage: billing-acceptance
+  when: manual
+  script:
+    - echo 'NOT ENABLED: authorized provider exports, invoice reconciliation, FinOps/DBRE sign-off required'
