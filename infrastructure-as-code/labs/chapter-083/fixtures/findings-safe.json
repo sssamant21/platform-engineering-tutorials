@@ -1,0 +1,9 @@
+[
+  {
+    "id": "SYN-1",
+    "severity": "low",
+    "owner": "SRE",
+    "fingerprint": "synthetic-fp",
+    "status": "resolved"
+  }
+]
