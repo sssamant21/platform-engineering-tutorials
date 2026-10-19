@@ -347,4 +347,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 092 — Observability Data Governance, Privacy, Retention, Encryption and Audit Compliance](part-19-enterprise-security-governance-reliability/092-observability-data-governance-privacy-retention-encryption-audit-compliance.md)
 - [Chapter 092 — Companion lab](part-19-enterprise-security-governance-reliability/labs/092-observability-data-governance-privacy-retention-encryption-audit-compliance-lab.md)
 
-**Next:** Chapter 093 — Enterprise Observability Security Monitoring, Threat Detection and Incident Response Automation.
+- [Chapter 093 — Enterprise Observability Security Monitoring, Threat Detection and Incident Response Automation](part-19-enterprise-security-governance-reliability/093-enterprise-observability-security-monitoring-threat-detection-incident-response-automation.md)
+- [Chapter 093 — Companion lab](part-19-enterprise-security-governance-reliability/labs/093-enterprise-observability-security-monitoring-threat-detection-incident-response-automation-lab.md)
+
+**Next:** Chapter 094 — Enterprise Observability Resilience, Backup, Disaster Recovery and Security Validation.
