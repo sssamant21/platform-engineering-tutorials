@@ -1,0 +1,62 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "architecture": [
+      "stack_identity_verified",
+      "backend_verified",
+      "provider_target_verified",
+      "automation_api_reviewed",
+      "operation_lock_reviewed"
+    ],
+    "security": [
+      "oidc_federation_reviewed",
+      "least_privilege",
+      "signed_source",
+      "dependencies_pinned",
+      "no_plaintext_secrets"
+    ],
+    "delivery": [
+      "preview_reviewed",
+      "policy_reviewed",
+      "approval_signed",
+      "canary_approved",
+      "slo_healthy",
+      "destructive_action"
+    ],
+    "dbre": [
+      "backup_verified",
+      "restore_rehearsed",
+      "dbre_approved",
+      "stateful_replacement_denied",
+      "quorum_reviewed"
+    ],
+    "governance": [
+      "change_ticket_verified",
+      "audit_enabled",
+      "cost_reviewed",
+      "rollback_documented",
+      "concurrency_bounded"
+    ]
+  },
+  "forbidden_controls": {
+    "delivery": [
+      "destructive_action"
+    ]
+  },
+  "require_ticket": true,
+  "deny_prod_targets": true,
+  "require_preview": true,
+  "require_policy": true,
+  "require_approval": true,
+  "require_backup": true,
+  "require_canary": true,
+  "require_slo": true
+}
