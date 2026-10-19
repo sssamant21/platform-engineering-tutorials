@@ -1,14 +1,14 @@
 # Python curriculum status
 
-Last updated: 2026-10-18
+Last updated: 2026-10-19
 
 - Planned: **120 chapters**
-- Published: **111 chapters**
-- Remaining: **9 chapters**
-- Published labs: **111**
-- Next: **112 — Enterprise Python API Services, Contracts and Data Access Integration**
+- Published: **112 chapters**
+- Remaining: **8 chapters**
+- Published labs: **112**
+- Next: **113 — Enterprise Python Event-Driven Workers, Kafka Integration and Reliable Data Pipelines**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–111 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–112 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -213,6 +213,8 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 
 - Chapter 110 — [Python Production Security, Performance and Reliability Capstone](11-production-security-performance/110-python-production-security-performance-reliability-capstone.md) · [SRE/DBRE lab](11-production-security-performance/labs/110-production-security-performance-reliability-capstone-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/110/README.md). Integrates Chapters 101–109: identity, secrets, compliance, supply-chain metadata, p99 profiling budgets, concurrency limits, SLOs, retries, redaction and advisory release gates. Automated tests published; exact committed execution, CI, security review and production integration validation pending. Part 11 complete.
 
-- Part 12 — Enterprise Capstone Projects: **1/10** chapters published; 9 remaining.
+- Part 12 — Enterprise Capstone Projects: **2/10** chapters published; 8 remaining.
 
 - Chapter 111 — [Enterprise Python SRE/DBRE Capstone Architecture and Project Foundations](12-enterprise-capstones/111-enterprise-python-sre-dbre-capstone-architecture-project-foundations.md) · [Complete SRE/DBRE lab](12-enterprise-capstones/labs/111-enterprise-python-architecture-project-foundations-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/111/README.md). Architecture, API/worker boundaries, PostgreSQL/Elasticsearch/MongoDB/Redis/Kafka/Kubernetes patterns, security, capacity, SLOs, offline simulator and automated tests. Exact committed execution, CI, live integration and production acceptance pending.
+
+- Chapter 112 — [Enterprise Python API Services, Contracts and Data Access Integration](12-enterprise-capstones/112-enterprise-python-api-services-contracts-data-access-integration.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/112-enterprise-python-api-contracts-data-access-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/112/README.md). REST contracts, validation, role gates, idempotency, PostgreSQL optimistic revisions/pool limits, Elasticsearch search, MongoDB documents, Redis TTL, timeout budgets, telemetry, offline tests and incident runbooks. Exact committed execution, CI, live integration and production acceptance pending.
