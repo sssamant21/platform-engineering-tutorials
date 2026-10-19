@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "environment": "offline-finops-lab",
+  "account": "offline-096",
+  "repository": "sssamant21/platform-engineering-tutorials",
+  "owner": "sre-dbre-lab",
+  "usage_date": "2026-10-18",
+  "export_age_hours": 2,
+  "records": [
+    {
+      "line_id": "a1",
+      "provider": "aws",
+      "account": "offline-096",
+      "service": "compute",
+      "resource_id": "sandbox-a1",
+      "usage_date": "2026-10-18",
+      "currency": "USD",
+      "cost_usd": "12.40",
+      "cost_basis": "amortized",
+      "export_id": "EXPORT-096",
+      "source_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "tags": {
+        "owner": "platform-sre",
+        "environment": "lab",
+        "cost_center": "platform",
+        "application": "training",
+        "managed_by": "terraform"
+      }
+    },
+    {
+      "line_id": "a2",
+      "provider": "azure",
+      "account": "offline-096",
+      "service": "compute",
+      "resource_id": "sandbox-a2",
+      "usage_date": "2026-10-18",
+      "currency": "USD",
+      "cost_usd": "4.10",
+      "cost_basis": "amortized",
+      "export_id": "EXPORT-096",
+      "source_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "tags": {
+        "owner": "platform-sre",
+        "environment": "lab",
+        "cost_center": "data",
+        "application": "training",
+        "managed_by": "terraform"
+      }
+    },
+    {
+      "line_id": "a3",
+      "provider": "gcp",
+      "account": "offline-096",
+      "service": "compute",
+      "resource_id": "sandbox-a3",
+      "usage_date": "2026-10-18",
+      "currency": "USD",
+      "cost_usd": "3.50",
+      "cost_basis": "amortized",
+      "export_id": "EXPORT-096",
+      "source_digest": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "tags": {
+        "owner": "platform-sre",
+        "environment": "lab",
+        "cost_center": "platform",
+        "application": "training",
+        "managed_by": "terraform"
+      }
+    }
+  ]
+}
