@@ -1,0 +1,16 @@
+stages: [validate, preview, promote]
+offline_validation:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-078/run-preflight.sh
+preview_placeholder:
+  stage: preview
+  when: manual
+  script:
+    - echo "NOT ENABLED: verify OIDC, Pulumi/CFN/Bicep targets and capture reviewed preview"
+promotion_disabled:
+  stage: promote
+  when: manual
+  script:
+    - echo "NO DEPLOYMENT: protected approvals, signed artifacts, DBRE restore and SLO required"
