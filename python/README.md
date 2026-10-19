@@ -252,7 +252,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 100 — Integrated SRE/DBRE Production Capstone Lab](10-kubernetes-cloud-platform-engineering/labs/100-cloud-native-platform-engineering-production-capstone-lab.md)
 - [Chapter 100 — Executable Capstone and 51 Unit Tests](10-kubernetes-cloud-platform-engineering/labs/100/README.md)
 
-## Part 11 — Production Security and Performance (7/10 published)
+## Part 11 — Production Security and Performance (8/10 published)
 
 - [Chapter 101 — Python Production Security Architecture and Secure Coding](11-production-security-performance/101-python-production-security-architecture-secure-coding.md)
 - [Chapter 101 — SRE/DBRE Secure Coding Lab](11-production-security-performance/labs/101-production-security-secure-coding-sre-dbre-lab.md)
@@ -281,3 +281,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 107 — Python High-Performance Concurrency, Async and Parallel Processing](11-production-security-performance/107-python-high-performance-concurrency-async-parallel-processing.md)
 - [Chapter 107 — Concurrency and Async SRE/DBRE Lab](11-production-security-performance/labs/107-high-performance-concurrency-async-parallel-processing-sre-dbre-lab.md)
 - [Chapter 107 — Executable Project and Automated Tests](11-production-security-performance/labs/107/README.md)
+
+- [Chapter 108 — Python Production Observability, Tracing and Reliability Engineering](11-production-security-performance/108-python-production-observability-tracing-reliability-engineering.md)
+- [Chapter 108 — Observability and Reliability SRE/DBRE Lab](11-production-security-performance/labs/108-production-observability-tracing-reliability-sre-dbre-lab.md)
+- [Chapter 108 — Executable Project and Automated Tests](11-production-security-performance/labs/108/README.md)
