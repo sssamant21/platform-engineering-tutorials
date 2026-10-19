@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 79/100 published**
+**100 chapters · 20 parts · 80/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -23,7 +23,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 13 | 061–065 | Database and Data Platform Observability | 5/5 |
 | 14 | 066–070 | Application Performance Monitoring | 5/5 |
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 5/5 |
-| 16 | 076–080 | Incident Response and Troubleshooting | 4/5 |
+| 16 | 076–080 | Incident Response and Troubleshooting | 5/5 |
 | 17 | 081–085 | Observability as Code and GitOps | 0/5 |
 | 18 | 086–090 | Scaling High Availability and FinOps | 0/5 |
 | 19 | 091–095 | Enterprise Security Governance and Reliability | 0/5 |
@@ -302,4 +302,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 079 — Enterprise Incident Communications, Postmortems and Corrective Action Tracking](part-16-incident-response-troubleshooting/079-enterprise-incident-communications-postmortems-corrective-action-tracking.md)
 - [Chapter 079 — Companion lab](part-16-incident-response-troubleshooting/labs/079-enterprise-incident-communications-postmortems-corrective-action-tracking-lab.md)
 
-**Next:** Chapter 080 — Enterprise Incident Response, Troubleshooting and Reliability Acceptance Capstone.
+- [Chapter 080 — Enterprise Incident Response, Troubleshooting and Reliability Acceptance Capstone](part-16-incident-response-troubleshooting/080-enterprise-incident-response-troubleshooting-reliability-acceptance-capstone.md)
+- [Chapter 080 — Companion lab](part-16-incident-response-troubleshooting/labs/080-enterprise-incident-response-troubleshooting-reliability-acceptance-capstone-lab.md)
+
+**Part 16 complete: 5/5 chapters published.**
+
+**Next:** Chapter 081 — Observability as Code Foundations, Repository Architecture and GitOps Workflows (Part 17).
