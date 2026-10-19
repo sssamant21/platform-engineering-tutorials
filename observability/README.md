@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 70/100 published**
+**100 chapters · 20 parts · 71/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -22,7 +22,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 5/5 |
 | 13 | 061–065 | Database and Data Platform Observability | 5/5 |
 | 14 | 066–070 | Application Performance Monitoring | 5/5 |
-| 15 | 071–075 | SLIs SLOs and Error Budgets | 0/5 |
+| 15 | 071–075 | SLIs SLOs and Error Budgets | 1/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 0/5 |
 | 17 | 081–085 | Observability as Code and GitOps | 0/5 |
 | 18 | 086–090 | Scaling High Availability and FinOps | 0/5 |
@@ -273,4 +273,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 
 **Part 14 complete: 5/5 chapters published.**
 
-**Next:** Chapter 071 — Service Level Indicators, Objectives and Error Budget Engineering (Part 15).
+- [Chapter 071 — Service Level Indicators, Objectives and Error Budget Engineering](part-15-slis-slos-error-budgets/071-service-level-indicators-objectives-error-budget-engineering.md)
+- [Chapter 071 — Companion lab](part-15-slis-slos-error-budgets/labs/071-service-level-indicators-objectives-error-budget-engineering-lab.md)
+
+**Next:** Chapter 072 — Advanced SLO Design, Multiwindow Burn-Rate Alerting and Prometheus Recording Rules.
