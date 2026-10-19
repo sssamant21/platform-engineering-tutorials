@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 98 / 100 chapters (98%) · 20 parts · Part 20: 3/5**
+**Progress: 99 / 100 chapters (99%) · 20 parts · Part 20: 4/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -23,10 +23,10 @@
 | 17 — Observability as Code and GitOps | 081–085 | 5 | 5 | Complete |
 | 18 — Scaling High Availability and FinOps | 086–090 | 5 | 5 | Complete |
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 5 | 5 | Complete |
-| 20 — Final Production Observability Capstones | 096–100 | 3 | 5 | In progress |
+| 20 — Final Production Observability Capstones | 096–100 | 4 | 5 | In progress |
 
-**Published:** Chapters 001–098 and companion labs. Parts 01–19 complete (5/5 each); Part 20 in progress (3/5).
+**Published:** Chapters 001–099 and companion labs. Parts 01–19 complete (5/5 each); Part 20 in progress (4/5).
 
-**Next:** Chapter 099 — Enterprise Observability Operational Readiness, Incident Command and Production Reliability Acceptance.
+**Next:** Chapter 100 — Enterprise Observability Final Production Reliability and SRE/DBRE Certification Capstone.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
