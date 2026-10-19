@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 84 / 120 chapters (70.00%)  
+**Progress:** 85 / 120 chapters (70.83%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -99,7 +99,8 @@
 **Chapter 082:** Published; OPA/Rego, Sentinel, policy exception lifecycle and offline policy labs, 74 tests authored; execution and production policy acceptance pending.  
 **Chapter 083:** Published; security scanning, secrets detection, supply-chain and compliance offline labs, 78 tests authored; execution and native scanner/production acceptance pending.  
 **Chapter 084:** Published; zero trust, cloud IAM, Kubernetes RBAC and offline identity labs, 78 tests authored; execution and production IAM/DBRE acceptance pending.  
-**Next:** Chapter 085 — Enterprise IaC Security, Policy and Zero-Trust Production Readiness Capstone (proposed title).
+**Chapter 085:** Published; enterprise security, policy, zero trust and DBRE DR capstone, 113 offline tests authored; execution and production acceptance pending.  
+**Next:** Chapter 086 — IaC Testing Strategy, Static Validation, Unit Tests and Policy Test Automation (proposed title; begins Part 18).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -187,6 +188,7 @@
 | 082 | IaC Policy as Code, OPA/Rego, Sentinel and Enterprise Guardrails | Published |
 | 083 | IaC Security Scanning, Supply-Chain Integrity, Secrets Detection and Continuous Compliance | Published |
 | 084 | IaC Least Privilege, Zero Trust, Cloud IAM and Kubernetes Security Hardening | Published |
+| 085 | Enterprise IaC Security, Policy and Zero-Trust Production Readiness Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -896,7 +898,7 @@
 - [x] Chapter and master index publication; Part 16 content complete at 5/5
 - [ ] Offline test execution, native tool integration, actual DB restore/DR drills, SLO game day and production acceptance
 
-**Part 17:** 4/5 chapters published — Security and Policy.
+**Part 17:** 5/5 chapters published — Security and Policy (publication complete; runtime acceptance pending).
 
 ## Chapter 081 acceptance — Security foundations, threat modeling and secrets
 - [x] STRIDE, identity federation, secret lifecycle, state security and supply-chain architecture
@@ -929,3 +931,11 @@
 - [x] Fifty-five SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 17 at 4/5
 - [ ] Offline test execution, native IAM/Kubernetes authorization, DB restore and production acceptance
+
+## Chapter 085 acceptance — Part 17 enterprise security and DR capstone
+- [x] Integrated threat modeling, cloud IAM, OPA/Sentinel, GitOps, Kubernetes and DBRE theory
+- [x] Offline security readiness gate, STRIDE risk validator, promotion and DR simulators
+- [x] 113 Python unit tests authored; not executed
+- [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point final assessment
+- [x] Chapter and master index publication; Part 17 publication complete at 5/5
+- [ ] Offline test execution, native IAM/policy/admission, cryptographic provenance, DB restore, RPO/RTO and production acceptance
