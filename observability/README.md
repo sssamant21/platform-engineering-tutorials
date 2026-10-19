@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 84/100 published**
+**100 chapters · 20 parts · 85/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -24,7 +24,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 14 | 066–070 | Application Performance Monitoring | 5/5 |
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 5/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 5/5 |
-| 17 | 081–085 | Observability as Code and GitOps | 4/5 |
+| 17 | 081–085 | Observability as Code and GitOps | 5/5 |
 | 18 | 086–090 | Scaling High Availability and FinOps | 0/5 |
 | 19 | 091–095 | Enterprise Security Governance and Reliability | 0/5 |
 | 20 | 096–100 | Final Production Observability Capstones | 0/5 |
@@ -319,4 +319,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 084 — Observability CI/CD, Policy Validation, Drift Detection and Safe Promotion](part-17-observability-as-code-gitops/084-observability-ci-cd-policy-validation-drift-detection-safe-promotion.md)
 - [Chapter 084 — Companion lab](part-17-observability-as-code-gitops/labs/084-observability-ci-cd-policy-validation-drift-detection-safe-promotion-lab.md)
 
-**Next:** Chapter 085 — Enterprise Observability as Code and GitOps Production Readiness Capstone.
+- [Chapter 085 — Enterprise Observability as Code and GitOps Production Readiness Capstone](part-17-observability-as-code-gitops/085-enterprise-observability-as-code-gitops-production-readiness-capstone.md)
+- [Chapter 085 — Companion lab](part-17-observability-as-code-gitops/labs/085-enterprise-observability-as-code-gitops-production-readiness-capstone-lab.md)
+
+**Part 17 complete: 5/5 chapters published.**
+
+**Next:** Chapter 086 — Enterprise Observability Scale, Capacity Planning and High Availability Architecture (Part 18).
