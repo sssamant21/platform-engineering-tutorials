@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 96 / 120 chapters (80.00%)  
+**Progress:** 97 / 120 chapters (80.83%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -111,7 +111,8 @@
 **Chapter 094:** Published; SLO engineering, error budgets, burn-rate alerts and safe reliability controls, 113 tests authored; execution and native Prometheus/Alertmanager/DBRE acceptance pending.  
 **Chapter 095:** Published; enterprise observability/drift/SLO/incident-response capstone, 127 tests authored; execution, live paging, cloud drift and DBRE acceptance pending.  
 **Chapter 096:** Published; cloud billing, ownership tagging, cost allocation, anomalies and safe FinOps, 83 tests authored; execution and native billing acceptance pending.  
-**Next:** Chapter 097 — IaC Cost Allocation, Showback, Chargeback and Shared Platform Cost Models (proposed title).
+**Chapter 097:** Published; shared platform allocation, showback, chargeback, integer-cent reconciliation and DBRE safety, 90 tests authored; execution and native finance acceptance pending.  
+**Next:** Chapter 098 — IaC Cost Forecasting, Budget Governance, Anomaly Detection and FinOps Automation (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -211,6 +212,7 @@
 | 094 | IaC SLO Engineering, Error Budgets, Alerting, Incident Response and Automated Reliability Controls | Published |
 | 095 | Enterprise IaC Observability, Drift, SLO and Incident Response Reliability Acceptance Capstone | Published |
 | 096 | IaC Cost Observability, Cloud Billing Data, Tagging and FinOps Fundamentals | Published |
+| 097 | IaC Cost Allocation, Showback, Chargeback and Shared Platform Cost Models | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -1046,7 +1048,7 @@
 - [x] Chapter and master index publication; Part 19 content complete at 5/5
 - [ ] Offline execution, native OTel/Prometheus/Alertmanager paging, real cloud drift, actual DBRE restore, independent security review and production acceptance
 
-**Part 20:** 1/5 chapters published — FinOps (native billing and operational acceptance pending).
+**Part 20:** 2/5 chapters published — FinOps (native billing and operational acceptance pending).
 
 ## Chapter 096 acceptance — IaC cost observability and FinOps fundamentals
 - [x] AWS CUR/Data Exports, Azure Cost Management, GCP BigQuery Billing, Terraform/OpenTofu, Kubernetes and DBRE cost theory
@@ -1055,3 +1057,11 @@
 - [x] Sixty production SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 20 at 1/5
 - [ ] Offline execution, native billing exports, invoice reconciliation, tag propagation, real DBRE capacity/SLO verification and independent production acceptance
+
+## Chapter 097 acceptance — IaC shared platform cost allocation and chargeback
+- [x] AWS/Azure/GCP billing, Terraform/OpenTofu, Kubernetes shared costs and DBRE tenant allocation theory
+- [x] Offline billing ledger, deterministic integer-cent allocation, reconciliation and safe chargeback decision labs
+- [x] 90 Python unit tests authored; not executed
+- [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 20 at 2/5
+- [ ] Offline execution, native billing export and Kubernetes metering, finance settlement, DBRE SLO/RPO/RTO verification and independent production acceptance
