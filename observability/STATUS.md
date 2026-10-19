@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 72 / 100 chapters (72%) · 20 parts · Part 15: 2/5**
+**Progress: 73 / 100 chapters (73%) · 20 parts · Part 15: 3/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -18,15 +18,15 @@
 | 12 — Kubernetes EKS AKS and GKE Observability | 056–060 | 5 | 5 | Complete |
 | 13 — Database and Data Platform Observability | 061–065 | 5 | 5 | Complete |
 | 14 — Application Performance Monitoring | 066–070 | 5 | 5 | Complete |
-| 15 — SLIs SLOs and Error Budgets | 071–075 | 2 | 5 | In progress |
+| 15 — SLIs SLOs and Error Budgets | 071–075 | 3 | 5 | In progress |
 | 16 — Incident Response and Troubleshooting | 076–080 | 0 | 5 | Planned |
 | 17 — Observability as Code and GitOps | 081–085 | 0 | 5 | Planned |
 | 18 — Scaling High Availability and FinOps | 086–090 | 0 | 5 | Planned |
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–072 and companion labs. Parts 01–14 complete (5/5 each); Part 15 in progress (2/5).
+**Published:** Chapters 001–073 and companion labs. Parts 01–14 complete (5/5 each); Part 15 in progress (3/5).
 
-**Next:** Chapter 073 — SLO Dashboards, Error Budget Policies and Reliability Governance.
+**Next:** Chapter 074 — SLO-Based Incident Prioritization, Error Budget Forecasting and Reliability Reviews.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
