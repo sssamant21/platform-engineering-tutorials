@@ -1,0 +1,57 @@
+import copy,json,unittest
+from pathlib import Path
+from delivery_gate import validate
+ROOT=Path(__file__).parent
+SAFE=json.loads((ROOT/'fixtures/safe.json').read_text())
+POLICY=json.loads((ROOT/'policy.json').read_text())
+class GateTests(unittest.TestCase):
+    def bad(self,fn):
+        e=copy.deepcopy(SAFE);fn(e);self.assertTrue(validate(e,POLICY))
+    def test_safe(self):self.assertEqual(validate(SAFE,POLICY),[])
+    def test_unsafe(self):self.assertTrue(validate(json.loads((ROOT/'fixtures/unsafe.json').read_text()),POLICY))
+    def test_invalid_evidence(self):self.assertTrue(validate([],POLICY))
+    def test_invalid_policy(self):self.assertTrue(validate(SAFE,[]))
+    def test_policy_schema(self):
+        p=copy.deepcopy(POLICY);p['schema_version']=2;self.assertTrue(validate(SAFE,p))
+    def test_policy_targets(self):
+        p=copy.deepcopy(POLICY);p['targets']={};self.assertTrue(validate(SAFE,p))
+    def test_policy_controls(self):
+        p=copy.deepcopy(POLICY);p['required_controls']=[];self.assertTrue(validate(SAFE,p))
+    def test_policy_exactness(self):
+        p=copy.deepcopy(POLICY);p['require_exact_controls']=False;self.assertTrue(validate(SAFE,p))
+    def test_schema(self):self.bad(lambda e:e.update(schema_version=2))
+    def test_owner(self):self.bad(lambda e:e.update(owner=''))
+    def test_ticket(self):self.bad(lambda e:e.update(change_ticket='APPROVED'))
+    def test_digest(self):self.bad(lambda e:e.update(image_digest='latest'))
+    def test_missing_controls(self):self.bad(lambda e:e.pop('controls'))
+    def test_extra_control(self):self.bad(lambda e:e['controls'].update(bypass=True))
+    def test_target_environment(self):self.bad(lambda e:e.update(environment='production'))
+    def test_target_inventory(self):self.bad(lambda e:e.update(inventory='production'))
+    def test_target_kube_context(self):self.bad(lambda e:e.update(kube_context='production'))
+    def test_target_namespace(self):self.bad(lambda e:e.update(namespace='production'))
+    def test_target_gitops_controller(self):self.bad(lambda e:e.update(gitops_controller='production'))
+    def test_target_promotion_branch(self):self.bad(lambda e:e.update(promotion_branch='production'))
+    def test_control_signed_source(self):self.bad(lambda e:e['controls'].update(signed_source=False))
+    def test_control_pinned_collections(self):self.bad(lambda e:e['controls'].update(pinned_collections=False))
+    def test_control_immutable_image_digest(self):self.bad(lambda e:e['controls'].update(immutable_image_digest=False))
+    def test_control_oidc_scoped(self):self.bad(lambda e:e['controls'].update(oidc_scoped=False))
+    def test_control_least_privilege(self):self.bad(lambda e:e['controls'].update(least_privilege=False))
+    def test_control_inventory_verified(self):self.bad(lambda e:e['controls'].update(inventory_verified=False))
+    def test_control_kube_context_verified(self):self.bad(lambda e:e['controls'].update(kube_context_verified=False))
+    def test_control_namespace_verified(self):self.bad(lambda e:e['controls'].update(namespace_verified=False))
+    def test_control_gitops_owner_verified(self):self.bad(lambda e:e['controls'].update(gitops_owner_verified=False))
+    def test_control_no_direct_patch(self):self.bad(lambda e:e['controls'].update(no_direct_patch=False))
+    def test_control_ansible_check_reviewed(self):self.bad(lambda e:e['controls'].update(ansible_check_reviewed=False))
+    def test_control_k8s_diff_reviewed(self):self.bad(lambda e:e['controls'].update(k8s_diff_reviewed=False))
+    def test_control_policy_approved(self):self.bad(lambda e:e['controls'].update(policy_approved=False))
+    def test_control_approval_signed(self):self.bad(lambda e:e['controls'].update(approval_signed=False))
+    def test_control_backup_verified(self):self.bad(lambda e:e['controls'].update(backup_verified=False))
+    def test_control_restore_rehearsed(self):self.bad(lambda e:e['controls'].update(restore_rehearsed=False))
+    def test_control_dbre_approved(self):self.bad(lambda e:e['controls'].update(dbre_approved=False))
+    def test_control_serial_rollout_bounded(self):self.bad(lambda e:e['controls'].update(serial_rollout_bounded=False))
+    def test_control_pdb_reviewed(self):self.bad(lambda e:e['controls'].update(pdb_reviewed=False))
+    def test_control_no_destructive_prune(self):self.bad(lambda e:e['controls'].update(no_destructive_prune=False))
+    def test_control_canary_healthy(self):self.bad(lambda e:e['controls'].update(canary_healthy=False))
+    def test_control_slo_healthy(self):self.bad(lambda e:e['controls'].update(slo_healthy=False))
+    def test_control_audit_recorded(self):self.bad(lambda e:e['controls'].update(audit_recorded=False))
+if __name__=="__main__":unittest.main()
