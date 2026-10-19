@@ -1,0 +1,11 @@
+stages: [validate, incident-review]
+offline_incident:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-093/run-preflight.sh
+native_incident_review_disabled:
+  stage: incident-review
+  when: manual
+  script:
+    - echo 'NOT ENABLED: trusted cloud audit, OTLP, DBRE restore, incident approval and SLO evidence required'
