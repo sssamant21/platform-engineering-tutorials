@@ -1,0 +1,16 @@
+stages: [validate, preview, promote]
+offline_capstone:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-080/run-preflight.sh
+preview_disabled:
+  stage: preview
+  when: manual
+  script:
+    - echo 'NOT ENABLED: collect verified provider-native preview and signed digest'
+promote_disabled:
+  stage: promote
+  when: manual
+  script:
+    - echo 'NO APPLY: production OIDC, approval, backup, state locks and SLO required'
