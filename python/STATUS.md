@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **102 chapters**
-- Remaining: **18 chapters**
-- Published labs: **102**
-- Next: **103 — Python Secrets Management, Encryption and Key Lifecycle Automation**
+- Published: **103 chapters**
+- Remaining: **17 chapters**
+- Published labs: **103**
+- Next: **104 — Python Security Auditing, Compliance Automation and Policy-as-Code**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–102 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–103 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -192,7 +192,9 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 
 ## Part 11 — Production Security and Performance
 
-- **Published: 2/10 (Chapters 101–102); 8 chapters remaining in Part 11.**
+- **Published: 3/10 (Chapters 101–103); 7 chapters remaining in Part 11.**
 - Chapter 101 — [Python Production Security Architecture and Secure Coding](11-production-security-performance/101-python-production-security-architecture-secure-coding.md) · [SRE/DBRE lab](11-production-security-performance/labs/101-production-security-secure-coding-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/101/README.md). Threat modeling, OWASP, strict input validation, authorization model, supply-chain integrity, secrets redaction, advisory approvals, incident simulations and automated tests. Exact committed test execution, CI and production security review pending.
 
 - Chapter 102 — [Python Identity, Authentication and Authorization for Production Systems](11-production-security-performance/102-python-identity-authentication-authorization-production-systems.md) · [SRE/DBRE lab](11-production-security-performance/labs/102-identity-authentication-authorization-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/102/README.md). OAuth 2.0, OIDC, JWT verification architecture, RBAC/ABAC, tenant isolation, AWS/Azure/GCP/Kubernetes workload identity, approval, replay and redacted audit. Offline policy engine and automated tests published; exact committed execution, CI, live identity-provider integration and production security review pending.
+
+- Chapter 103 — [Python Secrets Management, Encryption and Key Lifecycle Automation](11-production-security-performance/103-python-secrets-management-encryption-key-lifecycle-automation.md) · [SRE/DBRE lab](11-production-security-performance/labs/103-secrets-encryption-key-lifecycle-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/103/README.md). Cryptography, envelope encryption, TLS, AWS KMS/Secrets Manager, Azure Key Vault, GCP Cloud KMS/Secret Manager, Kubernetes Secrets, metadata-only rotation policy, approval, incident simulations and automated tests. Runtime execution, CI, real cryptographic and provider integration validation pending.
