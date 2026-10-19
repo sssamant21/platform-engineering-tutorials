@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 90/100 published**
+**100 chapters · 20 parts · 91/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -26,7 +26,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 16 | 076–080 | Incident Response and Troubleshooting | 5/5 |
 | 17 | 081–085 | Observability as Code and GitOps | 5/5 |
 | 18 | 086–090 | Scaling High Availability and FinOps | 5/5 |
-| 19 | 091–095 | Enterprise Security Governance and Reliability | 0/5 |
+| 19 | 091–095 | Enterprise Security Governance and Reliability | 1/5 |
 | 20 | 096–100 | Final Production Observability Capstones | 0/5 |
 
 ## Published chapters
@@ -341,4 +341,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 
 **Part 18 complete: 5/5 chapters published.**
 
-**Next:** Chapter 091 — Enterprise Observability Security Architecture, Identity, RBAC and Tenant Isolation (Part 19).
+- [Chapter 091 — Enterprise Observability Security Architecture, Identity, RBAC and Tenant Isolation](part-19-enterprise-security-governance-reliability/091-enterprise-observability-security-architecture-identity-rbac-tenant-isolation.md)
+- [Chapter 091 — Companion lab](part-19-enterprise-security-governance-reliability/labs/091-enterprise-observability-security-architecture-identity-rbac-tenant-isolation-lab.md)
+
+**Next:** Chapter 092 — Observability Data Governance, Privacy, Retention, Encryption and Audit Compliance.
