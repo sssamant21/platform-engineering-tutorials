@@ -1,0 +1,68 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "architecture": [
+      "component_contract_reviewed",
+      "provider_isolation_reviewed",
+      "dependency_graph_reviewed",
+      "target_matrix_signed",
+      "artifacts_pinned"
+    ],
+    "targets": [
+      "aws_account_verified",
+      "aws_region_verified",
+      "azure_tenant_verified",
+      "azure_subscription_verified",
+      "gcp_project_verified"
+    ],
+    "security": [
+      "oidc_reviewed",
+      "least_privilege",
+      "no_plaintext_secrets",
+      "state_encrypted",
+      "audit_enabled"
+    ],
+    "delivery": [
+      "preview_reviewed",
+      "approval_signed",
+      "canary_approved",
+      "slo_healthy",
+      "destructive_action"
+    ],
+    "dbre": [
+      "backup_verified",
+      "restore_rehearsed",
+      "dbre_approved",
+      "quorum_reviewed",
+      "rpo_rto_reviewed"
+    ],
+    "recovery": [
+      "state_backup_verified",
+      "lock_owner_reviewed",
+      "rollback_documented",
+      "cross_cloud_consistency_reviewed",
+      "incident_commander_defined"
+    ]
+  },
+  "forbidden_controls": {
+    "delivery": [
+      "destructive_action"
+    ]
+  },
+  "require_ticket": true,
+  "deny_prod_targets": true,
+  "require_preview": true,
+  "require_approval": true,
+  "require_backup": true,
+  "require_dbre_approval": true,
+  "require_canary": true,
+  "require_slo": true
+}
