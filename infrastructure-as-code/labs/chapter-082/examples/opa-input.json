@@ -1,0 +1,7 @@
+{
+  "environment": "staging",
+  "source_signed": true,
+  "plan_digest_verified": true,
+  "destructive_changes": 0,
+  "state_encrypted": true
+}
