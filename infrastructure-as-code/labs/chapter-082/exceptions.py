@@ -6,7 +6,7 @@ def assess(items,now=None):
     errors=[]
     for i,x in enumerate(items):
         if not isinstance(x,dict):errors.append(f'exception {i} invalid');continue
-        for k in ('control_id','resource','ticket','reason','approver','requester','compensating_control'):
+        for k in ('control_id','resource','ticket','reason','approver','requester','compensating_control','scope','environment'):
             if not isinstance(x.get(k),str) or not x[k].strip():errors.append(f'exception {i} missing {k}')
         if x.get('approver')==x.get('requester'):errors.append(f'exception {i} self approved')
         if x.get('environment')=='production' and x.get('scope')=='*':errors.append(f'exception {i} blanket production scope')
