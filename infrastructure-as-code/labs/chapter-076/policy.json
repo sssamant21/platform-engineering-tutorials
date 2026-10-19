@@ -1,0 +1,34 @@
+{
+  "required_controls": [
+    "source_signed",
+    "runner_pinned",
+    "oidc_scoped",
+    "least_privilege",
+    "plan_fresh",
+    "policy_passed",
+    "state_locked",
+    "backup_verified",
+    "restore_tested",
+    "dbre_approved",
+    "slo_healthy",
+    "audit_recorded",
+    "no_destructive_changes"
+  ],
+  "stages": [
+    "lint",
+    "unit",
+    "security",
+    "plan",
+    "approval",
+    "backup",
+    "canary",
+    "slo",
+    "audit"
+  ],
+  "targets": {
+    "environment": "lab",
+    "stack": "dev",
+    "cloud_account": "offline-sandbox",
+    "backend": "local-fixture"
+  }
+}
