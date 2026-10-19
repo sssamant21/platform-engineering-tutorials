@@ -1,0 +1,16 @@
+stages: [validate, integration, acceptance]
+offline_capstone:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-090/run-preflight.sh
+native_integration_disabled:
+  stage: integration
+  when: manual
+  script:
+    - echo 'NOT ENABLED: isolated account, Terratest/Molecule, native policy, real DB restore and cleanup required'
+production_acceptance_disabled:
+  stage: acceptance
+  when: manual
+  script:
+    - echo 'NOT ACCEPTED: require SRE/DBRE/security/audit signoff and native evidence'
