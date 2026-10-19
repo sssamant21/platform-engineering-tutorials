@@ -1,0 +1,6 @@
+name: iac-ch074-pulumi
+runtime:
+  name: python
+  options:
+    virtualenv: .venv
+description: No-resource local Automation API preview lab
