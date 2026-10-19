@@ -1,0 +1,16 @@
+stages: [validate, integration, deploy]
+offline_tests:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-086/run-preflight.sh
+native_integration_disabled:
+  stage: integration
+  when: manual
+  script:
+    - echo 'NOT ENABLED: isolated cloud account, native tests, teardown, real restore'
+deploy_disabled:
+  stage: deploy
+  when: manual
+  script:
+    - echo 'NO APPLY: requires native evidence and SRE/DBRE approval'
