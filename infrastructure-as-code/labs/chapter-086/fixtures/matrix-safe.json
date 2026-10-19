@@ -1,0 +1,15 @@
+{
+  "layers": [
+    "format",
+    "static",
+    "unit",
+    "policy",
+    "plan",
+    "integration",
+    "restore",
+    "canary"
+  ],
+  "negative_cases": 25,
+  "skipped_critical": 0,
+  "max_age_hours": 1
+}
