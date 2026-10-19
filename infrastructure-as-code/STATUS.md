@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 104 / 120 chapters (86.67%)  
+**Progress:** 105 / 120 chapters (87.50%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,9 +1094,9 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 105 — Enterprise IaC Disaster Recovery, Multi-Region Resilience and Operational Acceptance Capstone.
+**Next:** Chapter 106 — Enterprise IaC Platform Architecture, Multi-Team Operating Models and Golden Paths.
 
-**Part 21:** 4/5 chapters published — Disaster Recovery (native drills pending).
+**Part 21:** 5/5 chapters published — Disaster Recovery (native drills pending).
 
 ## Chapter 101 acceptance — DR foundations, RPO/RTO and recovery design
 - [x] AWS/Azure/GCP, Terraform/OpenTofu, Kubernetes and DBRE DR architecture published
@@ -1123,3 +1123,7 @@
 - [x] Staging chaos and multi-region DR procedures, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
 - [x] Chapter, labs and trackers published; Part 21 at 4/5
 - [ ] Native fault injection, timed restore, RPO/RTO, DBRE consistency and independent production acceptance
+
+## Chapter 105 — DR capstone
+- [x] Tutorial, offline acceptance gate and unit tests published; Part 21 complete (5/5)
+- [ ] Tests not independently executed; native restore, failover, RPO/RTO and production acceptance pending
