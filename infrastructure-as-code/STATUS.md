@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 103 / 120 chapters (85.83%)  
+**Progress:** 104 / 120 chapters (86.67%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,9 +1094,9 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 104 — IaC Disaster Recovery Automation, Chaos Engineering, Recovery Drills and Continuous Resilience Validation.
+**Next:** Chapter 105 — Enterprise IaC Disaster Recovery, Multi-Region Resilience and Operational Acceptance Capstone.
 
-**Part 21:** 3/5 chapters published — Disaster Recovery (native drills pending).
+**Part 21:** 4/5 chapters published — Disaster Recovery (native drills pending).
 
 ## Chapter 101 acceptance — DR foundations, RPO/RTO and recovery design
 - [x] AWS/Azure/GCP, Terraform/OpenTofu, Kubernetes and DBRE DR architecture published
@@ -1116,3 +1116,10 @@
 - [x] Offline fencing/quorum/replica-lag gate and negative tests authored; execution pending
 - [x] Manual failover labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
 - [ ] Native fencing, quorum, failover/failback, RPO/RTO and independent production acceptance
+
+## Chapter 104 acceptance — Chaos engineering and continuous DR validation
+- [x] AWS/Azure/GCP, Terraform/OpenTofu, Kubernetes/GitOps and DBRE chaos/DR engineering documented
+- [x] Offline drill acceptance gate and negative tests authored; execution not independently verified
+- [x] Staging chaos and multi-region DR procedures, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
+- [x] Chapter, labs and trackers published; Part 21 at 4/5
+- [ ] Native fault injection, timed restore, RPO/RTO, DBRE consistency and independent production acceptance
