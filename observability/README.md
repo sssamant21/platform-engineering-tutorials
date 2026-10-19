@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 88/100 published**
+**100 chapters · 20 parts · 89/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -25,7 +25,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 5/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 5/5 |
 | 17 | 081–085 | Observability as Code and GitOps | 5/5 |
-| 18 | 086–090 | Scaling High Availability and FinOps | 3/5 |
+| 18 | 086–090 | Scaling High Availability and FinOps | 4/5 |
 | 19 | 091–095 | Enterprise Security Governance and Reliability | 0/5 |
 | 20 | 096–100 | Final Production Observability Capstones | 0/5 |
 
@@ -333,4 +333,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 088 — Loki and Tempo Distributed Scaling, Storage, Retention and High Availability](part-18-scaling-high-availability-finops/088-loki-tempo-distributed-scaling-storage-retention-high-availability.md)
 - [Chapter 088 — Companion lab](part-18-scaling-high-availability-finops/labs/088-loki-tempo-distributed-scaling-storage-retention-high-availability-lab.md)
 
-**Next:** Chapter 089 — Observability FinOps, Retention Optimization, Cardinality Governance and Cost Forecasting.
+- [Chapter 089 — Observability FinOps, Retention Optimization, Cardinality Governance and Cost Forecasting](part-18-scaling-high-availability-finops/089-observability-finops-retention-optimization-cardinality-governance-cost-forecasting.md)
+- [Chapter 089 — Companion lab](part-18-scaling-high-availability-finops/labs/089-observability-finops-retention-optimization-cardinality-governance-cost-forecasting-lab.md)
+
+**Next:** Chapter 090 — Enterprise Observability Scaling, High Availability and FinOps Reliability Acceptance Capstone.
