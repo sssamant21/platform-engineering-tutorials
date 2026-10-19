@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 80/100 published**
+**100 chapters · 20 parts · 81/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -24,7 +24,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 14 | 066–070 | Application Performance Monitoring | 5/5 |
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 5/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 5/5 |
-| 17 | 081–085 | Observability as Code and GitOps | 0/5 |
+| 17 | 081–085 | Observability as Code and GitOps | 1/5 |
 | 18 | 086–090 | Scaling High Availability and FinOps | 0/5 |
 | 19 | 091–095 | Enterprise Security Governance and Reliability | 0/5 |
 | 20 | 096–100 | Final Production Observability Capstones | 0/5 |
@@ -307,4 +307,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 
 **Part 16 complete: 5/5 chapters published.**
 
-**Next:** Chapter 081 — Observability as Code Foundations, Repository Architecture and GitOps Workflows (Part 17).
+- [Chapter 081 — Observability as Code Foundations, Repository Architecture and GitOps Workflows](part-17-observability-as-code-gitops/081-observability-as-code-foundations-repository-architecture-gitops-workflows.md)
+- [Chapter 081 — Companion lab](part-17-observability-as-code-gitops/labs/081-observability-as-code-foundations-repository-architecture-gitops-workflows-lab.md)
+
+**Next:** Chapter 082 — Prometheus, Alertmanager and Grafana Configuration as Code.
