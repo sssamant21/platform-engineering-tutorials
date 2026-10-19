@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 99 / 120 chapters (82.50%)  
+**Progress:** 100 / 120 chapters (83.33%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1052,7 +1052,7 @@
 - [x] Chapter and master index publication; Part 19 content complete at 5/5
 - [ ] Offline execution, native OTel/Prometheus/Alertmanager paging, real cloud drift, actual DBRE restore, independent security review and production acceptance
 
-**Part 20:** 4/5 chapters published — FinOps (native billing and operational acceptance pending).
+**Part 20:** 5/5 chapters published — FinOps (native billing and operational acceptance pending).
 
 ## Chapter 096 acceptance — IaC cost observability and FinOps fundamentals
 - [x] AWS CUR/Data Exports, Azure Cost Management, GCP BigQuery Billing, Terraform/OpenTofu, Kubernetes and DBRE cost theory
@@ -1085,3 +1085,13 @@
 - [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 20 at 4/5
 - [ ] Offline execution, native provider billing and commitment validation, production canary/rollback, DBRE SLO/RPO/RTO and independent operational acceptance
+
+## Chapter 100 acceptance — Enterprise IaC FinOps and reliability capstone
+- [x] AWS/Azure/GCP billing, allocation, forecasting, commitment and Kubernetes/DBRE reliability architecture documented
+- [x] Offline deterministic reconciliation and fail-closed approval gate authored
+- [x] Python unit tests authored; execution not independently verified
+- [x] Native provider lab procedures, 16 incident scenarios, 8 runbooks and 100-point assessment documented
+- [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
+- [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
+
+**Next:** Chapter 101 — IaC Disaster Recovery Foundations, RPO/RTO, Backup Architecture and Recovery Design.
