@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 94/100 published**
+**100 chapters · 20 parts · 95/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -353,4 +353,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 094 — Enterprise Observability Resilience, Backup, Disaster Recovery and Security Validation](part-19-enterprise-security-governance-reliability/094-enterprise-observability-resilience-backup-disaster-recovery-security-validation.md)
 - [Chapter 094 — Companion lab](part-19-enterprise-security-governance-reliability/labs/094-enterprise-observability-resilience-backup-disaster-recovery-security-validation-lab.md)
 
-**Next:** Chapter 095 — Enterprise Observability Security, Governance and Reliability Acceptance Capstone.
+- [Chapter 095 — Enterprise Observability Security, Governance and Reliability Acceptance Capstone](part-19-enterprise-security-governance-reliability/095-enterprise-observability-security-governance-reliability-acceptance-capstone.md)
+- [Chapter 095 — Companion lab](part-19-enterprise-security-governance-reliability/labs/095-enterprise-observability-security-governance-reliability-acceptance-capstone-lab.md)
+
+**Part 19 complete — 5/5 chapters.**
+
+**Next:** Chapter 096 — Enterprise Observability Production Capstone Architecture and Readiness Planning (Part 20).
