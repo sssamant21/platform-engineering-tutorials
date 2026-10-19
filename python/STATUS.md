@@ -3,12 +3,12 @@
 Last updated: 2026-10-19
 
 - Planned: **120 chapters**
-- Published: **115 chapters**
-- Remaining: **5 chapters**
-- Published labs: **115**
-- Next: **116 — Enterprise Python Security, Compliance and Disaster Recovery Operations**
+- Published: **116 chapters**
+- Remaining: **4 chapters**
+- Published labs: **116**
+- Next: **117 — Enterprise Python Capacity Planning, Performance Engineering and FinOps Capstone**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–115 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–116 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -213,7 +213,7 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 
 - Chapter 110 — [Python Production Security, Performance and Reliability Capstone](11-production-security-performance/110-python-production-security-performance-reliability-capstone.md) · [SRE/DBRE lab](11-production-security-performance/labs/110-production-security-performance-reliability-capstone-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/110/README.md). Integrates Chapters 101–109: identity, secrets, compliance, supply-chain metadata, p99 profiling budgets, concurrency limits, SLOs, retries, redaction and advisory release gates. Automated tests published; exact committed execution, CI, security review and production integration validation pending. Part 11 complete.
 
-- Part 12 — Enterprise Capstone Projects: **5/10** chapters published; 5 remaining.
+- Part 12 — Enterprise Capstone Projects: **6/10** chapters published; 4 remaining.
 
 - Chapter 111 — [Enterprise Python SRE/DBRE Capstone Architecture and Project Foundations](12-enterprise-capstones/111-enterprise-python-sre-dbre-capstone-architecture-project-foundations.md) · [Complete SRE/DBRE lab](12-enterprise-capstones/labs/111-enterprise-python-architecture-project-foundations-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/111/README.md). Architecture, API/worker boundaries, PostgreSQL/Elasticsearch/MongoDB/Redis/Kafka/Kubernetes patterns, security, capacity, SLOs, offline simulator and automated tests. Exact committed execution, CI, live integration and production acceptance pending.
 
@@ -224,3 +224,5 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 - Chapter 114 — [Enterprise Python Data Pipeline Orchestration, CDC Reconciliation and Recovery](12-enterprise-capstones/114-enterprise-python-data-pipeline-orchestration-cdc-reconciliation-recovery.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/114-data-pipeline-orchestration-cdc-reconciliation-recovery-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/114/README.md). Workflow DAGs, PostgreSQL/MongoDB CDC, Kafka integration, Elasticsearch/Snowflake projections, checkpointing, replay, reconciliation, backfills, automated tests and incident runbooks. Exact committed execution, CI, live integration and production acceptance pending.
 
 - Chapter 115 — [Enterprise Python Observability, SLOs, Incident Response and Reliability Operations](12-enterprise-capstones/115-enterprise-python-observability-slos-incident-response-reliability-operations.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/115-enterprise-observability-slo-incident-response-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/115/README.md). OTel architecture, RED/USE, structured logs, traces, SLO/error budgets, burn alerts, incident correlation, on-call workflows, automated tests and runbooks. Exact committed execution, CI, live telemetry integration and production acceptance pending.
+
+- Chapter 116 — [Enterprise Python Security, Compliance and Disaster Recovery Operations](12-enterprise-capstones/116-enterprise-python-security-compliance-disaster-recovery-operations.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/116-enterprise-security-compliance-disaster-recovery-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/116/README.md). IAM/RBAC, workload identity, secrets metadata, encryption, supply chain, compliance evidence, backup verification, RPO/RTO, disaster recovery gates, automated tests and runbooks. Exact committed execution, CI, live restore drills and production acceptance pending.
