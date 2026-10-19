@@ -1,0 +1,10 @@
+{
+  "environment": "lab",
+  "principal": "ci-lab",
+  "resource": "arn:aws:s3:::iac-lab-state/*",
+  "actions": [
+    "s3:GetObject",
+    "s3:PutObject"
+  ],
+  "passrole": false
+}
