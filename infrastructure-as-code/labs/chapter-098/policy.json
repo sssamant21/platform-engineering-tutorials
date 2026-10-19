@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "target": {
+    "environment": "offline-finops-forecast",
+    "billing_account": "offline-098",
+    "currency": "USD",
+    "cost_basis": "amortized",
+    "owner": "platform-sre",
+    "repository": "sssamant21/platform-engineering-tutorials"
+  },
+  "max_export_age_hours": 48,
+  "min_days": 7,
+  "max_days": 31,
+  "thresholds": [
+    50,
+    80,
+    100
+  ]
+}
