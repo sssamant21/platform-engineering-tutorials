@@ -1,0 +1,12 @@
+name: iac-ch076-offline-validate
+on:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline governance tests
+        run: bash infrastructure-as-code/labs/chapter-076/run-preflight.sh
