@@ -1,0 +1,6 @@
+name: iac-ch073-pulumi
+runtime:
+  name: python
+  options:
+    virtualenv: .venv
+description: No-resource local Pulumi stack configuration lab
