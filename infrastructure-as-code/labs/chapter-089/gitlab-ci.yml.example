@@ -1,0 +1,16 @@
+stages: [validate, observe, remediate]
+offline_drift:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-089/run-preflight.sh
+native_observe_disabled:
+  stage: observe
+  when: manual
+  script:
+    - echo 'NOT ENABLED: require read-only scoped identity, provider plans, cloud audit and SRE/DBRE approval'
+remediate_disabled:
+  stage: remediate
+  when: manual
+  script:
+    - echo 'NO APPLY: approval, immutable plan, rollback and native SLO/restore evidence required'
