@@ -1,0 +1,16 @@
+stages: [validate, review, deploy]
+offline_identity:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-084/run-preflight.sh
+identity_review_disabled:
+  stage: review
+  when: manual
+  script:
+    - echo 'NOT ENABLED: verify real OIDC trust, IAM/RBAC and cloud-side deny'
+deploy_disabled:
+  stage: deploy
+  when: manual
+  script:
+    - echo 'NO APPLY: requires protected workload identity and DBRE restore'
