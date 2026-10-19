@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 101 / 120 chapters (84.17%)  
+**Progress:** 103 / 120 chapters (85.83%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,9 +1094,9 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 102 — IaC Backup Automation, Cross-Region Replication, Immutable Recovery Points and Recovery Validation.
+**Next:** Chapter 104 — IaC Disaster Recovery Automation, Chaos Engineering, Recovery Drills and Continuous Resilience Validation.
 
-**Part 21:** 1/5 chapters published — Disaster Recovery (native drills pending).
+**Part 21:** 3/5 chapters published — Disaster Recovery (native drills pending).
 
 ## Chapter 101 acceptance — DR foundations, RPO/RTO and recovery design
 - [x] AWS/Azure/GCP, Terraform/OpenTofu, Kubernetes and DBRE DR architecture published
@@ -1104,3 +1104,15 @@
 - [x] Manual recovery dependency and failure injection labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
 - [x] Chapter and trackers published; Part 21 at 1/5
 - [ ] Native cross-region restores, real backup integrity, application-consistent PITR, failover fencing, RPO/RTO drills and independent SRE/DBRE production acceptance
+
+## Chapter 102 acceptance — Backup automation and immutable recovery points
+- [x] Cross-cloud backup, immutability, IaC state, Kubernetes and DBRE restore chapter published
+- [x] Offline Python backup gate and unit test file authored; execution pending
+- [x] Manual recovery labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
+- [ ] Native backup/restore drills and independent production acceptance
+
+## Chapter 103 acceptance — Cross-region DR orchestration and split-brain prevention
+- [x] Cross-cloud, Terraform/OpenTofu, Kubernetes, GitOps and DBRE failover chapter published
+- [x] Offline fencing/quorum/replica-lag gate and negative tests authored; execution pending
+- [x] Manual failover labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
+- [ ] Native fencing, quorum, failover/failback, RPO/RTO and independent production acceptance
