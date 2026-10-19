@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 74 / 120 chapters (61.67%)  
+**Progress:** 75 / 120 chapters (62.50%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -59,7 +59,7 @@
 **Part 12:** 5/5 chapters published — OpenTofu and Terragrunt (content complete; live acceptance pending).  
 **Part 13:** 5/5 chapters published — Ansible (content complete; live acceptance pending).  
 **Part 14:** 5/5 chapters published — CloudFormation and Bicep (content complete; live acceptance pending).  
-**Part 15:** 4/5 chapters published — Pulumi.  
+**Part 15:** 5/5 chapters published — Pulumi (content complete; live acceptance pending).  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -88,7 +88,8 @@
 **Chapter 072:** Published; Pulumi mocked component lab, declared-evidence policy gate and 53 tests authored; execution and operational acceptance pending.  
 **Chapter 073:** Published; local-only Pulumi stack project, declared-evidence governance gate and 48 unit tests authored; native execution, backend restore and operational acceptance pending.  
 **Chapter 074:** Published; offline Pulumi CI pipeline simulator, declared-evidence gate and 55 tests authored; native Automation API preview and operational acceptance pending.  
-**Next:** Chapter 075 — Pulumi Enterprise Platform Automation, Multi-Cloud SRE/DBRE Reliability Capstone (proposed title).
+**Chapter 075:** Published; mocked multi-cloud Pulumi component lab, offline rollout simulator, declared-evidence governance gate and 70 tests authored; runtime, cloud integration and operational acceptance pending.  
+**Next:** Chapter 076 — Infrastructure as Code CI/CD Foundations, Pipeline Architecture and GitOps Integration (proposed title; begins Part 16).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -166,6 +167,7 @@
 | 072 | Pulumi Resource Models, Providers, Components and Dependency Management | Published |
 | 073 | Pulumi Stack Configuration, Secrets, State Backends and Enterprise Governance | Published |
 | 074 | Pulumi Automation API, CI/CD Pipelines, Policy as Code and Enterprise Delivery | Published |
+| 075 | Pulumi Enterprise Platform Automation, Multi-Cloud SRE/DBRE Reliability Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -825,3 +827,12 @@
 - [x] Chapter and master index publication; Part 15 at 4/5
 - [ ] Offline Python test execution and native Automation API preview
 - [ ] CI security evidence, DBRE restore drill, canary SLO and production acceptance
+
+## Chapter 075 acceptance — Part 15 Pulumi enterprise multi-cloud capstone
+- [x] Multi-cloud architecture, components, provider isolation, state/secrets and SRE/DBRE theory
+- [x] Mocked AWS/Azure/GCP Pulumi component lab, offline rollout simulator and governance fixtures
+- [x] Fail-closed Python gate and 70 tests authored (55 governance, nine orchestration, six mocked components)
+- [x] Thirty-two SRE/DBRE incident scenarios, ten runbooks and 100-point final assessment
+- [x] Chapter and master index publication; Part 15 content complete at 5/5
+- [ ] Offline Python and mocked component test execution
+- [ ] Native Pulumi integration, DBRE restore, SLO game day and production acceptance
