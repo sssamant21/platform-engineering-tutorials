@@ -1,0 +1,10 @@
+{
+  "control_id": "IAC-004",
+  "resource": "test/account-001",
+  "owner": "sre",
+  "approver": "security",
+  "reason": "temporary migration",
+  "compensating_control": "restricted access and alert",
+  "expiry_day": 110,
+  "approved": true
+}
