@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **109 chapters**
-- Remaining: **11 chapters**
-- Published labs: **109**
-- Next: **110 — Python Production Security, Performance and Reliability Capstone**
+- Published: **110 chapters**
+- Remaining: **10 chapters**
+- Published labs: **110**
+- Next: **111 — Enterprise Python SRE/DBRE Capstone Architecture and Project Foundations**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–109 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–110 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -192,7 +192,7 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 
 ## Part 11 — Production Security and Performance
 
-- **Published: 9/10 (Chapters 101–109); 1 chapter remaining in Part 11.**
+- **Published: 10/10 (Chapters 101–110); Part 11 complete.**
 - Chapter 101 — [Python Production Security Architecture and Secure Coding](11-production-security-performance/101-python-production-security-architecture-secure-coding.md) · [SRE/DBRE lab](11-production-security-performance/labs/101-production-security-secure-coding-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/101/README.md). Threat modeling, OWASP, strict input validation, authorization model, supply-chain integrity, secrets redaction, advisory approvals, incident simulations and automated tests. Exact committed test execution, CI and production security review pending.
 
 - Chapter 102 — [Python Identity, Authentication and Authorization for Production Systems](11-production-security-performance/102-python-identity-authentication-authorization-production-systems.md) · [SRE/DBRE lab](11-production-security-performance/labs/102-identity-authentication-authorization-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/102/README.md). OAuth 2.0, OIDC, JWT verification architecture, RBAC/ABAC, tenant isolation, AWS/Azure/GCP/Kubernetes workload identity, approval, replay and redacted audit. Offline policy engine and automated tests published; exact committed execution, CI, live identity-provider integration and production security review pending.
@@ -210,3 +210,5 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 - Chapter 108 — [Python Production Observability, Tracing and Reliability Engineering](11-production-security-performance/108-python-production-observability-tracing-reliability-engineering.md) · [SRE/DBRE lab](11-production-security-performance/labs/108-production-observability-tracing-reliability-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/108/README.md). OpenTelemetry/OTLP architecture, distributed trace graph validation, structured logging, Prometheus metrics, RED/USE, SLI/SLO/error budgets, burn rates, synthetic incident correlation and PostgreSQL/Elasticsearch/MongoDB/Kafka/Kubernetes runbooks. Test source published; exact committed execution, CI, real exporters and production acceptance pending.
 
 - Chapter 109 — [Python Resilience Engineering, Fault Injection and Chaos Testing](11-production-security-performance/109-python-resilience-engineering-fault-injection-chaos-testing.md) · [SRE/DBRE lab](11-production-security-performance/labs/109-resilience-engineering-fault-injection-chaos-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/109/README.md). Retry/backoff/jitter, circuit breakers, bulkheads, timeout and error-budget policies, offline chaos safety simulation, incident exercises and automated tests. Exact committed execution, CI and live integration validation pending.
+
+- Chapter 110 — [Python Production Security, Performance and Reliability Capstone](11-production-security-performance/110-python-production-security-performance-reliability-capstone.md) · [SRE/DBRE lab](11-production-security-performance/labs/110-production-security-performance-reliability-capstone-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/110/README.md). Integrates Chapters 101–109: identity, secrets, compliance, supply-chain metadata, p99 profiling budgets, concurrency limits, SLOs, retries, redaction and advisory release gates. Automated tests published; exact committed execution, CI, security review and production integration validation pending. Part 11 complete.
