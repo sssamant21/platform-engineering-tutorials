@@ -1,0 +1,16 @@
+stages: [validate, security, deploy]
+offline_security:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-081/run-preflight.sh
+identity_review_placeholder:
+  stage: security
+  when: manual
+  script:
+    - echo 'NOT ENABLED: validate OIDC federation and independent policy attestations'
+deploy_disabled:
+  stage: deploy
+  when: manual
+  script:
+    - echo 'NO APPLY: requires signed artifacts, protected identity, DBRE restore and approvals'
