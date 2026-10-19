@@ -1,0 +1,58 @@
+{
+  "environment": "lab",
+  "stack": "dev",
+  "project": "iac-ch075-pulumi",
+  "backend": "offline-mock",
+  "aws_account": "production",
+  "azure_subscription": "offline-sandbox",
+  "gcp_project": "offline-sandbox",
+  "owner": "platform-sre-dbre",
+  "change_ticket": "LAB-PULUMI-075",
+  "labels": {
+    "environment": "lab",
+    "managed-by": "pulumi",
+    "owner": "platform-sre-dbre"
+  },
+  "architecture": {
+    "component_contract_reviewed": true,
+    "provider_isolation_reviewed": true,
+    "dependency_graph_reviewed": true,
+    "target_matrix_signed": true,
+    "artifacts_pinned": true
+  },
+  "targets": {
+    "aws_account_verified": true,
+    "aws_region_verified": true,
+    "azure_tenant_verified": true,
+    "azure_subscription_verified": true,
+    "gcp_project_verified": true
+  },
+  "security": {
+    "oidc_reviewed": true,
+    "least_privilege": true,
+    "no_plaintext_secrets": true,
+    "state_encrypted": true,
+    "audit_enabled": true
+  },
+  "delivery": {
+    "preview_reviewed": true,
+    "approval_signed": true,
+    "canary_approved": true,
+    "slo_healthy": false,
+    "destructive_action": true
+  },
+  "dbre": {
+    "backup_verified": false,
+    "restore_rehearsed": true,
+    "dbre_approved": true,
+    "quorum_reviewed": true,
+    "rpo_rto_reviewed": true
+  },
+  "recovery": {
+    "state_backup_verified": true,
+    "lock_owner_reviewed": true,
+    "rollback_documented": true,
+    "cross_cloud_consistency_reviewed": true,
+    "incident_commander_defined": true
+  }
+}
