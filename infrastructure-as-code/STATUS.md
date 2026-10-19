@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 81 / 120 chapters (67.50%)  
+**Progress:** 82 / 120 chapters (68.33%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -96,7 +96,8 @@
 **Chapter 079:** Published; Ansible/Kubernetes/GitOps offline governance gate and promotion simulator, 57 tests authored; execution, cluster integration and operational acceptance pending.  
 **Chapter 080:** Published; enterprise IaC CI/CD/DR/GitOps capstone, 84 tests authored; offline execution, native integration and operational acceptance pending.  
 **Chapter 081:** Published; STRIDE threat modeling, identity, secrets and offline security labs, 74 tests authored; execution and production security acceptance pending.  
-**Next:** Chapter 082 — IaC Policy as Code, OPA/Rego, Sentinel and Enterprise Guardrails (proposed title).
+**Chapter 082:** Published; OPA/Rego, Sentinel, policy exception lifecycle and offline policy labs, 74 tests authored; execution and production policy acceptance pending.  
+**Next:** Chapter 083 — IaC Security Scanning, Supply-Chain Integrity, Secrets Detection and Continuous Compliance (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -181,6 +182,7 @@
 | 079 | Ansible, Kubernetes and GitOps CI/CD Automation, Environment Promotion and Production Change Controls | Published |
 | 080 | Enterprise IaC CI/CD Reliability, Security, Disaster Recovery and GitOps Production Capstone | Published |
 | 081 | Infrastructure as Code Security Foundations, Threat Modeling, Identity and Secrets Management | Published |
+| 082 | IaC Policy as Code, OPA/Rego, Sentinel and Enterprise Guardrails | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -890,7 +892,7 @@
 - [x] Chapter and master index publication; Part 16 content complete at 5/5
 - [ ] Offline test execution, native tool integration, actual DB restore/DR drills, SLO game day and production acceptance
 
-**Part 17:** 1/5 chapters published — Security and Policy.
+**Part 17:** 2/5 chapters published — Security and Policy.
 
 ## Chapter 081 acceptance — Security foundations, threat modeling and secrets
 - [x] STRIDE, identity federation, secret lifecycle, state security and supply-chain architecture
@@ -899,3 +901,11 @@
 - [x] Forty-five SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 17 at 1/5
 - [ ] Offline tests, native identity/KMS/security integration, secret rotation, DBRE restore and production acceptance
+
+## Chapter 082 acceptance — OPA/Rego, Sentinel and enterprise policy guardrails
+- [x] Policy architecture, cloud, Kubernetes, GitOps and DBRE guardrail theory
+- [x] Offline policy evaluator, Rego example, exception registry and promotion simulator
+- [x] 74 Python unit tests authored; not executed
+- [x] Forty-five SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 17 at 2/5
+- [ ] Offline test execution, native OPA/Sentinel enforcement, cloud-side policy, DB restore and production acceptance
