@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 91 / 100 chapters (91%) · 20 parts · Part 19: 1/5**
+**Progress: 92 / 100 chapters (92%) · 20 parts · Part 19: 2/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -22,11 +22,11 @@
 | 16 — Incident Response and Troubleshooting | 076–080 | 5 | 5 | Complete |
 | 17 — Observability as Code and GitOps | 081–085 | 5 | 5 | Complete |
 | 18 — Scaling High Availability and FinOps | 086–090 | 5 | 5 | Complete |
-| 19 — Enterprise Security Governance and Reliability | 091–095 | 1 | 5 | In progress |
+| 19 — Enterprise Security Governance and Reliability | 091–095 | 2 | 5 | In progress |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–091 and companion labs. Parts 01–18 complete (5/5 each); Part 19 in progress (1/5).
+**Published:** Chapters 001–092 and companion labs. Parts 01–18 complete (5/5 each); Part 19 in progress (2/5).
 
-**Next:** Chapter 092 — Observability Data Governance, Privacy, Retention, Encryption and Audit Compliance.
+**Next:** Chapter 093 — Enterprise Observability Security Monitoring, Threat Detection and Incident Response Automation.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
