@@ -1,0 +1,11 @@
+stages: [validate, slo-acceptance]
+offline_slo:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-094/run-preflight.sh
+native_slo_disabled:
+  stage: slo-acceptance
+  when: manual
+  script:
+    - echo 'NOT ENABLED: trusted Prometheus, Alertmanager delivery, native IaC and DBRE restore required'
