@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "target": {
+    "environment": "offline-finops-lab",
+    "account": "offline-096",
+    "repository": "sssamant21/platform-engineering-tutorials",
+    "owner": "sre-dbre-lab",
+    "usage_date": "2026-10-18"
+  },
+  "required_tags": [
+    "owner",
+    "environment",
+    "cost_center",
+    "application",
+    "managed_by"
+  ],
+  "accepted_providers": [
+    "aws",
+    "azure",
+    "gcp"
+  ],
+  "currency": "USD",
+  "cost_basis": "amortized",
+  "max_export_age_hours": 48,
+  "max_unallocated_percent": 0,
+  "require_unique_lines": true
+}
