@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 77 / 120 chapters (64.17%)  
+**Progress:** 78 / 120 chapters (65.00%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -60,7 +60,7 @@
 **Part 13:** 5/5 chapters published — Ansible (content complete; live acceptance pending).  
 **Part 14:** 5/5 chapters published — CloudFormation and Bicep (content complete; live acceptance pending).  
 **Part 15:** 5/5 chapters published — Pulumi (content complete; live acceptance pending).  
-**Part 16:** 2/5 chapters published — IaC CI/CD.  
+**Part 16:** 3/5 chapters published — IaC CI/CD.  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -92,7 +92,8 @@
 **Chapter 075:** Published; mocked multi-cloud Pulumi component lab, offline rollout simulator, declared-evidence governance gate and 70 tests authored; runtime, cloud integration and operational acceptance pending.  
 **Chapter 076:** Published; 43 offline Python unit tests executed and passed, safe/unsafe evidence checked; live CI/CD and operational acceptance pending.  
 **Chapter 077:** Published; 57 offline Python tests executed and passed; native Terraform/OpenTofu and operational acceptance pending.  
-**Next:** Chapter 078 — Pulumi, CloudFormation and Bicep CI/CD Pipelines, Policy Gates and Safe Deployment Promotion (proposed title).
+**Chapter 078:** Published; offline multi-tool governance gate and promotion simulator, 55 tests authored; execution, cloud integration and operational acceptance pending.  
+**Next:** Chapter 079 — Ansible, Kubernetes and GitOps CI/CD Automation, Environment Promotion and Production Change Controls (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -173,6 +174,7 @@
 | 075 | Pulumi Enterprise Platform Automation, Multi-Cloud SRE/DBRE Reliability Capstone | Published |
 | 076 | Infrastructure as Code CI/CD Foundations, Pipeline Architecture and GitOps Integration | Published |
 | 077 | Terraform and OpenTofu CI/CD Pipelines, Plan/Apply Controls and State-Safe Delivery | Published |
+| 078 | Pulumi, CloudFormation and Bicep CI/CD Pipelines, Policy Gates and Safe Deployment Promotion | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -857,3 +859,11 @@
 - [x] Thirty-six SRE/DBRE incident scenarios, ten runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 16 at 2/5
 - [ ] Native Terraform/OpenTofu CI integration, backend restore, DBRE recovery and production acceptance
+
+## Chapter 078 acceptance — Multi-tool CI/CD policy and safe promotion
+- [x] Pulumi, CloudFormation and Bicep preview/deployment architecture
+- [x] Offline governance gate, safe/unsafe fixtures and promotion state machine
+- [x] 55 Python unit tests authored; not executed
+- [x] Thirty-six SRE/DBRE incident scenarios, ten runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 16 at 3/5
+- [ ] Offline test execution, native previews, DBRE restore drills and production acceptance
