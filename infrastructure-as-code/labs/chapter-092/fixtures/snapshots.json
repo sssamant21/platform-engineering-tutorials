@@ -1,0 +1,29 @@
+{
+  "desired": {
+    "db": {
+      "class": "small"
+    },
+    "app": {
+      "replicas": 2
+    }
+  },
+  "managed": {
+    "db": {
+      "class": "small"
+    },
+    "app": {
+      "replicas": 2
+    }
+  },
+  "actual": {
+    "db": {
+      "class": "large"
+    },
+    "app": {
+      "replicas": 2
+    },
+    "unmanaged": {
+      "type": "bucket"
+    }
+  }
+}
