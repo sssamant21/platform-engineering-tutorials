@@ -1,7 +1,7 @@
 # IaC Tutorial Status
 
-**Progress:** 75 / 120 chapters (62.50%)  
-**Last update:** 2026-10-18  
+**Progress:** 76 / 120 chapters (63.33%)  
+**Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
 **Chapter 003:** Published; live lab execution remains for learner verification.  
@@ -60,6 +60,7 @@
 **Part 13:** 5/5 chapters published — Ansible (content complete; live acceptance pending).  
 **Part 14:** 5/5 chapters published — CloudFormation and Bicep (content complete; live acceptance pending).  
 **Part 15:** 5/5 chapters published — Pulumi (content complete; live acceptance pending).  
+**Part 16:** 1/5 chapters published — IaC CI/CD.  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -89,7 +90,8 @@
 **Chapter 073:** Published; local-only Pulumi stack project, declared-evidence governance gate and 48 unit tests authored; native execution, backend restore and operational acceptance pending.  
 **Chapter 074:** Published; offline Pulumi CI pipeline simulator, declared-evidence gate and 55 tests authored; native Automation API preview and operational acceptance pending.  
 **Chapter 075:** Published; mocked multi-cloud Pulumi component lab, offline rollout simulator, declared-evidence governance gate and 70 tests authored; runtime, cloud integration and operational acceptance pending.  
-**Next:** Chapter 076 — Infrastructure as Code CI/CD Foundations, Pipeline Architecture and GitOps Integration (proposed title; begins Part 16).
+**Chapter 076:** Published; 43 offline Python unit tests executed and passed, safe/unsafe evidence checked; live CI/CD and operational acceptance pending.  
+**Next:** Chapter 077 — Terraform and OpenTofu CI/CD Pipelines, Plan/Apply Controls and State-Safe Delivery (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -168,6 +170,7 @@
 | 073 | Pulumi Stack Configuration, Secrets, State Backends and Enterprise Governance | Published |
 | 074 | Pulumi Automation API, CI/CD Pipelines, Policy as Code and Enterprise Delivery | Published |
 | 075 | Pulumi Enterprise Platform Automation, Multi-Cloud SRE/DBRE Reliability Capstone | Published |
+| 076 | Infrastructure as Code CI/CD Foundations, Pipeline Architecture and GitOps Integration | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -836,3 +839,11 @@
 - [x] Chapter and master index publication; Part 15 content complete at 5/5
 - [ ] Offline Python and mocked component test execution
 - [ ] Native Pulumi integration, DBRE restore, SLO game day and production acceptance
+
+## Chapter 076 acceptance — IaC CI/CD foundations and GitOps
+- [x] Enterprise CI/CD, workload identity, state/plan controls and GitOps architecture
+- [x] Offline declared-evidence gate, safe/unsafe fixtures and pipeline stage simulator
+- [x] 43 Python unit tests executed and passed locally; no cloud changes
+- [x] Thirty-two SRE/DBRE incident scenarios, ten runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 16 at 1/5
+- [ ] Live CI/CD integration, cloud identity verification, DBRE restore and production acceptance
