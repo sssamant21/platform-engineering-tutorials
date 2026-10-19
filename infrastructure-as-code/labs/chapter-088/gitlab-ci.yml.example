@@ -1,0 +1,11 @@
+stages: [validate, audit]
+offline_compliance:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-088/run-preflight.sh
+native_audit_disabled:
+  stage: audit
+  when: manual
+  script:
+    - echo 'NOT ENABLED: independent native IAM, OPA/Sentinel, Kubernetes, DB restore, signed evidence and auditor review'
