@@ -1,0 +1,14 @@
+{
+  "layers": [
+    "terraform",
+    "terratest",
+    "molecule",
+    "kubernetes",
+    "gitops",
+    "database_restore"
+  ],
+  "native_assertions": 12,
+  "negative_tests": 20,
+  "skipped_critical": 0,
+  "cleanup_signed_off": true
+}
