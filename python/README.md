@@ -252,7 +252,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 100 — Integrated SRE/DBRE Production Capstone Lab](10-kubernetes-cloud-platform-engineering/labs/100-cloud-native-platform-engineering-production-capstone-lab.md)
 - [Chapter 100 — Executable Capstone and 51 Unit Tests](10-kubernetes-cloud-platform-engineering/labs/100/README.md)
 
-## Part 11 — Production Security and Performance (8/10 published)
+## Part 11 — Production Security and Performance (9/10 published)
 
 - [Chapter 101 — Python Production Security Architecture and Secure Coding](11-production-security-performance/101-python-production-security-architecture-secure-coding.md)
 - [Chapter 101 — SRE/DBRE Secure Coding Lab](11-production-security-performance/labs/101-production-security-secure-coding-sre-dbre-lab.md)
@@ -285,3 +285,5 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 108 — Python Production Observability, Tracing and Reliability Engineering](11-production-security-performance/108-python-production-observability-tracing-reliability-engineering.md)
 - [Chapter 108 — Observability and Reliability SRE/DBRE Lab](11-production-security-performance/labs/108-production-observability-tracing-reliability-sre-dbre-lab.md)
 - [Chapter 108 — Executable Project and Automated Tests](11-production-security-performance/labs/108/README.md)
+
+- [Chapter 109 — Resilience Engineering](11-production-security-performance/109-python-resilience-engineering-fault-injection-chaos-testing.md) · [Lab](11-production-security-performance/labs/109-resilience-engineering-fault-injection-chaos-sre-dbre-lab.md) · [Tests](11-production-security-performance/labs/109/README.md)
