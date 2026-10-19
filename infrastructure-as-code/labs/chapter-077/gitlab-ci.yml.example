@@ -1,0 +1,16 @@
+stages: [test, plan, deploy]
+validate:
+  image: python:3.12
+  stage: test
+  script:
+    - bash infrastructure-as-code/labs/chapter-077/run-preflight.sh
+plan:
+  stage: plan
+  when: manual
+  script:
+    - echo "PLACEHOLDER ONLY: verify target, init backend, plan -out, encrypt artifact and sign digest"
+deploy:
+  stage: deploy
+  when: manual
+  script:
+    - echo "NO APPLY: implement OIDC, approved immutable plan, state lock, restore evidence first"
