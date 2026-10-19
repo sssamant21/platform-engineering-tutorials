@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 98 / 120 chapters (81.67%)  
+**Progress:** 99 / 120 chapters (82.50%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -113,7 +113,8 @@
 **Chapter 096:** Published; cloud billing, ownership tagging, cost allocation, anomalies and safe FinOps, 83 tests authored; execution and native billing acceptance pending.  
 **Chapter 097:** Published; shared platform allocation, showback, chargeback, integer-cent reconciliation and DBRE safety, 90 tests authored; execution and native finance acceptance pending.  
 **Chapter 098:** Published; forecasting, budget governance, anomaly detection and fail-closed FinOps automation, 82 tests authored; execution and native billing/alert acceptance pending.  
-**Next:** Chapter 099 — IaC Cost Optimization, Rightsizing, Commitments and Reliability-Aware FinOps Engineering (proposed title).
+**Chapter 099:** Published; rightsizing, commitment modeling, savings reconciliation and DBRE-safe approval gates, 86 tests authored; execution and native cloud/DBRE acceptance pending.  
+**Next:** Chapter 100 — Enterprise IaC FinOps Governance, Cost Optimization and Reliability Acceptance Capstone (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -215,6 +216,7 @@
 | 096 | IaC Cost Observability, Cloud Billing Data, Tagging and FinOps Fundamentals | Published |
 | 097 | IaC Cost Allocation, Showback, Chargeback and Shared Platform Cost Models | Published |
 | 098 | IaC Cost Forecasting, Budget Governance, Anomaly Detection and FinOps Automation | Published |
+| 099 | IaC Cost Optimization, Rightsizing, Commitments and Reliability-Aware FinOps Engineering | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -1050,7 +1052,7 @@
 - [x] Chapter and master index publication; Part 19 content complete at 5/5
 - [ ] Offline execution, native OTel/Prometheus/Alertmanager paging, real cloud drift, actual DBRE restore, independent security review and production acceptance
 
-**Part 20:** 3/5 chapters published — FinOps (native billing and operational acceptance pending).
+**Part 20:** 4/5 chapters published — FinOps (native billing and operational acceptance pending).
 
 ## Chapter 096 acceptance — IaC cost observability and FinOps fundamentals
 - [x] AWS CUR/Data Exports, Azure Cost Management, GCP BigQuery Billing, Terraform/OpenTofu, Kubernetes and DBRE cost theory
@@ -1075,3 +1077,11 @@
 - [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 20 at 3/5
 - [ ] Offline execution, native provider billing, real budget alert delivery, forecast backtesting, DBRE SLO/RPO/RTO and independent production acceptance
+
+## Chapter 099 acceptance — IaC rightsizing, commitments and reliability-aware FinOps
+- [x] AWS/Azure/GCP commitments, Terraform/OpenTofu, Kubernetes, SRE/DBRE rightsizing and savings theory
+- [x] Offline evidence, savings, commitment, approval and reconciliation labs
+- [x] 86 Python unit tests authored; not executed
+- [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 20 at 4/5
+- [ ] Offline execution, native provider billing and commitment validation, production canary/rollback, DBRE SLO/RPO/RTO and independent operational acceptance
