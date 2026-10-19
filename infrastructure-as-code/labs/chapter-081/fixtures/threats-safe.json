@@ -1,0 +1,18 @@
+[
+  {
+    "category": "spoofing",
+    "likelihood": 5,
+    "impact": 5,
+    "owner": "SRE",
+    "mitigation": "exact OIDC trust",
+    "status": "mitigated"
+  },
+  {
+    "category": "information_disclosure",
+    "likelihood": 3,
+    "impact": 4,
+    "owner": "DBRE",
+    "mitigation": "encrypt state and rotate credentials",
+    "status": "open"
+  }
+]
