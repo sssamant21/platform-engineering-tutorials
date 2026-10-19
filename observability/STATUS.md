@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 79 / 100 chapters (79%) · 20 parts · Part 16: 4/5**
+**Progress: 80 / 100 chapters (80%) · 20 parts · Part 16: 5/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -19,14 +19,14 @@
 | 13 — Database and Data Platform Observability | 061–065 | 5 | 5 | Complete |
 | 14 — Application Performance Monitoring | 066–070 | 5 | 5 | Complete |
 | 15 — SLIs SLOs and Error Budgets | 071–075 | 5 | 5 | Complete |
-| 16 — Incident Response and Troubleshooting | 076–080 | 4 | 5 | In progress |
+| 16 — Incident Response and Troubleshooting | 076–080 | 5 | 5 | Complete |
 | 17 — Observability as Code and GitOps | 081–085 | 0 | 5 | Planned |
 | 18 — Scaling High Availability and FinOps | 086–090 | 0 | 5 | Planned |
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–079 and companion labs. Parts 01–15 complete (5/5 each); Part 16 in progress (4/5).
+**Published:** Chapters 001–080 and companion labs. Parts 01–16 complete (5/5 each).
 
-**Next:** Chapter 080 — Enterprise Incident Response, Troubleshooting and Reliability Acceptance Capstone.
+**Next:** Chapter 081 — Observability as Code Foundations, Repository Architecture and GitOps Workflows (Part 17).
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
