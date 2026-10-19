@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 89/100 published**
+**100 chapters · 20 parts · 90/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -25,7 +25,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 5/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 5/5 |
 | 17 | 081–085 | Observability as Code and GitOps | 5/5 |
-| 18 | 086–090 | Scaling High Availability and FinOps | 4/5 |
+| 18 | 086–090 | Scaling High Availability and FinOps | 5/5 |
 | 19 | 091–095 | Enterprise Security Governance and Reliability | 0/5 |
 | 20 | 096–100 | Final Production Observability Capstones | 0/5 |
 
@@ -336,4 +336,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 089 — Observability FinOps, Retention Optimization, Cardinality Governance and Cost Forecasting](part-18-scaling-high-availability-finops/089-observability-finops-retention-optimization-cardinality-governance-cost-forecasting.md)
 - [Chapter 089 — Companion lab](part-18-scaling-high-availability-finops/labs/089-observability-finops-retention-optimization-cardinality-governance-cost-forecasting-lab.md)
 
-**Next:** Chapter 090 — Enterprise Observability Scaling, High Availability and FinOps Reliability Acceptance Capstone.
+- [Chapter 090 — Enterprise Observability Scaling, High Availability and FinOps Reliability Acceptance Capstone](part-18-scaling-high-availability-finops/090-enterprise-observability-scaling-ha-finops-reliability-acceptance-capstone.md)
+- [Chapter 090 — Companion lab](part-18-scaling-high-availability-finops/labs/090-enterprise-observability-scaling-ha-finops-reliability-acceptance-capstone-lab.md)
+
+**Part 18 complete: 5/5 chapters published.**
+
+**Next:** Chapter 091 — Enterprise Observability Security Architecture, Identity, RBAC and Tenant Isolation (Part 19).
