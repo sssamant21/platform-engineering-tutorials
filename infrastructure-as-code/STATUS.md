@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 79 / 120 chapters (65.83%)  
+**Progress:** 80 / 120 chapters (66.67%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -60,7 +60,7 @@
 **Part 13:** 5/5 chapters published — Ansible (content complete; live acceptance pending).  
 **Part 14:** 5/5 chapters published — CloudFormation and Bicep (content complete; live acceptance pending).  
 **Part 15:** 5/5 chapters published — Pulumi (content complete; live acceptance pending).  
-**Part 16:** 4/5 chapters published — IaC CI/CD.  
+**Part 16:** 5/5 chapters published — IaC CI/CD (content complete; operational acceptance pending).  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -94,7 +94,8 @@
 **Chapter 077:** Published; 57 offline Python tests executed and passed; native Terraform/OpenTofu and operational acceptance pending.  
 **Chapter 078:** Published; offline multi-tool governance gate and promotion simulator, 55 tests authored; execution, cloud integration and operational acceptance pending.  
 **Chapter 079:** Published; Ansible/Kubernetes/GitOps offline governance gate and promotion simulator, 57 tests authored; execution, cluster integration and operational acceptance pending.  
-**Next:** Chapter 080 — Enterprise IaC CI/CD Reliability, Security, Disaster Recovery and GitOps Production Capstone (proposed title).
+**Chapter 080:** Published; enterprise IaC CI/CD/DR/GitOps capstone, 84 tests authored; offline execution, native integration and operational acceptance pending.  
+**Next:** Chapter 081 — Infrastructure as Code Security Foundations, Threat Modeling, Identity and Secrets Management (proposed title; begins Part 17).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -177,6 +178,7 @@
 | 077 | Terraform and OpenTofu CI/CD Pipelines, Plan/Apply Controls and State-Safe Delivery | Published |
 | 078 | Pulumi, CloudFormation and Bicep CI/CD Pipelines, Policy Gates and Safe Deployment Promotion | Published |
 | 079 | Ansible, Kubernetes and GitOps CI/CD Automation, Environment Promotion and Production Change Controls | Published |
+| 080 | Enterprise IaC CI/CD Reliability, Security, Disaster Recovery and GitOps Production Capstone | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -877,3 +879,11 @@
 - [x] Thirty-eight SRE/DBRE incident scenarios, ten runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 16 at 4/5
 - [ ] Offline tests, native Ansible/Kubernetes/GitOps integration, DBRE restore and production acceptance
+
+## Chapter 080 acceptance — Part 16 enterprise CI/CD reliability capstone
+- [x] Enterprise multi-tool CI/CD, security, state, GitOps and disaster recovery architecture
+- [x] Offline governance gate, safe/unsafe evidence, promotion simulator and DR evaluator
+- [x] 84 Python unit tests authored; not executed
+- [x] Forty-five SRE/DBRE incident simulations, twelve runbooks and 100-point final assessment
+- [x] Chapter and master index publication; Part 16 content complete at 5/5
+- [ ] Offline test execution, native tool integration, actual DB restore/DR drills, SLO game day and production acceptance
