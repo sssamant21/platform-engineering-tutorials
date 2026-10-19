@@ -1,0 +1,14 @@
+{
+  "environment": "staging",
+  "risk": "low",
+  "destructive": false,
+  "database": false,
+  "approved": true,
+  "finance_approved": true,
+  "source_complete": true,
+  "alert_delivered": true,
+  "slo_healthy": true,
+  "rpo_healthy": true,
+  "rto_healthy": true,
+  "capacity_verified": true
+}
