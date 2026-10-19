@@ -1,0 +1,16 @@
+stages: [validate, observe, reconcile]
+offline_drift:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-092/run-preflight.sh
+native_observe_disabled:
+  stage: observe
+  when: manual
+  script:
+    - echo 'NOT ENABLED: read-only provider inventory, exact target and trusted evidence required'
+reconcile_disabled:
+  stage: reconcile
+  when: manual
+  script:
+    - echo 'NO APPLY: independent approval, immutable plan, DBRE recovery and SLO verification required'
