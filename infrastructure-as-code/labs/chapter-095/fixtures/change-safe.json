@@ -1,0 +1,12 @@
+{
+  "environment": "staging",
+  "risk": "low",
+  "destructive": false,
+  "database": false,
+  "telemetry_fresh": true,
+  "inventory_complete": true,
+  "approved": true,
+  "slo_healthy": true,
+  "active_incident": false,
+  "state_preserved": true
+}
