@@ -235,6 +235,10 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 100 executable labs and tests](labs/chapter-100/)
 - [101 — IaC Disaster Recovery Foundations, RPO/RTO, Backup Architecture and Recovery Design](chapters/101-iac-disaster-recovery-foundations-rpo-rto-backup-architecture-recovery-design.md)
 - [Chapter 101 executable labs and tests](labs/chapter-101/)
+- [102 — IaC Backup Automation, Cross-Region Replication, Immutable Recovery Points and Recovery Validation](chapters/102-iac-backup-automation-cross-region-replication-immutable-recovery-points-recovery-validation.md)
+- [Chapter 102 executable labs and tests](labs/chapter-102/)
+- [103 — IaC Cross-Region Disaster Recovery Orchestration, Failover, Fencing and Split-Brain Prevention](chapters/103-iac-cross-region-disaster-recovery-orchestration-failover-fencing-split-brain-prevention.md)
+- [Chapter 103 executable labs and tests](labs/chapter-103/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -250,4 +254,4 @@ Part 19 complete: Chapters 091–095 published (5/5); native observability, drif
 
 Part 20 — FinOps publication complete: Chapters 096–100 published (5/5); native cloud billing, commitments, chargeback reconciliation, rightsizing, lab execution and SRE/DBRE acceptance pending.
 
-Part 21 — Disaster Recovery underway: Chapter 101 published (1/5); native recovery drills and independent SRE/DBRE acceptance pending.
+Part 21 — Disaster Recovery underway: Chapters 101–103 published (3/5); native recovery drills and independent SRE/DBRE acceptance pending.
