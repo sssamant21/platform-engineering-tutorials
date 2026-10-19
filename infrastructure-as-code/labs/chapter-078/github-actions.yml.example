@@ -1,0 +1,12 @@
+name: iac-078-offline-validation
+on:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4 # pin by immutable commit in production
+      - name: Offline multi-tool policy tests
+        run: bash infrastructure-as-code/labs/chapter-078/run-preflight.sh
