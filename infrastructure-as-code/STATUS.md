@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 86 / 120 chapters (71.67%)  
+**Progress:** 87 / 120 chapters (72.50%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -101,7 +101,8 @@
 **Chapter 084:** Published; zero trust, cloud IAM, Kubernetes RBAC and offline identity labs, 78 tests authored; execution and production IAM/DBRE acceptance pending.  
 **Chapter 085:** Published; enterprise security, policy, zero trust and DBRE DR capstone, 113 offline tests authored; execution and production acceptance pending.  
 **Chapter 086:** Published; IaC testing strategy, policy automation and offline CI lab, 90 tests authored; execution and native integration/DBRE acceptance pending.  
-**Next:** Chapter 087 — IaC Integration Testing, Ephemeral Environments, Terratest, Molecule and Cloud Resource Validation (proposed title).
+**Chapter 087:** Published; ephemeral integration testing, Terratest/Molecule, cloud validation and cleanup lab, 105 tests authored; execution and native cloud/DBRE acceptance pending.  
+**Next:** Chapter 088 — IaC Compliance Testing, Audit Evidence, Control Mapping and Continuous Assurance (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -191,6 +192,7 @@
 | 084 | IaC Least Privilege, Zero Trust, Cloud IAM and Kubernetes Security Hardening | Published |
 | 085 | Enterprise IaC Security, Policy and Zero-Trust Production Readiness Capstone | Published |
 | 086 | IaC Testing Strategy, Static Validation, Unit Tests and Policy Test Automation | Published |
+| 087 | IaC Integration Testing, Ephemeral Environments, Terratest, Molecule and Cloud Resource Validation | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -942,7 +944,7 @@
 - [x] Chapter and master index publication; Part 17 publication complete at 5/5
 - [ ] Offline test execution, native IAM/policy/admission, cryptographic provenance, DB restore, RPO/RTO and production acceptance
 
-**Part 18:** 1/5 chapters published — Testing and Compliance.
+**Part 18:** 2/5 chapters published — Testing and Compliance.
 
 ## Chapter 086 acceptance — Testing strategy and policy automation
 - [x] Multi-tool IaC testing, policy-as-code, Kubernetes/GitOps and DBRE theory
@@ -951,3 +953,11 @@
 - [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 18 at 1/5
 - [ ] Offline execution, native IaC/policy integration, actual DB restore, RPO/RTO and production acceptance
+
+## Chapter 087 acceptance — Integration testing and ephemeral environments
+- [x] Terraform/OpenTofu, Terratest, Molecule, Kubernetes/GitOps, multi-cloud and DBRE theory
+- [x] Offline integration gate, lease lifecycle, budget and evidence simulators
+- [x] 105 Python unit tests authored; not executed
+- [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 18 at 2/5
+- [ ] Offline execution, native Terratest/Molecule/cloud validation, actual DB restore, cleanup verification and production acceptance
