@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **110 chapters**
-- Remaining: **10 chapters**
-- Published labs: **110**
-- Next: **111 — Enterprise Python SRE/DBRE Capstone Architecture and Project Foundations**
+- Published: **111 chapters**
+- Remaining: **9 chapters**
+- Published labs: **111**
+- Next: **112 — Enterprise Python API Services, Contracts and Data Access Integration**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–110 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–111 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -212,3 +212,7 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 - Chapter 109 — [Python Resilience Engineering, Fault Injection and Chaos Testing](11-production-security-performance/109-python-resilience-engineering-fault-injection-chaos-testing.md) · [SRE/DBRE lab](11-production-security-performance/labs/109-resilience-engineering-fault-injection-chaos-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/109/README.md). Retry/backoff/jitter, circuit breakers, bulkheads, timeout and error-budget policies, offline chaos safety simulation, incident exercises and automated tests. Exact committed execution, CI and live integration validation pending.
 
 - Chapter 110 — [Python Production Security, Performance and Reliability Capstone](11-production-security-performance/110-python-production-security-performance-reliability-capstone.md) · [SRE/DBRE lab](11-production-security-performance/labs/110-production-security-performance-reliability-capstone-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/110/README.md). Integrates Chapters 101–109: identity, secrets, compliance, supply-chain metadata, p99 profiling budgets, concurrency limits, SLOs, retries, redaction and advisory release gates. Automated tests published; exact committed execution, CI, security review and production integration validation pending. Part 11 complete.
+
+- Part 12 — Enterprise Capstone Projects: **1/10** chapters published; 9 remaining.
+
+- Chapter 111 — [Enterprise Python SRE/DBRE Capstone Architecture and Project Foundations](12-enterprise-capstones/111-enterprise-python-sre-dbre-capstone-architecture-project-foundations.md) · [Complete SRE/DBRE lab](12-enterprise-capstones/labs/111-enterprise-python-architecture-project-foundations-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/111/README.md). Architecture, API/worker boundaries, PostgreSQL/Elasticsearch/MongoDB/Redis/Kafka/Kubernetes patterns, security, capacity, SLOs, offline simulator and automated tests. Exact committed execution, CI, live integration and production acceptance pending.
