@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: iac-ch079-example
+  namespace: iac-lab
+  labels:
+    app: iac-ch079
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: iac-ch079
+  template:
+    metadata:
+      labels:
+        app: iac-ch079
+    spec:
+      containers:
+        - name: example
+          image: registry.k8s.io/pause:3.10
+          imagePullPolicy: IfNotPresent
+          resources:
+            requests:
+              cpu: 10m
+              memory: 16Mi
+            limits:
+              cpu: 100m
+              memory: 64Mi
