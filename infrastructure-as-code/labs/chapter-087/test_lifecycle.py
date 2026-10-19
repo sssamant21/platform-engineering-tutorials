@@ -48,10 +48,10 @@ class LeaseTests(unittest.TestCase):
         with self.assertRaises(PermissionError):l.advance('destroyed',False)
     def test_failed_verified(self):
         l=Lease()
-        for stage in STAGES[:6]:l.advance(stage)
+        for stage in STAGES[:6]:l.advance(stage,owned_resources=0)
         with self.assertRaises(PermissionError):l.advance('verified',False)
     def test_failed_closed(self):
         l=Lease()
-        for stage in STAGES[:7]:l.advance(stage)
+        for stage in STAGES[:7]:l.advance(stage,owned_resources=0)
         with self.assertRaises(PermissionError):l.advance('closed',False)
 if __name__=="__main__":unittest.main()
