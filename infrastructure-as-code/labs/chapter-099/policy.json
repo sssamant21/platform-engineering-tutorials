@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "target": {
+    "environment": "offline-finops-optimization",
+    "billing_account": "offline-099",
+    "currency": "USD",
+    "cost_basis": "amortized",
+    "owner": "platform-sre",
+    "repository": "sssamant21/platform-engineering-tutorials"
+  },
+  "max_age_hours": 48,
+  "minimum_headroom_pct": 20
+}
