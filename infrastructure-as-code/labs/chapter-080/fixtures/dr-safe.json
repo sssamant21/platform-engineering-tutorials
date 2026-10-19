@@ -1,0 +1,12 @@
+{
+  "backup_integrity": true,
+  "restore_drill_passed": true,
+  "fencing_verified": true,
+  "quorum_healthy": true,
+  "dbre_approved": true,
+  "encryption_key_available": true,
+  "rpo_minutes": 15,
+  "rto_minutes": 60,
+  "replica_lag_minutes": 3,
+  "restore_duration_minutes": 35
+}
