@@ -1,0 +1,10 @@
+name: iac-077-offline
+on: [pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4 # pin to immutable commit in production
+      - run: bash infrastructure-as-code/labs/chapter-077/run-preflight.sh
