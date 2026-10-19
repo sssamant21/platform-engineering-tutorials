@@ -1,0 +1,11 @@
+{
+  "namespace": "demo-security",
+  "service_account": "app-reader",
+  "resource": "configmaps",
+  "verbs": [
+    "get",
+    "list"
+  ],
+  "cluster_scope": false,
+  "automount_token": false
+}
