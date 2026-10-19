@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "targets": {
+    "environment": "lab",
+    "inventory": "localhost",
+    "kube_context": "offline-kind",
+    "namespace": "iac-lab",
+    "gitops_controller": "argocd",
+    "promotion_branch": "release/lab"
+  },
+  "required_controls": [
+    "signed_source",
+    "pinned_collections",
+    "immutable_image_digest",
+    "oidc_scoped",
+    "least_privilege",
+    "inventory_verified",
+    "kube_context_verified",
+    "namespace_verified",
+    "gitops_owner_verified",
+    "no_direct_patch",
+    "ansible_check_reviewed",
+    "k8s_diff_reviewed",
+    "policy_approved",
+    "approval_signed",
+    "backup_verified",
+    "restore_rehearsed",
+    "dbre_approved",
+    "serial_rollout_bounded",
+    "pdb_reviewed",
+    "no_destructive_prune",
+    "canary_healthy",
+    "slo_healthy",
+    "audit_recorded"
+  ],
+  "require_exact_controls": true
+}
