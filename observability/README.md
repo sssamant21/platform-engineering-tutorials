@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 86/100 published**
+**100 chapters · 20 parts · 87/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -25,7 +25,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 5/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 5/5 |
 | 17 | 081–085 | Observability as Code and GitOps | 5/5 |
-| 18 | 086–090 | Scaling High Availability and FinOps | 1/5 |
+| 18 | 086–090 | Scaling High Availability and FinOps | 2/5 |
 | 19 | 091–095 | Enterprise Security Governance and Reliability | 0/5 |
 | 20 | 096–100 | Final Production Observability Capstones | 0/5 |
 
@@ -327,4 +327,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 086 — Enterprise Observability Scale, Capacity Planning and High Availability Architecture](part-18-scaling-high-availability-finops/086-enterprise-observability-scale-capacity-planning-high-availability-architecture.md)
 - [Chapter 086 — Companion lab](part-18-scaling-high-availability-finops/labs/086-enterprise-observability-scale-capacity-planning-high-availability-architecture-lab.md)
 
-**Next:** Chapter 087 — Prometheus and Alertmanager High Availability, Remote Write and Long-Term Storage.
+- [Chapter 087 — Prometheus and Alertmanager High Availability, Remote Write and Long-Term Storage](part-18-scaling-high-availability-finops/087-prometheus-alertmanager-high-availability-remote-write-long-term-storage.md)
+- [Chapter 087 — Companion lab](part-18-scaling-high-availability-finops/labs/087-prometheus-alertmanager-high-availability-remote-write-long-term-storage-lab.md)
+
+**Next:** Chapter 088 — Loki and Tempo Distributed Scaling, Storage, Retention and High Availability.
