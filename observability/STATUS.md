@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 83 / 100 chapters (83%) · 20 parts · Part 17: 3/5**
+**Progress: 84 / 100 chapters (84%) · 20 parts · Part 17: 4/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -20,13 +20,13 @@
 | 14 — Application Performance Monitoring | 066–070 | 5 | 5 | Complete |
 | 15 — SLIs SLOs and Error Budgets | 071–075 | 5 | 5 | Complete |
 | 16 — Incident Response and Troubleshooting | 076–080 | 5 | 5 | Complete |
-| 17 — Observability as Code and GitOps | 081–085 | 3 | 5 | In progress |
+| 17 — Observability as Code and GitOps | 081–085 | 4 | 5 | In progress |
 | 18 — Scaling High Availability and FinOps | 086–090 | 0 | 5 | Planned |
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–083 and companion labs. Parts 01–16 complete (5/5 each); Part 17 in progress (3/5).
+**Published:** Chapters 001–084 and companion labs. Parts 01–16 complete (5/5 each); Part 17 in progress (4/5).
 
-**Next:** Chapter 084 — Observability CI/CD, Policy Validation, Drift Detection and Safe Promotion.
+**Next:** Chapter 085 — Enterprise Observability as Code and GitOps Production Readiness Capstone.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
