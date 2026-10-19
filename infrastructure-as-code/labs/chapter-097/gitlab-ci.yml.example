@@ -1,0 +1,11 @@
+stages: [validate, native-chargeback]
+offline_chargeback:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-097/run-preflight.sh
+native_chargeback_disabled:
+  stage: native-chargeback
+  when: manual
+  script:
+    - echo 'NOT ENABLED: provider billing, finance settlement, DBRE sign-off required'
