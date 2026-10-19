@@ -1,0 +1,74 @@
+[
+  {
+    "id": "IAC-001",
+    "owner": "SRE",
+    "objective": "Validate enterprise control IAC-001",
+    "framework": "NIST/CIS/SOC2 illustrative mapping",
+    "implementation": "policy/iac-001",
+    "evidence": "native signed audit report",
+    "frequency": "daily"
+  },
+  {
+    "id": "IAC-002",
+    "owner": "Security",
+    "objective": "Validate enterprise control IAC-002",
+    "framework": "NIST/CIS/SOC2 illustrative mapping",
+    "implementation": "policy/iac-002",
+    "evidence": "native signed audit report",
+    "frequency": "daily"
+  },
+  {
+    "id": "IAC-003",
+    "owner": "DBRE",
+    "objective": "Validate enterprise control IAC-003",
+    "framework": "NIST/CIS/SOC2 illustrative mapping",
+    "implementation": "policy/iac-003",
+    "evidence": "native signed audit report",
+    "frequency": "daily"
+  },
+  {
+    "id": "IAC-004",
+    "owner": "SRE",
+    "objective": "Validate enterprise control IAC-004",
+    "framework": "NIST/CIS/SOC2 illustrative mapping",
+    "implementation": "policy/iac-004",
+    "evidence": "native signed audit report",
+    "frequency": "daily"
+  },
+  {
+    "id": "IAC-005",
+    "owner": "Security",
+    "objective": "Validate enterprise control IAC-005",
+    "framework": "NIST/CIS/SOC2 illustrative mapping",
+    "implementation": "policy/iac-005",
+    "evidence": "native signed audit report",
+    "frequency": "daily"
+  },
+  {
+    "id": "IAC-006",
+    "owner": "DBRE",
+    "objective": "Validate enterprise control IAC-006",
+    "framework": "NIST/CIS/SOC2 illustrative mapping",
+    "implementation": "policy/iac-006",
+    "evidence": "native signed audit report",
+    "frequency": "daily"
+  },
+  {
+    "id": "IAC-007",
+    "owner": "SRE",
+    "objective": "Validate enterprise control IAC-007",
+    "framework": "NIST/CIS/SOC2 illustrative mapping",
+    "implementation": "policy/iac-007",
+    "evidence": "native signed audit report",
+    "frequency": "daily"
+  },
+  {
+    "id": "IAC-008",
+    "owner": "Security",
+    "objective": "Validate enterprise control IAC-008",
+    "framework": "NIST/CIS/SOC2 illustrative mapping",
+    "implementation": "policy/iac-008",
+    "evidence": "native signed audit report",
+    "frequency": "daily"
+  }
+]
