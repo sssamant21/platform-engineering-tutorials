@@ -1,0 +1,16 @@
+stages: [validate, review, deploy]
+offline_capstone:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-085/run-preflight.sh
+native_security_review_disabled:
+  stage: review
+  when: manual
+  script:
+    - echo 'NOT ENABLED: verify native IAM, OPA/Sentinel, provenance, admission, DB restore'
+deploy_disabled:
+  stage: deploy
+  when: manual
+  script:
+    - echo 'NO APPLY: requires signed evidence, protected OIDC, DBRE and security approval'
