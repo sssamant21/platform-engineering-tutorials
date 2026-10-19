@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "environment": "offline-finops-optimization",
+  "billing_account": "offline-099",
+  "currency": "USD",
+  "cost_basis": "amortized",
+  "owner": "platform-sre",
+  "repository": "sssamant21/platform-engineering-tutorials",
+  "export_age_hours": 2,
+  "baseline_monthly_usd": "1000.00",
+  "target_monthly_usd": "750.00",
+  "cpu_p99_pct": 55,
+  "memory_p99_pct": 60,
+  "headroom_pct": 25,
+  "forecast_complete": true,
+  "backup_verified": true,
+  "slo_healthy": true,
+  "rpo_healthy": true,
+  "rto_healthy": true,
+  "rollback_tested": true,
+  "resource_id": "offline-099-ec2",
+  "source_digest": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+}
