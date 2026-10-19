@@ -1,0 +1,11 @@
+name: iac-084-offline-identity
+on:
+  pull_request:
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4 # pin by commit SHA in production
+      - run: bash infrastructure-as-code/labs/chapter-084/run-preflight.sh
