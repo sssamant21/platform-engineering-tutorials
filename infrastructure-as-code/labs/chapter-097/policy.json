@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "target": {
+    "environment": "offline-chargeback-lab",
+    "billing_account": "offline-097",
+    "usage_month": "2026-09",
+    "currency": "USD",
+    "cost_basis": "amortized",
+    "repository": "sssamant21/platform-engineering-tutorials"
+  },
+  "accepted_kinds": [
+    "direct",
+    "shared",
+    "unallocated"
+  ],
+  "required_tags": [
+    "owner",
+    "cost_center",
+    "application"
+  ],
+  "max_export_age_hours": 72,
+  "require_unique_lines": true
+}
