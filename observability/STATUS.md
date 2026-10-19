@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 70 / 100 chapters (70%) · 20 parts · Part 14: 5/5**
+**Progress: 71 / 100 chapters (71%) · 20 parts · Part 15: 1/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -18,15 +18,15 @@
 | 12 — Kubernetes EKS AKS and GKE Observability | 056–060 | 5 | 5 | Complete |
 | 13 — Database and Data Platform Observability | 061–065 | 5 | 5 | Complete |
 | 14 — Application Performance Monitoring | 066–070 | 5 | 5 | Complete |
-| 15 — SLIs SLOs and Error Budgets | 071–075 | 0 | 5 | Planned |
+| 15 — SLIs SLOs and Error Budgets | 071–075 | 1 | 5 | In progress |
 | 16 — Incident Response and Troubleshooting | 076–080 | 0 | 5 | Planned |
 | 17 — Observability as Code and GitOps | 081–085 | 0 | 5 | Planned |
 | 18 — Scaling High Availability and FinOps | 086–090 | 0 | 5 | Planned |
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–070 and companion labs. Parts 01–14 complete (5/5 each).
+**Published:** Chapters 001–071 and companion labs. Parts 01–14 complete (5/5 each); Part 15 in progress (1/5).
 
-**Next:** Chapter 071 — Service Level Indicators, Objectives and Error Budget Engineering (Part 15).
+**Next:** Chapter 072 — Advanced SLO Design, Multiwindow Burn-Rate Alerting and Prometheus Recording Rules.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
