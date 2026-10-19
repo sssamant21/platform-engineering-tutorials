@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 72 / 120 chapters (60.00%)  
+**Progress:** 73 / 120 chapters (60.83%)  
 **Last update:** 2026-10-18  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -59,7 +59,7 @@
 **Part 12:** 5/5 chapters published — OpenTofu and Terragrunt (content complete; live acceptance pending).  
 **Part 13:** 5/5 chapters published — Ansible (content complete; live acceptance pending).  
 **Part 14:** 5/5 chapters published — CloudFormation and Bicep (content complete; live acceptance pending).  
-**Part 15:** 2/5 chapters published — Pulumi.  
+**Part 15:** 3/5 chapters published — Pulumi.  
 **Chapter 047:** Published; live Terraform, GCP network integration, connectivity testing and operational acceptance pending.  
 **Chapter 048:** Published; live Terraform, GCP IAM/KMS/Secret Manager integration and operational acceptance pending.  
 **Chapter 049:** Published; live Terraform, GCP Compute/GKE integration, upgrade and rollback drills and operational acceptance pending.  
@@ -86,7 +86,8 @@
 **Chapter 070:** Published; offline AWS/Azure templates, declared-evidence multi-cloud gate and 57 unit tests authored; native cloud integration, DBRE DR and operational acceptance pending.  
 **Chapter 071:** Published; local-only Pulumi Python program, declared-evidence gate and 48 unit tests authored; native Pulumi execution and operational acceptance pending.  
 **Chapter 072:** Published; Pulumi mocked component lab, declared-evidence policy gate and 53 tests authored; execution and operational acceptance pending.  
-**Next:** Chapter 073 — Pulumi Stack Configuration, Secrets, State Backends and Enterprise Governance (proposed title).
+**Chapter 073:** Published; local-only Pulumi stack project, declared-evidence governance gate and 48 unit tests authored; native execution, backend restore and operational acceptance pending.  
+**Next:** Chapter 074 — Pulumi Automation API, CI/CD Pipelines, Policy as Code and Enterprise Delivery (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -162,6 +163,7 @@
 | 070 | CloudFormation and Bicep Enterprise Multi-Cloud Automation and Reliability Capstone | Published |
 | 071 | Pulumi Foundations, Architecture, Stacks and Infrastructure as Code with Programming Languages | Published |
 | 072 | Pulumi Resource Models, Providers, Components and Dependency Management | Published |
+| 073 | Pulumi Stack Configuration, Secrets, State Backends and Enterprise Governance | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -803,3 +805,12 @@
 - [x] Chapter and master index publication; Part 15 at 2/5
 - [ ] Offline policy and mocked component test execution
 - [ ] Native Pulumi preview, state recovery rehearsal, DBRE restore and production acceptance
+
+## Chapter 073 acceptance — Pulumi stacks, secrets and state backends
+- [x] Project/stack isolation, encryption, backend locking, checkpoint recovery and drift theory
+- [x] Local-only Pulumi stack configuration project and declared governance fixtures
+- [x] Fail-closed Python gate and 48 unit tests authored
+- [x] Thirty SRE/DBRE incident scenarios, ten runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 15 at 3/5
+- [ ] Offline Python test execution and native Pulumi stack rehearsal
+- [ ] Backend restore, secrets-provider recovery, DBRE backup and production acceptance
