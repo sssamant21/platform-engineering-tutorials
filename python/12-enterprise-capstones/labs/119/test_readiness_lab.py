@@ -13,7 +13,7 @@ class Tests(unittest.TestCase):
     def test_invalid_timestamp(self):self.bad(lambda:Evidence("security",True,"platform_team","evidence/security/20261019","today"))
     def test_ready(self):self.assertEqual(review(self.evidence(),True,True)["decision"],"advisory-ready")
     def test_score(self):self.assertEqual(review(self.evidence(),True,True)["score"],100)
-    def test_missing(self):self.assertIn("security",review(self.evidence()[:-1],True,True)["missing"] if self.evidence()[-1].control=="security" else review(self.evidence()[1:],True,True)["missing"] or ["architecture"])
+    def test_missing(self):self.assertIn("operations",review(self.evidence()[:-1],True,True)["missing"])
     def test_critical_failed(self):
         items=self.evidence();items[4]=Evidence("security",False,"platform_team","evidence/security/20261019","2026-10-19T20:00:00Z")
         self.assertIn("failed:security",review(items,True,True)["blockers"])
