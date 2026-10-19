@@ -1,0 +1,11 @@
+stages: [validate, native-optimization]
+offline_finops:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-099/run-preflight.sh
+native_optimization_disabled:
+  stage: native-optimization
+  when: manual
+  script:
+    - echo 'NOT ENABLED: human approvals, cloud access, rollback and DBRE reliability acceptance required'
