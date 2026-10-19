@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 76/100 published**
+**100 chapters · 20 parts · 77/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -23,7 +23,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 13 | 061–065 | Database and Data Platform Observability | 5/5 |
 | 14 | 066–070 | Application Performance Monitoring | 5/5 |
 | 15 | 071–075 | SLIs SLOs and Error Budgets | 5/5 |
-| 16 | 076–080 | Incident Response and Troubleshooting | 1/5 |
+| 16 | 076–080 | Incident Response and Troubleshooting | 2/5 |
 | 17 | 081–085 | Observability as Code and GitOps | 0/5 |
 | 18 | 086–090 | Scaling High Availability and FinOps | 0/5 |
 | 19 | 091–095 | Enterprise Security Governance and Reliability | 0/5 |
@@ -293,4 +293,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 076 — Enterprise Incident Response Architecture, Severity Models and On-Call Operations](part-16-incident-response-troubleshooting/076-enterprise-incident-response-architecture-severity-models-on-call-operations.md)
 - [Chapter 076 — Companion lab](part-16-incident-response-troubleshooting/labs/076-enterprise-incident-response-architecture-severity-models-on-call-operations-lab.md)
 
-**Next:** Chapter 077 — Enterprise Incident Triage, Signal Correlation and Root Cause Investigation.
+- [Chapter 077 — Enterprise Incident Triage, Signal Correlation and Root Cause Investigation](part-16-incident-response-troubleshooting/077-enterprise-incident-triage-signal-correlation-root-cause-investigation.md)
+- [Chapter 077 — Companion lab](part-16-incident-response-troubleshooting/labs/077-enterprise-incident-triage-signal-correlation-root-cause-investigation-lab.md)
+
+**Next:** Chapter 078 — Enterprise Incident Mitigation, Safe Rollback and Recovery Verification.
