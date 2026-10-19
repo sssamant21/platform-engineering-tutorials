@@ -3,12 +3,12 @@
 Last updated: 2026-10-18
 
 - Planned: **120 chapters**
-- Published: **105 chapters**
-- Remaining: **15 chapters**
-- Published labs: **105**
-- Next: **106 — Python Application Performance Profiling and Optimization**
+- Published: **106 chapters**
+- Remaining: **14 chapters**
+- Published labs: **106**
+- Next: **107 — Python High-Performance Concurrency, Async and Parallel Processing**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–105 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–106 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -192,7 +192,7 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 
 ## Part 11 — Production Security and Performance
 
-- **Published: 5/10 (Chapters 101–105); 5 chapters remaining in Part 11.**
+- **Published: 6/10 (Chapters 101–106); 4 chapters remaining in Part 11.**
 - Chapter 101 — [Python Production Security Architecture and Secure Coding](11-production-security-performance/101-python-production-security-architecture-secure-coding.md) · [SRE/DBRE lab](11-production-security-performance/labs/101-production-security-secure-coding-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/101/README.md). Threat modeling, OWASP, strict input validation, authorization model, supply-chain integrity, secrets redaction, advisory approvals, incident simulations and automated tests. Exact committed test execution, CI and production security review pending.
 
 - Chapter 102 — [Python Identity, Authentication and Authorization for Production Systems](11-production-security-performance/102-python-identity-authentication-authorization-production-systems.md) · [SRE/DBRE lab](11-production-security-performance/labs/102-identity-authentication-authorization-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/102/README.md). OAuth 2.0, OIDC, JWT verification architecture, RBAC/ABAC, tenant isolation, AWS/Azure/GCP/Kubernetes workload identity, approval, replay and redacted audit. Offline policy engine and automated tests published; exact committed execution, CI, live identity-provider integration and production security review pending.
@@ -202,3 +202,5 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 - Chapter 104 — [Python Security Auditing, Compliance Automation and Policy-as-Code](11-production-security-performance/104-python-security-auditing-compliance-automation-policy-as-code.md) · [SRE/DBRE lab](11-production-security-performance/labs/104-security-auditing-compliance-policy-as-code-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/104/README.md). CIS/NIST/SOC 2 illustrative mappings, AWS/Azure/GCP/Kubernetes audit evidence architecture, Python policy-as-code, freshness/completeness, compliance drift, SHA-256 evidence reports, expiring exceptions, approval-gated advisory automation, incident simulations and automated tests. Exact committed execution, CI, signed evidence and live integrations pending.
 
 - Chapter 105 — [Python Secure Software Supply Chain and Dependency Risk Automation](11-production-security-performance/105-python-secure-software-supply-chain-dependency-risk-automation.md) · [SRE/DBRE lab](11-production-security-performance/labs/105-secure-software-supply-chain-dependency-risk-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/105/README.md). Python dependency pinning, SBOM/SLSA/provenance architecture, synthetic vulnerability assessment, artifact hash checks, GitHub Actions security, approval gates, incident simulations and automated tests. Exact committed test execution, CI, live vulnerability scanning, valid CycloneDX/SPDX output and signature verification pending.
+
+- Chapter 106 — [Python Application Performance Profiling and Optimization](11-production-security-performance/106-python-application-performance-profiling-optimization.md) · [SRE/DBRE lab](11-production-security-performance/labs/106-application-performance-profiling-optimization-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/106/README.md). cProfile, tracemalloc, py-spy design, benchmarking, interpolated p50/p95/p99, asyncio/threads, synthetic latency/CPU/memory incidents, PostgreSQL/Elasticsearch/MongoDB/Kubernetes performance runbooks and automated tests. Exact committed execution, CI and live workload validation pending.
