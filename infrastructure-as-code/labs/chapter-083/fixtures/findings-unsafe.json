@@ -1,0 +1,9 @@
+[
+  {
+    "id": "SYN-2",
+    "severity": "critical",
+    "owner": "DBRE",
+    "fingerprint": "synthetic-fp2",
+    "status": "open"
+  }
+]
