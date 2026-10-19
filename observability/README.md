@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 72/100 published**
+**100 chapters · 20 parts · 73/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -22,7 +22,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 5/5 |
 | 13 | 061–065 | Database and Data Platform Observability | 5/5 |
 | 14 | 066–070 | Application Performance Monitoring | 5/5 |
-| 15 | 071–075 | SLIs SLOs and Error Budgets | 2/5 |
+| 15 | 071–075 | SLIs SLOs and Error Budgets | 3/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 0/5 |
 | 17 | 081–085 | Observability as Code and GitOps | 0/5 |
 | 18 | 086–090 | Scaling High Availability and FinOps | 0/5 |
@@ -279,4 +279,7 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 072 — Advanced SLO Design, Multiwindow Burn-Rate Alerting and Prometheus Recording Rules](part-15-slis-slos-error-budgets/072-advanced-slo-design-multiwindow-burn-rate-alerting-prometheus-recording-rules.md)
 - [Chapter 072 — Companion lab](part-15-slis-slos-error-budgets/labs/072-advanced-slo-design-multiwindow-burn-rate-alerting-prometheus-recording-rules-lab.md)
 
-**Next:** Chapter 073 — SLO Dashboards, Error Budget Policies and Reliability Governance.
+- [Chapter 073 — SLO Dashboards, Error Budget Policies and Reliability Governance](part-15-slis-slos-error-budgets/073-slo-dashboards-error-budget-policies-reliability-governance.md)
+- [Chapter 073 — Companion lab](part-15-slis-slos-error-budgets/labs/073-slo-dashboards-error-budget-policies-reliability-governance-lab.md)
+
+**Next:** Chapter 074 — SLO-Based Incident Prioritization, Error Budget Forecasting and Reliability Reviews.
