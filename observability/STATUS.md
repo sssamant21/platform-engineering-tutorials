@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 89 / 100 chapters (89%) · 20 parts · Part 18: 4/5**
+**Progress: 90 / 100 chapters (90%) · 20 parts · Part 18: 5/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -21,12 +21,12 @@
 | 15 — SLIs SLOs and Error Budgets | 071–075 | 5 | 5 | Complete |
 | 16 — Incident Response and Troubleshooting | 076–080 | 5 | 5 | Complete |
 | 17 — Observability as Code and GitOps | 081–085 | 5 | 5 | Complete |
-| 18 — Scaling High Availability and FinOps | 086–090 | 4 | 5 | In progress |
+| 18 — Scaling High Availability and FinOps | 086–090 | 5 | 5 | Complete |
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–089 and companion labs. Parts 01–17 complete (5/5 each); Part 18 in progress (4/5).
+**Published:** Chapters 001–090 and companion labs. Parts 01–18 complete (5/5 each).
 
-**Next:** Chapter 090 — Enterprise Observability Scaling, High Availability and FinOps Reliability Acceptance Capstone.
+**Next:** Chapter 091 — Enterprise Observability Security Architecture, Identity, RBAC and Tenant Isolation (Part 19).
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
