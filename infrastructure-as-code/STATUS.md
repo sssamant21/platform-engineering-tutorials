@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 91 / 120 chapters (75.83%)  
+**Progress:** 92 / 120 chapters (76.67%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -106,7 +106,8 @@
 **Chapter 089:** Published; continuous compliance, drift classification, safe remediation and audit automation, 92 tests authored; execution and native cloud/DBRE acceptance pending.  
 **Chapter 090:** Published; final testing, compliance, drift and audit reliability capstone, 125 tests authored; execution and native cloud/DBRE/audit acceptance pending.  
 **Chapter 091:** Published; IaC observability architecture, telemetry, SLOs and dashboards, 101 tests authored; execution and native OTLP/Prometheus/DBRE acceptance pending.  
-**Next:** Chapter 092 — IaC Drift Observability, State Reconciliation, Change Intelligence and Automated Detection (proposed title).
+**Chapter 092:** Published; three-way drift observability, change intelligence and safe reconciliation, 112 tests authored; execution and native cloud/DBRE acceptance pending.  
+**Next:** Chapter 093 — IaC Incident Correlation, Root Cause Analysis, Change Failure Detection and Reliability Engineering (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -201,6 +202,7 @@
 | 089 | IaC Continuous Compliance Monitoring, Drift Detection, Remediation and Audit Automation | Published |
 | 090 | Enterprise IaC Testing, Compliance, Drift and Audit Reliability Capstone | Published |
 | 091 | IaC Observability Architecture, Telemetry, SLOs and Operational Dashboards | Published |
+| 092 | IaC Drift Observability, State Reconciliation, Change Intelligence and Automated Detection | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -994,7 +996,7 @@
 - [x] Chapter publication and master index; Part 18 publication complete (5/5)
 - [ ] Offline execution, native IaC/policy/cloud integration, actual DB restore, independent audit and production acceptance
 
-**Part 19:** 1/5 chapters published — Observability and Drift (native integration and acceptance pending).
+**Part 19:** 2/5 chapters published — Observability and Drift (native integration and acceptance pending).
 
 ## Chapter 091 acceptance — IaC observability architecture
 - [x] OpenTelemetry, Prometheus, Grafana, Terraform/OpenTofu, AWS/Azure/GCP, Kubernetes/GitOps and DBRE theory
@@ -1003,3 +1005,11 @@
 - [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 19 at 1/5
 - [ ] Offline execution, native OTLP/Prometheus/Grafana telemetry, alert routing, real DBRE restore and production acceptance
+
+## Chapter 092 acceptance — IaC drift observability and change intelligence
+- [x] Terraform/OpenTofu, Pulumi, CloudFormation, Bicep, AWS/Azure/GCP, Kubernetes/GitOps and DBRE theory
+- [x] Offline drift gate, three-way snapshot comparison, change intelligence and remediation safety labs
+- [x] 112 Python unit tests authored; not executed
+- [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 19 at 2/5
+- [ ] Offline execution, native cloud/IaC/GitOps drift detection, actual DBRE restore, independent audit and production acceptance
