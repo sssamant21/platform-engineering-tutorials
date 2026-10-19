@@ -1,0 +1,10 @@
+---
+- name: Chapter 079 local syntax-only lab
+  hosts: localhost
+  connection: local
+  gather_facts: false
+  become: false
+  tasks:
+    - name: Show safe lab marker
+      ansible.builtin.debug:
+        msg: "No host mutation or cloud access"
