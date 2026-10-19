@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 93 / 120 chapters (77.50%)  
+**Progress:** 94 / 120 chapters (78.33%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -108,7 +108,8 @@
 **Chapter 091:** Published; IaC observability architecture, telemetry, SLOs and dashboards, 101 tests authored; execution and native OTLP/Prometheus/DBRE acceptance pending.  
 **Chapter 092:** Published; three-way drift observability, change intelligence and safe reconciliation, 112 tests authored; execution and native cloud/DBRE acceptance pending.  
 **Chapter 093:** Published; incident correlation, RCA hypotheses, change failure metrics and reliability, 103 tests authored; execution and native cloud/DBRE acceptance pending.  
-**Next:** Chapter 094 — IaC SLO Engineering, Error Budgets, Alerting, Incident Response and Automated Reliability Controls (proposed title).
+**Chapter 094:** Published; SLO engineering, error budgets, burn-rate alerts and safe reliability controls, 113 tests authored; execution and native Prometheus/Alertmanager/DBRE acceptance pending.  
+**Next:** Chapter 095 — Enterprise IaC Observability, Drift, SLO and Incident Response Reliability Acceptance Capstone (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -205,6 +206,7 @@
 | 091 | IaC Observability Architecture, Telemetry, SLOs and Operational Dashboards | Published |
 | 092 | IaC Drift Observability, State Reconciliation, Change Intelligence and Automated Detection | Published |
 | 093 | IaC Incident Correlation, Root Cause Analysis, Change Failure Detection and Reliability Engineering | Published |
+| 094 | IaC SLO Engineering, Error Budgets, Alerting, Incident Response and Automated Reliability Controls | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -998,7 +1000,7 @@
 - [x] Chapter publication and master index; Part 18 publication complete (5/5)
 - [ ] Offline execution, native IaC/policy/cloud integration, actual DB restore, independent audit and production acceptance
 
-**Part 19:** 3/5 chapters published — Observability and Drift (native integration and acceptance pending).
+**Part 19:** 4/5 chapters published — Observability and Drift (native integration and acceptance pending).
 
 ## Chapter 091 acceptance — IaC observability architecture
 - [x] OpenTelemetry, Prometheus, Grafana, Terraform/OpenTofu, AWS/Azure/GCP, Kubernetes/GitOps and DBRE theory
@@ -1023,3 +1025,11 @@
 - [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
 - [x] Chapter and master index publication; Part 19 at 3/5
 - [ ] Offline execution, native cloud/IaC/GitOps incident correlation, actual DBRE restore, independent audit and production acceptance
+
+## Chapter 094 acceptance — IaC SLO engineering and reliability controls
+- [x] Terraform/OpenTofu, Pulumi, CloudFormation, Bicep, AWS/Azure/GCP, Kubernetes/GitOps and DBRE theory
+- [x] Offline SLO assurance, error-budget math, multi-window alerting and change-gate labs
+- [x] 113 Python unit tests authored; not executed
+- [x] Sixty SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 19 at 4/5
+- [ ] Offline execution, native Prometheus/Alertmanager paging, cloud/GitOps integration, real DBRE restore and independent production acceptance
