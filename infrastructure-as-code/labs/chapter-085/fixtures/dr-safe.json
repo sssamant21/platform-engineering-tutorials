@@ -1,0 +1,8 @@
+{
+  "backup_isolated": true,
+  "restore_succeeded": true,
+  "kms_decrypt_verified": true,
+  "replication_healthy": true,
+  "rpo_minutes": 5,
+  "rto_minutes": 30
+}
