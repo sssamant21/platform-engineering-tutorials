@@ -1,0 +1,16 @@
+stages: [validate, integration, deploy]
+offline_integration:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-087/run-preflight.sh
+native_integration_disabled:
+  stage: integration
+  when: manual
+  script:
+    - echo 'NOT ENABLED: require isolated account, budget, TTL, Terratest, Molecule, DB restore and teardown'
+deploy_disabled:
+  stage: deploy
+  when: manual
+  script:
+    - echo 'NO APPLY: independent SRE/DBRE/security approval required'
