@@ -252,7 +252,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 100 — Integrated SRE/DBRE Production Capstone Lab](10-kubernetes-cloud-platform-engineering/labs/100-cloud-native-platform-engineering-production-capstone-lab.md)
 - [Chapter 100 — Executable Capstone and 51 Unit Tests](10-kubernetes-cloud-platform-engineering/labs/100/README.md)
 
-## Part 11 — Production Security and Performance (4/10 published)
+## Part 11 — Production Security and Performance (5/10 published)
 
 - [Chapter 101 — Python Production Security Architecture and Secure Coding](11-production-security-performance/101-python-production-security-architecture-secure-coding.md)
 - [Chapter 101 — SRE/DBRE Secure Coding Lab](11-production-security-performance/labs/101-production-security-secure-coding-sre-dbre-lab.md)
@@ -269,3 +269,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 104 — Python Security Auditing, Compliance Automation and Policy-as-Code](11-production-security-performance/104-python-security-auditing-compliance-automation-policy-as-code.md)
 - [Chapter 104 — Security Auditing and Compliance SRE/DBRE Lab](11-production-security-performance/labs/104-security-auditing-compliance-policy-as-code-sre-dbre-lab.md)
 - [Chapter 104 — Executable Project and Automated Tests](11-production-security-performance/labs/104/README.md)
+
+- [Chapter 105 — Python Secure Software Supply Chain and Dependency Risk Automation](11-production-security-performance/105-python-secure-software-supply-chain-dependency-risk-automation.md)
+- [Chapter 105 — Secure Supply Chain SRE/DBRE Lab](11-production-security-performance/labs/105-secure-software-supply-chain-dependency-risk-sre-dbre-lab.md)
+- [Chapter 105 — Executable Project and Automated Tests](11-production-security-performance/labs/105/README.md)
