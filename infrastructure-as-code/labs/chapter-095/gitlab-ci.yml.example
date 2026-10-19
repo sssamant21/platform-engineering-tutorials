@@ -1,0 +1,11 @@
+stages: [validate, native-acceptance]
+offline_capstone:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-095/run-preflight.sh
+native_acceptance_disabled:
+  stage: native-acceptance
+  when: manual
+  script:
+    - echo 'NOT ENABLED: real OTel/Prometheus/Alertmanager, drift, provider audit, DBRE restore and independent sign-off required'
