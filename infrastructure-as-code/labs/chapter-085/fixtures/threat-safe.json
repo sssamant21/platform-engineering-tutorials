@@ -1,0 +1,11 @@
+[
+  {
+    "category": "tampering",
+    "asset": "iac-state",
+    "owner": "SRE",
+    "mitigation": "versioned encrypted backend",
+    "likelihood": 4,
+    "impact": 4,
+    "status": "mitigated"
+  }
+]
