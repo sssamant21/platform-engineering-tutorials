@@ -1,0 +1,11 @@
+name: iac-081-offline-security
+on:
+  pull_request:
+jobs:
+  offline-security:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4 # production must pin immutable commit
+      - run: bash infrastructure-as-code/labs/chapter-081/run-preflight.sh
