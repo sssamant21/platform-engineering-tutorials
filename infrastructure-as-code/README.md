@@ -207,6 +207,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 086 executable labs and tests](labs/chapter-086/)
 - [087 — IaC Integration Testing, Ephemeral Environments, Terratest, Molecule and Cloud Resource Validation](chapters/087-iac-integration-testing-ephemeral-environments-terratest-molecule-cloud-resource-validation.md)
 - [Chapter 087 executable labs and tests](labs/chapter-087/)
+- [088 — IaC Compliance Testing, Audit Evidence, Control Mapping and Continuous Assurance](chapters/088-iac-compliance-testing-audit-evidence-control-mapping-continuous-assurance.md)
+- [Chapter 088 executable labs and tests](labs/chapter-088/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -216,4 +218,4 @@ Part 16 complete (076–080 published; production acceptance pending).
 
 Part 17 publication complete (081–085 published; security and operational acceptance pending).
 
-Part 18 underway (086–087 published; testing and operational acceptance pending).
+Part 18 underway (086–088 published; testing and operational acceptance pending).
