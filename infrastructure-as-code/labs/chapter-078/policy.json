@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "allowed_environment": "lab",
+  "required_tools": [
+    "pulumi",
+    "cloudformation",
+    "bicep"
+  ],
+  "targets": {
+    "pulumi": "offline-dev-stack",
+    "cloudformation": "offline-aws-stack",
+    "bicep": "offline-azure-subscription"
+  },
+  "required_controls": [
+    "signed_source",
+    "pinned_toolchain",
+    "oidc_scoped",
+    "least_privilege",
+    "preview_reviewed",
+    "policy_enforced",
+    "approval_signed",
+    "preview_digest_verified",
+    "commit_binding_verified",
+    "target_binding_verified",
+    "no_destroy",
+    "no_stateful_replacement",
+    "state_backup_verified",
+    "db_backup_verified",
+    "restore_rehearsed",
+    "dbre_approved",
+    "canary_approved",
+    "slo_healthy",
+    "audit_enabled",
+    "gitops_ownership_reviewed"
+  ],
+  "require_exact_controls": true
+}
