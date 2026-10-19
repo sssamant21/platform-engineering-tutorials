@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 85 / 100 chapters (85%) · 20 parts · Part 17: 5/5**
+**Progress: 86 / 100 chapters (86%) · 20 parts · Part 18: 1/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -21,12 +21,12 @@
 | 15 — SLIs SLOs and Error Budgets | 071–075 | 5 | 5 | Complete |
 | 16 — Incident Response and Troubleshooting | 076–080 | 5 | 5 | Complete |
 | 17 — Observability as Code and GitOps | 081–085 | 5 | 5 | Complete |
-| 18 — Scaling High Availability and FinOps | 086–090 | 0 | 5 | Planned |
+| 18 — Scaling High Availability and FinOps | 086–090 | 1 | 5 | In progress |
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–085 and companion labs. Parts 01–17 complete (5/5 each).
+**Published:** Chapters 001–086 and companion labs. Parts 01–17 complete (5/5 each); Part 18 in progress (1/5).
 
-**Next:** Chapter 086 — Enterprise Observability Scale, Capacity Planning and High Availability Architecture (Part 18).
+**Next:** Chapter 087 — Prometheus and Alertmanager High Availability, Remote Write and Long-Term Storage.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
