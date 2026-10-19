@@ -1,0 +1,2 @@
+config:
+  iac-ch073-pulumi:environment: lab
