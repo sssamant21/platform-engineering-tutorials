@@ -1,6 +1,6 @@
 # Enterprise Observability Engineering — SRE/DBRE Production Tutorials
 
-**100 chapters · 20 parts · 74/100 published**
+**100 chapters · 20 parts · 75/100 published**
 
 Hands-on production-oriented observability curriculum covering metrics, logs, traces, profiles, Prometheus, Grafana, OpenTelemetry, Kubernetes, databases, SLOs, incident response, security, cost and platform reliability.
 
@@ -22,7 +22,7 @@ Hands-on production-oriented observability curriculum covering metrics, logs, tr
 | 12 | 056–060 | Kubernetes EKS AKS and GKE Observability | 5/5 |
 | 13 | 061–065 | Database and Data Platform Observability | 5/5 |
 | 14 | 066–070 | Application Performance Monitoring | 5/5 |
-| 15 | 071–075 | SLIs SLOs and Error Budgets | 4/5 |
+| 15 | 071–075 | SLIs SLOs and Error Budgets | 5/5 |
 | 16 | 076–080 | Incident Response and Troubleshooting | 0/5 |
 | 17 | 081–085 | Observability as Code and GitOps | 0/5 |
 | 18 | 086–090 | Scaling High Availability and FinOps | 0/5 |
@@ -285,4 +285,9 @@ Each chapter includes detailed theory, architecture, SRE/DBRE production scenari
 - [Chapter 074 — SLO-Based Incident Prioritization, Error Budget Forecasting and Reliability Reviews](part-15-slis-slos-error-budgets/074-slo-based-incident-prioritization-error-budget-forecasting-reliability-reviews.md)
 - [Chapter 074 — Companion lab](part-15-slis-slos-error-budgets/labs/074-slo-based-incident-prioritization-error-budget-forecasting-reliability-reviews-lab.md)
 
-**Next:** Chapter 075 — Enterprise SLI/SLO and Error Budget Reliability Acceptance Capstone.
+- [Chapter 075 — Enterprise SLI/SLO and Error Budget Reliability Acceptance Capstone](part-15-slis-slos-error-budgets/075-enterprise-sli-slo-error-budget-reliability-acceptance-capstone.md)
+- [Chapter 075 — Companion lab](part-15-slis-slos-error-budgets/labs/075-enterprise-sli-slo-error-budget-reliability-acceptance-capstone-lab.md)
+
+**Part 15 complete: 5/5 chapters published.**
+
+**Next:** Chapter 076 — Enterprise Incident Response Architecture, Severity Models and On-Call Operations (Part 16).
