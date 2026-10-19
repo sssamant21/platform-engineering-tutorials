@@ -252,8 +252,12 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 100 — Integrated SRE/DBRE Production Capstone Lab](10-kubernetes-cloud-platform-engineering/labs/100-cloud-native-platform-engineering-production-capstone-lab.md)
 - [Chapter 100 — Executable Capstone and 51 Unit Tests](10-kubernetes-cloud-platform-engineering/labs/100/README.md)
 
-## Part 11 — Production Security and Performance (1/10 published)
+## Part 11 — Production Security and Performance (2/10 published)
 
 - [Chapter 101 — Python Production Security Architecture and Secure Coding](11-production-security-performance/101-python-production-security-architecture-secure-coding.md)
 - [Chapter 101 — SRE/DBRE Secure Coding Lab](11-production-security-performance/labs/101-production-security-secure-coding-sre-dbre-lab.md)
 - [Chapter 101 — Executable Project and Automated Tests](11-production-security-performance/labs/101/README.md)
+
+- [Chapter 102 — Python Identity, Authentication and Authorization for Production Systems](11-production-security-performance/102-python-identity-authentication-authorization-production-systems.md)
+- [Chapter 102 — Identity and Authorization SRE/DBRE Lab](11-production-security-performance/labs/102-identity-authentication-authorization-sre-dbre-lab.md)
+- [Chapter 102 — Executable Project and Automated Tests](11-production-security-performance/labs/102/README.md)
