@@ -3,12 +3,12 @@
 Last updated: 2026-10-19
 
 - Planned: **120 chapters**
-- Published: **117 chapters**
-- Remaining: **3 chapters**
-- Published labs: **117**
-- Next: **118 — Enterprise Python Multi-Region High Availability, Failover and Recovery Capstone**
+- Published: **118 chapters**
+- Remaining: **2 chapters**
+- Published labs: **118**
+- Next: **119 — Enterprise Python Production Readiness, Chaos Engineering and Reliability Acceptance Capstone**
 
-A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–117 contain labs and validation checklists; execution on the learner's machine is still required.
+A chapter is complete only after its tutorial, hands-on lab and validation steps are published. Chapters 001–118 contain labs and validation checklists; execution on the learner's machine is still required.
 
 
 ## Completed parts
@@ -213,7 +213,7 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 
 - Chapter 110 — [Python Production Security, Performance and Reliability Capstone](11-production-security-performance/110-python-production-security-performance-reliability-capstone.md) · [SRE/DBRE lab](11-production-security-performance/labs/110-production-security-performance-reliability-capstone-sre-dbre-lab.md) · [Executable project](11-production-security-performance/labs/110/README.md). Integrates Chapters 101–109: identity, secrets, compliance, supply-chain metadata, p99 profiling budgets, concurrency limits, SLOs, retries, redaction and advisory release gates. Automated tests published; exact committed execution, CI, security review and production integration validation pending. Part 11 complete.
 
-- Part 12 — Enterprise Capstone Projects: **7/10** chapters published; 3 remaining.
+- Part 12 — Enterprise Capstone Projects: **8/10** chapters published; 2 remaining.
 
 - Chapter 111 — [Enterprise Python SRE/DBRE Capstone Architecture and Project Foundations](12-enterprise-capstones/111-enterprise-python-sre-dbre-capstone-architecture-project-foundations.md) · [Complete SRE/DBRE lab](12-enterprise-capstones/labs/111-enterprise-python-architecture-project-foundations-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/111/README.md). Architecture, API/worker boundaries, PostgreSQL/Elasticsearch/MongoDB/Redis/Kafka/Kubernetes patterns, security, capacity, SLOs, offline simulator and automated tests. Exact committed execution, CI, live integration and production acceptance pending.
 
@@ -228,3 +228,5 @@ Published: **10/10** (Chapters 091–100; Part 10 complete). Chapter 091 — [Ku
 - Chapter 116 — [Enterprise Python Security, Compliance and Disaster Recovery Operations](12-enterprise-capstones/116-enterprise-python-security-compliance-disaster-recovery-operations.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/116-enterprise-security-compliance-disaster-recovery-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/116/README.md). IAM/RBAC, workload identity, secrets metadata, encryption, supply chain, compliance evidence, backup verification, RPO/RTO, disaster recovery gates, automated tests and runbooks. Exact committed execution, CI, live restore drills and production acceptance pending.
 
 - Chapter 117 — [Enterprise Python Capacity Planning, Performance Engineering and FinOps Capstone](12-enterprise-capstones/117-enterprise-python-capacity-planning-performance-finops-capstone.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/117-capacity-performance-finops-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/117/README.md). Python profiling, workload/CPU/memory/IOPS forecasting, Kubernetes scaling, database connections/storage, load-test SLOs, FinOps attribution, automated tests and incident runbooks. Exact committed execution, CI, live load testing and production acceptance pending.
+
+- Chapter 118 — [Enterprise Python Multi-Region High Availability, Failover and Recovery Capstone](12-enterprise-capstones/118-enterprise-python-multi-region-high-availability-failover-recovery-capstone.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/118-multi-region-ha-failover-recovery-sre-dbre-lab.md) · [Executable project](12-enterprise-capstones/labs/118/README.md). Multi-region HA, leader/quorum/fencing concepts, split-brain prevention, PostgreSQL/MongoDB/Kafka/Elasticsearch/Redis/Snowflake DR, RPO/RTO, synthetic chaos, automated tests and runbooks. Exact committed execution, CI, staging DR drills and production acceptance pending.
