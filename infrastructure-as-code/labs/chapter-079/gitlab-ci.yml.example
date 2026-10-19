@@ -1,0 +1,16 @@
+stages: [validate, preview, promote]
+offline_validate:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-079/run-preflight.sh
+preview_disabled:
+  stage: preview
+  when: manual
+  script:
+    - echo "NOT ENABLED: verify inventory, kube-context, GitOps ownership and dry-run"
+promote_disabled:
+  stage: promote
+  when: manual
+  script:
+    - echo "NO DEPLOYMENT: require OIDC, protected approvals, backups and SLO"
