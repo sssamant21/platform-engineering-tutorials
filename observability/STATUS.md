@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 63 / 100 chapters (63%) · 20 parts · Part 13: 3/5**
+**Progress: 64 / 100 chapters (64%) · 20 parts · Part 13: 4/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -16,7 +16,7 @@
 | 10 — OpenTelemetry Architecture and Instrumentation | 046–050 | 5 | 5 | Complete |
 | 11 — Distributed Tracing with Jaeger and Tempo | 051–055 | 5 | 5 | Complete |
 | 12 — Kubernetes EKS AKS and GKE Observability | 056–060 | 5 | 5 | Complete |
-| 13 — Database and Data Platform Observability | 061–065 | 3 | 5 | In progress |
+| 13 — Database and Data Platform Observability | 061–065 | 4 | 5 | In progress |
 | 14 — Application Performance Monitoring | 066–070 | 0 | 5 | Planned |
 | 15 — SLIs SLOs and Error Budgets | 071–075 | 0 | 5 | Planned |
 | 16 — Incident Response and Troubleshooting | 076–080 | 0 | 5 | Planned |
@@ -25,8 +25,8 @@
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–063 and companion labs. Parts 01–12 complete (5/5 each); Part 13 in progress (3/5).
+**Published:** Chapters 001–064 and companion labs. Parts 01–12 complete (5/5 each); Part 13 in progress (4/5).
 
-**Next:** Chapter 064 — Kafka/MSK and Snowflake Observability, Consumer Lag, Query Performance and Data Freshness.
+**Next:** Chapter 065 — Enterprise Database and Data Platform Observability, Incident Response and Reliability Capstone.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
