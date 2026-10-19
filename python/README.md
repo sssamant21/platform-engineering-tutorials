@@ -290,8 +290,10 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 
 - [Chapter 110 — Production Security, Performance and Reliability Capstone](11-production-security-performance/110-python-production-security-performance-reliability-capstone.md) · [SRE/DBRE capstone lab](11-production-security-performance/labs/110-production-security-performance-reliability-capstone-sre-dbre-lab.md) · [Executable project and tests](11-production-security-performance/labs/110/README.md)
 
-## Part 12 — Enterprise Capstone Projects (1/10 published)
+## Part 12 — Enterprise Capstone Projects (2/10 published)
 
 - [Chapter 111 — Enterprise Python SRE/DBRE Capstone Architecture and Project Foundations](12-enterprise-capstones/111-enterprise-python-sre-dbre-capstone-architecture-project-foundations.md)
 - [Chapter 111 — Complete Architecture SRE/DBRE Lab](12-enterprise-capstones/labs/111-enterprise-python-architecture-project-foundations-sre-dbre-lab.md)
 - [Chapter 111 — Executable Architecture Project and Tests](12-enterprise-capstones/labs/111/README.md)
+
+- [Chapter 112 — Enterprise Python API Services, Contracts and Data Access Integration](12-enterprise-capstones/112-enterprise-python-api-services-contracts-data-access-integration.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/112-enterprise-python-api-contracts-data-access-sre-dbre-lab.md) · [Executable project and tests](12-enterprise-capstones/labs/112/README.md)
