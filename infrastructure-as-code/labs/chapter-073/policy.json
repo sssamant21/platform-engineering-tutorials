@@ -1,0 +1,60 @@
+{
+  "allowed_environments": [
+    "lab",
+    "dev"
+  ],
+  "required_labels": [
+    "environment",
+    "managed-by",
+    "owner"
+  ],
+  "required_controls": {
+    "architecture": [
+      "project_reviewed",
+      "stack_identity_verified",
+      "backend_identity_verified",
+      "owner_verified",
+      "provider_target_verified"
+    ],
+    "secrets": [
+      "encryption_enabled",
+      "secret_provider_reviewed",
+      "plaintext_secrets_denied",
+      "key_recovery_reviewed",
+      "log_redaction_reviewed"
+    ],
+    "state": [
+      "checkpoint_backup_verified",
+      "backend_access_scoped",
+      "concurrency_controlled",
+      "restore_rehearsed",
+      "state_import_approved",
+      "destructive_import"
+    ],
+    "operations": [
+      "preview_reviewed",
+      "refresh_reviewed",
+      "drift_reviewed",
+      "canary_approved",
+      "slo_reviewed"
+    ],
+    "dbre": [
+      "backup_verified",
+      "pitr_verified",
+      "dbre_approved",
+      "quorum_reviewed",
+      "rpo_rto_reviewed"
+    ]
+  },
+  "forbidden_controls": {
+    "state": [
+      "destructive_import"
+    ]
+  },
+  "require_ticket": true,
+  "deny_prod_targets": true,
+  "require_stack_identity": true,
+  "require_secret_encryption": true,
+  "require_checkpoint_backup": true,
+  "require_dbre_approval": true
+}
