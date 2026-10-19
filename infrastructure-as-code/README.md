@@ -231,6 +231,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 098 executable labs and tests](labs/chapter-098/)
 - [099 — IaC Cost Optimization, Rightsizing, Commitments and Reliability-Aware FinOps Engineering](chapters/099-iac-cost-optimization-rightsizing-commitments-reliability-aware-finops-engineering.md)
 - [Chapter 099 executable labs and tests](labs/chapter-099/)
+- [100 — Enterprise IaC FinOps and Reliability Acceptance Capstone](chapters/100-enterprise-iac-finops-reliability-acceptance-capstone.md)
+- [Chapter 100 executable labs and tests](labs/chapter-100/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -244,4 +246,4 @@ Part 18 complete: Chapters 086–090 published; native testing and production ac
 
 Part 19 complete: Chapters 091–095 published (5/5); native observability, drift, SLO, incident response and DBRE operational acceptance pending.
 
-Part 20 — FinOps underway: Chapters 096–099 published (4/5); native cloud billing, commitments, chargeback reconciliation, rightsizing, lab execution and SRE/DBRE acceptance pending.
+Part 20 — FinOps publication complete: Chapters 096–100 published (5/5); native cloud billing, commitments, chargeback reconciliation, rightsizing, lab execution and SRE/DBRE acceptance pending.
