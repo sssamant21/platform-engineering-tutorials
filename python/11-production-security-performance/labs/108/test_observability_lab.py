@@ -1,0 +1,73 @@
+import json,math,unittest
+from dataclasses import replace
+from contextlib import redirect_stdout
+from io import StringIO
+from observability_lab import TelemetryError,Span,traces,percentile,red,use,sli,error_budget,burn_rate,sanitize,log_event,fingerprint,incident,demo,main
+class Tests(unittest.TestCase):
+    def setUp(self):
+        self.root=Span("a"*32,"1"*16,None,"api","request",10,"ok")
+        self.child=Span("a"*32,"2"*16,"1"*16,"postgres","query",8,"error")
+    def reject(self,fn):
+        with self.assertRaises(TelemetryError):fn()
+    def test_valid_span(self):self.root.validate()
+    def test_invalid_trace(self):self.reject(lambda:replace(self.root,trace_id="bad").validate())
+    def test_invalid_span(self):self.reject(lambda:replace(self.root,span_id="bad").validate())
+    def test_self_parent(self):self.reject(lambda:replace(self.root,parent_span_id="1"*16).validate())
+    def test_invalid_duration(self):self.reject(lambda:replace(self.root,duration_ms=-1).validate())
+    def test_nan_duration(self):self.reject(lambda:replace(self.root,duration_ms=math.nan).validate())
+    def test_status(self):self.reject(lambda:replace(self.root,status="unknown").validate())
+    def test_service(self):self.reject(lambda:replace(self.root,service="../bad").validate())
+    def test_trace_count(self):self.assertEqual(traces([self.root,self.child])["spans"],2)
+    def test_trace_error(self):self.assertEqual(traces([self.root,self.child])["errors"],1)
+    def test_duplicate(self):self.reject(lambda:traces([self.root,self.root]))
+    def test_orphan(self):self.reject(lambda:traces([self.child]))
+    def test_cycle(self):
+        a=replace(self.root,parent_span_id="2"*16)
+        self.reject(lambda:traces([a,self.child]))
+    def test_p50(self):self.assertEqual(percentile([1,2,3],50),2)
+    def test_p95(self):self.assertAlmostEqual(percentile([0,100],95),95)
+    def test_p99(self):self.assertAlmostEqual(percentile([0,100],99),99)
+    def test_empty_samples(self):self.reject(lambda:percentile([],50))
+    def test_nan_samples(self):self.reject(lambda:percentile([math.nan],50))
+    def test_invalid_percentile(self):self.reject(lambda:percentile([1],101))
+    def test_red(self):self.assertEqual(red(2,1,[10,20],10)["error_ratio"],.5)
+    def test_red_zero(self):self.assertIsNone(red(0,0,[],10)["p99_ms"])
+    def test_red_invalid(self):self.reject(lambda:red(2,3,[1,2],10))
+    def test_red_incomplete(self):self.reject(lambda:red(2,0,[1],10))
+    def test_red_window(self):self.reject(lambda:red(1,0,[1],0))
+    def test_use(self):self.assertEqual(use(.8,2,.1)["saturation"],2)
+    def test_use_invalid(self):self.reject(lambda:use(1.2,2,.1))
+    def test_sli(self):self.assertEqual(sli(99,100),.99)
+    def test_sli_zero(self):self.assertIsNone(sli(0,0))
+    def test_sli_invalid(self):self.reject(lambda:sli(3,2))
+    def test_budget_pass(self):self.assertEqual(error_budget(100,.99,100)["status"],"within-budget")
+    def test_budget_breach(self):self.assertEqual(error_budget(100,.99,95)["status"],"breached")
+    def test_budget_zero(self):self.assertEqual(error_budget(0,.99,0)["status"],"no-traffic")
+    def test_budget_target(self):self.reject(lambda:error_budget(100,1,90))
+    def test_burn_high(self):self.assertEqual(burn_rate(20,100,20,100,.99)["status"],"investigate")
+    def test_burn_low(self):self.assertEqual(burn_rate(0,100,0,100,.99)["status"],"observe")
+    def test_burn_empty(self):self.assertEqual(burn_rate(0,0,0,100,.99)["status"],"insufficient-data")
+    def test_burn_invalid(self):self.reject(lambda:burn_rate(2,1,0,100,.99))
+    def test_redaction(self):self.assertEqual(sanitize({"password":"abc"})["password"],"[REDACTED]")
+    def test_token_redaction(self):self.assertEqual(sanitize({"api_key":"abc"})["api_key"],"[REDACTED]")
+    def test_log(self):self.assertEqual(log_event("api","INFO","ok",{"trace_id":"a"})["level"],"INFO")
+    def test_log_invalid(self):self.reject(lambda:log_event("api","DEBUG","ok",{}))
+    def test_log_bad_value(self):self.reject(lambda:sanitize({"x":[]}))
+    def test_fingerprint(self):self.assertEqual(fingerprint({"b":2,"a":1}),fingerprint({"a":1,"b":2}))
+    def test_fingerprint_tamper(self):self.assertNotEqual(fingerprint({"x":1}),fingerprint({"x":2}))
+    def test_incident_page(self):
+        r=red(2,1,[10,20],10);b=error_budget(2,.99,1)
+        self.assertEqual(incident(r,b)["status"],"page")
+    def test_incident_partial(self):
+        self.assertEqual(incident(red(2,1,[10,20],10),error_budget(2,.99,1),False)["status"],"unknown")
+    def test_no_network(self):self.assertEqual(demo()["network_calls"],0)
+    def test_no_writes(self):self.assertEqual(demo()["mutations"],0)
+    def test_cli(self):
+        out=StringIO()
+        with redirect_stdout(out):self.assertEqual(main(["--dry-run"]),0)
+        self.assertIn("traces",json.loads(out.getvalue()))
+    def test_partial_cli(self):
+        out=StringIO()
+        with redirect_stdout(out):main(["--partial"])
+        self.assertEqual(json.loads(out.getvalue())["incident"]["status"],"unknown")
+if __name__=="__main__":unittest.main()
