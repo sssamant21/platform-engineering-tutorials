@@ -1,6 +1,6 @@
 # Observability Curriculum Status
 
-**Progress: 81 / 100 chapters (81%) · 20 parts · Part 17: 1/5**
+**Progress: 82 / 100 chapters (82%) · 20 parts · Part 17: 2/5**
 
 | Part | Chapters | Published | Total | Status |
 |---|---|---:|---:|---|
@@ -20,13 +20,13 @@
 | 14 — Application Performance Monitoring | 066–070 | 5 | 5 | Complete |
 | 15 — SLIs SLOs and Error Budgets | 071–075 | 5 | 5 | Complete |
 | 16 — Incident Response and Troubleshooting | 076–080 | 5 | 5 | Complete |
-| 17 — Observability as Code and GitOps | 081–085 | 1 | 5 | In progress |
+| 17 — Observability as Code and GitOps | 081–085 | 2 | 5 | In progress |
 | 18 — Scaling High Availability and FinOps | 086–090 | 0 | 5 | Planned |
 | 19 — Enterprise Security Governance and Reliability | 091–095 | 0 | 5 | Planned |
 | 20 — Final Production Observability Capstones | 096–100 | 0 | 5 | Planned |
 
-**Published:** Chapters 001–081 and companion labs. Parts 01–16 complete (5/5 each); Part 17 in progress (1/5).
+**Published:** Chapters 001–082 and companion labs. Parts 01–16 complete (5/5 each); Part 17 in progress (2/5).
 
-**Next:** Chapter 082 — Prometheus, Alertmanager and Grafana Configuration as Code.
+**Next:** Chapter 083 — OpenTelemetry, Loki and Tempo Pipelines as Code.
 
 **Verification:** Publication is verified by GitHub commits; no live production monitoring deployment or lab execution is claimed.
