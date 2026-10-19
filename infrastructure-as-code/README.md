@@ -241,6 +241,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 103 executable labs and tests](labs/chapter-103/)
 - [104 — IaC Disaster Recovery Automation, Chaos Engineering, Recovery Drills and Continuous Resilience Validation](chapters/104-iac-disaster-recovery-automation-chaos-engineering-recovery-drills-continuous-resilience-validation.md)
 - [Chapter 104 executable labs and tests](labs/chapter-104/)
+- [105 — Enterprise IaC Disaster Recovery Capstone](chapters/105-enterprise-iac-disaster-recovery-multi-region-resilience-operational-acceptance-capstone.md)
+- [Chapter 105 labs](labs/chapter-105/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -256,4 +258,4 @@ Part 19 complete: Chapters 091–095 published (5/5); native observability, drif
 
 Part 20 — FinOps publication complete: Chapters 096–100 published (5/5); native cloud billing, commitments, chargeback reconciliation, rightsizing, lab execution and SRE/DBRE acceptance pending.
 
-Part 21 — Disaster Recovery underway: Chapters 101–104 published (4/5); native recovery drills and independent SRE/DBRE acceptance pending.
+Part 21 — Disaster Recovery underway: Chapters 101–105 published (5/5); native recovery drills and independent SRE/DBRE acceptance pending.
