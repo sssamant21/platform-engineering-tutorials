@@ -1,0 +1,16 @@
+{
+  "panels": [
+    "pipeline",
+    "state",
+    "policy",
+    "drift",
+    "gitops",
+    "dbre",
+    "slo",
+    "audit"
+  ],
+  "owner": "sre-dbre",
+  "runbook": "runbook.md",
+  "freshness_minutes": 2,
+  "unknown_when_missing": true
+}
