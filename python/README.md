@@ -290,7 +290,7 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 
 - [Chapter 110 — Production Security, Performance and Reliability Capstone](11-production-security-performance/110-python-production-security-performance-reliability-capstone.md) · [SRE/DBRE capstone lab](11-production-security-performance/labs/110-production-security-performance-reliability-capstone-sre-dbre-lab.md) · [Executable project and tests](11-production-security-performance/labs/110/README.md)
 
-## Part 12 — Enterprise Capstone Projects (9/10 published)
+## Part 12 — Enterprise Capstone Projects (10/10 published — complete)
 
 - [Chapter 111 — Enterprise Python SRE/DBRE Capstone Architecture and Project Foundations](12-enterprise-capstones/111-enterprise-python-sre-dbre-capstone-architecture-project-foundations.md)
 - [Chapter 111 — Complete Architecture SRE/DBRE Lab](12-enterprise-capstones/labs/111-enterprise-python-architecture-project-foundations-sre-dbre-lab.md)
@@ -311,3 +311,9 @@ The Part 02 capstone combines JSONL streaming, validated schemas, tuple keys, co
 - [Chapter 118 — Enterprise Python Multi-Region High Availability, Failover and Recovery Capstone](12-enterprise-capstones/118-enterprise-python-multi-region-high-availability-failover-recovery-capstone.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/118-multi-region-ha-failover-recovery-sre-dbre-lab.md) · [Executable project and tests](12-enterprise-capstones/labs/118/README.md)
 
 - [Chapter 119 — Enterprise Python Production Readiness, Chaos Engineering and Reliability Acceptance Capstone](12-enterprise-capstones/119-enterprise-python-production-readiness-chaos-reliability-acceptance-capstone.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/119-production-readiness-chaos-reliability-acceptance-sre-dbre-lab.md) · [Executable project and tests](12-enterprise-capstones/labs/119/README.md)
+
+- [Chapter 120 — Enterprise Python Final SRE/DevOps/DBRE Capstone, Operational Assessment and Curriculum Completion](12-enterprise-capstones/120-enterprise-python-final-sre-devops-dbre-capstone-operational-assessment.md) · [SRE/DBRE lab](12-enterprise-capstones/labs/120-enterprise-final-platform-sre-dbre-assessment-lab.md) · [Executable project and tests](12-enterprise-capstones/labs/120/README.md)
+
+## Curriculum publication milestone — 120/120
+
+All 120 planned chapter numbers have reached the publication milestone. **This is not a claim of completed runtime validation.** Local execution of exact committed tests, CI, independent review of all repository links/paths, security reviews, staging integrations, performance/chaos drills, DR restoration and production acceptance remain separate work items. A README index spot-check found that Chapters 002–019 are not individually enumerated as `Chapter NNN` references in this master README; this does **not** prove those chapter files are absent. A full repository tree/link audit is still required before asserting all links are verified.
