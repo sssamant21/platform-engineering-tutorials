@@ -1,0 +1,26 @@
+{
+  "incident": {
+    "service": "payments",
+    "environment": "staging",
+    "dependency": "postgresql",
+    "onset": "2026-10-19T20:00:00Z"
+  },
+  "changes": [
+    {
+      "change_id": "CHG-093-A",
+      "service": "payments",
+      "environment": "staging",
+      "dependency": "postgresql",
+      "timestamp": "2026-10-19T19:55:00Z",
+      "evidence_complete": true
+    },
+    {
+      "change_id": "CHG-093-B",
+      "service": "unrelated",
+      "environment": "staging",
+      "dependency": "redis",
+      "timestamp": "2026-10-19T19:58:00Z",
+      "evidence_complete": false
+    }
+  ]
+}
