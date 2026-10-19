@@ -14,6 +14,7 @@ def validate(e,p):
     if not isinstance(e.get('ticket'),str) or not re.fullmatch(r'CHG-[0-9]{3,}-[A-Z0-9-]+',e['ticket']):errors.append('ticket invalid')
     if not isinstance(e.get('artifact_digest'),str) or not re.fullmatch(r'sha256:[0-9a-f]{64}',e['artifact_digest']):errors.append('digest invalid')
     for k,limit in LIMITS.items():
+        if not k.startswith('max_'):continue
         field=k[4:];v=e.get(field)
         if type(v) not in (int,float) or not 0<=v<=limit:errors.append(field+' invalid or exceeds limit')
     for k,limit in (('native_assertions',5),('negative_tests',10)):
