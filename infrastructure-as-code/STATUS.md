@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 80 / 120 chapters (66.67%)  
+**Progress:** 81 / 120 chapters (67.50%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -95,7 +95,8 @@
 **Chapter 078:** Published; offline multi-tool governance gate and promotion simulator, 55 tests authored; execution, cloud integration and operational acceptance pending.  
 **Chapter 079:** Published; Ansible/Kubernetes/GitOps offline governance gate and promotion simulator, 57 tests authored; execution, cluster integration and operational acceptance pending.  
 **Chapter 080:** Published; enterprise IaC CI/CD/DR/GitOps capstone, 84 tests authored; offline execution, native integration and operational acceptance pending.  
-**Next:** Chapter 081 — Infrastructure as Code Security Foundations, Threat Modeling, Identity and Secrets Management (proposed title; begins Part 17).
+**Chapter 081:** Published; STRIDE threat modeling, identity, secrets and offline security labs, 74 tests authored; execution and production security acceptance pending.  
+**Next:** Chapter 082 — IaC Policy as Code, OPA/Rego, Sentinel and Enterprise Guardrails (proposed title).
 
 | Chapter | Title | Status |
 |---|---|---|
@@ -179,6 +180,7 @@
 | 078 | Pulumi, CloudFormation and Bicep CI/CD Pipelines, Policy Gates and Safe Deployment Promotion | Published |
 | 079 | Ansible, Kubernetes and GitOps CI/CD Automation, Environment Promotion and Production Change Controls | Published |
 | 080 | Enterprise IaC CI/CD Reliability, Security, Disaster Recovery and GitOps Production Capstone | Published |
+| 081 | Infrastructure as Code Security Foundations, Threat Modeling, Identity and Secrets Management | Published |
 
 ## Chapter 001 acceptance
 - [x] Theory, architecture, executable lab files
@@ -887,3 +889,13 @@
 - [x] Forty-five SRE/DBRE incident simulations, twelve runbooks and 100-point final assessment
 - [x] Chapter and master index publication; Part 16 content complete at 5/5
 - [ ] Offline test execution, native tool integration, actual DB restore/DR drills, SLO game day and production acceptance
+
+**Part 17:** 1/5 chapters published — Security and Policy.
+
+## Chapter 081 acceptance — Security foundations, threat modeling and secrets
+- [x] STRIDE, identity federation, secret lifecycle, state security and supply-chain architecture
+- [x] Offline security gate, safe/unsafe fixtures, risk model and rotation simulator
+- [x] 74 Python unit tests authored; not executed
+- [x] Forty-five SRE/DBRE incident scenarios, twelve runbooks and 100-point assessment
+- [x] Chapter and master index publication; Part 17 at 1/5
+- [ ] Offline tests, native identity/KMS/security integration, secret rotation, DBRE restore and production acceptance
