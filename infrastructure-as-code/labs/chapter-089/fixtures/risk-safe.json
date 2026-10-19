@@ -1,0 +1,7 @@
+{
+  "environment": "staging",
+  "exposure": "private",
+  "data_impact": "limited",
+  "destructive": false,
+  "approved": true
+}
