@@ -1,0 +1,11 @@
+stages: [validate, observe]
+offline_observability:
+  stage: validate
+  image: python:3.12
+  script:
+    - bash infrastructure-as-code/labs/chapter-091/run-preflight.sh
+native_observability_disabled:
+  stage: observe
+  when: manual
+  script:
+    - echo 'NOT ENABLED: authorized collector, Prometheus/Grafana, SLO alerts and DBRE restore validation required'
