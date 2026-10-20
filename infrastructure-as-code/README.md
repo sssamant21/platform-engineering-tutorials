@@ -253,6 +253,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 109 executable labs and tests](labs/chapter-109/)
 - [110 — Enterprise IaC Platform Engineering, Governance and Reliability Acceptance Capstone](chapters/110-enterprise-iac-platform-engineering-governance-reliability-acceptance-capstone.md)
 - [Chapter 110 executable labs and tests](labs/chapter-110/)
+- [111 — Enterprise IaC Advanced Automation, Intelligent Operations and Autonomous Remediation](chapters/111-enterprise-iac-advanced-automation-intelligent-operations-autonomous-remediation.md)
+- [Chapter 111 executable labs and tests](labs/chapter-111/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -271,3 +273,5 @@ Part 20 — FinOps publication complete: Chapters 096–100 published (5/5); nat
 Part 21 — Disaster Recovery publication complete: Chapters 101–105 published (5/5); native recovery drills and independent SRE/DBRE acceptance pending.
 
 Part 22 — Enterprise Platforms publication complete: Chapters 106–110 published (5/5); native platform deployment, security review and SRE/DBRE acceptance pending.
+
+Part 23 — Advanced Automation underway: Chapter 111 published (1/5); native remediation drills and independent SRE/DBRE acceptance pending.
