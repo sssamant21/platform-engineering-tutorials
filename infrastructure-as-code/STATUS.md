@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 112 / 120 chapters (93.33%)  
+**Progress:** 113 / 120 chapters (94.17%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,7 +1094,7 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 113 — Enterprise IaC Predictive Operations, Drift Intelligence and AI-Assisted Change Risk Analysis.
+**Next:** Chapter 114 — Enterprise IaC Automation Safety, Guardrails, Human-in-the-Loop and Governance.
 
 **Part 21:** 5/5 chapters published — Disaster Recovery (native drills pending).
 
@@ -1162,7 +1162,7 @@
 - [x] Chapter, labs and trackers published; Part 22 complete (5/5)
 - [ ] Live security, SLO, state/DB recovery and independent security/SRE/DBRE acceptance
 
-**Part 23:** 2/5 chapters published — Advanced Automation.
+**Part 23:** 3/5 chapters published — Advanced Automation.
 
 ## Chapter 111 — Intelligent operations and bounded remediation
 - [x] Cross-cloud IaC/Kubernetes/DBRE automation architecture published
@@ -1176,3 +1176,10 @@
 - [x] Manual staging event/DBRE labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
 - [x] Chapter, labs and trackers published; Part 23 at 2/5
 - [ ] Native event bus, queue, IAM, policy enforcement, recovery drills and independent acceptance
+
+## Chapter 113 — Predictive operations and drift intelligence
+- [x] Drift classification, predictive capacity, AI-assisted risk and DBRE safety tutorial published
+- [x] Offline risk gate and negative tests authored; execution not independently verified
+- [x] Staging drift and DBRE capacity labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
+- [x] Chapter, labs and trackers published; Part 23 at 3/5
+- [ ] Native drift detection, forecast calibration, policy enforcement and independent acceptance
