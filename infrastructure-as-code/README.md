@@ -249,6 +249,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 107 executable labs and tests](labs/chapter-107/)
 - [108 — Enterprise IaC Multi-Tenancy, Governance, RBAC and Policy Enforcement at Scale](chapters/108-enterprise-iac-multi-tenancy-governance-rbac-policy-enforcement-at-scale.md)
 - [Chapter 108 executable labs and tests](labs/chapter-108/)
+- [109 — Enterprise IaC Platform Reliability, SLOs, Capacity and Operational Excellence](chapters/109-enterprise-iac-platform-reliability-slos-capacity-operational-excellence.md)
+- [Chapter 109 executable labs and tests](labs/chapter-109/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -266,4 +268,4 @@ Part 20 — FinOps publication complete: Chapters 096–100 published (5/5); nat
 
 Part 21 — Disaster Recovery publication complete: Chapters 101–105 published (5/5); native recovery drills and independent SRE/DBRE acceptance pending.
 
-Part 22 — Enterprise Platforms underway: Chapters 106–108 published (3/5); native platform deployment, security review and SRE/DBRE acceptance pending.
+Part 22 — Enterprise Platforms underway: Chapters 106–109 published (4/5); native platform deployment, security review and SRE/DBRE acceptance pending.
