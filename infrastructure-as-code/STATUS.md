@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 114 / 120 chapters (95.00%)  
+**Progress:** 115 / 120 chapters (95.83%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,7 +1094,7 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 115 — Enterprise IaC Advanced Automation, AI Safety and Operational Acceptance Capstone.
+**Next:** Chapter 116 — Enterprise IaC Final Architecture, Operational Readiness and Reliability Capstone.
 
 **Part 21:** 5/5 chapters published — Disaster Recovery (native drills pending).
 
@@ -1162,7 +1162,7 @@
 - [x] Chapter, labs and trackers published; Part 22 complete (5/5)
 - [ ] Live security, SLO, state/DB recovery and independent security/SRE/DBRE acceptance
 
-**Part 23:** 4/5 chapters published — Advanced Automation.
+**Part 23:** 5/5 chapters published — Advanced Automation.
 
 ## Chapter 111 — Intelligent operations and bounded remediation
 - [x] Cross-cloud IaC/Kubernetes/DBRE automation architecture published
@@ -1190,3 +1190,10 @@
 - [x] Staging governance and DBRE labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
 - [x] Chapter, labs and trackers published; Part 23 at 4/5
 - [ ] Native IAM, policy, audit, kill-switch and recovery validation; independent security/SRE/DBRE acceptance
+
+## Chapter 115 — Advanced automation acceptance capstone
+- [x] Event-driven orchestration, AI safety, human approvals, Terraform/OpenTofu, Kubernetes/GitOps and DBRE capstone published
+- [x] Offline 100-point acceptance gate and negative tests authored; execution not independently verified
+- [x] Staging event and DBRE recovery labs, 20 troubleshooting scenarios and 10 runbooks
+- [x] Part 23 publication complete (5/5)
+- [ ] Live identity, replay, policy, kill-switch, state and DBRE recovery validation; independent security/SRE/DBRE acceptance
