@@ -267,6 +267,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 116 executable labs and tests](labs/chapter-116/)
 - [117 — Enterprise IaC Production Deployment, Multi-Cloud Integration and Platform Validation](chapters/117-enterprise-iac-production-deployment-multi-cloud-integration-platform-validation.md)
 - [Chapter 117 executable labs and tests](labs/chapter-117/)
+- [118 — Enterprise IaC Failure Injection, Chaos Engineering and Disaster Recovery Validation](chapters/118-enterprise-iac-failure-injection-chaos-engineering-disaster-recovery-validation.md)
+- [Chapter 118 executable labs and tests](labs/chapter-118/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -288,4 +290,4 @@ Part 22 — Enterprise Platforms publication complete: Chapters 106–110 publis
 
 Part 23 — Advanced Automation publication complete: Chapters 111–115 published (5/5); native remediation drills and independent SRE/DBRE acceptance pending.
 
-Part 24 — Final Enterprise Capstone underway: Chapters 116–117 published (2/5); independent operational acceptance pending.
+Part 24 — Final Enterprise Capstone underway: Chapters 116–118 published (3/5); independent operational acceptance pending.
