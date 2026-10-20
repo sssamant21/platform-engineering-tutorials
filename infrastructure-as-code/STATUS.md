@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 113 / 120 chapters (94.17%)  
+**Progress:** 114 / 120 chapters (95.00%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,7 +1094,7 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 114 — Enterprise IaC Automation Safety, Guardrails, Human-in-the-Loop and Governance.
+**Next:** Chapter 115 — Enterprise IaC Advanced Automation, AI Safety and Operational Acceptance Capstone.
 
 **Part 21:** 5/5 chapters published — Disaster Recovery (native drills pending).
 
@@ -1162,7 +1162,7 @@
 - [x] Chapter, labs and trackers published; Part 22 complete (5/5)
 - [ ] Live security, SLO, state/DB recovery and independent security/SRE/DBRE acceptance
 
-**Part 23:** 3/5 chapters published — Advanced Automation.
+**Part 23:** 4/5 chapters published — Advanced Automation.
 
 ## Chapter 111 — Intelligent operations and bounded remediation
 - [x] Cross-cloud IaC/Kubernetes/DBRE automation architecture published
@@ -1183,3 +1183,10 @@
 - [x] Staging drift and DBRE capacity labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
 - [x] Chapter, labs and trackers published; Part 23 at 3/5
 - [ ] Native drift detection, forecast calibration, policy enforcement and independent acceptance
+
+## Chapter 114 — Automation safety and governance
+- [x] Human approvals, separation of duties, kill switches, emergency access and DBRE governance published
+- [x] Offline fail-closed governance gate and negative tests authored; execution not independently verified
+- [x] Staging governance and DBRE labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
+- [x] Chapter, labs and trackers published; Part 23 at 4/5
+- [ ] Native IAM, policy, audit, kill-switch and recovery validation; independent security/SRE/DBRE acceptance
