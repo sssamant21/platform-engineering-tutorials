@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 117 / 120 chapters (97.50%)  
+**Progress:** 118 / 120 chapters (98.33%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,7 +1094,7 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 118 — Enterprise IaC Failure Injection, Chaos Engineering and Disaster Recovery Validation.
+**Next:** Chapter 119 — Enterprise IaC Security, Compliance, Cost and Reliability Final Audit.
 
 **Part 21:** 5/5 chapters published — Disaster Recovery (native drills pending).
 
@@ -1198,7 +1198,7 @@
 - [x] Part 23 publication complete (5/5)
 - [ ] Live identity, replay, policy, kill-switch, state and DBRE recovery validation; independent security/SRE/DBRE acceptance
 
-**Part 24:** 2/5 chapters published — Final Enterprise Capstone.
+**Part 24:** 3/5 chapters published — Final Enterprise Capstone.
 
 ## Chapter 116 — Final architecture and operational readiness
 - [x] Multi-cloud, Terraform/OpenTofu, Kubernetes/GitOps, SLO and DBRE architecture capstone published
@@ -1213,3 +1213,10 @@
 - [x] Manual multi-cloud and database-backed staging labs, 20 troubleshooting scenarios and 10 runbooks
 - [x] Chapter, labs and trackers published; Part 24 at 2/5
 - [ ] Native cloud deployment, rollback, database restore and independent security/SRE/DBRE acceptance
+
+## Chapter 118 — Chaos engineering and disaster recovery validation
+- [x] Multi-cloud failure injection, Terraform/OpenTofu state recovery, Kubernetes/GitOps and DBRE disaster recovery tutorial published
+- [x] Offline 100-point recovery gate and negative tests authored; execution not independently verified
+- [x] Manual staging chaos and database recovery labs, 20 troubleshooting scenarios and 10 runbooks
+- [x] Chapter, labs and trackers published; Part 24 at 3/5
+- [ ] Live staging fault drills, measured RTO/RPO, database integrity verification and independent SRE/DBRE/security acceptance
