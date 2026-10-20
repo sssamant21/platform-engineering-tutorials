@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 109 / 120 chapters (90.83%)  
+**Progress:** 110 / 120 chapters (91.67%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,7 +1094,7 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 110 — Enterprise IaC Platform Engineering, Governance and Reliability Acceptance Capstone.
+**Next:** Chapter 111 — Enterprise IaC Advanced Automation, Intelligent Operations and Autonomous Remediation.
 
 **Part 21:** 5/5 chapters published — Disaster Recovery (native drills pending).
 
@@ -1128,7 +1128,7 @@
 - [x] Tutorial, offline acceptance gate and unit tests published; Part 21 complete (5/5)
 - [ ] Tests not independently executed; native restore, failover, RPO/RTO and production acceptance pending
 
-**Part 22:** 4/5 chapters published — Enterprise Platforms.
+**Part 22:** 5/5 chapters published — Enterprise Platforms.
 
 ## Chapter 106 — Enterprise IaC platforms and golden paths
 - [x] AWS/Azure/GCP, Terraform/OpenTofu, Kubernetes/GitOps, SRE and DBRE platform architecture published
@@ -1154,3 +1154,10 @@
 ## Chapter 109 — Platform reliability
 - [x] Chapter and offline lab/test files published; Part 22 at 4/5
 - [ ] Live SLOs, state and database recovery, independent acceptance pending
+
+## Chapter 110 — Enterprise platform acceptance capstone
+- [x] Cross-cloud, Terraform/OpenTofu, Kubernetes/GitOps and DBRE platform capstone published
+- [x] Offline 100-point acceptance gate and negative tests authored; execution not independently verified
+- [x] Manual multi-tenant platform and DBRE recovery labs, 20 troubleshooting scenarios and 10 runbooks
+- [x] Chapter, labs and trackers published; Part 22 complete (5/5)
+- [ ] Live security, SLO, state/DB recovery and independent security/SRE/DBRE acceptance
