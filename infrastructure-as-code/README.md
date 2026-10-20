@@ -259,6 +259,8 @@ Production-oriented learning track for Terraform, OpenTofu, Terragrunt, Ansible,
 - [Chapter 112 executable labs and tests](labs/chapter-112/)
 - [113 — Enterprise IaC Predictive Operations, Drift Intelligence and AI-Assisted Change Risk Analysis](chapters/113-enterprise-iac-predictive-operations-drift-intelligence-ai-assisted-change-risk-analysis.md)
 - [Chapter 113 executable labs and tests](labs/chapter-113/)
+- [114 — Enterprise IaC Automation Safety, Guardrails, Human-in-the-Loop and Governance](chapters/114-enterprise-iac-automation-safety-guardrails-human-in-the-loop-governance.md)
+- [Chapter 114 executable labs and tests](labs/chapter-114/)
 
 **Parts 01 and 02 complete (001–010); Part 03 complete (011–015 published); Part 04 complete (016–020 published); Part 05 complete (021–025 published); Part 06 complete (026–030 published); Part 07 complete (031–035 published); Part 08 complete (036–040 published); Part 09 complete (041–045 published); Part 10 complete (046–050 published); Part 11 complete (051–055 published); Part 12 complete (056–060 published); Part 13 complete (061–065 published); Part 14 complete (066–070 published); Part 15 complete (071–075 published; live acceptance pending). Learner lab execution evidence pending.**
 
@@ -278,4 +280,4 @@ Part 21 — Disaster Recovery publication complete: Chapters 101–105 published
 
 Part 22 — Enterprise Platforms publication complete: Chapters 106–110 published (5/5); native platform deployment, security review and SRE/DBRE acceptance pending.
 
-Part 23 — Advanced Automation underway: Chapters 111–113 published (3/5); native remediation drills and independent SRE/DBRE acceptance pending.
+Part 23 — Advanced Automation underway: Chapters 111–114 published (4/5); native remediation drills and independent SRE/DBRE acceptance pending.
