@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 119 / 120 chapters (99.17%)  
+**Progress:** 120 / 120 chapters (100.00%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,7 +1094,7 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 120 — Enterprise Infrastructure as Code SRE/DBRE Final Certification and Production Readiness Assessment.
+**Next:** Repository-wide verification, offline test execution, staging labs and independent security/SRE/DBRE acceptance.
 
 **Part 21:** 5/5 chapters published — Disaster Recovery (native drills pending).
 
@@ -1198,7 +1198,7 @@
 - [x] Part 23 publication complete (5/5)
 - [ ] Live identity, replay, policy, kill-switch, state and DBRE recovery validation; independent security/SRE/DBRE acceptance
 
-**Part 24:** 4/5 chapters published — Final Enterprise Capstone.
+**Part 24:** 5/5 chapters published — Final Enterprise Capstone.
 
 ## Chapter 116 — Final architecture and operational readiness
 - [x] Multi-cloud, Terraform/OpenTofu, Kubernetes/GitOps, SLO and DBRE architecture capstone published
@@ -1227,3 +1227,10 @@
 - [x] Manual security/FinOps and DBRE audit labs, 20 troubleshooting scenarios and 10 runbooks
 - [x] Chapter, labs and trackers published; Part 24 at 4/5
 - [ ] Live audit evidence, cloud cost validation, isolated DBRE restore and independent security/SRE/DBRE acceptance
+
+## Chapter 120 — Final SRE/DBRE certification and production readiness assessment
+- [x] Final 120-chapter publication milestone reached; Part 24 complete (5/5)
+- [x] Offline 100-point final gate and negative tests authored; execution not independently verified
+- [x] Final multi-cloud and DBRE staging assessments, 20 troubleshooting scenarios and 10 runbooks published
+- [ ] Repository-wide test execution, consistency/security review, live staging and recovery drills
+- [ ] Independent security/SRE/DBRE evidence verification and acceptance; no certification claimed
