@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 111 / 120 chapters (92.50%)  
+**Progress:** 112 / 120 chapters (93.33%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,7 +1094,7 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 112 — Enterprise IaC Event-Driven Automation, Workflow Orchestration and Closed-Loop Operations.
+**Next:** Chapter 113 — Enterprise IaC Predictive Operations, Drift Intelligence and AI-Assisted Change Risk Analysis.
 
 **Part 21:** 5/5 chapters published — Disaster Recovery (native drills pending).
 
@@ -1162,10 +1162,17 @@
 - [x] Chapter, labs and trackers published; Part 22 complete (5/5)
 - [ ] Live security, SLO, state/DB recovery and independent security/SRE/DBRE acceptance
 
-**Part 23:** 1/5 chapters published — Advanced Automation.
+**Part 23:** 2/5 chapters published — Advanced Automation.
 
 ## Chapter 111 — Intelligent operations and bounded remediation
 - [x] Cross-cloud IaC/Kubernetes/DBRE automation architecture published
 - [x] Offline fail-closed remediation gate and negative tests authored; execution not independently verified
 - [x] Staging drift/incident and DBRE labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
 - [ ] Native security enforcement, remediation drills, live recovery and independent SRE/DBRE acceptance
+
+## Chapter 112 — Event-driven workflows and closed-loop operations
+- [x] Cross-cloud event orchestration, Terraform/OpenTofu, Kubernetes/GitOps and DBRE workflow architecture published
+- [x] Offline workflow gate and negative tests authored; execution not independently verified
+- [x] Manual staging event/DBRE labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
+- [x] Chapter, labs and trackers published; Part 23 at 2/5
+- [ ] Native event bus, queue, IAM, policy enforcement, recovery drills and independent acceptance
