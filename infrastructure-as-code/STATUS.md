@@ -1,6 +1,6 @@
 # IaC Tutorial Status
 
-**Progress:** 105 / 120 chapters (87.50%)  
+**Progress:** 106 / 120 chapters (88.33%)  
 **Last update:** 2026-10-19  
 **Chapter 001:** Published; local lab execution remains for learner verification.  
 **Chapter 002:** Published; live lab execution remains for learner verification.  
@@ -1094,7 +1094,7 @@
 - [x] Chapter, lab files and curriculum trackers published; Part 20 content complete (5/5)
 - [ ] Execute tests, validate cloud billing and chargeback, verify real Kubernetes canary and database restore, independently accept production controls
 
-**Next:** Chapter 106 — Enterprise IaC Platform Architecture, Multi-Team Operating Models and Golden Paths.
+**Next:** Chapter 107 — Enterprise IaC Self-Service Portals, Service Catalogs and Developer Experience.
 
 **Part 21:** 5/5 chapters published — Disaster Recovery (native drills pending).
 
@@ -1127,3 +1127,12 @@
 ## Chapter 105 — DR capstone
 - [x] Tutorial, offline acceptance gate and unit tests published; Part 21 complete (5/5)
 - [ ] Tests not independently executed; native restore, failover, RPO/RTO and production acceptance pending
+
+**Part 22:** 1/5 chapters published — Enterprise Platforms.
+
+## Chapter 106 — Enterprise IaC platforms and golden paths
+- [x] AWS/Azure/GCP, Terraform/OpenTofu, Kubernetes/GitOps, SRE and DBRE platform architecture published
+- [x] Offline platform request validation gate and negative tests authored; execution not independently verified
+- [x] Manual Kubernetes and DBRE golden-path labs, 20 troubleshooting scenarios, 10 runbooks and 100-point assessment
+- [x] Chapter, labs and curriculum trackers published; Part 22 at 1/5
+- [ ] Native platform deployments, policy enforcement, database restore and independent security/SRE/DBRE acceptance
