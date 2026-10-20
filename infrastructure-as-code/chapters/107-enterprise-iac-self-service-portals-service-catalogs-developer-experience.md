@@ -125,7 +125,7 @@ def validate(request: CatalogRequest):
         "environment": request.environment in ENVIRONMENTS,
         "tier": request.tier in TIERS,
         "data_class": request.data_class in DATA_CLASSES,
-        "template_pinned": bool(re.fullmatch(r"v[0-9]+\\.[0-9]+\\.[0-9]+", request.template_version)),
+        "template_pinned": bool(re.fullmatch(r"v[0-9]+[.][0-9]+[.][0-9]+", request.template_version)),
         "region": request.region_allowed,
         "authentication": request.authenticated,
         "authorization": request.authorized,
