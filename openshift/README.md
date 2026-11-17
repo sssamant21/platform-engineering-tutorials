@@ -13,15 +13,18 @@ A dedicated, hands-on OpenShift administration track alongside [Kubernetes Admin
 
 1. [Master plan — all 18 chapters](MASTER-PLAN.md)
 2. [Progress and validation tracker](PROGRESS-TRACKER.md)
-3. [Chapter 003 — Control plane, RHCOS, CRI-O and nodes](chapters/003-ocp-control-plane-rhcos-crio-and-nodes.md)
-4. [Lab 003 — Control-plane and node inventory](labs/003-control-plane-rhcos-crio-node-inventory.md)
-5. [Runbook — Node runtime and MachineConfigPool triage](runbooks/node-runtime-and-machineconfigpool-triage.md)
-6. [Chapter 002 — CLI, console, kubeconfig and RBAC](chapters/002-ocp-cli-console-and-access.md)
-7. [Lab 002 — Context and RBAC verification](labs/002-oc-cli-context-and-rbac.md)
-8. [Runbook — CLI login, context and RBAC triage](runbooks/cli-login-context-rbac-triage.md)
-9. [Chapter 001 — OCP architecture and first cluster health audit](chapters/001-ocp-architecture-and-cluster-health.md)
-10. [Lab 001 — Read-only cluster health audit](labs/001-read-only-cluster-health-audit.md)
-11. [Runbook — Cluster health triage](runbooks/cluster-health-triage.md)
+3. [Chapter 004 — Cluster Operators, CVO and update state](chapters/004-cluster-operators-cvo-and-update-state.md)
+4. [Lab 004 — CVO and Cluster Operator read-only audit](labs/004-clusteroperator-cvo-read-only-audit.md)
+5. [Runbook — Cluster Operator / CVO degraded triage](runbooks/clusteroperator-cvo-degraded-triage.md)
+6. [Chapter 003 — Control plane, RHCOS, CRI-O and nodes](chapters/003-ocp-control-plane-rhcos-crio-and-nodes.md)
+7. [Lab 003 — Control-plane and node inventory](labs/003-control-plane-rhcos-crio-node-inventory.md)
+8. [Runbook — Node runtime and MachineConfigPool triage](runbooks/node-runtime-and-machineconfigpool-triage.md)
+9. [Chapter 002 — CLI, console, kubeconfig and RBAC](chapters/002-ocp-cli-console-and-access.md)
+10. [Lab 002 — Context and RBAC verification](labs/002-oc-cli-context-and-rbac.md)
+11. [Runbook — CLI login, context and RBAC triage](runbooks/cli-login-context-rbac-triage.md)
+12. [Chapter 001 — OCP architecture and first cluster health audit](chapters/001-ocp-architecture-and-cluster-health.md)
+13. [Lab 001 — Read-only cluster health audit](labs/001-read-only-cluster-health-audit.md)
+14. [Runbook — Cluster health triage](runbooks/cluster-health-triage.md)
 
 ## Repository conventions
 
