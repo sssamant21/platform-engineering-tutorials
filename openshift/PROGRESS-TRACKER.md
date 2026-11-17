@@ -16,7 +16,7 @@
 | 010 — Security and RBAC | Drafted | Not run | Pending | No |
 | 011 — OLM and MachineConfig | Drafted | Not run | Pending | No |
 | 012 — Monitoring and logging | Drafted | Not run | Pending | No |
-| 013 — Capacity and autoscaling | Planned | Not run | Pending | No |
+| 013 — Capacity and autoscaling | Drafted | Not run | Pending | No |
 | 014 — Upgrade procedures | Planned | Not run | Pending | No |
 | 015 — Backup and recovery | Planned | Not run | Pending | No |
 | 016 — Incident response | Planned | Not run | Pending | No |
@@ -70,3 +70,7 @@ Chapter 011, read-only OLM/MCP audit lab and Operator/MachineConfig triage runbo
 ## Chapter 012 documentation milestone
 
 Chapter 012, read-only observability evidence lab, and monitoring/alert/log triage runbook drafted and linked. Includes OpenShift platform monitoring versus optional user-workload monitoring, logging deployment caveats, least-privilege checks, event retention limitations, sanitized evidence, and approval/rollback gates. **No live OCP execution, independent technical review or production approval performed.**
+
+## Chapter 013 documentation milestone
+
+Chapter 013, read-only capacity/scheduling lab and autoscaling triage runbook drafted. Covers allocatable versus requested capacity, node pressure, topology-aware scheduling, autoscaler applicability and stateful-workload change gates. **No live OCP execution, independent review or production certification performed.**
