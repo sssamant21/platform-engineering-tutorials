@@ -5,7 +5,7 @@
 | Chapter | Documentation | Runtime validation | Independent review | Production-approved |
 | --- | --- | --- | --- | --- |
 | 001 — OCP architecture and health | Drafted | Not run | Pending | No |
-| 002 — CLI, console and access | Planned | Not run | Pending | No |
+| 002 — CLI, console and access | Drafted | Not run | Pending | No |
 | 003 — Control plane and nodes | Planned | Not run | Pending | No |
 | 004 — Cluster Operators and CVO | Planned | Not run | Pending | No |
 | 005 — Machines and node operations | Planned | Not run | Pending | No |
@@ -26,3 +26,7 @@
 ## Evidence policy
 
 For each executed lab, record OCP exact version, cluster type (sanitized), time, namespace, commands, expected versus actual results, and reviewer. Store secrets nowhere in this repo. Runtime checks on a real cluster have **not** been performed as part of this initial track setup.
+
+## Chapter 002 documentation milestone
+
+Chapter, read-only lab and CLI/RBAC triage runbook drafted and cross-linked. Commands reviewed against the official OCP 4.22 CLI and web-console documentation. **No cluster runtime test, independent approval or production certification performed.**
