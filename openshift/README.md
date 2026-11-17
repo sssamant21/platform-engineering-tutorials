@@ -11,6 +11,12 @@ A dedicated, hands-on OpenShift administration track alongside [Kubernetes Admin
 
 ## Start here
 
+- [Chapter 018 — Governance and production acceptance](chapters/018-enterprise-governance-and-production-acceptance.md)
+- [Lab 018 — Read-only governance and acceptance audit](labs/018-governance-production-acceptance-read-only-audit.md)
+- [Runbook — Production acceptance and change gates](runbooks/production-acceptance-and-change-gates.md)
+
+**Curriculum drafting: 18/18 complete.** Runtime labs, independent technical review and production approval are still pending. Continue with correctness and evidence validation, not duplicate chapters.
+
 1. [Chapter 017 — Stateful services, HA and data safety](chapters/017-stateful-services-ha-and-data-safety.md)
 2. [Lab 017 — Read-only stateful HA audit](labs/017-stateful-ha-read-only-audit.md)
 3. [Runbook — Stateful workload HA triage](runbooks/stateful-workload-ha-triage.md)
