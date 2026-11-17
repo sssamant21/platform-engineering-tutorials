@@ -18,7 +18,7 @@
 | 012 — Monitoring and logging | Drafted | Not run | Pending | No |
 | 013 — Capacity and autoscaling | Drafted | Not run | Pending | No |
 | 014 — Upgrade procedures | Drafted | Not run | Pending | No |
-| 015 — Backup and recovery | Planned | Not run | Pending | No |
+| 015 — Backup and recovery | Drafted | Not run | Pending | No |
 | 016 — Incident response | Planned | Not run | Pending | No |
 | 017 — Stateful workload operations | Planned | Not run | Pending | No |
 | 018 — Governance and acceptance | Planned | Not run | Pending | No |
@@ -78,3 +78,7 @@ Chapter 013, read-only capacity/scheduling lab and autoscaling triage runbook dr
 ## Chapter 014 documentation milestone
 
 Chapter 014 upgrade planning and gates, read-only preflight lab, and CVO/MCP upgrade triage runbook drafted and linked. No upgrade commands executed. OCP 4.22 is the documentation baseline; version-specific support path must be rechecked before any real change. **Live cluster testing, independent review and production approval remain pending.**
+
+## Chapter 015 documentation milestone
+
+Chapter 015, read-only recovery readiness lab, and etcd backup/recovery triage runbook drafted. Distinguishes etcd control-plane state from PV and database data, backup artifacts, quorum-loss escalation, RPO/RTO evidence and approval gates. **No cluster runtime execution, backup inspection, restore rehearsal, independent review or production approval performed.**
