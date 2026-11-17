@@ -12,7 +12,7 @@
 | 006 — Workload lifecycle | Drafted | Not run | Pending | No |
 | 007 — Projects and quotas | Drafted | Not run | Pending | No |
 | 008 — Storage | Drafted | Not run | Pending | No |
-| 009 — Networking and ingress | Planned | Not run | Pending | No |
+| 009 — Networking and ingress | Drafted | Not run | Pending | No |
 | 010 — Security and RBAC | Planned | Not run | Pending | No |
 | 011 — OLM and MachineConfig | Planned | Not run | Pending | No |
 | 012 — Monitoring and logging | Planned | Not run | Pending | No |
@@ -54,3 +54,7 @@ Chapter 007, read-only project governance lab and quota/LimitRange admission tri
 ## Chapter 008 documentation milestone
 
 Chapter 008, read-only PV/PVC/StorageClass/CSI audit lab and storage incident triage runbook drafted and linked. Includes binding-versus-mount distinction, WaitForFirstConsumer, topology, multi-attach risks, stateful database safeguards, and escalation evidence. **No live OCP runtime execution, independent review or production certification performed.**
+
+## Chapter 009 documentation milestone
+
+Chapter 009, a read-only Service/EndpointSlice/Route audit lab, and a network/DNS/ingress triage runbook were drafted and linked. Guidance was checked against Red Hat OCP 4.22 OVN-Kubernetes, Networking Operators and networking overview documentation. Distinguishes backend readiness, external/internal DNS, Route admission, Ingress Operator and OVN network layers. **No live OCP execution, independent review or production certification performed.**
