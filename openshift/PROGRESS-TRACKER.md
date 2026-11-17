@@ -10,7 +10,7 @@
 | 004 — Cluster Operators and CVO | Drafted | Not run | Pending | No |
 | 005 — Machines and node operations | Drafted | Not run | Pending | No |
 | 006 — Workload lifecycle | Drafted | Not run | Pending | No |
-| 007 — Projects and quotas | Planned | Not run | Pending | No |
+| 007 — Projects and quotas | Drafted | Not run | Pending | No |
 | 008 — Storage | Planned | Not run | Pending | No |
 | 009 — Networking and ingress | Planned | Not run | Pending | No |
 | 010 — Security and RBAC | Planned | Not run | Pending | No |
@@ -46,3 +46,7 @@ Chapter 005, read-only Machine API/Node inventory lab and MachineSet/node triage
 ## Chapter 006 documentation milestone
 
 Chapter 006, disposable deployment lab, and workload triage runbook drafted. The lab is explicitly non-production, requires a preapproved image digest, RBAC, restricted-SCC compatibility, resource controls and targeted cleanup. **No live cluster runtime test, independent review or production approval performed.**
+
+## Chapter 007 documentation milestone
+
+Chapter 007, read-only project governance lab and quota/LimitRange admission triage runbook drafted and cross-linked. Includes admission-control examples, tenant-isolation boundaries, policy-change approval and rollback caveats. **No live OCP runtime execution, independent review or production certification performed.**
