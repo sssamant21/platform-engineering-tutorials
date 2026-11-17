@@ -7,7 +7,7 @@
 | 001 — OCP architecture and health | Drafted | Not run | Pending | No |
 | 002 — CLI, console and access | Drafted | Not run | Pending | No |
 | 003 — Control plane and nodes | Drafted | Not run | Pending | No |
-| 004 — Cluster Operators and CVO | Planned | Not run | Pending | No |
+| 004 — Cluster Operators and CVO | Drafted | Not run | Pending | No |
 | 005 — Machines and node operations | Planned | Not run | Pending | No |
 | 006 — Workload lifecycle | Planned | Not run | Pending | No |
 | 007 — Projects and quotas | Planned | Not run | Pending | No |
@@ -34,3 +34,7 @@ Chapter, read-only lab and CLI/RBAC triage runbook drafted and cross-linked. Com
 ## Chapter 003 documentation milestone
 
 Chapter 003, read-only node/control-plane inventory lab and node runtime/MachineConfigPool triage runbook drafted and cross-linked. Reviewed against the official Red Hat OCP 4.22 RHCOS architecture and node overview documentation. **No cluster runtime execution, independent approval or production certification performed.**
+
+## Chapter 004 documentation milestone
+
+Chapter 004, read-only ClusterVersion/ClusterOperator lab and degraded-Operator triage runbook drafted. Technical condition semantics checked against Red Hat OCP 4.22 update and validation documentation. **No live cluster test, independent review, or production certification performed.**
