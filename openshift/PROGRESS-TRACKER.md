@@ -21,7 +21,7 @@
 | 015 — Backup and recovery | Drafted | Not run | Pending | No |
 | 016 — Incident response | Drafted | Not run | Pending | No |
 | 017 — Stateful workload operations | Drafted | Not run | Pending | No |
-| 018 — Governance and acceptance | Planned | Not run | Pending | No |
+| 018 — Governance and acceptance | Drafted | Not run | Pending | No |
 
 ## Evidence policy
 
@@ -90,3 +90,7 @@ Chapter 016, read-only incident triage lab and production-safety incident runboo
 ## Chapter 017 documentation milestone
 
 Chapter 017, read-only stateful HA audit lab and incident runbook drafted and cross-linked. Covers database-native quorum versus Kubernetes readiness, CSI/PVC topology, PDB voluntary eviction limits, PostgreSQL/Kafka/MongoDB/Redis owner boundaries, fencing and irreversible-change safeguards. **No live OCP execution, independent technical review, database-native validation or production approval performed.**
+
+## Chapter 018 documentation milestone
+
+Chapter 018 enterprise governance and production acceptance, read-only audit lab, and change-gates runbook drafted and linked. Ownership matrix, least-privilege audit, acceptance evidence, rollback feasibility and stateful-workload approvals included. **All 18 chapters are now drafted; none is lab-verified, independently reviewed or production-approved.** Next: comprehensive Markdown/link, command, version-specific and safety review followed by authorized isolated runtime validation.
