@@ -17,7 +17,7 @@
 | 011 — OLM and MachineConfig | Drafted | Not run | Pending | No |
 | 012 — Monitoring and logging | Drafted | Not run | Pending | No |
 | 013 — Capacity and autoscaling | Drafted | Not run | Pending | No |
-| 014 — Upgrade procedures | Planned | Not run | Pending | No |
+| 014 — Upgrade procedures | Drafted | Not run | Pending | No |
 | 015 — Backup and recovery | Planned | Not run | Pending | No |
 | 016 — Incident response | Planned | Not run | Pending | No |
 | 017 — Stateful workload operations | Planned | Not run | Pending | No |
@@ -74,3 +74,7 @@ Chapter 012, read-only observability evidence lab, and monitoring/alert/log tria
 ## Chapter 013 documentation milestone
 
 Chapter 013, read-only capacity/scheduling lab and autoscaling triage runbook drafted. Covers allocatable versus requested capacity, node pressure, topology-aware scheduling, autoscaler applicability and stateful-workload change gates. **No live OCP execution, independent review or production certification performed.**
+
+## Chapter 014 documentation milestone
+
+Chapter 014 upgrade planning and gates, read-only preflight lab, and CVO/MCP upgrade triage runbook drafted and linked. No upgrade commands executed. OCP 4.22 is the documentation baseline; version-specific support path must be rechecked before any real change. **Live cluster testing, independent review and production approval remain pending.**
