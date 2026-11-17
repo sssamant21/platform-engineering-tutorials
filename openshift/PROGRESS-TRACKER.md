@@ -11,7 +11,7 @@
 | 005 — Machines and node operations | Drafted | Not run | Pending | No |
 | 006 — Workload lifecycle | Drafted | Not run | Pending | No |
 | 007 — Projects and quotas | Drafted | Not run | Pending | No |
-| 008 — Storage | Planned | Not run | Pending | No |
+| 008 — Storage | Drafted | Not run | Pending | No |
 | 009 — Networking and ingress | Planned | Not run | Pending | No |
 | 010 — Security and RBAC | Planned | Not run | Pending | No |
 | 011 — OLM and MachineConfig | Planned | Not run | Pending | No |
@@ -50,3 +50,7 @@ Chapter 006, disposable deployment lab, and workload triage runbook drafted. The
 ## Chapter 007 documentation milestone
 
 Chapter 007, read-only project governance lab and quota/LimitRange admission triage runbook drafted and cross-linked. Includes admission-control examples, tenant-isolation boundaries, policy-change approval and rollback caveats. **No live OCP runtime execution, independent review or production certification performed.**
+
+## Chapter 008 documentation milestone
+
+Chapter 008, read-only PV/PVC/StorageClass/CSI audit lab and storage incident triage runbook drafted and linked. Includes binding-versus-mount distinction, WaitForFirstConsumer, topology, multi-attach risks, stateful database safeguards, and escalation evidence. **No live OCP runtime execution, independent review or production certification performed.**
