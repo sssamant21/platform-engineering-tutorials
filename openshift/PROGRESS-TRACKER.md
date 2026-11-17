@@ -19,7 +19,7 @@
 | 013 — Capacity and autoscaling | Drafted | Not run | Pending | No |
 | 014 — Upgrade procedures | Drafted | Not run | Pending | No |
 | 015 — Backup and recovery | Drafted | Not run | Pending | No |
-| 016 — Incident response | Planned | Not run | Pending | No |
+| 016 — Incident response | Drafted | Not run | Pending | No |
 | 017 — Stateful workload operations | Planned | Not run | Pending | No |
 | 018 — Governance and acceptance | Planned | Not run | Pending | No |
 
@@ -82,3 +82,7 @@ Chapter 014 upgrade planning and gates, read-only preflight lab, and CVO/MCP upg
 ## Chapter 015 documentation milestone
 
 Chapter 015, read-only recovery readiness lab, and etcd backup/recovery triage runbook drafted. Distinguishes etcd control-plane state from PV and database data, backup artifacts, quorum-loss escalation, RPO/RTO evidence and approval gates. **No cluster runtime execution, backup inspection, restore rehearsal, independent review or production approval performed.**
+
+## Chapter 016 documentation milestone
+
+Chapter 016, read-only incident triage lab and production-safety incident runbook drafted. Covers API availability, Degraded Operators, NotReady nodes, route errors, evidence hygiene, least privilege, stateful workload escalation and approval gates. **No live cluster execution, independent review or production certification performed.**
