@@ -16,7 +16,7 @@ A dedicated, hands-on OpenShift administration track alongside [Kubernetes Admin
 3. [Chapter 006 — Projects, pods, deployments and workload lifecycle](chapters/006-projects-pods-deployments-and-workload-lifecycle.md)
 4. [Lab 006 — Disposable deployment lifecycle](labs/006-disposable-deployment-lifecycle.md)
 5. [Runbook — Deployment and pod triage](runbooks/workload-deployment-triage.md)
-9. [Chapter 005 — Machine API, MachineSets and safe node operations](chapters/005-machine-api-machinesets-and-node-operations.md)
+6. [Chapter 005 — Machine API, MachineSets and safe node operations](chapters/005-machine-api-machinesets-and-node-operations.md)
 7. [Lab 005 — Machine and node inventory](labs/005-machine-api-node-inventory.md)
 8. [Runbook — Machine API and node triage](runbooks/machine-api-node-triage.md)
 9. [Chapter 004 — Cluster Operators, CVO and update state](chapters/004-cluster-operators-cvo-and-update-state.md)
