@@ -9,7 +9,7 @@
 | 003 — Control plane and nodes | Drafted | Not run | Pending | No |
 | 004 — Cluster Operators and CVO | Drafted | Not run | Pending | No |
 | 005 — Machines and node operations | Drafted | Not run | Pending | No |
-| 006 — Workload lifecycle | Planned | Not run | Pending | No |
+| 006 — Workload lifecycle | Drafted | Not run | Pending | No |
 | 007 — Projects and quotas | Planned | Not run | Pending | No |
 | 008 — Storage | Planned | Not run | Pending | No |
 | 009 — Networking and ingress | Planned | Not run | Pending | No |
@@ -42,3 +42,7 @@ Chapter 004, read-only ClusterVersion/ClusterOperator lab and degraded-Operator 
 ## Chapter 005 documentation milestone
 
 Chapter 005, read-only Machine API/Node inventory lab and MachineSet/node triage runbook drafted and linked. Includes topology applicability, Machine/Node mapping, production drain decision gates, stateful Kafka/PostgreSQL/Redis safeguards, expected errors and evidence templates. **No live cluster test, independent review or production certification performed.**
+
+## Chapter 006 documentation milestone
+
+Chapter 006, disposable deployment lab, and workload triage runbook drafted. The lab is explicitly non-production, requires a preapproved image digest, RBAC, restricted-SCC compatibility, resource controls and targeted cleanup. **No live cluster runtime test, independent review or production approval performed.**
