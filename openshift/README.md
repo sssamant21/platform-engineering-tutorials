@@ -13,7 +13,10 @@ A dedicated, hands-on OpenShift administration track alongside [Kubernetes Admin
 
 1. [Master plan — all 18 chapters](MASTER-PLAN.md)
 2. [Progress and validation tracker](PROGRESS-TRACKER.md)
-3. [Chapter 012 — Monitoring, logs, events and alerting](chapters/012-monitoring-logging-events-and-alerting.md)
+3. [Chapter 013 — Capacity, resource pressure and autoscaling](chapters/013-capacity-resource-pressure-and-autoscaling.md)
+4. [Lab 013 — Read-only capacity and scheduling audit](labs/013-capacity-pressure-read-only-audit.md)
+5. [Runbook — Capacity, scheduling and autoscaling triage](runbooks/capacity-scheduling-autoscaling-triage.md)
+6. [Chapter 012 — Monitoring, logs, events and alerting](chapters/012-monitoring-logging-events-and-alerting.md)
 4. [Lab 012 — Read-only observability evidence](labs/012-observability-read-only-evidence.md)
 5. [Runbook — Monitoring, alerts and logging triage](runbooks/monitoring-alert-logging-triage.md)
 6. [Chapter 011 — OLM, add-on Operators and MachineConfig](chapters/011-olm-addon-operators-and-machineconfig.md)
