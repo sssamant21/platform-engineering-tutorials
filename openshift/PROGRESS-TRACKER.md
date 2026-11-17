@@ -15,7 +15,7 @@
 | 009 — Networking and ingress | Drafted | Not run | Pending | No |
 | 010 — Security and RBAC | Drafted | Not run | Pending | No |
 | 011 — OLM and MachineConfig | Drafted | Not run | Pending | No |
-| 012 — Monitoring and logging | Planned | Not run | Pending | No |
+| 012 — Monitoring and logging | Drafted | Not run | Pending | No |
 | 013 — Capacity and autoscaling | Planned | Not run | Pending | No |
 | 014 — Upgrade procedures | Planned | Not run | Pending | No |
 | 015 — Backup and recovery | Planned | Not run | Pending | No |
@@ -66,3 +66,7 @@ Chapter 010, read-only RBAC/SCC/ServiceAccount audit and security access triage 
 ## Chapter 011 documentation milestone
 
 Chapter 011, read-only OLM/MCP audit lab and Operator/MachineConfig triage runbook drafted. Differentiates OLM add-ons from platform ClusterOperators, documents InstallPlan manual approval, CSV conditions, MCP rollout safeguards and stateful-service risks. **No live execution, independent review or production approval performed.**
+
+## Chapter 012 documentation milestone
+
+Chapter 012, read-only observability evidence lab, and monitoring/alert/log triage runbook drafted and linked. Includes OpenShift platform monitoring versus optional user-workload monitoring, logging deployment caveats, least-privilege checks, event retention limitations, sanitized evidence, and approval/rollback gates. **No live OCP execution, independent technical review or production approval performed.**
