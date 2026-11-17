@@ -13,7 +13,10 @@ A dedicated, hands-on OpenShift administration track alongside [Kubernetes Admin
 
 1. [Master plan — all 18 chapters](MASTER-PLAN.md)
 2. [Progress and validation tracker](PROGRESS-TRACKER.md)
-3. [Chapter 010 — Authentication, RBAC, SCC and ServiceAccounts](chapters/010-authentication-rbac-scc-and-serviceaccounts.md)
+3. [Chapter 011 — OLM, add-on Operators and MachineConfig](chapters/011-olm-addon-operators-and-machineconfig.md)
+4. [Lab 011 — Read-only OLM and MCP audit](labs/011-olm-machineconfig-read-only-audit.md)
+5. [Runbook — OLM and MachineConfig triage](runbooks/olm-machineconfig-triage.md)
+6. [Chapter 010 — Authentication, RBAC, SCC and ServiceAccounts](chapters/010-authentication-rbac-scc-and-serviceaccounts.md)
 4. [Lab 010 — Read-only security and access audit](labs/010-security-rbac-scc-read-only-audit.md)
 5. [Runbook — RBAC, SCC and ServiceAccount access triage](runbooks/rbac-scc-serviceaccount-access-triage.md)
 6. [Chapter 009 — OVN-Kubernetes, Services, Routes, DNS and ingress](chapters/009-ovn-kubernetes-services-routes-and-ingress.md)
