@@ -14,7 +14,7 @@
 | 008 — Storage | Drafted | Not run | Pending | No |
 | 009 — Networking and ingress | Drafted | Not run | Pending | No |
 | 010 — Security and RBAC | Drafted | Not run | Pending | No |
-| 011 — OLM and MachineConfig | Planned | Not run | Pending | No |
+| 011 — OLM and MachineConfig | Drafted | Not run | Pending | No |
 | 012 — Monitoring and logging | Planned | Not run | Pending | No |
 | 013 — Capacity and autoscaling | Planned | Not run | Pending | No |
 | 014 — Upgrade procedures | Planned | Not run | Pending | No |
@@ -62,3 +62,7 @@ Chapter 009, a read-only Service/EndpointSlice/Route audit lab, and a network/DN
 ## Chapter 010 documentation milestone
 
 Chapter 010, read-only RBAC/SCC/ServiceAccount audit and security access triage runbook drafted and linked. Reviewed command patterns and SCC visibility caveat against Red Hat OCP 4.22 authentication and authorization/RBAC documentation. **No live OCP execution, independent security review or production certification performed.**
+
+## Chapter 011 documentation milestone
+
+Chapter 011, read-only OLM/MCP audit lab and Operator/MachineConfig triage runbook drafted. Differentiates OLM add-ons from platform ClusterOperators, documents InstallPlan manual approval, CSV conditions, MCP rollout safeguards and stateful-service risks. **No live execution, independent review or production approval performed.**
