@@ -53,6 +53,6 @@ After an approved recovery, independently validate API availability, ClusterVers
 - [OCP 4.22 documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.22)
 - [OCP 4.22 Backup and restore](https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/backup_and_restore/)
 - [OCP 4.22 Support and troubleshooting](https://docs.redhat.com/en/documentation/openshift_container_platform/4.22/html/support/)
-- [Kubernetes fundamentals in this repository](../../../kubernetes/README.md)
+- [Kubernetes fundamentals in this repository](../../kubernetes/README.md)
 
 Continue with [Lab 015](../labs/015-recovery-read-only-readiness-audit.md) and [Recovery readiness runbook](../runbooks/etcd-backup-recovery-readiness-triage.md).
