@@ -20,7 +20,7 @@
 | 014 — Upgrade procedures | Drafted | Not run | Pending | No |
 | 015 — Backup and recovery | Drafted | Not run | Pending | No |
 | 016 — Incident response | Drafted | Not run | Pending | No |
-| 017 — Stateful workload operations | Planned | Not run | Pending | No |
+| 017 — Stateful workload operations | Drafted | Not run | Pending | No |
 | 018 — Governance and acceptance | Planned | Not run | Pending | No |
 
 ## Evidence policy
@@ -86,3 +86,7 @@ Chapter 015, read-only recovery readiness lab, and etcd backup/recovery triage r
 ## Chapter 016 documentation milestone
 
 Chapter 016, read-only incident triage lab and production-safety incident runbook drafted. Covers API availability, Degraded Operators, NotReady nodes, route errors, evidence hygiene, least privilege, stateful workload escalation and approval gates. **No live cluster execution, independent review or production certification performed.**
+
+## Chapter 017 documentation milestone
+
+Chapter 017, read-only stateful HA audit lab and incident runbook drafted and cross-linked. Covers database-native quorum versus Kubernetes readiness, CSI/PVC topology, PDB voluntary eviction limits, PostgreSQL/Kafka/MongoDB/Redis owner boundaries, fencing and irreversible-change safeguards. **No live OCP execution, independent technical review, database-native validation or production approval performed.**
