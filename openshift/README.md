@@ -13,7 +13,10 @@ A dedicated, hands-on OpenShift administration track alongside [Kubernetes Admin
 
 1. [Master plan — all 18 chapters](MASTER-PLAN.md)
 2. [Progress and validation tracker](PROGRESS-TRACKER.md)
-3. [Chapter 013 — Capacity, resource pressure and autoscaling](chapters/013-capacity-resource-pressure-and-autoscaling.md)
+3. [Chapter 014 — Upgrade planning, gates and post-checks](chapters/014-upgrade-planning-gates-and-post-checks.md)
+4. [Lab 014 — Read-only upgrade preflight](labs/014-upgrade-read-only-preflight.md)
+5. [Runbook — Upgrade, CVO and MCP triage](runbooks/upgrade-cvo-mcp-triage.md)
+6. [Chapter 013 — Capacity, resource pressure and autoscaling](chapters/013-capacity-resource-pressure-and-autoscaling.md)
 4. [Lab 013 — Read-only capacity and scheduling audit](labs/013-capacity-pressure-read-only-audit.md)
 5. [Runbook — Capacity, scheduling and autoscaling triage](runbooks/capacity-scheduling-autoscaling-triage.md)
 6. [Chapter 012 — Monitoring, logs, events and alerting](chapters/012-monitoring-logging-events-and-alerting.md)
