@@ -11,7 +11,10 @@ A dedicated, hands-on OpenShift administration track alongside [Kubernetes Admin
 
 ## Start here
 
-1. [Chapter 015 — etcd backup, platform and application recovery](chapters/015-etcd-backup-platform-and-application-recovery.md)
+1. [Chapter 016 — Incident response and cluster failure triage](chapters/016-incident-response-and-cluster-failure-triage.md)
+2. [Lab 016 — Read-only incident triage](labs/016-incident-read-only-triage.md)
+3. [Runbook — Cluster incident response triage](runbooks/cluster-incident-response-triage.md)
+4. [Chapter 015 — etcd backup, platform and application recovery](chapters/015-etcd-backup-platform-and-application-recovery.md)
 2. [Lab 015 — Read-only recovery readiness audit](labs/015-recovery-read-only-readiness-audit.md)
 3. [Runbook — etcd backup and recovery readiness triage](runbooks/etcd-backup-recovery-readiness-triage.md)
 4. [Master plan — all 18 chapters](MASTER-PLAN.md)
