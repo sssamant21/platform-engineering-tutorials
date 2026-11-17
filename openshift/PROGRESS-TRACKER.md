@@ -13,7 +13,7 @@
 | 007 — Projects and quotas | Drafted | Not run | Pending | No |
 | 008 — Storage | Drafted | Not run | Pending | No |
 | 009 — Networking and ingress | Drafted | Not run | Pending | No |
-| 010 — Security and RBAC | Planned | Not run | Pending | No |
+| 010 — Security and RBAC | Drafted | Not run | Pending | No |
 | 011 — OLM and MachineConfig | Planned | Not run | Pending | No |
 | 012 — Monitoring and logging | Planned | Not run | Pending | No |
 | 013 — Capacity and autoscaling | Planned | Not run | Pending | No |
@@ -58,3 +58,7 @@ Chapter 008, read-only PV/PVC/StorageClass/CSI audit lab and storage incident tr
 ## Chapter 009 documentation milestone
 
 Chapter 009, a read-only Service/EndpointSlice/Route audit lab, and a network/DNS/ingress triage runbook were drafted and linked. Guidance was checked against Red Hat OCP 4.22 OVN-Kubernetes, Networking Operators and networking overview documentation. Distinguishes backend readiness, external/internal DNS, Route admission, Ingress Operator and OVN network layers. **No live OCP execution, independent review or production certification performed.**
+
+## Chapter 010 documentation milestone
+
+Chapter 010, read-only RBAC/SCC/ServiceAccount audit and security access triage runbook drafted and linked. Reviewed command patterns and SCC visibility caveat against Red Hat OCP 4.22 authentication and authorization/RBAC documentation. **No live OCP execution, independent security review or production certification performed.**
