@@ -35,6 +35,27 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(len(failures), 1)
             self.assertIn("missing.md", failures[0])
 
+    def test_collapsed_reference_uses_its_link_text_as_label(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "target.md").write_text("# target\n", encoding="utf-8")
+            (root / "doc.md").write_text(
+                "[target][]\n[target]: target.md\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(failures, [])
+
+    def test_collapsed_reference_missing_target_is_reported(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "[missing][]\n[missing]: absent.md\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+
     def test_fenced_reference_definition_is_ignored(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
