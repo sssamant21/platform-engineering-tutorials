@@ -134,9 +134,9 @@ class LinkAuditTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "doc.md").write_text(
-                "[fragment\`hidden\`](missing.md) and [valid](present.md)\\n", encoding="utf-8"
+                "[fragment`hidden`](missing.md) and [valid](present.md)\n", encoding="utf-8"
             )
-            (root / "present.md").write_text("# present\\n", encoding="utf-8")
+            (root / "present.md").write_text("# present\n", encoding="utf-8")
             checked, failures = checker.audit(root)
             self.assertEqual(checked, 1)
             self.assertEqual(failures, [])
