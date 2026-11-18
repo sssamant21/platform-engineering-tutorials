@@ -172,3 +172,10 @@ Extended the read-only Markdown link validator to recognize collapsed reference 
 ## V01 reference-label normalization review — 2026-11-18
 
 Corrected the offline Markdown link auditor to normalize case and runs of whitespace in reference labels, consistent with Markdown reference-label matching. Added one regression case covering mixed-case and multi-space labels; the suite now contains six test methods. Commits `78a29ff3f5aa09aa092d3b9155bf0cb6e99ef2ef` and `4b9d5c74806160cb0c837a3476dbe1b734d31bb8`. GitHub source retrieval verified both changes. Full checkout again failed because the runtime could not resolve github.com, so **neither the six-test suite nor the full branch link audit was executed**. No live OCP cluster testing, independent technical review or production approval. Next: execute `python -m unittest discover -s openshift/validation -p 'test_*.py'` and `python openshift/validation/check_relative_links.py` from a complete checkout; fix confirmed failures before version-specific command review.
+
+
+## V01 duplicate-reference definition handling — 2026-11-18
+
+Corrected the offline Markdown checker so the **first** definition of a normalized reference label wins; subsequent duplicate definitions no longer silently override it. Added a regression fixture with a valid first definition and broken duplicate second definition. Commits `66e323da7e1f15343e3b20483a3b856397b02f79` and `3affe28bc2b456d3869c4299c7840740bd1c2b3a`. The suite now has seven authored test cases. This is source-level validation only: neither tests nor a full repository audit have been executed in this run. No cluster testing, independent approval, or production certification.
+
+Next: execute the seven regression tests and branch-wide link audit in a complete checkout; resolve actual failures and verify version-sensitive OCP 4.22 guidance.
