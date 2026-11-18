@@ -34,13 +34,19 @@ oc get deployment <deployment> -n <namespace> -o jsonpath='{.spec.template.spec.
 oc get pods -n <namespace> -o custom-columns=NAME:.metadata.name,SA:.spec.serviceAccountName,SCC:.metadata.annotations.openshift\.io/scc
 ```
 
-For an authorized security administrator only:
+For an authorized security administrator only (each read requires its own permission check):
 ```sh
+oc auth can-i list clusterrolebindings
+oc auth can-i list securitycontextconstraints.security.openshift.io
+oc auth can-i get securitycontextconstraints.security.openshift.io/restricted-v2
+# Run only the individually authorized reads:
 oc get clusterrolebindings
 oc get scc
 oc describe scc restricted-v2
+# who-can may require additional RBAC inspection rights; if denied, stop and escalate.
 oc adm policy who-can use scc restricted-v2
 ```
+A `no` response or `Forbidden` error means skip that read, record the denied verb/resource/scope and request authorized review; never elevate permissions simply to complete the lab. `get` of a named Deployment or SCC does not authorize `list` of a collection. The `create rolebindings` check is an authorization assessment only and does not create anything.
 Do not collect full service-account YAML or pod environment variables into shared evidence; these can expose sensitive references or values.
 
 **Windows PowerShell:** commands above work in PowerShell; replace angle-bracket placeholders with real names *without* typing the brackets. For a clean pod report, use `oc get pods -n $Namespace -o custom-columns='NAME:.metadata.name,SA:.spec.serviceAccountName,SCC:.metadata.annotations.openshift\.io/scc'`. Quote JSONPath arguments as shown.
