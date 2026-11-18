@@ -183,3 +183,11 @@ Next: execute the seven regression tests and branch-wide link audit in a complet
 ## V01 inline-code false-positive correction — 2026-11-18
 
 The local-link checker now ignores Markdown links inside single-backtick inline code spans while retaining real inline and reference links on the same line. Added one offline regression case (eight authored tests total). **Not yet executed:** the regression suite and complete branch-wide audit, because a repository checkout was unavailable due to DNS resolution. The change is a limited static-analysis improvement, not a complete Markdown parser: multi-backtick spans, HTML, anchors and external URL verification remain out of scope. No cluster commands or production operations were executed. Next: execute tests on a full checkout, fix confirmed link failures and continue OCP 4.22 review.
+
+## V01 multi-backtick code-span link audit correction — 2026-11-18
+
+Updated the read-only Markdown link checker to exclude matched single- and multi-backtick inline code spans while preserving navigable links elsewhere on the line. Unmatched delimiters remain visible for audit rather than silently suppressing links. Added two regression cases (ten authored tests total), covering multi-backtick spans and unmatched delimiters. Commits `5a588d395320e3f878a334119bbb9f3c9087422d` and `ddfae34dc6124e13284f1c3f0f0920078891556c`.
+
+**Validation boundary:** GitHub accepted the changes; no full checkout-based Python test execution or branch-wide Markdown audit is claimed. This is a targeted source-level correction, not a complete CommonMark parser. HTML links, fragment anchors and external URL checks remain pending. No OpenShift cluster operations, independent review or production approval were performed.
+
+**Next:** Run `python -m unittest discover -s openshift/validation -p 'test_*.py'` and `python openshift/validation/check_relative_links.py` from a complete checkout, record actual results, correct confirmed failures and review OCP 4.22-sensitive commands.
