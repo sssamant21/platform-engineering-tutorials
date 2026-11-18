@@ -12,12 +12,18 @@ DEPLOY=sample-app
 oc whoami
 oc config current-context
 oc version
-oc auth can-i get deployments -n "$NS"
+
+# Check each resource and verb separately. Run the matching read ONLY after 'yes'.
 oc auth can-i list rolebindings -n "$NS"
+oc auth can-i list serviceaccounts -n "$NS"
+oc auth can-i list pods -n "$NS"
+oc auth can-i get deployments -n "$NS" --resource-name="$DEPLOY"
+
+# Authorized reads (run individually only if the corresponding check returned yes):
 oc get rolebindings -n "$NS"
 oc get serviceaccounts -n "$NS"
-oc get deployment "$DEPLOY" -n "$NS" -o jsonpath='{.spec.template.spec.serviceAccountName}{"\n"}'
-oc get pods -n "$NS" -o custom-columns='NAME:.metadata.name,SA:.spec.serviceAccountName,SCC:.metadata.annotations.openshift\.io/scc'
+oc get deployment "$DEPLOY" -n "$NS" -o jsonpath='{.spec.template.spec.serviceAccountName}{"\\n"}'
+oc get pods -n "$NS" -o custom-columns='NAME:.metadata.name,SA:.spec.serviceAccountName,SCC:.metadata.annotations.openshift\\.io/scc'
 ```
 
 ### Windows PowerShell
@@ -27,13 +33,21 @@ $Deployment = 'sample-app'
 oc whoami
 oc config current-context
 oc version
-oc auth can-i get deployments -n $Namespace
+
+# Check each resource and verb separately. Run the matching read ONLY after 'yes'.
 oc auth can-i list rolebindings -n $Namespace
+oc auth can-i list serviceaccounts -n $Namespace
+oc auth can-i list pods -n $Namespace
+oc auth can-i get deployments -n $Namespace --resource-name=$Deployment
+
+# Authorized reads (run individually only if the corresponding check returned yes):
 oc get rolebindings -n $Namespace
 oc get serviceaccounts -n $Namespace
-oc get deployment $Deployment -n $Namespace -o jsonpath='{.spec.template.spec.serviceAccountName}{"\n"}'
-oc get pods -n $Namespace -o custom-columns='NAME:.metadata.name,SA:.spec.serviceAccountName,SCC:.metadata.annotations.openshift\.io/scc'
+oc get deployment $Deployment -n $Namespace -o jsonpath='{.spec.template.spec.serviceAccountName}{"\\n"}'
+oc get pods -n $Namespace -o custom-columns='NAME:.metadata.name,SA:.spec.serviceAccountName,SCC:.metadata.annotations.openshift\\.io/scc'
 ```
+
+**Authorization decision gate:** These are examples, not a script to execute top-to-bottom. A `no`, `Forbidden`, or inconclusive authorization check means **skip that specific read**, record the denial without credentials, and contact the namespace/security owner. `get` on the named deployment is different from `list` on a collection. Do not elevate privileges or run `oc auth can-i --as` without approved impersonation rights. A `yes` does not guarantee an object exists or that an admission policy permits other actions.
 
 If the deployment omits serviceAccountName, Kubernetes defaults to `default` for the pod. An empty JSONPath output is therefore not proof that no service account is used. A pod's SCC annotation is evidence of the admitted SCC when present, not proof of all eligible SCCs.
 
