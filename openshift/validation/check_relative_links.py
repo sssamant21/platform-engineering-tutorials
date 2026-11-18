@@ -52,9 +52,9 @@ def strip_inline_code_spans(line: str) -> str:
             result.append(delimiter)
             cursor = end
         else:
-            # Keep a separator: removing code without one can fabricate a link
-            # from text on opposite sides of the span.
-            result.append(" ")
+            # Break link syntax across code boundaries: whitespace alone can
+            # still leave a synthetic [label ](target) match.
+            result.append("] ")
             cursor = end + match.end()
     return "".join(result)
 
