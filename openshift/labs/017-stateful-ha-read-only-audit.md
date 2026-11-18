@@ -4,7 +4,7 @@
 
 ## Prerequisites
 - `oc` and existing authenticated context; confirm cluster identity with the platform owner.
-- Namespace with at least one stateful application; permission to `get/list` pods, StatefulSets, PVCs, PDBs and events. Node/StorageClass access optional; use `oc auth can-i` before cluster-scoped reads.
+- Namespace with at least one stateful application; `list` permission for pods, StatefulSets, PVCs, PDBs and events in the approved namespace. `get` permission on an individual named object is separate. Node/StorageClass access is optional and cluster-scoped; check it before querying.
 - Do not capture Secrets, environment variables, connection strings, raw kubeconfig or credentials.
 
 ## Procedure
@@ -14,7 +14,11 @@ oc config current-context
 oc version
 NS=approved-project
 oc auth can-i list pods -n "$NS"
+oc auth can-i list statefulsets.apps -n "$NS"
 oc auth can-i list persistentvolumeclaims -n "$NS"
+oc auth can-i list poddisruptionbudgets.policy -n "$NS"
+oc auth can-i list events -n "$NS"
+# Run each collection query only after its corresponding permission returns yes.
 oc get sts,pods,pvc,pdb -n "$NS" -o wide
 oc get events -n "$NS" --sort-by=.lastTimestamp
 oc auth can-i list nodes
@@ -26,10 +30,15 @@ $Ns = "approved-project"
 oc whoami
 oc config current-context
 oc auth can-i list pods -n $Ns
+oc auth can-i list statefulsets.apps -n $Ns
+oc auth can-i list persistentvolumeclaims -n $Ns
+oc auth can-i list poddisruptionbudgets.policy -n $Ns
+oc auth can-i list events -n $Ns
+# Only run each read when its corresponding check returns yes.
 oc get sts,pods,pvc,pdb -n $Ns -o wide
 oc get events -n $Ns --sort-by=.lastTimestamp
 ```
-If permitted, separately inspect `oc get nodes -L topology.kubernetes.io/zone` and `oc get sc`. Inspect an individual PDB using `oc describe pdb <approved-name> -n <approved-project>` only if authorized.
+If `oc auth can-i list nodes` and `oc auth can-i list storageclasses.storage.k8s.io` each return `yes`, separately inspect `oc get nodes -L topology.kubernetes.io/zone` and `oc get sc` respectively. For an individual PDB, check `oc auth can-i get poddisruptionbudgets.policy -n <approved-project>` before `oc describe pdb <approved-name> -n <approved-project>`. A `no` response means skip that query; do not request elevated access merely to complete the lab. A combined `oc get` command can partially fail if one resource lacks `list` permission; use individually authorized queries instead.
 
 ## Expected versus error conditions
 - Expected: pod/node placement and PVC binding can be inventoried; PDB output shows allowed disruptions when PDBs exist.
