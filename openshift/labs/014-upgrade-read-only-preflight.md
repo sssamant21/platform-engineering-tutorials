@@ -3,7 +3,7 @@
 **Environment:** authorized non-production OCP 4.22 cluster preferred. **No upgrade performed.** Time: 25–30 minutes. **Status:** Draft only.
 
 ## Preconditions
-A cluster reader able to inspect ClusterVersion, ClusterOperators, nodes and MCPs; approved cluster identifier; compatible `oc`; ticket/reference; no secrets in evidence. If a check is forbidden, record the missing permission and ask a designated administrator to collect only that output. Do not grant cluster-admin for the lab.
+A least-privilege cluster reader with `get` on the named `clusterversion/version` object and `list` on ClusterOperators, MachineConfigPools and nodes; approved cluster identifier; compatible `oc`; ticket/reference; no secrets in evidence. If a check is forbidden, record the missing permission and ask a designated administrator to collect only that output. Do not grant cluster-admin for the lab.
 
 ## Procedure
 1. Verify cluster and identity without exposing tokens:
@@ -12,16 +12,22 @@ A cluster reader able to inspect ClusterVersion, ClusterOperators, nodes and MCP
    oc config current-context
    oc version
    ```
-2. Check access and cluster update state:
+2. Check each authorization separately before making its corresponding read. The following examples work in Bash and PowerShell (run one command at a time); **only execute a read when its check returns `yes`**:
    ```sh
-   oc auth can-i get clusterversions.config.openshift.io
+   oc auth can-i get clusterversions.config.openshift.io --resource-name=version
    oc auth can-i list clusteroperators.config.openshift.io
+   oc auth can-i list machineconfigpools.machineconfiguration.openshift.io
+   oc auth can-i list nodes
+   ```
+   If authorized, run only the matching read:
+   ```sh
    oc get clusterversion version -o json
-   oc get co
-   oc get mcp
+   oc get clusteroperators.config.openshift.io
+   oc get machineconfigpools.machineconfiguration.openshift.io
    oc get nodes
    ```
-3. Read `status.desired`, `status.history`, `status.availableUpdates`, `status.conditionalUpdates`, and conditions from ClusterVersion JSON. For each candidate target, verify support against the Red Hat OCP 4.22 update documentation; never assume that a listed conditional update is risk-free.
+   The named-object `get` check is **not** a substitute for collection `list`. A `no` response or `Forbidden` means skip that read, record the gap and request an authorized collector; do not elevate privileges. On some clusters, `oc auth can-i` may itself be denied due to SelfSubjectAccessReview restrictions: stop and escalate. ClusterVersion JSON can contain internal URLs and configuration details; inspect locally and redact before sharing or committing evidence. For PowerShell, run the same individual commands directly; avoid shell-specific `&&` chaining.
+3. Where the named ClusterVersion read was authorized, inspect `status.desired`, `status.history`, `status.availableUpdates`, `status.conditionalUpdates`, and conditions from ClusterVersion JSON. For each candidate target, verify support against the Red Hat OCP 4.22 update documentation; never assume that a listed conditional update is risk-free.
 4. Compare ClusterOperator and MCP conditions, node readiness and application owners' baseline SLOs. Do **not** run `oc adm upgrade`, pause MCPs, drain nodes, change channels or change any resources.
 5. Complete decision sheet below; report **NO-GO** for unknown upgrade path, unapproved risks, Degraded operators, degraded MCP, insufficient headroom, unverified backups or absent owner approval.
 
