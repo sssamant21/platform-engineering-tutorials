@@ -56,6 +56,18 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(checked, 1)
             self.assertEqual(len(failures), 1)
 
+    def test_reference_labels_collapse_whitespace_and_case(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "target.md").write_text("# target\n", encoding="utf-8")
+            (root / "doc.md").write_text(
+                "[one][MULTI   WORD]\n[two][multi word]\n[multi word]: target.md\n",
+                encoding="utf-8",
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 2)
+            self.assertEqual(failures, [])
+
     def test_fenced_reference_definition_is_ignored(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
