@@ -191,3 +191,7 @@ Updated the read-only Markdown link checker to exclude matched single- and multi
 **Validation boundary:** GitHub accepted the changes; no full checkout-based Python test execution or branch-wide Markdown audit is claimed. This is a targeted source-level correction, not a complete CommonMark parser. HTML links, fragment anchors and external URL checks remain pending. No OpenShift cluster operations, independent review or production approval were performed.
 
 **Next:** Run `python -m unittest discover -s openshift/validation -p 'test_*.py'` and `python openshift/validation/check_relative_links.py` from a complete checkout, record actual results, correct confirmed failures and review OCP 4.22-sensitive commands.
+
+## V01 inline-code boundary regression — 2026-11-18
+
+Static review found that deleting a matched backtick span without a separator could join adjacent text into a synthetic Markdown link. The checker now inserts a space where the span was removed; an eleventh offline regression case covers the boundary. Commits: `64ca518fe0e1159b1936536a6883cbf37a88602a`, `db058e4225941335e7f534a454ad1473272affac`. GitHub source updates are committed; Python tests and the complete link audit remain **unexecuted** because a complete checkout is unavailable (GitHub DNS resolution failed). No cluster access, production change, independent review or certification. Next: run the eleven regression cases and branch-wide audit from a complete checkout, record results and address real failures.
