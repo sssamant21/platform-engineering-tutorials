@@ -39,7 +39,7 @@ Linux/Bash:
 oc version --client
 oc whoami
 oc config current-context
-oc auth can-i get clusteroperators
+oc auth can-i list clusteroperators
 oc auth can-i list pods -n <approved-namespace>
 ```
 
@@ -48,11 +48,11 @@ PowerShell:
 oc version --client
 oc whoami
 oc config current-context
-oc auth can-i get clusteroperators
+oc auth can-i list clusteroperators
 oc auth can-i list pods -n <approved-namespace>
 ```
 
-Replace the placeholder namespace before running. **Do not print kubeconfig or authentication tokens.** Authorization errors are legitimate evidence of least-privilege boundaries, not a reason to elevate access without approval.
+The ClusterOperator check uses `list` because the intended inventory is a collection query (`oc get clusteroperators`); use `get` only when reading a named object and check that permission separately. Replace the placeholder namespace before running. **Do not print kubeconfig or authentication tokens.** Authorization errors are legitimate evidence of least-privilege boundaries, not a reason to elevate access without approval.
 
 ## Next validation increment
 
