@@ -52,7 +52,7 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 continue
             definition = REFERENCE_DEF.match(definition_line)
             if definition:
-                definitions[normalize_reference_label(definition.group(1))] = definition.group(2).strip("<>")
+                definitions.setdefault(normalize_reference_label(definition.group(1)), definition.group(2).strip("<>"))
         fence_char = None
         fence_length = 0
         for line_no, line in enumerate(lines, 1):
