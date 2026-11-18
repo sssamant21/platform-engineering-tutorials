@@ -31,7 +31,7 @@ oc whoami
 oc config current-context
 oc version
 NS=approved-project
-oc auth can-i get pods -n "$NS"
+oc auth can-i list pods -n "$NS"
 oc get pods,statefulsets,pdb -n "$NS" -o wide
 oc get pvc -n "$NS"
 oc get events -n "$NS" --sort-by=.lastTimestamp
@@ -43,12 +43,12 @@ PowerShell:
 $Ns = "approved-project"
 oc whoami
 oc config current-context
-oc auth can-i get pods -n $Ns
+oc auth can-i list pods -n $Ns
 oc get pods,statefulsets,pdb -n $Ns -o wide
 oc get pvc -n $Ns
 oc get events -n $Ns --sort-by=.lastTimestamp
 ```
-**Expected:** workload objects show names/status; Bound PVCs only establish provisioning, not database integrity. `Forbidden` indicates insufficient RBAC—request scoped read access, not cluster-admin. `No resources found` may mean wrong namespace. `Pending` PVC, `Multi-Attach` events, `NotReady` pods or PDB `ALLOWED DISRUPTIONS=0` require diagnosis, not immediate mutation. `oc top` requires metrics availability and permission.
+**RBAC precision:** `oc get pods -n "$NS"` without an object name performs a collection LIST operation; `oc auth can-i list pods` is the matching preflight, not `get pods`. The combined `oc get pods,statefulsets,pdb` additionally requires `list` on StatefulSets and PodDisruptionBudgets. Cluster-scoped nodes and StorageClasses require separate cluster-scoped `list` permissions; omit those queries if access is not approved.\n\n**Expected:** workload objects show names/status; Bound PVCs only establish provisioning, not database integrity. `Forbidden` indicates insufficient RBAC—request scoped read access, not cluster-admin. `No resources found` may mean wrong namespace. `Pending` PVC, `Multi-Attach` events, `NotReady` pods or PDB `ALLOWED DISRUPTIONS=0` require diagnosis, not immediate mutation. `oc top` requires metrics availability and permission.
 
 ## Placement and storage interpretation
 Check pod node/zone, topology constraints, anti-affinity and tolerations; inspect StorageClass `volumeBindingMode`, reclaim policy and `allowVolumeExpansion`. Distinguish RWO access mode from guaranteed single-pod exclusivity; RWOP is distinct and depends on CSI support. Verify CSI driver capabilities and zone affinity before planning rescheduling. A healthy PVC and pod are not evidence of application-level consistency.
