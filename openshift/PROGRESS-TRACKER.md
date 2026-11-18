@@ -146,3 +146,7 @@ Corrected Lab 015's RBAC semantics: the previous `get clusterversion` preflight 
 ## V01 Chapter 015 recovery runbook RBAC review — 2026-11-18
 
 Reviewed the etcd backup/recovery readiness triage runbook. Replaced unguarded collection reads with explicit, resource-specific authorization preflight: named `clusterversion/version` requires `get`, ClusterOperators and nodes require `list`. Added Bash and PowerShell examples, manual gating, expected `yes`/`no` and `Forbidden` handling, skip-without-elevation policy, and sensitive evidence handling. Commit `80a25e3f6b5b4c84df62298f21858af8c5c5a5d1`. **Documentation-level semantic review only**; no OpenShift API access, cluster execution, snapshot inspection, backup/restore test, independent technical review or production approval. Next: repository-wide Markdown link audit and version-specific OCP 4.22 command review, then isolated authorized lab validation.
+
+## V01 validation-plan RBAC preflight correction — 2026-11-18
+
+Corrected the V01 validation gate plan's Bash and PowerShell examples from `oc auth can-i get clusteroperators` to `oc auth can-i list clusteroperators`, matching the intended collection inventory (`oc get clusteroperators`). Named-object `get` requires a separate check. This is a documentation-level semantic correction only, not a completed repository-wide link audit, OCP 4.22 certification, runtime lab execution, independent review or production approval. Next: inventory and check all relative Markdown links across `openshift/` and record reproducible evidence.
