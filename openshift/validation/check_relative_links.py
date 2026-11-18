@@ -18,6 +18,8 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 LINK = re.compile(r"!?(?:\[[^\]]*\])\(\s*(<[^>]+>|[^\s)]+)(?:\s+['\"][^)]*['\"])?\s*\)")
+REFERENCE_DEF = re.compile(r"^\\s{0,3}\\[([^]]+)\\]:\\s*(<[^>]+>|\\S+)")
+REFERENCE_USE = re.compile(r"!?\\[[^]]+\\]\\[([^]]+)\\]")
 FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
 SCHEME = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
 
@@ -27,9 +29,11 @@ def audit(root: Path) -> tuple[int, list[str]]:
     failures: list[str] = []
     checked = 0
     for file in files:
+        definitions: dict[str, str] = {}
+        lines = file.read_text(encoding="utf-8").splitlines()
         fence_char = None
         fence_length = 0
-        for line_no, line in enumerate(file.read_text(encoding="utf-8").splitlines(), 1):
+        for line_no, line in enumerate(lines, 1):
             match = FENCE.match(line)
             if match:
                 marker = match.group(1)
@@ -40,8 +44,15 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 continue
             if fence_char is not None:
                 continue
-            for found in LINK.finditer(line):
-                raw = found.group(1).strip("<>")
+            definition = REFERENCE_DEF.match(line)
+            if definition:
+                definitions[definition.group(1).strip().casefold()] = definition.group(2).strip("<>")
+            targets = [m.group(1).strip("<>") for m in LINK.finditer(line)]
+            for use in REFERENCE_USE.finditer(line):
+                label = use.group(1).strip().casefold()
+                if label in definitions:
+                    targets.append(definitions[label])
+            for raw in targets:
                 if raw.startswith(("#", "//")) or SCHEME.match(raw):
                     continue
                 # urlsplit also strips query strings and fragment identifiers.
