@@ -26,8 +26,12 @@ Prerequisites: approved read access to a test namespace, `oc` compatible with cl
 oc whoami
 oc config current-context
 oc version
-oc auth can-i get pods -n <namespace>
+oc auth can-i list rolebindings -n <namespace>
+oc auth can-i list serviceaccounts -n <namespace>
+oc auth can-i get deployments -n <namespace>
+oc auth can-i list pods -n <namespace>
 oc auth can-i create rolebindings -n <namespace>
+# Execute each following read only if its matching check above returned yes.
 oc get rolebindings -n <namespace>
 oc get serviceaccounts -n <namespace>
 oc get deployment <deployment> -n <namespace> -o jsonpath='{.spec.template.spec.serviceAccountName}{"\n"}'
