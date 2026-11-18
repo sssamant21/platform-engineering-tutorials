@@ -141,5 +141,28 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(checked, 1)
             self.assertEqual(failures, [])
 
+    def test_indented_code_links_and_definitions_are_ignored(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "    [fake](missing.md)\n"
+                "    [id]: missing.md\n"
+                "[outside][id]\n",
+                encoding="utf-8",
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 0)
+            self.assertEqual(failures, [])
+
+    def test_tab_indented_code_link_is_ignored(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "\t[example](missing.md)\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 0)
+            self.assertEqual(failures, [])
+
 if __name__ == "__main__":
     unittest.main()
