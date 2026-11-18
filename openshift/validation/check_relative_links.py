@@ -18,8 +18,8 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 LINK = re.compile(r"!?(?:\[[^\]]*\])\(\s*(<[^>]+>|[^\s)]+)(?:\s+['\"][^)]*['\"])?\s*\)")
-REFERENCE_DEF = re.compile(r"^\\s{0,3}\\[([^]]+)\\]:\\s*(<[^>]+>|\\S+)")
-REFERENCE_USE = re.compile(r"!?\\[[^]]+\\]\\[([^]]+)\\]")
+REFERENCE_DEF = re.compile(r"^\s{0,3}\[([^]]+)\]:\s*(<[^>]+>|\S+)")
+REFERENCE_USE = re.compile(r"!?\[[^]]+\]\[([^]]+)\]")
 FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
 SCHEME = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
 
@@ -31,6 +31,23 @@ def audit(root: Path) -> tuple[int, list[str]]:
     for file in files:
         definitions: dict[str, str] = {}
         lines = file.read_text(encoding="utf-8").splitlines()
+        # Reference definitions may occur after their uses.
+        pre_fence_char = None
+        pre_fence_length = 0
+        for definition_line in lines:
+            marker_match = FENCE.match(definition_line)
+            if marker_match:
+                marker = marker_match.group(1)
+                if pre_fence_char is None:
+                    pre_fence_char, pre_fence_length = marker[0], len(marker)
+                elif marker[0] == pre_fence_char and len(marker) >= pre_fence_length:
+                    pre_fence_char, pre_fence_length = None, 0
+                continue
+            if pre_fence_char is not None:
+                continue
+            definition = REFERENCE_DEF.match(definition_line)
+            if definition:
+                definitions[definition.group(1).strip().casefold()] = definition.group(2).strip("<>")
         fence_char = None
         fence_length = 0
         for line_no, line in enumerate(lines, 1):
@@ -44,9 +61,8 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 continue
             if fence_char is not None:
                 continue
-            definition = REFERENCE_DEF.match(line)
-            if definition:
-                definitions[definition.group(1).strip().casefold()] = definition.group(2).strip("<>")
+            if REFERENCE_DEF.match(line):
+                continue
             targets = [m.group(1).strip("<>") for m in LINK.finditer(line)]
             for use in REFERENCE_USE.finditer(line):
                 label = use.group(1).strip().casefold()
