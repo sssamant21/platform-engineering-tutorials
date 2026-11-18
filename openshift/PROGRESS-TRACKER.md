@@ -208,3 +208,8 @@ Corrected Chapter 010 namespace read preflights to distinguish `list` for RoleBi
 ## V01 Chapter 010 security lab RBAC consistency — 2026-11-18
 
 Corrected Lab 010's previously unguarded ServiceAccount and pod collection reads. The Linux/macOS and PowerShell examples now check `list` for RoleBindings, ServiceAccounts and pods, and `get` for the named Deployment (`--resource-name`). Each read is conditional on its own authorization result; denied or inconclusive checks are skipped without privilege escalation. Commit `79b0706dd437b73c1f6518bdc5077ae64477b9a0`. **Documentation-level semantic correction only:** no cluster commands executed; offline regression suite, full link audit, OCP 4.22 command verification, independent review and production approval remain pending.
+
+
+## V01 Markdown fence indentation correction — 2026-11-18
+
+Source inspection found the offline link checker treated four-space-indented backtick runs as fenced-code delimiters because its regex allowed arbitrary leading whitespace. Markdown fences permit at most three leading spaces; a four-space-indented line is indented code and must not toggle fence state. Restricted the detector to zero through three spaces and added two offline regression cases for four-space indentation and valid three-space fences. Commits `4bc6ee84760d4f3f9c8df4cc3366efa6a1b22e23` and `dbad7aadc38eb71fc2e4965706a370872632c41c`. **Source-level correction only:** the full regression suite and branch-wide link audit remain unexecuted, and no live cluster testing or production approval is claimed. Next: execute the tests and full audit on a complete checkout, then continue OCP 4.22 command/security review.
