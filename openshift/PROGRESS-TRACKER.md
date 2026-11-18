@@ -200,3 +200,7 @@ Static review found that deleting a matched backtick span without a separator co
 ## V02 offline link-audit execution protocol — 2026-11-18
 
 Added [V02 reproducible execution and evidence protocol](validation/V02-offline-link-audit-execution.md) with Linux/PowerShell commands, expected exit statuses, commit-SHA evidence requirements, limitations and escalation when checkout fails. A full GitHub checkout was attempted in this run but failed with `Could not resolve host: github.com`; **the 11 authored tests and full link audit have not been executed**. This is a documented QA procedure, not a passing result. Next: execute tests and the full checkout audit when network access is available; fix confirmed failures, then independently review OCP 4.22 commands and production safety.
+
+## V01 Chapter 010 RBAC read authorization review — 2026-11-18
+
+Corrected Chapter 010 namespace read preflights to distinguish `list` for RoleBindings, ServiceAccounts and pods from named Deployment `get`; added separate cluster-scope checks for ClusterRoleBindings and SCCs. Each read must be skipped on `no` or `Forbidden`; `who-can` may require additional authorization. Commits `afda288513e5dbf350abbae36c98c49778822e62` and `3757b947470fe0084c6d6dcc730e0aee7fde3ea2`. **Documentation-only review:** no OCP runtime test, full link audit, independent security approval or production certification. Next: execute offline regression tests and branch-wide link audit, then validate command semantics against OCP 4.22 documentation.
