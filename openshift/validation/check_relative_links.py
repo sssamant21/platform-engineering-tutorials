@@ -78,7 +78,7 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 elif marker[0] == pre_fence_char and len(marker) >= pre_fence_length:
                     pre_fence_char, pre_fence_length = None, 0
                 continue
-            if pre_fence_char is not None:
+            if pre_fence_char is not None or definition_line.startswith(("    ", "\t")):
                 continue
             definition = REFERENCE_DEF.match(definition_line)
             if definition:
@@ -94,7 +94,7 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 elif marker[0] == fence_char and len(marker) >= fence_length:
                     fence_char, fence_length = None, 0
                 continue
-            if fence_char is not None:
+            if fence_char is not None or line.startswith(("    ", "\t")):
                 continue
             if REFERENCE_DEF.match(line):
                 continue
