@@ -29,6 +29,33 @@ def normalize_reference_label(label: str) -> str:
     return " ".join(label.split()).casefold()
 
 
+
+def strip_inline_code_spans(line: str) -> str:
+    """Remove matched Markdown backtick spans, including multi-backtick delimiters.
+
+    Preserve non-code text on either side so genuine links are still checked.
+    An unmatched opening delimiter is treated as ordinary text.
+    """
+    result: list[str] = []
+    cursor = 0
+    while cursor < len(line):
+        if line[cursor] != "`":
+            result.append(line[cursor])
+            cursor += 1
+            continue
+        end = cursor
+        while end < len(line) and line[end] == "`":
+            end += 1
+        delimiter = line[cursor:end]
+        match = re.search(r"(?<!`)" + re.escape(delimiter) + r"(?!`)", line[end:])
+        if match is None:
+            result.append(delimiter)
+            cursor = end
+        else:
+            cursor = end + match.end()
+    return "".join(result)
+
+
 def audit(root: Path) -> tuple[int, list[str]]:
     files = sorted(root.rglob("*.md"))
     failures: list[str] = []
@@ -69,8 +96,8 @@ def audit(root: Path) -> tuple[int, list[str]]:
             if REFERENCE_DEF.match(line):
                 continue
             # Inline code spans are examples, not navigable Markdown links.
-            # Match equal-length backtick delimiters; unmatched delimiters remain text.
-            visible = re.sub(r"(?<!`)`(?!`)[^`\n]*`(?!`)", "", line)
+            # Match single- or multi-backtick spans; unmatched delimiters remain text.
+            visible = strip_inline_code_spans(line)
             targets = [m.group(1).strip("<>") for m in LINK.finditer(visible)]
             for use in REFERENCE_USE.finditer(visible):
                 label = normalize_reference_label(use.group(2) or use.group(1))
