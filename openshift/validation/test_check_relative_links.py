@@ -107,11 +107,11 @@ class LinkAuditTests(unittest.TestCase):
     def test_multi_backtick_code_spans_are_ignored(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            (root / "target.md").write_text("# target\\n", encoding="utf-8")
+            (root / "target.md").write_text("# target\n", encoding="utf-8")
             (root / "doc.md").write_text(
-                "Before ``[not a link](missing.md)`` and [real](target.md)\\n"
-                "```[not a reference][bad]```\\n"
-                "[bad]: absent.md\\n",
+                "Before ``[not a link](missing.md)`` and [real](target.md)\n"
+                "```[not a reference][bad]```\n"
+                "[bad]: absent.md\n",
                 encoding="utf-8",
             )
             checked, failures = checker.audit(root)
@@ -122,7 +122,7 @@ class LinkAuditTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "doc.md").write_text(
-                "`` [real](missing.md)\\n", encoding="utf-8"
+                "`` [real](missing.md)\n", encoding="utf-8"
             )
             checked, failures = checker.audit(root)
             self.assertEqual(checked, 1)
