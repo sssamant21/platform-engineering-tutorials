@@ -24,6 +24,11 @@ FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
 SCHEME = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
 
 
+def normalize_reference_label(label: str) -> str:
+    """Markdown reference labels are case-insensitive and collapse whitespace."""
+    return " ".join(label.split()).casefold()
+
+
 def audit(root: Path) -> tuple[int, list[str]]:
     files = sorted(root.rglob("*.md"))
     failures: list[str] = []
@@ -47,7 +52,7 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 continue
             definition = REFERENCE_DEF.match(definition_line)
             if definition:
-                definitions[definition.group(1).strip().casefold()] = definition.group(2).strip("<>")
+                definitions[normalize_reference_label(definition.group(1))] = definition.group(2).strip("<>")
         fence_char = None
         fence_length = 0
         for line_no, line in enumerate(lines, 1):
@@ -65,7 +70,7 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 continue
             targets = [m.group(1).strip("<>") for m in LINK.finditer(line)]
             for use in REFERENCE_USE.finditer(line):
-                label = (use.group(2) or use.group(1)).strip().casefold()
+                label = normalize_reference_label(use.group(2) or use.group(1))
                 if label in definitions:
                     targets.append(definitions[label])
             for raw in targets:
