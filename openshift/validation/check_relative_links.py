@@ -20,7 +20,7 @@ from urllib.parse import unquote, urlsplit
 LINK = re.compile(r"!?(?:\[[^\]]*\])\(\s*(<[^>]+>|[^\s)]+)(?:\s+['\"][^)]*['\"])?\s*\)")
 REFERENCE_DEF = re.compile(r"^\s{0,3}\[([^]]+)\]:\s*(<[^>]+>|\S+)")
 REFERENCE_USE = re.compile(r"!?\[([^]]+)\]\[([^]]*)\]")
-FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
+FENCE = re.compile(r"^ {0,3}(`{3,}|~{3,})")
 SCHEME = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
 
 
