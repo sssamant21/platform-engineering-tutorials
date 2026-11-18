@@ -68,8 +68,11 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 continue
             if REFERENCE_DEF.match(line):
                 continue
-            targets = [m.group(1).strip("<>") for m in LINK.finditer(line)]
-            for use in REFERENCE_USE.finditer(line):
+            # Inline code spans are examples, not navigable Markdown links.
+            # Match equal-length backtick delimiters; unmatched delimiters remain text.
+            visible = re.sub(r"(?<!`)`(?!`)[^`\n]*`(?!`)", "", line)
+            targets = [m.group(1).strip("<>") for m in LINK.finditer(visible)]
+            for use in REFERENCE_USE.finditer(visible):
                 label = normalize_reference_label(use.group(2) or use.group(1))
                 if label in definitions:
                     targets.append(definitions[label])
