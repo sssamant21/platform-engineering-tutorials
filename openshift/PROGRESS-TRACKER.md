@@ -195,3 +195,8 @@ Updated the read-only Markdown link checker to exclude matched single- and multi
 ## V01 inline-code boundary regression — 2026-11-18
 
 Static review found that deleting a matched backtick span without a separator could join adjacent text into a synthetic Markdown link. The checker now inserts a space where the span was removed; an eleventh offline regression case covers the boundary. Commits: `64ca518fe0e1159b1936536a6883cbf37a88602a`, `db058e4225941335e7f534a454ad1473272affac`. GitHub source updates are committed; Python tests and the complete link audit remain **unexecuted** because a complete checkout is unavailable (GitHub DNS resolution failed). No cluster access, production change, independent review or certification. Next: run the eleven regression cases and branch-wide audit from a complete checkout, record results and address real failures.
+
+
+## V02 offline link-audit execution protocol — 2026-11-18
+
+Added [V02 reproducible execution and evidence protocol](validation/V02-offline-link-audit-execution.md) with Linux/PowerShell commands, expected exit statuses, commit-SHA evidence requirements, limitations and escalation when checkout fails. A full GitHub checkout was attempted in this run but failed with `Could not resolve host: github.com`; **the 11 authored tests and full link audit have not been executed**. This is a documented QA procedure, not a passing result. Next: execute tests and the full checkout audit when network access is available; fix confirmed failures, then independently review OCP 4.22 commands and production safety.
