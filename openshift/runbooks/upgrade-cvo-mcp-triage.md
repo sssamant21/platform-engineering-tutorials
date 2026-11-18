@@ -5,16 +5,45 @@
 ## Trigger and immediate safety
 Trigger: CVO Progressing unexpectedly long, Degraded ClusterOperator, degraded MCP, NotReady nodes or application SLO breach during a planned update. Freeze unrelated changes; **do not** force update, edit ClusterVersion desired version, pause/unpause MCPs, reboot/drain nodes or restore etcd from this runbook. Declare severity using actual customer impact and change policy.
 
-## Read-only triage
+## Read-only triage and least-privilege preflight
+**Prerequisites:** approved incident/change scope, a known cluster context, a compatible `oc` client, and an identity authorized for each requested resource. `oc auth can-i` checks are advisory; a subsequent request can still fail. A denied permission is a stop for that specific query, not a reason to elevate privileges. Cluster-wide events are optional and often intentionally restricted.
+
 ```sh
-oc whoami
+# Linux/macOS; each collection query needs its own list permission.
 oc config current-context
-oc get clusterversion version -o json
-oc get co
-oc get mcp
-oc get nodes
-oc get events -A --sort-by=.lastTimestamp
+oc whoami
+oc auth can-i get clusterversions.config.openshift.io --resource-name=version
+oc auth can-i list clusteroperators.config.openshift.io
+oc auth can-i list machineconfigpools.machineconfiguration.openshift.io
+oc auth can-i list nodes
+oc auth can-i list events --all-namespaces
 ```
+
+```powershell
+# PowerShell; identical checks, no shell-specific variable interpolation.
+oc config current-context
+oc whoami
+oc auth can-i get clusterversions.config.openshift.io --resource-name=version
+oc auth can-i list clusteroperators.config.openshift.io
+oc auth can-i list machineconfigpools.machineconfiguration.openshift.io
+oc auth can-i list nodes
+oc auth can-i list events --all-namespaces
+```
+
+Run **only** the reads for which the matching check returned `yes`:
+
+```sh
+oc get clusterversion version -o json
+oc get clusteroperators
+oc get machineconfigpools
+oc get nodes
+oc get events -A --sort-by=.metadata.creationTimestamp
+```
+
+The ClusterVersion JSON and events may expose infrastructure metadata; sanitize before sharing. If cluster-wide events are denied, omit that query and request scoped evidence from the platform owner. For `oc describe co <name>`, `oc describe mcp <name>` or `oc describe node <name>`, separately check `oc auth can-i get <resource> --resource-name=<name>` and expect optional related-event lookups to be denied in restricted roles.
+
+**Expected:** authorization checks return `yes` or `no`; authorized collection reads return objects or an empty result. **Errors:** `Forbidden` means insufficient RBAC, `Unauthorized` means invalid/expired authentication, missing resource types may indicate API discovery/version mismatch, and timeouts require network/API escalation. Never paste credentials, raw kubeconfig, or unsanitized JSON into tickets.
+
 Read CVO history and condition messages; correlate ClusterOperator condition transitions with MCP updates and node readiness. Events may be rotated and `--sort-by` may require permission/field availability. Narrow follow-up with `oc describe co <operator-name>`, `oc describe mcp <pool-name>` or `oc describe node <node-name>` **only** for authorized scope. Avoid exporting Secrets or sensitive full diagnostic archives.
 
 ## Decision tree
