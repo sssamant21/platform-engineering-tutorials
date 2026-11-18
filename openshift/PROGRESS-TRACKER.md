@@ -204,3 +204,7 @@ Added [V02 reproducible execution and evidence protocol](validation/V02-offline-
 ## V01 Chapter 010 RBAC read authorization review — 2026-11-18
 
 Corrected Chapter 010 namespace read preflights to distinguish `list` for RoleBindings, ServiceAccounts and pods from named Deployment `get`; added separate cluster-scope checks for ClusterRoleBindings and SCCs. Each read must be skipped on `no` or `Forbidden`; `who-can` may require additional authorization. Commits `afda288513e5dbf350abbae36c98c49778822e62` and `3757b947470fe0084c6d6dcc730e0aee7fde3ea2`. **Documentation-only review:** no OCP runtime test, full link audit, independent security approval or production certification. Next: execute offline regression tests and branch-wide link audit, then validate command semantics against OCP 4.22 documentation.
+
+## V01 Chapter 010 security lab RBAC consistency — 2026-11-18
+
+Corrected Lab 010's previously unguarded ServiceAccount and pod collection reads. The Linux/macOS and PowerShell examples now check `list` for RoleBindings, ServiceAccounts and pods, and `get` for the named Deployment (`--resource-name`). Each read is conditional on its own authorization result; denied or inconclusive checks are skipped without privilege escalation. Commit `79b0706dd437b73c1f6518bdc5077ae64477b9a0`. **Documentation-level semantic correction only:** no cluster commands executed; offline regression suite, full link audit, OCP 4.22 command verification, independent review and production approval remain pending.
