@@ -79,6 +79,18 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(checked, 0)
             self.assertEqual(failures, [])
 
+    def test_first_reference_definition_wins(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "target.md").write_text("# target\n", encoding="utf-8")
+            (root / "doc.md").write_text(
+                "[link][id]\n[id]: target.md\n[id]: missing.md\n",
+                encoding="utf-8",
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(failures, [])
+
 
 if __name__ == "__main__":
     unittest.main()
