@@ -19,7 +19,7 @@ from urllib.parse import unquote, urlsplit
 
 LINK = re.compile(r"!?(?:\[[^\]]*\])\(\s*(<[^>]+>|[^\s)]+)(?:\s+['\"][^)]*['\"])?\s*\)")
 REFERENCE_DEF = re.compile(r"^\s{0,3}\[([^]]+)\]:\s*(<[^>]+>|\S+)")
-REFERENCE_USE = re.compile(r"!?\[[^]]+\]\[([^]]+)\]")
+REFERENCE_USE = re.compile(r"!?\[([^]]+)\]\[([^]]*)\]")
 FENCE = re.compile(r"^\s*(`{3,}|~{3,})")
 SCHEME = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
 
@@ -65,7 +65,7 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 continue
             targets = [m.group(1).strip("<>") for m in LINK.finditer(line)]
             for use in REFERENCE_USE.finditer(line):
-                label = use.group(1).strip().casefold()
+                label = (use.group(2) or use.group(1)).strip().casefold()
                 if label in definitions:
                     targets.append(definitions[label])
             for raw in targets:
