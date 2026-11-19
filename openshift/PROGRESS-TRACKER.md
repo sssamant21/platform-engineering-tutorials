@@ -304,3 +304,7 @@ Revised V04 Bash authorization checks for all four resources: a nonzero `oc auth
 ## V05 PowerShell ambiguous authorization fail-closed correction — 2026-11-19
 
 Source review found that the V04 PowerShell example treated any successful `oc auth can-i` response other than `yes` as a denial, including unexpected or malformed output. Updated all four resource gates to distinguish explicit `yes` (read), explicit `no` (skip), and any other response (throw/stop). Worksheet commit `28fedd0f624da705cac7e1d692ba407b6ef54f81`. **Source-only review:** no PowerShell regression execution, real OCP cluster access, independent review or production approval. Next: add a PowerShell mock test for ambiguous authorization, run all offline suites, and complete the link audit.
+
+## V05 PowerShell ambiguous authorization regression — 2026-11-19
+
+Added an isolated mock `oc auth can-i` response of `maybe` and a tenth PowerShell test requiring nonzero exit, exactly one authorization attempt and zero resource reads. Commit `ff94ef5dcb057896e257d3131601ca3a3959ad6d`. **Authored, not executed:** no PowerShell runtime test, cluster access, complete Markdown link audit, independent review or production approval. Next: run Bash (13), PowerShell (10) and existing offline validation tests from a complete checkout, capture actual PASS/FAIL/SKIP evidence, and correct confirmed failures. All 18 chapters remain drafted, not certified.
