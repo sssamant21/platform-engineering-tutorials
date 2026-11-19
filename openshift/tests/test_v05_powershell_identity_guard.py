@@ -48,6 +48,7 @@ function oc {
   }
   if ($argvText -like 'auth can-i *') {
     if ($env:MOCK_FAILURE -eq 'deny') { 'no'; return }
+    if ($env:MOCK_FAILURE -eq 'auth-error') { $global:LASTEXITCODE = 1; return }
     'yes'; return
   }
   if ($argvText -like 'get *') {
@@ -96,6 +97,12 @@ class PowerShellIdentityGuardTests(unittest.TestCase):
     def test_denied_reads(self):
         p, calls = self.run_case("deny")
         self.assertEqual(p.returncode, 0, p.stderr)
+        self.assertFalse(any(x.startswith("get ") for x in calls))
+
+    def test_authorization_api_error_fails_closed(self):
+        p, calls = self.run_case("auth-error")
+        self.assertNotEqual(p.returncode, 0, p.stderr)
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in calls), 1)
         self.assertFalse(any(x.startswith("get ") for x in calls))
 
     def test_missing_context(self):
