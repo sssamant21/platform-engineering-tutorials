@@ -21,7 +21,7 @@ if ! oc whoami >/dev/null; then
   exit 1
 fi
 # Verify the expected cluster/context against the approved inventory before proceeding.
-oc config current-context        # Treat the context name as sensitive metadata
+oc config current-context || { echo 'STOP: unable to determine active context' >&2; exit 1; }
 oc version                        # Sanitize server URL before sharing
 if [ "$(oc auth can-i get clusterversions.config.openshift.io --resource-name=version)" = yes ]; then
   oc get clusterversion version
