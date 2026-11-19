@@ -75,7 +75,7 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 marker = marker_match.group(1)
                 if pre_fence_char is None:
                     pre_fence_char, pre_fence_length = marker[0], len(marker)
-                elif marker[0] == pre_fence_char and len(marker) >= pre_fence_length and (marker[0] == "~" or not marker_match.group(2).strip()) and not marker_match.group(2).strip():
+                elif marker[0] == pre_fence_char and len(marker) >= pre_fence_length and not marker_match.group(2).strip():
                     pre_fence_char, pre_fence_length = None, 0
                 continue
             if pre_fence_char is not None or definition_line.startswith(("    ", "\t")):
