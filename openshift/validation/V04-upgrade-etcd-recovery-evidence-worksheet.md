@@ -28,24 +28,24 @@ actual_context=$(oc config current-context) || { echo 'STOP: unable to determine
 [ -n "${EXPECTED_SERVER:-}" ] || { echo 'STOP: EXPECTED_SERVER not supplied from approved inventory' >&2; exit 1; }
 actual_server=$(oc config view --minify -o jsonpath='{.clusters[0].cluster.server}') || { echo 'STOP: unable to determine API endpoint' >&2; exit 1; }
 [ -n "$actual_server" ] && [ "$actual_server" = "$EXPECTED_SERVER" ] || { echo 'STOP: API endpoint mismatch or empty endpoint' >&2; exit 1; }
-oc version                        # Sanitize server URL before sharing
+oc version >/dev/null || { echo "STOP: version query failed" >&2; exit 1; }
 if [ "$(oc auth can-i get clusterversions.config.openshift.io --resource-name=version)" = yes ]; then
-  oc get clusterversion version
+  oc get clusterversion version || { echo 'STOP: authorized diagnostic read failed' >&2; exit 1; }
 else
   echo "SKIP: named ClusterVersion read not authorized"
 fi
 if [ "$(oc auth can-i list clusteroperators.config.openshift.io)" = yes ]; then
-  oc get clusteroperators
+  oc get clusteroperators || { echo 'STOP: authorized diagnostic read failed' >&2; exit 1; }
 else
   echo "SKIP: ClusterOperator inventory not authorized"
 fi
 if [ "$(oc auth can-i list nodes)" = yes ]; then
-  oc get nodes
+  oc get nodes || { echo 'STOP: authorized diagnostic read failed' >&2; exit 1; }
 else
   echo "SKIP: node inventory not authorized"
 fi
 if [ "$(oc auth can-i list machineconfigpools.machineconfiguration.openshift.io)" = yes ]; then
-  oc get machineconfigpools
+  oc get machineconfigpools || { echo 'STOP: authorized diagnostic read failed' >&2; exit 1; }
 else
   echo "SKIP: MachineConfigPool inventory not authorized"
 fi
@@ -64,18 +64,23 @@ if ([string]::IsNullOrWhiteSpace($env:EXPECTED_SERVER)) { throw 'STOP: EXPECTED_
 $actualServer = oc config view --minify -o "jsonpath={.clusters[0].cluster.server}"
 if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($actualServer)) { throw 'STOP: unable to determine API endpoint' }
 if ($actualServer.Trim() -cne $env:EXPECTED_SERVER) { throw 'STOP: API endpoint mismatch' }
-oc version
+oc version | Out-Null
+if ($LASTEXITCODE -ne 0) { throw 'STOP: version query failed' }
 if ((oc auth can-i get clusterversions.config.openshift.io --resource-name=version) -eq 'yes') {
     oc get clusterversion version
+    if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
 } else { Write-Output 'SKIP: named ClusterVersion read not authorized' }
 if ((oc auth can-i list clusteroperators.config.openshift.io) -eq 'yes') {
     oc get clusteroperators
+    if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
 } else { Write-Output 'SKIP: ClusterOperator inventory not authorized' }
 if ((oc auth can-i list nodes) -eq 'yes') {
     oc get nodes
+    if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
 } else { Write-Output 'SKIP: node inventory not authorized' }
 if ((oc auth can-i list machineconfigpools.machineconfiguration.openshift.io) -eq 'yes') {
     oc get machineconfigpools
+    if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
 } else { Write-Output 'SKIP: MachineConfigPool inventory not authorized' }
 ```
 
@@ -83,7 +88,7 @@ if ((oc auth can-i list machineconfigpools.machineconfiguration.openshift.io) -e
 
 **Context and endpoint gate:** The commands intentionally stop for failed authentication and require both `EXPECTED_CONTEXT` and `EXPECTED_SERVER` (exact API server URL including scheme and port, if any) from independently approved inventory. A matching local context name alone does not establish cluster identity. The examples compare the kubeconfig API endpoint without printing it; this does not cryptographically attest cluster identity and depends on trusted kubeconfig and TLS verification. Never use `--insecure-skip-tls-verify` to bypass a mismatch. Do **not** continue if the context is unknown, unexpected, or cannot be independently confirmed. `oc version` and subsequent reads also require exit-code review; a successful authorization check does not guarantee the following read succeeds. The Bash example uses `exit 1` and is intended to run as a standalone script, not pasted into a shared interactive shell without adapting that behavior.
 
-**Failure handling:** `no`, `Forbidden`, an empty/failed authorization response, or an API/network error means **do not treat the read as authorized**. A failed `oc get` must also be recorded and escalated, not interpreted as an empty healthy inventory. The shell examples compare exact `yes` and otherwise skip; they do not distinguish all error classes. These examples have **not been executed against an OCP cluster**.
+**Failure handling:** `no`, `Forbidden`, an empty/failed authorization response, or an API/network error means **do not treat the read as authorized**. A failed `oc get` must also be recorded and escalated, not interpreted as an empty healthy inventory. The shell examples compare exact `yes` and otherwise skip; they do not distinguish all authorization error classes. An authorized read or version query that fails terminates the standalone preflight with nonzero status; do not continue to subsequent reads or mark the evidence healthy. These examples have **not been executed against an OCP cluster**.
 
 Record timestamp (UTC), sanitized output path, command exit code, and reviewer for each observation. Expected healthy signals include stable cluster version conditions, available/non-degraded Operators and ready nodes; do not equate these broad signals with full application health. Document every anomalous condition rather than silently accepting it.
 
