@@ -24,6 +24,10 @@ fi
 [ -n "${EXPECTED_CONTEXT:-}" ] || { echo 'STOP: EXPECTED_CONTEXT not supplied from approved inventory' >&2; exit 1; }
 actual_context=$(oc config current-context) || { echo 'STOP: unable to determine active context' >&2; exit 1; }
 [ "$actual_context" = "$EXPECTED_CONTEXT" ] || { echo 'STOP: active context does not match approved inventory' >&2; exit 1; }
+# Context names are local labels; also pin the expected API endpoint from inventory.
+[ -n "${EXPECTED_SERVER:-}" ] || { echo 'STOP: EXPECTED_SERVER not supplied from approved inventory' >&2; exit 1; }
+actual_server=$(oc config view --minify -o jsonpath='{.clusters[0].cluster.server}') || { echo 'STOP: unable to determine API endpoint' >&2; exit 1; }
+[ -n "$actual_server" ] && [ "$actual_server" = "$EXPECTED_SERVER" ] || { echo 'STOP: API endpoint mismatch or empty endpoint' >&2; exit 1; }
 oc version                        # Sanitize server URL before sharing
 if [ "$(oc auth can-i get clusterversions.config.openshift.io --resource-name=version)" = yes ]; then
   oc get clusterversion version
@@ -56,6 +60,10 @@ if ([string]::IsNullOrWhiteSpace($env:EXPECTED_CONTEXT)) { throw 'STOP: EXPECTED
 $actualContext = oc config current-context
 if ($LASTEXITCODE -ne 0) { throw 'STOP: unable to determine active context' }
 if ($actualContext.Trim() -ne $env:EXPECTED_CONTEXT) { throw 'STOP: active context does not match approved inventory' }
+if ([string]::IsNullOrWhiteSpace($env:EXPECTED_SERVER)) { throw 'STOP: EXPECTED_SERVER not supplied from approved inventory' }
+$actualServer = oc config view --minify -o "jsonpath={.clusters[0].cluster.server}"
+if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($actualServer)) { throw 'STOP: unable to determine API endpoint' }
+if ($actualServer.Trim() -cne $env:EXPECTED_SERVER) { throw 'STOP: API endpoint mismatch' }
 oc version
 if ((oc auth can-i get clusterversions.config.openshift.io --resource-name=version) -eq 'yes') {
     oc get clusterversion version
@@ -73,7 +81,7 @@ if ((oc auth can-i list machineconfigpools.machineconfiguration.openshift.io) -e
 
 **Prerequisites:** a configured `oc` client and kubeconfig for the intended cluster, permission to perform self-authorization checks, and an approved diagnostic scope. Confirm the active context and cluster identity through an approved inventory before running these commands. Do not publish raw `oc whoami`, server addresses, or unredacted JSON. The snippets intentionally avoid `oc get ... -o json` to minimize accidental collection of sensitive metadata.
 
-**Context gate:** The commands intentionally stop for failed authentication and require `EXPECTED_CONTEXT` to be supplied from the approved inventory and fail if the active context differs. Do **not** continue if the context is unknown, unexpected, or cannot be independently confirmed. `oc version` and subsequent reads also require exit-code review; a successful authorization check does not guarantee the following read succeeds. The Bash example uses `exit 1` and is intended to run as a standalone script, not pasted into a shared interactive shell without adapting that behavior.
+**Context and endpoint gate:** The commands intentionally stop for failed authentication and require both `EXPECTED_CONTEXT` and `EXPECTED_SERVER` (exact API server URL including scheme and port, if any) from independently approved inventory. A matching local context name alone does not establish cluster identity. The examples compare the kubeconfig API endpoint without printing it; this does not cryptographically attest cluster identity and depends on trusted kubeconfig and TLS verification. Never use `--insecure-skip-tls-verify` to bypass a mismatch. Do **not** continue if the context is unknown, unexpected, or cannot be independently confirmed. `oc version` and subsequent reads also require exit-code review; a successful authorization check does not guarantee the following read succeeds. The Bash example uses `exit 1` and is intended to run as a standalone script, not pasted into a shared interactive shell without adapting that behavior.
 
 **Failure handling:** `no`, `Forbidden`, an empty/failed authorization response, or an API/network error means **do not treat the read as authorized**. A failed `oc get` must also be recorded and escalated, not interpreted as an empty healthy inventory. The shell examples compare exact `yes` and otherwise skip; they do not distinguish all error classes. These examples have **not been executed against an OCP cluster**.
 
