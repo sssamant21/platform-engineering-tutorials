@@ -15,20 +15,64 @@ Record incident ID, time, affected namespace, sanitized error, impact and whethe
 - **Running pod with API 403:** verify the pod's actual service account and namespace-specific bindings; do not assume the human deployer's permissions transfer to the pod.
 
 ## 3. Authorized diagnostics
-```sh
-oc auth can-i get pods -n <namespace>
-oc get rolebindings -n <namespace>
-oc get serviceaccounts -n <namespace>
-oc describe pod <pod> -n <namespace>
-oc get events -n <namespace> --sort-by=.metadata.creationTimestamp
+
+**Prerequisites:** Use an approved, least-privileged incident identity with access to the affected namespace. Confirm the context and namespace before querying. `oc auth can-i` evaluates the current identity unless impersonation is explicitly authorized. Each collection read requires its own `list` permission; describing a named pod requires `get` on that pod. A denied or inconclusive check means **skip that read**, document the limitation and request the appropriate owner to collect evidence—never elevate privileges for triage.
+
+Linux/macOS Bash (replace the placeholders locally; do not paste angle brackets into a shell):
+
+```bash
+NS="your-namespace"
+POD="your-pod"
+oc whoami
+oc config current-context
+for resource in rolebindings serviceaccounts events; do
+  if [ "$(oc auth can-i list "$resource" -n "$NS" 2>/dev/null)" = "yes" ]; then
+    oc get "$resource" -n "$NS"
+  else
+    printf 'SKIP %s: list not authorized or check failed\n' "$resource"
+  fi
+done
+if [ "$(oc auth can-i get pods --resource-name="$POD" -n "$NS" 2>/dev/null)" = "yes" ]; then
+  oc describe pod "$POD" -n "$NS"
+else
+  echo "SKIP named pod: get not authorized or check failed"
+fi
 ```
-For security administrators only, with appropriate privileges:
-```sh
-oc get clusterrolebindings
-oc describe scc restricted-v2
-oc adm policy who-can use scc restricted-v2
+
+Windows PowerShell:
+
+```powershell
+$Ns = "your-namespace"
+$Pod = "your-pod"
+oc whoami
+oc config current-context
+foreach ($Resource in @("rolebindings", "serviceaccounts", "events")) {
+    $Allowed = oc auth can-i list $Resource -n $Ns 2>$null
+    if ($LASTEXITCODE -eq 0 -and $Allowed -eq "yes") {
+        oc get $Resource -n $Ns
+    } else {
+        Write-Output "SKIP $Resource: list not authorized or check failed"
+    }
+}
+$Allowed = oc auth can-i get pods --resource-name=$Pod -n $Ns 2>$null
+if ($LASTEXITCODE -eq 0 -and $Allowed -eq "yes") {
+    oc describe pod $Pod -n $Ns
+} else {
+    Write-Output "SKIP named pod: get not authorized or check failed"
+}
 ```
-**Critical caveat:** SCC `who-can`/ `can-i` report RBAC grants only; `describe scc` reports direct SCC users/groups only. Correlate both before drawing conclusions. Restrict event output to the incident and redact before sharing.
+
+Expected authorization result is `yes` or `no`; API connectivity failures, expired credentials and `Forbidden` are **not** evidence of permission. Event and pod descriptions can contain sensitive values; minimize scope and redact before sharing. A namespace-scoped RoleBinding may reference a ClusterRole, but this does not itself grant cluster-wide access.
+
+For designated security administrators **only**, separately check cluster-scoped permissions before running the matching reads:
+
+```sh
+oc auth can-i list clusterrolebindings
+oc auth can-i get securitycontextconstraints.security.openshift.io --resource-name=restricted-v2
+oc auth can-i use securitycontextconstraints.security.openshift.io --resource-name=restricted-v2
+```
+
+Run `oc get clusterrolebindings` only if the first result is `yes`; run `oc describe scc restricted-v2` only if the second is `yes`. The `use` result tests the current identity's authorization and is **not** proof that a particular workload will pass SCC admission. `oc adm policy who-can use scc restricted-v2` is an optional security-administrator diagnostic; its visibility and RBAC requirements must be validated on the target cluster before use. SCC RBAC grants, direct SCC users/groups and the actual workload admission outcome must be evaluated together. Do not treat a denied check as justification to add privileges.
 
 ## 4. Decision and ownership
 - Identity provider/OAuth problem: identity team + platform on-call.
