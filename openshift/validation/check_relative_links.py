@@ -74,6 +74,9 @@ def audit(root: Path) -> tuple[int, list[str]]:
             if marker_match:
                 marker = marker_match.group(1)
                 if pre_fence_char is None:
+                    # CommonMark disallows backticks in a backtick fence info string.
+                    if marker[0] == "`" and "`" in marker_match.group(2):
+                        continue
                     pre_fence_char, pre_fence_length = marker[0], len(marker)
                 elif marker[0] == pre_fence_char and len(marker) >= pre_fence_length and not marker_match.group(2).strip():
                     pre_fence_char, pre_fence_length = None, 0
@@ -90,6 +93,8 @@ def audit(root: Path) -> tuple[int, list[str]]:
             if match:
                 marker = match.group(1)
                 if fence_char is None:
+                    if marker[0] == "`" and "`" in match.group(2):
+                        continue
                     fence_char, fence_length = marker[0], len(marker)
                 elif marker[0] == fence_char and len(marker) >= fence_length and not match.group(2).strip():
                     fence_char, fence_length = None, 0
