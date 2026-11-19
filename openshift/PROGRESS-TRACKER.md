@@ -271,3 +271,8 @@ Corrected the Bash and PowerShell V04 diagnostic examples to require `EXPECTED_C
 ## V04 pin approved API endpoint — 2026-11-19
 
 Reviewed the V04 read-only preflight and found that checking only a kubeconfig context name cannot reliably identify the intended cluster because context names are local labels. Added required `EXPECTED_SERVER` matching against the active kubeconfig API endpoint in both Bash and PowerShell, with fail-closed behavior for missing, empty or mismatched endpoints. The check does not display the endpoint or replace TLS trust and independent inventory verification. Worksheet commit `551513df9424aae1a06e812199ca838f2fdda07e`. **Source-level review only:** no OpenShift cluster access, shell execution, 17-test regression suite, complete link audit, independent approval or production certification. Next: test both preflight scripts in an isolated environment and run the full offline validation suite.
+
+
+## V05 isolated identity-guard regression matrix — 2026-11-19
+
+Added [V05 mock-oc identity-guard regression matrix](validation/V05-isolated-identity-guard-regression-matrix.md) with 12 fail-closed, authorization-gating and read-failure scenarios for both Bash and PowerShell, including an explicit no-real-cluster boundary and sanitized evidence requirements. Document commit `16d80c8ef39c8b9e1344f7970e9d3b295b184e84`. **Drafted only:** the scenarios have not been executed, and neither 17 existing Python regression tests nor the full link audit has been completed. Next: implement/run mock tests from a complete checkout and independently review V04 against Red Hat 4.22 before authorized isolated OCP checks.
