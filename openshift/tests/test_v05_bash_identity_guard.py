@@ -24,6 +24,7 @@ if args==["config","view","--minify","-o","jsonpath={.clusters[0].cluster.server
     if os.getenv("FAIL_SERVER"):sys.exit(1)
     print(os.getenv("ACTUAL_SERVER","https://api.test.invalid:6443"));sys.exit(0)
 if args==["version"]:
+    if os.getenv("FAIL_VERSION"): sys.exit(1)
     print("Client Version: mock");sys.exit(0)
 if args[:2]==["auth","can-i"]:
     if os.getenv("FAIL_AUTH"): sys.exit(1)
@@ -54,7 +55,7 @@ class IdentityGuardTests(unittest.TestCase):
             env=os.environ.copy()
             for key in ("EXPECTED_CONTEXT","EXPECTED_SERVER","ACTUAL_CONTEXT",
                         "ACTUAL_SERVER","FAIL_WHOAMI","FAIL_CONTEXT","FAIL_SERVER",
-                        "AUTH_RESULT","FAIL_AUTH","DENY_RESOURCE","FAIL_GET_RESOURCE","KUBECONFIG"):
+                        "AUTH_RESULT","FAIL_AUTH","DENY_RESOURCE","FAIL_GET_RESOURCE","FAIL_VERSION","KUBECONFIG"):
                 env.pop(key,None)
             env.update({"PATH":str(directory)+os.pathsep+os.environ.get("PATH",""),
                         "HOME":str(directory),"KUBECONFIG":str(directory/"nonexistent"),
@@ -109,8 +110,14 @@ class IdentityGuardTests(unittest.TestCase):
 
     def test_failed_read_is_not_success(self):
         result,calls=self.run_case({"FAIL_GET_RESOURCE":"nodes"},True)
-        self.assertEqual(sum(c.startswith("get ") for c in calls),4)
+        self.assertEqual(sum(c.startswith("get ") for c in calls),3, "Stop at the failing third read")
+        self.assertFalse(any(c=="get machineconfigpools" for c in calls))
         self.assertNotEqual(result.returncode,0, "A failed read must fail the preflight")
+
+    def test_version_query_failure_stops_before_authorization(self):
+        result,calls=self.run_case({"FAIL_VERSION":"1"},False,True)
+        self.assertEqual(sum(c=="version" for c in calls),1)
+        self.assertFalse(any(c.startswith("auth can-i ") for c in calls))
 
     def test_denied_reads(self):
         _,calls=self.run_case({"AUTH_RESULT":"no"},False)
