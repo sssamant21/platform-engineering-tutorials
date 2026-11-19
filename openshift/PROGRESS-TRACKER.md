@@ -266,3 +266,8 @@ Updated the V04 upgrade/etcd evidence worksheet to abort on failed `oc whoami`, 
 ## V04 enforce approved kube context — 2026-11-19
 
 Corrected the Bash and PowerShell V04 diagnostic examples to require `EXPECTED_CONTEXT` from approved cluster inventory and fail closed on missing/mismatched active context. Previously the examples printed the context but relied on manual comparison without enforcing it. Commit `9f1ae412feac89eed707840dd488670a4316ab2d`. **Source review only:** no cluster execution, regression-suite execution, link audit or independent certification. Next: validate these scripts in an isolated authorized environment and execute the offline regression/link suite.
+
+
+## V04 pin approved API endpoint — 2026-11-19
+
+Reviewed the V04 read-only preflight and found that checking only a kubeconfig context name cannot reliably identify the intended cluster because context names are local labels. Added required `EXPECTED_SERVER` matching against the active kubeconfig API endpoint in both Bash and PowerShell, with fail-closed behavior for missing, empty or mismatched endpoints. The check does not display the endpoint or replace TLS trust and independent inventory verification. Worksheet commit `551513df9424aae1a06e812199ca838f2fdda07e`. **Source-level review only:** no OpenShift cluster access, shell execution, 17-test regression suite, complete link audit, independent approval or production certification. Next: test both preflight scripts in an isolated environment and run the full offline validation suite.
