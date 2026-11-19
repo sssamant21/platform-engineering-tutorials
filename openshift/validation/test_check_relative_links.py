@@ -178,5 +178,16 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(checked, 0)
             self.assertEqual(failures, [])
 
+    def test_invalid_backtick_fence_info_string_does_not_hide_links(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "```python`bad\\n[broken](missing.md)\\n```\\n",
+                encoding="utf-8",
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+
 if __name__ == "__main__":
     unittest.main()
