@@ -15,7 +15,13 @@ Run each command only if its resource permission is granted. These are **example
 
 ```sh
 # Linux/macOS — evaluate authorization separately for each read.
-oc whoami                         # Identity only; do not publish username
+# Abort the session if the client cannot establish authenticated identity.
+if ! oc whoami >/dev/null; then
+  echo "STOP: authentication or API connectivity failed" >&2
+  exit 1
+fi
+# Verify the expected cluster/context against the approved inventory before proceeding.
+oc config current-context        # Treat the context name as sensitive metadata
 oc version                        # Sanitize server URL before sharing
 if [ "$(oc auth can-i get clusterversions.config.openshift.io --resource-name=version)" = yes ]; then
   oc get clusterversion version
@@ -41,7 +47,11 @@ fi
 
 ```powershell
 # Windows PowerShell — separate authorization gates; no privilege escalation.
-oc whoami
+oc whoami | Out-Null
+if ($LASTEXITCODE -ne 0) { throw 'STOP: authentication or API connectivity failed' }
+# Compare the active context to the approved cluster inventory before proceeding.
+oc config current-context
+if ($LASTEXITCODE -ne 0) { throw 'STOP: unable to determine active context' }
 oc version
 if ((oc auth can-i get clusterversions.config.openshift.io --resource-name=version) -eq 'yes') {
     oc get clusterversion version
@@ -58,6 +68,8 @@ if ((oc auth can-i list machineconfigpools.machineconfiguration.openshift.io) -e
 ```
 
 **Prerequisites:** a configured `oc` client and kubeconfig for the intended cluster, permission to perform self-authorization checks, and an approved diagnostic scope. Confirm the active context and cluster identity through an approved inventory before running these commands. Do not publish raw `oc whoami`, server addresses, or unredacted JSON. The snippets intentionally avoid `oc get ... -o json` to minimize accidental collection of sensitive metadata.
+
+**Context gate:** The commands intentionally stop for failed authentication and require a human to compare the active context with the approved inventory. Do **not** continue if the context is unknown, unexpected, or cannot be independently confirmed. `oc version` and subsequent reads also require exit-code review; a successful authorization check does not guarantee the following read succeeds. The Bash example uses `exit 1` and is intended to run as a standalone script, not pasted into a shared interactive shell without adapting that behavior.
 
 **Failure handling:** `no`, `Forbidden`, an empty/failed authorization response, or an API/network error means **do not treat the read as authorized**. A failed `oc get` must also be recorded and escalated, not interpreted as an empty healthy inventory. The shell examples compare exact `yes` and otherwise skip; they do not distinguish all error classes. These examples have **not been executed against an OCP cluster**.
 
