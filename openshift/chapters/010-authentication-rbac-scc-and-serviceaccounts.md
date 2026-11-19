@@ -28,7 +28,7 @@ oc config current-context
 oc version
 oc auth can-i list rolebindings -n <namespace>
 oc auth can-i list serviceaccounts -n <namespace>
-oc auth can-i get deployments -n <namespace>
+oc auth can-i get deployments -n <namespace> --resource-name=<deployment>
 oc auth can-i list pods -n <namespace>
 oc auth can-i create rolebindings -n <namespace>
 # Execute each following read only if its matching check above returned yes.
@@ -50,7 +50,7 @@ oc describe scc restricted-v2
 # who-can may require additional RBAC inspection rights; if denied, stop and escalate.
 oc adm policy who-can use scc restricted-v2
 ```
-A `no` response or `Forbidden` error means skip that read, record the denied verb/resource/scope and request authorized review; never elevate permissions simply to complete the lab. `get` of a named Deployment or SCC does not authorize `list` of a collection. The `create rolebindings` check is an authorization assessment only and does not create anything.
+A `no` response or `Forbidden` error means skip that read, record the denied verb/resource/scope and request authorized review; never elevate permissions simply to complete the lab. The Deployment preflight is scoped to the named object using `--resource-name`; a broad resource-level check is not a substitute for this named-object authorization check. `get` of a named Deployment or SCC does not authorize `list` of a collection. The `create rolebindings` check is an authorization assessment only and does not create anything.
 Do not collect full service-account YAML or pod environment variables into shared evidence; these can expose sensitive references or values.
 
 **Windows PowerShell:** commands above work in PowerShell; replace angle-bracket placeholders with real names *without* typing the brackets. For a clean pod report, use `oc get pods -n $Namespace -o custom-columns='NAME:.metadata.name,SA:.spec.serviceAccountName,SCC:.metadata.annotations.openshift\.io/scc'`. Quote JSONPath arguments as shown.
