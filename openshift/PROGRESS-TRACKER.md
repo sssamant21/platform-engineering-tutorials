@@ -296,3 +296,7 @@ Reviewed the 13-case Bash mock-`oc` harness and found that seven identity reject
 ## V05 PowerShell authorization error handling — 2026-11-19
 
 Corrected the V04 PowerShell diagnostic example so a nonzero `oc auth can-i` exit stops evidence collection rather than being silently reported as a denied/skipped read. An explicit `no` still skips without escalation. Added a ninth PowerShell mock test for authorization API errors, asserting nonzero exit, only one authorization attempt, and no resource reads. Commits `68294b9918455cd2b54423092fda9c7e17159c2a` and `102d8a5a10d455e946e7a635796e2343f14e5fb6`. **Source review only; tests not executed.** Bash currently skips failed authorization checks and requires separate follow-up for parity. Offline test execution, full link audit, isolated OCP 4.22 verification and independent review remain pending. All 18 chapters remain drafted, not production-approved.
+
+## V05 Bash authorization-error fail-closed parity — 2026-11-19
+
+Revised V04 Bash authorization checks for all four resources: a nonzero `oc auth can-i` result now stops immediately, explicit `no` skips, and any other response fails closed. Updated the existing V05 Bash mock assertions to require nonzero exit and no reads on failed or ambiguous authorization, with only one attempted check. **Source-level change only; no regression execution, cluster testing, link audit or independent approval claimed.** Next: execute offline Bash/PowerShell and original Python suites, record actual evidence, then independently review OCP 4.22 semantics.
