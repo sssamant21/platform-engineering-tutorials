@@ -92,12 +92,14 @@ class IdentityGuardTests(unittest.TestCase):
         self.assertEqual(sum(c.startswith("get ") for c in calls),4)
         self.assertEqual(result.returncode,0)
     def test_failed_authorization_check(self):
-        _,calls=self.run_case({"FAIL_AUTH":"1"},False)
-        self.assertEqual(sum(c.startswith("auth can-i ") for c in calls),4)
+        result,calls=self.run_case({"FAIL_AUTH":"1"},False,True)
+        self.assertEqual(sum(c.startswith("auth can-i ") for c in calls),1)
+        self.assertIn("STOP:",result.stderr)
 
     def test_ambiguous_authorization(self):
-        _,calls=self.run_case({"AUTH_RESULT":"maybe"},False)
-        self.assertEqual(sum(c.startswith("auth can-i ") for c in calls),4)
+        result,calls=self.run_case({"AUTH_RESULT":"maybe"},False,True)
+        self.assertEqual(sum(c.startswith("auth can-i ") for c in calls),1)
+        self.assertIn("STOP:",result.stderr)
 
     def test_mixed_authorization(self):
         _,calls=self.run_case({"DENY_RESOURCE":"nodes"},True)
