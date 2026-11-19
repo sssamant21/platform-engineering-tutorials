@@ -66,19 +66,27 @@ if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($actualServer)) { throw
 if ($actualServer.Trim() -cne $env:EXPECTED_SERVER) { throw 'STOP: API endpoint mismatch' }
 oc version | Out-Null
 if ($LASTEXITCODE -ne 0) { throw 'STOP: version query failed' }
-if ((oc auth can-i get clusterversions.config.openshift.io --resource-name=version) -eq 'yes') {
+$authorization = oc auth can-i get clusterversions.config.openshift.io --resource-name=version
+if ($LASTEXITCODE -ne 0) { throw 'STOP: authorization check failed; evidence incomplete' }
+if ($authorization -eq 'yes') {
     oc get clusterversion version
     if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
 } else { Write-Output 'SKIP: named ClusterVersion read not authorized' }
-if ((oc auth can-i list clusteroperators.config.openshift.io) -eq 'yes') {
+$authorization = oc auth can-i list clusteroperators.config.openshift.io
+if ($LASTEXITCODE -ne 0) { throw 'STOP: authorization check failed; evidence incomplete' }
+if ($authorization -eq 'yes') {
     oc get clusteroperators
     if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
 } else { Write-Output 'SKIP: ClusterOperator inventory not authorized' }
-if ((oc auth can-i list nodes) -eq 'yes') {
+$authorization = oc auth can-i list nodes
+if ($LASTEXITCODE -ne 0) { throw 'STOP: authorization check failed; evidence incomplete' }
+if ($authorization -eq 'yes') {
     oc get nodes
     if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
 } else { Write-Output 'SKIP: node inventory not authorized' }
-if ((oc auth can-i list machineconfigpools.machineconfiguration.openshift.io) -eq 'yes') {
+$authorization = oc auth can-i list machineconfigpools.machineconfiguration.openshift.io
+if ($LASTEXITCODE -ne 0) { throw 'STOP: authorization check failed; evidence incomplete' }
+if ($authorization -eq 'yes') {
     oc get machineconfigpools
     if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
 } else { Write-Output 'SKIP: MachineConfigPool inventory not authorized' }
@@ -88,7 +96,7 @@ if ((oc auth can-i list machineconfigpools.machineconfiguration.openshift.io) -e
 
 **Context and endpoint gate:** The commands intentionally stop for failed authentication and require both `EXPECTED_CONTEXT` and `EXPECTED_SERVER` (exact API server URL including scheme and port, if any) from independently approved inventory. A matching local context name alone does not establish cluster identity. The examples compare the kubeconfig API endpoint without printing it; this does not cryptographically attest cluster identity and depends on trusted kubeconfig and TLS verification. Never use `--insecure-skip-tls-verify` to bypass a mismatch. Do **not** continue if the context is unknown, unexpected, or cannot be independently confirmed. `oc version` and subsequent reads also require exit-code review; a successful authorization check does not guarantee the following read succeeds. The Bash example uses `exit 1` and is intended to run as a standalone script, not pasted into a shared interactive shell without adapting that behavior.
 
-**Failure handling:** `no`, `Forbidden`, an empty/failed authorization response, or an API/network error means **do not treat the read as authorized**. A failed `oc get` must also be recorded and escalated, not interpreted as an empty healthy inventory. The shell examples compare exact `yes` and otherwise skip; they do not distinguish all authorization error classes. An authorized read or version query that fails terminates the standalone preflight with nonzero status; do not continue to subsequent reads or mark the evidence healthy. These examples have **not been executed against an OCP cluster**.
+**Failure handling:** `no`, `Forbidden`, an empty/failed authorization response, or an API/network error means **do not treat the read as authorized**. A failed `oc get` must also be recorded and escalated, not interpreted as an empty healthy inventory. The Bash example compares exact `yes` and otherwise skips, including API errors; an authorization-check failure must be escalated rather than interpreted as a healthy result. The PowerShell example explicitly stops when an authorization check exits nonzero; an explicit `no` remains a skip. An authorized read or version query that fails terminates the standalone preflight with nonzero status; do not continue to subsequent reads or mark the evidence healthy. These examples have **not been executed against an OCP cluster**.
 
 Record timestamp (UTC), sanitized output path, command exit code, and reviewer for each observation. Expected healthy signals include stable cluster version conditions, available/non-degraded Operators and ready nodes; do not equate these broad signals with full application health. Document every anomalous condition rather than silently accepting it.
 
