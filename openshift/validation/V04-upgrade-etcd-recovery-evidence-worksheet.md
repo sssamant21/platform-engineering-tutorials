@@ -14,19 +14,52 @@
 Run each command only if its resource permission is granted. These are **examples for an approved diagnostic session**, not claims of execution:
 
 ```sh
-oc whoami
-oc version
-oc auth can-i get clusterversions.config.openshift.io --resource-name=version
-oc auth can-i list clusteroperators.config.openshift.io
-oc auth can-i list nodes
-oc auth can-i list machineconfigpools.machineconfiguration.openshift.io
-oc get clusterversion version -o json
-oc get clusteroperators
-oc get nodes
-oc get machineconfigpools
+# Linux/macOS — evaluate authorization separately for each read.
+oc whoami                         # Identity only; do not publish username
+oc version                        # Sanitize server URL before sharing
+if [ "$(oc auth can-i get clusterversions.config.openshift.io --resource-name=version)" = yes ]; then
+  oc get clusterversion version
+else
+  echo "SKIP: named ClusterVersion read not authorized"
+fi
+if [ "$(oc auth can-i list clusteroperators.config.openshift.io)" = yes ]; then
+  oc get clusteroperators
+else
+  echo "SKIP: ClusterOperator inventory not authorized"
+fi
+if [ "$(oc auth can-i list nodes)" = yes ]; then
+  oc get nodes
+else
+  echo "SKIP: node inventory not authorized"
+fi
+if [ "$(oc auth can-i list machineconfigpools.machineconfiguration.openshift.io)" = yes ]; then
+  oc get machineconfigpools
+else
+  echo "SKIP: MachineConfigPool inventory not authorized"
+fi
 ```
 
-For PowerShell, run the same individual `oc` commands; avoid piping sensitive JSON into shared logs. The displayed reads are an inventory, **not a single executable block**: evaluate each `can-i` result first, then run only the matching authorized `oc get` command. **Only run a read when its corresponding `can-i` check returns yes.** For `oc get clusterversion version`, `get` must be authorized for the named resource; a `list` grant is not equivalent. If any preflight is denied or inconclusive, skip the read and ask the cluster administrator for a sanitized report. Some cluster-scoped reads may require additional authorization.
+```powershell
+# Windows PowerShell — separate authorization gates; no privilege escalation.
+oc whoami
+oc version
+if ((oc auth can-i get clusterversions.config.openshift.io --resource-name=version) -eq 'yes') {
+    oc get clusterversion version
+} else { Write-Output 'SKIP: named ClusterVersion read not authorized' }
+if ((oc auth can-i list clusteroperators.config.openshift.io) -eq 'yes') {
+    oc get clusteroperators
+} else { Write-Output 'SKIP: ClusterOperator inventory not authorized' }
+if ((oc auth can-i list nodes) -eq 'yes') {
+    oc get nodes
+} else { Write-Output 'SKIP: node inventory not authorized' }
+if ((oc auth can-i list machineconfigpools.machineconfiguration.openshift.io) -eq 'yes') {
+    oc get machineconfigpools
+} else { Write-Output 'SKIP: MachineConfigPool inventory not authorized' }
+```
+
+**Prerequisites:** a configured `oc` client and kubeconfig for the intended cluster, permission to perform self-authorization checks, and an approved diagnostic scope. Confirm the active context and cluster identity through an approved inventory before running these commands. Do not publish raw `oc whoami`, server addresses, or unredacted JSON. The snippets intentionally avoid `oc get ... -o json` to minimize accidental collection of sensitive metadata.
+
+**Failure handling:** `no`, `Forbidden`, an empty/failed authorization response, or an API/network error means **do not treat the read as authorized**. A failed `oc get` must also be recorded and escalated, not interpreted as an empty healthy inventory. The shell examples compare exact `yes` and otherwise skip; they do not distinguish all error classes. These examples have **not been executed against an OCP cluster**.
 
 Record timestamp (UTC), sanitized output path, command exit code, and reviewer for each observation. Expected healthy signals include stable cluster version conditions, available/non-degraded Operators and ready nodes; do not equate these broad signals with full application health. Document every anomalous condition rather than silently accepting it.
 
