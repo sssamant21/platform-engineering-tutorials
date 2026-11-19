@@ -164,5 +164,19 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(checked, 0)
             self.assertEqual(failures, [])
 
+    def test_fence_with_info_string_inside_block_does_not_close_it(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "```md\n"
+                "```python\n"
+                "[example](missing.md)\n"
+                "```\n",
+                encoding="utf-8",
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 0)
+            self.assertEqual(failures, [])
+
 if __name__ == "__main__":
     unittest.main()
