@@ -6,7 +6,7 @@
 
 - Use a clean, disposable checkout of the existing draft PR branch; verify `git status --short` and `git rev-parse HEAD` and record the commit SHA.
 - Python 3.10+; Bash available for Bash mock tests; PowerShell 7 (`pwsh`) required for PowerShell mock tests. On Windows, use Git Bash or WSL for the Bash suite, and PowerShell 7 for the PowerShell suite.
-- Run without real cluster credentials. Unset `KUBECONFIG` in the parent shell and ensure no production access is needed. The tests provide mock `oc` implementations and temporary credentials paths; never replace those mocks with a real client.
+- Run without real cluster credentials. Set `KUBECONFIG` to a nonexistent path inside a disposable test environment, and ensure no production access is needed. Merely unsetting `KUBECONFIG` is insufficient because a real `oc` may then use the default `$HOME/.kube/config`. The Bash suite uses a temporary mock executable; the PowerShell suite uses a session-local mock function. Do not execute extracted worksheet scripts directly outside these harnesses. The tests provide mock `oc` implementations and temporary credentials paths; never replace those mocks with a real client.
 - Do not paste real kubeconfig, tokens, user identities, cluster endpoints, or secrets into issue/PR evidence.
 
 ## Execution (repository root)
@@ -17,10 +17,10 @@ Run the suites separately so that a skipped PowerShell suite cannot be mistaken 
 python -m unittest discover -s openshift/tests -p 'test_v05_bash_identity_guard.py' -v
 python -m unittest discover -s openshift/tests -p 'test_v05_powershell_identity_guard.py' -v
 python -m unittest discover -s openshift/validation -p 'test_*.py' -v
-python openshift/validation/check_relative_links.py --help
+python openshift/validation/check_relative_links.py
 ```
 
-The last command is **interface discovery only**: inspect its supported flags before running the actual link audit; do not assume `--help` performs validation. On Windows PowerShell, use double quotes around glob patterns and `py -m unittest` if `python` is not on PATH.
+The last command **executes** the repository's read-only local Markdown link audit (it exits nonzero for missing local targets). It does not check external URLs or anchor fragments. Use `--help` separately only to inspect options. On Windows PowerShell, use double quotes around glob patterns and `py -m unittest` if `python` is not on PATH.
 
 ## Evidence recording
 
