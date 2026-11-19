@@ -244,3 +244,8 @@ Updated `validation/V02-offline-link-audit-execution.md` to reflect the 17 curre
 ## V03 high-risk operational change review matrix — 2026-11-19
 
 Added [V03 high-risk change review matrix](validation/V03-high-risk-change-review-matrix.md) covering upgrade, etcd recovery, MachineConfig, OLM, storage/stateful HA and RBAC/SCC change gates. It distinguishes permitted read-only evidence from approval-only actions, requires backup/fencing/version/topology checks and named independent signoffs, and explicitly rejects downgrade as an assumed upgrade rollback. Commit `4c10fa3cda19a25f7e5d12f2d37303b595593900`. **Drafted only:** no OCP cluster access, no command execution, no official release-specific command certification, no independent review or production approval. Next: run the 17 authored offline tests and link audit from a complete checkout; independently review high-risk runbooks against Red Hat 4.22 documentation and collect isolated lab evidence.
+
+
+## V04 upgrade and etcd recovery evidence worksheet — 2026-11-19
+
+Added [V04 upgrade and etcd recovery evidence worksheet](validation/V04-upgrade-etcd-recovery-evidence-worksheet.md), with least-privilege read-only preflights, version/upgrade-path gates, restore-rehearsal evidence, stop conditions, approval requirements and a reusable acceptance record. Commit `533d2a1da25af68ed715dc3a1b7c776244829cfb`. **Draft only:** no cluster execution, no verified restore, no Red Hat 4.22 command certification, no independent approval. A full Git checkout still fails with DNS resolution error; 17 offline tests and the full link audit remain pending. Next: run tests and audit from a complete checkout; verify OCP 4.22 release-specific recovery/upgrade guidance and collect isolated lab evidence.
