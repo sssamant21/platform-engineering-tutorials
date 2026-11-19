@@ -300,3 +300,7 @@ Corrected the V04 PowerShell diagnostic example so a nonzero `oc auth can-i` exi
 ## V05 Bash authorization-error fail-closed parity — 2026-11-19
 
 Revised V04 Bash authorization checks for all four resources: a nonzero `oc auth can-i` result now stops immediately, explicit `no` skips, and any other response fails closed. Updated the existing V05 Bash mock assertions to require nonzero exit and no reads on failed or ambiguous authorization, with only one attempted check. **Source-level change only; no regression execution, cluster testing, link audit or independent approval claimed.** Next: execute offline Bash/PowerShell and original Python suites, record actual evidence, then independently review OCP 4.22 semantics.
+
+## V05 PowerShell ambiguous authorization fail-closed correction — 2026-11-19
+
+Source review found that the V04 PowerShell example treated any successful `oc auth can-i` response other than `yes` as a denial, including unexpected or malformed output. Updated all four resource gates to distinguish explicit `yes` (read), explicit `no` (skip), and any other response (throw/stop). Worksheet commit `28fedd0f624da705cac7e1d692ba407b6ef54f81`. **Source-only review:** no PowerShell regression execution, real OCP cluster access, independent review or production approval. Next: add a PowerShell mock test for ambiguous authorization, run all offline suites, and complete the link audit.
