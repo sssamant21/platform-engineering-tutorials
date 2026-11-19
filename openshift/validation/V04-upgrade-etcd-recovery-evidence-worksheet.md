@@ -87,25 +87,25 @@ if ($LASTEXITCODE -ne 0) { throw 'STOP: authorization check failed; evidence inc
 if ($authorization -eq 'yes') {
     oc get clusterversion version
     if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
-} else { Write-Output 'SKIP: named ClusterVersion read not authorized' }
+} elseif ($authorization -eq 'no') { Write-Output 'SKIP: named ClusterVersion read not authorized' } else { throw 'STOP: ambiguous authorization response; evidence incomplete' }
 $authorization = oc auth can-i list clusteroperators.config.openshift.io
 if ($LASTEXITCODE -ne 0) { throw 'STOP: authorization check failed; evidence incomplete' }
 if ($authorization -eq 'yes') {
     oc get clusteroperators
     if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
-} else { Write-Output 'SKIP: ClusterOperator inventory not authorized' }
+} elseif ($authorization -eq 'no') { Write-Output 'SKIP: ClusterOperator inventory not authorized' } else { throw 'STOP: ambiguous authorization response; evidence incomplete' }
 $authorization = oc auth can-i list nodes
 if ($LASTEXITCODE -ne 0) { throw 'STOP: authorization check failed; evidence incomplete' }
 if ($authorization -eq 'yes') {
     oc get nodes
     if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
-} else { Write-Output 'SKIP: node inventory not authorized' }
+} elseif ($authorization -eq 'no') { Write-Output 'SKIP: node inventory not authorized' } else { throw 'STOP: ambiguous authorization response; evidence incomplete' }
 $authorization = oc auth can-i list machineconfigpools.machineconfiguration.openshift.io
 if ($LASTEXITCODE -ne 0) { throw 'STOP: authorization check failed; evidence incomplete' }
 if ($authorization -eq 'yes') {
     oc get machineconfigpools
     if ($LASTEXITCODE -ne 0) { throw 'STOP: authorized diagnostic read failed' }
-} else { Write-Output 'SKIP: MachineConfigPool inventory not authorized' }
+} elseif ($authorization -eq 'no') { Write-Output 'SKIP: MachineConfigPool inventory not authorized' } else { throw 'STOP: ambiguous authorization response; evidence incomplete' }
 ```
 
 **Prerequisites:** a configured `oc` client and kubeconfig for the intended cluster, permission to perform self-authorization checks, and an approved diagnostic scope. Confirm the active context and cluster identity through an approved inventory before running these commands. Do not publish raw `oc whoami`, server addresses, or unredacted JSON. The snippets intentionally avoid `oc get ... -o json` to minimize accidental collection of sensitive metadata.
