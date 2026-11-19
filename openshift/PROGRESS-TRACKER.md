@@ -320,3 +320,7 @@ Added [V06 execution and evidence protocol](validation/V06-offline-regression-ex
 ## V06 protocol correctness follow-up — 2026-11-19
 
 Corrected the offline execution protocol to **run** `check_relative_links.py` rather than only display its `--help` interface. Clarified that unsetting `KUBECONFIG` alone is unsafe because a real client can fall back to the default home-directory kubeconfig; prescribed a nonexistent kubeconfig path in a disposable environment and harness-only execution. The link auditor's own source was inspected to confirm its documented read-only entry point. **Documentation correction only:** the regression suites and link auditor were not executed in this run. Runtime validation, independent review and production approval remain pending.
+
+## V06 offline regression evidence template — 2026-11-19
+
+Added [V06 blank evidence record](validation/V06-offline-regression-evidence-template.md) with exact commands, per-suite PASS/FAIL/ERROR/SKIP and exit-code fields, runner identity/isolation checks, failure triage, evidence sanitization and independent approval gates. Commit `62717d3d5dd9bf43b8734bc4f5cfc451985f903d`. **Template authored only; no suites or link audit executed.** Local Git checkout remains blocked by DNS; no real cluster access or production approval. Next: run the existing offline suites on a clean checkout and populate this record with genuine results.
