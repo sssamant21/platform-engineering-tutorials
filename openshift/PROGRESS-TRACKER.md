@@ -316,3 +316,7 @@ Reviewed the actual V04 diagnostic order and corrected the failed-read test: whe
 ## V06 isolated regression execution protocol — 2026-11-19
 
 Added [V06 execution and evidence protocol](validation/V06-offline-regression-execution-protocol.md) for separate Bash (14 authored), PowerShell (10 authored) and earlier offline unittest suites, including dependency checks, honest SKIP/BLOCKED classification, sanitized evidence, exit-code recording and production-readiness gates. Commit `e82e05abfcf9c116533850f0f4d86700b34f9fe5`. **Documentation authored only:** tests have not been executed; no cluster access, complete link audit or independent approval is claimed. Next: execute offline tests from a clean checkout, capture evidence, fix failures, then review version-specific OCP 4.22 guidance.
+
+## V06 protocol correctness follow-up — 2026-11-19
+
+Corrected the offline execution protocol to **run** `check_relative_links.py` rather than only display its `--help` interface. Clarified that unsetting `KUBECONFIG` alone is unsafe because a real client can fall back to the default home-directory kubeconfig; prescribed a nonexistent kubeconfig path in a disposable environment and harness-only execution. The link auditor's own source was inspected to confirm its documented read-only entry point. **Documentation correction only:** the regression suites and link auditor were not executed in this run. Runtime validation, independent review and production approval remain pending.
