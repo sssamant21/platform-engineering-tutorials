@@ -249,3 +249,8 @@ Added [V03 high-risk change review matrix](validation/V03-high-risk-change-revie
 ## V04 upgrade and etcd recovery evidence worksheet — 2026-11-19
 
 Added [V04 upgrade and etcd recovery evidence worksheet](validation/V04-upgrade-etcd-recovery-evidence-worksheet.md), with least-privilege read-only preflights, version/upgrade-path gates, restore-rehearsal evidence, stop conditions, approval requirements and a reusable acceptance record. Commit `533d2a1da25af68ed715dc3a1b7c776244829cfb`. **Draft only:** no cluster execution, no verified restore, no Red Hat 4.22 command certification, no independent approval. A full Git checkout still fails with DNS resolution error; 17 offline tests and the full link audit remain pending. Next: run tests and audit from a complete checkout; verify OCP 4.22 release-specific recovery/upgrade guidance and collect isolated lab evidence.
+
+
+## V04 named ClusterVersion read authorization correction — 2026-11-19
+
+Corrected the V04 worksheet's `oc auth can-i get clusterversions.config.openshift.io` to check the specific `version` object using `--resource-name=version`, matching `oc get clusterversion version -o json`. Clarified that the inventory of `oc` commands is not a block to execute unconditionally: run each read only after its matching permission check succeeds. Commit `f64e82f30e9c7722cbb8b5250e8a41e92b450e68`. **Documentation-level RBAC review only**; no `oc` commands, Python tests, full link audit or isolated cluster restore were executed. Independent review and production approval remain pending. Next: execute 17 authored offline tests and branch-wide link audit from a complete checkout, then verify OCP 4.22 upgrade/recovery procedures against authoritative release-specific guidance.
