@@ -42,7 +42,7 @@ def bash_snippet():
     return match.group(1)+"\n"
 
 class IdentityGuardTests(unittest.TestCase):
-    def run_case(self, changes, expected_get):
+    def run_case(self, changes, expected_get, expected_failure=False):
         with tempfile.TemporaryDirectory(prefix="oc-v05-") as d:
             directory=pathlib.Path(d)
             oc=directory/"oc"
@@ -68,23 +68,25 @@ class IdentityGuardTests(unittest.TestCase):
             self.assertFalse(any(c.startswith(("patch ","delete ","apply ","adm ","debug ","drain ")) for c in calls),calls)
             gets=[c for c in calls if c.startswith("get ")]
             self.assertEqual(bool(gets),expected_get,(result.returncode,calls,result.stderr))
+            if expected_failure:
+                self.assertNotEqual(result.returncode, 0, "Fail-closed scenario must return nonzero")
             self.assertTrue(all(c.startswith(("whoami","config ","version","auth can-i ","get ")) for c in calls),calls)
             return result,calls
 
     def test_missing_context(self):
-        self.run_case({"EXPECTED_CONTEXT":""},False)
+        self.run_case({"EXPECTED_CONTEXT":""},False,True)
     def test_missing_server(self):
-        self.run_case({"EXPECTED_SERVER":""},False)
+        self.run_case({"EXPECTED_SERVER":""},False,True)
     def test_authentication_failure(self):
-        self.run_case({"FAIL_WHOAMI":"1"},False)
+        self.run_case({"FAIL_WHOAMI":"1"},False,True)
     def test_context_lookup_failure(self):
-        self.run_case({"FAIL_CONTEXT":"1"},False)
+        self.run_case({"FAIL_CONTEXT":"1"},False,True)
     def test_wrong_context(self):
-        self.run_case({"ACTUAL_CONTEXT":"other"},False)
+        self.run_case({"ACTUAL_CONTEXT":"other"},False,True)
     def test_server_lookup_failure(self):
-        self.run_case({"FAIL_SERVER":"1"},False)
+        self.run_case({"FAIL_SERVER":"1"},False,True)
     def test_wrong_server(self):
-        self.run_case({"ACTUAL_SERVER":"https://wrong.test.invalid:6443"},False)
+        self.run_case({"ACTUAL_SERVER":"https://wrong.test.invalid:6443"},False,True)
     def test_authorized_reads(self):
         result,calls=self.run_case({},True)
         self.assertEqual(sum(c.startswith("get ") for c in calls),4)
