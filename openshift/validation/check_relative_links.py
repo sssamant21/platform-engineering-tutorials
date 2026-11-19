@@ -20,7 +20,7 @@ from urllib.parse import unquote, urlsplit
 LINK = re.compile(r"!?(?:\[[^\]]*\])\(\s*(<[^>]+>|[^\s)]+)(?:\s+['\"][^)]*['\"])?\s*\)")
 REFERENCE_DEF = re.compile(r"^\s{0,3}\[([^]]+)\]:\s*(<[^>]+>|\S+)")
 REFERENCE_USE = re.compile(r"!?\[([^]]+)\]\[([^]]*)\]")
-FENCE = re.compile(r"^ {0,3}(`{3,}|~{3,})")
+FENCE = re.compile(r"^ {0,3}(`{3,}|~{3,})(.*)$")
 SCHEME = re.compile(r"^[a-z][a-z0-9+.-]*:", re.I)
 
 
@@ -75,7 +75,7 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 marker = marker_match.group(1)
                 if pre_fence_char is None:
                     pre_fence_char, pre_fence_length = marker[0], len(marker)
-                elif marker[0] == pre_fence_char and len(marker) >= pre_fence_length:
+                elif marker[0] == pre_fence_char and len(marker) >= pre_fence_length and (marker[0] == "~" or not marker_match.group(2).strip()) and not marker_match.group(2).strip():
                     pre_fence_char, pre_fence_length = None, 0
                 continue
             if pre_fence_char is not None or definition_line.startswith(("    ", "\t")):
@@ -91,7 +91,7 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 marker = match.group(1)
                 if fence_char is None:
                     fence_char, fence_length = marker[0], len(marker)
-                elif marker[0] == fence_char and len(marker) >= fence_length:
+                elif marker[0] == fence_char and len(marker) >= fence_length and not match.group(2).strip():
                     fence_char, fence_length = None, 0
                 continue
             if fence_char is not None or line.startswith(("    ", "\t")):
