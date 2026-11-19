@@ -16,7 +16,7 @@ Run each command only if its resource permission is granted. These are **example
 ```sh
 oc whoami
 oc version
-oc auth can-i get clusterversions.config.openshift.io
+oc auth can-i get clusterversions.config.openshift.io --resource-name=version
 oc auth can-i list clusteroperators.config.openshift.io
 oc auth can-i list nodes
 oc auth can-i list machineconfigpools.machineconfiguration.openshift.io
@@ -26,7 +26,7 @@ oc get nodes
 oc get machineconfigpools
 ```
 
-For PowerShell, run the same individual `oc` commands; avoid piping sensitive JSON into shared logs. **Only run a read when its corresponding `can-i` check returns yes.** For `oc get clusterversion version`, `get` must be authorized for the named resource; a `list` grant is not equivalent. If any preflight is denied or inconclusive, skip the read and ask the cluster administrator for a sanitized report. Some cluster-scoped reads may require additional authorization.
+For PowerShell, run the same individual `oc` commands; avoid piping sensitive JSON into shared logs. The displayed reads are an inventory, **not a single executable block**: evaluate each `can-i` result first, then run only the matching authorized `oc get` command. **Only run a read when its corresponding `can-i` check returns yes.** For `oc get clusterversion version`, `get` must be authorized for the named resource; a `list` grant is not equivalent. If any preflight is denied or inconclusive, skip the read and ask the cluster administrator for a sanitized report. Some cluster-scoped reads may require additional authorization.
 
 Record timestamp (UTC), sanitized output path, command exit code, and reviewer for each observation. Expected healthy signals include stable cluster version conditions, available/non-degraded Operators and ready nodes; do not equate these broad signals with full application health. Document every anomalous condition rather than silently accepting it.
 
