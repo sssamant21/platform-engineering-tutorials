@@ -74,6 +74,10 @@ class Lab015SourceContract(unittest.TestCase):
         for script in (bash, ps):
             self.assertNotRegex(script, r"(?m)^\s*(?:\$null\s*=\s*)?(?:&\s*)?oc\s+(?:delete|apply|patch|replace|create|adm\s+(?:drain|upgrade))\b")
 
+    def test_bash_resource_output_suppressed(self):
+        bash, _ = blocks()
+        self.assertIn('if ! oc "$@" >/dev/null; then', bash)
+
     def test_no_raw_kubeconfig_or_secret_reads(self):
         bash, ps = blocks()
         for script in (bash, ps):
