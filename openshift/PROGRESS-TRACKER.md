@@ -342,3 +342,8 @@ Corrected a source-level regression harness gap: the PowerShell test previously 
 ## V06 mock-only runner preflight — 2026-11-20
 
 Added explicit Bash/Git Bash and PowerShell 7 disposable kubeconfig isolation preflights to the [V06 execution protocol](validation/V06-offline-regression-execution-protocol.md). Clarified that isolation alone does not prove safety: the harness must intercept every `oc` call, and uncertain interception is BLOCKED rather than executed. No real `oc` preflight is allowed. **Documentation reviewed and committed, not executed.** All offline test suites, link audit, isolated OCP 4.22 runtime validation and independent approval remain pending.
+
+
+## V06 PowerShell preflight coverage increment — 2026-11-20
+
+Added two **authored, not executed** PowerShell regression cases for a missing expected API server and a failed server lookup. Both require a nonzero exit and no authorization checks or resource reads. Tightened the mock server lookup to match the exact expected `oc config view --minify -o jsonpath={.clusters[0].cluster.server}` command instead of a wildcard. PowerShell V05 suite now has **12 authored tests**; Bash suite remains at **14 authored tests**. GitHub source/commit verification is not runtime execution. **Pending:** execute the suites offline with sanitized PASS/FAIL/SKIP evidence, link audit, isolated OCP 4.22 validation, and independent review. No production approval.
