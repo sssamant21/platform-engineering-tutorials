@@ -29,6 +29,7 @@ elif args == ["config", "current-context"]:
 elif args[:3] == ["config", "view", "--minify"]:
     print("https://wrong.example.invalid" if scenario == "mismatch" else "https://approved.example.invalid")
 elif args == ["version"]:
+    if scenario == "version_fail": sys.exit(13)
     print("mock version")
 elif args[:2] == ["auth", "can-i"]:
     if scenario == "auth_fail": sys.exit(9)
@@ -78,6 +79,13 @@ class Lab015BashMock(unittest.TestCase):
         result, commands = self.run_case("mismatch")
         self.assertNotEqual(result.returncode, 0)
         self.assertFalse(any(x == "version" or x.startswith("auth ") or x.startswith("get ") for x in commands))
+
+    def test_version_failure_stops_before_authorization_and_reads(self):
+        result, commands = self.run_case("version_fail")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(commands.count("version"), 1)
+        self.assertFalse(any(x.startswith("auth ") or x.startswith("get ") for x in commands))
+        self.assertIn("STOP: version lookup failed", result.stderr)
 
     def test_denial_skips_all_resource_reads(self):
         result, commands = self.run_case("denied")
