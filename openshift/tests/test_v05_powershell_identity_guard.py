@@ -37,7 +37,7 @@ function oc {
     if ($env:MOCK_FAILURE -eq 'wrong-context') { 'unexpected'; return }
     'isolated-test'; return
   }
-  if ($argvText -like 'config view --minify *') {
+  if ($argvText -eq 'config view --minify -o jsonpath={.clusters[0].cluster.server}') {
     if ($env:MOCK_FAILURE -eq 'server') { $global:LASTEXITCODE = 1; return }
     if ($env:MOCK_FAILURE -eq 'wrong-server') { 'https://wrong.invalid:6443'; return }
     'https://api.test.invalid:6443'; return
@@ -136,6 +136,18 @@ class PowerShellIdentityGuardTests(unittest.TestCase):
         p, calls = self.run_case("wrong-context")
         self.assertNotEqual(p.returncode, 0)
         self.assertFalse(any(x.startswith("get ") for x in calls))
+
+    def test_missing_server_expectation(self):
+        p, calls = self.run_case(expected_server="")
+        self.assertNotEqual(p.returncode, 0)
+        self.assertFalse(any(x.startswith("get ") for x in calls))
+        self.assertFalse(any(x.startswith("auth can-i ") for x in calls))
+
+    def test_server_lookup_failure(self):
+        p, calls = self.run_case("server")
+        self.assertNotEqual(p.returncode, 0)
+        self.assertFalse(any(x.startswith("get ") for x in calls))
+        self.assertFalse(any(x.startswith("auth can-i ") for x in calls))
 
     def test_wrong_server(self):
         p, calls = self.run_case("wrong-server")
