@@ -18,6 +18,8 @@ MOCK_OC = r'''#!/usr/bin/env python3
 import os, sys
 from pathlib import Path
 args = sys.argv[1:]
+if os.environ.get("KUBECONFIG") or os.environ.get("AWS_SECRET_ACCESS_KEY"):
+    sys.exit(97)
 with Path(os.environ["OC_TRACE"]).open("a", encoding="utf-8") as out:
     out.write(" ".join(args) + "\n")
 scenario = os.environ.get("OC_SCENARIO", "ok")
