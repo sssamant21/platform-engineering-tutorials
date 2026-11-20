@@ -52,9 +52,13 @@ class Lab015BashMock(unittest.TestCase):
             mock.write_text(MOCK_OC, encoding="utf-8")
             mock.chmod(0o700)
             trace = root / "trace.txt"
-            env = os.environ.copy()
+            env = {
+                "PATH": str(root) + os.pathsep + os.defpath,
+                "HOME": str(root),
+                "TMPDIR": str(root),
+                "PYTHONNOUSERSITE": "1",
+            }
             env.update({
-                "PATH": str(root) + os.pathsep + env.get("PATH", ""),
                 "EXPECTED_API_SERVER": "https://approved.example.invalid",
                 "OC_SCENARIO": scenario,
                 "OC_TRACE": str(trace),
