@@ -31,7 +31,10 @@ function global:oc {
     if ($script:Scenario -eq 'mismatch') { return 'https://wrong.example.invalid' }
     return 'https://approved.example.invalid'
   }
-  if (($a -join ' ') -eq 'version') { return 'mock-version' }
+  if (($a -join ' ') -eq 'version') {
+    if ($script:Scenario -eq 'version_fail') { $global:LASTEXITCODE = 13; return }
+    return 'mock-version'
+  }
   if ($a.Count -ge 2 -and ($a[0..1] -join ' ') -eq 'auth can-i') {
     if ($script:Scenario -eq 'auth_fail') { $global:LASTEXITCODE = 9; return }
     if ($script:Scenario -eq 'denied') { return 'no' }
@@ -79,6 +82,13 @@ class Lab015PowerShellMock(unittest.TestCase):
         result, commands = self.run_case("mismatch")
         self.assertNotEqual(result.returncode, 0)
         self.assertFalse(any(x == "version" or x.startswith("auth ") or x.startswith("get ") for x in commands))
+
+    def test_version_failure_stops_before_authorization_and_reads(self):
+        result, commands = self.run_case("version_fail")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertEqual(commands.count("version"), 1)
+        self.assertFalse(any(x.startswith("auth ") or x.startswith("get ") for x in commands))
+        self.assertIn("STOP: version lookup failed", result.stderr)
 
     def test_denied_skips_reads(self):
         result, commands = self.run_case("denied")
