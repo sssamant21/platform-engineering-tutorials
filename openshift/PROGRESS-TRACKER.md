@@ -329,3 +329,7 @@ Added [V06 blank evidence record](validation/V06-offline-regression-evidence-tem
 ## V06 PowerShell mock command allowlist — 2026-11-20
 
 Reviewed the ten-case V05 PowerShell identity-guard harness. Replaced its narrow destructive-command denylist with a strict mock invocation allowlist covering only `whoami`, context/server inspection, `version`, `auth can-i` and `get`. This makes unexpected commands fail the harness assertion even if not included in the former denylist. Commit `ecba0caeddf98f1b85340200f687e44ea932b842`. **Source-level change only:** no PowerShell suite execution, OCP cluster test or independent approval. Next: run all offline suites and the link audit in a credential-isolated checkout, recording genuine results and investigating failures.
+
+## V06 Bash diagnostic command allowlist — 2026-11-20
+
+Strengthened `tests/test_v05_bash_identity_guard.py` to reject any command outside the exact expected identity, context, API endpoint, version, RBAC and four resource-read invocations. This closes a gap in the previous prefix-only assertion, which could accept unintended `oc get` resources or broadened authorization queries. Commit `24f56e231bc22195cf4d474b45a4f49c43d1b9bf` on the existing draft PR branch. **Source-level verification only:** checkout and offline test execution were blocked by DNS resolution to GitHub in this runtime. The 14 Bash, 10 PowerShell and earlier regression suites, complete link audit, isolated OCP 4.22 lab tests and independent approval remain pending. No production cluster accessed.
