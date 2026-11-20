@@ -111,5 +111,18 @@ class Lab015BashMock(unittest.TestCase):
         self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
         self.assertIn("INCOMPLETE", result.stderr)
 
+
+    def test_parent_credentials_not_inherited_by_mock(self):
+        """A credential-like parent variable must not reach the fake oc process."""
+        from unittest.mock import patch
+        with patch.dict(os.environ, {
+            "KUBECONFIG": "/nonexistent/private-kubeconfig",
+            "AWS_SECRET_ACCESS_KEY": "sentinel-not-a-real-secret",
+            "OC_TRACE": "/nonexistent/parent-trace",
+        }):
+            result, commands = self.run_case("ok")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+
 if __name__ == "__main__":
     unittest.main()
