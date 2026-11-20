@@ -71,7 +71,23 @@ class IdentityGuardTests(unittest.TestCase):
             self.assertEqual(bool(gets),expected_get,(result.returncode,calls,result.stderr))
             if expected_failure:
                 self.assertNotEqual(result.returncode, 0, "Fail-closed scenario must return nonzero")
-            self.assertTrue(all(c.startswith(("whoami","config ","version","auth can-i ","get ")) for c in calls),calls)
+            # Exact command allowlist: unexpected reads or broadened RBAC
+            # queries fail even if the mock would otherwise return success.
+            allowed = {
+                "whoami",
+                "config current-context",
+                "config view --minify -o jsonpath={.clusters[0].cluster.server}",
+                "version",
+                "auth can-i get clusterversions.config.openshift.io --resource-name=version",
+                "auth can-i list clusteroperators.config.openshift.io",
+                "auth can-i list nodes",
+                "auth can-i list machineconfigpools.machineconfiguration.openshift.io",
+                "get clusterversion version",
+                "get clusteroperators",
+                "get nodes",
+                "get machineconfigpools",
+            }
+            self.assertTrue(all(c in allowed for c in calls), calls)
             return result,calls
 
     def test_missing_context(self):
