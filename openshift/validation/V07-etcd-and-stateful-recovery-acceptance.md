@@ -45,6 +45,29 @@ oc get machineconfigpools
 
 For PowerShell, the same `oc` commands apply. Do not print kubeconfig, tokens, Secret resources, snapshot contents, raw backup paths or encryption keys. A `Forbidden` response means request approved read-only access; never escalate privileges automatically. Missing API connectivity means mark evidence unavailable rather than claiming health.
 
+## Rehearsal measurement and independent evidence template
+
+Use this **only after an approved, isolated recovery rehearsal**; leave all values `NOT TESTED` until measured. Record UTC timestamps from a consistent time source and note clock uncertainty.
+
+| Field | Recorded value |
+| --- | --- |
+| Change / exercise ID and reviewer | NOT TESTED |
+| Sanitized cluster identity, exact OCP version, topology | NOT TESTED |
+| Recovery scope: platform API state versus each application's data | NOT TESTED |
+| Last recoverable consistent point (UTC) | NOT TESTED |
+| Failure reference time (UTC) | NOT TESTED |
+| Recovery decision / start time (UTC) | NOT TESTED |
+| API restored and usable (UTC) | NOT TESTED |
+| Critical application data validated (UTC), by service | NOT TESTED |
+| Approved platform and per-service RPO/RTO targets | NOT TESTED |
+| Measured data-loss window and service unavailability | NOT TESTED |
+| Snapshot integrity, paired resources, external dependencies | NOT TESTED |
+| Independent approvers and linked sanitized evidence | NOT TESTED |
+
+**Measurement rules:** RPO measures the difference between the failure reference time and the latest *verified recoverable consistent data point* for the specific system. RTO measures the interval from the agreed service-disruption start to the agreed restored-service acceptance point. Document these definitions in the change ticket before testing; do not substitute backup creation time for proven recoverability, or API availability for application recovery. Report each application separately. If a reference time or consistency point is missing, record **NOT MEASURABLE**, not PASS.
+
+**Failure injection and restore are state-changing operations.** The worksheet does not authorize them. Require approved scope, isolated infrastructure, named incident/change authority, a validated backup, explicit abort criteria and an independent observer. If a recovery attempt exceeds the approved time budget, stop at the predefined decision gate and escalate rather than improvising a production restore.
+
 ## Approval and stop conditions
 
 **Stop** when the snapshot age is unknown, static-resource pairing is absent, topology is unsupported, the cluster identity differs from the ticket, storage/database consistency is unverified, or required approvals are missing. Escalate to the platform incident commander, application/database owners, storage team and Red Hat/provider support as applicable. The change record must identify recovery order, communications, expected data loss, fallback decision and measurable validation criteria.
