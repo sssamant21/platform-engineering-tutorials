@@ -14,27 +14,34 @@ oc config current-context >/dev/null || { echo "STOP: context lookup failed" >&2
 actual_server="$(oc config view --minify -o jsonpath='{.clusters[0].cluster.server}')" || { echo "STOP: API server lookup failed" >&2; exit 1; }
 [ -n "$actual_server" ] && [ "$actual_server" = "$EXPECTED_API_SERVER" ] || { echo "STOP: API server mismatch or empty" >&2; exit 1; }
 oc version || { echo "STOP: version lookup failed" >&2; exit 1; }
-# Check authorization for the precise verb and resource before each read.
-if [ "$(oc auth can-i get clusterversions.config.openshift.io --resource-name=version)" = yes ]; then
-  oc get clusterversion version
-else
-  echo "SKIP: cannot get named ClusterVersion/version"
-fi
-if [ "$(oc auth can-i list clusteroperators.config.openshift.io)" = yes ]; then
-  oc get clusteroperators
-else
-  echo "SKIP: cannot list ClusterOperators"
-fi
-if [ "$(oc auth can-i list nodes)" = yes ]; then
-  oc get nodes -l node-role.kubernetes.io/master
-else
-  echo "SKIP: cannot list nodes"
-fi
-if [ "$(oc auth can-i get infrastructures.config.openshift.io --resource-name=cluster)" = yes ]; then
-  oc get infrastructure cluster
-else
-  echo "SKIP: cannot get named Infrastructure/cluster"
-fi
+# Each authorization/read failure is surfaced; never infer success from a skipped check.
+check_read() {
+  local description="$1"; shift
+  local permission="$1"; shift
+  local answer rc
+  answer="$(oc auth can-i $permission)" && rc=0 || rc=$?
+  if [ "$rc" -ne 0 ]; then
+    echo "UNKNOWN: authorization check failed for $description (exit $rc)" >&2
+    return 1
+  fi
+  if [ "$answer" != "yes" ]; then
+    echo "SKIP: $description (permission=$answer)"
+    return 2
+  fi
+  if ! oc "$@"; then
+    echo "ERROR: resource read failed for $description" >&2
+    return 1
+  fi
+  return 0
+}
+# Only static, audited arguments are passed; no user-provided command strings.
+failures=0
+check_read 'ClusterVersion/version' 'get clusterversions.config.openshift.io --resource-name=version' get clusterversion version || { [ "$?" -eq 2 ] || failures=1; }
+check_read 'ClusterOperators' 'list clusteroperators.config.openshift.io' get clusteroperators || { [ "$?" -eq 2 ] || failures=1; }
+check_read 'control-plane nodes' 'list nodes' get nodes -l node-role.kubernetes.io/master || { [ "$?" -eq 2 ] || failures=1; }
+check_read 'Infrastructure/cluster' 'get infrastructures.config.openshift.io --resource-name=cluster' get infrastructure cluster || { [ "$?" -eq 2 ] || failures=1; }
+[ "$failures" -eq 0 ] || { echo 'INCOMPLETE: one or more authorization or resource queries failed' >&2; exit 1; }
+echo 'Read-only checks completed; SKIP entries still require evidence review.'
 ```
 
 ## Procedure — Windows PowerShell
@@ -51,18 +58,34 @@ if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($actualServer) -or $act
 }
 $null = oc version
 if ($LASTEXITCODE -ne 0) { throw 'STOP: version lookup failed' }
-if ((oc auth can-i get clusterversions.config.openshift.io --resource-name=version) -eq 'yes') {
-  oc get clusterversion version
-} else { Write-Output 'SKIP: cannot get named ClusterVersion/version' }
-if ((oc auth can-i list clusteroperators.config.openshift.io) -eq 'yes') {
-  oc get clusteroperators
-} else { Write-Output 'SKIP: cannot list ClusterOperators' }
-if ((oc auth can-i list nodes) -eq 'yes') {
-  oc get nodes -l node-role.kubernetes.io/master
-} else { Write-Output 'SKIP: cannot list nodes' }
-if ((oc auth can-i get infrastructures.config.openshift.io --resource-name=cluster) -eq 'yes') {
-  oc get infrastructure cluster
-} else { Write-Output 'SKIP: cannot get named Infrastructure/cluster' }
+function Invoke-ReadIfAuthorized {
+  param([string]$Description, [string[]]$PermissionArgs, [string[]]$ReadArgs)
+  $answer = & oc auth can-i @PermissionArgs
+  $authExit = $LASTEXITCODE
+  if ($authExit -ne 0) {
+    Write-Error "UNKNOWN: authorization check failed for $Description (exit $authExit)" -ErrorAction Continue
+    return 'ERROR'
+  }
+  if (($answer -join '').Trim() -cne 'yes') {
+    Write-Output "SKIP: $Description (permission not confirmed)"
+    return 'SKIP'
+  }
+  & oc @ReadArgs
+  $readExit = $LASTEXITCODE
+  if ($readExit -ne 0) {
+    Write-Error "ERROR: resource read failed for $Description (exit $readExit)" -ErrorAction Continue
+    return 'ERROR'
+  }
+  return 'OK'
+}
+$results = @(
+  (Invoke-ReadIfAuthorized 'ClusterVersion/version' @('get','clusterversions.config.openshift.io','--resource-name=version') @('get','clusterversion','version'))
+  (Invoke-ReadIfAuthorized 'ClusterOperators' @('list','clusteroperators.config.openshift.io') @('get','clusteroperators'))
+  (Invoke-ReadIfAuthorized 'control-plane nodes' @('list','nodes') @('get','nodes','-l','node-role.kubernetes.io/master'))
+  (Invoke-ReadIfAuthorized 'Infrastructure/cluster' @('get','infrastructures.config.openshift.io','--resource-name=cluster') @('get','infrastructure','cluster'))
+)
+if ($results -contains 'ERROR') { throw 'INCOMPLETE: one or more authorization or resource queries failed' }
+Write-Output 'Read-only checks completed; SKIP entries still require evidence review.'
 ```
 
 The expected server must be supplied from a trusted change record, not discovered from the same kubeconfig being checked. Do not print server URLs in shared evidence. These preflights verify client context identity only; they do not establish that a backup is valid.
