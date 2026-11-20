@@ -65,7 +65,9 @@ if ((oc auth can-i get infrastructures.config.openshift.io --resource-name=clust
 } else { Write-Output 'SKIP: cannot get named Infrastructure/cluster' }
 ```
 
-The expected server must be supplied from a trusted change record, not discovered from the same kubeconfig being checked. Do not print server URLs in shared evidence. These preflights verify client context identity only; they do not establish that a backup is valid.\n\nAuthorization queries can themselves fail (API unavailable or RBAC evaluation error). Treat any response other than an explicit `yes` as **not authorized/unknown** and skip the corresponding read; never auto-elevate. `get` on a named resource is different from `list` on a collection. Cluster-scoped access cannot be inferred from namespace access. The control-plane node selector may not expose nodes on hosted or managed topologies; record applicability rather than assuming a failure.
+The expected server must be supplied from a trusted change record, not discovered from the same kubeconfig being checked. Do not print server URLs in shared evidence. These preflights verify client context identity only; they do not establish that a backup is valid.
+
+Authorization queries can themselves fail (API unavailable or RBAC evaluation error). Treat any response other than an explicit `yes` as **not authorized/unknown** and skip the corresponding read; never auto-elevate. `get` on a named resource is different from `list` on a collection. Cluster-scoped access cannot be inferred from namespace access. The control-plane node selector may not expose nodes on hosted or managed topologies; record applicability rather than assuming a failure.
 
 ## Expected and failure observations
 - `yes` only confirms the tested permission for the current identity; it does **not** certify backup rights or recoverability.
