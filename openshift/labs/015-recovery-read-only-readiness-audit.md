@@ -19,7 +19,10 @@ check_read() {
   local description="$1"; shift
   local permission="$1"; shift
   local answer rc
-  answer="$(oc auth can-i $permission)" && rc=0 || rc=$?
+  # Permission is a fixed argument string below; split into an array without eval.
+  local -a permission_args
+  read -r -a permission_args <<< "$permission"
+  answer="$(oc auth can-i "${permission_args[@]}")" && rc=0 || rc=$?
   if [ "$rc" -ne 0 ]; then
     echo "UNKNOWN: authorization check failed for $description (exit $rc)" >&2
     return 1
@@ -70,7 +73,7 @@ function Invoke-ReadIfAuthorized {
     Write-Output "SKIP: $Description (permission not confirmed)"
     return 'SKIP'
   }
-  & oc @ReadArgs
+  $null = & oc @ReadArgs
   $readExit = $LASTEXITCODE
   if ($readExit -ne 0) {
     Write-Error "ERROR: resource read failed for $Description (exit $readExit)" -ErrorAction Continue
@@ -79,14 +82,16 @@ function Invoke-ReadIfAuthorized {
   return 'OK'
 }
 $results = @(
-  (Invoke-ReadIfAuthorized 'ClusterVersion/version' @('get','clusterversions.config.openshift.io','--resource-name=version') @('get','clusterversion','version'))
-  (Invoke-ReadIfAuthorized 'ClusterOperators' @('list','clusteroperators.config.openshift.io') @('get','clusteroperators'))
-  (Invoke-ReadIfAuthorized 'control-plane nodes' @('list','nodes') @('get','nodes','-l','node-role.kubernetes.io/master'))
-  (Invoke-ReadIfAuthorized 'Infrastructure/cluster' @('get','infrastructures.config.openshift.io','--resource-name=cluster') @('get','infrastructure','cluster'))
+  (Invoke-ReadIfAuthorized -Description 'ClusterVersion/version' -PermissionArgs @('get','clusterversions.config.openshift.io','--resource-name=version') -ReadArgs @('get','clusterversion','version'))
+  (Invoke-ReadIfAuthorized -Description 'ClusterOperators' -PermissionArgs @('list','clusteroperators.config.openshift.io') -ReadArgs @('get','clusteroperators'))
+  (Invoke-ReadIfAuthorized -Description 'control-plane nodes' -PermissionArgs @('list','nodes') -ReadArgs @('get','nodes','-l','node-role.kubernetes.io/master'))
+  (Invoke-ReadIfAuthorized -Description 'Infrastructure/cluster' -PermissionArgs @('get','infrastructures.config.openshift.io','--resource-name=cluster') -ReadArgs @('get','infrastructure','cluster'))
 )
 if ($results -contains 'ERROR') { throw 'INCOMPLETE: one or more authorization or resource queries failed' }
 Write-Output 'Read-only checks completed; SKIP entries still require evidence review.'
 ```
+
+PowerShell uses explicit named array parameters to avoid positional array binding ambiguity. Resource output is suppressed in the status helper; capture separately only after approved sanitization. The Bash helper uses a fixed, audited argument array and never evaluates a shell command string. These corrections require offline mock execution before they can be called tested.
 
 The expected server must be supplied from a trusted change record, not discovered from the same kubeconfig being checked. Do not print server URLs in shared evidence. These preflights verify client context identity only; they do not establish that a backup is valid.
 
