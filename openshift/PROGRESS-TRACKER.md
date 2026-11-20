@@ -368,3 +368,8 @@ Reviewed the executable Bash evidence-capture example and corrected a double-esc
 ## V06 PowerShell ordered-command assertions — 2026-11-20
 
 Strengthened the existing 14-case PowerShell identity-guard suite: the authorized-read scenario now checks the **complete ordered 12-command trace**, not just a count of four reads; the explicit-denial scenario now checks the **ordered four RBAC queries** and absence of resource reads. This closes a false-positive gap where an unexpected or missing diagnostic step could still satisfy the previous count-only assertions. Commit `5935f5ab89ef057367717a2f97047ea835ddfce6`. **Authored and GitHub-source-verified only**; local Git checkout still cannot resolve `github.com`, so no test suites or link auditor were executed. All 18 chapters remain drafted, not lab-tested or production-approved. Next: execute offline regression suites in a credential-isolated checkout and reconcile actual counts, exits and skips.
+
+
+## V07 — Recovery acceptance evidence gates (2026-11-20)
+
+Added [V07 etcd and stateful recovery acceptance worksheet](validation/V07-etcd-and-stateful-recovery-acceptance.md) covering version/topology compatibility, snapshot/static-resource pairing, app data boundaries, restore integrity, RPO/RTO, security approvals, stop conditions and independent acceptance. **Documentation drafted only; no backup, restore, offline suite, live OCP test or independent review executed.** All 18 chapters remain drafted and not production-approved.
