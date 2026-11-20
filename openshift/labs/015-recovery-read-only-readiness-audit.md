@@ -31,7 +31,7 @@ check_read() {
     echo "SKIP: $description (permission=$answer)"
     return 2
   fi
-  if ! oc "$@"; then
+  if ! oc "$@" >/dev/null; then
     echo "ERROR: resource read failed for $description" >&2
     return 1
   fi
@@ -91,7 +91,7 @@ if ($results -contains 'ERROR') { throw 'INCOMPLETE: one or more authorization o
 Write-Output 'Read-only checks completed; SKIP entries still require evidence review.'
 ```
 
-PowerShell uses explicit named array parameters to avoid positional array binding ambiguity. Resource output is suppressed in the status helper; capture separately only after approved sanitization. The Bash helper uses a fixed, audited argument array and never evaluates a shell command string. These corrections require offline mock execution before they can be called tested.
+PowerShell uses explicit named array parameters to avoid positional array binding ambiguity. Both Bash and PowerShell suppress successful resource output in the status helper; capture separately only after approved sanitization. Standard error from `oc` can still contain infrastructure identifiers; do not attach raw terminal transcripts to shared evidence. The Bash helper uses a fixed, audited argument array and never evaluates a shell command string. These corrections require offline mock execution before they can be called tested.
 
 The expected server must be supplied from a trusted change record, not discovered from the same kubeconfig being checked. Do not print server URLs in shared evidence. These preflights verify client context identity only; they do not establish that a backup is valid.
 
