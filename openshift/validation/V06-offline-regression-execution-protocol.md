@@ -50,7 +50,7 @@ In Bash/Git Bash, capture each exit status immediately (before any subsequent co
 ```sh
 python -m unittest discover -s openshift/tests -p 'test_v05_bash_identity_guard.py' -v
 bash_exit=$?
-printf 'Bash suite exit status: %s\\n' "$bash_exit"
+printf 'Bash suite exit status: %s\n' "$bash_exit"
 ```
 
 In PowerShell 7, capture the native process exit status using `$LASTEXITCODE` immediately after invoking Python; do not rely on `$?` for the numerical exit code:
@@ -64,6 +64,30 @@ Write-Output "PowerShell suite exit status: $powerShellSuiteExit"
 Do not automate a green status solely from these shell snippets: a reviewer must also reconcile the discovered count, skip details, assertions, mock interception and sanitized output. If the complete checkout is unavailable, mark all four commands **BLOCKED / NOT RUN**; do not substitute source inspection for execution.
 
 The last command **executes** the repository's read-only local Markdown link audit (it exits nonzero for missing local targets). It does not check external URLs or anchor fragments. Use `--help` separately only to inspect options. On Windows PowerShell, use double quotes around glob patterns and `py -m unittest` if `python` is not on PATH.
+
+
+### Evidence capture without masking failures
+
+Run each command **without a pipeline** and capture stdout and stderr together in a disposable, access-controlled directory. Piping into `tee` can obscure the test runner's nonzero exit code unless shell-specific pipeline-failure handling is enabled. For example, on Bash:
+
+```sh
+mkdir -p /tmp/ocp-v06-offline-evidence
+python -m unittest discover -s openshift/tests -p 'test_v05_bash_identity_guard.py' -v > /tmp/ocp-v06-offline-evidence/bash.log 2>&1
+bash_exit=$?
+printf 'Bash suite exit status: %s\\n' "$bash_exit"
+```
+
+On PowerShell 7, use a fresh temporary directory and native redirection:
+
+```powershell
+$evidenceDir = Join-Path ([System.IO.Path]::GetTempPath()) ("ocp-v06-evidence-" + [guid]::NewGuid())
+New-Item -ItemType Directory -Path $evidenceDir | Out-Null
+python -m unittest discover -s openshift/tests -p "test_v05_powershell_identity_guard.py" -v *> (Join-Path $evidenceDir "powershell.log")
+$powerShellSuiteExit = $LASTEXITCODE
+Write-Output "PowerShell suite exit status: $powerShellSuiteExit"
+```
+
+Keep raw logs **outside the repository** until manually inspected and sanitized. Do not commit the raw logs, environment dumps or real cluster identifiers. Record the count from the `Ran N tests` line, the number of skips, and the process exit code independently. A missing `Ran N tests` summary is **BLOCKED/ERROR**, never PASS. Delete temporary raw evidence after approved sanitized results have been retained.
 
 ## Evidence recording
 
