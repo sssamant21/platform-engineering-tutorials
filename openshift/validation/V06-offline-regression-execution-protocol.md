@@ -74,7 +74,7 @@ Run each command **without a pipeline** and capture stdout and stderr together i
 mkdir -p /tmp/ocp-v06-offline-evidence
 python -m unittest discover -s openshift/tests -p 'test_v05_bash_identity_guard.py' -v > /tmp/ocp-v06-offline-evidence/bash.log 2>&1
 bash_exit=$?
-printf 'Bash suite exit status: %s\\n' "$bash_exit"
+printf 'Bash suite exit status: %s\n' "$bash_exit"
 ```
 
 On PowerShell 7, use a fresh temporary directory and native redirection:
