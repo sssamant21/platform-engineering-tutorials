@@ -333,3 +333,8 @@ Reviewed the ten-case V05 PowerShell identity-guard harness. Replaced its narrow
 ## V06 Bash diagnostic command allowlist — 2026-11-20
 
 Strengthened `tests/test_v05_bash_identity_guard.py` to reject any command outside the exact expected identity, context, API endpoint, version, RBAC and four resource-read invocations. This closes a gap in the previous prefix-only assertion, which could accept unintended `oc get` resources or broadened authorization queries. Commit `24f56e231bc22195cf4d474b45a4f49c43d1b9bf` on the existing draft PR branch. **Source-level verification only:** checkout and offline test execution were blocked by DNS resolution to GitHub in this runtime. The 14 Bash, 10 PowerShell and earlier regression suites, complete link audit, isolated OCP 4.22 lab tests and independent approval remain pending. No production cluster accessed.
+
+
+## V06 PowerShell exact-command allowlist review — 2026-11-20
+
+Corrected a source-level regression harness gap: the PowerShell test previously accepted arbitrary `auth can-i *` and `get *` commands despite describing a strict allowlist. It now checks exact expected identity, context, endpoint, version, four authorization checks and four read-only resource queries, matching the Bash test's command scope. This detects unexpected resource reads and broadened RBAC checks in mock execution. **Source-level review and GitHub write verification only; offline tests have not been executed, and OCP runtime validation and independent approval remain pending.**
