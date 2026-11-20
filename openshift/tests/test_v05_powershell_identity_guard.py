@@ -162,6 +162,21 @@ class PowerShellIdentityGuardTests(unittest.TestCase):
     def test_version_failure(self):
         p, calls = self.run_case("version")
         self.assertNotEqual(p.returncode, 0)
+        self.assertEqual(sum(x == "version" for x in calls), 1)
+        self.assertFalse(any(x.startswith("auth can-i ") for x in calls))
+        self.assertFalse(any(x.startswith("get ") for x in calls))
+
+    def test_denied_reads_do_not_query_resources(self):
+        p, calls = self.run_case("deny")
+        self.assertEqual(p.returncode, 0, p.stderr)
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in calls), 4)
+        self.assertFalse(any(x.startswith("get ") for x in calls))
+
+    def test_context_lookup_failure_prevents_server_lookup(self):
+        p, calls = self.run_case("context")
+        self.assertNotEqual(p.returncode, 0)
+        self.assertFalse(any(x.startswith("config view ") for x in calls))
+        self.assertFalse(any(x.startswith("auth can-i ") for x in calls))
         self.assertFalse(any(x.startswith("get ") for x in calls))
 
     def test_authorized_read_failure(self):
