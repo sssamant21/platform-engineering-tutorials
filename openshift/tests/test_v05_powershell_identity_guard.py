@@ -86,8 +86,13 @@ class PowerShellIdentityGuardTests(unittest.TestCase):
                 env=env, capture_output=True, text=True, timeout=30,
             )
             calls = log.read_text(encoding="utf-8").splitlines() if log.exists() else []
-            self.assertFalse(any(x.startswith(("patch ", "delete ", "apply ",
-                "adm ", "debug ", "drain ")) for x in calls))
+            # Strict allowlist: unexpected verbs must fail even when not in a
+            # short denylist. All calls are intercepted by the session mock.
+            allowed = ("whoami", "config current-context", "config view --minify ",
+                       "version", "auth can-i ", "get ")
+            self.assertTrue(all(any(x == a or
+                (a.endswith(" ") and x.startswith(a)) for a in allowed)
+                for x in calls), calls)
             return proc, calls
 
     def test_authorized_reads(self):
