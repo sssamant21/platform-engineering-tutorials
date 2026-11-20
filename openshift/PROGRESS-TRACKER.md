@@ -360,3 +360,7 @@ Reviewed the V06 execution protocol for false-positive validation reporting. Add
 ## V06 offline evidence capture correction — 2026-11-20
 
 Clarified that piping test output through `tee` can mask failures; added Bash and PowerShell examples that capture output outside the repository and preserve native exit codes, with explicit treatment of missing `Ran N tests` summaries and raw-log sanitization. This is documentation-level protocol hardening, **not** test execution. The 14 Bash and 14 PowerShell authored tests, other offline regression suites, full Markdown audit, isolated OCP 4.22 validation and independent technical approval remain pending.
+
+## V06 Bash evidence formatting correction — 2026-11-20
+
+Reviewed the executable Bash evidence-capture example and corrected a double-escaped `printf` newline that would print a literal `\n` rather than a line break. Commit `8760dea34067cad0df13d7cf510c36f475356f36`. This is a verified source-level correction, **not** evidence that regression suites ran. The 14 Bash and 14 PowerShell authored tests, other offline suites, Markdown audit, isolated OCP 4.22 runtime validation and independent review remain pending. Next: obtain a credential-isolated checkout and execute all offline checks, preserving actual exit codes and test counts.
