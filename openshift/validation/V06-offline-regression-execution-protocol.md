@@ -9,6 +9,27 @@
 - Run without real cluster credentials. Set `KUBECONFIG` to a nonexistent path inside a disposable test environment, and ensure no production access is needed. Merely unsetting `KUBECONFIG` is insufficient because a real `oc` may then use the default `$HOME/.kube/config`. The Bash suite uses a temporary mock executable; the PowerShell suite uses a session-local mock function. Do not execute extracted worksheet scripts directly outside these harnesses. The tests provide mock `oc` implementations and temporary credentials paths; never replace those mocks with a real client.
 - Do not paste real kubeconfig, tokens, user identities, cluster endpoints, or secrets into issue/PR evidence.
 
+
+## Mandatory mock-only execution guard
+
+Before running any suite, use a **disposable shell or CI runner** with no production kubeconfig mounted. These tests are intended to execute extracted worksheet code only through their mocks. An isolated `KUBECONFIG` is a defense-in-depth control, **not** a replacement for verifying that the mocks intercept every `oc` invocation.
+
+On Linux or Git Bash, in the disposable shell:
+
+```sh
+export KUBECONFIG="$(mktemp -d)/nonexistent-kubeconfig"
+python -c 'import os; assert os.environ.get("KUBECONFIG") and not os.path.exists(os.environ["KUBECONFIG"])'
+```
+
+On PowerShell 7, in a disposable session:
+
+```powershell
+$env:KUBECONFIG = Join-Path ([System.IO.Path]::GetTempPath()) ("ocp-offline-" + [guid]::NewGuid().ToString() + ".yaml")
+if (Test-Path -LiteralPath $env:KUBECONFIG) { throw "Refusing existing kubeconfig path" }
+```
+
+Do **not** invoke `oc whoami`, `oc version`, or any other real `oc` as a preflight; the test runner must remain offline. Review the harness source for mock interception before executing it. If interception cannot be established, classify the suite **BLOCKED** and do not run the extracted worksheet. Record the environment guard and the harness review in the evidence record. Never commit a kubeconfig, even a disposable one.
+
 ## Execution (repository root)
 
 Run the suites separately so that a skipped PowerShell suite cannot be mistaken for a passing suite:
