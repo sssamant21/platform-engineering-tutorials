@@ -338,3 +338,7 @@ Strengthened `tests/test_v05_bash_identity_guard.py` to reject any command outsi
 ## V06 PowerShell exact-command allowlist review — 2026-11-20
 
 Corrected a source-level regression harness gap: the PowerShell test previously accepted arbitrary `auth can-i *` and `get *` commands despite describing a strict allowlist. It now checks exact expected identity, context, endpoint, version, four authorization checks and four read-only resource queries, matching the Bash test's command scope. This detects unexpected resource reads and broadened RBAC checks in mock execution. **Source-level review and GitHub write verification only; offline tests have not been executed, and OCP runtime validation and independent approval remain pending.**
+
+## V06 mock-only runner preflight — 2026-11-20
+
+Added explicit Bash/Git Bash and PowerShell 7 disposable kubeconfig isolation preflights to the [V06 execution protocol](validation/V06-offline-regression-execution-protocol.md). Clarified that isolation alone does not prove safety: the harness must intercept every `oc` call, and uncertain interception is BLOCKED rather than executed. No real `oc` preflight is allowed. **Documentation reviewed and committed, not executed.** All offline test suites, link audit, isolated OCP 4.22 runtime validation and independent approval remain pending.
