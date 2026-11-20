@@ -377,3 +377,7 @@ Added [V07 etcd and stateful recovery acceptance worksheet](validation/V07-etcd-
 ## V07 — Measured recovery evidence template (2026-11-20)
 
 Extended the existing V07 worksheet with an isolated-rehearsal timestamp template, per-service RPO/RTO definitions, NOT MEASURABLE handling, and an explicit change-control boundary. Commit `c7a31345059d5af51cf3b1cf196ee4b2e480d597`. **Source authored only; no recovery exercise, runtime test, independent review, or production approval performed.** Next: execute credential-isolated offline suites, then obtain version-specific independent recovery review.
+
+## V07 Chapter 015 recovery lab identity safety review — 2026-11-20
+
+Corrected Lab 015's read-only preflight to fail closed before any resource authorization or reads when `oc whoami`, current-context, API server lookup, or `oc version` fails. Bash requires `EXPECTED_API_SERVER` and PowerShell requires `$ExpectedApiServer`, both sourced from a separately approved non-secret cluster record; an empty or mismatched API URL stops the lab. Do not publish the URL in shared evidence. Commit `b4ffcf06e06f29c60d0dbd977d3ff1ed89847011`. **Source-level documentation review only**; neither shell was executed against an OpenShift cluster and no test PASS, independent review or production approval is claimed. Next: run isolated mock-based preflight regression tests, check PowerShell/Bash failure handling, then complete offline suite and link audit.
