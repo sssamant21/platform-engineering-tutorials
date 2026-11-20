@@ -108,7 +108,24 @@ class PowerShellIdentityGuardTests(unittest.TestCase):
     def test_authorized_reads(self):
         p, calls = self.run_case()
         self.assertEqual(p.returncode, 0, p.stderr)
-        self.assertEqual(sum(x.startswith("get ") for x in calls), 4)
+        self.assertEqual(
+            calls,
+            [
+                "whoami",
+                "config current-context",
+                "config view --minify -o jsonpath={.clusters[0].cluster.server}",
+                "version",
+                "auth can-i get clusterversions.config.openshift.io --resource-name=version",
+                "auth can-i list clusteroperators.config.openshift.io",
+                "auth can-i list nodes",
+                "auth can-i list machineconfigpools.machineconfiguration.openshift.io",
+                "get clusterversion version",
+                "get clusteroperators",
+                "get nodes",
+                "get machineconfigpools",
+            ],
+            "Successful read-only preflight must issue exactly the expected commands in order",
+        )
 
     def test_denied_reads(self):
         p, calls = self.run_case("deny")
@@ -169,7 +186,16 @@ class PowerShellIdentityGuardTests(unittest.TestCase):
     def test_denied_reads_do_not_query_resources(self):
         p, calls = self.run_case("deny")
         self.assertEqual(p.returncode, 0, p.stderr)
-        self.assertEqual(sum(x.startswith("auth can-i ") for x in calls), 4)
+        self.assertEqual(
+            [x for x in calls if x.startswith("auth can-i ")],
+            [
+                "auth can-i get clusterversions.config.openshift.io --resource-name=version",
+                "auth can-i list clusteroperators.config.openshift.io",
+                "auth can-i list nodes",
+                "auth can-i list machineconfigpools.machineconfiguration.openshift.io",
+            ],
+            "Explicit denial must still evaluate all four permissions in order",
+        )
         self.assertFalse(any(x.startswith("get ") for x in calls))
 
     def test_context_lookup_failure_prevents_server_lookup(self):
