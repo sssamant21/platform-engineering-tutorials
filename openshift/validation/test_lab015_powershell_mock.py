@@ -59,8 +59,17 @@ class Lab015PowerShellMock(unittest.TestCase):
             script = root / "mock.ps1"
             script.write_text(MOCK + "\n" + match.group(1), encoding="utf-8")
             import os
-            env = os.environ.copy()
-            env.update({"OC_SCENARIO": scenario, "OC_TRACE": str(trace)})
+            env = {
+                "PATH": os.environ.get("PATH", os.defpath),
+                "HOME": str(root),
+                "USERPROFILE": str(root),
+                "TMPDIR": str(root),
+                "TEMP": str(root),
+                "TMP": str(root),
+                "XDG_CONFIG_HOME": str(root),
+                "OC_SCENARIO": scenario,
+                "OC_TRACE": str(trace),
+            }
             result = subprocess.run([PWSH, "-NoLogo", "-NoProfile", "-NonInteractive",
                                      "-File", str(script)], cwd=root, env=env,
                                     capture_output=True, text=True, timeout=20)
