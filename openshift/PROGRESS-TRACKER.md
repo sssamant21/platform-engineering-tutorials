@@ -324,3 +324,8 @@ Corrected the offline execution protocol to **run** `check_relative_links.py` ra
 ## V06 offline regression evidence template — 2026-11-19
 
 Added [V06 blank evidence record](validation/V06-offline-regression-evidence-template.md) with exact commands, per-suite PASS/FAIL/ERROR/SKIP and exit-code fields, runner identity/isolation checks, failure triage, evidence sanitization and independent approval gates. Commit `62717d3d5dd9bf43b8734bc4f5cfc451985f903d`. **Template authored only; no suites or link audit executed.** Local Git checkout remains blocked by DNS; no real cluster access or production approval. Next: run the existing offline suites on a clean checkout and populate this record with genuine results.
+
+
+## V06 PowerShell mock command allowlist — 2026-11-20
+
+Reviewed the ten-case V05 PowerShell identity-guard harness. Replaced its narrow destructive-command denylist with a strict mock invocation allowlist covering only `whoami`, context/server inspection, `version`, `auth can-i` and `get`. This makes unexpected commands fail the harness assertion even if not included in the former denylist. Commit `ecba0caeddf98f1b85340200f687e44ea932b842`. **Source-level change only:** no PowerShell suite execution, OCP cluster test or independent approval. Next: run all offline suites and the link audit in a credential-isolated checkout, recording genuine results and investigating failures.
