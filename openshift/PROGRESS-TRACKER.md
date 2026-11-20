@@ -373,3 +373,7 @@ Strengthened the existing 14-case PowerShell identity-guard suite: the authorize
 ## V07 — Recovery acceptance evidence gates (2026-11-20)
 
 Added [V07 etcd and stateful recovery acceptance worksheet](validation/V07-etcd-and-stateful-recovery-acceptance.md) covering version/topology compatibility, snapshot/static-resource pairing, app data boundaries, restore integrity, RPO/RTO, security approvals, stop conditions and independent acceptance. **Documentation drafted only; no backup, restore, offline suite, live OCP test or independent review executed.** All 18 chapters remain drafted and not production-approved.
+
+## V07 — Measured recovery evidence template (2026-11-20)
+
+Extended the existing V07 worksheet with an isolated-rehearsal timestamp template, per-service RPO/RTO definitions, NOT MEASURABLE handling, and an explicit change-control boundary. Commit `c7a31345059d5af51cf3b1cf196ee4b2e480d597`. **Source authored only; no recovery exercise, runtime test, independent review, or production approval performed.** Next: execute credential-isolated offline suites, then obtain version-specific independent recovery review.
