@@ -88,11 +88,21 @@ class PowerShellIdentityGuardTests(unittest.TestCase):
             calls = log.read_text(encoding="utf-8").splitlines() if log.exists() else []
             # Strict allowlist: unexpected verbs must fail even when not in a
             # short denylist. All calls are intercepted by the session mock.
-            allowed = ("whoami", "config current-context", "config view --minify ",
-                       "version", "auth can-i ", "get ")
-            self.assertTrue(all(any(x == a or
-                (a.endswith(" ") and x.startswith(a)) for a in allowed)
-                for x in calls), calls)
+            allowed = {
+                "whoami",
+                "config current-context",
+                "config view --minify -o jsonpath={.clusters[0].cluster.server}",
+                "version",
+                "auth can-i get clusterversions.config.openshift.io --resource-name=version",
+                "auth can-i list clusteroperators.config.openshift.io",
+                "auth can-i list nodes",
+                "auth can-i list machineconfigpools.machineconfiguration.openshift.io",
+                "get clusterversion version",
+                "get clusteroperators",
+                "get nodes",
+                "get machineconfigpools",
+            }
+            self.assertTrue(all(x in allowed for x in calls), calls)
             return proc, calls
 
     def test_authorized_reads(self):
