@@ -41,6 +41,28 @@ python -m unittest discover -s openshift/validation -p 'test_*.py' -v
 python openshift/validation/check_relative_links.py
 ```
 
+### Result integrity gate (mandatory)
+
+A process exit code of zero is **not sufficient evidence** that a suite ran. Python `unittest` can exit successfully when zero tests are discovered, and a suite can report `OK (skipped=N)` when its runtime dependency is absent. For each command above, preserve the complete sanitized output and check the `Ran N tests` line against the actual test definitions at the pinned commit. For the V05 identity-guard suites, the currently authored expectations are **14 Bash tests** and **14 PowerShell tests**; recount before execution if the branch has advanced. Treat `Ran 0 tests` as **BLOCKED**, not PASS. Treat missing PowerShell 7 or an entirely skipped suite as **SKIP**, not PASS, regardless of process exit status. A partial skip requires reporting both executed and skipped counts; never label the entire suite unqualified PASS.
+
+In Bash/Git Bash, capture each exit status immediately (before any subsequent command):
+
+```sh
+python -m unittest discover -s openshift/tests -p 'test_v05_bash_identity_guard.py' -v
+bash_exit=$?
+printf 'Bash suite exit status: %s\\n' "$bash_exit"
+```
+
+In PowerShell 7, capture the native process exit status using `$LASTEXITCODE` immediately after invoking Python; do not rely on `$?` for the numerical exit code:
+
+```powershell
+python -m unittest discover -s openshift/tests -p "test_v05_powershell_identity_guard.py" -v
+$powerShellSuiteExit = $LASTEXITCODE
+Write-Output "PowerShell suite exit status: $powerShellSuiteExit"
+```
+
+Do not automate a green status solely from these shell snippets: a reviewer must also reconcile the discovered count, skip details, assertions, mock interception and sanitized output. If the complete checkout is unavailable, mark all four commands **BLOCKED / NOT RUN**; do not substitute source inspection for execution.
+
 The last command **executes** the repository's read-only local Markdown link audit (it exits nonzero for missing local targets). It does not check external URLs or anchor fragments. Use `--help` separately only to inspect options. On Windows PowerShell, use double quotes around glob patterns and `py -m unittest` if `python` is not on PATH.
 
 ## Evidence recording
