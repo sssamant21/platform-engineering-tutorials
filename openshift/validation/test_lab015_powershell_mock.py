@@ -43,7 +43,7 @@ function global:oc {
   }
   if ($a.Count -gt 0 -and $a[0] -eq 'get') {
     if ($script:Scenario -eq 'read_fail') { $global:LASTEXITCODE = 11 }
-    return
+    return 'SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT'
   }
   $global:LASTEXITCODE = 98
 }
@@ -100,6 +100,13 @@ class Lab015PowerShellMock(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(sum(x.startswith('get ') for x in commands), 4)
         self.assertNotIn('Mock credential inheritance detected', result.stderr)
+
+    def test_success_suppresses_resource_payload(self):
+        result, commands = self.run_case("ok")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+        self.assertNotIn("SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT", result.stdout)
+        self.assertNotIn("SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT", result.stderr)
 
     def test_identity_failure_stops(self):
         result, commands = self.run_case("identity_fail")
