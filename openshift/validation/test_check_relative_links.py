@@ -360,7 +360,7 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(len(failures), 1)
             self.assertIn("file URI is not allowed", failures[0])
 
-    def test_encoded_file_uri_scheme_is_rejected(self):
+    def test_mixed_case_file_uri_scheme_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "doc.md").write_text(
