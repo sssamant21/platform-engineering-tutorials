@@ -287,5 +287,39 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(len(failures), 1)
             self.assertIn("escapes audit root", failures[0])
 
+
+    def test_symlink_target_outside_repository_is_rejected(self):
+        # resolve() must enforce the real target boundary, not just lexical '..'.
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory) / "docs"
+            root.mkdir()
+            outside = Path(directory) / "outside.md"
+            outside.write_text("# outside\n", encoding="utf-8")
+            try:
+                (root / "alias.md").symlink_to(outside)
+            except (OSError, NotImplementedError):
+                self.skipTest("Creating symlinks is unavailable on this host")
+            (root / "doc.md").write_text("[escape](alias.md)\n", encoding="utf-8")
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("escapes audit root", failures[0])
+
+    def test_openshift_root_allows_existing_kubernetes_sibling(self):
+        # A cross-track reference is allowed without permitting host escapes.
+        with tempfile.TemporaryDirectory() as directory:
+            repo = Path(directory)
+            root = repo / "openshift"
+            root.mkdir()
+            sibling = repo / "kubernetes"
+            sibling.mkdir()
+            (sibling / "README.md").write_text("# Kubernetes\n", encoding="utf-8")
+            (root / "doc.md").write_text(
+                "[fundamentals](../kubernetes/README.md)\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(failures, [])
+
 if __name__ == "__main__":
     unittest.main()
