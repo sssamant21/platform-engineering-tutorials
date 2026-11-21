@@ -372,6 +372,21 @@ class LinkAuditTests(unittest.TestCase):
             self.assertIn("unsafe URI scheme is not allowed", failures[0])
 
 
+    def test_reference_style_unsafe_scheme_is_rejected(self):
+        # A dangerous destination in a reference definition is still a link
+        # when it is used, even if the definition occurs after the use.
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "[unsafe][destination]\n"
+                "[destination]: JaVaScRiPt:alert(1)\n",
+                encoding="utf-8",
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("unsafe URI scheme", failures[0])
+
     def test_executable_and_embedded_uri_schemes_are_rejected(self):
         # Unsafe Markdown schemes must not be silently treated as external docs.
         for uri in ("javascript:alert(1)", "data:text/plain,secret", "vbscript:msgbox(1)"):
