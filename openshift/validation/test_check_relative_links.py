@@ -347,5 +347,29 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(len(failures), 1)
             self.assertIn("absolute local path", failures[0])
 
+    def test_file_uri_is_rejected_even_when_target_exists(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "local.md"
+            target.write_text("# local\n", encoding="utf-8")
+            (root / "doc.md").write_text(
+                f"[host-local]({target.as_uri()})\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("file URI is not allowed", failures[0])
+
+    def test_encoded_file_uri_scheme_is_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "[local](FiLe:///tmp/secret.md)\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("file URI is not allowed", failures[0])
+
 if __name__ == "__main__":
     unittest.main()
