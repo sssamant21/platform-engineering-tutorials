@@ -191,5 +191,36 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(checked, 1)
             self.assertEqual(len(failures), 1)
 
+
+    def test_encoded_relative_path_with_query_and_fragment(self):
+        # The audit validates the filesystem target, not the URL fragment.
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "release notes.md").write_text("# Notes\n", encoding="utf-8")
+            (root / "doc.md").write_text(
+                "[notes](release%20notes.md?view=compact#summary)\n",
+                encoding="utf-8",
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(failures, [])
+
+    def test_tilde_fence_and_mismatched_fence_do_not_hide_broken_link(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "~~~bash\n"
+                "[example](ignored.md)\n"
+                "```\n"
+                "[still-code](also-ignored.md)\n"
+                "~~~\n"
+                "[broken](missing.md)\n",
+                encoding="utf-8",
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("missing.md", failures[0])
+
 if __name__ == "__main__":
     unittest.main()
