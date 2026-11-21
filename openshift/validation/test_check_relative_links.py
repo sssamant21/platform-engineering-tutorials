@@ -358,7 +358,7 @@ class LinkAuditTests(unittest.TestCase):
             checked, failures = checker.audit(root)
             self.assertEqual(checked, 1)
             self.assertEqual(len(failures), 1)
-            self.assertIn("file URI is not allowed", failures[0])
+            self.assertIn("unsafe URI scheme is not allowed", failures[0])
 
     def test_mixed_case_file_uri_scheme_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -370,6 +370,20 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(checked, 1)
             self.assertEqual(len(failures), 1)
             self.assertIn("file URI is not allowed", failures[0])
+
+
+    def test_executable_and_embedded_uri_schemes_are_rejected(self):
+        # Unsafe Markdown schemes must not be silently treated as external docs.
+        for uri in ("javascript:alert(1)", "data:text/plain,secret", "vbscript:msgbox(1)"):
+            with self.subTest(uri=uri), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                (root / "doc.md").write_text(
+                    f"[unsafe]({uri})\\n", encoding="utf-8"
+                )
+                checked, failures = checker.audit(root)
+                self.assertEqual(checked, 1)
+                self.assertEqual(len(failures), 1)
+                self.assertIn("unsafe URI scheme", failures[0])
 
 if __name__ == "__main__":
     unittest.main()
