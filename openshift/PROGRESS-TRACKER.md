@@ -504,3 +504,8 @@ Inspected the actual draft branch validator and found literal `\\n` sequences em
 Added two offline Python regression cases for (1) a symlink inside the audit root that resolves to a real file outside the repository boundary and (2) a legitimate relative reference from `openshift/` to the existing sibling `kubernetes/` track. The symlink test skips on hosts without symlink creation permissions. These cases protect both security containment and allowed cross-track navigation; they do **not** alter Kubernetes content. Commit: `9cfa411aba3165b8538f6877024c6bbadd4e1558`.
 
 **Execution status:** Test source committed; neither case has been executed. The isolated runner cannot resolve `github.com` for a complete checkout. Python compilation, regression discovery, full Markdown link audit, Chapter 015 Bash/PowerShell mock scenarios, live OCP 4.22 validation, and independent production approval remain pending. Next: run the existing offline suites in a credential-isolated full checkout and record sanitized command/exit-code evidence; fix observed failures before promotion.
+
+
+## Offline link audit regression extension — 2026-11-21
+
+Added two unexecuted Python regression scenarios for percent-encoded parent traversal (`%2e%2e/`) and encoded absolute paths (`%2F`). Both assert that local-link validation rejects nonportable or out-of-bound targets. GitHub source was committed; local Python execution, full link audit, Chapter 015 mock suites, OCP 4.22 cluster validation, and independent technical approval remain pending. Do not report PASS until actual exit codes and sanitized logs are captured.
