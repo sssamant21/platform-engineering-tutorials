@@ -442,3 +442,7 @@ Updated `validation/test_lab015_powershell_mock.py` so successful fake `oc get` 
 ## V07 Lab 015 offline execution protocol — 2026-11-21
 
 Added [Lab 015 offline execution and evidence plan](validation/LAB-015-OFFLINE-EXECUTION-PLAN.md), with credential-free prerequisites, Bash/PowerShell 7 commands, genuine PASS/FAIL/ERROR/SKIP recording, security-stop conditions, and independent-approval boundaries. Commit `36bc58887ef1dccd1efb65e7c0968a950964b6c7`. **Documentation-only change; 19 mock scenarios remain authored but not executed.** Next: run both suites on an isolated runner and record actual sanitized evidence; then address failures and perform OCP 4.22 cluster validation under separate authorization.
+
+## V07 Lab 015 PowerShell command allowlist regression — 2026-11-21
+
+Added an offline PowerShell mock regression that compares the successful Lab 015 `oc` command trace against an exact twelve-command read-only allowlist (identity, context, API server, version, four authorization checks and four resource reads). It also explicitly rejects common state-changing command prefixes. This complements the existing Bash command-safety coverage and raises the authored Lab 015 mock count to **20** (10 Bash, 10 PowerShell). **GitHub source committed; test not executed**: no PowerShell runtime PASS/FAIL evidence or live cluster validation is asserted. Next: execute both isolated suites and record sanitized PASS/FAIL/SKIP evidence, then address any failures. Independent review and production approval remain pending.
