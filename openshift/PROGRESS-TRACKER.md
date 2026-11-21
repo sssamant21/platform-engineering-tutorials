@@ -471,3 +471,8 @@ Corrected `validation/test_check_relative_links.py` so the invalid backtick-fenc
 ## V01 link-validator regression coverage — 2026-11-21
 
 Added two offline regression fixtures for percent-encoded local filenames with query/fragment suffixes and tilde-fenced code containing a mismatched backtick fence. These protect against false missing-link reports and accidental suppression of a broken link after a valid fence closes. Test changes committed as `65369f52edfc785f250ac774d8f8a03524f23e26`. The GitHub checkout remains unavailable in this execution environment (DNS resolution of github.com failed), so these tests were **authored but not executed**; neither the full link audit nor a runtime PASS is claimed. Next: run Python unittest discovery and the complete relative-link audit in a credential-isolated checkout, record genuine results and fix confirmed defects. OCP cluster testing and independent approval remain pending.
+
+
+## V01 missing-target URL normalization regression — 2026-11-21
+
+Added two offline regression cases for **missing** percent-encoded Markdown targets with query/fragment suffixes, covering both inline links and reference definitions. These complement the existing valid-target fixture and guard against false PASS when URL decoration obscures an absent local file. Source authored and committed as `60abf9e047e7437702a126c7d1f0aa157223713c`. **Not executed:** the local checkout still cannot resolve github.com; no Python unittest, full link audit, OCP cluster validation or production approval is claimed. Next: run Python unittest discovery and the full offline link checker in a clean credential-isolated checkout, record exit codes and sanitized output, and correct any confirmed failures.
