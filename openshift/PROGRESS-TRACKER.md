@@ -489,3 +489,8 @@ Corrected the Markdown link validator so Windows drive-letter paths (for example
 ## V08 — Credential-isolated offline validation execution checklist (2026-11-21)
 
 Added [offline execution checklist](validation/OFFLINE-EXECUTION-CHECKLIST.md) documenting clean-checkout identity, credential isolation, Python unittest execution, discovery of current Chapter 015 mock-suite entry points, real exit-code evidence, PASS/FAIL/SKIP/NOT RUN distinctions and escalation gates. This is **documentation only**. The local GitHub checkout still fails DNS resolution, so Python and Bash/PowerShell suites, repository-wide Markdown link audit, isolated OCP 4.22 runtime testing and independent approval remain **NOT RUN/PENDING**. Next: execute in a credential-isolated environment, preserve sanitized evidence and correct confirmed defects. No production changes or merges.
+
+
+## V01 link containment hardening — 2026-11-21
+
+Corrected the offline Markdown link checker to reject relative paths that resolve outside the permitted repository boundary, even when the target exists on the host. The default `openshift/` audit permits cross-track references to sibling `kubernetes/` within the repository, without modifying Kubernetes files. Added a regression fixture for an existing out-of-root file. Commits: `bcf0483`, `bcc9016`, `a888a59`. **GitHub source/commit verification only:** Python tests and full link audit have not been executed, and no cluster or production testing is claimed. Next: execute unittest discovery and complete the link audit from a credential-isolated checkout, review any failures, then run Chapter 015 offline mock suites.
