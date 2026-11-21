@@ -125,7 +125,14 @@ def audit(root: Path) -> tuple[int, list[str]]:
                     failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> absolute local path is not allowed")
                     continue
                 resolved = (file.parent / target).resolve()
-                # Reject links escaping the repository root, even when the host target exists.\n                # Cross-track links such as ../../kubernetes/README.md remain valid\n                # when --root is the repository root.\n                repository_root = (root.parent if root.name == "openshift" else root).resolve()\n                if repository_root not in resolved.parents and resolved != repository_root:\n                    failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> target escapes audit root")\n                    continue\n                if not resolved.exists():
+                # Reject links escaping the repository root, even when the host target exists.
+                # Cross-track links such as ../../kubernetes/README.md remain valid
+                # when --root is the repository root.
+                repository_root = (root.parent if root.name == "openshift" else root).resolve()
+                if repository_root not in resolved.parents and resolved != repository_root:
+                    failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> target escapes audit root")
+                    continue
+                if not resolved.exists():
                     failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> missing {resolved}")
     print(f"Markdown files scanned: {len(files)}; local links checked: {checked}; missing: {len(failures)}")
     return checked, failures
