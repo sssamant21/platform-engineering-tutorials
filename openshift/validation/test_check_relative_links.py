@@ -12,6 +12,20 @@ spec.loader.exec_module(checker)
 
 
 class LinkAuditTests(unittest.TestCase):
+    def test_percent_encoded_unsafe_schemes_are_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "[script](%6Aavascript:alert%281%29)\n"
+                "[local](%66ile:///etc/passwd)\n"
+                "[embedded](%64ata:text/plain,hello)\n",
+                encoding="utf-8",
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 3)
+            self.assertEqual(len(failures), 3)
+            self.assertTrue(all("unsafe URI scheme" in issue for issue in failures))
+
     def test_reference_definitions_before_and_after_use(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
