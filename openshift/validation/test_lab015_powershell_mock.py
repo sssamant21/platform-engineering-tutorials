@@ -108,6 +108,32 @@ class Lab015PowerShellMock(unittest.TestCase):
         self.assertNotIn("SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT", result.stdout)
         self.assertNotIn("SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT", result.stderr)
 
+    def test_all_commands_are_in_read_only_allowlist(self):
+        result, commands = self.run_case("ok")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        allowed = {
+            "whoami",
+            "config current-context",
+            "config view --minify -o jsonpath={.clusters[0].cluster.server}",
+            "version",
+            "auth can-i get clusterversions.config.openshift.io --resource-name=version",
+            "auth can-i list clusteroperators.config.openshift.io",
+            "auth can-i list nodes",
+            "auth can-i get infrastructures.config.openshift.io --resource-name=cluster",
+            "get clusterversion version",
+            "get clusteroperators",
+            "get nodes -l node-role.kubernetes.io/master",
+            "get infrastructure cluster",
+        }
+        self.assertEqual(len(commands), 12, commands)
+        self.assertEqual(set(commands), allowed)
+        self.assertFalse(any(
+            command.startswith(("delete ", "patch ", "apply ", "replace ", "create ",
+                                "adm ", "scale ", "rollout ", "drain ", "debug ",
+                                "exec ", "rsh ", "config view --raw"))
+            for command in commands
+        ))
+
     def test_identity_failure_stops(self):
         result, commands = self.run_case("identity_fail")
         self.assertNotEqual(result.returncode, 0)
