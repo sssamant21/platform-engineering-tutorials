@@ -28,6 +28,19 @@ oc get pods -A --field-selector=status.phase!=Running
 
 Interpret `Available=True`, `Progressing=False`, `Degraded=False` on ClusterOperators as a typical healthy baseline, while checking transition timestamps, operator-specific messages, CVO history, MCP `UPDATED`/`UPDATING`/`DEGRADED` and node readiness. Never infer that an update is safe solely from green conditions.
 
+## Read-only update eligibility evidence and decision rules
+
+Use the JSON already collected above to inspect these fields without editing the ClusterVersion object:
+
+- `spec.channel` and `spec.desiredUpdate`: record the configured update channel and any desired release; a desired update is not evidence of successful completion.
+- `status.desired`, `status.history` and `status.conditions`: distinguish the current reconciliation target, completed/partial history and the CVO's actual state.
+- `status.availableUpdates` and `status.conditionalUpdates`: capture candidate releases and any conditional risk assessments. A conditionally available target needs explicit risk evaluation; absence of a target is a **NO-GO**, not authorization to force one.
+- `status.observedGeneration` versus `metadata.generation`: if the controller has not observed the latest configuration, treat the snapshot as potentially stale and investigate before making a decision.
+
+Do not paste raw ClusterVersion JSON into public tickets. Record the relevant fields and condition messages in a restricted, sanitized change record. Verify the target's supported update edge and applicable advisories against the exact source version and architecture; disconnected or restricted-network clusters may require additional update-service and release-image checks.
+
+**Go/no-go rule:** Hold the upgrade if any required Operator or MCP is degraded, if update eligibility or conditional risk is unresolved, if stateful quorum/storage/backup evidence is missing, or if change owners have not signed off. Document who owns each blocker and the next review time. A healthy CVO is necessary but not sufficient for GO.
+
 ## Production change gates (planning only)
 1. **Compatibility:** Record current version, target, recommended/conditional update status, Red Hat advisory, known issues, supported upgrade edges, architecture and provider constraints.
 2. **Dependencies:** Validate Operators/OLM compatibility, storage CSI, network ingress, MachineConfigPools, workload APIs, external integrations and certificates.
