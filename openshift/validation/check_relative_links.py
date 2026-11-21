@@ -112,6 +112,12 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 if label in definitions:
                     targets.append(definitions[label])
             for raw in targets:
+                # file: URLs are host-local paths, not portable external references.
+                # Reject them explicitly rather than skipping every URI scheme.
+                if raw.lower().startswith("file:"):
+                    checked += 1
+                    failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> file URI is not allowed")
+                    continue
                 if raw.startswith(("#", "//")) or (SCHEME.match(raw) and not re.match(r"^[A-Za-z]:[/\\\\]", raw)):
                     continue
                 # urlsplit also strips query strings and fragment identifiers.
