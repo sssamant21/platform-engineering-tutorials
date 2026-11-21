@@ -321,5 +321,31 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(checked, 1)
             self.assertEqual(failures, [])
 
+    def test_percent_encoded_parent_traversal_is_rejected(self):
+        # URL decoding must happen before filesystem containment checks.
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory) / "docs"
+            root.mkdir()
+            (Path(directory) / "outside.md").write_text("# outside\n", encoding="utf-8")
+            (root / "doc.md").write_text(
+                "[escape](%2e%2e/outside.md)\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("escapes audit root", failures[0])
+
+    def test_percent_encoded_absolute_path_is_rejected(self):
+        # Encoded leading slash must not evade the absolute-path check.
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "[absolute](%2Ftmp%2Fexample.md)\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("absolute local path", failures[0])
+
 if __name__ == "__main__":
     unittest.main()
