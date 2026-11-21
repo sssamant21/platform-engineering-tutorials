@@ -438,3 +438,7 @@ Corrected a false-negative in `validation/test_lab015_bash_mock.py`: the fake `o
 ## V07 Lab 015 PowerShell resource-output regression — 2026-11-20
 
 Updated `validation/test_lab015_powershell_mock.py` so successful fake `oc get` calls return a synthetic `SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT` marker. Added a ninth PowerShell scenario asserting that neither stdout nor stderr contains the marker, closing the analogous false-negative already corrected in Bash. Commit `5db86b12ced9a8621fe9b500c147396dea59df11`. **19 authored mock scenarios total (10 Bash, 9 PowerShell); not executed and no PASS claimed.** Next: execute suites in a credential-isolated checkout, record sanitized results, audit links and seek independent OCP 4.22 review. No production approval.
+
+## V07 Lab 015 offline execution protocol — 2026-11-21
+
+Added [Lab 015 offline execution and evidence plan](validation/LAB-015-OFFLINE-EXECUTION-PLAN.md), with credential-free prerequisites, Bash/PowerShell 7 commands, genuine PASS/FAIL/ERROR/SKIP recording, security-stop conditions, and independent-approval boundaries. Commit `36bc58887ef1dccd1efb65e7c0968a950964b6c7`. **Documentation-only change; 19 mock scenarios remain authored but not executed.** Next: run both suites on an isolated runner and record actual sanitized evidence; then address failures and perform OCP 4.22 cluster validation under separate authorization.
