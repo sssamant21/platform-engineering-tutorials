@@ -182,7 +182,7 @@ class LinkAuditTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "doc.md").write_text(
-                "```python`bad\\n[broken](missing.md)\\n```\\n",
+                "```python`bad\n"\n                "[broken](missing.md)\n"\n                "```\n",
                 encoding="utf-8",
             )
             checked, failures = checker.audit(root)
