@@ -446,3 +446,13 @@ Added [Lab 015 offline execution and evidence plan](validation/LAB-015-OFFLINE-E
 ## V07 Lab 015 PowerShell command allowlist regression — 2026-11-21
 
 Added an offline PowerShell mock regression that compares the successful Lab 015 `oc` command trace against an exact twelve-command read-only allowlist (identity, context, API server, version, four authorization checks and four resource reads). It also explicitly rejects common state-changing command prefixes. This complements the existing Bash command-safety coverage and raises the authored Lab 015 mock count to **20** (10 Bash, 10 PowerShell). **GitHub source committed; test not executed**: no PowerShell runtime PASS/FAIL evidence or live cluster validation is asserted. Next: execute both isolated suites and record sanitized PASS/FAIL/SKIP evidence, then address any failures. Independent review and production approval remain pending.
+
+## V07 draft PR scope and release-gate reconciliation — 2026-11-21
+
+PR #1 was merged; the active validation branch is `docs/openshift-ch010-security-governance` in draft PR #2. Although PR #2 was originally titled for Chapter 010, it now contains subsequent Chapter 011–018 drafts and validation work. Review the **entire current PR diff**, not just Chapter 010, before considering merge. Do not interpret a green GitHub mergeability flag as technical acceptance.
+
+**Current evidence boundary:** All 18 chapters are documentation-drafted; none is cluster-lab-verified, independently technically approved, or production-certified. The Chapter 015 Bash/PowerShell mock scenarios are *authored*, not runtime-passed. No live cluster, backup restoration, upgrade, node drain or stateful failover was performed for this milestone.
+
+**Pre-merge checklist:** (1) enumerate changed paths and confirm they are confined to `openshift/` (except any explicitly approved minimal root README link); (2) run local Markdown relative-link and security scans with recorded command, environment and exit status; (3) execute isolated Bash and PowerShell mock harnesses, capturing per-case PASS/FAIL/SKIP and sanitized evidence; (4) verify OCP 4.22-sensitive commands and APIs against official Red Hat documentation; (5) obtain independent platform/security review of RBAC/SCC, upgrade, etcd and stateful-HA procedures. Any failed gate blocks promotion of the relevant procedure to production-approved status. Do not merge automatically.
+
+**Next:** Execute the existing Chapter 015 mock suites in a credential-isolated checkout; attach sanitized, reproducible evidence and repair observed failures before adding further scenarios.
