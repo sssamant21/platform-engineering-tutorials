@@ -26,7 +26,7 @@ py -3 -m unittest discover -s openshift/validation -p 'test_*.py' -v
 py -3 openshift/validation/check_relative_links.py --root openshift
 ```
 
-The unittest command should run the currently authored **17** regression cases across two test modules; this is an expected count, **not** an executed result. The link audit prints the number of Markdown files scanned, local links checked and missing targets. Exit code 0 means the checker found no missing local *file targets within its supported syntax*, not that every Markdown link is valid. Exit code 1 means one or more missing targets; exit code 2 means invalid root. For PowerShell, inspect `$LASTEXITCODE` immediately after each Python invocation.
+The unittest discovery command must report the number of tests actually discovered at the checked-out commit. Do **not** use a fixed expected count: additional regression modules and cases have been added since this procedure was first drafted. Verify the discovered module list against `openshift/validation/test_*.py` at the same SHA, and record the actual tests run, skipped, failed and errored. This is an execution requirement, **not** a claim that any tests have passed. The link audit prints the number of Markdown files scanned, local links checked and missing targets. Exit code 0 means the checker found no missing local *file targets within its supported syntax*, not that every Markdown link is valid. Exit code 1 means one or more missing targets; exit code 2 means invalid root. For PowerShell, inspect `$LASTEXITCODE` immediately after each Python invocation.
 
 ## Evidence and failure triage
 
