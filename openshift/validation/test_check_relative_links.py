@@ -247,5 +247,19 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(len(failures), 1)
             self.assertIn("absent%20guide.md", failures[0])
 
+    def test_absolute_existing_local_target_is_rejected(self):
+        # A link to an existing host file must never count as a portable repo link.
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            target = root / "target.md"
+            target.write_text("# target\n", encoding="utf-8")
+            (root / "doc.md").write_text(
+                f"[host-specific]({target.as_posix()})\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("absolute local path", failures[0])
+
 if __name__ == "__main__":
     unittest.main()
