@@ -114,7 +114,7 @@ def audit(root: Path) -> tuple[int, list[str]]:
             for raw in targets:
                 # Reject local-file and executable/embedded URI schemes rather than
                 # treating them as safe external documentation links.
-                if raw.lower().startswith(("file:", "javascript:", "data:", "vbscript:")):
+                if unquote(raw).lower().startswith(("file:", "javascript:", "data:", "vbscript:")):
                     checked += 1
                     failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> unsafe URI scheme is not allowed")
                     continue
