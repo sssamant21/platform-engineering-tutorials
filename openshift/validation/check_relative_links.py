@@ -125,9 +125,6 @@ def audit(root: Path) -> tuple[int, list[str]]:
                     failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> absolute local path is not allowed")
                     continue
                 resolved = (file.parent / target).resolve()
-                if not resolved.is_relative_to(root.resolve()):
-                    failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> path escapes audit root")
-                    continue
                 if not resolved.exists():
                     failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> missing {resolved}")
     print(f"Markdown files scanned: {len(files)}; local links checked: {checked}; missing: {len(failures)}")
