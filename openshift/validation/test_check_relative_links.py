@@ -222,5 +222,30 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(len(failures), 1)
             self.assertIn("missing.md", failures[0])
 
+    def test_missing_percent_encoded_target_with_query_is_reported(self):
+        # Query and fragment must not conceal a missing local Markdown target.
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "[missing](not%20present.md?mode=read#section)\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("not%20present.md", failures[0])
+
+    def test_reference_definition_percent_encoded_missing_target(self):
+        # Reference-style links use the same path normalization and failure rules.
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "[missing][doc]\n[doc]: absent%20guide.md?view=1#intro\n",
+                encoding="utf-8",
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("absent%20guide.md", failures[0])
+
 if __name__ == "__main__":
     unittest.main()
