@@ -509,3 +509,7 @@ Added two offline Python regression cases for (1) a symlink inside the audit roo
 ## Offline link audit regression extension — 2026-11-21
 
 Added two unexecuted Python regression scenarios for percent-encoded parent traversal (`%2e%2e/`) and encoded absolute paths (`%2F`). Both assert that local-link validation rejects nonportable or out-of-bound targets. GitHub source was committed; local Python execution, full link audit, Chapter 015 mock suites, OCP 4.22 cluster validation, and independent technical approval remain pending. Do not report PASS until actual exit codes and sanitized logs are captured.
+
+## V01 file-URI link audit hardening — 2026-11-21
+
+Identified a source-level bypass: the Markdown link validator treated `file:` links as external schemes, allowing host-local file URIs to escape the portable-link audit. Updated `validation/check_relative_links.py` to reject `file:` URLs explicitly, including mixed-case schemes. Added two regression fixtures: an existing local file referenced by `Path.as_uri()` and a mixed-case `FiLe:` URI. Source changes committed on the existing draft PR branch. **Not executed:** Python compilation, regression tests, repository-wide link audit, Chapter 015 mock suites and isolated OCP 4.22 runtime validation. These remain NOT RUN, not PASS. No production access or approval. Next: execute offline suites in a complete credential-isolated checkout, capture genuine exit codes, correct failures and obtain independent review.
