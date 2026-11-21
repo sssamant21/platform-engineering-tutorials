@@ -261,5 +261,17 @@ class LinkAuditTests(unittest.TestCase):
             self.assertEqual(len(failures), 1)
             self.assertIn("absolute local path", failures[0])
 
+
+    def test_windows_drive_path_is_not_treated_as_external_scheme(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "doc.md").write_text(
+                "[host](C:/private/secret.md)\\n", encoding="utf-8"
+            )
+            checked, failures = checker.audit(root)
+            self.assertEqual(checked, 1)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("absolute local path", failures[0])
+
 if __name__ == "__main__":
     unittest.main()
