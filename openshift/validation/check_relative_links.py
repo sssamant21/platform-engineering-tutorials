@@ -119,6 +119,11 @@ def audit(root: Path) -> tuple[int, list[str]]:
                 if not target:
                     continue
                 checked += 1
+                # Absolute filesystem paths are not portable repository links.
+                # Do not allow an existing host path to produce a false PASS.
+                if Path(target).is_absolute() or re.match(r"^[A-Za-z]:[/\\\\]", target):
+                    failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> absolute local path is not allowed")
+                    continue
                 resolved = (file.parent / target).resolve()
                 if not resolved.exists():
                     failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> missing {resolved}")
