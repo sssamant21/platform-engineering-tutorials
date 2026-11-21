@@ -266,7 +266,7 @@ class LinkAuditTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / "doc.md").write_text(
-                "[host](C:/private/secret.md)\\n", encoding="utf-8"
+                "[host](C:/private/secret.md)\n", encoding="utf-8"
             )
             checked, failures = checker.audit(root)
             self.assertEqual(checked, 1)
