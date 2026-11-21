@@ -76,6 +76,29 @@ class Lab015BashMock(unittest.TestCase):
         self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 4)
         self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
 
+    def test_success_does_not_emit_resource_payloads(self):
+        """A successful read-only audit must not print fetched cluster resources."""
+        result, commands = self.run_case("ok")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+        self.assertNotIn("mock-user", result.stdout)
+        self.assertNotIn("mock-context", result.stdout)
+        self.assertNotIn("mock version", result.stdout)
+        self.assertIn("Read-only checks completed", result.stdout)
+
+    def test_success_uses_only_approved_read_only_commands(self):
+        """Catch accidental introduction of mutating commands into the lab."""
+        result, commands = self.run_case("ok")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        allowed = ("whoami", "config current-context", "config view --minify",
+                   "version", "auth can-i ", "get ")
+        self.assertTrue(commands, "fake oc recorded no commands")
+        for command in commands:
+            self.assertTrue(any(command == item or
+                                (item.endswith(" ") and command.startswith(item)) or
+                                (item == "config view --minify" and command.startswith(item + " "))
+                                for item in allowed), f"Unexpected oc invocation: {command}")
+
     def test_identity_failure_stops_before_resource_access(self):
         result, commands = self.run_case("identity_fail")
         self.assertNotEqual(result.returncode, 0)
