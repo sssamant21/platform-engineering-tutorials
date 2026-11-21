@@ -38,6 +38,7 @@ elif args[:2] == ["auth", "can-i"]:
     print("no" if scenario == "denied" else "yes")
 elif args and args[0] == "get":
     if scenario == "read_fail": sys.exit(11)
+    print("SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT")
 else:
     sys.exit(98)
 '''
@@ -84,6 +85,8 @@ class Lab015BashMock(unittest.TestCase):
         self.assertNotIn("mock-user", result.stdout)
         self.assertNotIn("mock-context", result.stdout)
         self.assertNotIn("mock version", result.stdout)
+        self.assertNotIn("SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT", result.stdout)
+        self.assertNotIn("SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT", result.stderr)
         self.assertIn("Read-only checks completed", result.stdout)
 
     def test_success_uses_only_approved_read_only_commands(self):
