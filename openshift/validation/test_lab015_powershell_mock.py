@@ -19,6 +19,7 @@ $ExpectedApiServer = 'https://approved.example.invalid'
 $script:Scenario = $env:OC_SCENARIO
 $script:Trace = $env:OC_TRACE
 function global:oc {
+  if ($env:KUBECONFIG -or $env:AWS_SECRET_ACCESS_KEY -or $env:AZURE_CLIENT_SECRET) { $global:LASTEXITCODE = 97; throw 'Mock credential inheritance detected' }
   $a = @($args | ForEach-Object { [string]$_ })
   [System.IO.File]::AppendAllText($script:Trace, (($a -join ' ') + [Environment]::NewLine))
   $global:LASTEXITCODE = 0
@@ -49,7 +50,7 @@ function global:oc {
 """
 @unittest.skipUnless(PWSH, "PowerShell 7 (pwsh) not installed")
 class Lab015PowerShellMock(unittest.TestCase):
-    def run_case(self, scenario):
+    def run_case(self, scenario, inject_parent_secrets=False):
         source = LAB.read_text(encoding="utf-8")
         match = re.search(r"```powershell\n(.*?)\n```", source, re.S)
         self.assertIsNotNone(match, "PowerShell lab code fence missing")
@@ -70,7 +71,19 @@ class Lab015PowerShellMock(unittest.TestCase):
                 "OC_SCENARIO": scenario,
                 "OC_TRACE": str(trace),
             }
-            result = subprocess.run([PWSH, "-NoLogo", "-NoProfile", "-NonInteractive",
+            if inject_parent_secrets:
+                from unittest.mock import patch.dict
+                with patch.dict(os.environ, {
+                    'KUBECONFIG': '/synthetic/never-use-kubeconfig',
+                    'AWS_SECRET_ACCESS_KEY': 'synthetic-test-value',
+                    'AZURE_CLIENT_SECRET': 'synthetic-test-value',
+                }):
+                    # The explicit subprocess env must remain free of parent secrets.
+                    result = subprocess.run([PWSH, '-NoLogo', '-NoProfile', '-NonInteractive',
+                                             '-File', str(script)], cwd=root, env=env,
+                                            capture_output=True, text=True, timeout=20)
+            else:
+                result = subprocess.run([PWSH, "-NoLogo", "-NoProfile", "-NonInteractive",
                                      "-File", str(script)], cwd=root, env=env,
                                     capture_output=True, text=True, timeout=20)
             commands = trace.read_text(encoding="utf-8").splitlines() if trace.exists() else []
@@ -81,6 +94,12 @@ class Lab015PowerShellMock(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 4)
         self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+
+    def test_parent_credentials_are_not_inherited(self):
+        result, commands = self.run_case('ok', inject_parent_secrets=True)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(sum(x.startswith('get ') for x in commands), 4)
+        self.assertNotIn('Mock credential inheritance detected', result.stderr)
 
     def test_identity_failure_stops(self):
         result, commands = self.run_case("identity_fail")
