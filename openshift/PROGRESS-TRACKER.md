@@ -476,3 +476,8 @@ Added two offline regression fixtures for percent-encoded local filenames with q
 ## V01 missing-target URL normalization regression — 2026-11-21
 
 Added two offline regression cases for **missing** percent-encoded Markdown targets with query/fragment suffixes, covering both inline links and reference definitions. These complement the existing valid-target fixture and guard against false PASS when URL decoration obscures an absent local file. Source authored and committed as `60abf9e047e7437702a126c7d1f0aa157223713c`. **Not executed:** the local checkout still cannot resolve github.com; no Python unittest, full link audit, OCP cluster validation or production approval is claimed. Next: run Python unittest discovery and the full offline link checker in a clean credential-isolated checkout, record exit codes and sanitized output, and correct any confirmed failures.
+
+
+## V01 absolute-path portability regression — 2026-11-21
+
+Corrected `validation/check_relative_links.py` to reject absolute filesystem paths (POSIX and Windows drive paths) as nonportable local Markdown targets, even when the target exists on the executing host. Added a temporary-directory regression proving an existing absolute target must fail. This does not prohibit intentional relative links to the sibling `kubernetes/` learning path. GitHub source commits: `9fc88276fee166278fed4600188d890460d79588`, `76b1c202c82e91317d18e1ad34af9e1ca86f25ea`. **Source change only, not runtime-verified**: the checkout still fails GitHub DNS resolution; execute Python unittest discovery and the complete link audit in a clean isolated checkout before recording PASS. No OCP cluster accessed or production approval granted.
