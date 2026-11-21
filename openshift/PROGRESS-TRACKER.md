@@ -466,3 +466,8 @@ GitHub PR changed-file inventory inspected against the active draft PR #2 (head:
 ## V08 — Markdown link-checker regression fixture correction (2026-11-21)
 
 Corrected `validation/test_check_relative_links.py` so the invalid backtick-fence info-string scenario writes three actual Markdown lines instead of literal `\\n` sequences. This makes the intended regression meaningful: the invalid opener must not hide a missing link on the following line. Source inspection and GitHub commit verification completed; **the Python test suite and repository-wide link audit have not been executed in this run**. Next: run `python -m unittest discover -s openshift/validation -p 'test_*.py'` in a clean checkout, record actual results, and fix any failures before claiming V08 PASS. No OCP cluster was accessed.
+
+
+## V01 link-validator regression coverage — 2026-11-21
+
+Added two offline regression fixtures for percent-encoded local filenames with query/fragment suffixes and tilde-fenced code containing a mismatched backtick fence. These protect against false missing-link reports and accidental suppression of a broken link after a valid fence closes. Test changes committed as `65369f52edfc785f250ac774d8f8a03524f23e26`. The GitHub checkout remains unavailable in this execution environment (DNS resolution of github.com failed), so these tests were **authored but not executed**; neither the full link audit nor a runtime PASS is claimed. Next: run Python unittest discovery and the complete relative-link audit in a credential-isolated checkout, record genuine results and fix confirmed defects. OCP cluster testing and independent approval remain pending.
