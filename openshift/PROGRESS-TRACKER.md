@@ -629,3 +629,7 @@ Added two disposable real-Git integration cases: executing the scope gate from a
 ## V23 remote-scope and offline acceptance gates — 2026-11-22
 
 Added [V23 evidence and execution plan](validation/V23-offline-test-execution-and-branch-gates.md) after confirming PR #1 merged and PR #2 remains open/draft. Remote GitHub compare returned **80 changed paths, all under openshift/**, branch **372 ahead / 1 behind** main before this update. Local `git ls-remote` failed with **exit 128 (GitHub DNS resolution)**. V23 records Bash/PowerShell offline suite commands, separate exit-code requirements, branch reconciliation, and independent review gates. **No Python tests, Markdown audits, Chapter 015 mocks, OCP labs or production changes were executed.** All 18 chapters remain Drafted, not certified.
+
+## V24 risk-prioritized independent review — 2026-11-22
+
+Added [V24 technical review priority matrix](validation/V24-technical-review-priority-matrix.md) to focus review on existing Chapters 010, 014, 015, MachineConfig, storage/stateful HA, incident operations, and access/networking. Includes evidence statuses, explicit stop/escalation triggers, safe read-only baseline and approval gates. **This is a review plan, not executed testing or independent approval.** All 18 chapters remain drafted. Next: perform source/command audit and offline test execution with recorded evidence; reconcile the draft PR branch and obtain independent OCP 4.22 review.
