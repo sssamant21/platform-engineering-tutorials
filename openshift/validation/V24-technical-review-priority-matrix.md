@@ -33,14 +33,16 @@ Use only an approved, least-privilege identity and the intended context. Avoid c
 ```bash
 oc whoami
 oc config current-context
-oc auth can-i get clusterversions.config.openshift.io
+oc auth can-i get clusterversions.config.openshift.io/version
 oc auth can-i list clusteroperators.config.openshift.io
-oc get clusterversion
+oc auth can-i list machineconfigpools.machineconfiguration.openshift.io
+# Execute each read separately ONLY if its matching can-i result is yes:
+oc get clusterversion version
 oc get clusteroperators
 oc get mcp
 ```
 
-`oc auth can-i` returning `no` is a permission finding, not permission to elevate privileges. A forbidden `oc get` is an expected possible failure under least privilege. These commands are **examples to review**, not claims of successful execution. On PowerShell, the same `oc` invocations apply; inspect `$LASTEXITCODE` for each invocation and do not print environment secrets.
+The commands above are a manual permission checklist, **not** a script that enforces authorization. Run each `oc get` only after its corresponding `can-i` result is `yes`; `no`, an error, or indeterminate output means skip that read. `get` on the named `clusterversion/version` is distinct from `list` on ClusterOperator and MachineConfigPool collections. The MCP resource is cluster-scoped and needs `list` independently. Do not blindly paste the whole block. `oc auth can-i` returning `no` is a permission finding, not permission to elevate privileges. A forbidden `oc get` is an expected possible failure under least privilege. These commands are **examples to review**, not claims of successful execution. On PowerShell, the same `oc` invocations apply; inspect `$LASTEXITCODE` for each invocation and do not print environment secrets.
 
 ## Release gate
 
