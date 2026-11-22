@@ -12,6 +12,13 @@ spec.loader.exec_module(checker)
 
 
 class LinkAuditTests(unittest.TestCase):
+    def test_empty_audit_root_is_not_a_pass(self):
+        with tempfile.TemporaryDirectory() as directory:
+            checked, failures = checker.audit(Path(directory))
+            self.assertEqual(checked, 0)
+            self.assertEqual(len(failures), 1)
+            self.assertIn("No Markdown files", failures[0])
+
     def test_percent_encoded_unsafe_schemes_are_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
