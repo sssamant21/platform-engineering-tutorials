@@ -533,3 +533,8 @@ Source review identified that percent-encoded URI scheme prefixes (for example `
 ## Chapter 014 upgrade eligibility safety review — 2026-11-21
 
 Reviewed the existing upgrade chapter and added read-only evidence fields for CVO channel, desired update, status/history/conditions, available versus conditional updates, and generation freshness. Added explicit NO-GO criteria for degraded Operators/MCPs, unresolved conditional risks, missing stateful recovery evidence and absent approvals. Chapter commit: `6ce1ca5832302408fa047bd31d4200cb53c91dd9`. **Validation:** GitHub source review and commit only; no OCP cluster access, Python execution, isolated lab validation or independent sign-off. Next: run credential-isolated offline suites and obtain version-specific Red Hat technical review of the Chapter 014 update eligibility rules before acceptance.
+
+
+## V05 isolated stateful HA acceptance protocol — 2026-11-22
+
+Added [V05 stateful HA failure-injection acceptance](validation/V05-stateful-ha-failure-injection-acceptance.md) for Chapter 017. Defines prerequisite topology, least-privilege read-only preflights, database-native quorum/fencing and data-integrity acceptance, five test-only failure scenarios, stop conditions, measurable RPO/RTO, evidence and independent signoff. Commit `6a467a9280a9daa3920dd66953336938245cd6db`. **Protocol drafted only:** no failure injection, OCP cluster access, tests, independent review or production approval. Offline Python regressions and full link audit remain pending. Next: execute the offline suites with actual exit codes; validate V05 in an authorized isolated OCP lab after owner approval.
