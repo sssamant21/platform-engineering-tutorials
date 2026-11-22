@@ -615,3 +615,8 @@ Expanded `validation/test_pr_scope_git_integration.py` from six to eight disposa
 ## V20 Git path delimiter regression coverage — 2026-11-22
 
 Added two disposable real-Git integration tests for legal filenames containing embedded newlines: one under `openshift/` must PASS and one under `kubernetes/` must BLOCK. This specifically checks that `git diff --name-only -z` parsing does not split filenames at line breaks or hide prohibited paths. Integration test definitions now total **10**. Commit: `702df2a324c906f68f0c19e0204fd562e4c5e0fa`. **Validation: GitHub source write and readback only; tests NOT EXECUTED.** The GitHub hostname remains unresolvable from the isolated container, so a complete checkout and genuine test exit codes are still unavailable. Next: run Python unit and real-Git suites, record outputs, then audit Markdown links, Chapter 015 shell mocks, reconcile branch divergence and seek independent OCP technical review. All 18 chapters remain drafted, not production-certified.
+
+
+## V21 disposable Git scope smoke — 2026-11-22
+
+Five isolated Git/Python smoke scenarios produced expected exit codes (allowed OpenShift change, prohibited cross-track rename, prohibited newline filename, README manual-review hold, and dirty working tree). The checker was manually transcribed from GitHub-fetched source because local GitHub DNS resolution failed; **this is not an authenticated repository checkout or full test-suite PASS**. One initial fixture setup error was corrected and rerun. See [V21 evidence](validation/V21-disposable-git-scope-smoke-results.md). Ten committed integration tests, Python unit tests, Markdown audits, shell mocks, cluster tests and independent review remain pending. No chapter certification or production approval is implied.
