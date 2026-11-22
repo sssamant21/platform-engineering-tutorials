@@ -633,3 +633,8 @@ Added [V23 evidence and execution plan](validation/V23-offline-test-execution-an
 ## V24 risk-prioritized independent review — 2026-11-22
 
 Added [V24 technical review priority matrix](validation/V24-technical-review-priority-matrix.md) to focus review on existing Chapters 010, 014, 015, MachineConfig, storage/stateful HA, incident operations, and access/networking. Includes evidence statuses, explicit stop/escalation triggers, safe read-only baseline and approval gates. **This is a review plan, not executed testing or independent approval.** All 18 chapters remain drafted. Next: perform source/command audit and offline test execution with recorded evidence; reconcile the draft PR branch and obtain independent OCP 4.22 review.
+
+
+## V25 — V24 authorization-gate correction (2026-11-22)
+
+**Static review correction committed:** The V24 review matrix previously checked `get clusterversions` but then performed a collection read, and omitted an RBAC preflight for `oc get mcp`. The baseline now uses `get clusterversions.config.openshift.io/version`, `list clusteroperators.config.openshift.io`, and `list machineconfigpools.machineconfiguration.openshift.io`, each paired with its intended read. Added explicit manual gating and stop-on-`no`/error instructions. Verified the updated GitHub file via post-commit readback. **No CLI execution, OCP cluster testing, independent review or production approval performed.** Next: audit Chapter 015 and Lab 015 authorization semantics and execute the offline regression suites against a verified checkout with actual exit codes.
