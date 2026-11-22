@@ -114,7 +114,15 @@ def audit(root: Path) -> tuple[int, list[str]]:
             for raw in targets:
                 # Reject local-file and executable/embedded URI schemes rather than
                 # treating them as safe external documentation links.
-                if unquote(raw).lower().startswith(("file:", "javascript:", "data:", "vbscript:")):
+                decoded_scheme = raw
+                # Decode nested percent-encoding to a fixed point so %256Aavascript:
+                # cannot evade the scheme policy through a second decoding pass.
+                for _ in range(8):
+                    next_decoded = unquote(decoded_scheme)
+                    if next_decoded == decoded_scheme:
+                        break
+                    decoded_scheme = next_decoded
+                if decoded_scheme.lower().startswith(("file:", "javascript:", "data:", "vbscript:")):
                     checked += 1
                     failures.append(f"{file.relative_to(root)}:{line_no}: {raw} -> unsafe URI scheme is not allowed")
                     continue
