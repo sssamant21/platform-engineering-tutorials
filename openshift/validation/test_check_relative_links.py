@@ -414,5 +414,17 @@ class LinkAuditTests(unittest.TestCase):
                 self.assertEqual(len(failures), 1)
                 self.assertIn("unsafe URI scheme", failures[0])
 
+    def test_nested_percent_encoded_unsafe_schemes_are_rejected(self):
+        # A second decoding pass must not turn a seemingly local target into
+        # an executable or local-file URI after the safety check.
+        for uri in ("%256Aavascript:alert%281%29", "%2566ile:///tmp/private"):
+            with self.subTest(uri=uri), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                (root / "doc.md").write_text(f"[unsafe]({uri})\\n", encoding="utf-8")
+                checked, failures = checker.audit(root)
+                self.assertEqual(checked, 1)
+                self.assertEqual(len(failures), 1)
+                self.assertIn("unsafe URI scheme", failures[0])
+
 if __name__ == "__main__":
     unittest.main()
