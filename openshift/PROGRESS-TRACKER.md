@@ -556,3 +556,7 @@ Reviewed the Markdown link audit and identified that a single URL-decoding pass 
 ## V08 empty-scan fail-closed review — 2026-11-22
 
 Static source review identified that a valid but empty audit directory previously returned zero failures and therefore exit 0, potentially reporting PASS for an incomplete checkout or wrong `--root`. The link checker now records a failure when no Markdown files are found; an offline regression test covers this case. **Status: committed source change only; test execution and full Markdown audit NOT RUN.** Run the credential-isolated Python suite and link audit with real exit codes before treating this correction as validated. No cluster operations or production approval.
+
+## V08 PR change-boundary verification gate — 2026-11-22
+
+Updated `validation/OFFLINE-EXECUTION-CHECKLIST.md` to require a fresh `origin/main...HEAD` changed-path inventory, `git diff --check`, explicit scope enforcement (`openshift/` plus minimal root README navigation only), and fail-closed reporting if fetching the PR target fails. This is a documentation-only checklist improvement. The local checkout attempt failed with GitHub DNS resolution (git exit 128); no diff audit, Python tests, link audit, mock tests or OCP runtime checks were executed. All 18 chapters remain Drafted; independent review and production approval remain pending.
