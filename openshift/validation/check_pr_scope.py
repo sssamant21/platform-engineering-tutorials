@@ -27,6 +27,10 @@ def main():
         prefix = run_git("rev-parse", "--show-prefix").decode().strip()
         if prefix:
             raise RuntimeError("run from repository root")
+        # Refuse to certify a dirty checkout: the committed PR diff cannot account for local edits.
+        dirty = run_git("status", "--porcelain=v1", "--untracked-files=all")
+        if dirty:
+            raise RuntimeError("working tree is not clean; stash or discard local changes before validation")
         # Disable rename detection: otherwise a move from a prohibited path into
         # openshift/ may hide the deleted source path from --name-only.
         names = run_git("diff", "--no-renames", "--name-only", "-z", f"{args.base}...HEAD")
