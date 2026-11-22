@@ -97,5 +97,29 @@ class RealGitScopeTests(unittest.TestCase):
         self.assertIn("empty PR diff", result.stderr)
 
 
+    def test_real_git_unstaged_tracked_edit_blocks(self):
+        (self.root / "openshift").mkdir()
+        chapter = self.root / "openshift" / "chapter.md"
+        chapter.write_text("chapter\\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "add chapter")
+        chapter.write_text("unstaged change\\n", encoding="utf-8")
+        result = self.check_scope()
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("not clean", result.stderr)
+
+    def test_real_git_missing_base_ref_blocks(self):
+        (self.root / "openshift").mkdir()
+        (self.root / "openshift" / "chapter.md").write_text("chapter\\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "add chapter")
+        result = subprocess.run(
+            [sys.executable, str(SCRIPT), "--base", "refs/heads/does-not-exist"],
+            cwd=self.root, capture_output=True, text=True, timeout=15,
+        )
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("BLOCKED:", result.stderr)
+
+
 if __name__ == "__main__":
     unittest.main()
