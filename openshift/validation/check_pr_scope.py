@@ -27,7 +27,7 @@ def main():
         prefix = run_git("rev-parse", "--show-prefix").decode().strip()
         if prefix:
             raise RuntimeError("run from repository root")
-        names = run_git("diff", "--name-only", "-z", f"{args.base}...HEAD")
+        # Disable rename detection: otherwise a move from a prohibited path into\n        # openshift/ may hide the deleted source path from --name-only.\n        names = run_git("diff", "--no-renames", "--name-only", "-z", f"{args.base}...HEAD")
         paths = [p.decode("utf-8", "surrogateescape") for p in names.split(b"\0") if p]
         if not paths:
             raise RuntimeError("empty PR diff: refusing to certify path scope")
