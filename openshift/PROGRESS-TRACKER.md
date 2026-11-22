@@ -552,3 +552,7 @@ Updated `validation/OFFLINE-EXECUTION-CHECKLIST.md` to clarify that unsetting `K
 ## V08 nested URI-encoding regression review — 2026-11-22
 
 Reviewed the Markdown link audit and identified that a single URL-decoding pass could miss double-encoded unsafe URI schemes. Updated `validation/check_relative_links.py` to decode nested percent-encoding before the unsafe-scheme policy check, and added two isolated regression fixtures for encoded JavaScript and file URIs. Source commits: `ab55e767bbaffa9060d6bf6a8dd882b55fa4e865`, `16232ae772f92c8ba9a0e1a14d82c9ab0cd0da14`. **GitHub source change only; regression suite and full link audit NOT RUN.** Remaining: execute tests in an isolated checkout, inspect results and review bounded-decoding behavior; no cluster execution or production approval.
+
+## V08 empty-scan fail-closed review — 2026-11-22
+
+Static source review identified that a valid but empty audit directory previously returned zero failures and therefore exit 0, potentially reporting PASS for an incomplete checkout or wrong `--root`. The link checker now records a failure when no Markdown files are found; an offline regression test covers this case. **Status: committed source change only; test execution and full Markdown audit NOT RUN.** Run the credential-isolated Python suite and link audit with real exit codes before treating this correction as validated. No cluster operations or production approval.
