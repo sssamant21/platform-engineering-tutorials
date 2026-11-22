@@ -420,7 +420,7 @@ class LinkAuditTests(unittest.TestCase):
         for uri in ("%256Aavascript:alert%281%29", "%2566ile:///tmp/private"):
             with self.subTest(uri=uri), tempfile.TemporaryDirectory() as directory:
                 root = Path(directory)
-                (root / "doc.md").write_text(f"[unsafe]({uri})\\n", encoding="utf-8")
+                (root / "doc.md").write_text(f"[unsafe]({uri})\n", encoding="utf-8")
                 checked, failures = checker.audit(root)
                 self.assertEqual(checked, 1)
                 self.assertEqual(len(failures), 1)
