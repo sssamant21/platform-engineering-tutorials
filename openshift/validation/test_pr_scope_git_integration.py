@@ -67,5 +67,35 @@ class RealGitScopeTests(unittest.TestCase):
         self.assertIn("not clean", result.stderr)
 
 
+    def test_real_git_root_readme_requires_manual_review(self):
+        (self.root / "README.md").write_text("navigation link\\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "update navigation")
+        result = self.check_scope()
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("manual diff review required", result.stderr)
+
+    def test_real_git_staged_edit_blocks(self):
+        (self.root / "openshift").mkdir()
+        (self.root / "openshift" / "chapter.md").write_text("chapter\\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "add chapter")
+        (self.root / "openshift" / "chapter.md").write_text("edited\\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        result = self.check_scope()
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("not clean", result.stderr)
+
+    def test_real_git_empty_diff_blocks(self):
+        (self.root / "openshift").mkdir()
+        (self.root / "openshift" / "chapter.md").write_text("chapter\\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "add chapter")
+        git(self.root, "commit", "--allow-empty", "-qm", "empty commit")
+        result = self.check_scope()
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("empty PR diff", result.stderr)
+
+
 if __name__ == "__main__":
     unittest.main()
