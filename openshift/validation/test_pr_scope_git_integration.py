@@ -162,6 +162,7 @@ class RealGitScopeTests(unittest.TestCase):
         git(self.root, "branch", "unrelated-base")
         git(self.root, "checkout", "-q", "--orphan", "separate-history")
         git(self.root, "rm", "-qrf", ".")
+        (self.root / "openshift").mkdir(exist_ok=True)
         (self.root / "openshift" / "separate.md").write_text("separate\n", encoding="utf-8")
         git(self.root, "add", ".")
         git(self.root, "commit", "-qm", "unrelated root")
