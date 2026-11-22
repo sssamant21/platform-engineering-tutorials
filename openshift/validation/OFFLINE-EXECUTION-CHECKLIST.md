@@ -21,6 +21,9 @@ git diff --check origin/main...HEAD
 
 PowerShell 7 uses the same three Git commands. Record their exit codes and the changed-path inventory. Every changed path must begin with `openshift/`, except a minimal root `README.md` navigation change. Any `kubernetes/` or `data-platform-engineering-tutorials/` change is a **STOP** condition, not an acceptable warning. Inspect the actual root README diff if present. Do not run a force-push or merge as a response to a failed gate. If `git fetch` fails, mark the comparison **BLOCKED**, rather than silently comparing against a stale local main.
 
+
+For a machine-checkable, fail-closed path allowlist (after a successful fresh fetch), run `python openshift/validation/check_pr_scope.py --base origin/main` from the repository root and record its exit code. Exit 0 checks path scope only; exit 1 indicates unexpected paths; exit 2 means BLOCKED or root README manual review required. This check does not replace `git diff --check`, full content review, or tests. The script does not fetch `main` itself, so a stale base is not detected automatically.
+
 Inspect the diff for credential-like material, internal API URLs, tenant identifiers, and unsafe state-changing commands. A clean `git diff --check` verifies whitespace only; it does **not** certify security or documentation correctness. Preserve sanitized evidence of the file list and review outcome.
 
 ## Offline-only safety preflight
