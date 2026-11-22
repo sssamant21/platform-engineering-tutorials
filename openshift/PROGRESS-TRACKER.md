@@ -560,3 +560,7 @@ Static source review identified that a valid but empty audit directory previousl
 ## V08 PR change-boundary verification gate — 2026-11-22
 
 Updated `validation/OFFLINE-EXECUTION-CHECKLIST.md` to require a fresh `origin/main...HEAD` changed-path inventory, `git diff --check`, explicit scope enforcement (`openshift/` plus minimal root README navigation only), and fail-closed reporting if fetching the PR target fails. This is a documentation-only checklist improvement. The local checkout attempt failed with GitHub DNS resolution (git exit 128); no diff audit, Python tests, link audit, mock tests or OCP runtime checks were executed. All 18 chapters remain Drafted; independent review and production approval remain pending.
+
+## V09 GitHub remote PR scope inspection — 2026-11-22
+
+[Read-only remote compare evidence](validation/V09-github-pr-scope-inspection.md) records 73 changed paths, all under `openshift/`, for `main...docs/openshift-ch010-security-governance` at inspection. The branch was 337 commits ahead and one commit behind `main` (diverged); this is a **remote filename-scope PASS only**, not a local whitespace/content review or test result. Local diff/whitespace checks, Python/link/mock suites, isolated cluster validation and independent approval remain **NOT RUN**. Refresh the comparison before acceptance and reconcile branch divergence without auto-merging.
