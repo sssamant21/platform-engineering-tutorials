@@ -62,6 +62,8 @@ def strip_inline_code_spans(line: str) -> str:
 def audit(root: Path) -> tuple[int, list[str]]:
     files = sorted(root.rglob("*.md"))
     failures: list[str] = []
+    if not files:
+        failures.append("No Markdown files found under audit root; refusing an empty-scan PASS")
     checked = 0
     for file in files:
         definitions: dict[str, str] = {}
