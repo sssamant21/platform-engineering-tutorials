@@ -9,6 +9,20 @@
 3. Review every mock script for subprocess calls, network access and environment inheritance before execution. If a mock could invoke a real `oc`, `kubectl`, cloud CLI or network endpoint, **STOP** until isolation is independently verified. Never rely on PATH shadowing alone as a security boundary.
 4. Use Python 3.11+ and a local Bash and/or PowerShell 7 installation as applicable. Record interpreter versions. Inspect scripts before executing; run only mock/offline suites.
 
+## Scope and change-boundary gate
+
+Before testing or preparing the draft PR for review, inspect the actual diff against the target branch. Do **not** infer the target branch from the checkout name. For the current PR targeting `main`, use:
+
+```bash
+git fetch origin main
+git diff --name-only origin/main...HEAD
+git diff --check origin/main...HEAD
+```
+
+PowerShell 7 uses the same three Git commands. Record their exit codes and the changed-path inventory. Every changed path must begin with `openshift/`, except a minimal root `README.md` navigation change. Any `kubernetes/` or `data-platform-engineering-tutorials/` change is a **STOP** condition, not an acceptable warning. Inspect the actual root README diff if present. Do not run a force-push or merge as a response to a failed gate. If `git fetch` fails, mark the comparison **BLOCKED**, rather than silently comparing against a stale local main.
+
+Inspect the diff for credential-like material, internal API URLs, tenant identifiers, and unsafe state-changing commands. A clean `git diff --check` verifies whitespace only; it does **not** certify security or documentation correctness. Preserve sanitized evidence of the file list and review outcome.
+
 ## Offline-only safety preflight
 
 Before executing any harness, record a sanitized confirmation that the disposable account/container has no kubeconfig, no cloud credentials and no route to production control-plane endpoints. Never run `oc whoami` or any other live cluster probe merely to prove isolation. If the preflight cannot be established, mark all mock executions **BLOCKED / NOT RUN** and perform static source review only. This prevents accidental live access when a test unexpectedly falls through to a real CLI.
