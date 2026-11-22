@@ -542,3 +542,8 @@ Added [V05 stateful HA failure-injection acceptance](validation/V05-stateful-ha-
 ## V08 offline command reproducibility review — 2026-11-22
 
 Reviewed the actual `validation/check_relative_links.py` entry point and updated `validation/OFFLINE-EXECUTION-CHECKLIST.md` with explicit Bash/PowerShell link-audit commands, real exit-code capture, audit scope and limits, and corrected Bash `printf` newline formatting. Final checklist commit: `40d079017f871caf1877c9851fa746f3a1c99c0e`. **GitHub source verification only.** An attempted local `git ls-remote` failed because `github.com` could not be resolved, so full-checkout Python tests, Markdown link audit, Chapter 015 mock tests, isolated OCP 4.22 tests and independent approval remain **NOT RUN**. Next: execute both offline suites in a credential-isolated checkout, record actual exit codes, and correct confirmed failures. No Kubernetes files, cluster resources or production systems changed.
+
+
+## V08 offline credential-isolation safety correction — 2026-11-22
+
+Updated `validation/OFFLINE-EXECUTION-CHECKLIST.md` to clarify that unsetting `KUBECONFIG` does not prevent fallback to the default home-directory kubeconfig. Offline mock execution now requires an isolated disposable account/container with an empty home, no cloud credentials or production network access, plus source inspection for real CLI/network fallthrough. If isolation cannot be established, mark mock execution **BLOCKED / NOT RUN** and limit work to static review. GitHub-hosted documentation edit only; local Git clone failed DNS resolution, and no Python, Bash, PowerShell, cluster or mock runtime validation was executed. All 18 chapters remain Drafted and unapproved.
