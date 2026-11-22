@@ -14,7 +14,7 @@ From repository root:
 
 ```bash
 python -m unittest discover -s openshift/validation -p 'test_*.py' -v
-printf 'python_exit=%s\\n' "$?"
+printf 'python_exit=%s\n' "$?"
 ```
 
 PowerShell equivalent:
@@ -24,7 +24,7 @@ python -m unittest discover -s openshift/validation -p 'test_*.py' -v
 Write-Output "python_exit=$LASTEXITCODE"
 ```
 
-Inspect `openshift/validation/` and the Chapter 015 lab for their exact current mock-suite entry points before invoking them. Do not assume test filenames or a PASS count from documentation. Execute each supported Bash/PowerShell suite with its documented offline mock setup; record the command, exit code, scenario count and any SKIP reason separately. Run the repository-wide relative-link checker only after verifying its `--help` or documented invocation; do not invent CLI flags.
+Inspect `openshift/validation/` and the Chapter 015 lab for their exact current mock-suite entry points before invoking them. Do not assume test filenames or a PASS count from documentation. Execute each supported Bash/PowerShell suite with its documented offline mock setup; record the command, exit code, scenario count and any SKIP reason separately. Run the OpenShift Markdown link checker using its verified documented entry point (below). It scans `openshift/` by default and permits existing relative links to the sibling `kubernetes/` track without modifying those files. This is a local-file audit, **not** a remote URL or fragment check.\n\nBash:\n\n```bash\npython openshift/validation/check_relative_links.py\nprintf 'link_audit_exit=%s\\n' "$?"\n```\n\nPowerShell:\n\n```powershell\npython openshift/validation/check_relative_links.py\nWrite-Output "link_audit_exit=$LASTEXITCODE"\n```\n\nDo not treat the link audit as a substitute for checking Red Hat OCP 4.22 documentation references. If either command fails, capture the sanitized diagnostics, correct the cause, and rerun both test families at the same reviewed commit.
 
 ## Acceptance and failure handling
 
