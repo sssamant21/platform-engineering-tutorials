@@ -30,8 +30,7 @@ Bash:
 
 ```bash
 python openshift/validation/check_relative_links.py
-printf 'link_audit_exit=%s\
-' "$?"
+printf 'link_audit_exit=%s\\n' "$?"
 ```
 
 PowerShell:
