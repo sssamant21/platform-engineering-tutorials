@@ -580,3 +580,9 @@ Added [`validation/check_pr_scope.py`](validation/check_pr_scope.py) and documen
 ## V13 PR scope gate regression coverage — 2026-11-22
 
 Added [`validation/test_pr_scope.py`](validation/test_pr_scope.py) with six isolated unittest cases for allowed OpenShift paths, forbidden Kubernetes and unrelated paths, root README manual-review hold, empty-diff blocking, and Git failure blocking. Git is mocked; tests are designed to run without kubeconfig, cloud credentials, network or OCP cluster access. Commit `c4855617dc42695cbd2967548767d3125953ee8c`. **Status: committed and source-verification pending; tests NOT RUN.** Run the credential-isolated unittest suite and Markdown audit with real exit codes, review failures, and retain independent technical approval gates. All 18 chapters remain drafted only.
+
+## V14 cross-track rename safety fix — 2026-11-22
+
+Reviewed the PR path-scope checker and identified a rename-detection bypass: Git's default rename detection can report only the destination of a move, concealing a deleted `kubernetes/` source when a file moves into `openshift/`. The checker now uses `git diff --no-renames --name-only -z` so the source deletion and destination addition are both visible. Added an offline mocked regression asserting `--no-renames` is passed and that a simulated cross-track move blocks approval (exit 1). **Code and test are committed; regression execution remains NOT RUN.** The check is limited to changed-path scope, not content security or production certification.
+
+**Next:** Run credential-isolated Python unit tests and full Markdown link audit with recorded exit codes; verify branch reconciliation and seek independent technical review. All 18 chapters remain drafted only.
