@@ -37,6 +37,22 @@ class ScopeGateTests(unittest.TestCase):
     def test_openshift_only_passes(self):
         self.assertEqual(self.check(["openshift/MASTER-PLAN.md", "openshift/validation/check_pr_scope.py"]), 0)
 
+    def test_rename_detection_disabled_to_expose_deleted_source(self):
+        # A rename from kubernetes/ to openshift/ must expose both paths.
+        # With Git rename detection, --name-only can hide the old path.
+        def fake_git(*args):
+            if args[:2] == ("rev-parse", "--show-toplevel"):
+                return b"/tmp/safe-checkout\n"
+            if args[:2] == ("rev-parse", "--show-prefix"):
+                return b""
+            if args[0] == "diff":
+                self.assertIn("--no-renames", args)
+                return b"kubernetes/old.md\0openshift/new.md\0"
+            return b"fake-sha\n"
+
+        with patch.object(MODULE, "run_git", side_effect=fake_git), patch.object(sys, "argv", ["check_pr_scope.py"]), contextlib.redirect_stdout(io.StringIO()), contextlib.redirect_stderr(io.StringIO()):
+            self.assertEqual(MODULE.main(), 1)
+
     def test_kubernetes_change_fails(self):
         self.assertEqual(self.check(["openshift/README.md", "kubernetes/README.md"]), 1)
 
