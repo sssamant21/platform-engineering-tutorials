@@ -6,8 +6,8 @@
 Backup freshness alert, missing backup attestation, API/control-plane outage, suspected etcd quorum loss, or application recovery gap.
 
 ## Safe first response
-1. Declare incident severity per local policy and establish incident commander. Confirm cluster alias, exact OCP version, topology, and authorized context; never expose tokens.
-2. If the API is reachable, perform the least-privilege preflight below and run **only** reads individually authorized as `yes`. Do not substitute `get` for `list`: named `clusterversion/version` requires `get`, while ClusterOperator and node collections require `list`. For control-plane nodes, the label selector does not reduce the cluster-scoped `list nodes` permission requirement. If API access is unavailable, use approved out-of-band monitoring and provider escalation; do not attempt recovery by guessing commands.
+1. Declare incident severity per local policy and establish incident commander. Confirm cluster alias, exact OCP version, topology, and authorized context; never expose tokens. Before any resource read, compare the active kubeconfig's API server against the approved expected API endpoint obtained independently from the change/incident record. Stop on mismatch, empty value, or failed identity lookup; do not derive the expected value from the same kubeconfig. Follow the [Lab 015 identity guard](../labs/015-recovery-read-only-readiness-audit.md) for guarded Bash/PowerShell examples.
+2. If the API is reachable, perform the least-privilege preflight below and run **only** reads individually authorized as `yes`. Do not substitute `get` for `list`: named `clusterversion/version` requires `get`, while ClusterOperator, node and MachineConfigPool collections require `list`; named Infrastructure/cluster requires `get`. For control-plane nodes, the label selector does not reduce the cluster-scoped `list nodes` permission requirement. If API access is unavailable, use approved out-of-band monitoring and provider escalation; do not attempt recovery by guessing commands.
 
    **Linux/macOS (Bash; authenticated `oc` context required):**
 
@@ -17,10 +17,14 @@ Backup freshness alert, missing backup attestation, API/control-plane outage, su
    oc auth can-i get clusterversions.config.openshift.io/version
    oc auth can-i list clusteroperators.config.openshift.io
    oc auth can-i list nodes
+   oc auth can-i list machineconfigpools.machineconfiguration.openshift.io
+   oc auth can-i get infrastructures.config.openshift.io/cluster
    # Execute each read only after its matching check returns yes:
    oc get clusterversion version
    oc get clusteroperators
    oc get nodes -l node-role.kubernetes.io/master
+   oc get machineconfigpools
+   oc get infrastructure cluster
    ```
 
    **Windows PowerShell (same permission requirements):**
@@ -37,7 +41,7 @@ Backup freshness alert, missing backup attestation, API/control-plane outage, su
    oc get nodes -l node-role.kubernetes.io/master
    ```
 
-   These are **manual gates, not an automatically gated script**: do not copy/paste the entire block blindly. Expected `can-i` output is `yes` or `no`; `no`, `Forbidden`, missing authentication, or an indeterminate error means **skip that read**, preserve sanitized error text and request access through the designated cluster owner. Never switch to a privileged context solely to complete triage. `oc whoami` and context output can identify personnel or infrastructure; sanitize evidence before sharing.
+   These are **manual gates, not an automatically gated script**: do not copy/paste the entire block blindly. Each `can-i` command must exit successfully and return exactly `yes` before its matching read; `no`, `Forbidden`, missing authentication, or an indeterminate error means **skip that read**, preserve sanitized error text and request access through the designated cluster owner. Record each skipped/failed check as an evidence gap, not as healthy. `oc get` may itself fail even after `can-i yes`; escalate that failure and never report a successful audit. Never switch to a privileged context solely to complete triage. `oc whoami` and context output can identify personnel or infrastructure; sanitize evidence before sharing.
 3. Ask backup owner to **attest**, without sharing sensitive artifacts, to last successful supported backup, matching static resources, protected off-cluster retention, and restore rehearsal. Separate etcd backup assurance from CSI/PV and database backups.
 4. Classify: transient API/network issue; operator degradation; single control-plane node failure; confirmed quorum loss; workload data failure. Do not use etcd restore for routine node, Route or PVC incidents.
 5. Record recovery objectives and business risk: API RPO/RTO versus per-database RPO/RTO, last verified restore, potential loss of API changes since snapshot.
