@@ -121,5 +121,26 @@ class RealGitScopeTests(unittest.TestCase):
         self.assertIn("BLOCKED:", result.stderr)
 
 
+    def test_real_git_newline_filename_inside_openshift_passes(self):
+        # -z parsing must preserve a legal Git filename containing a newline.
+        (self.root / "openshift").mkdir()
+        (self.root / "openshift" / "chapter\nnotes.md").write_text("safe\\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "add newline filename in allowed path")
+        result = self.check_scope()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn("changed_paths=1", result.stdout)
+
+    def test_real_git_newline_filename_outside_openshift_blocks(self):
+        # A newline in a prohibited filename must not split or hide the path.
+        (self.root / "kubernetes" / "unexpected\nnotes.md").write_text("unsafe\\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "change prohibited path with newline")
+        result = self.check_scope()
+        self.assertEqual(result.returncode, 1, result.stderr)
+        self.assertIn("outside_allowlist=1", result.stdout)
+        self.assertIn("BLOCKED: unexpected path", result.stderr)
+
+
 if __name__ == "__main__":
     unittest.main()
