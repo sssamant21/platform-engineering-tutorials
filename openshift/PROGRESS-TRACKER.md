@@ -624,3 +624,8 @@ Five isolated Git/Python smoke scenarios produced expected exit codes (allowed O
 ## V22 real-Git scope boundary cases — 2026-11-22
 
 Added two disposable real-Git integration cases: executing the scope gate from a repository subdirectory must BLOCK, and comparing against a valid but unrelated Git history must BLOCK. The unrelated-history fixture explicitly clears the tracked checkout to avoid a false-positive dirty-tree rejection. Integration cases now total **12**. Commits: `ea2b733c967b72525cf462559aefc1685531ba7f`, `40a24d6dd155ca67623b9b5383d23b6495bc4610`. **Source committed, not executed**; no integration PASS claimed. Continue full credential-isolated Python suite execution with exit-code evidence, Markdown audits, Chapter 015 shell mocks, branch reconciliation, isolated OCP 4.22 labs, and independent review. All 18 chapters remain drafted, not production-certified.
+
+
+## V23 remote-scope and offline acceptance gates — 2026-11-22
+
+Added [V23 evidence and execution plan](validation/V23-offline-test-execution-and-branch-gates.md) after confirming PR #1 merged and PR #2 remains open/draft. Remote GitHub compare returned **80 changed paths, all under openshift/**, branch **372 ahead / 1 behind** main before this update. Local `git ls-remote` failed with **exit 128 (GitHub DNS resolution)**. V23 records Bash/PowerShell offline suite commands, separate exit-code requirements, branch reconciliation, and independent review gates. **No Python tests, Markdown audits, Chapter 015 mocks, OCP labs or production changes were executed.** All 18 chapters remain Drafted, not certified.
