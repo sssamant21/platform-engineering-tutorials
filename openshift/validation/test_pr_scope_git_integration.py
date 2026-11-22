@@ -161,7 +161,7 @@ class RealGitScopeTests(unittest.TestCase):
         git(self.root, "commit", "-qm", "add chapter")
         git(self.root, "branch", "unrelated-base")
         git(self.root, "checkout", "-q", "--orphan", "separate-history")
-        git(self.root, "rm", "-qr", "--cached", ".")
+        git(self.root, "rm", "-qrf", ".")
         (self.root / "openshift" / "separate.md").write_text("separate\n", encoding="utf-8")
         git(self.root, "add", ".")
         git(self.root, "commit", "-qm", "unrelated root")
