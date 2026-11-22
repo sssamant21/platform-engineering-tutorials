@@ -19,7 +19,7 @@ SPEC.loader.exec_module(MODULE)
 
 
 class ScopeGateTests(unittest.TestCase):
-    def check(self, paths, *, error=None):
+    def check(self, paths, *, error=None, dirty=False):
         def fake_git(*args):
             if error and args[0] == "diff":
                 raise RuntimeError(error)
@@ -27,6 +27,8 @@ class ScopeGateTests(unittest.TestCase):
                 return b"/tmp/safe-checkout\n"
             if args[:2] == ("rev-parse", "--show-prefix"):
                 return b""
+            if args[0] == "status":
+                return b" M openshift/README.md\n" if dirty else b""
             if args[0] == "diff":
                 return b"".join(p.encode() + b"\0" for p in paths)
             return b"fake-sha\n"
@@ -45,6 +47,8 @@ class ScopeGateTests(unittest.TestCase):
                 return b"/tmp/safe-checkout\n"
             if args[:2] == ("rev-parse", "--show-prefix"):
                 return b""
+            if args[0] == "status":
+                return b""
             if args[0] == "diff":
                 self.assertIn("--no-renames", args)
                 return b"kubernetes/old.md\0openshift/new.md\0"
@@ -61,6 +65,9 @@ class ScopeGateTests(unittest.TestCase):
 
     def test_root_readme_requires_manual_review(self):
         self.assertEqual(self.check(["openshift/README.md", "README.md"]), 2)
+
+    def test_dirty_checkout_blocks(self):
+        self.assertEqual(self.check(["openshift/README.md"], dirty=True), 2)
 
     def test_empty_diff_blocks(self):
         self.assertEqual(self.check([]), 2)
