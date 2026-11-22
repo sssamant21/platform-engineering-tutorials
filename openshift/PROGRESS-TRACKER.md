@@ -547,3 +547,8 @@ Reviewed the actual `validation/check_relative_links.py` entry point and updated
 ## V08 offline credential-isolation safety correction — 2026-11-22
 
 Updated `validation/OFFLINE-EXECUTION-CHECKLIST.md` to clarify that unsetting `KUBECONFIG` does not prevent fallback to the default home-directory kubeconfig. Offline mock execution now requires an isolated disposable account/container with an empty home, no cloud credentials or production network access, plus source inspection for real CLI/network fallthrough. If isolation cannot be established, mark mock execution **BLOCKED / NOT RUN** and limit work to static review. GitHub-hosted documentation edit only; local Git clone failed DNS resolution, and no Python, Bash, PowerShell, cluster or mock runtime validation was executed. All 18 chapters remain Drafted and unapproved.
+
+
+## V08 nested URI-encoding regression review — 2026-11-22
+
+Reviewed the Markdown link audit and identified that a single URL-decoding pass could miss double-encoded unsafe URI schemes. Updated `validation/check_relative_links.py` to decode nested percent-encoding before the unsafe-scheme policy check, and added two isolated regression fixtures for encoded JavaScript and file URIs. Source commits: `ab55e767bbaffa9060d6bf6a8dd882b55fa4e865`, `16232ae772f92c8ba9a0e1a14d82c9ab0cd0da14`. **GitHub source change only; regression suite and full link audit NOT RUN.** Remaining: execute tests in an isolated checkout, inspect results and review bounded-decoding behavior; no cluster execution or production approval.
