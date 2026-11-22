@@ -142,5 +142,35 @@ class RealGitScopeTests(unittest.TestCase):
         self.assertIn("BLOCKED: unexpected path", result.stderr)
 
 
+    def test_real_git_invoked_from_subdirectory_blocks(self):
+        (self.root / "openshift").mkdir()
+        (self.root / "openshift" / "chapter.md").write_text("chapter\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "add chapter")
+        result = subprocess.run(
+            [sys.executable, str(SCRIPT), "--base", "HEAD~1"],
+            cwd=self.root / "openshift", capture_output=True, text=True, timeout=15,
+        )
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("run from repository root", result.stderr)
+
+    def test_real_git_divergent_base_blocks(self):
+        (self.root / "openshift").mkdir()
+        (self.root / "openshift" / "chapter.md").write_text("chapter\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "add chapter")
+        git(self.root, "branch", "unrelated-base")
+        git(self.root, "checkout", "-q", "--orphan", "separate-history")
+        git(self.root, "rm", "-qr", "--cached", ".")
+        (self.root / "openshift" / "separate.md").write_text("separate\n", encoding="utf-8")
+        git(self.root, "add", ".")
+        git(self.root, "commit", "-qm", "unrelated root")
+        result = subprocess.run(
+            [sys.executable, str(SCRIPT), "--base", "unrelated-base"],
+            cwd=self.root, capture_output=True, text=True, timeout=15,
+        )
+        self.assertEqual(result.returncode, 2, result.stderr)
+        self.assertIn("BLOCKED:", result.stderr)
+
 if __name__ == "__main__":
     unittest.main()
