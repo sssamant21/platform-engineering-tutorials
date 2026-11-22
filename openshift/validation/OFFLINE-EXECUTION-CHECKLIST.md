@@ -5,8 +5,13 @@
 ## Preconditions
 
 1. Confirm the checkout is `sssamant21/platform-engineering-tutorials` on `docs/openshift-ch010-security-governance`; record `git rev-parse HEAD` and `git status --short` (expect no changes).
-2. Remove inherited cluster credentials from the shell: on Bash use `unset KUBECONFIG`; on PowerShell use `Remove-Item Env:KUBECONFIG -ErrorAction SilentlyContinue`. Prefer an isolated OS account/container without any `~/.kube` credentials or cloud-provider credentials. Never print credential files.
-3. Use Python 3.11+ and a local Bash and/or PowerShell 7 installation as applicable. Record interpreter versions. Inspect scripts before executing; run only mock/offline suites.
+2. **Credential isolation is mandatory:** clearing `KUBECONFIG` alone is insufficient because `oc`/`kubectl` can fall back to the default kubeconfig under the user home directory. Use a disposable unprivileged OS account or isolated container with an empty home directory, no mounted kubeconfig, no cloud credentials and no production network access. Confirm the home directory contains no `.kube/config` before running any mock script; do not display or copy credential contents. On Bash, `unset KUBECONFIG`; on PowerShell, `Remove-Item Env:KUBECONFIG -ErrorAction SilentlyContinue`. Do not assume an environment-variable change removes other credential sources.
+3. Review every mock script for subprocess calls, network access and environment inheritance before execution. If a mock could invoke a real `oc`, `kubectl`, cloud CLI or network endpoint, **STOP** until isolation is independently verified. Never rely on PATH shadowing alone as a security boundary.
+4. Use Python 3.11+ and a local Bash and/or PowerShell 7 installation as applicable. Record interpreter versions. Inspect scripts before executing; run only mock/offline suites.
+
+## Offline-only safety preflight
+
+Before executing any harness, record a sanitized confirmation that the disposable account/container has no kubeconfig, no cloud credentials and no route to production control-plane endpoints. Never run `oc whoami` or any other live cluster probe merely to prove isolation. If the preflight cannot be established, mark all mock executions **BLOCKED / NOT RUN** and perform static source review only. This prevents accidental live access when a test unexpectedly falls through to a real CLI.
 
 ## Execute and record
 
