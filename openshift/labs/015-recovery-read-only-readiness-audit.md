@@ -3,7 +3,7 @@
 **Status:** Documentation-only exercise; no OCP cluster execution recorded. **Time:** 20–25 minutes. **Baseline:** OCP 4.22; confirm exact installed release before applying any recovery procedure.
 
 ## Prerequisites and safety
-Authorized `oc` CLI access, a separately approved expected API server URL (non-secret) for identity pinning, confirmed target context, read-only access to ClusterVersion, ClusterOperators, nodes and Infrastructure where permitted, and a sanitized backup inventory supplied by the backup owner. No access to raw snapshot files is needed. Do not run `cluster-backup.sh`, `cluster-restore.sh`, `oc config view --raw`, or read Secret objects. Stop on an unexpected cluster identity. These commands do not mutate cluster resources.
+Authorized `oc` CLI access, a separately approved expected API server URL (non-secret) for identity pinning, confirmed target context, read-only access to ClusterVersion, ClusterOperators, nodes, MachineConfigPools and Infrastructure where permitted, and a sanitized backup inventory supplied by the backup owner. No access to raw snapshot files is needed. Do not run `cluster-backup.sh`, `cluster-restore.sh`, `oc config view --raw`, or read Secret objects. Stop on an unexpected cluster identity. These commands do not mutate cluster resources.
 
 ## Procedure — Linux/macOS (Bash)
 ```bash
@@ -42,6 +42,7 @@ failures=0
 check_read 'ClusterVersion/version' 'get clusterversions.config.openshift.io --resource-name=version' get clusterversion version || { [ "$?" -eq 2 ] || failures=1; }
 check_read 'ClusterOperators' 'list clusteroperators.config.openshift.io' get clusteroperators || { [ "$?" -eq 2 ] || failures=1; }
 check_read 'control-plane nodes' 'list nodes' get nodes -l node-role.kubernetes.io/master || { [ "$?" -eq 2 ] || failures=1; }
+check_read 'MachineConfigPools' 'list machineconfigpools.machineconfiguration.openshift.io' get machineconfigpools || { [ "$?" -eq 2 ] || failures=1; }
 check_read 'Infrastructure/cluster' 'get infrastructures.config.openshift.io --resource-name=cluster' get infrastructure cluster || { [ "$?" -eq 2 ] || failures=1; }
 [ "$failures" -eq 0 ] || { echo 'INCOMPLETE: one or more authorization or resource queries failed' >&2; exit 1; }
 echo 'Read-only checks completed; SKIP entries still require evidence review.'
@@ -85,13 +86,14 @@ $results = @(
   (Invoke-ReadIfAuthorized -Description 'ClusterVersion/version' -PermissionArgs @('get','clusterversions.config.openshift.io','--resource-name=version') -ReadArgs @('get','clusterversion','version'))
   (Invoke-ReadIfAuthorized -Description 'ClusterOperators' -PermissionArgs @('list','clusteroperators.config.openshift.io') -ReadArgs @('get','clusteroperators'))
   (Invoke-ReadIfAuthorized -Description 'control-plane nodes' -PermissionArgs @('list','nodes') -ReadArgs @('get','nodes','-l','node-role.kubernetes.io/master'))
+  (Invoke-ReadIfAuthorized -Description 'MachineConfigPools' -PermissionArgs @('list','machineconfigpools.machineconfiguration.openshift.io') -ReadArgs @('get','machineconfigpools'))
   (Invoke-ReadIfAuthorized -Description 'Infrastructure/cluster' -PermissionArgs @('get','infrastructures.config.openshift.io','--resource-name=cluster') -ReadArgs @('get','infrastructure','cluster'))
 )
 if ($results -contains 'ERROR') { throw 'INCOMPLETE: one or more authorization or resource queries failed' }
 Write-Output 'Read-only checks completed; SKIP entries still require evidence review.'
 ```
 
-PowerShell uses explicit named array parameters to avoid positional array binding ambiguity. Both Bash and PowerShell suppress successful resource output in the status helper; capture separately only after approved sanitization. Standard error from `oc` can still contain infrastructure identifiers; do not attach raw terminal transcripts to shared evidence. The Bash helper uses a fixed, audited argument array and never evaluates a shell command string. These corrections require offline mock execution before they can be called tested.
+PowerShell uses explicit named array parameters to avoid positional array binding ambiguity. Both Bash and PowerShell suppress successful resource output in the status helper; capture separately only after approved sanitization. Standard error from `oc` can still contain infrastructure identifiers; do not attach raw terminal transcripts to shared evidence. The Bash helper uses a fixed, audited argument array and never evaluates a shell command string. These corrections require offline mock execution before they can be called tested. MachineConfigPool reads require collection-level `list` authorization, not merely `get` on a named pool; a denied or unsupported read is an evidence gap, never proof of health.
 
 The expected server must be supplied from a trusted change record, not discovered from the same kubeconfig being checked. Do not print server URLs in shared evidence. These preflights verify client context identity only; they do not establish that a backup is valid.
 
@@ -111,6 +113,7 @@ Authorization queries can themselves fail (API unavailable or RBAC evaluation er
 | Cluster alias / exact OCP release | Not tested |
 | Platform and control-plane topology | Not tested |
 | ClusterOperator health | Not tested |
+| MachineConfigPool status and applicability | Not tested |
 | Last approved snapshot + static resources age | Owner attestation pending |
 | Encrypted off-cluster retention and access review | Pending |
 | Application/database restore evidence | Pending |
