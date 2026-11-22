@@ -576,3 +576,7 @@ Added [V10 branch divergence and safe reconciliation review](validation/V10-bran
 ## V12 executable PR path-scope gate — 2026-11-22
 
 Added [`validation/check_pr_scope.py`](validation/check_pr_scope.py) and documented its use in the offline checklist. It fails closed on missing Git refs, an empty comparison and paths outside `openshift/` or root `README.md`; root README changes require manual review. **Status: source committed; script NOT EXECUTED, no PASS claimed.** The operator must freshly fetch and verify the target branch; the script cannot prove base freshness or review file contents. Python regressions, full Markdown audit, Chapter 015 mocks, isolated OCP 4.22 testing and independent approval remain pending. All 18 chapters remain drafted.
+
+## V13 PR scope gate regression coverage — 2026-11-22
+
+Added [`validation/test_pr_scope.py`](validation/test_pr_scope.py) with six isolated unittest cases for allowed OpenShift paths, forbidden Kubernetes and unrelated paths, root README manual-review hold, empty-diff blocking, and Git failure blocking. Git is mocked; tests are designed to run without kubeconfig, cloud credentials, network or OCP cluster access. Commit `c4855617dc42695cbd2967548767d3125953ee8c`. **Status: committed and source-verification pending; tests NOT RUN.** Run the credential-isolated unittest suite and Markdown audit with real exit codes, review failures, and retain independent technical approval gates. All 18 chapters remain drafted only.
