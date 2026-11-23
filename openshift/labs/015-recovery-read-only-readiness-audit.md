@@ -13,7 +13,7 @@ oc whoami >/dev/null || { echo "STOP: identity lookup failed" >&2; exit 1; }
 oc config current-context >/dev/null || { echo "STOP: context lookup failed" >&2; exit 1; }
 actual_server="$(oc config view --minify -o jsonpath='{.clusters[0].cluster.server}')" || { echo "STOP: API server lookup failed" >&2; exit 1; }
 [ -n "$actual_server" ] && [ "$actual_server" = "$EXPECTED_API_SERVER" ] || { echo "STOP: API server mismatch or empty" >&2; exit 1; }
-oc version || { echo "STOP: version lookup failed" >&2; exit 1; }
+oc version >/dev/null || { echo "STOP: version lookup failed" >&2; exit 1; }
 # Each authorization/read failure is surfaced; never infer success from a skipped check.
 check_read() {
   local description="$1"; shift
