@@ -137,6 +137,15 @@ class Lab015PowerShellMock(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertFalse(any(x.startswith("get machineconfigpools") for x in calls))
 
+    def test_ambiguous_authorization_response_skips_read(self):
+        """Only an exact 'yes' permits a read; unexpected stdout is not approval."""
+        result, calls = self.run_case(
+            MOCK_DENY="machineconfigpools", MOCK_AUTH_ANSWER="maybe", MOCK_AUTH_EXIT="0"
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(sum(x.startswith("get ") for x in calls), 4)
+        self.assertFalse(any(x.startswith("get machineconfigpools") for x in calls))
+
     def test_denied_mcp_skips_only_mcp_read(self):
         result, calls = self.run_case(
             MOCK_DENY="machineconfigpools", MOCK_AUTH_ANSWER="no", MOCK_AUTH_EXIT="0"
