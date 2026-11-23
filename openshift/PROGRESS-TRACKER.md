@@ -653,3 +653,8 @@ Added [V24 technical review priority matrix](validation/V24-technical-review-pri
 ## V28 — Chapter 015 mock acceptance specification (2026-11-23)
 
 Added [V28 Chapter 015 recovery-readiness mock acceptance matrix](validation/V28-ch015-recovery-mock-acceptance.md) with twelve synthetic positive/negative scenarios for trusted API identity, named-object versus collection RBAC, fail-closed `can-i` checks, failed reads, missing prerequisites and evidence sanitization. Explicitly prohibits live `oc` access, production writes and recovery-script execution. **Specification only: no Bash/PowerShell mocks, Python suites, OCP cluster tests or independent reviews were executed.** Next: implement and run isolated cross-platform mocks from the committed lab/runbook sources with recorded exit codes, then reconcile the draft PR branch and complete technical review.
+
+
+## V29 — Chapter 015 Bash mock harness drafted (2026-11-23)
+
+Added [`tests/test_ch015_bash_mock.py`](tests/test_ch015_bash_mock.py), a five-scenario disposable `oc` mock suite that extracts the Bash procedure from the committed Lab 015 Markdown (rather than testing a manually retyped substitute). Covers full authorized read-only flow, API identity mismatch, MCP RBAC denial, nonzero `can-i` despite `yes`, and resource-read failure. The harness confines `oc` to a temporary executable and logs synthetic invocations; it never invokes a real cluster. **Committed and source-readback verified, but test execution and actual exit-code evidence remain pending.** PowerShell parity, the remaining V28 scenarios, full Python regressions, independent review, and OCP lab validation remain pending. All 18 chapters are drafted, not production-approved.
