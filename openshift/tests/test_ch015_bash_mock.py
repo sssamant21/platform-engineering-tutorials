@@ -132,7 +132,9 @@ class Lab015BashMock(unittest.TestCase):
         result, calls = self.run_case(MOCK_DENY="machineconfigpools")
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("SKIP: MachineConfigPools", result.stdout)
-        self.assertNotIn("get machineconfigpools", calls)
+        self.assertFalse(any(x.startswith("get machineconfigpools") for x in calls))
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in calls), 5)
+        self.assertEqual(sum(x.startswith("get ") for x in calls), 4)
 
     def test_m08_nonzero_yes_fails_closed(self):
         result, calls = self.run_case(
