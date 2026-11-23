@@ -671,3 +671,7 @@ The existing `openshift/validation/test_lab015_bash_mock.py` retained assertions
 ## V32 — Chapter 015 Bash mock coverage extension (2026-11-23)
 
 Added two synthetic negative scenarios to `tests/test_ch015_bash_mock.py`: missing approved API-server identity must stop before authorization/resource reads; and denial of every authorization must result in five explicit SKIPs with zero resource reads. Added a Bash-availability skip guard for hosts without Bash. The suite now defines **eight** cases. **GitHub commit/readback only; these tests have not been executed**, so no runtime PASS is claimed. PowerShell parity, full regression execution, branch reconciliation and independent review remain pending. No cluster access or production action occurred.
+
+## V33 — Chapter 015 PowerShell mock parity drafted (2026-11-23)
+
+Added `openshift/tests/test_ch015_powershell_mock.py`, extracting the actual PowerShell block from Lab 015 and running it against a shadowed in-process `oc` function with isolated environment variables. Five synthetic cases cover authorized reads, API mismatch, missing approved API identity, universal authorization denial, and MCP read failure. The suite skips if PowerShell 7 (`pwsh`) is unavailable. **GitHub commit and source readback only: no PowerShell execution, real cluster access, independent review, or production approval occurred.** Next: run both Bash suites and this PowerShell suite in an authenticated checkout, capture exit codes, resolve any test failures, complete security/Markdown audits and reconcile the draft PR branch.
