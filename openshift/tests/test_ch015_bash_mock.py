@@ -62,7 +62,12 @@ class Lab015BashMock(unittest.TestCase):
             oc.chmod(0o700)
             log = path / "calls.log"
             env = {
-                "PATH": str(path) + os.pathsep + os.environ.get("PATH", ""),
+                # Allowlisted environment: no inherited kubeconfig, cloud tokens,
+                # proxy variables, or parent PATH containing a real oc executable.
+                "PATH": str(path) + os.pathsep + os.defpath,
+                "HOME": str(path),
+                "TMPDIR": str(path),
+                "PYTHONNOUSERSITE": "1",
                 "EXPECTED_API_SERVER": "https://approved.invalid:6443",
                 "MOCK_LOG": str(log),
                 "MOCK_SERVER": "https://approved.invalid:6443",
@@ -79,6 +84,18 @@ class Lab015BashMock(unittest.TestCase):
                 for line in calls
             ), calls)
             return result, calls
+
+    def test_parent_credentials_are_not_inherited(self):
+        """The mock must not inherit sensitive environment variables."""
+        from unittest.mock import patch
+        with patch.dict(os.environ, {
+            "KUBECONFIG": "/nonexistent/private-config",
+            "AWS_SECRET_ACCESS_KEY": "synthetic-sentinel",
+            "OC_TRACE": "/nonexistent/parent-trace",
+        }):
+            result, calls = self.run_case()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(sum(x.startswith("get ") for x in calls), 5)
 
     def test_m01_all_authorized(self):
         result, calls = self.run_case()
