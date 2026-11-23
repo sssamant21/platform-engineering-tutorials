@@ -45,3 +45,20 @@ For each case, record actual exit code, sanitized stdout/stderr, fake-`oc` call 
 - Lab-verified status requires authorized, independently reviewed cluster evidence. Production-approved status additionally requires approved recovery exercises, owner sign-off, and applicable change controls.
 
 Related: [Lab 015](../labs/015-recovery-read-only-readiness-audit.md), [Runbook 015](../runbooks/etcd-backup-recovery-readiness-triage.md), [Progress tracker](../PROGRESS-TRACKER.md).
+
+## V47 — Exact four-suite invocation inventory (2026-11-23)
+
+The following four test entry points were confirmed to exist on the draft branch by GitHub source readback. Run **from the repository root** in a disposable checkout pinned to a recorded SHA, with Python 3 and Bash/PowerShell 7 installed as appropriate:
+
+```sh
+python -m unittest discover -s openshift/tests -p 'test_ch015_bash_mock.py' -v
+python -m unittest discover -s openshift/validation -p 'test_lab015_bash_mock.py' -v
+python -m unittest discover -s openshift/tests -p 'test_ch015_powershell_mock.py' -v
+python -m unittest discover -s openshift/validation -p 'test_lab015_powershell_mock.py' -v
+```
+
+**Execution guardrails:** Run only after inspecting the checked-out harnesses and verifying that the executable named `oc` is a synthetic mock, that no real kubeconfig or cloud credentials are present, and that the test host cannot reach a live cluster. Do not paste output containing tokens or cluster identity into GitHub. The commands above are **documented, not executed** in this validation entry.
+
+**Evidence classification:** Record each command's process exit status *and* unittest summary. An exit status of zero with skipped tests is **SKIPPED/NOT VERIFIED**, not PASS. An absent `bash` or `pwsh`, test discovery returning zero tests, or an interpreter/runtime failure must be recorded as **NOT RUN** or **FAIL** as applicable. Save SHA-256 checksums for each test file and the lab Markdown; review sanitized logs before publishing. Even four offline PASS results would not establish real-cluster behavior, backup recoverability, or production approval.
+
+**Branch hygiene:** PR #1 is merged; continue on the existing open draft PR #2 branch. Compare against `main` before review and reconcile its one-behind divergence without modifying `kubernetes/` or auto-merging.
