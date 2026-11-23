@@ -22,6 +22,10 @@ MOCK = """#!/usr/bin/env python3
 import os, sys
 from pathlib import Path
 args = sys.argv[1:]
+# Fail loudly if a parent credential-like variable reaches the mock child.
+if any(os.environ.get(name) for name in ("KUBECONFIG", "AWS_SECRET_ACCESS_KEY", "AZURE_CLIENT_SECRET")):
+    print("ERROR: inherited credential environment", file=sys.stderr)
+    sys.exit(97)
 with Path(os.environ["MOCK_LOG"]).open("a", encoding="utf-8") as f:
     f.write(" ".join(args) + "\\n")
 if args == ["whoami"]: print("synthetic-user"); sys.exit(0)
@@ -94,6 +98,7 @@ class Lab015BashMock(unittest.TestCase):
             "KUBECONFIG": "/nonexistent/private-config",
             "AWS_SECRET_ACCESS_KEY": "synthetic-sentinel",
             "OC_TRACE": "/nonexistent/parent-trace",
+            "AZURE_CLIENT_SECRET": "synthetic-sentinel",
         }):
             result, calls = self.run_case()
         self.assertEqual(result.returncode, 0, result.stderr)
