@@ -18,7 +18,7 @@ MOCK_OC = r'''#!/usr/bin/env python3
 import os, sys
 from pathlib import Path
 args = sys.argv[1:]
-if os.environ.get("KUBECONFIG") or os.environ.get("AWS_SECRET_ACCESS_KEY"):
+if any(os.environ.get(name) for name in ("KUBECONFIG", "AWS_SECRET_ACCESS_KEY", "AZURE_CLIENT_SECRET")):
     sys.exit(97)
 with Path(os.environ["OC_TRACE"]).open("a", encoding="utf-8") as out:
     out.write(" ".join(args) + "\n")
@@ -146,6 +146,7 @@ class Lab015BashMock(unittest.TestCase):
         with patch.dict(os.environ, {
             "KUBECONFIG": "/nonexistent/private-kubeconfig",
             "AWS_SECRET_ACCESS_KEY": "sentinel-not-a-real-secret",
+            "AZURE_CLIENT_SECRET": "sentinel-not-a-real-secret",
             "OC_TRACE": "/nonexistent/parent-trace",
         }):
             result, commands = self.run_case("ok")
