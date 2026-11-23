@@ -118,5 +118,21 @@ class Lab015PowerShellMock(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertTrue(any(x.startswith("get machineconfigpools") for x in calls))
 
+    def test_nonzero_authorization_with_yes_fails_closed(self):
+        result, calls = self.run_case(
+            MOCK_DENY="machineconfigpools", MOCK_AUTH_ANSWER="yes", MOCK_AUTH_EXIT="7"
+        )
+        self.assertNotEqual(result.returncode, 0)
+        self.assertFalse(any(x.startswith("get machineconfigpools") for x in calls))
+
+    def test_denied_mcp_skips_only_mcp_read(self):
+        result, calls = self.run_case(
+            MOCK_DENY="machineconfigpools", MOCK_AUTH_ANSWER="no", MOCK_AUTH_EXIT="0"
+        )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in calls), 5)
+        self.assertEqual(sum(x.startswith("get ") for x in calls), 4)
+        self.assertFalse(any(x.startswith("get machineconfigpools") for x in calls))
+
 if __name__ == "__main__":
     unittest.main()
