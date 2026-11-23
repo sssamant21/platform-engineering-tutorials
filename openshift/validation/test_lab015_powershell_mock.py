@@ -39,6 +39,8 @@ function global:oc {
   }
   if ($a.Count -ge 2 -and ($a[0..1] -join ' ') -eq 'auth can-i') {
     if ($script:Scenario -eq 'auth_fail') { $global:LASTEXITCODE = 9; return }
+    if ($script:Scenario -eq 'auth_yes_error') { $global:LASTEXITCODE = 9; return 'yes' }
+    if ($script:Scenario -eq 'auth_ambiguous') { return 'maybe' }
     if ($script:Scenario -eq 'denied') { return 'no' }
     return 'yes'
   }
@@ -168,6 +170,19 @@ class Lab015PowerShellMock(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertFalse(any(x.startswith("get ") for x in commands))
         self.assertIn("INCOMPLETE", result.stderr)
+
+    def test_authorization_yes_with_nonzero_exit_fails_closed(self):
+        result, commands = self.run_case("auth_yes_error")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertFalse(any(x.startswith("get ") for x in commands))
+        self.assertIn("INCOMPLETE", result.stderr)
+
+    def test_ambiguous_authorization_never_permits_reads(self):
+        result, commands = self.run_case("auth_ambiguous")
+        self.assertFalse(any(x.startswith("get ") for x in commands))
+        # A non-yes response may be reported as SKIP or INCOMPLETE,
+        # but it must never be treated as permission to read.
+        self.assertTrue("SKIP:" in result.stdout or "INCOMPLETE" in result.stderr)
 
     def test_resource_read_error_is_incomplete(self):
         result, commands = self.run_case("read_fail")
