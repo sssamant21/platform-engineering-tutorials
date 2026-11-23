@@ -89,22 +89,22 @@ class Lab015PowerShellMock(unittest.TestCase):
             commands = trace.read_text(encoding="utf-8").splitlines() if trace.exists() else []
             return result, commands
 
-    def test_success_four_authorizations_and_reads(self):
+    def test_success_five_authorizations_and_reads(self):
         result, commands = self.run_case("ok")
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 4)
-        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 5)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 5)
 
     def test_parent_credentials_are_not_inherited(self):
         result, commands = self.run_case('ok', inject_parent_secrets=True)
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(sum(x.startswith('get ') for x in commands), 4)
+        self.assertEqual(sum(x.startswith('get ') for x in commands), 5)
         self.assertNotIn('Mock credential inheritance detected', result.stderr)
 
     def test_success_suppresses_resource_payload(self):
         result, commands = self.run_case("ok")
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 5)
         self.assertNotIn("SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT", result.stdout)
         self.assertNotIn("SENTINEL_CLUSTER_RESOURCE_PAYLOAD_DO_NOT_EMIT", result.stderr)
 
@@ -120,12 +120,14 @@ class Lab015PowerShellMock(unittest.TestCase):
             "auth can-i list clusteroperators.config.openshift.io",
             "auth can-i list nodes",
             "auth can-i get infrastructures.config.openshift.io --resource-name=cluster",
+            "auth can-i list machineconfigpools.machineconfiguration.openshift.io",
             "get clusterversion version",
             "get clusteroperators",
             "get nodes -l node-role.kubernetes.io/master",
             "get infrastructure cluster",
+            "get machineconfigpools",
         }
-        self.assertEqual(len(commands), 12, commands)
+        self.assertEqual(len(commands), 14, commands)
         self.assertEqual(set(commands), allowed)
         self.assertFalse(any(
             command.startswith(("delete ", "patch ", "apply ", "replace ", "create ",
@@ -154,9 +156,9 @@ class Lab015PowerShellMock(unittest.TestCase):
     def test_denied_skips_reads(self):
         result, commands = self.run_case("denied")
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 4)
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 5)
         self.assertFalse(any(x.startswith("get ") for x in commands))
-        self.assertEqual(result.stdout.count("SKIP:"), 4)
+        self.assertEqual(result.stdout.count("SKIP:"), 5)
 
     def test_authorization_error_is_incomplete(self):
         result, commands = self.run_case("auth_fail")
@@ -167,7 +169,7 @@ class Lab015PowerShellMock(unittest.TestCase):
     def test_resource_read_error_is_incomplete(self):
         result, commands = self.run_case("read_fail")
         self.assertNotEqual(result.returncode, 0)
-        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 5)
         self.assertIn("INCOMPLETE", result.stderr)
 
 if __name__ == "__main__":
