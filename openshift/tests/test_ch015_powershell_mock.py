@@ -59,7 +59,7 @@ class Lab015PowerShellMock(unittest.TestCase):
             script = directory / "test.ps1"
             # finally records calls even when the procedure throws.
             script.write_text(
-                MOCK + "\ntry {\n" + self.procedure +
+                MOCK + "\nif ($env:KUBECONFIG -or $env:AWS_SECRET_ACCESS_KEY -or $env:AZURE_CLIENT_SECRET) { throw 'Inherited credential environment' }\ntry {\n" + self.procedure +
                 "\n} finally { $script:Calls | Set-Content -LiteralPath '" +
                 str(trace).replace("'", "''") + "' }\n",
                 encoding="utf-8",
@@ -90,6 +90,18 @@ class Lab015PowerShellMock(unittest.TestCase):
             calls = trace.read_text(encoding="utf-8").splitlines() if trace.exists() else []
             self.assertTrue(all(x.startswith(("whoami", "config ", "version", "auth can-i ", "get ")) for x in calls), calls)
             return result, calls
+
+    def test_parent_credentials_are_not_inherited(self):
+        """Synthetic parent credentials must not reach the child pwsh process."""
+        from unittest.mock import patch
+        with patch.dict(os.environ, {
+            "KUBECONFIG": "/nonexistent/private-kubeconfig",
+            "AWS_SECRET_ACCESS_KEY": "synthetic-sentinel",
+            "AZURE_CLIENT_SECRET": "synthetic-sentinel",
+        }):
+            result, calls = self.run_case()
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(sum(x.startswith("get ") for x in calls), 5)
 
     def test_all_authorized(self):
         result, calls = self.run_case()
