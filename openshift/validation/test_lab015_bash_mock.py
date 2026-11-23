@@ -71,17 +71,17 @@ class Lab015BashMock(unittest.TestCase):
             commands = trace.read_text(encoding="utf-8").splitlines() if trace.exists() else []
             return result, commands
 
-    def test_success_four_authorizations_and_reads(self):
+    def test_success_five_authorizations_and_reads(self):
         result, commands = self.run_case("ok")
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 4)
-        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 5)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 5)
 
     def test_success_does_not_emit_resource_payloads(self):
         """A successful read-only audit must not print fetched cluster resources."""
         result, commands = self.run_case("ok")
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 5)
         self.assertNotIn("mock-user", result.stdout)
         self.assertNotIn("mock-context", result.stdout)
         self.assertNotIn("mock version", result.stdout)
@@ -122,21 +122,21 @@ class Lab015BashMock(unittest.TestCase):
     def test_denial_skips_all_resource_reads(self):
         result, commands = self.run_case("denied")
         self.assertEqual(result.returncode, 0)
-        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 4)
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 5)
         self.assertFalse(any(x.startswith("get ") for x in commands))
-        self.assertEqual(result.stdout.count("SKIP:"), 4)
+        self.assertEqual(result.stdout.count("SKIP:"), 5)
 
     def test_authorization_error_marks_incomplete(self):
         result, commands = self.run_case("auth_fail")
         self.assertNotEqual(result.returncode, 0)
-        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 4)
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 5)
         self.assertFalse(any(x.startswith("get ") for x in commands))
         self.assertIn("INCOMPLETE", result.stderr)
 
     def test_read_error_marks_incomplete(self):
         result, commands = self.run_case("read_fail")
         self.assertNotEqual(result.returncode, 0)
-        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 5)
         self.assertIn("INCOMPLETE", result.stderr)
 
 
@@ -150,7 +150,7 @@ class Lab015BashMock(unittest.TestCase):
         }):
             result, commands = self.run_case("ok")
         self.assertEqual(result.returncode, 0, result.stderr)
-        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 5)
 
 if __name__ == "__main__":
     unittest.main()
