@@ -141,12 +141,12 @@ class Lab015BashMock(unittest.TestCase):
             MOCK_DENY="machineconfigpools", MOCK_AUTH_ANSWER="yes", MOCK_AUTH_EXIT="1"
         )
         self.assertNotEqual(result.returncode, 0)
-        self.assertNotIn("get machineconfigpools", calls)
+        self.assertFalse(any(x.startswith("get machineconfigpools") for x in calls))
 
     def test_m10_resource_read_failure(self):
         result, calls = self.run_case(MOCK_FAIL_READ="machineconfigpools")
         self.assertNotEqual(result.returncode, 0)
-        self.assertIn("get machineconfigpools", calls)
+        self.assertTrue(any(x.startswith("get machineconfigpools") for x in calls))
 
 if __name__ == "__main__":
     unittest.main()
