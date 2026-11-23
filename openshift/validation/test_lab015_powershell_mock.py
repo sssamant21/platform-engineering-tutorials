@@ -41,7 +41,7 @@ function global:oc {
     if ($script:Scenario -eq 'auth_fail') { $global:LASTEXITCODE = 9; return }
     if ($script:Scenario -eq 'auth_yes_error') { $global:LASTEXITCODE = 9; return 'yes' }
     if ($script:Scenario -eq 'auth_ambiguous') { return 'maybe' }
-    if ($script:Scenario -eq 'denied') { return 'no' }
+    if ($script:Scenario -eq 'denied' -or ($script:Scenario -eq 'mcp_denied' -and ($a -join ' ') -like '*machineconfigpools*')) { return 'no' }
     return 'yes'
   }
   if ($a.Count -gt 0 -and $a[0] -eq 'get') {
@@ -183,6 +183,17 @@ class Lab015PowerShellMock(unittest.TestCase):
         # A non-yes response may be reported as SKIP or INCOMPLETE,
         # but it must never be treated as permission to read.
         self.assertTrue("SKIP:" in result.stdout or "INCOMPLETE" in result.stderr)
+
+    def test_denied_mcp_only_skips_mcp_read(self):
+        """A denied optional MCP scope must not suppress other authorized reads."""
+        # The mock's 'denied' scenario denies every resource; use a targeted
+        # scenario so the remaining four authorized resources still execute.
+        result, commands = self.run_case("mcp_denied")
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in commands), 5)
+        self.assertEqual(sum(x.startswith("get ") for x in commands), 4)
+        self.assertNotIn("get machineconfigpools", commands)
+        self.assertEqual(result.stdout.count("SKIP:"), 1)
 
     def test_resource_read_error_is_incomplete(self):
         result, commands = self.run_case("read_fail")
