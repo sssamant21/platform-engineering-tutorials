@@ -9,6 +9,7 @@ PowerShell parity is NOT established by this suite.
 """
 import os
 import re
+import shutil
 import subprocess
 import tempfile
 import unittest
@@ -41,6 +42,7 @@ if args and args[0] == "get":
 print("unexpected mock invocation", file=sys.stderr); sys.exit(99)
 """
 
+@unittest.skipUnless(shutil.which("bash"), "bash is not installed")
 class Lab015BashMock(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -102,6 +104,19 @@ class Lab015BashMock(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(sum(x.startswith("auth can-i ") for x in calls), 5)
         self.assertEqual(sum(x.startswith("get ") for x in calls), 5)
+
+    def test_missing_expected_server_stops_before_reads(self):
+        result, calls = self.run_case(EXPECTED_API_SERVER="")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertFalse(any(x.startswith(("auth can-i ", "get ")) for x in calls))
+
+    def test_all_authorizations_denied_never_reads(self):
+        result, calls = self.run_case(MOCK_DENY=" ", MOCK_AUTH_ANSWER="no")
+        # Each authorization request includes a fully qualified API group.
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(sum(x.startswith("auth can-i ") for x in calls), 5)
+        self.assertFalse(any(x.startswith("get ") for x in calls))
+        self.assertEqual(result.stdout.count("SKIP:"), 5)
 
     def test_m02_wrong_api_identity_stops_before_reads(self):
         result, calls = self.run_case(MOCK_SERVER="https://other.invalid:6443")
