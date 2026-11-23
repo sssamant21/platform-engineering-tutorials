@@ -648,3 +648,8 @@ Added [V24 technical review priority matrix](validation/V24-technical-review-pri
 ## V27 — Chapter 015 recovery runbook authorization parity (2026-11-22)
 
 **Static correction committed:** Added explicit trusted API-server identity comparison and stop-on-mismatch guidance before reads; aligned runbook preflights with Lab 015 for named ClusterVersion and Infrastructure (`get`) and ClusterOperator, node and MachineConfigPool collections (`list`) in Bash and PowerShell. Clarified that `can-i` must exit successfully and return exactly `yes`, and that failed/skipped resource reads are evidence gaps, not health PASS. **No shell mock execution, cluster access, recovery action, independent approval or production validation performed.** Next: run isolated Lab 015 Bash/PowerShell mocks and complete offline regression suites with captured exit codes; reconcile draft PR branch divergence and obtain independent technical review.
+
+
+## V28 — Chapter 015 mock acceptance specification (2026-11-23)
+
+Added [V28 Chapter 015 recovery-readiness mock acceptance matrix](validation/V28-ch015-recovery-mock-acceptance.md) with twelve synthetic positive/negative scenarios for trusted API identity, named-object versus collection RBAC, fail-closed `can-i` checks, failed reads, missing prerequisites and evidence sanitization. Explicitly prohibits live `oc` access, production writes and recovery-script execution. **Specification only: no Bash/PowerShell mocks, Python suites, OCP cluster tests or independent reviews were executed.** Next: implement and run isolated cross-platform mocks from the committed lab/runbook sources with recorded exit codes, then reconcile the draft PR branch and complete technical review.
