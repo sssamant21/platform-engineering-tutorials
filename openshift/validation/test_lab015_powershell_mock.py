@@ -5,6 +5,7 @@ Requires pwsh (PowerShell 7). Skips if unavailable; Windows PowerShell 5.1 is no
 covered by this suite and needs separate validation.
 """
 from pathlib import Path
+import os
 import re
 import shutil
 import subprocess
@@ -59,9 +60,11 @@ class Lab015PowerShellMock(unittest.TestCase):
             trace = root / "trace.txt"
             script = root / "mock.ps1"
             script.write_text(MOCK + "\n" + match.group(1), encoding="utf-8")
-            import os
+            # Never inherit the parent PATH: it may contain a real oc executable or wrappers.
+            # PWSH was resolved before constructing this controlled child environment.
+            safe_path = os.pathsep.join([str(Path(PWSH).resolve().parent), os.defpath])
             env = {
-                "PATH": os.environ.get("PATH", os.defpath),
+                "PATH": safe_path,
                 "HOME": str(root),
                 "USERPROFILE": str(root),
                 "TMPDIR": str(root),
