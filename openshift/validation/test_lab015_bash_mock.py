@@ -93,14 +93,23 @@ class Lab015BashMock(unittest.TestCase):
         """Catch accidental introduction of mutating commands into the lab."""
         result, commands = self.run_case("ok")
         self.assertEqual(result.returncode, 0, result.stderr)
-        allowed = ("whoami", "config current-context", "config view --minify",
-                   "version", "auth can-i ", "get ")
-        self.assertTrue(commands, "fake oc recorded no commands")
-        for command in commands:
-            self.assertTrue(any(command == item or
-                                (item.endswith(" ") and command.startswith(item)) or
-                                (item == "config view --minify" and command.startswith(item + " "))
-                                for item in allowed), f"Unexpected oc invocation: {command}")
+        # Pin the exact audited command inventory; broad prefixes hide unsafe reads.
+        allowed = {
+            "whoami", "config current-context",
+            "config view --minify -o jsonpath={.clusters[0].cluster.server}",
+            "version",
+            "auth can-i get clusterversions.config.openshift.io --resource-name=version",
+            "auth can-i list clusteroperators.config.openshift.io",
+            "auth can-i list nodes",
+            "auth can-i list machineconfigpools.machineconfiguration.openshift.io",
+            "auth can-i get infrastructures.config.openshift.io --resource-name=cluster",
+            "get clusterversion version", "get clusteroperators",
+            "get nodes -l node-role.kubernetes.io/master",
+            "get machineconfigpools", "get infrastructure cluster",
+        }
+        self.assertEqual(len(commands), 14, commands)
+        self.assertEqual(set(commands), allowed, commands)
+        self.assertEqual(len(set(commands)), len(commands), "Repeated oc invocation")
 
     def test_identity_failure_stops_before_resource_access(self):
         result, commands = self.run_case("identity_fail")
